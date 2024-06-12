@@ -1,4 +1,5 @@
-const readline = require('readline');
+import readline from 'readline';
+import chalk from 'chalk';
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -142,7 +143,10 @@ function showNextFlashcard() {
   }
 
   const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
-  console.log(showEnglish ? randomPhrase.english : randomPhrase.foreign);
+  console.log(
+    '  ',
+    chalk.yellow(showEnglish ? randomPhrase.english : randomPhrase.foreign),
+  );
 
   rl.question(
     'Press Enter to see the translation, B to go back, or Q to quit: ',
@@ -156,7 +160,10 @@ function showNextFlashcard() {
         showMenu();
         return;
       }
-      console.log(showEnglish ? randomPhrase.foreign : randomPhrase.english);
+      console.log(
+        '  ',
+        chalk.yellow(showEnglish ? randomPhrase.foreign : randomPhrase.english),
+      );
       showNextFlashcard();
     },
   );
