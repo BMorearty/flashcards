@@ -73,8 +73,14 @@ function handleMenuChoice(choice) {
 function showSectionMenu() {
   const sectionMenu = `
 Choose a section:
-1. Section 1
-2. Section 2
+${Object.keys(flashcards[currentChapter])
+  .map((section, index) => {
+    if (section === 'name') {
+      return '';
+    }
+    return `${index}. Section ${index}`;
+  })
+  .join('\n')}
 B. Back to main menu
 Q. Quit
 `;
