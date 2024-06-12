@@ -2,33 +2,38 @@ const readline = require('readline');
 
 const rl = readline.createInterface({
   input: process.stdin,
-  output: process.stdout
+  output: process.stdout,
 });
 
 const flashcards = {
   chapter1: {
-    name: "Greetings",
+    name: 'Greetings',
     section1: [
-      { english: "Hello", foreign: "Hola" },
-      { english: "Goodbye", foreign: "Adiós" }
+      { english: 'Hello', foreign: 'Hola' },
+      { english: 'Goodbye', foreign: 'Adiós' },
     ],
     section2: [
-      { english: "Thank you", foreign: "Gracias" },
-      { english: "Please", foreign: "Por favor" }
-    ]
+      { english: 'Thank you', foreign: 'Gracias' },
+      { english: 'Please', foreign: 'Por favor' },
+    ],
   },
   chapter2: {
-    name: "Yes and no",
+    name: 'Yes and no',
     section1: [
-      { english: "Yes", foreign: "Sí" },
-      { english: "No", foreign: "No" }
-    ]
-  }
+      { english: 'Yes', foreign: 'Sí' },
+      { english: 'No', foreign: 'No' },
+    ],
+  },
 };
 
 const menu = `
 Choose an option:
-${Object.keys(flashcards).map((chapter, index) => `${index + 1}. Chapter ${index + 1}: ${flashcards[chapter].name}`).join('\n')}
+${Object.keys(flashcards)
+  .map(
+    (chapter, index) =>
+      `${index + 1}. Chapter ${index + 1}: ${flashcards[chapter].name}`,
+  )
+  .join('\n')}
 A. All Chapters
 Q. Quit
 `;
@@ -101,14 +106,17 @@ function handleSectionChoice(choice) {
 }
 
 function startFlashcards() {
-  rl.question('Do you want to see English phrases or foreign phrases? (E/F): ', (answer) => {
-    if (answer.toLowerCase() === 'q') {
-      rl.close();
-      return;
-    }
-    showEnglish = (answer.toLowerCase() === 'e');
-    showNextFlashcard();
-  });
+  rl.question(
+    'Do you want to see English phrases or foreign phrases? (E/F): ',
+    (answer) => {
+      if (answer.toLowerCase() === 'q') {
+        rl.close();
+        return;
+      }
+      showEnglish = answer.toLowerCase() === 'e';
+      showNextFlashcard();
+    },
+  );
 }
 
 function showNextFlashcard() {
@@ -130,19 +138,22 @@ function showNextFlashcard() {
   const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
   console.log(showEnglish ? randomPhrase.english : randomPhrase.foreign);
 
-  rl.question('Press Enter to see the translation, B to go back, or Q to quit: ', (answer) => {
-    if (answer.toLowerCase() === 'q') {
-      rl.close();
-      return;
-    }
-    if (answer.toLowerCase() === 'b') {
-      currentSection = null;
-      showMenu();
-      return;
-    }
-    console.log(showEnglish ? randomPhrase.foreign : randomPhrase.english);
-    showNextFlashcard();
-  });
+  rl.question(
+    'Press Enter to see the translation, B to go back, or Q to quit: ',
+    (answer) => {
+      if (answer.toLowerCase() === 'q') {
+        rl.close();
+        return;
+      }
+      if (answer.toLowerCase() === 'b') {
+        currentSection = null;
+        showMenu();
+        return;
+      }
+      console.log(showEnglish ? randomPhrase.foreign : randomPhrase.english);
+      showNextFlashcard();
+    },
+  );
 }
 
 showMenu();
