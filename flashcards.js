@@ -160,8 +160,10 @@ function showNextFlashcard() {
         showMenu();
         return;
       }
+      const moveUpAndClearLine = '\u001b[1A\u001b[K';
       console.log(
-        '  ',
+        moveUpAndClearLine,
+        '   ',
         chalk.yellow(showEnglish ? randomPhrase.foreign : randomPhrase.english),
       );
       showNextFlashcard();
