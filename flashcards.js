@@ -8,21 +8,17 @@ const rl = readline.createInterface({
 
 const flashcards = {
   chapter1: {
-    name: 'Greetings',
+    name: 'Who are you?',
     section1: [
-      { english: 'Hello', foreign: 'Hola' },
-      { english: 'Goodbye', foreign: 'Adiós' },
-    ],
-    section2: [
-      { english: 'Thank you', foreign: 'Gracias' },
-      { english: 'Please', foreign: 'Por favor' },
-    ],
-  },
-  chapter2: {
-    name: 'Yes and no',
-    section1: [
-      { english: 'Yes', foreign: 'Sí' },
-      { english: 'No', foreign: 'No' },
+      { foreign: 'Dobar dan. Kako ste?', english: 'Hello. How are you?' },
+      { foreign: 'Dobre. A Vi?', english: 'Fine. And you?' },
+      { foreign: 'Zovem se Brian', english: 'My name is Brian' },
+      { foreign: 'Kako se Vi zovete?', english: 'What is your name?' },
+      { foreign: 'Drago mi je', english: 'Nice to meet you' },
+      { foreign: 'I meni', english: 'You too (nice to meet you too)' },
+      { foreign: 'Doviđenja', english: 'Goodbye' },
+      { foreign: 'Kako ide?', english: 'How’s it going?' },
+      { foreign: 'Vidimo se kasnije', english: 'See each other later' },
     ],
   },
 };
