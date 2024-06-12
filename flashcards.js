@@ -131,6 +131,9 @@ function showNextFlashcard() {
   if (currentChapter === 'all') {
     for (let chapter in flashcards) {
       for (let section in flashcards[chapter]) {
+        if (section === 'name') {
+          continue;
+        }
         phrases = phrases.concat(flashcards[chapter][section]);
       }
     }
