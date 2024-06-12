@@ -7,6 +7,7 @@ const rl = readline.createInterface({
 
 const flashcards = {
   chapter1: {
+    name: "Greetings",
     section1: [
       { english: "Hello", foreign: "Hola" },
       { english: "Goodbye", foreign: "Adiós" }
@@ -17,6 +18,7 @@ const flashcards = {
     ]
   },
   chapter2: {
+    name: "Yes and no",
     section1: [
       { english: "Yes", foreign: "Sí" },
       { english: "No", foreign: "No" }
@@ -26,21 +28,10 @@ const flashcards = {
 
 const menu = `
 Choose an option:
-1. Chapter 1
-2. Chapter 2
-3. All Chapters
+${Object.keys(flashcards).map((chapter, index) => `${index + 1}. Chapter ${index + 1}: ${flashcards[chapter].name}`).join('\n')}
+A. All Chapters
 Q. Quit
 `;
-
-const chapters = {
-  1: "chapter1",
-  2: "chapter2"
-};
-
-const sections = {
-  1: "section1",
-  2: "section2"
-};
 
 let currentChapter = null;
 let currentSection = null;
@@ -58,13 +49,13 @@ function showMenu() {
 }
 
 function handleMenuChoice(choice) {
-  switch (choice) {
+  switch (choice.toLowerCase()) {
     case '1':
     case '2':
-      currentChapter = chapters[choice];
+      currentChapter = `chapter${choice}`;
       showSectionMenu();
       break;
-    case '3':
+    case 'a':
       currentChapter = 'all';
       startFlashcards();
       break;
@@ -100,7 +91,7 @@ function handleSectionChoice(choice) {
   switch (choice) {
     case '1':
     case '2':
-      currentSection = sections[choice];
+      currentSection = `section${choice}`;
       startFlashcards();
       break;
     default:
