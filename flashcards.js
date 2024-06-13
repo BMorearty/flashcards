@@ -69,6 +69,7 @@ let currentUnit = null;
 let currentChapter = null;
 let currentSection = null;
 let showEnglish = true;
+let phrases = [];
 
 function showMenu() {
   console.log(menu);
@@ -179,12 +180,13 @@ function startFlashcards() {
       return;
     }
     showEnglish = answer.toLowerCase() !== 'f';
+    setupPhrases();
     showNextFlashcard();
   });
 }
 
-function showNextFlashcard() {
-  let phrases = [];
+function setupPhrases() {
+  phrases = [];
   if (currentUnit === 'all' || currentUnit === 'hard') {
     for (let unit in flashcards) {
       for (let chapter in flashcards[unit]) {
@@ -209,7 +211,9 @@ function showNextFlashcard() {
       phrases = phrases.concat(flashcards[currentUnit][currentChapter][section]);
     }
   }
+}
 
+function showNextFlashcard() {
   const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
   console.log(`  ${chalk.yellow(showEnglish ? randomPhrase.english : randomPhrase.foreign)}`);
 
