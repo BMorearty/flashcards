@@ -7,34 +7,34 @@ const rl = readline.createInterface({
 });
 
 const flashcards = {
-  chapter1: {
-    name: 'Who are you?',
-    section1: [
-      { foreign: 'Dobar dan. Kako ste?', english: 'Hello. How are you?' },
-      { foreign: 'Dobre. A Vi?', english: 'Fine. And you?' },
-      { foreign: 'Zovem se Brian', english: 'My name is Brian' },
-      { foreign: 'Kako se Vi zovete?', english: 'What is your name?' },
-      { foreign: 'Drago mi je', english: 'Nice to meet you' },
-      { foreign: 'I meni', english: 'You too (nice to meet you too)' },
-      { foreign: 'Doviđenja', english: 'Goodbye' },
-      { foreign: 'Kako ide?', english: 'How’s it going?' },
-      { foreign: 'Vidimo se kasnije', english: 'See each other later' },
-    ],
+  unit1: {
+    chapter1: {
+      name: 'Who are you?',
+      section1: [
+        { foreign: 'Dobar dan. Kako ste?', english: 'Hello. How are you?' },
+        { foreign: 'Dobre. A Vi?', english: 'Fine. And you?' },
+        { foreign: 'Zovem se Brian', english: 'My name is Brian' },
+        { foreign: 'Kako se Vi zovete?', english: 'What is your name?' },
+        { foreign: 'Drago mi je', english: 'Nice to meet you' },
+        { foreign: 'I meni', english: 'You too (nice to meet you too)' },
+        { foreign: 'Doviđenja', english: 'Goodbye' },
+        { foreign: 'Kako ide?', english: 'How’s it going?' },
+        { foreign: 'Vidimo se kasnije', english: 'See each other later' },
+      ],
+    },
   },
 };
 
 const menu = `
 Choose an option:
 ${Object.keys(flashcards)
-  .map(
-    (chapter, index) =>
-      `${index + 1}. Chapter ${index + 1}: ${flashcards[chapter].name}`,
-  )
+  .map((unit, index) => `${index + 1}. Unit ${index + 1}`)
   .join('\n')}
-A. All Chapters
+A. All Units
 Q. Quit
 `;
 
+let currentUnit = null;
 let currentChapter = null;
 let currentSection = null;
 let showEnglish = true;
@@ -51,26 +51,60 @@ function showMenu() {
 }
 
 function handleMenuChoice(choice) {
-  switch (choice.toLowerCase()) {
-    case '1':
-    case '2':
-      currentChapter = `chapter${choice}`;
-      showSectionMenu();
-      break;
-    case 'a':
-      currentChapter = 'all';
-      startFlashcards();
-      break;
-    default:
-      console.log('Invalid choice. Try again.');
-      showMenu();
+  if (choice.toLowerCase() === 'a') {
+    currentUnit = 'all';
+    startFlashcards();
+    return;
   }
+  const choiceNum = parseInt(choice, 10);
+  if (choiceNum > 0 && choiceNum <= Object.keys(flashcards).length) {
+    currentUnit = `unit${choiceNum}`;
+    showChapterMenu();
+    return;
+  }
+  console.log('Invalid choice. Try again.');
+  showMenu();
+}
+
+function showChapterMenu() {
+  const chapterMenu = `
+Choose a chapter:
+${Object.keys(flashcards[currentUnit])
+  .map((chapter, index) => {
+    return `${index + 1}. Chapter ${index + 1}: ${flashcards[currentUnit][chapter].name}`;
+  })
+  .join('\n')}
+B. Back to main menu
+Q. Quit
+`;
+  console.log(chapterMenu);
+  rl.question('Your choice: ', (choice) => {
+    if (choice.toLowerCase() === 'q') {
+      rl.close();
+      return;
+    }
+    if (choice.toLowerCase() === 'b') {
+      showMenu();
+      return;
+    }
+    const choiceNum = parseInt(choice, 10);
+    if (
+      choiceNum > 0 &&
+      choiceNum <= Object.keys(flashcards[currentUnit]).length
+    ) {
+      currentChapter = `chapter${choiceNum}`;
+      showSectionMenu();
+      return;
+    }
+    console.log('Invalid choice. Try again.');
+    showChapterMenu();
+  });
 }
 
 function showSectionMenu() {
   const sectionMenu = `
 Choose a section:
-${Object.keys(flashcards[currentChapter])
+${Object.keys(flashcards[currentUnit][currentChapter])
   .map((section, index) => {
     if (section === 'name') {
       return '';
@@ -82,30 +116,28 @@ B. Back to main menu
 Q. Quit
 `;
   console.log(sectionMenu);
-  rl.question('Your choice: ', (answer) => {
-    if (answer.toLowerCase() === 'q') {
+  rl.question('Your choice: ', (choice) => {
+    if (choice.toLowerCase() === 'q') {
       rl.close();
       return;
     }
-    if (answer.toLowerCase() === 'b') {
+    if (choice.toLowerCase() === 'b') {
       showMenu();
       return;
     }
-    handleSectionChoice(answer);
-  });
-}
-
-function handleSectionChoice(choice) {
-  switch (choice) {
-    case '1':
-    case '2':
-      currentSection = `section${choice}`;
+    const choiceNum = parseInt(choice, 10);
+    if (
+      choiceNum > 0 &&
+      choiceNum <=
+        Object.keys(flashcards[currentUnit][currentChapter]).length - 1
+    ) {
+      currentSection = `section${choiceNum}`;
       startFlashcards();
-      break;
-    default:
-      console.log('Invalid choice. Try again.');
-      showSectionMenu();
-  }
+      return;
+    }
+    console.log('Invalid choice. Try again.');
+    showSectionMenu();
+  });
 }
 
 function startFlashcards() {
@@ -124,27 +156,30 @@ function startFlashcards() {
 
 function showNextFlashcard() {
   let phrases = [];
-  if (currentChapter === 'all') {
-    for (let chapter in flashcards) {
-      for (let section in flashcards[chapter]) {
-        if (section === 'name') {
-          continue;
+  if (currentUnit === 'all') {
+    for (let unit in flashcards) {
+      for (let chapter in flashcards[unit]) {
+        for (let section in flashcards[unit][chapter]) {
+          if (section === 'name') {
+            continue;
+          }
+          phrases = phrases.concat(flashcards[unit][chapter][section]);
         }
-        phrases = phrases.concat(flashcards[chapter][section]);
       }
     }
   } else if (currentSection) {
-    phrases = flashcards[currentChapter][currentSection];
+    phrases = flashcards[currentUnit][currentChapter][currentSection];
   } else {
-    for (let section in flashcards[currentChapter]) {
-      phrases = phrases.concat(flashcards[currentChapter][section]);
+    for (let section in flashcards[currentUnit][currentChapter]) {
+      phrases = phrases.concat(
+        flashcards[currentUnit][currentChapter][section],
+      );
     }
   }
 
   const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
   console.log(
-    '  ',
-    chalk.yellow(showEnglish ? randomPhrase.english : randomPhrase.foreign),
+    `  ${chalk.yellow(showEnglish ? randomPhrase.english : randomPhrase.foreign)}`,
   );
 
   rl.question(
@@ -161,9 +196,7 @@ function showNextFlashcard() {
       }
       const moveUpAndClearLine = '\u001b[1A\u001b[K';
       console.log(
-        moveUpAndClearLine,
-        '   ',
-        chalk.yellow(showEnglish ? randomPhrase.foreign : randomPhrase.english),
+        `${moveUpAndClearLine}    ${chalk.green(showEnglish ? randomPhrase.foreign : randomPhrase.english)}`,
       );
       showNextFlashcard();
     },
