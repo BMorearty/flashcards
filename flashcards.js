@@ -21,18 +21,18 @@ const flashcards = {
         { foreign: 'Drago mi je', english: 'Nice to meet you' },
         { foreign: 'I meni', english: 'You too (nice to meet you too)' },
         { foreign: 'Doviđenja', english: 'Goodbye' },
-        { foreign: 'Kako ide?', english: 'How’s it going?' },
-        { foreign: 'Vidimo se kasnije', english: 'See each other later' },
+        { foreign: 'Kako ide?', english: 'How’s it going?', hard: true },
+        { foreign: 'Vidimo se kasnije', english: 'See each other later', hard: true },
       ],
       section3: [
-        { foreign: 'Što radiš?', english: 'What are you doing? (informal singular)' },
+        { foreign: 'Što radiš?', english: 'What are you doing? (informal singular)', hard: true },
         { foreign: 'Vidimo se sutra', english: 'See each other tomorrow' },
-        { foreign: 'Odlično', english: 'Excellent' },
+        { foreign: 'Odlično', english: 'Excellent', hard: true },
       ],
       section4: [
         { foreign: 'loše', english: 'bad' },
         { foreign: 'tako-tako', english: 'so-so' },
-        { foreign: 'Čuvaj se!', english: 'Take care of yourself! (informal singular)' },
+        { foreign: 'Čuvaj se!', english: 'Take care of yourself! (informal singular)', hard: true },
         { foreign: 'on', english: 'he' },
         { foreign: 'ona', english: 'she' },
         { foreign: 'ono', english: 'it' },
@@ -42,11 +42,11 @@ const flashcards = {
         { foreign: 'Laku noć', english: 'Good night' },
         { foreign: 'Zbogom', english: 'Farewell (old-fashioned)' },
         { foreign: 'Dobro jutro', english: 'Good morning' },
-        { foreign: 'Gospodin', english: 'Sir' },
-        { foreign: 'Gospođa', english: 'Madam' },
-        { foreign: 'Gospođica', english: 'Miss' },
+        { foreign: 'Gospodin', english: 'Sir', hard: true },
+        { foreign: 'Gospođa', english: 'Madam', hard: true },
+        { foreign: 'Gospođica', english: 'Miss', hard: true },
       ],
-      section6: [{ foreign: 'Gđa.', english: 'Ms.' }],
+      section6: [{ foreign: 'Gđa.', english: 'Ms.', hard: true }],
     },
     chapter2: {
       name: 'My family',
@@ -61,6 +61,7 @@ ${Object.keys(flashcards)
   .map((unit, index) => `${index + 1}. Unit ${index + 1}`)
   .join('\n')}
 A. All Units
+H. Hard Phrases
 Q. Quit
 `;
 
@@ -83,6 +84,11 @@ function showMenu() {
 function handleMenuChoice(choice) {
   if (choice.toLowerCase() === 'a') {
     currentUnit = 'all';
+    startFlashcards();
+    return;
+  }
+  if (choice.toLowerCase() === 'h') {
+    currentUnit = 'hard';
     startFlashcards();
     return;
   }
@@ -179,11 +185,17 @@ function startFlashcards() {
 
 function showNextFlashcard() {
   let phrases = [];
-  if (currentUnit === 'all') {
+  if (currentUnit === 'all' || currentUnit === 'hard') {
     for (let unit in flashcards) {
       for (let chapter in flashcards[unit]) {
         for (let section in flashcards[unit][chapter]) {
           if (section === 'name') {
+            continue;
+          }
+          if (currentUnit === 'hard') {
+            phrases = phrases.concat(
+              flashcards[unit][chapter][section].filter((phrase) => phrase.hard),
+            );
             continue;
           }
           phrases = phrases.concat(flashcards[unit][chapter][section]);
