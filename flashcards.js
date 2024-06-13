@@ -46,7 +46,7 @@ const flashcards = {
         { foreign: 'Gospođa', english: 'Madam', hard: true },
         { foreign: 'Gospođica', english: 'Miss', hard: true },
       ],
-      section6: [{ foreign: 'Gđa.', english: 'Ms.', hard: true }],
+      section6: [{ foreign: 'Gđa', english: 'Ms.', hard: true }],
     },
     chapter2: {
       name: 'My family',
