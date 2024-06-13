@@ -39,7 +39,7 @@ const flashcards = {
         { foreign: 'oni', english: 'they' },
       ],
       section5: [
-        { foreign: 'Laku noć', english: 'Good night' },
+        { foreign: 'Laku noć', english: 'Good night', hard: true },
         { foreign: 'Zbogom', english: 'Farewell (old-fashioned)' },
         { foreign: 'Dobro jutro', english: 'Good morning' },
         { foreign: 'Gospodin', english: 'Sir', hard: true },
@@ -60,8 +60,8 @@ Choose an option:
 ${Object.keys(flashcards)
   .map((unit, index) => `${index + 1}. Unit ${index + 1}`)
   .join('\n')}
-A. All Units
-H. Hard Phrases
+A. All units
+H. Hard phrases
 Q. Quit
 `;
 
@@ -146,6 +146,7 @@ ${Object.keys(flashcards[currentUnit][currentChapter])
     return `${index}. Section ${index}`;
   })
   .join('\n')}
+A. All sections
 B. Back to main menu
 Q. Quit
 `;
@@ -157,6 +158,11 @@ Q. Quit
     }
     if (choice.toLowerCase() === 'b') {
       showMenu();
+      return;
+    }
+    if (choice.toLowerCase() === 'a') {
+      currentSection = 'all';
+      startFlashcards();
       return;
     }
     const choiceNum = parseInt(choice, 10);
@@ -204,12 +210,12 @@ function setupPhrases() {
         }
       }
     }
-  } else if (currentSection) {
-    phrases = flashcards[currentUnit][currentChapter][currentSection];
-  } else {
+  } else if (currentSection === 'all') {
     for (let section in flashcards[currentUnit][currentChapter]) {
       phrases = phrases.concat(flashcards[currentUnit][currentChapter][section]);
     }
+  } else if (currentSection) {
+    phrases = flashcards[currentUnit][currentChapter][currentSection];
   }
 }
 
