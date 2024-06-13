@@ -11,16 +11,46 @@ const flashcards = {
     chapter1: {
       name: 'Who are you?',
       section1: [
-        { foreign: 'Dobar dan. Kako ste?', english: 'Hello. How are you?' },
-        { foreign: 'Dobre. A Vi?', english: 'Fine. And you?' },
+        { foreign: 'Dobar dan. Kako ste?', english: 'Hello. How are you? (formal singular)' },
+        { foreign: 'Dobro. A Vi?', english: 'Fine. And you? (formal singular)' },
         { foreign: 'Zovem se Brian', english: 'My name is Brian' },
-        { foreign: 'Kako se Vi zovete?', english: 'What is your name?' },
+        { foreign: 'Kako se Vi zovete?', english: 'What is your name? (formal)' },
+      ],
+      section2: [
+        { foreign: 'Ja sam Brian', english: 'I am Brian' },
         { foreign: 'Drago mi je', english: 'Nice to meet you' },
         { foreign: 'I meni', english: 'You too (nice to meet you too)' },
         { foreign: 'Doviđenja', english: 'Goodbye' },
         { foreign: 'Kako ide?', english: 'How’s it going?' },
         { foreign: 'Vidimo se kasnije', english: 'See each other later' },
       ],
+      section3: [
+        { foreign: 'Što radiš?', english: 'What are you doing? (informal singular)' },
+        { foreign: 'Vidimo se sutra', english: 'See each other tomorrow' },
+        { foreign: 'Odlično', english: 'Excellent' },
+      ],
+      section4: [
+        { foreign: 'loše', english: 'bad' },
+        { foreign: 'tako-tako', english: 'so-so' },
+        { foreign: 'Čuvaj se!', english: 'Take care of yourself! (informal singular)' },
+        { foreign: 'on', english: 'he' },
+        { foreign: 'ona', english: 'she' },
+        { foreign: 'ono', english: 'it' },
+        { foreign: 'oni', english: 'they' },
+      ],
+      section5: [
+        { foreign: 'Laku noć', english: 'Good night' },
+        { foreign: 'Zbogom', english: 'Farewell (old-fashioned)' },
+        { foreign: 'Dobro jutro', english: 'Good morning' },
+        { foreign: 'Gospodin', english: 'Sir' },
+        { foreign: 'Gospođa', english: 'Madam' },
+        { foreign: 'Gospođica', english: 'Miss' },
+      ],
+      section6: [{ foreign: 'Gđa.', english: 'Ms.' }],
+    },
+    chapter2: {
+      name: 'My family',
+      section1: [],
     },
   },
 };
@@ -88,10 +118,7 @@ Q. Quit
       return;
     }
     const choiceNum = parseInt(choice, 10);
-    if (
-      choiceNum > 0 &&
-      choiceNum <= Object.keys(flashcards[currentUnit]).length
-    ) {
+    if (choiceNum > 0 && choiceNum <= Object.keys(flashcards[currentUnit]).length) {
       currentChapter = `chapter${choiceNum}`;
       showSectionMenu();
       return;
@@ -128,8 +155,7 @@ Q. Quit
     const choiceNum = parseInt(choice, 10);
     if (
       choiceNum > 0 &&
-      choiceNum <=
-        Object.keys(flashcards[currentUnit][currentChapter]).length - 1
+      choiceNum <= Object.keys(flashcards[currentUnit][currentChapter]).length - 1
     ) {
       currentSection = `section${choiceNum}`;
       startFlashcards();
@@ -141,17 +167,14 @@ Q. Quit
 }
 
 function startFlashcards() {
-  rl.question(
-    'Do you want to see English phrases or foreign phrases? (E/F): ',
-    (answer) => {
-      if (answer.toLowerCase() === 'q') {
-        rl.close();
-        return;
-      }
-      showEnglish = answer.toLowerCase() === 'e';
-      showNextFlashcard();
-    },
-  );
+  rl.question('Do you want to see English phrases or foreign phrases? (E/F): ', (answer) => {
+    if (answer.toLowerCase() === 'q') {
+      rl.close();
+      return;
+    }
+    showEnglish = answer.toLowerCase() !== 'f';
+    showNextFlashcard();
+  });
 }
 
 function showNextFlashcard() {
@@ -171,36 +194,29 @@ function showNextFlashcard() {
     phrases = flashcards[currentUnit][currentChapter][currentSection];
   } else {
     for (let section in flashcards[currentUnit][currentChapter]) {
-      phrases = phrases.concat(
-        flashcards[currentUnit][currentChapter][section],
-      );
+      phrases = phrases.concat(flashcards[currentUnit][currentChapter][section]);
     }
   }
 
   const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
-  console.log(
-    `  ${chalk.yellow(showEnglish ? randomPhrase.english : randomPhrase.foreign)}`,
-  );
+  console.log(`  ${chalk.yellow(showEnglish ? randomPhrase.english : randomPhrase.foreign)}`);
 
-  rl.question(
-    'Press Enter to see the translation, B to go back, or Q to quit: ',
-    (answer) => {
-      if (answer.toLowerCase() === 'q') {
-        rl.close();
-        return;
-      }
-      if (answer.toLowerCase() === 'b') {
-        currentSection = null;
-        showMenu();
-        return;
-      }
-      const moveUpAndClearLine = '\u001b[1A\u001b[K';
-      console.log(
-        `${moveUpAndClearLine}    ${chalk.green(showEnglish ? randomPhrase.foreign : randomPhrase.english)}`,
-      );
-      showNextFlashcard();
-    },
-  );
+  rl.question('Press Enter to see the translation, B to go back, or Q to quit: ', (answer) => {
+    if (answer.toLowerCase() === 'q') {
+      rl.close();
+      return;
+    }
+    if (answer.toLowerCase() === 'b') {
+      currentSection = null;
+      showMenu();
+      return;
+    }
+    const moveUpAndClearLine = '\u001b[1A\u001b[K';
+    console.log(
+      `${moveUpAndClearLine}    ${chalk.green(showEnglish ? randomPhrase.foreign : randomPhrase.english)}`,
+    );
+    showNextFlashcard();
+  });
 }
 
 showMenu();
