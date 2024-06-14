@@ -110,6 +110,20 @@ const flashcards = {
         { foreign: 'nećak (accent on first syllable)', english: 'nephew' },
       ],
     },
+    chapter3: {
+      name: 'Getting to know you',
+      lesson1: [
+        { foreign: 'Uh, ona je super!', english: 'Wow, she is great!' },
+        { foreign: 'Stvarno tako misliš?', english: 'Do you really think so? (Informal singular)' },
+        {
+          foreign: 'Da, volio bih je upoznati.',
+          english: 'Yes, I would like to meet her. (Spoken by a man)',
+        },
+        { foreign: 'voljela bih', english: 'I would like to (spoken by a woman)' },
+        { foreign: 'je', english: 'her' },
+        { foreign: 'Ona je moja prijateljica.', english: 'She is my friend.' },
+      ],
+    },
   },
 };
 
