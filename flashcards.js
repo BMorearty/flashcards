@@ -103,6 +103,12 @@ const flashcards = {
         { foreign: 'djeca', english: 'children' },
         { foreign: 'djed i baka', english: 'grandparents (grandfather and grandmother)' },
       ],
+      lesson5: [
+        { foreign: 'unuk', english: 'grandson' },
+        { foreign: 'unuka', english: 'granddaughter' },
+        { foreign: 'nećakinja (accent on second syllable)', english: 'niece' },
+        { foreign: 'nećak (accent on first syllable)', english: 'nephew' },
+      ],
     },
   },
 };
