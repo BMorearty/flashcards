@@ -18,7 +18,7 @@ const flashcards = {
       ],
       section2: [
         { foreign: 'Ja sam Brian', english: 'I am Brian' },
-        { foreign: 'Drago mi je', english: 'Nice to meet you' },
+        { foreign: 'Drago mi je', english: 'Nice to meet you', hard: true },
         { foreign: 'I meni', english: 'You too (nice to meet you too)' },
         { foreign: 'Doviđenja', english: 'Goodbye' },
         { foreign: 'Kako ide?', english: 'How’s it going?', hard: true },
@@ -50,7 +50,32 @@ const flashcards = {
     },
     chapter2: {
       name: 'My family',
-      section1: [],
+      section1: [
+        { foreign: 'To je moja sestra, Tanja', english: 'That is my sister, Tanja' },
+        { foreign: 'Ovo je', english: 'This is' },
+        { foreign: 'To je (ono je)', english: 'That is' },
+        { foreign: 'Moja sestra', english: 'My sister' },
+        { foreign: 'Moj brat', english: 'My brother' },
+        { foreign: 'Moje diete', english: 'My child' },
+        { foreign: 'Selo', english: 'Village' },
+        {
+          foreign: 'Imaš li i brata?',
+          english: 'Do you also have a brother? (Informal singular)',
+          hard: true,
+        },
+        { foreign: 'Da. On je tamo.', english: 'Yes. He is over there.' },
+        { foreign: 'Da', english: 'Yes' },
+      ],
+      section2: [
+        { foreign: 'On je s mamom i tatom.', english: 'He is with mom and dad.' },
+        { foreign: 'i', english: 'and/too/also' },
+        { foreign: 'Živi li i on ovdje?', english: 'Does he live here, too?' },
+        {
+          foreign: 'Cijela naša obitelj živi ovdje.',
+          english: 'Our whole family lives here.',
+          hard: true,
+        },
+      ],
     },
   },
 };
