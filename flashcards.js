@@ -10,13 +10,13 @@ const flashcards = {
   unit1: {
     chapter1: {
       name: 'Who are you?',
-      section1: [
+      lesson1: [
         { foreign: 'Dobar dan. Kako ste?', english: 'Hello. How are you? (formal singular)' },
         { foreign: 'Dobro. A Vi?', english: 'Fine. And you? (formal singular)' },
         { foreign: 'Zovem se Brian', english: 'My name is Brian' },
         { foreign: 'Kako se Vi zovete?', english: 'What is your name? (formal)' },
       ],
-      section2: [
+      lesson2: [
         { foreign: 'Ja sam Brian', english: 'I am Brian' },
         { foreign: 'Drago mi je', english: 'Nice to meet you', hard: true },
         { foreign: 'I meni', english: 'You too (nice to meet you too)' },
@@ -24,12 +24,12 @@ const flashcards = {
         { foreign: 'Kako ide?', english: 'How’s it going?', hard: true },
         { foreign: 'Vidimo se kasnije', english: 'See each other later', hard: true },
       ],
-      section3: [
+      lesson3: [
         { foreign: 'Što radiš?', english: 'What are you doing? (informal singular)', hard: true },
         { foreign: 'Vidimo se sutra', english: 'See each other tomorrow' },
         { foreign: 'Odlično', english: 'Excellent', hard: true },
       ],
-      section4: [
+      lesson4: [
         { foreign: 'loše', english: 'bad' },
         { foreign: 'tako-tako', english: 'so-so' },
         { foreign: 'Čuvaj se!', english: 'Take care of yourself! (informal singular)', hard: true },
@@ -38,7 +38,7 @@ const flashcards = {
         { foreign: 'ono', english: 'it' },
         { foreign: 'oni', english: 'they' },
       ],
-      section5: [
+      lesson5: [
         { foreign: 'Laku noć', english: 'Good night', hard: true },
         { foreign: 'Zbogom', english: 'Farewell (old-fashioned)' },
         { foreign: 'Dobro jutro', english: 'Good morning' },
@@ -46,11 +46,11 @@ const flashcards = {
         { foreign: 'Gospođa', english: 'Madam', hard: true },
         { foreign: 'Gospođica', english: 'Miss', hard: true },
       ],
-      section6: [{ foreign: 'Gđa', english: 'Ms.', hard: true }],
+      lesson6: [{ foreign: 'Gđa', english: 'Ms.', hard: true }],
     },
     chapter2: {
       name: 'My family',
-      section1: [
+      lesson1: [
         { foreign: 'To je moja sestra, Tanja', english: 'That is my sister, Tanja' },
         { foreign: 'Ovo je', english: 'This is' },
         { foreign: 'To je (ono je)', english: 'That is' },
@@ -66,7 +66,7 @@ const flashcards = {
         { foreign: 'Da. On je tamo.', english: 'Yes. He is over there.', hard: true },
         { foreign: 'Da', english: 'Yes' },
       ],
-      section2: [
+      lesson2: [
         { foreign: 'On je s mamom i tatom.', english: 'He is with mom and dad.' },
         { foreign: 'i', english: 'and/too/also' },
         { foreign: 'Živi li i on ovdje?', english: 'Does he live here, too?' },
@@ -92,7 +92,7 @@ Q. Quit
 
 let currentUnit = null;
 let currentChapter = null;
-let currentSection = null;
+let currentLesson = null;
 let showEnglish = true;
 let phrases = [];
 
@@ -152,7 +152,7 @@ Q. Quit
     const choiceNum = parseInt(choice, 10);
     if (choiceNum > 0 && choiceNum <= Object.keys(flashcards[currentUnit]).length) {
       currentChapter = `chapter${choiceNum}`;
-      showSectionMenu();
+      showLessonMenu();
       return;
     }
     console.log('Invalid choice. Try again.');
@@ -160,22 +160,23 @@ Q. Quit
   });
 }
 
-function showSectionMenu() {
-  const sectionMenu = `
-Choose a section:
+function showLessonMenu() {
+  const lessonMenu = `
+Choose a lesson:
 ${Object.keys(flashcards[currentUnit][currentChapter])
-  .map((section, index) => {
-    if (section === 'name') {
-      return '';
+  .map((lesson, index) => {
+    if (lesson === 'name') {
+      return null;
     }
-    return `${index}. Section ${index}`;
+    return `${index}. Lesson ${index}`;
   })
+  .filter(Boolean)
   .join('\n')}
-A. All sections
+A. All lessons
 B. Back to main menu
 Q. Quit
 `;
-  console.log(sectionMenu);
+  console.log(lessonMenu);
   rl.question('Your choice: ', (choice) => {
     if (choice.toLowerCase() === 'q') {
       rl.close();
@@ -186,7 +187,7 @@ Q. Quit
       return;
     }
     if (choice.toLowerCase() === 'a') {
-      currentSection = 'all';
+      currentLesson = 'all';
       startFlashcards();
       return;
     }
@@ -195,12 +196,12 @@ Q. Quit
       choiceNum > 0 &&
       choiceNum <= Object.keys(flashcards[currentUnit][currentChapter]).length - 1
     ) {
-      currentSection = `section${choiceNum}`;
+      currentLesson = `lesson${choiceNum}`;
       startFlashcards();
       return;
     }
     console.log('Invalid choice. Try again.');
-    showSectionMenu();
+    showLessonMenu();
   });
 }
 
@@ -221,29 +222,29 @@ function setupPhrases() {
   if (currentUnit === 'all' || currentUnit === 'hard') {
     for (let unit in flashcards) {
       for (let chapter in flashcards[unit]) {
-        for (let section in flashcards[unit][chapter]) {
-          if (section === 'name') {
+        for (let lesson in flashcards[unit][chapter]) {
+          if (lesson === 'name') {
             continue;
           }
           if (currentUnit === 'hard') {
             phrases = phrases.concat(
-              flashcards[unit][chapter][section].filter((phrase) => phrase.hard),
+              flashcards[unit][chapter][lesson].filter((phrase) => phrase.hard),
             );
             continue;
           }
-          phrases = phrases.concat(flashcards[unit][chapter][section]);
+          phrases = phrases.concat(flashcards[unit][chapter][lesson]);
         }
       }
     }
-  } else if (currentSection === 'all') {
-    for (let section in flashcards[currentUnit][currentChapter]) {
-      if (section === 'name') {
+  } else if (currentLesson === 'all') {
+    for (let lesson in flashcards[currentUnit][currentChapter]) {
+      if (lesson === 'name') {
         continue;
       }
-      phrases = phrases.concat(flashcards[currentUnit][currentChapter][section]);
+      phrases = phrases.concat(flashcards[currentUnit][currentChapter][lesson]);
     }
-  } else if (currentSection) {
-    phrases = flashcards[currentUnit][currentChapter][currentSection];
+  } else if (currentLesson) {
+    phrases = flashcards[currentUnit][currentChapter][currentLesson];
   }
 }
 
@@ -257,7 +258,7 @@ function showNextFlashcard() {
       return;
     }
     if (answer.toLowerCase() === 'b') {
-      currentSection = null;
+      currentLesson = null;
       showMenu();
       return;
     }
