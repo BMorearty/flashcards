@@ -212,6 +212,9 @@ function setupPhrases() {
     }
   } else if (currentSection === 'all') {
     for (let section in flashcards[currentUnit][currentChapter]) {
+      if (section === 'name') {
+        continue;
+      }
       phrases = phrases.concat(flashcards[currentUnit][currentChapter][section]);
     }
   } else if (currentSection) {
