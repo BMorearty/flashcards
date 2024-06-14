@@ -63,7 +63,7 @@ const flashcards = {
           english: 'Do you also have a brother? (Informal singular)',
           hard: true,
         },
-        { foreign: 'Da. On je tamo.', english: 'Yes. He is over there.' },
+        { foreign: 'Da. On je tamo.', english: 'Yes. He is over there.', hard: true },
         { foreign: 'Da', english: 'Yes' },
       ],
       section2: [
