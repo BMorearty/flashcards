@@ -94,6 +94,15 @@ const flashcards = {
         { foreign: 'kći', english: 'daughter' },
         { foreign: 'zaruke', english: 'engagement' },
       ],
+      lesson4: [
+        { foreign: 'brak', english: 'marriage' },
+        { foreign: 'u braku', english: 'married' },
+        { foreign: 'suprug', english: 'husband' },
+        { foreign: 'supruga', english: 'wife' },
+        { foreign: 'roditelji', english: 'parents' },
+        { foreign: 'djeca', english: 'children' },
+        { foreign: 'djed i baka', english: 'grandparents (grandfather and grandmother)' },
+      ],
     },
   },
 };
