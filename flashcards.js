@@ -180,7 +180,7 @@ Q. Quit
 }
 
 function startFlashcards() {
-  rl.question('Do you want to see English phrases or foreign phrases? (E/F): ', (answer) => {
+  rl.question('Do you want to see English phrases or foreign phrases? (E/f): ', (answer) => {
     if (answer.toLowerCase() === 'q') {
       rl.close();
       return;
