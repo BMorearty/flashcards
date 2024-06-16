@@ -19,7 +19,7 @@ const flashcards = {
       ],
       lesson2: [
         { foreign: 'Ja sam Brian', english: 'I am Brian' },
-        { foreign: 'Drago mi je', english: 'Nice to meet you (me is glad)', hard: true },
+        { foreign: 'Drago mi je', english: 'Nice to meet you', hard: true },
         { foreign: 'I meni', english: 'You too (nice to meet you too)' },
         { foreign: 'Doviđenja', english: 'Goodbye' },
         { foreign: 'Kako ide?', english: 'How’s it going?', hard: true },
@@ -43,9 +43,9 @@ const flashcards = {
         { foreign: 'Laku noć', english: 'Good night', hard: true },
         { foreign: 'Zbogom', english: 'Farewell (old-fashioned)' },
         { foreign: 'Dobro jutro', english: 'Good morning' },
-        { foreign: 'Gospodin', english: 'Sir', hard: true },
-        { foreign: 'Gospođa', english: 'Madam', hard: true },
-        { foreign: 'Gospođica', english: 'Miss', hard: true },
+        { foreign: 'Gospodin', english: 'Sir' },
+        { foreign: 'Gospođa', english: 'Madam' },
+        { foreign: 'Gospođica', english: 'Miss' },
       ],
       lesson6: [{ foreign: 'Gđa', english: 'Ms.', hard: true }],
     },
@@ -57,7 +57,7 @@ const flashcards = {
         { foreign: 'To je (ono je)', english: 'That is' },
         { foreign: 'moja sestra', english: 'my sister' },
         { foreign: 'moj brat', english: 'my brother' },
-        { foreign: 'moje diete', english: 'my child' },
+        { foreign: 'moje diete', english: 'my child', hard: true },
         { foreign: 'selo', english: 'village' },
         {
           foreign: 'Imaš li i brata?',
@@ -97,11 +97,11 @@ const flashcards = {
       ],
       lesson4: [
         { foreign: 'brak', english: 'marriage' },
-        { foreign: 'u braku', english: 'married' },
+        { foreign: 'u braku', english: 'married', hard: true },
         { foreign: 'suprug', english: 'husband' },
         { foreign: 'supruga', english: 'wife' },
         { foreign: 'roditelji', english: 'parents' },
-        { foreign: 'djeca', english: 'children' },
+        { foreign: 'djeca', english: 'children', hard: true },
         { foreign: 'djed i baka', english: 'grandparents (grandfather and grandmother)' },
       ],
       lesson5: [
@@ -122,23 +122,34 @@ const flashcards = {
         },
         { foreign: 'voljela bih', english: 'I would like to (spoken by a woman)' },
         { foreign: 'je', english: 'her' },
-        { foreign: 'Ona je moja prijateljica.', english: 'She is my friend.' },
+        { foreign: 'Ona je moja prijateljica.', english: 'She is my friend.', hard: true },
       ],
       lesson2: [
         {
           foreign: 'Upoznat ću te s njom.',
           english: 'I will introduce you (to her). (Informal singular)',
+          hard: true,
         },
         { foreign: 'te', english: 'you (Informal singular)' },
         { foreign: 'njom', english: 'her' },
-        { foreign: 'Nađimo se na kavi.', english: 'Let’s meet for coffee.' },
+        { foreign: 'Nađimo se na kavi.', english: 'Let’s meet for coffee.', hard: true },
         { foreign: 'na', english: 'on' },
         { foreign: 'lijepa', english: 'pretty' },
         { foreign: 'zgodan', english: 'handsome' },
         { foreign: 'mlad (muškarac)', english: 'young (man)' },
         { foreign: 'mlada (žena)', english: 'young (woman)' },
         { foreign: 'star (muškarac)', english: 'old (man)' },
+        { foreign: 'stara (žena)', english: 'old (woman)' }
       ],
+      lesson3: [
+        { foreign: 'visok (muškarac)', english: 'tall (man)' },
+        { foreign: 'visoka (žena) (accent on first syllable)', english: 'tall (woman)' },
+        { foreign: 'nizak (muškarac)', english: 'short (man)' },
+        { foreign: 'niska (žena)', english: 'short (woman)' },
+        { foreign: 'mršav (muškarac)', english: 'thin (man)' },
+        { foreign: 'mršava (žena)', english: 'thin (woman)' },
+        { foreign: 'debeo (muškarac)', english: 'fat (man)' },
+      ]
     },
   },
 };
@@ -314,10 +325,16 @@ async function setupPhrases() {
   } else if (currentLesson) {
     phrases = flashcards[currentUnit][currentChapter][currentLesson];
   }
+  for (let phrase in phrases) {
+    if (hardPhrases.includes(phrase.foreign)) {
+      phrase.hard = true;
+    }
+  }
 }
 
 function showNextFlashcard(phrase) {
   const randomPhrase = phrase ?? phrases[Math.floor(Math.random() * phrases.length)];
+  const hard = randomPhrase.hard ? '  (hard)' : '';
   console.log(`  ${chalk.yellow(showEnglish ? randomPhrase.english : randomPhrase.foreign)}`);
 
   rl.question('Enter: see translation, (B)ack, (Q)uit,\nLast was (H)ard: ', (answer) => {
@@ -338,7 +355,7 @@ function showNextFlashcard(phrase) {
     }
     const moveUpAndClearLine = '\u001b[1A\u001b[K';
     console.log(
-      `${moveUpAndClearLine}${moveUpAndClearLine}    ${chalk.green(showEnglish ? randomPhrase.foreign : randomPhrase.english)}`,
+      `${moveUpAndClearLine}${moveUpAndClearLine}    ${chalk.green(showEnglish ? randomPhrase.foreign : randomPhrase.english)}${hard}`,
     );
     lastPhrase = randomPhrase.foreign;
     showNextFlashcard();
