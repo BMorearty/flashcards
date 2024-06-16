@@ -18,7 +18,7 @@ const flashcards = {
       ],
       lesson2: [
         { foreign: 'Ja sam Brian', english: 'I am Brian' },
-        { foreign: 'Drago mi je', english: 'Nice to meet you', hard: true },
+        { foreign: 'Drago mi je', english: 'Nice to meet you (me is glad)', hard: true },
         { foreign: 'I meni', english: 'You too (nice to meet you too)' },
         { foreign: 'Doviđenja', english: 'Goodbye' },
         { foreign: 'Kako ide?', english: 'How’s it going?', hard: true },
@@ -124,7 +124,7 @@ const flashcards = {
         { foreign: 'Ona je moja prijateljica.', english: 'She is my friend.' },
       ],
       lesson2: [
-        { foreign: 'Upoznat ću te s njom.', english: 'I will introduce you. (Informal singular)' },
+        { foreign: 'Upoznat ću te s njom.', english: 'I will introduce you (to her). (Informal singular)' },
         { foreign: 'te', english: 'you (Informal singular)' },
         { foreign: 'njom', english: 'her' },
         { foreign: 'Nađimo se na kavi.', english: 'Let’s meet for coffee.' },
@@ -311,7 +311,7 @@ function showNextFlashcard() {
   const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
   console.log(`  ${chalk.yellow(showEnglish ? randomPhrase.english : randomPhrase.foreign)}`);
 
-  rl.question('Press Enter to see the translation, B to go back, or Q to quit: ', (answer) => {
+  rl.question('Enter: see translation, (B)ack, (Q)uit: ', (answer) => {
     if (answer.toLowerCase() === 'q') {
       rl.close();
       return;
