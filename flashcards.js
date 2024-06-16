@@ -123,6 +123,18 @@ const flashcards = {
         { foreign: 'je', english: 'her' },
         { foreign: 'Ona je moja prijateljica.', english: 'She is my friend.' },
       ],
+      lesson2: [
+        { foreign: 'Upoznat ću te s njom.', english: 'I will introduce you. (Informal singular)' },
+        { foreign: 'te', english: 'you (Informal singular)' },
+        { foreign: 'njom', english: 'her' },
+        { foreign: 'Nađimo se na kavi.', english: 'Let’s meet for coffee.' },
+        { foreign: 'na', english: 'on' },
+        { foreign: 'lijepa', english: 'pretty' },
+        { foreign: 'zgodan', english: 'handsome' },
+        { foreign: 'mlad (muškarac)', english: 'young (man)' },
+        { foreign: 'mlada (žena)', english: 'young (woman)' },
+        { foreign: 'star (muškarac)', english: 'old (man)' },
+      ],
     },
   },
 };
