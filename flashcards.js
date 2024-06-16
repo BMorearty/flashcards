@@ -1,4 +1,5 @@
 import readline from 'readline';
+import fs from 'fs';
 import chalk from 'chalk';
 
 const rl = readline.createInterface({
@@ -124,7 +125,10 @@ const flashcards = {
         { foreign: 'Ona je moja prijateljica.', english: 'She is my friend.' },
       ],
       lesson2: [
-        { foreign: 'Upoznat ću te s njom.', english: 'I will introduce you (to her). (Informal singular)' },
+        {
+          foreign: 'Upoznat ću te s njom.',
+          english: 'I will introduce you (to her). (Informal singular)',
+        },
         { foreign: 'te', english: 'you (Informal singular)' },
         { foreign: 'njom', english: 'her' },
         { foreign: 'Nađimo se na kavi.', english: 'Let’s meet for coffee.' },
@@ -154,6 +158,7 @@ let currentChapter = null;
 let currentLesson = null;
 let showEnglish = true;
 let phrases = [];
+let lastPhrase = null;
 
 function showMenu() {
   console.log(menu);
@@ -265,19 +270,22 @@ Q. Quit
 }
 
 function startFlashcards() {
-  rl.question('Do you want to see English phrases or foreign phrases? (E/f): ', (answer) => {
+  rl.question('Do you want to see English phrases\nor foreign phrases? (E/f): ', (answer) => {
     if (answer.toLowerCase() === 'q') {
       rl.close();
       return;
     }
     showEnglish = answer.toLowerCase() !== 'f';
-    setupPhrases();
-    showNextFlashcard();
+    setupPhrases().then(() => {
+      showNextFlashcard();
+    });
   });
 }
 
-function setupPhrases() {
+async function setupPhrases() {
   phrases = [];
+  const hardPhrases = await dynHardPhrases();
+  console.log(hardPhrases);
   if (currentUnit === 'all' || currentUnit === 'hard') {
     for (let unit in flashcards) {
       for (let chapter in flashcards[unit]) {
@@ -287,7 +295,9 @@ function setupPhrases() {
           }
           if (currentUnit === 'hard') {
             phrases = phrases.concat(
-              flashcards[unit][chapter][lesson].filter((phrase) => phrase.hard),
+              flashcards[unit][chapter][lesson].filter(
+                (phrase) => phrase.hard || hardPhrases.includes(phrase.foreign),
+              ),
             );
             continue;
           }
@@ -311,7 +321,7 @@ function showNextFlashcard() {
   const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
   console.log(`  ${chalk.yellow(showEnglish ? randomPhrase.english : randomPhrase.foreign)}`);
 
-  rl.question('Enter: see translation, (B)ack, (Q)uit: ', (answer) => {
+  rl.question('Enter: see translation, (B)ack, (Q)uit,\nLast was (H)ard: ', (answer) => {
     if (answer.toLowerCase() === 'q') {
       rl.close();
       return;
@@ -321,12 +331,44 @@ function showNextFlashcard() {
       showMenu();
       return;
     }
+    if (answer.toLowerCase() === 'h' && lastPhrase) {
+      addHard(lastPhrase);
+    }
     const moveUpAndClearLine = '\u001b[1A\u001b[K';
     console.log(
-      `${moveUpAndClearLine}    ${chalk.green(showEnglish ? randomPhrase.foreign : randomPhrase.english)}`,
+      `${moveUpAndClearLine}${moveUpAndClearLine}    ${chalk.green(showEnglish ? randomPhrase.foreign : randomPhrase.english)}`,
     );
+    lastPhrase = randomPhrase.foreign;
     showNextFlashcard();
   });
+}
+
+// Phrases in the hard phrases text file
+async function dynHardPhrases() {
+  const hardPhrases = [];
+
+  const rl = readline.createInterface({
+    input: fs.createReadStream('hardphrases.txt'),
+    crlfDelay: Infinity,
+  });
+
+  rl.on('line', (line) => {
+    hardPhrases.push(line);
+  });
+
+  await new Promise((resolve) => rl.on('close', resolve));
+
+  return hardPhrases;
+}
+
+async function addHard(phrase) {
+  if (!(await dynHardPhrases().includes(phrase))) {
+    fs.appendFile('hardphrases.txt', `${phrase}\n`, (err) => {
+      if (err) {
+        console.error(err);
+      }
+    });
+  }
 }
 
 showMenu();
