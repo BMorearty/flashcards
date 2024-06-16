@@ -316,33 +316,30 @@ async function setupPhrases() {
   }
 }
 
-function showNextFlashcard() {
-  const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
+function showNextFlashcard(phrase) {
+  const randomPhrase = phrase ?? phrases[Math.floor(Math.random() * phrases.length)];
   console.log(`  ${chalk.yellow(showEnglish ? randomPhrase.english : randomPhrase.foreign)}`);
 
-  let askAgain = true;
-  while (showAgain) {
-    askAgain = false;
-    rl.question('Enter: see translation, (B)ack, (Q)uit,\nLast was (H)ard: ', (answer) => {
-      if (answer.toLowerCase() === 'q') {
-        rl.close();
-        return;
-      }
-      if (answer.toLowerCase() === 'b') {
-        currentLesson = null;
-        showMenu();
-        return;
-      }
-      if (answer.toLowerCase() === 'h' && lastPhrase) {
-        addHard(lastPhrase);
-        askAgain = true;
-        return;
-      }
-      const moveUpAndClearLine = '\u001b[1A\u001b[K';
-      console.log(
-        `${moveUpAndClearLine}${moveUpAndClearLine}    ${chalk.green(showEnglish ? randomPhrase.foreign : randomPhrase.english)}`,
-      );
+  rl.question('Enter: see translation, (B)ack, (Q)uit,\nLast was (H)ard: ', (answer) => {
+    if (answer.toLowerCase() === 'q') {
+      rl.close();
+      return;
     }
+    if (answer.toLowerCase() === 'b') {
+      currentLesson = null;
+      showMenu();
+      return;
+    }
+    if (answer.toLowerCase() === 'h' && lastPhrase) {
+      addHard(lastPhrase).then(() => {
+        showNextFlashcard(randomPhrase);
+      });
+      return;
+    }
+    const moveUpAndClearLine = '\u001b[1A\u001b[K';
+    console.log(
+      `${moveUpAndClearLine}${moveUpAndClearLine}    ${chalk.green(showEnglish ? randomPhrase.foreign : randomPhrase.english)}`,
+    );
     lastPhrase = randomPhrase.foreign;
     showNextFlashcard();
   });
