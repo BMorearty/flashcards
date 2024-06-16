@@ -285,7 +285,6 @@ function startFlashcards() {
 async function setupPhrases() {
   phrases = [];
   const hardPhrases = await dynHardPhrases();
-  console.log(hardPhrases);
   if (currentUnit === 'all' || currentUnit === 'hard') {
     for (let unit in flashcards) {
       for (let chapter in flashcards[unit]) {
