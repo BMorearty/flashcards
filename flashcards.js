@@ -326,6 +326,10 @@ async function setupPhrases() {
   const hardPhrases = await dynHardPhrases();
   if (currentUnit === 'all' || currentUnit === 'hard') {
     for (let unit in flashcards) {
+      if (unit === 'custom') {
+        phrases = phrases.concat(flashcards[unit]);
+        continue;
+      }
       for (let chapter in flashcards[unit]) {
         for (let lesson in flashcards[unit][chapter]) {
           if (lesson === 'name') {
