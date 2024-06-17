@@ -327,6 +327,14 @@ async function setupPhrases() {
   if (currentUnit === 'all' || currentUnit === 'hard') {
     for (let unit in flashcards) {
       if (unit === 'custom') {
+        if (currentUnit === 'hard') {
+          phrases = phrases.concat(
+            flashcards[unit].filter(
+              (phrase) => phrase.hard || hardPhrases.includes(phrase.foreign),
+            ),
+          );
+          continue;
+        }
         phrases = phrases.concat(flashcards[unit]);
         continue;
       }
