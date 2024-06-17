@@ -22,7 +22,7 @@ const flashcards = {
     { foreign: 'most / mostovi', english: 'bridge / bridges' },
     { foreign: 'stol / stolovi', english: 'table / tables' },
     { foreign: 'dječak / dječaci', english: 'boy / boys' },
-    { foreign: 'liječnik / liyečnicie', english: 'doctor / doctors' },
+    { foreign: 'liječnik / liyečnici', english: 'doctor / doctors' },
     { foreign: 'poznanik / poznanici', english: 'acquaintance / acquaintances' },
     { foreign: 'čovjek / ljudi', english: 'man / people' },
     { foreign: 'brat / braća', english: 'brother / brothers' },
