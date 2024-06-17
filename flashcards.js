@@ -8,6 +8,28 @@ const rl = readline.createInterface({
 });
 
 const flashcards = {
+  custom: [
+    { foreign: 'kuća / kuće', english: 'house / houses' },
+    { foreign: 'žena / žene', english: 'woman / women' },
+    { foreign: 'stolica / stolice', english: 'chair / chairs' },
+    { foreign: 'pivo / piva', english: 'beer / beers' },
+    { foreign: 'vino / vina', english: 'wine / wines' },
+    { foreign: 'sunce', english: 'sun' },
+    { foreign: 'more / mora', english: 'sea / seas' },
+    { foreign: 'televizor / televizori', english: 'TV / TVs' },
+    { foreign: 'prijatelj / prijatelji', english: 'friend / friends' },
+    { foreign: 'susjed / susjedi', english: 'neighbor / neighbors' },
+    { foreign: 'most / mostovi', english: 'bridge / bridges' },
+    { foreign: 'stol / stolovi', english: 'table / tables' },
+    { foreign: 'dječak / dječaci', english: 'boy / boys' },
+    { foreign: 'liječnik / liyečnicie', english: 'doctor / doctors' },
+    { foreign: 'poznanik / poznanici', english: 'acquaintance / acquaintances' },
+    { foreign: 'čovjek / ljudi', english: 'man / people' },
+    { foreign: 'brat / braća', english: 'brother / brothers' },
+    { foreign: 'kći / kćeri', english: 'daughter / daughters' },
+    { foreign: 'djete / djeca', english: 'child / children' },
+    { foreign: 'nož / noževi', english: 'knife / knives' },
+  ],
   unit1: {
     chapter1: {
       name: 'Who are you?',
@@ -161,6 +183,7 @@ ${Object.keys(flashcards)
   .join('\n')}
 A. All units
 H. Hard phrases
+C. Custom phrases
 Q. Quit
 `;
 
@@ -190,6 +213,11 @@ function handleMenuChoice(choice) {
   }
   if (choice.toLowerCase() === 'h') {
     currentUnit = 'hard';
+    startFlashcards();
+    return;
+  }
+  if (choice.toLowerCase() === 'c') {
+    currentUnit = 'custom';
     startFlashcards();
     return;
   }
@@ -315,6 +343,8 @@ async function setupPhrases() {
         }
       }
     }
+  } else if (currentUnit === 'custom') {
+    phrases = flashcards[currentUnit];
   } else if (currentLesson === 'all') {
     for (let lesson in flashcards[currentUnit][currentChapter]) {
       if (lesson === 'name') {
