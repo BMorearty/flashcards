@@ -23,7 +23,6 @@ const flashcards = {
     { foreign: 'stol / stolovi', english: 'table / tables' },
     { foreign: 'dječak / dječaci', english: 'boy / boys' },
     { foreign: 'liječnik / liyečnici', english: 'doctor / doctors' },
-    { foreign: 'poznanik / poznanici', english: 'acquaintance / acquaintances' },
     { foreign: 'čovjek / ljudi', english: 'man / people' },
     { foreign: 'brat / braća', english: 'brother / brothers' },
     { foreign: 'kći / kćeri', english: 'daughter / daughters' },
@@ -171,6 +170,13 @@ const flashcards = {
         { foreign: 'mršav (muškarac)', english: 'thin (man)' },
         { foreign: 'mršava (žena)', english: 'thin (woman)' },
         { foreign: 'debeo (muškarac)', english: 'fat (man)' },
+      ],
+      lesson4: [
+        { foreign: 'debela (žena)', english: 'fat (woman)' },
+        { foreign: 'osobnost (accent on second syllable)', english: 'personality' },
+        { foreign: 'To mi se sviđa.', english: 'I like it.' },
+        { foreign: 'poznanik / poznanici', english: 'acquaintance / acquaintances (male)' },
+        { foreign: 'poznanica', english: 'acquaintance (female)' },
       ]
     },
   },
@@ -179,6 +185,7 @@ const flashcards = {
 const menu = `
 Choose an option:
 ${Object.keys(flashcards)
+  .filter(unit => unit !== 'custom')
   .map((unit, index) => `${index + 1}. Unit ${index + 1}`)
   .join('\n')}
 A. All units
@@ -232,6 +239,7 @@ function handleMenuChoice(choice) {
 }
 
 function showChapterMenu() {
+console.log(currentUnit)
   const chapterMenu = `
 Choose a chapter:
 ${Object.keys(flashcards[currentUnit])
