@@ -17,7 +17,6 @@ const flashcards = {
     { foreign: 'sunce', english: 'sun' },
     { foreign: 'more / mora', english: 'sea / seas' },
     { foreign: 'televizor / televizori', english: 'TV / TVs' },
-    { foreign: 'prijatelj / prijatelji', english: 'friend / friends' },
     { foreign: 'susjed / susjedi', english: 'neighbor / neighbors' },
     { foreign: 'most / mostovi', english: 'bridge / bridges' },
     { foreign: 'stol / stolovi', english: 'table / tables' },
@@ -177,7 +176,36 @@ const flashcards = {
         { foreign: 'To mi se sviđa.', english: 'I like it.' },
         { foreign: 'poznanik / poznanici', english: 'acquaintance / acquaintances (male)' },
         { foreign: 'poznanica', english: 'acquaintance (female)' },
-      ]
+      ],
+      lesson5: [
+        { foreign: 'neznanac (accent on 2nd syllable)', english: 'stranger (male)' },
+        { foreign: 'neznanka (accent on 1st syllable)', english: 'stranger (female)' },
+        { foreign: 'cimer', english: 'roommate' },
+        { foreign: 'djevojka', english: 'girl' },
+        { foreign: 'dečko', english: 'boy' },
+        { foreign: 'prijatelj / prijatelji', english: 'friend / friends' },
+      ],
+    },
+    chapter4: {
+      name: 'Where are you from?',
+      lesson1: [
+        { foreign: 'Odakle ste?', english: 'Where are you from? (Formal singular)' },
+        { foreign: 'Ja sam iz Sjedinjenih Država.', english: 'I am from the United States.' },
+        { foreign: 'Stvarno? Vrlo dobro govorite hrvatski.', english: 'Really? You speak Croatian very well. (Formal singular)' },
+        {
+          foreign: 'Govoriti: (ja) govorim, (ti) govoriš, (on/ona/ono) govori, (mi) govorimo, (vi) govorite, (oni/one/ona) govore',
+          english: 'To speak: (I) speak, (you) speak, (he/she/it) speaks, (we) speak, (you) speak, (they) speak'
+        },
+        {
+          foreign: 'Učim hrvatski pomoću jednog izvrsnog web-sitea koji se zove Mango Languages.',
+          english: 'I am learning Croatian from (with help of) a great website called Mango Languages.'
+        },
+        {
+          foreign: 'Učiti: (ja) učim, (ti) učiš, (on/ona/ono) ući, (mi) učimo, (vi) učite, (oni/one/ona) uće',
+          english: 'To learn: (I) learn, (you) learn, etc.'
+        },
+        { foreign: 'Ne učim.', english: 'I am not learning.' },
+      ],
     },
   },
 };
