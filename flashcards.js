@@ -278,7 +278,6 @@ function handleMenuChoice(choice) {
 }
 
 function showChapterMenu() {
-  console.log(currentUnit);
   const chapterMenu = `
 Choose a chapter:
 ${Object.keys(flashcards[currentUnit])
