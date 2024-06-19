@@ -159,7 +159,7 @@ const flashcards = {
         { foreign: 'mlad (muškarac)', english: 'young (man)' },
         { foreign: 'mlada (žena)', english: 'young (woman)' },
         { foreign: 'star (muškarac)', english: 'old (man)' },
-        { foreign: 'stara (žena)', english: 'old (woman)' }
+        { foreign: 'stara (žena)', english: 'old (woman)' },
       ],
       lesson3: [
         { foreign: 'visok (muškarac)', english: 'tall (man)' },
@@ -190,19 +190,30 @@ const flashcards = {
       name: 'Where are you from?',
       lesson1: [
         { foreign: 'Odakle ste?', english: 'Where are you from? (Formal singular)' },
-        { foreign: 'Ja sam iz Sjedinjenih Država.', english: 'I am from the United States.', hard: true },
-        { foreign: 'Stvarno? Vrlo dobro govorite hrvatski.', english: 'Really? You speak Croatian very well. (Formal singular)' },
         {
-          foreign: 'Govoriti: (ja) govorim, (ti) govoriš, (on/ona/ono) govori, (mi) govorimo, (vi) govorite, (oni/one/ona) govore',
-          english: 'To speak: (I) speak, (you) speak, (he/she/it) speaks, (we) speak, (you) speak, (they) speak'
+          foreign: 'Ja sam iz Sjedinjenih Država.',
+          english: 'I am from the United States.',
+          hard: true,
+        },
+        {
+          foreign: 'Stvarno? Vrlo dobro govorite hrvatski.',
+          english: 'Really? You speak Croatian very well. (Formal singular)',
+        },
+        {
+          foreign:
+            'Govoriti: (ja) govorim, (ti) govoriš, (on/ona/ono) govori, (mi) govorimo, (vi) govorite, (oni/one/ona) govore',
+          english:
+            'To speak: (I) speak, (you) speak, (he/she/it) speaks, (we) speak, (you) speak, (they) speak',
         },
         {
           foreign: 'Učim hrvatski pomoću jednog izvrsnog web-sitea koji se zove Mango Languages.',
-          english: 'I am learning Croatian from (with help of) a great website called Mango Languages.'
+          english:
+            'I am learning Croatian from (with help of) a great website called Mango Languages.',
         },
         {
-          foreign: 'Učiti: (ja) učim, (ti) učiš, (on/ona/ono) ući, (mi) učimo, (vi) učite, (oni/one/ona) uće',
-          english: 'To learn: (I) learn, (you) learn, etc.'
+          foreign:
+            'Učiti: (ja) učim, (ti) učiš, (on/ona/ono) ući, (mi) učimo, (vi) učite, (oni/one/ona) uće',
+          english: 'To learn: (I) learn, (you) learn, etc.',
         },
         { foreign: 'Ne učim.', english: 'I am not learning.' },
       ],
@@ -213,7 +224,7 @@ const flashcards = {
 const menu = `
 Choose an option:
 ${Object.keys(flashcards)
-  .filter(unit => unit !== 'custom')
+  .filter((unit) => unit !== 'custom')
   .map((unit, index) => `${index + 1}. Unit ${index + 1}`)
   .join('\n')}
 A. All units
@@ -267,7 +278,7 @@ function handleMenuChoice(choice) {
 }
 
 function showChapterMenu() {
-console.log(currentUnit)
+  console.log(currentUnit);
   const chapterMenu = `
 Choose a chapter:
 ${Object.keys(flashcards[currentUnit])
