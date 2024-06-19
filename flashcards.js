@@ -190,7 +190,7 @@ const flashcards = {
       name: 'Where are you from?',
       lesson1: [
         { foreign: 'Odakle ste?', english: 'Where are you from? (Formal singular)' },
-        { foreign: 'Ja sam iz Sjedinjenih Država.', english: 'I am from the United States.' },
+        { foreign: 'Ja sam iz Sjedinjenih Država.', english: 'I am from the United States.', hard: true },
         { foreign: 'Stvarno? Vrlo dobro govorite hrvatski.', english: 'Really? You speak Croatian very well. (Formal singular)' },
         {
           foreign: 'Govoriti: (ja) govorim, (ti) govoriš, (on/ona/ono) govori, (mi) govorimo, (vi) govorite, (oni/one/ona) govore',
