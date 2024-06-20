@@ -175,7 +175,7 @@ const flashcards = {
         { foreign: 'oSOBnost', english: 'personality', hard: true },
         { foreign: 'To mi se sviđa.', english: 'I like it.', hard: true },
         { foreign: 'poznanik / poznanici', english: 'acquaintance / acquaintances (male)' },
-        { foreign: 'poznanica', english: 'acquaintance (female)' },
+        { foreign: 'poznanica', english: 'acquaintance (female)', hard: true },
       ],
       lesson5: [
         { foreign: 'nezNANac', english: 'stranger (male)', hard: true },
@@ -226,17 +226,17 @@ const flashcards = {
         { foreign: 'Italija', english: 'Italy' },
         { foreign: 'taLIjanski', english: 'Italian' },
         { foreign: 'Austrija', english: 'Austria' },
-        { foreign: 'njemački', english: 'German' },
+        { foreign: 'njemački', english: 'German', hard: true },
         { foreign: 'Meksiko', english: 'Mexico' },
         { foreign: 'španjolski', english: 'Spanish' },
-        { foreign: 'puno', english: 'a lot' },
+        { foreign: 'puno', english: 'a lot', hard: true },
         { foreign: 'zemlja', english: 'country', hard: true },
         { foreign: 'ne', english: 'no' },
-        { foreign: 'naravno', english: 'of course' },
+        { foreign: 'naravno', english: 'of course', hard: true },
       ],
       lesson4: [
         { foreign: 'taKOđer', english: 'of course' },
-        { foreign: 'Moja doMOvina je…', english: 'My home country is…' },
+        { foreign: 'Moja doMOvina je…', english: 'My home country is…', hard: true },
         { foreign: 'Moj grad je…', english: 'My city (town) is…' },
         { foreign: 'Moje selo je…', english: 'My village is…' },
       ],
@@ -245,7 +245,7 @@ const flashcards = {
 };
 
 /*
-         { foreign: '', english: '' },
+        { foreign: '', english: '' },
 */
 
 const menu = `
