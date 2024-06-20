@@ -223,22 +223,22 @@ const flashcards = {
         { foreign: 'Da. RaZUMijem malo.', english: 'Yes. I understand a little.' },
       ],
       lesson3: [
-         { foreign: 'Italija', english: 'Italy' },
-         { foreign: 'taLIjanski', english: 'Italian' },
-         { foreign: 'Austrija', english: 'Austria' },
-         { foreign: 'njemački', english: 'German' },
-         { foreign: 'Meksiko', english: 'Mexico' },
-         { foreign: 'španjolski', english: 'Spanish' },
-         { foreign: 'puno', english: 'a lot' },
-         { foreign: 'zemlja', english: 'country', hard: true },
-         { foreign: 'ne', english: 'no' },
-         { foreign: 'naravno', english: 'of course' },
+        { foreign: 'Italija', english: 'Italy' },
+        { foreign: 'taLIjanski', english: 'Italian' },
+        { foreign: 'Austrija', english: 'Austria' },
+        { foreign: 'njemački', english: 'German' },
+        { foreign: 'Meksiko', english: 'Mexico' },
+        { foreign: 'španjolski', english: 'Spanish' },
+        { foreign: 'puno', english: 'a lot' },
+        { foreign: 'zemlja', english: 'country', hard: true },
+        { foreign: 'ne', english: 'no' },
+        { foreign: 'naravno', english: 'of course' },
       ],
       lesson4: [
-         { foreign: 'taKOđer', english: 'of course' },
-         { foreign: 'Moja doMOvina je…', english: 'My home country is…' },
-         { foreign: 'Moj grad je…', english: 'My city (town) is…' },
-         { foreign: 'Moje selo je…', english: 'My village is…' },
+        { foreign: 'taKOđer', english: 'of course' },
+        { foreign: 'Moja doMOvina je…', english: 'My home country is…' },
+        { foreign: 'Moj grad je…', english: 'My city (town) is…' },
+        { foreign: 'Moje selo je…', english: 'My village is…' },
       ],
     },
   },
@@ -448,8 +448,9 @@ async function setupPhrases() {
       if (lesson === 'name') {
         continue;
       }
-      phrases = phrases.concat(flashcards[currentUnit][currentChapter][lesson].
-        filter(phrase => phrase.hard));
+      phrases = phrases.concat(
+        flashcards[currentUnit][currentChapter][lesson].filter((phrase) => phrase.hard),
+      );
     }
   } else if (currentLesson) {
     phrases = flashcards[currentUnit][currentChapter][currentLesson];
