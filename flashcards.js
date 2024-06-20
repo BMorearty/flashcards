@@ -11,7 +11,7 @@ const flashcards = {
   custom: [
     { foreign: 'kuća / kuće', english: 'house / houses' },
     { foreign: 'žena / žene', english: 'woman / women' },
-    { foreign: 'stolica / stolice', english: 'chair / chairs' },
+    { foreign: 'stolica / stolice', english: 'chair / chairs', hard: true },
     { foreign: 'pivo / piva', english: 'beer / beers' },
     { foreign: 'vino / vina', english: 'wine / wines' },
     { foreign: 'sunce', english: 'sun' },
@@ -26,7 +26,7 @@ const flashcards = {
     { foreign: 'brat / braća', english: 'brother / brothers' },
     { foreign: 'kći / kćeri', english: 'daughter / daughters' },
     { foreign: 'djete / djeca', english: 'child / children' },
-    { foreign: 'nož / noževi', english: 'knife / knives' },
+    { foreign: 'nož / noževi', english: 'knife / knives', hard: true },
   ],
   unit1: {
     chapter1: {
@@ -155,7 +155,7 @@ const flashcards = {
         { foreign: 'Nađimo se na kavi.', english: 'Let’s meet for coffee.', hard: true },
         { foreign: 'na', english: 'on' },
         { foreign: 'lijepa', english: 'pretty' },
-        { foreign: 'zgodan', english: 'handsome' },
+        { foreign: 'zgodan', english: 'handsome', hard: true },
         { foreign: 'mlad (muškarac)', english: 'young (man)' },
         { foreign: 'mlada (žena)', english: 'young (woman)' },
         { foreign: 'star (muškarac)', english: 'old (man)' },
@@ -209,6 +209,7 @@ const flashcards = {
           foreign: 'Učim hrvatski pomoću jednog izvrsnog web-sitea koji se zove Mango Languages.',
           english:
             'I am learning Croatian from (with help of) a great website called Mango Languages.',
+          hard: true,
         },
         {
           foreign:
@@ -219,7 +220,7 @@ const flashcards = {
       ],
       lesson2: [
         { foreign: 'Govorite li engleski?', english: 'Do you speak English? (Formal singular)' },
-        { foreign: 'Da. RaZUMijem  malo.', english: 'Yes. I understand a little.' },
+        { foreign: 'Da. RaZUMijem malo.', english: 'Yes. I understand a little.' },
       ],
       lesson3: [
          { foreign: 'Italija', english: 'Italy' },
@@ -229,7 +230,7 @@ const flashcards = {
          { foreign: 'Meksiko', english: 'Mexico' },
          { foreign: 'španjolski', english: 'Spanish' },
          { foreign: 'puno', english: 'a lot' },
-         { foreign: 'zemlja', english: 'country' },
+         { foreign: 'zemlja', english: 'country', hard: true },
          { foreign: 'ne', english: 'no' },
          { foreign: 'naravno', english: 'of course' },
       ],
