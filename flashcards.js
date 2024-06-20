@@ -43,7 +43,7 @@ const flashcards = {
         { foreign: 'I meni', english: 'You too (nice to meet you too)' },
         { foreign: 'Doviđenja', english: 'Goodbye' },
         { foreign: 'Kako ide?', english: 'How’s it going?', hard: true },
-        { foreign: 'Vidimo se kasnije', english: 'See each other later', hard: true },
+        { foreign: 'Vidimo se kasnije.', english: 'See each other later.', hard: true },
       ],
       lesson3: [
         { foreign: 'Što radiš?', english: 'What are you doing? (informal singular)', hard: true },
@@ -60,14 +60,14 @@ const flashcards = {
         { foreign: 'oni', english: 'they' },
       ],
       lesson5: [
-        { foreign: 'Laku noć', english: 'Good night', hard: true },
+        { foreign: 'Laku noć', english: 'Good night' },
         { foreign: 'Zbogom', english: 'Farewell (old-fashioned)' },
         { foreign: 'Dobro jutro', english: 'Good morning' },
         { foreign: 'Gospodin', english: 'Sir' },
         { foreign: 'Gospođa', english: 'Madam' },
         { foreign: 'Gospođica', english: 'Miss' },
       ],
-      lesson6: [{ foreign: 'Gđa', english: 'Ms.', hard: true }],
+      lesson6: [{ foreign: 'Gđa', english: 'Ms.' }],
     },
     chapter2: {
       name: 'My family',
@@ -142,7 +142,7 @@ const flashcards = {
         },
         { foreign: 'voljela bih', english: 'I would like to (spoken by a woman)' },
         { foreign: 'je', english: 'her' },
-        { foreign: 'Ona je moja prijateljica.', english: 'She is my friend.', hard: true },
+        { foreign: 'Ona je moja prijateljica.', english: 'She is my friend.' },
       ],
       lesson2: [
         {
@@ -217,9 +217,29 @@ const flashcards = {
         },
         { foreign: 'Ne učim.', english: 'I am not learning.' },
       ],
+      lesson2: [
+        { foreign: 'Govorite li engleski?', english: 'Do you speak English? (Formal singular)' },
+        { foreign: 'Da. RaZUMijem  malo.', english: 'Yes. I understand a little.' },
+      ],
+      lesson3: [
+         { foreign: 'Italija', english: 'Italy' },
+         { foreign: 'taLIjanski', english: 'Italian' },
+         { foreign: 'Austrija', english: 'Austria' },
+         { foreign: 'njemački', english: 'German' },
+         { foreign: 'Meksiko', english: 'Mexico' },
+         { foreign: 'španjolski', english: 'Spanish' },
+         { foreign: 'puno', english: 'a lot' },
+         { foreign: 'zemlja', english: 'country' },
+         { foreign: 'ne', english: 'no' },
+         { foreign: 'naravno', english: 'of course' },
+      ],
     },
   },
 };
+
+/*
+         { foreign: '', english: '' },
+*/
 
 const menu = `
 Choose an option:
