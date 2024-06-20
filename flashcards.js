@@ -234,6 +234,12 @@ const flashcards = {
          { foreign: 'ne', english: 'no' },
          { foreign: 'naravno', english: 'of course' },
       ],
+      lesson4: [
+         { foreign: 'taKOđer', english: 'of course' },
+         { foreign: 'Moja doMOvina je…', english: 'My home country is…' },
+         { foreign: 'Moj grad je…', english: 'My city (town) is…' },
+         { foreign: 'Moje selo je…', english: 'My village is…' },
+      ],
     },
   },
 };
