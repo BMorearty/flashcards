@@ -343,6 +343,7 @@ ${Object.keys(flashcards[currentUnit][currentChapter])
   .filter(Boolean)
   .join('\n')}
 A. All lessons
+H. Hard phrases
 B. Back to main menu
 Q. Quit
 `;
@@ -358,6 +359,11 @@ Q. Quit
     }
     if (choice.toLowerCase() === 'a') {
       currentLesson = 'all';
+      startFlashcards();
+      return;
+    }
+    if (choice.toLowerCase() === 'h') {
+      currentLesson = 'hard';
       startFlashcards();
       return;
     }
@@ -430,6 +436,14 @@ async function setupPhrases() {
         continue;
       }
       phrases = phrases.concat(flashcards[currentUnit][currentChapter][lesson]);
+    }
+  } else if (currentLesson === 'hard') {
+    for (let lesson in flashcards[currentUnit][currentChapter]) {
+      if (lesson === 'name') {
+        continue;
+      }
+      phrases = phrases.concat(flashcards[currentUnit][currentChapter][lesson].
+        filter(phrase => phrase.hard));
     }
   } else if (currentLesson) {
     phrases = flashcards[currentUnit][currentChapter][currentLesson];
