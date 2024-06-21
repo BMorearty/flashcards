@@ -7,6 +7,13 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
+/*
+Govorite li engleski?
+Da. RaZUMijem malo.
+Drago mi je.
+To mi se svjiđa.
+*/
+
 const flashcards = {
   custom: [
     { foreign: 'kuća / kuće', english: 'house / houses' },
@@ -125,8 +132,8 @@ const flashcards = {
         { foreign: 'djed i baka', english: 'grandparents (grandfather and grandmother)' },
       ],
       lesson5: [
-        { foreign: 'unuk', english: 'grandson' },
-        { foreign: 'unuka', english: 'granddaughter' },
+        { foreign: 'unuk', english: 'grandson', hard: true },
+        { foreign: 'unuka', english: 'granddaughter', hard: true },
         { foreign: 'neĆAKinja', english: 'niece' },
         { foreign: 'NEćak', english: 'nephew' },
       ],
@@ -220,7 +227,7 @@ const flashcards = {
       ],
       lesson2: [
         { foreign: 'Govorite li engleski?', english: 'Do you speak English? (Formal singular)' },
-        { foreign: 'Da. RaZUMijem malo.', english: 'Yes. I understand a little.' },
+        { foreign: 'Da. RaZUMijem malo.', english: 'Yes. I understand a little.', hard: true },
       ],
       lesson3: [
         { foreign: 'Italija', english: 'Italy' },
@@ -284,12 +291,19 @@ const flashcards = {
           english: 'That is also a very good school.',
         },
       ],
-      lesson5: [
-        { foreign: 'Ali moj je bolji!', english: 'But mine is better!' },
+      lesson3: [
+        { foreign: 'Ali moj je bolji!', english: 'But mine is better!', hard: true },
         { foreign: 'državno obrazoVANje', english: 'public education' },
         { foreign: 'privatno obrazoVANje', english: 'private education' },
         { foreign: 'dipLOma', english: 'degree (in education)' },
         { foreign: 'stuDENT', english: 'undergraduate' },
+      ],
+      lesson4: [
+        { foreign: 'diplomirati', english: 'to graduate' },
+        { foreign: 'posloVANje', english: 'business', hard: true },
+        { foreign: 'fiNANcije', english: 'finance' },
+        { foreign: 'srednja škola', english: 'high school (literally middle school)' },
+        { foreign: 'umjetnost', english: 'art' },
       ],
     },
   },
