@@ -201,9 +201,9 @@ const flashcards = {
         },
         {
           foreign:
-            'Govoriti: (ja) govorim, (ti) govoriš, (on/ona/ono) govori, (mi) govorimo, (vi) govorite, (oni/one/ona) govore',
+            'Govoriti:; (ja) govorim; (ti) govoriš; (on/ona/ono) govori; (mi) govorimo; (vi) govorite; (oni/one/ona) govore',
           english:
-            'To speak: (I) speak, (you) speak, (he/she/it) speaks, (we) speak, (you) speak, (they) speak',
+            'To speak:; (I) speak; (you) speak; (he/she/it) speaks; (we) speak; (you) speak; (they) speak',
         },
         {
           foreign: 'Učim hrvatski pomoću jednog izvrsnog web-sitea koji se zove Mango Languages.',
@@ -213,7 +213,7 @@ const flashcards = {
         },
         {
           foreign:
-            'Učiti: (ja) učim, (ti) učiš, (on/ona/ono) ući, (mi) učimo, (vi) učite, (oni/one/ona) uće',
+            'Učiti:; (ja) učim; (ti) učiš; (on/ona/ono) ući; (mi) učimo; (vi) učite; (oni/one/ona) uće',
           english: 'To learn: (I) learn, (you) learn, etc.',
         },
         { foreign: 'Ne učim.', english: 'I am not learning.' },
@@ -247,11 +247,11 @@ const flashcards = {
         { foreign: 'Što ste stuDIRali?', english: 'What did you study? (Formal singular)' },
         {
           foreign:
-            'stuDIRati, past tense masculine/feminine: (ja) sam studirao/studirala (studirao sam), (ti) si studirao/studirala (studirao si), (on/ona/ono) je studirao/studirala (studirao je), (mi) smo studirali (studirali smo), (vi) ste studirali (studirali ste), (oni) su studirali (studiraoli su)',
+            'stuDIRati, past tense masculine/feminine:; (ja) sam studirao/studirala (studirao sam); (ti) si studirao/studirala (studirao si); (on/ona/ono) je studirao/studirala (studirao je); (mi) smo studirali (studirali smo); (vi) ste studirali (studirali ste); (oni) su studirali (studiraoli su)',
           english: 'to study, past tense masculine/feminine speaker: I studied, etc.',
         },
         {
-          foreign: 'biti: (ja) sam, (ti) si, (on/ona/ono) je, (mi) smo, (vi) ste, (oni) su',
+          foreign: 'biti:; (ja) sam; (ti) si; (on/ona/ono) je; (mi) smo; (vi) ste; (oni) su',
           english: 'to be, all conjugations. I am, etc.',
         },
         {
@@ -266,7 +266,7 @@ const flashcards = {
         },
         {
           foreign:
-            'negative form on the verb čuti: (ja) nisam čuo/čula, (ti) nisi čuo/čula, (on/ona/oni) nije čuo/čula, (mi) nismo čuli/čule, (vi) niste čuli/čule, (oni/one/ona) nisu čuli/čule/čula.',
+            'negative form on the verb čuti:; (ja) nisam čuo/čula; (ti) nisi čuo/čula; (on/ona/oni) nije čuo/čula; (mi) nismo čuli/čule; (vi) niste čuli/čule; (oni/one/ona) nisu čuli/čule/čula',
           english: 'Negative conjugation of to hear: I haven’t heard, you haven’t heard, etc.',
         },
         { foreign: 'za', english: 'of' },
@@ -497,7 +497,9 @@ async function setupPhrases() {
 function showNextFlashcard(phrase) {
   const randomPhrase = phrase ?? phrases[Math.floor(Math.random() * phrases.length)];
   const hard = randomPhrase.hard ? '  (hard)' : '';
-  console.log(`  ${chalk.yellow(showEnglish ? randomPhrase.english : randomPhrase.foreign)}`);
+  console.log(
+    `  ${chalk.yellow((showEnglish ? randomPhrase.english : randomPhrase.foreign).replaceAll(/; */g, '\n  '))}`,
+  );
 
   rl.question('Enter: see translation, (B)ack, (Q)uit,\nLast was (H)ard: ', (answer) => {
     if (answer.toLowerCase() === 'q') {
@@ -517,7 +519,7 @@ function showNextFlashcard(phrase) {
     }
     const moveUpAndClearLine = '\u001b[1A\u001b[K';
     console.log(
-      `${moveUpAndClearLine}${moveUpAndClearLine}    ${chalk.green(showEnglish ? randomPhrase.foreign : randomPhrase.english)}${hard}`,
+      `${moveUpAndClearLine}${moveUpAndClearLine}    ${chalk.green((showEnglish ? randomPhrase.foreign : randomPhrase.english).replaceAll(/; */g, '\n    '))}${hard}`,
     );
     lastPhrase = randomPhrase.foreign;
     showNextFlashcard();
