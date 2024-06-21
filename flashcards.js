@@ -255,7 +255,7 @@ const flashcards = {
           english: 'to be, all conjugations. I am, etc.',
         },
         {
-          foreign: 'Studirao sam povijest na Filozofskom fakultetu u Zagrebu.',
+          foreign: 'Studirao sam povijest na Filozofskom fakulTEtu u Zagrebu.',
           english:
             'I studied history at the Faculty of Humanities and Social Sciences in Zagreb. (From male)',
         },
@@ -266,11 +266,30 @@ const flashcards = {
         },
         {
           foreign:
-            'negative form on the verb čuti:; (ja) nisam čuo/čula; (ti) nisi čuo/čula; (on/ona/oni) nije čuo/čula; (mi) nismo čuli/čule; (vi) niste čuli/čule; (oni/one/ona) nisu čuli/čule/čula',
-          english: 'Negative conjugation of to hear: I haven’t heard, you haven’t heard, etc.',
+            'negative past tense form on the verb čuti:; (ja) nisam čuo/čula; (ti) nisi čuo/čula; (on/ona/oni) nije čuo/čula; (mi) nismo čuli/čule; (vi) niste čuli/čule; (oni/one/ona) nisu čuli/čule/čula',
+          english:
+            'Negative past tense conjugation of to hear: I haven’t heard, you haven’t heard, etc.',
         },
         { foreign: 'za', english: 'of' },
         { foreign: 'taj', english: 'that' },
+      ],
+      lesson2: [
+        { foreign: 'Što ste Vi studirali?', english: 'What did *you* study? (Formal singular)' },
+        {
+          foreign: 'Studirala sam pravo na Pravnom fakultetu u Osijeku.',
+          english: 'I studied law at the School of Law in Osijek. (Feminine)',
+        },
+        {
+          foreign: 'To je također vrlo dobar fakultet.',
+          english: 'That is also a very good school.',
+        },
+      ],
+      lesson5: [
+        { foreign: 'Ali moj je bolji!', english: 'But mine is better!' },
+        { foreign: 'državno obrazoVANje', english: 'public education' },
+        { foreign: 'privatno obrazoVANje', english: 'private education' },
+        { foreign: 'dipLOma', english: 'degree (in education)' },
+        { foreign: 'stuDENT', english: 'undergraduate' },
       ],
     },
   },
