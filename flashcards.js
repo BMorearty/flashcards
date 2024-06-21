@@ -235,10 +235,42 @@ const flashcards = {
         { foreign: 'naravno', english: 'of course', hard: true },
       ],
       lesson4: [
-        { foreign: 'taKOđer', english: 'of course' },
+        { foreign: 'taKOđer', english: 'also', hard: true },
         { foreign: 'Moja doMOvina je…', english: 'My home country is…', hard: true },
-        { foreign: 'Moj grad je…', english: 'My city (town) is…' },
-        { foreign: 'Moje selo je…', english: 'My village is…' },
+        { foreign: 'Moj grad je…', english: 'My city (town) is…', hard: true },
+        { foreign: 'Moje selo je…', english: 'My village is…', hard: true },
+      ],
+    },
+    chapter5: {
+      name: 'Where did you go to school?',
+      lesson1: [
+        { foreign: 'Što ste studirali?', english: 'What did you study? (Formal singular)' },
+        {
+          foreign:
+            'studirati, past tense masculine/feminine: (ja) sam studirao/studirala (studirao sam), (ti) si studirao/studirala (studirao si), (on/ona/ono) je studirao/studirala (studirao je), (mi) smo studirali (studirali smo), (vi) ste studirali (studirali ste), (oni) su studirali (studiraoli su)',
+          english: 'to study, past tense masculine/feminine speaker: I studied, etc.',
+        },
+        {
+          foreign: 'biti: (ja) sam, (ti) si, (on/ona/ono) je, (mi) smo, (vi) ste, (oni) su',
+          english: 'to be, all conjugations. I am, etc.',
+        },
+        {
+          foreign: 'Studirao sam povijest na Filozofskom fakultetu u Zagrebu.',
+          english:
+            'I studied history at the Faculty of Humanities and Social Sciences in Zagreb. (From male)',
+        },
+        { foreign: 'u', english: 'in' },
+        {
+          foreign: 'Čula sam za taj fakultet',
+          english: 'I’ve heard of that faculty. (From female)',
+        },
+        {
+          foreign:
+            'negative form on the verb čuti: (ja) nisam čuo/čula, (ti) nisi čuo/čula, (on/ona/oni) nije čuo/čula, (mi) nismo čuli/čule, (vi) niste čuli/čule, (oni/one/ona) nisu čuli/čule/čula.',
+          english: 'Negative conjugation of to hear: I haven’t heard, you haven’t heard, etc.',
+        },
+        { foreign: 'za', english: 'of' },
+        { foreign: 'taj', english: 'that' },
       ],
     },
   },
