@@ -244,10 +244,10 @@ const flashcards = {
     chapter5: {
       name: 'Where did you go to school?',
       lesson1: [
-        { foreign: 'Što ste studirali?', english: 'What did you study? (Formal singular)' },
+        { foreign: 'Što ste stuDIRali?', english: 'What did you study? (Formal singular)' },
         {
           foreign:
-            'studirati, past tense masculine/feminine: (ja) sam studirao/studirala (studirao sam), (ti) si studirao/studirala (studirao si), (on/ona/ono) je studirao/studirala (studirao je), (mi) smo studirali (studirali smo), (vi) ste studirali (studirali ste), (oni) su studirali (studiraoli su)',
+            'stuDIRati, past tense masculine/feminine: (ja) sam studirao/studirala (studirao sam), (ti) si studirao/studirala (studirao si), (on/ona/ono) je studirao/studirala (studirao je), (mi) smo studirali (studirali smo), (vi) ste studirali (studirali ste), (oni) su studirali (studiraoli su)',
           english: 'to study, past tense masculine/feminine speaker: I studied, etc.',
         },
         {
