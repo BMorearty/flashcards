@@ -146,9 +146,9 @@ const flashcards = {
         { foreign: 'Stvarno tako misliš?', english: 'Do you really think so? (Informal singular)' },
         {
           foreign: 'Da, volio bih je upoznati.',
-          english: 'Yes, I would like to meet her. (Spoken by a man)',
+          english: 'Yes, I would like/love to meet her. (Spoken by a man)',
         },
-        { foreign: 'voljela bih', english: 'I would like to (spoken by a woman)' },
+        { foreign: 'voljela bih', english: 'I would like/love to (spoken by a woman)' },
         { foreign: 'je', english: 'her' },
         { foreign: 'Ona je moja prijateljica.', english: 'She is my friend.' },
       ],
@@ -326,7 +326,8 @@ const flashcards = {
           english: 'I’d like to learn some new words in Croatian. (female)',
           hard: true,
         },
-        { foreign: 'Htjela bih', english: 'I’d like to (female)' },
+        { foreign: 'htjela bih', english: 'I’d like to (female)' },
+        { foreign: 'htio bih', english: 'I’d like to (male)' },
         {
           foreign: 'Molim te, razGOvaraj sa mnom na hrvatskom.',
           english: 'Please speak to me in Croatian. (informal singular)',
@@ -355,6 +356,11 @@ const flashcards = {
           english: 'How is that said in Croatian?',
           hard: true,
         },
+        {
+          foreign: 'Kako se kaže "xyz" na hrvatskom jeziku?',
+          english: 'How do you say "xyz" in Croatian?',
+          hard: true,
+        }
         { foreign: 'jeziku', english: 'language' },
         { foreign: 'To je knjiga.', english: 'That is a book.', hard: true },
         {
@@ -362,6 +368,7 @@ const flashcards = {
           english: 'Can you say that again? (informal singular)',
           hard: true,
         },
+        { foreign: 'reći', english: 'to say', hard: true },
         { foreign: 'ponovo', english: 'again' },
       ],
     },
