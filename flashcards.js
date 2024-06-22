@@ -161,7 +161,7 @@ const flashcards = {
         { foreign: 'te', english: 'you (Informal singular)' },
         { foreign: 'njom', english: 'her' },
         { foreign: 'Nađimo se na kavi.', english: 'Let’s meet for coffee.', hard: true },
-        { foreign: 'na', english: 'on' },
+        { foreign: 'na', english: 'on', hard: true },
         { foreign: 'lijepa', english: 'pretty' },
         { foreign: 'zgodan', english: 'handsome', hard: true },
         { foreign: 'mlad (muškarac)', english: 'young (man)' },
@@ -278,8 +278,8 @@ const flashcards = {
           english:
             'Negative past tense conjugation of to hear: I haven’t heard, you haven’t heard, etc.',
         },
-        { foreign: 'za', english: 'of' },
-        { foreign: 'taj', english: 'that (e.g., that thing)' },
+        { foreign: 'za', english: 'of', hard: true },
+        { foreign: 'taj', english: 'that (e.g., that thing)', hard: true },
       ],
       lesson2: [
         { foreign: 'Što ste Vi studirali?', english: 'What did *you* study? (Formal singular)' },
@@ -314,6 +314,26 @@ const flashcards = {
         { foreign: 'učenik (srednja škola)', english: 'student (high school)', hard: true },
         { foreign: 'ImpresiONiran sam.', english: 'I’m impressed. (male)' },
         { foreign: 'Impresionirana sam.', english: 'I’m impressed. (female)' },
+      ],
+    },
+  },
+  unit2: {
+    chapter1: {
+      name: 'How do you say...?',
+      lesson1: [
+        {
+          foreign: 'Htjela bih naUčiti neke nove riJEči na hrvatskom.',
+          english: 'I’d like to learn some new words in Croatian. (female)',
+          hard: true,
+        },
+        { foreign: 'Htjela bih', english: 'I’d like to (female)' },
+        {
+          foreign: 'Molim te, razGOvaraj sa mnom na hrvatskom.',
+          english: 'Please speak to me in Croatian. (informal singular)',
+          hard: true,
+        },
+        { foreign: 'molim te', english: 'please (informal singular)' },
+        { foreign: 'sa', english: 'with' },
       ],
     },
   },
