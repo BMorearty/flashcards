@@ -383,15 +383,16 @@ const flashcards = {
         { foreign: 'ponovo', english: 'again' },
       ],
       lesson3: [
-        { foreign: 'Što je tako smiJEŠno?', english: 'What is so funny?' },
+        { foreign: 'Što je tako smiJEŠno?', english: 'What is so funny?', hard: true },
         { foreign: 'Je li moj hrvatski tako loš?', english: 'Is my Croatian so bad?' },
         { foreign: 'je li?', english: 'is?' },
         {
           foreign: 'Ti si pravi stručnjak.',
           english: 'You are a real expert. (Informal singular)',
+          hard: true,
         },
         { foreign: 'Kako vi kažete...?', english: 'How do you say...? (Plural)' },
-        { foreign: 'Što ova rijEČ znači?', english: 'What does this word mean?' },
+        { foreign: 'Što ova rijEČ znači?', english: 'What does this word mean?', hard: true },
       ],
     },
   },
