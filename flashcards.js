@@ -332,7 +332,8 @@ const flashcards = {
       name: 'How do you say...?',
       lesson1: [
         {
-          foreign: 'Htjela bih naUčiti neke nove riJEči na hrvatskom.',
+          foreign:
+            'Htjela bih naUčiti neke nove riJEči na hrvatskom. (hrvatski becomes hrvatskom after na.)',
           english: 'I’d like to learn some new words in Croatian. (female)',
           hard: true,
         },
