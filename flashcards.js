@@ -14,6 +14,7 @@ Drago mi je.
 To mi se svjiđa.
 Čuvaj se!
 Molim te, goVOri sporije.
+Ti govoriš prebrzo.
 */
 
 const flashcards = {
@@ -418,6 +419,17 @@ const flashcards = {
           english: 'You are speaking too fast. (Informal singular)',
           hard: true,
         },
+      ],
+      lesson6: [
+        {
+          foreign: 'Molim te, poNOvi pitanje.',
+          english: 'Please repeat the question. (Informal singular)',
+          hard: true,
+        },
+        { foreign: 'pitanje', english: 'question' },
+        { foreign: 'stvar', english: 'thing' },
+        { foreign: 'odgovor', english: 'answer' },
+        { foreign: 'čitati', english: 'to read' },
       ],
     },
   },
