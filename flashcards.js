@@ -286,7 +286,7 @@ const flashcards = {
           english:
             'Negative past tense conjugation of to hear: I haven’t heard, you haven’t heard, etc.',
         },
-        { foreign: 'za', english: 'of', hard: true },
+        { foreign: 'za', english: 'of / for', hard: true },
         { foreign: 'taj', english: 'that (as in "that thing")', hard: true },
       ],
       lesson2: [
@@ -372,6 +372,11 @@ const flashcards = {
           english: 'Can you say that again? (Informal singular)',
           hard: true,
         },
+        {
+          foreign: 'možeš li...?',
+          english: 'can you...? (Informal singular)',
+          hard: true,
+        },
         { foreign: 'rećiti', english: 'to say', hard: true },
         { foreign: 'ponovo', english: 'again' },
       ],
@@ -427,6 +432,34 @@ const flashcards = {
         { foreign: 'slovo', english: 'letter (in alphabet)' },
         { foreign: 'pismo', english: 'letter (a written message)' },
         { foreign: 'pravopis', english: 'spelling', hard: true },
+      ],
+    },
+    chapter2: {
+      name: 'Haggling and money',
+      lesson1: [
+        {
+          foreign: 'Želio bih kartu za vlak do Zagreba.',
+          english: 'I would like a train ticket to Zagreb. (Formal, male)',
+        },
+        { foreign: 'želio bih', english: 'I would like (Formal, male)' },
+        { foreign: 'željela bih', english: 'I would like (Formal, female)' },
+        { foreign: 'do', english: 'to (as in, “a ticket to Zagreb”)' },
+        { foreign: 'Koliko to košta?', english: 'How much does it cost?' },
+      ],
+      lesson2: [
+        { foreign: 'To je peDEset kuna.', english: 'It is fifty kunas.' },
+        {
+          foreign: 'Mogu Vam dati samo četrDEset pet.',
+          english: 'I can only give you 45. (Formal singular)',
+          hard: true,
+        },
+        { foreign: 'mogu', english: 'I can', hard: true },
+        { foreign: 'Žao mi je.', english: 'I’m sorry.', hard: true },
+        {
+          foreign: 'Nema pregovora o ciJEni.',
+          english: 'No negotiations about price.',
+          hard: true,
+        },
       ],
     },
   },
