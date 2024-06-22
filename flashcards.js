@@ -13,6 +13,7 @@ Da. RaZUMijem malo.
 Drago mi je.
 To mi se svjiđa.
 Čuvaj se!
+Molim te, goVOri sporije.
 */
 
 const flashcards = {
@@ -399,8 +400,22 @@ const flashcards = {
         {
           foreign: 'Kako izGOvaraš ovu riJEČ?',
           english: 'How do you pronounce this word? (Informal singular)',
+          hard: true,
         },
-        { foreign: 'Kakav je moj izgovor?', english: 'How is my pronunciation?' },
+        { foreign: 'Kakav je moj izgovor?', english: 'How is my pronunciation?', hard: true },
+      ],
+      lesson5: [
+        { foreign: 'Ja učim!', english: 'I am learning!' },
+        {
+          foreign: 'Molim te, goVOri sporije.',
+          english: 'Please speak more slowly. (Informal singular)',
+          hard: true,
+        },
+        {
+          foreign: 'Ti govoriš prebrzo.',
+          english: 'You are speaking too fast. (Informal singular)',
+          hard: true,
+        },
       ],
     },
   },
