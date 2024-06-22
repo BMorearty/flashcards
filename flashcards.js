@@ -335,6 +335,35 @@ const flashcards = {
         { foreign: 'molim te', english: 'please (informal singular)' },
         { foreign: 'sa', english: 'with' },
       ],
+      lesson2: [
+        {
+          foreign: 'Htjela bih naUčiti neke nove riJEči na hrvatskom.',
+          english: 'I’d like to learn some new words in Croatian. (female)',
+          hard: true,
+        },
+        { foreign: 'Htjela bih', english: 'I’d like to (female)' },
+        {
+          foreign: 'Molim te, razGOvaraj sa mnom na hrvatskom.',
+          english: 'Please speak to me in Croatian. (informal singular)',
+          hard: true,
+        },
+        { foreign: 'molim te', english: 'please (informal singular)' },
+        { foreign: 'sa', english: 'with' },
+        { foreign: 'Nema probLEma.', english: 'No problem.' },
+        {
+          foreign: 'Kako se to kaže na hrvatskom jeziku?',
+          english: 'How is that said in Croatian?',
+          hard: true,
+        },
+        { foreign: 'jeziku', english: 'language' },
+        { foreign: 'To je knjiga.', english: 'That is a book.', hard: true },
+        {
+          foreign: 'Možeš li to reći ponovo?',
+          english: 'Can you say that again? (informal singular)',
+          hard: true,
+        },
+        { foreign: 'ponovo', english: 'again' },
+      ],
     },
   },
 };
