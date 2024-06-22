@@ -12,6 +12,7 @@ Govorite li engleski?
 Da. RaZUMijem malo.
 Drago mi je.
 To mi se svjiđa.
+Čuvaj se!
 */
 
 const flashcards = {
@@ -190,7 +191,7 @@ const flashcards = {
         { foreign: 'cimer', english: 'roommate' },
         { foreign: 'djevojka', english: 'girl', hard: true },
         { foreign: 'dečko', english: 'boy', hard: true },
-        { foreign: 'prijatelj / prijatelji', english: 'friend / friends' },
+        { foreign: 'prijatelj / prijatelji', english: 'friend / friends (male)' },
       ],
     },
     chapter4: {
