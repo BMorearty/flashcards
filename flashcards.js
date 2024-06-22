@@ -394,6 +394,14 @@ const flashcards = {
         { foreign: 'Kako vi kažete...?', english: 'How do you say...? (Plural)' },
         { foreign: 'Što ova rijEČ znači?', english: 'What does this word mean?', hard: true },
       ],
+      lesson4: [
+        { foreign: 'Što je to?', english: 'What is that?' },
+        {
+          foreign: 'Kako izGOvaraš ovu riJEČ?',
+          english: 'How do you pronounce this word? (Informal singular)',
+        },
+        { foreign: 'Kakav je moj izgovor?', english: 'How is my pronunciation?' },
+      ],
     },
   },
 };
