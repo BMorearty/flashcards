@@ -366,6 +366,8 @@ const flashcards = {
         { foreign: 'molim te', english: 'please (Informal singular)' },
         { foreign: 'sa', english: 'with' },
         { foreign: 'Nema probLEma.', english: 'No problem.' },
+        { foreign: 'nema', english: 'there is not / there are not', hard: true },
+        { foreign: 'ima', english: 'there is / there are', hard: true },
         {
           foreign: 'Kako se to kaže na hrvatskom jeziku?',
           english: 'How is that said in Croatian?',
