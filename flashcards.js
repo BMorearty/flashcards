@@ -40,10 +40,10 @@ const flashcards = {
     chapter1: {
       name: 'Who are you?',
       lesson1: [
-        { foreign: 'Dobar dan. Kako ste?', english: 'Hello. How are you? (formal singular)' },
-        { foreign: 'Dobro. A Vi?', english: 'Fine. And you? (formal singular)' },
+        { foreign: 'Dobar dan. Kako ste?', english: 'Hello. How are you? (Formal singular)' },
+        { foreign: 'Dobro. A Vi?', english: 'Fine. And you? (Formal singular)' },
         { foreign: 'Zovem se Brian', english: 'My name is Brian' },
-        { foreign: 'Kako se Vi zovete?', english: 'What is your name? (formal)' },
+        { foreign: 'Kako se Vi zovete?', english: 'What is your name? (Formal)' },
       ],
       lesson2: [
         { foreign: 'Ja sam Brian', english: 'I am Brian' },
@@ -54,14 +54,14 @@ const flashcards = {
         { foreign: 'Vidimo se kasnije.', english: 'See each other later.', hard: true },
       ],
       lesson3: [
-        { foreign: 'Što radiš?', english: 'What are you doing? (informal singular)', hard: true },
+        { foreign: 'Što radiš?', english: 'What are you doing? (Informal singular)', hard: true },
         { foreign: 'Vidimo se sutra', english: 'See each other tomorrow' },
         { foreign: 'Odlično', english: 'Excellent', hard: true },
       ],
       lesson4: [
         { foreign: 'loše', english: 'bad' },
         { foreign: 'tako-tako', english: 'so-so' },
-        { foreign: 'Čuvaj se!', english: 'Take care of yourself! (informal singular)', hard: true },
+        { foreign: 'Čuvaj se!', english: 'Take care of yourself! (Informal singular)', hard: true },
         { foreign: 'on', english: 'he' },
         { foreign: 'ona', english: 'she' },
         { foreign: 'ono', english: 'it' },
@@ -341,10 +341,10 @@ const flashcards = {
         { foreign: 'htio bih', english: 'I’d like to (male)' },
         {
           foreign: 'Molim te, razGOvaraj sa mnom na hrvatskom.',
-          english: 'Please speak to me in Croatian. (informal singular)',
+          english: 'Please speak to me in Croatian. (Informal singular)',
           hard: true,
         },
-        { foreign: 'molim te', english: 'please (informal singular)' },
+        { foreign: 'molim te', english: 'please (Informal singular)' },
         { foreign: 'sa', english: 'with' },
       ],
       lesson2: [
@@ -356,10 +356,10 @@ const flashcards = {
         { foreign: 'Htjela bih', english: 'I’d like to (female)' },
         {
           foreign: 'Molim te, razGOvaraj sa mnom na hrvatskom.',
-          english: 'Please speak to me in Croatian. (informal singular)',
+          english: 'Please speak to me in Croatian. (Informal singular)',
           hard: true,
         },
-        { foreign: 'molim te', english: 'please (informal singular)' },
+        { foreign: 'molim te', english: 'please (Informal singular)' },
         { foreign: 'sa', english: 'with' },
         { foreign: 'Nema probLEma.', english: 'No problem.' },
         {
@@ -376,7 +376,7 @@ const flashcards = {
         { foreign: 'To je knjiga.', english: 'That is a book.', hard: true },
         {
           foreign: 'Možeš li to reći ponovo?',
-          english: 'Can you say that again? (informal singular)',
+          english: 'Can you say that again? (Informal singular)',
           hard: true,
         },
         { foreign: 'rećiti', english: 'to say', hard: true },
