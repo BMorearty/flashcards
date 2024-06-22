@@ -36,6 +36,7 @@ const flashcards = {
     { foreign: 'kći / kćeri', english: 'daughter / daughters' },
     { foreign: 'djete / djeca', english: 'child / children' },
     { foreign: 'nož / noževi', english: 'knife / knives', hard: true },
+    { foreign: 'dobra večer', english: 'good evening', hard: true },
   ],
   unit1: {
     chapter1: {
