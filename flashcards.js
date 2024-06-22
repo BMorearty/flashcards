@@ -252,7 +252,11 @@ const flashcards = {
     chapter5: {
       name: 'Where did you go to school?',
       lesson1: [
-        { foreign: 'Što ste stuDIRali?', english: 'What did you study? (Formal singular)' },
+        {
+          foreign: 'Što ste stuDIRali?',
+          english: 'What did you study? (Formal singular)',
+          hard: true,
+        },
         {
           foreign:
             'stuDIRati, past tense masculine/feminine:; (ja) sam studirao/studirala (studirao sam); (ti) si studirao/studirala (studirao si); (on/ona/ono) je studirao/studirala (studirao je); (mi) smo studirali (studirali smo); (vi) ste studirali (studirali ste); (oni) su studirali (studiraoli su)',
@@ -263,7 +267,7 @@ const flashcards = {
           english: 'to be, all conjugations. I am, etc.',
         },
         {
-          foreign: 'Studirao sam povijest na Filozofskom fakulTEtu u Zagrebu.',
+          foreign: 'StuDIrao sam povijest na Filozofskom fakulTEtu u Zagrebu.',
           english:
             'I studied history at the Faculty of Humanities and Social Sciences in Zagreb. (From male)',
         },
@@ -282,9 +286,9 @@ const flashcards = {
         { foreign: 'taj', english: 'that (e.g., that thing)', hard: true },
       ],
       lesson2: [
-        { foreign: 'Što ste Vi studirali?', english: 'What did *you* study? (Formal singular)' },
+        { foreign: 'Što ste Vi stuDIrali?', english: 'What did *you* study? (Formal singular)' },
         {
-          foreign: 'Studirala sam pravo na Pravnom fakultetu u Osijeku.',
+          foreign: 'StuDIrala sam pravo na Pravnom fakultetu u Osijeku.',
           english: 'I studied law at the School of Law in Osijek. (Feminine)',
         },
         {
@@ -300,7 +304,7 @@ const flashcards = {
         { foreign: 'stuDENT', english: 'undergraduate' },
       ],
       lesson4: [
-        { foreign: 'diplomirati', english: 'to graduate' },
+        { foreign: 'diploMIrati', english: 'to graduate' },
         { foreign: 'posloVANje', english: 'business', hard: true },
         { foreign: 'fiNANcije', english: 'finance' },
         { foreign: 'srednja škola', english: 'high school (literally middle school)', hard: true },
@@ -314,6 +318,12 @@ const flashcards = {
         { foreign: 'učenik (srednja škola)', english: 'student (high school)', hard: true },
         { foreign: 'ImpresiONiran sam.', english: 'I’m impressed. (male)' },
         { foreign: 'Impresionirana sam.', english: 'I’m impressed. (female)' },
+      ],
+      lesson6: [
+        { foreign: 'glasovna pošta', english: 'voicemail' },
+        { foreign: 'e-pošta', english: 'email' },
+        { foreign: 'bilješka', english: 'note', hard: true },
+        { foreign: 'teLEfonski broj', english: 'phone number', hard: true },
       ],
     },
   },
@@ -360,7 +370,7 @@ const flashcards = {
           foreign: 'Kako se kaže "xyz" na hrvatskom jeziku?',
           english: 'How do you say "xyz" in Croatian?',
           hard: true,
-        }
+        },
         { foreign: 'jeziku', english: 'language' },
         { foreign: 'To je knjiga.', english: 'That is a book.', hard: true },
         {
