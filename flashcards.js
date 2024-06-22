@@ -352,19 +352,6 @@ const flashcards = {
         { foreign: 'sa', english: 'with' },
       ],
       lesson2: [
-        {
-          foreign: 'Htjela bih naUčiti neke nove riJEči na hrvatskom.',
-          english: 'I’d like to learn some new words in Croatian. (female)',
-          hard: true,
-        },
-        { foreign: 'Htjela bih', english: 'I’d like to (female)' },
-        {
-          foreign: 'Molim te, razGOvaraj sa mnom na hrvatskom.',
-          english: 'Please speak to me in Croatian. (Informal singular)',
-          hard: true,
-        },
-        { foreign: 'molim te', english: 'please (Informal singular)' },
-        { foreign: 'sa', english: 'with' },
         { foreign: 'Nema probLEma.', english: 'No problem.' },
         { foreign: 'nema', english: 'there is not / there are not', hard: true },
         { foreign: 'ima', english: 'there is / there are', hard: true },
