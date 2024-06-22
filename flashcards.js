@@ -306,6 +306,15 @@ const flashcards = {
         { foreign: 'srednja škola', english: 'high school (literally middle school)', hard: true },
         { foreign: 'umjetnost', english: 'art', hard: true },
       ],
+      lesson5: [
+        { foreign: 'mateMAtika', english: 'mathematics' },
+        { foreign: 'psihoLOgija', english: 'philosophy' },
+        { foreign: 'fizika', english: 'physics' },
+        { foreign: 'profesor', english: 'professor' },
+        { foreign: 'učenik (srednja škola)', english: 'student (high school)', hard: true },
+        { foreign: 'ImpresiONiran sam.', english: 'I’m impressed. (male)' },
+        { foreign: 'Impresionirana sam.', english: 'I’m impressed. (female)' },
+      ],
     },
   },
 };
