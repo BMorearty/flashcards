@@ -281,7 +281,7 @@ const flashcards = {
         },
         {
           foreign:
-            'negative past tense form on the verb čuti:; (ja) nisam čuo/čula; (ti) nisi čuo/čula; (on/ona/oni) nije čuo/čula; (mi) nismo čuli/čule; (vi) niste čuli/čule; (oni/one/ona) nisu čuli/čule/čula',
+            'negative past tense form on the verb čuti:; (ja) nisam čuo/čula; (ti) nisi čuo/čula; (on/ona/ono) nije čuo/čula/čulo; (mi) nismo čuli/čule; (vi) niste čuli/čule; (oni/one/ona) nisu čuli/čule/čula',
           english:
             'Negative past tense conjugation of to hear: I haven’t heard, you haven’t heard, etc.',
         },
