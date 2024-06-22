@@ -431,6 +431,14 @@ const flashcards = {
         { foreign: 'odgovor', english: 'answer' },
         { foreign: 'čitati', english: 'to read' },
       ],
+      lesson7: [
+        { foreign: 'Čitaj!', english: 'Read! (Informal singular imperative)' },
+        { foreign: 'pisati', english: 'to write' },
+        { foreign: 'Piši!', english: 'Write! (Informal singular imperative)' },
+        { foreign: 'slovo', english: 'letter (in alphabet)' },
+        { foreign: 'pismo', english: 'letter (a written message)' },
+        { foreign: 'pravopis', english: 'spelling', hard: true },
+      ],
     },
   },
 };
