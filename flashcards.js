@@ -378,7 +378,7 @@ const flashcards = {
           english: 'Can you say that again? (informal singular)',
           hard: true,
         },
-        { foreign: 'reći', english: 'to say', hard: true },
+        { foreign: 'rećiti', english: 'to say', hard: true },
         { foreign: 'ponovo', english: 'again' },
       ],
     },
