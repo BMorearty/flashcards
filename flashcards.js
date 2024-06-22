@@ -248,9 +248,9 @@ const flashcards = {
       ],
       lesson4: [
         { foreign: 'taKOđer', english: 'also', hard: true },
-        { foreign: 'Moja doMOvina je…', english: 'My home country is…', hard: true },
-        { foreign: 'Moj grad je…', english: 'My city (town) is…', hard: true },
-        { foreign: 'Moje selo je…', english: 'My village is…', hard: true },
+        { foreign: 'Moja doMOvina je…', english: 'My home country is…' },
+        { foreign: 'Moj grad je…', english: 'My city (town) is…' },
+        { foreign: 'Moje selo je…', english: 'My village is…' },
       ],
     },
     chapter5: {
@@ -287,7 +287,7 @@ const flashcards = {
             'Negative past tense conjugation of to hear: I haven’t heard, you haven’t heard, etc.',
         },
         { foreign: 'za', english: 'of', hard: true },
-        { foreign: 'taj', english: 'that (e.g., that thing)', hard: true },
+        { foreign: 'taj', english: 'that (as in "that thing")', hard: true },
       ],
       lesson2: [
         { foreign: 'Što ste Vi stuDIrali?', english: 'What did *you* study? (Formal singular)' },
