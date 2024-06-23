@@ -464,7 +464,10 @@ const flashcards = {
       lesson3: [
         { foreign: 'To je sve što imam.', english: 'That is all that I have.' },
         { foreign: 'sve', english: 'all' },
-        { foreign: 'Molim Vas, možete li mi dati popust?', english: 'Can you please give me a discount? (Formal singular)' },
+        {
+          foreign: 'Molim Vas, možete li mi dati popust?',
+          english: 'Can you please give me a discount? (Formal singular)',
+        },
         { foreign: 'Molim Vas', english: 'please (Formal singular)' },
         { foreign: 'možete li...?', english: 'can you...? (Formal singular)' },
         { foreign: 'To je previše.', english: 'That is too much.' },
