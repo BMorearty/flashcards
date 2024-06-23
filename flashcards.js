@@ -461,6 +461,20 @@ const flashcards = {
           hard: true,
         },
       ],
+      lesson3: [
+        { foreign: 'To je sve što imam.', english: 'That is all that I have.' },
+        { foreign: 'sve', english: 'all' },
+        { foreign: 'Molim Vas, možete li mi dati popust?', english: 'Can you please give me a discount? (Formal singular)' },
+        { foreign: 'Molim Vas', english: 'please (Formal singular)' },
+        { foreign: 'možete li...?', english: 'can you...? (Formal singular)' },
+        { foreign: 'To je previše.', english: 'That is too much.' },
+        { foreign: 'skupo', english: 'expensive' },
+        { foreign: 'jeftino', english: 'cheap' },
+        { foreign: 'skup kaput', english: 'expensive coat' },
+        { foreign: 'skupa karta', english: 'expensive ticket' },
+        { foreign: 'skupe karte', english: 'expensive tickets' },
+        { foreign: 'skupo ljetovanje', english: 'expensive summer holidays' },
+      ],
     },
   },
 };
@@ -710,7 +724,7 @@ function showNextFlashcard(phrase) {
     console.log(
       `${moveUpAndClearLine}${moveUpAndClearLine}    ${chalk.green((showEnglish ? randomPhrase.foreign : randomPhrase.english).replaceAll(/; */g, '\n    '))}${hard}`,
     );
-    lastPhrase = randomPhrase.foreign;
+    lastPhrase = randomPhrase;
     showNextFlashcard();
   });
 }
@@ -734,8 +748,9 @@ async function dynHardPhrases() {
 }
 
 async function addHard(phrase) {
-  if (!(await dynHardPhrases()).includes(phrase)) {
-    fs.appendFile('hardphrases.txt', `${phrase}\n`, (err) => {
+  if (!(await dynHardPhrases()).includes(phrase.foreign)) {
+    phrase.hard = true;
+    fs.appendFile('hardphrases.txt', `${phrase.foreign}\n`, (err) => {
       if (err) {
         console.error(err);
       }
