@@ -15,6 +15,7 @@ To mi se svjiđa.
 Čuvaj se!
 Molim te, goVOri sporije.
 Ti govoriš prebrzo.
+Što ova rijEČ znači?
 */
 
 const flashcards = {
