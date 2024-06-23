@@ -76,7 +76,7 @@ const flashcards = {
         { foreign: 'Laku noć', english: 'Good night' },
         { foreign: 'Zbogom', english: 'Farewell (old-fashioned)' },
         { foreign: 'Dobro jutro', english: 'Good morning' },
-        { foreign: 'Gospodin', english: 'Sir' },
+        { foreign: 'GosPOdin', english: 'Sir' },
         { foreign: 'Gospođa', english: 'Madam' },
         { foreign: 'Gospođica', english: 'Miss' },
       ],
