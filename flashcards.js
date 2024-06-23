@@ -104,7 +104,7 @@ const flashcards = {
         { foreign: 'i', english: 'and/too/also' },
         { foreign: 'Živi li i on ovdje?', english: 'Does he live here, too?' },
         {
-          foreign: 'Cijela naša obitelj živi ovdje.',
+          foreign: 'Cijela naša oBItelj živi ovdje.',
           english: 'Our whole family lives here.',
           hard: true,
         },
