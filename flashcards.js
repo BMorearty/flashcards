@@ -693,7 +693,7 @@ async function setupPhrases() {
   } else if (currentLesson) {
     phrases = flashcards[currentUnit][currentChapter][currentLesson];
   }
-  for (let phrase in phrases) {
+  for (let phrase of phrases) {
     if (hardPhrases.includes(phrase.foreign)) {
       phrase.hard = true;
     }
