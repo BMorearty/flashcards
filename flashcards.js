@@ -756,37 +756,45 @@ function showNextFlashcard(phrase) {
     `  ${chalk.yellow((showEnglish ? randomPhrase.english : randomPhrase.foreign).replaceAll(/; */g, '\n  '))}`,
   );
 
-  rl.question('Enter: see translation, (B)ack, (Q)uit,\nLast was (H)ard / (W)rong: ', (answer) => {
-    if (answer.toLowerCase() === 'q') {
-      rl.close();
-      return;
-    }
-    if (answer.toLowerCase() === 'b') {
-      currentLesson = null;
-      showMenu();
-      return;
-    }
-    if (answer.toLowerCase() === 'h' && lastPhrase) {
-      addHard(lastPhrase).then(() => {
-        showNextFlashcard(randomPhrase);
-      });
-      return;
-    }
-    if (answer.toLowerCase() === 'w' && lastPhrase) {
-      if (!wrongPhrases.map((phrase) => phrase.foreign).includes(lastPhrase.foreign)) {
-        wrongPhrases.push(lastPhrase);
+  rl.question(
+    'Enter: see translation, (B)ack, (Q)uit,\nLast was (H)ard / (W)rong / (R)ight: ',
+    (answer) => {
+      if (answer.toLowerCase() === 'q') {
+        rl.close();
+        return;
       }
-      showNextFlashcard(randomPhrase);
-      return;
-    }
-    const moveUpAndClearLine = '\u001b[1A\u001b[K';
-    console.log(
-      `${moveUpAndClearLine}${moveUpAndClearLine}    ${chalk.green((showEnglish ? randomPhrase.foreign : randomPhrase.english).replaceAll(/; */g, '\n    '))}${hard}${wrong}`,
-    );
-    phraseIndex++;
-    lastPhrase = randomPhrase;
-    showNextFlashcard();
-  });
+      if (answer.toLowerCase() === 'b') {
+        currentLesson = null;
+        showMenu();
+        return;
+      }
+      if (answer.toLowerCase() === 'h' && lastPhrase) {
+        addHard(lastPhrase).then(() => {
+          showNextFlashcard(randomPhrase);
+        });
+        return;
+      }
+      if (answer.toLowerCase() === 'w' && lastPhrase) {
+        if (!wrongPhrases.map((phrase) => phrase.foreign).includes(lastPhrase.foreign)) {
+          wrongPhrases.push(lastPhrase);
+        }
+        showNextFlashcard(randomPhrase);
+        return;
+      }
+      if (answer.toLowerCase() === 'r' && lastPhrase) {
+        wrongPhrases = wrongPhrases.filter((phrase) => phrase.foreign !== lastPhrase.foreign);
+        showNextFlashcard(randomPhrase);
+        return;
+      }
+      const moveUpAndClearLine = '\u001b[1A\u001b[K';
+      console.log(
+        `${moveUpAndClearLine}${moveUpAndClearLine}    ${chalk.green((showEnglish ? randomPhrase.foreign : randomPhrase.english).replaceAll(/; */g, '\n    '))}${hard}${wrong}`,
+      );
+      phraseIndex++;
+      lastPhrase = randomPhrase;
+      showNextFlashcard();
+    },
+  );
 }
 
 // Phrases in the hard phrases text file
