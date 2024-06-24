@@ -506,6 +506,8 @@ let currentLesson = null;
 let showEnglish = true;
 let phrases = [];
 let lastPhrase = null;
+let wrongPhrases;
+let phraseIndex;
 
 function showMenu() {
   console.log(menu);
@@ -642,6 +644,8 @@ function startFlashcards() {
 
 async function setupPhrases() {
   phrases = [];
+  wrongPhrases = [];
+  phraseIndex = 0;
   const hardPhrases = await dynHardPhrases();
   if (currentUnit === 'all' || currentUnit === 'hard') {
     for (let unit in flashcards) {
@@ -703,13 +707,17 @@ async function setupPhrases() {
 }
 
 function showNextFlashcard(phrase) {
-  const randomPhrase = phrase ?? phrases[Math.floor(Math.random() * phrases.length)];
+  const randomPhrase =
+    phrase ??
+    (phraseIndex % 3 === 0 && wrongPhrases.length > 0
+      ? wrongPhrases[Math.floor(Math.random() * wrongPhrases.length)]
+      : phrases[Math.floor(Math.random() * phrases.length)]);
   const hard = randomPhrase.hard ? '  (hard)' : '';
   console.log(
     `  ${chalk.yellow((showEnglish ? randomPhrase.english : randomPhrase.foreign).replaceAll(/; */g, '\n  '))}`,
   );
 
-  rl.question('Enter: see translation, (B)ack, (Q)uit,\nLast was (H)ard: ', (answer) => {
+  rl.question('Enter: see translation, (B)ack, (Q)uit,\nLast was (H)ard / (W)rong: ', (answer) => {
     if (answer.toLowerCase() === 'q') {
       rl.close();
       return;
@@ -725,10 +733,16 @@ function showNextFlashcard(phrase) {
       });
       return;
     }
+    if (answer.toLowerCase() === 'w' && lastPhrase) {
+      wrongPhrases.push(lastPhrase);
+      showNextFlashcard(randomPhrase);
+      return;
+    }
     const moveUpAndClearLine = '\u001b[1A\u001b[K';
     console.log(
       `${moveUpAndClearLine}${moveUpAndClearLine}    ${chalk.green((showEnglish ? randomPhrase.foreign : randomPhrase.english).replaceAll(/; */g, '\n    '))}${hard}`,
     );
+    phraseIndex++;
     lastPhrase = randomPhrase;
     showNextFlashcard();
   });
