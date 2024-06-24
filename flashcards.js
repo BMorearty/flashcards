@@ -33,7 +33,7 @@ const flashcards = {
     { foreign: 'stol / stolovi', english: 'table / tables', hard: true },
     { foreign: 'dječak / dječaci', english: 'boy / boys' },
     { foreign: 'liječnik / liyečnici', english: 'doctor / doctors', hard: true },
-    { foreign: 'čovjek / ljudi', english: 'man / people', hard: true },
+    { foreign: 'čovjek / ljudi', english: 'man (human) / people', hard: true },
     { foreign: 'brat / braća', english: 'brother / brothers', hard: true },
     { foreign: 'kći / kćeri', english: 'daughter / daughters' },
     { foreign: 'djete / djeca', english: 'child / children' },
@@ -195,7 +195,7 @@ const flashcards = {
         { foreign: 'NEZnanka', english: 'stranger (female)', hard: true },
         { foreign: 'cimer', english: 'roommate' },
         { foreign: 'djevojka', english: 'girl', hard: true },
-        { foreign: 'dečko', english: 'boy', hard: true },
+        { foreign: 'dječak', english: 'boy', hard: true }, // used to say dečko but that's boyfriend
         { foreign: 'prijatelj / prijatelji', english: 'friend / friends (male)' },
       ],
     },
