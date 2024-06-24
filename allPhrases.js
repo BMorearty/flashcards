@@ -592,6 +592,13 @@ export const allPhrases = {
         { foreign: 'piDŽAma', english: 'pajamas' },
         { foreign: 'Istuširat ću se.', english: 'I’ll take a shower.' },
       ],
+      lesson4: [
+        { foreign: 'oKUpat ću se.', english: 'I’ll take a bath.' },
+        { foreign: 'OBUći se', english: 'to get dressed' },
+        { foreign: 'oBUci se.', english: 'Get dressed. (Informal singular)' },
+        { foreign: 'Oprat ću odjeću.', english: 'I’ll wash the clothes.' },
+        { foreign: 'odjeću', english: 'clothes' },
+      ],
     },
   },
 };
