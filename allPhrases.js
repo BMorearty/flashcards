@@ -582,6 +582,16 @@ export const allPhrases = {
         { foreign: 'šal', english: 'scarf' },
         { foreign: 'ruKAvice', english: 'gloves' },
       ],
+      lesson3: [
+        { foreign: 'šešir', english: 'hat' },
+        { foreign: 'odiJElo', english: 'suit' },
+        { foreign: 'suknja', english: 'skirt' },
+        { foreign: 'kraVAta', english: 'tie' },
+        { foreign: 'remen', english: 'belt' },
+        { foreign: 'kupaći kostim', english: 'swimsuit' },
+        { foreign: 'piDŽAma', english: 'pajamas' },
+        { foreign: 'Istuširat ću se.', english: 'I’ll take a shower.' },
+      ],
     },
   },
 };
