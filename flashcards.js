@@ -516,6 +516,10 @@ const flashcards = {
         { foreign: 'sto', english: 'one hundred' },
         { foreign: 'sto dvadeset četiri', english: 'one hundred twenty-four' },
       ],
+      lesson5: [
+        { foreign: 'tisuću', english: 'one thousand', hard: true },
+        { foreign: 'miLIjun', english: 'one million' },
+      ],
     },
   },
 };
