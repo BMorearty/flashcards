@@ -9,7 +9,7 @@ Ti govoriš prebrzo.
 Što ova rijEČ znači?
 */
 
-export const flashcards = {
+export const allPhrases = {
   custom: [
     { foreign: 'kuća / kuće', english: 'house / houses' },
     { foreign: 'žena / žene', english: 'woman / women' },

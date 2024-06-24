@@ -1,7 +1,7 @@
 import readline from 'readline';
 import fs from 'fs';
 import chalk from 'chalk';
-import { flashcards } from './cards.js';
+import { allPhrases } from './allPhrases.js';
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -10,7 +10,7 @@ const rl = readline.createInterface({
 
 const menu = `
 Choose an option:
-${Object.keys(flashcards)
+${Object.keys(allPhrases)
   .filter((unit) => unit !== 'custom')
   .map((unit, index) => `${index + 1}. Unit ${index + 1}`)
   .join('\n')}
@@ -57,7 +57,7 @@ function handleMenuChoice(choice) {
     return;
   }
   const choiceNum = parseInt(choice, 10);
-  if (choiceNum > 0 && choiceNum <= Object.keys(flashcards).length) {
+  if (choiceNum > 0 && choiceNum <= Object.keys(allPhrases).length) {
     currentUnit = `unit${choiceNum}`;
     showChapterMenu();
     return;
@@ -69,9 +69,9 @@ function handleMenuChoice(choice) {
 function showChapterMenu() {
   const chapterMenu = `
 Choose a chapter:
-${Object.keys(flashcards[currentUnit])
+${Object.keys(allPhrases[currentUnit])
   .map((chapter, index) => {
-    return `${index + 1}. Chapter ${index + 1}: ${flashcards[currentUnit][chapter].name}`;
+    return `${index + 1}. Chapter ${index + 1}: ${allPhrases[currentUnit][chapter].name}`;
   })
   .join('\n')}
 B. Back to main menu
@@ -88,7 +88,7 @@ Q. Quit
       return;
     }
     const choiceNum = parseInt(choice, 10);
-    if (choiceNum > 0 && choiceNum <= Object.keys(flashcards[currentUnit]).length) {
+    if (choiceNum > 0 && choiceNum <= Object.keys(allPhrases[currentUnit]).length) {
       currentChapter = `chapter${choiceNum}`;
       showLessonMenu();
       return;
@@ -101,7 +101,7 @@ Q. Quit
 function showLessonMenu() {
   const lessonMenu = `
 Choose a lesson:
-${Object.keys(flashcards[currentUnit][currentChapter])
+${Object.keys(allPhrases[currentUnit][currentChapter])
   .map((lesson, index) => {
     if (lesson === 'name') {
       return null;
@@ -138,7 +138,7 @@ Q. Quit
     const choiceNum = parseInt(choice, 10);
     if (
       choiceNum > 0 &&
-      choiceNum <= Object.keys(flashcards[currentUnit][currentChapter]).length - 1
+      choiceNum <= Object.keys(allPhrases[currentUnit][currentChapter]).length - 1
     ) {
       currentLesson = `lesson${choiceNum}`;
       startFlashcards();
@@ -168,56 +168,56 @@ async function setupPhrases() {
   phraseIndex = 0;
   const hardPhrases = await dynHardPhrases();
   if (currentUnit === 'all' || currentUnit === 'hard') {
-    for (let unit in flashcards) {
+    for (let unit in allPhrases) {
       if (unit === 'custom') {
         if (currentUnit === 'hard') {
           phrases = phrases.concat(
-            flashcards[unit].filter(
+            allPhrases[unit].filter(
               (phrase) => phrase.hard || hardPhrases.includes(phrase.foreign),
             ),
           );
           continue;
         }
-        phrases = phrases.concat(flashcards[unit]);
+        phrases = phrases.concat(allPhrases[unit]);
         continue;
       }
-      for (let chapter in flashcards[unit]) {
-        for (let lesson in flashcards[unit][chapter]) {
+      for (let chapter in allPhrases[unit]) {
+        for (let lesson in allPhrases[unit][chapter]) {
           if (lesson === 'name') {
             continue;
           }
           if (currentUnit === 'hard') {
             phrases = phrases.concat(
-              flashcards[unit][chapter][lesson].filter(
+              allPhrases[unit][chapter][lesson].filter(
                 (phrase) => phrase.hard || hardPhrases.includes(phrase.foreign),
               ),
             );
             continue;
           }
-          phrases = phrases.concat(flashcards[unit][chapter][lesson]);
+          phrases = phrases.concat(allPhrases[unit][chapter][lesson]);
         }
       }
     }
   } else if (currentUnit === 'custom') {
-    phrases = flashcards[currentUnit];
+    phrases = allPhrases[currentUnit];
   } else if (currentLesson === 'all') {
-    for (let lesson in flashcards[currentUnit][currentChapter]) {
+    for (let lesson in allPhrases[currentUnit][currentChapter]) {
       if (lesson === 'name') {
         continue;
       }
-      phrases = phrases.concat(flashcards[currentUnit][currentChapter][lesson]);
+      phrases = phrases.concat(allPhrases[currentUnit][currentChapter][lesson]);
     }
   } else if (currentLesson === 'hard') {
-    for (let lesson in flashcards[currentUnit][currentChapter]) {
+    for (let lesson in allPhrases[currentUnit][currentChapter]) {
       if (lesson === 'name') {
         continue;
       }
       phrases = phrases.concat(
-        flashcards[currentUnit][currentChapter][lesson].filter((phrase) => phrase.hard),
+        allPhrases[currentUnit][currentChapter][lesson].filter((phrase) => phrase.hard),
       );
     }
   } else if (currentLesson) {
-    phrases = flashcards[currentUnit][currentChapter][currentLesson];
+    phrases = allPhrases[currentUnit][currentChapter][currentLesson];
   }
   for (let phrase of phrases) {
     if (hardPhrases.includes(phrase.foreign)) {
