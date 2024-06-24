@@ -422,7 +422,7 @@ const flashcards = {
           hard: true,
         },
         { foreign: 'pitanje', english: 'question' },
-        { foreign: 'stvar', english: 'thing' },
+        { foreign: 'stvar', english: 'thing', hard: true },
         { foreign: 'odgovor', english: 'answer' },
         { foreign: 'čitati', english: 'to read' },
       ],
@@ -519,6 +519,60 @@ const flashcards = {
       lesson5: [
         { foreign: 'tisuću', english: 'one thousand', hard: true },
         { foreign: 'miLIjun', english: 'one million' },
+      ],
+    },
+    chapter3: {
+      name: 'My clothes',
+      lesson1: [
+        {
+          foreign: 'Što ćeš nositi danas?',
+          english: 'What will you wear today? (Informal singular)',
+        },
+        { foreign: 'nositi', english: 'to wear' },
+        {
+          foreign:
+            'future tense of biti:; ja ću; ti ćeš; on/ona/ono će; mi ćemo; vi ćete; oni/one/ona će',
+          english: 'future tense of to be: I will be, you will be, etc.',
+          hard: true,
+        },
+        {
+          foreign:
+            'negative future tense of biti:; Ja neću; ti nećeš; on/ona/ono neće; mi nećemo; vi nećete; oni/one/ona neće',
+          english: 'negative future tense of to be: I will not be, you will not be, etc.',
+          hard: true,
+        },
+        {
+          foreign:
+            'future tense of nositi: ja ću nositi (nosit ću); ti ćeš nositi (nosit ćeš); on/ona/ono će nositi (nosit će); mi ćemo nositi (nosit ćemo); vi ćete nositi (nosit ćete); oni/one/ona će nositi (nosit će)',
+          english: 'future tense of to wear: I will wear, you will wear, etc.',
+          hard: true,
+        },
+        {
+          foreign:
+            'negative future tense of nositi: neću nositi, nećeš nositi, neće nositi, nećemo nositi, nećete nositi, neće nositi',
+          english: 'negative future tense of to wear: I will not wear, you will not wear, etc.',
+        },
+        { foreign: 'danas', english: 'today' },
+        {
+          foreign: 'Traperice i majicu kratkih ruKAva.',
+          english: 'Jeans and a short-sleeved shirt.',
+          hard: true,
+        },
+        { foreign: 'traperice', english: 'jeans' },
+        { foreign: 'majicu', english: 'shirt' },
+        { foreign: 'kratkih ruKAva', english: 'short-sleeved' },
+        {
+          foreign: 'Želiš li nositi haljinu?',
+          english: 'Do you want to wear a dress? (Informal singular)',
+          hard: true,
+        },
+        { foreign: 'Želiš li...?', english: 'Do you want...? (Informal singular)' },
+        {
+          foreign: 'Možemo se presvući kasnije.',
+          english: 'We can change clothes later.',
+          hard: true,
+        },
+        { foreign: 'možemo', english: 'we can' },
       ],
     },
   },
