@@ -749,6 +749,9 @@ function showNextFlashcard(phrase) {
       ? wrongPhrases[Math.floor(Math.random() * wrongPhrases.length)]
       : phrases[Math.floor(Math.random() * phrases.length)]);
   const hard = randomPhrase.hard ? '  (hard)' : '';
+  const wrong = wrongPhrases.map((phrase) => phrase.foreign).includes(randomPhrase.foreign)
+    ? '  (wrong before)'
+    : '';
   console.log(
     `  ${chalk.yellow((showEnglish ? randomPhrase.english : randomPhrase.foreign).replaceAll(/; */g, '\n  '))}`,
   );
@@ -770,13 +773,15 @@ function showNextFlashcard(phrase) {
       return;
     }
     if (answer.toLowerCase() === 'w' && lastPhrase) {
-      wrongPhrases.push(lastPhrase);
+      if (!wrongPhrases.map((phrase) => phrase.foreign).includes(lastPhrase.foreign)) {
+        wrongPhrases.push(lastPhrase);
+      }
       showNextFlashcard(randomPhrase);
       return;
     }
     const moveUpAndClearLine = '\u001b[1A\u001b[K';
     console.log(
-      `${moveUpAndClearLine}${moveUpAndClearLine}    ${chalk.green((showEnglish ? randomPhrase.foreign : randomPhrase.english).replaceAll(/; */g, '\n    '))}${hard}`,
+      `${moveUpAndClearLine}${moveUpAndClearLine}    ${chalk.green((showEnglish ? randomPhrase.foreign : randomPhrase.english).replaceAll(/; */g, '\n    '))}${hard}${wrong}`,
     );
     phraseIndex++;
     lastPhrase = randomPhrase;
