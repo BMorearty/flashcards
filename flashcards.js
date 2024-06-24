@@ -214,9 +214,10 @@ const flashcards = {
         },
         {
           foreign:
-            'Govoriti:; (ja) govorim; (ti) govoriš; (on/ona/ono) govori; (mi) govorimo; (vi) govorite; (oni/one/ona) govore',
+            'Govoriti, present tense:; (ja) govorim; (ti) govoriš; (on/ona/ono) govori; (mi) govorimo; (vi) govorite; (oni/one/ona) govore',
           english:
-            'To speak:; (I) speak; (you) speak; (he/she/it) speaks; (we) speak; (you) speak; (they) speak',
+            'To speak, present tense:; (I) speak; (you) speak; (he/she/it) speaks; (we) speak; (you) speak; (they) speak',
+          hard: true,
         },
         {
           foreign: 'Učim hrvatski pomoću jednog izvrsnog web-sitea koji se zove Mango Languages.',
@@ -226,8 +227,8 @@ const flashcards = {
         },
         {
           foreign:
-            'Učiti:; (ja) učim; (ti) učiš; (on/ona/ono) ući; (mi) učimo; (vi) učite; (oni/one/ona) uće',
-          english: 'To learn: (I) learn, (you) learn, etc.',
+            'Učiti, present tense:; (ja) učim; (ti) učiš; (on/ona/ono) ući; (mi) učimo; (vi) učite; (oni/one/ona) uće',
+          english: 'To learn, present tense: (I) learn, (you) learn, etc.',
         },
         { foreign: 'Ne učim.', english: 'I am not learning.' },
       ],
@@ -266,10 +267,13 @@ const flashcards = {
           foreign:
             'stuDIRati, past tense masculine/feminine:; (ja) sam studirao/studirala (studirao sam); (ti) si studirao/studirala (studirao si); (on/ona/ono) je studirao/studirala (studirao je); (mi) smo studirali (studirali smo); (vi) ste studirali (studirali ste); (oni) su studirali (studiraoli su)',
           english: 'to study, past tense masculine/feminine speaker: I studied, etc.',
+          hard: true,
         },
         {
-          foreign: 'biti:; (ja) sam; (ti) si; (on/ona/ono) je; (mi) smo; (vi) ste; (oni) su',
-          english: 'to be, all conjugations. I am, etc.',
+          foreign:
+            'biti, present tense:; (ja) sam; (ti) si; (on/ona/ono) je; (mi) smo; (vi) ste; (oni) su',
+          english: 'to be, present tense. I am, you are, etc.',
+          hard: true,
         },
         {
           foreign: 'StuDIrao sam povijest na Filozofskom fakulTEtu u Zagrebu.',
@@ -285,7 +289,8 @@ const flashcards = {
           foreign:
             'negative past tense form on the verb čuti:; (ja) nisam čuo/čula; (ti) nisi čuo/čula; (on/ona/ono) nije čuo/čula/čulo; (mi) nismo čuli/čule; (vi) niste čuli/čule; (oni/one/ona) nisu čuli/čule/čula',
           english:
-            'Negative past tense conjugation of to hear: I haven’t heard, you haven’t heard, etc.',
+            'Negative past tense conjugation of to hear: I haven’t heard/didn’t hear, you haven’t heard/didn’t hear, etc.',
+          hard: true,
         },
         { foreign: 'za', english: 'of / for', hard: true },
         { foreign: 'taj', english: 'that (as in "that thing")', hard: true },
@@ -543,14 +548,15 @@ const flashcards = {
         },
         {
           foreign:
-            'future tense of nositi: ja ću nositi (nosit ću); ti ćeš nositi (nosit ćeš); on/ona/ono će nositi (nosit će); mi ćemo nositi (nosit ćemo); vi ćete nositi (nosit ćete); oni/one/ona će nositi (nosit će)',
+            'future tense of nositi:; ja ću nositi (nosit ću); ti ćeš nositi (nosit ćeš); on/ona/ono će nositi (nosit će); mi ćemo nositi (nosit ćemo); vi ćete nositi (nosit ćete); oni/one/ona će nositi (nosit će)',
           english: 'future tense of to wear: I will wear, you will wear, etc.',
           hard: true,
         },
         {
           foreign:
-            'negative future tense of nositi: neću nositi, nećeš nositi, neće nositi, nećemo nositi, nećete nositi, neće nositi',
+            'negative future tense of nositi:; neću nositi; nećeš nositi; neće nositi; nećemo nositi; nećete nositi; neće nositi',
           english: 'negative future tense of to wear: I will not wear, you will not wear, etc.',
+          hard: true,
         },
         { foreign: 'danas', english: 'today' },
         {
