@@ -4,7 +4,7 @@ Da. RaZUMijem malo.
 Drago mi je.
 To mi se svjiđa.
 Čuvaj se!
-Molim te, goVOri sporije.
+Molim vas, goVOri sporije.
 Ti govoriš prebrzo.
 Što ova rijEČ znači?
 */
