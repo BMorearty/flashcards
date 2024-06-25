@@ -22,8 +22,7 @@ export const allPhrases = {
     { foreign: 'susjed / susjedi', english: 'neighbor / neighbors' },
     { foreign: 'most / mostovi', english: 'bridge / bridges' },
     { foreign: 'stol / stolovi', english: 'table / tables', hard: true },
-    { foreign: 'dječak / dječaci', english: 'boy / boys' },
-    { foreign: 'liječnik / liyečnici', english: 'doctor / doctors', hard: true },
+    { foreign: 'liječnik / liječnici', english: 'doctor / doctors', hard: true },
     { foreign: 'čovjek / ljudi', english: 'man (human) / people', hard: true },
     { foreign: 'brat / braća', english: 'brother / brothers', hard: true },
     { foreign: 'kći / kćeri', english: 'daughter / daughters' },
@@ -185,8 +184,8 @@ export const allPhrases = {
         { foreign: 'nezNANac', english: 'stranger (male)', hard: true },
         { foreign: 'NEZnanka', english: 'stranger (female)', hard: true },
         { foreign: 'cimer', english: 'roommate' },
-        { foreign: 'djevojka', english: 'girl', hard: true },
-        { foreign: 'dječak', english: 'boy', hard: true }, // used to say dečko but that's boyfriend
+        { foreign: 'djevojka / djevojke', english: 'girl / girls', hard: true },
+        { foreign: 'dječak / dječaci', english: 'boy / boys', hard: true }, // used to say dečko but that's boyfriend
         { foreign: 'prijatelj / prijatelji', english: 'friend / friends (male)' },
       ],
     },
