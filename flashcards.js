@@ -1,7 +1,7 @@
 import readline from 'readline';
 import fs from 'fs';
 import chalk from 'chalk';
-import { allPhrases } from './allPhrases.js';
+import { allPhrases } from './croatian.js';
 
 const rl = readline.createInterface({
   input: process.stdin,
