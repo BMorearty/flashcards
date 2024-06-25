@@ -615,6 +615,10 @@ export const allPhrases = {
         { foreign: 'Ne bih...', english: 'I wouldn’t...' },
         { foreign: 'Nisam...', english: 'I’m not...' },
       ],
+      lesson6: [
+        { foreign: 'Nisam siguran.', english: 'I’m not sure. (Masculine)' },
+        { foreign: 'Nisam sigurna.', english: 'I’m not sure. (Feminine)' },
+      ],
     },
   },
 };
