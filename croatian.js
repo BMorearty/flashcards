@@ -659,8 +659,13 @@ export const allPhrases = {
           english: 'But, I believe the stores close in one hour.',
           hard: true,
         },
+        { foreign: 'sat', english: 'hour' },
         { foreign: 'mislim da...', english: 'I believe that (I think that)...' },
         { foreign: 'se zatVAraju', english: 'they close', hard: true },
+      ],
+      lesson3: [
+        { foreign: 'penKAla', english: 'pens' },
+        { foreign: 'mobitel', english: 'cell phone' },
       ],
     },
   },
