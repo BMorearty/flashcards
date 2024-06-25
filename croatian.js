@@ -256,13 +256,13 @@ export const allPhrases = {
         },
         {
           foreign:
-            'stuDIRati, past tense masculine/feminine:; (ja) sam studirao/studirala (studirao sam); (ti) si studirao/studirala (studirao si); (on/ona/ono) je studirao/studirala (studirao je); (mi) smo studirali (studirali smo); (vi) ste studirali (studirali ste); (oni) su studirali (studiraoli su)',
+            'stuDIRati, past tense masculine/feminine:; (ja) sam studirao/studirala (studirao sam); (ti) si studirao/studirala (studirao si); (on/ona/ono) je studirao/studirala (studirao je); (mi) smo studirali (studirali smo); (vi) ste studirali (studirali ste); (oni/one/ona) su studirali (studiraoli su)',
           english: 'to study, past tense masculine/feminine speaker: I studied, etc.',
           hard: true,
         },
         {
           foreign:
-            'biti, present tense:; (ja) sam; (ti) si; (on/ona/ono) je; (mi) smo; (vi) ste; (oni) su',
+            'biti, present tense:; (ja) sam; (ti) si; (on/ona/ono) je; (mi) smo; (vi) ste; (oni/one/ona) su',
           english: 'to be, present tense. I am, you are, etc.',
           hard: true,
         },
