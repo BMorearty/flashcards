@@ -604,6 +604,16 @@ export const allPhrases = {
         { foreign: 'Oprat ću odjeću.', english: 'I’ll wash the clothes.', hard: true },
         { foreign: 'odjeću', english: 'clothes', hard: true },
       ],
+      lesson5: [
+        { foreign: 'plakar', english: 'closet' },
+        { foreign: 'ormar (namještaj)', english: 'wardrobe (furniture)', hard: true },
+        { foreign: 'gardeROba (odjeća)', english: 'wardrobe (clothes)', hard: true },
+        { foreign: 'prije', english: 'before', hard: true },
+        { foreign: 'nakon', english: 'after', hard: true },
+        { foreign: 'tiJEkom', english: 'during', hard: true },
+        { foreign: 'Ne bih...', english: 'I wouldn’t...' },
+        { foreign: 'Nisam...', english: 'I’m not...' },
+      ],
     },
   },
 };
