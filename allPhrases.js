@@ -556,14 +556,14 @@ export const allPhrases = {
           hard: true,
         },
         { foreign: 'traperice', english: 'jeans' },
-        { foreign: 'majicu', english: 'shirt', hard: true },
+        { foreign: 'majica', english: 'shirt', hard: true },
         { foreign: 'kratkih ruKAva', english: 'short-sleeved' },
         {
           foreign: 'Želiš li nositi haljinu?',
           english: 'Do you want to wear a dress? (Informal singular)',
           hard: true,
         },
-        { foreign: 'haljinu', english: 'dress', hard: true },
+        { foreign: 'haljina', english: 'dress', hard: true },
         { foreign: 'Želiš li...?', english: 'Do you want...? (Informal singular)' },
         {
           foreign: 'Možemo se presvući kasnije.',
