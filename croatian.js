@@ -6,8 +6,10 @@ To mi se svjiđa.
 Čuvaj se!
 Molim vas, goVOri sporije.
 Ti govoriš prebrzo.
+Kakav je moj izgovor?
 Što ova rijEČ znači?
-Oprostite
+oPROstite
+Ne znam.
 */
 
 export const allPhrases = {
@@ -284,7 +286,7 @@ export const allPhrases = {
           hard: true,
         },
         { foreign: 'za', english: 'of / for', hard: true },
-        { foreign: 'taj', english: 'that (as in "that thing")', hard: true },
+        { foreign: 'taj', english: 'that (as in "that thing"), masculine', hard: true },
       ],
       lesson2: [
         { foreign: 'Što ste Vi stuDIrali?', english: 'What did *you* study? (Formal singular)' },
@@ -380,7 +382,7 @@ export const allPhrases = {
       lesson3: [
         { foreign: 'Što je tako smiJEŠno?', english: 'What is so funny?', hard: true },
         { foreign: 'Je li moj hrvatski tako loš?', english: 'Is my Croatian so bad?' },
-        { foreign: 'je li?', english: 'is?' },
+        { foreign: 'je li?', english: 'is?', hard: true },
         {
           foreign: 'Ti si pravi stručnjak.',
           english: 'You are a real expert. (Informal singular)',
@@ -632,14 +634,33 @@ export const allPhrases = {
         {
           foreign: 'ProdavaOnica je dvije zgrade odavdje.',
           english: 'There is a store two buildings from here.',
+          hard: true,
         },
-        { foreign: 'prodavaOnica', english: 'store' },
+        { foreign: 'prodavaOnica', english: 'store', hard: true },
         { foreign: 'zgrada', english: 'building' },
         {
           foreign: 'Možete je kupiti tamo.',
           english: 'You can buy one there. (Formal singular, referring to feminine object.)',
         },
         { foreign: 'kupiti', english: 'to buy' },
+      ],
+      lesson2: [
+        {
+          foreign: 'Je li ta prodavaOnica još otvorena?',
+          english: 'Is that store still open?',
+          hard: true,
+        },
+        { foreign: 'ta', english: 'that (as in “that thing”), feminine' },
+        { foreign: 'još', english: 'still (e.g. still open)' },
+        { foreign: 'otvorena', english: 'open (like a store)' },
+        { foreign: 'Ne znam. VjeroJATno.', english: 'I don’t know. Probably.', hard: true },
+        {
+          foreign: 'Ali, mislim da se prodavaOnice zatVAraju za jedan sat.',
+          english: 'But, I believe the stores close in one hour.',
+          hard: true,
+        },
+        { foreign: 'mislim da...', english: 'I believe that (I think that)...' },
+        { foreign: 'se zatVAraju', english: 'they close', hard: true },
       ],
     },
   },
