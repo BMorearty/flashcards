@@ -64,7 +64,7 @@ export const allPhrases = {
       ],
       lesson5: [
         { foreign: 'Laku noć', english: 'Good night' },
-        { foreign: 'Zbogom', english: 'Farewell (old-fashioned)' },
+        { foreign: 'Zbogom', english: 'Farewell (old-fashioned)', hard: true },
         { foreign: 'Dobro jutro', english: 'Good morning' },
         { foreign: 'GosPOdin', english: 'Sir' },
         { foreign: 'Gospođa', english: 'Madam' },
