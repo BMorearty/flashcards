@@ -7,6 +7,7 @@ To mi se svjiđa.
 Molim vas, goVOri sporije.
 Ti govoriš prebrzo.
 Što ova rijEČ znači?
+Oprostite
 */
 
 export const allPhrases = {
@@ -617,6 +618,28 @@ export const allPhrases = {
       lesson6: [
         { foreign: 'Nisam siguran.', english: 'I’m not sure. (Masculine)' },
         { foreign: 'Nisam sigurna.', english: 'I’m not sure. (Feminine)' },
+      ],
+    },
+    chapter4: {
+      name: 'Shopping',
+      lesson1: [
+        {
+          foreign: 'oPROstite, gdje mogu kupiti jaknu?',
+          english: 'Excuse me, where can I buy a jacket? (Formal singular)',
+        },
+        { foreign: 'gdje', english: 'where' },
+        { foreign: 'jakna', english: 'jacket' },
+        {
+          foreign: 'ProdavaOnica je dvije zgrade odavdje.',
+          english: 'There is a store two buildings from here.',
+        },
+        { foreign: 'prodavaOnica', english: 'store' },
+        { foreign: 'zgrada', english: 'building' },
+        {
+          foreign: 'Možete je kupiti tamo.',
+          english: 'You can buy one there. (Formal singular, referring to feminine object.)',
+        },
+        { foreign: 'kupiti', english: 'to buy' },
       ],
     },
   },
