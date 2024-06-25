@@ -437,6 +437,7 @@ export const allPhrases = {
         {
           foreign: 'Želio bih kartu za vlak do Zagreba.',
           english: 'I would like a train ticket to Zagreb. (Formal, male)',
+          hard: true,
         },
         { foreign: 'želio bih', english: 'I would like (Formal, male)', hard: true },
         { foreign: 'željela bih', english: 'I would like (Formal, female)', hard: true },
@@ -474,7 +475,7 @@ export const allPhrases = {
         { foreign: 'skup kaput', english: 'expensive coat', hard: true },
         { foreign: 'skupa karta', english: 'expensive ticket', hard: true },
         { foreign: 'skupe karte', english: 'expensive tickets' },
-        { foreign: 'skupo ljetovanje', english: 'expensive summer holidays' },
+        { foreign: 'skupo ljetovanje', english: 'expensive summer holidays', hard: true },
       ],
       lesson4: [
         { foreign: 'nula', english: 'zero' },
