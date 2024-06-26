@@ -667,6 +667,16 @@ export const allPhrases = {
         { foreign: 'penKAla', english: 'pens' },
         { foreign: 'mobitel', english: 'cell phone' },
       ],
+      lesson4: [
+        { foreign: 'bilježnica', english: 'notebook' },
+        { foreign: 'hrana', english: 'food' },
+        { foreign: 'Gdje mogu popiti nešto?', english: 'Where can I drink something?' },
+        { foreign: 'popiti', english: 'to drink' },
+        { foreign: 'nešto', english: 'something' },
+        { foreign: 'Gdje mogu pojesti sendvič?', english: 'Where can I eat a sandwich?' },
+        { foreign: 'pojesti', english: 'to eat' },
+        { foreign: 'sendvič', english: 'sandwich' },
+      ],
     },
   },
 };
