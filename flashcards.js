@@ -270,7 +270,8 @@ function showNextFlashcard(phrase) {
         showNextFlashcard(randomPhrase);
         return;
       }
-      const moveUpAndClearLine = '\u001b[1A\u001b[K';
+      // If I typed a phrase, don't erase what I typed. I want to compare it to the correct answer.
+      const moveUpAndClearLine = answer === '' ? '\u001b[1A\u001b[K' : '';
       console.log(
         `${moveUpAndClearLine}${moveUpAndClearLine}    ${chalk.green((showEnglish ? randomPhrase.foreign : randomPhrase.english).replaceAll(/; */g, '\n    '))}${hard}${wrong}`,
       );
