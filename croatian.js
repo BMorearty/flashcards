@@ -33,6 +33,13 @@ export const allPhrases = {
     { foreign: 'nož / noževi', english: 'knife / knives', hard: true },
     { foreign: 'dobra večer', english: 'good evening', hard: true },
     { foreign: 'Bok.', english: 'Hi. / Bye.', hard: true },
+    {
+      foreign:
+        'imati, present tense:; (ja) imam; (ti) imaš; (on/ona/ono) ima; (mi) imamo; (vi) imate; (oni/one/ona) imaju',
+      english:
+        'To have, present tense:; I have, you have, etc.,
+      hard: true,
+    },
   ],
   unit1: {
     chapter1: {
@@ -207,9 +214,9 @@ export const allPhrases = {
         },
         {
           foreign:
-            'Govoriti, present tense:; (ja) govorim; (ti) govoriš; (on/ona/ono) govori; (mi) govorimo; (vi) govorite; (oni/one/ona) govore',
+            'govoriti, present tense:; (ja) govorim; (ti) govoriš; (on/ona/ono) govori; (mi) govorimo; (vi) govorite; (oni/one/ona) govore',
           english:
-            'To speak, present tense:; (I) speak; (you) speak; (he/she/it) speaks; (we) speak; (you) speak; (they) speak',
+            'to speak, present tense:; I speak; you speak, etc',
           hard: true,
         },
         {
@@ -220,7 +227,7 @@ export const allPhrases = {
         },
         {
           foreign:
-            'Učiti, present tense:; (ja) učim; (ti) učiš; (on/ona/ono) ući; (mi) učimo; (vi) učite; (oni/one/ona) uće',
+            'učiti, present tense:; (ja) učim; (ti) učiš; (on/ona/ono) ući; (mi) učimo; (vi) učite; (oni/one/ona) uće',
           english: 'To learn, present tense: (I) learn, (you) learn, etc.',
         },
         { foreign: 'Ne učim.', english: 'I am not learning.' },
