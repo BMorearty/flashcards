@@ -718,6 +718,12 @@ export const allPhrases = {
         { foreign: 'banka / ispred banke', english: 'bank / in front of the bank' },
         { foreign: 'selo / iza sela', english: 'village / behind the village' },
       ],
+      lesson3: [
+        { foreign: 'raskrižje', english: 'intersetion' },
+        { foreign: 'KoLIko je daLEko...?', english: 'How far is...?' },
+        { foreign: 'dolje', english: 'down' },
+        { foreign: 'Ima deset milja do...? (It has...)', english: 'It is ten miles to...?' },
+      ],
     },
   },
 };
