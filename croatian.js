@@ -682,6 +682,30 @@ export const allPhrases = {
         { foreign: 'prodavaOnica hrane', english: 'grocery store' },
         { foreign: 'prodavaOnica elekTROničke robe', english: 'electronics store' },
       ],
+      lesson6: [
+        { foreign: 'prodavaOnica odjeće', english: 'clothing store' },
+        { foreign: 'robna kuća', english: 'department store' },
+      ],
+    },
+    chapter5: {
+      name: 'Where is the...',
+      lesson1: [
+        {
+          foreign: 'Oprostite, gdje je plaža?',
+          english: 'Excuse me, where is the beach? (Formal singular)',
+        },
+        { foreign: 'Uz more.', english: 'By the sea.' },
+        { foreign: 'Haha. Samo se šalim.', english: 'Haha. Just kidding.', hard: true },
+        { foreign: 'Idite ravno.', english: 'Go straight. (Formal singular)' },
+        { foreign: 'ravno', english: 'straight' },
+        {
+          foreign: 'Onda skrenite liJEvo na uglu.',
+          english: 'Then turn left at the corner. (Formal singular)',
+          hard: true,
+        },
+        { foreign: 'onda', english: 'then (in a list of instructions)' },
+        { foreign: 'liJEvo', english: 'left' },
+      ],
     },
   },
 };
