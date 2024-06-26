@@ -602,8 +602,8 @@ export const allPhrases = {
       ],
       lesson4: [
         { foreign: 'oKUpat ću se.', english: 'I’ll take a bath.' },
-        { foreign: 'OBUći se', english: 'to get dressed' },
-        { foreign: 'oBUci se.', english: 'Get dressed. (Informal singular)' },
+        { foreign: 'OBUći se', english: 'to get dressed', hard: true },
+        { foreign: 'oBUci se.', english: 'Get dressed. (Informal singular)', hard: true },
         { foreign: 'Oprat ću odjeću.', english: 'I’ll wash the clothes.', hard: true },
         { foreign: 'odjeća', english: 'clothes', hard: true },
       ],
@@ -680,7 +680,7 @@ export const allPhrases = {
       lesson5: [
         { foreign: 'zatvoreno / zatvorena', english: 'closed' },
         { foreign: 'prodavaOnica hrane', english: 'grocery store' },
-        { foreign: 'prodavaonica elekTROničke robe', english: 'electronics store' },
+        { foreign: 'prodavaOnica elekTROničke robe', english: 'electronics store' },
       ],
     },
   },
