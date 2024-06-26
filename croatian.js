@@ -706,6 +706,18 @@ export const allPhrases = {
         { foreign: 'onda', english: 'then (in a list of instructions)' },
         { foreign: 'liJEvo', english: 'left' },
       ],
+      lesson2: [
+        { foreign: 'Mogu li pješačiti do tamo?', english: 'Can I walk there?', hard: true },
+        { foreign: 'Mogu li...?', english: 'Can I...?' },
+        { foreign: 'Da, to je vrlo blizu.', english: 'Yes, it is very close.' },
+        { foreign: 'sjever', english: 'north' },
+        { foreign: 'jug', english: 'south' },
+        { foreign: 'istok', english: 'east' },
+        { foreign: 'zapad', english: 'west' },
+        { foreign: 'To je na sjeveru. (Use on, not in)', english: 'It is in the North.' },
+        { foreign: 'banka / ispred banke', english: 'bank / in front of the bank' },
+        { foreign: 'selo / iza sela', english: 'village / behind the village' },
+      ],
     },
   },
 };
