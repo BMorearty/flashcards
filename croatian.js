@@ -652,7 +652,7 @@ export const allPhrases = {
         },
         { foreign: 'ta', english: 'that (as in “that thing”), feminine' },
         { foreign: 'još', english: 'still (e.g. still open)' },
-        { foreign: 'otvorena', english: 'open (like a store)' },
+        { foreign: 'otvoreno / otvorena', english: 'open (like a store, adjective)' },
         { foreign: 'Ne znam. VjeroJATno.', english: 'I don’t know. Probably.', hard: true },
         {
           foreign: 'Ali, mislim da se prodavaOnice zatVAraju za jedan sat.',
@@ -676,6 +676,11 @@ export const allPhrases = {
         { foreign: 'Gdje mogu pojesti sendvič?', english: 'Where can I eat a sandwich?' },
         { foreign: 'pojesti', english: 'to eat' },
         { foreign: 'sendvič', english: 'sandwich' },
+      ],
+      lesson5: [
+        { foreign: 'zatvoreno / zatvorena', english: 'closed' },
+        { foreign: 'prodavaOnica hrane', english: 'grocery store' },
+        { foreign: 'prodavaonica elekTROničke robe', english: 'electronics store' },
       ],
     },
   },
