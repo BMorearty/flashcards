@@ -730,6 +730,13 @@ export const allPhrases = {
         { foreign: 'ispred', english: 'in front of' },
         { foreign: 'iza', english: 'behind' },
       ],
+      lesson5: [
+        { foreign: 'okolo', english: 'around' },
+        { foreign: 'benzinska postaja', english: 'gas station' },
+        { foreign: 'banka', english: 'bank' },
+        { foreign: 'hotel', english: 'hotel' },
+        { foreign: 'blizu', english: 'near / close' },
+      ],
     },
   },
 };
