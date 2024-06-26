@@ -40,6 +40,13 @@ export const allPhrases = {
         'To have, present tense:; I have, you have, etc.,
       hard: true,
     },
+    {
+      foreign:
+        'imati, negative present tense:; (ja) nemam; (ti) nemaš; (on/ona/ono) nema; (mi) nemamo; (vi) nemate; (oni/one/ona) nemaju',
+      english:
+        'To have, negative present tense:; I don’t have, you don’t have, etc.,
+      hard: true,
+    },
   ],
   unit1: {
     chapter1: {
