@@ -248,7 +248,10 @@ function showNextFlashcard(phrase) {
         return;
       }
       if (answer.toLowerCase() === 'b') {
-        currentLesson = null;
+        console.log(
+          `\nFinished with ${currentUnit ? `${currentUnit} ` : ''}${currentChapter ? `${currentChapter} ` : ''}${currentLesson ? `${currentLesson} ` : ''}`,
+        );
+        currentUnit = currentChapter = currentLesson = null;
         showMenu();
         return;
       }
