@@ -372,8 +372,8 @@ export const allPhrases = {
           hard: true,
         },
         {
-          foreign: 'možeš li...?',
-          english: 'can you...? (Informal singular)',
+          foreign: 'možeš li ...?',
+          english: 'can you ...? (Informal singular)',
           hard: true,
         },
         { foreign: 'rećiti', english: 'to say', hard: true },
@@ -388,7 +388,7 @@ export const allPhrases = {
           english: 'You are a real expert. (Informal singular)',
           hard: true,
         },
-        { foreign: 'Kako vi kažete...?', english: 'How do you say...? (Plural)' },
+        { foreign: 'Kako vi kažete ...?', english: 'How do you say ...? (Plural)' },
         { foreign: 'Što ova rijEČ znači?', english: 'What does this word mean?', hard: true },
       ],
       lesson4: [
@@ -470,7 +470,7 @@ export const allPhrases = {
           hard: true,
         },
         { foreign: 'Molim Vas', english: 'please (Formal singular)' },
-        { foreign: 'možete li...?', english: 'can you...? (Formal singular)' },
+        { foreign: 'možete li ...?', english: 'can you ...? (Formal singular)' },
         { foreign: 'To je previše.', english: 'That is too much.', hard: true },
         { foreign: 'skupo', english: 'expensive' },
         { foreign: 'jeftino', english: 'cheap', hard: true },
@@ -568,7 +568,7 @@ export const allPhrases = {
           hard: true,
         },
         { foreign: 'haljina', english: 'dress', hard: true },
-        { foreign: 'Želiš li...?', english: 'Do you want...? (Informal singular)' },
+        { foreign: 'Želiš li ...?', english: 'Do you want ...? (Informal singular)' },
         {
           foreign: 'Možemo se presvući kasnije.',
           english: 'We can change clothes later.',
@@ -683,8 +683,8 @@ export const allPhrases = {
         { foreign: 'prodavaOnica elekTROničke robe', english: 'electronics store' },
       ],
       lesson6: [
-        { foreign: 'prodavaOnica odjeće', english: 'clothing store' },
-        { foreign: 'robna kuća', english: 'department store' },
+        { foreign: 'prodavaOnica odjeće', english: 'clothing store', hard: true },
+        { foreign: 'robna kuća', english: 'department store', hard: true },
       ],
     },
     chapter5: {
@@ -708,7 +708,7 @@ export const allPhrases = {
       ],
       lesson2: [
         { foreign: 'Mogu li pješačiti do tamo?', english: 'Can I walk there?', hard: true },
-        { foreign: 'Mogu li...?', english: 'Can I...?' },
+        { foreign: 'Mogu li ...?', english: 'Can I ...?' },
         { foreign: 'Da, to je vrlo blizu.', english: 'Yes, it is very close.' },
         { foreign: 'sjever', english: 'north' },
         { foreign: 'jug', english: 'south' },
@@ -720,9 +720,15 @@ export const allPhrases = {
       ],
       lesson3: [
         { foreign: 'raskrižje', english: 'intersetion' },
-        { foreign: 'KoLIko je daLEko...?', english: 'How far is...?' },
+        { foreign: 'KoLIko je daLEko ...?', english: 'How far is ...?' },
         { foreign: 'dolje', english: 'down' },
-        { foreign: 'Ima deset milja do...? (It has...)', english: 'It is ten miles to...?' },
+        { foreign: 'Ima deset milja do ...? (It has ...)', english: 'It is ten miles to ...?' },
+      ],
+      lesson4: [
+        { foreign: 'Ima pet kilometara od ...?', english: 'It is five kilometers from ...?' },
+        { foreign: 'desno', english: 'right (direction)' },
+        { foreign: 'ispred', english: 'in front of' },
+        { foreign: 'iza', english: 'behind' },
       ],
     },
   },
