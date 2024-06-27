@@ -252,7 +252,7 @@ function showNextFlashcard(phrase) {
       }
       if (answer.toLowerCase() === 'b') {
         console.log(
-          `\nFinished with ${currentUnit ? `${currentUnit} ` : ''}${currentChapter ? `${currentChapter} ` : ''}${currentLesson ? `${currentLesson} ` : ''}`,
+          `\nFinished with ${nameOf(currentUnit)}${nameOf(currentChapter)}${nameOf(currentLesson)}`,
         );
         currentUnit = currentChapter = currentLesson = null;
         showMenu();
@@ -290,6 +290,12 @@ function showNextFlashcard(phrase) {
       showNextFlashcard();
     },
   );
+}
+
+function nameOf(thing) {
+  return thing
+    ? `${thing[0].toUpperCase() + thing.slice(1).replace(/([a-z])([0-9])/gi, '$1 $2')} `
+    : '';
 }
 
 // Phrases in the hard phrases text file
