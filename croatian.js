@@ -36,15 +36,13 @@ export const allPhrases = {
     {
       foreign:
         'imati, present tense:; (ja) imam; (ti) imaš; (on/ona/ono) ima; (mi) imamo; (vi) imate; (oni/one/ona) imaju',
-      english:
-        'To have, present tense:; I have, you have, etc.,
+      english: 'To have, present tense:; I have, you have, etc.',
       hard: true,
     },
     {
       foreign:
         'imati, negative present tense:; (ja) nemam; (ti) nemaš; (on/ona/ono) nema; (mi) nemamo; (vi) nemate; (oni/one/ona) nemaju',
-      english:
-        'To have, negative present tense:; I don’t have, you don’t have, etc.,
+      english: 'To have, negative present tense:; I don’t have, you don’t have, etc.',
       hard: true,
     },
   ],
@@ -222,8 +220,7 @@ export const allPhrases = {
         {
           foreign:
             'govoriti, present tense:; (ja) govorim; (ti) govoriš; (on/ona/ono) govori; (mi) govorimo; (vi) govorite; (oni/one/ona) govore',
-          english:
-            'to speak, present tense:; I speak; you speak, etc',
+          english: 'to speak, present tense:; I speak; you speak, etc',
           hard: true,
         },
         {
