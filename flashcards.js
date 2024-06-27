@@ -28,6 +28,7 @@ let phrases = [];
 let lastPhrase = null;
 let wrongPhrases;
 let phraseIndex;
+let shownPhrases = new Set();
 
 function showMenu() {
   console.log(menu);
@@ -166,6 +167,7 @@ async function setupPhrases() {
   phrases = [];
   wrongPhrases = [];
   phraseIndex = 0;
+  shownPhrases = new Set();
   const hardPhrases = await dynHardPhrases();
   if (currentUnit === 'all' || currentUnit === 'hard') {
     for (let unit in allPhrases) {
@@ -236,6 +238,7 @@ function showNextFlashcard(phrase) {
   const wrong = wrongPhrases.map((phrase) => phrase.foreign).includes(randomPhrase.foreign)
     ? '  (wrong before)'
     : '';
+  shownPhrases.add(randomPhrase.foreign);
   console.log(
     `  ${chalk.yellow((showEnglish ? randomPhrase.english : randomPhrase.foreign).replaceAll(/; */g, '\n  '))}`,
   );
@@ -278,6 +281,10 @@ function showNextFlashcard(phrase) {
       console.log(
         `${moveUpAndClearLine}${moveUpAndClearLine}    ${chalk.green((showEnglish ? randomPhrase.foreign : randomPhrase.english).replaceAll(/; */g, '\n    '))}${hard}${wrong}`,
       );
+      if (shownPhrases.size === phrases.length) {
+        console.log('All phrases have been shown.');
+        shownPhrases.add('don’t show that message again.');
+      }
       phraseIndex++;
       lastPhrase = randomPhrase;
       showNextFlashcard();
