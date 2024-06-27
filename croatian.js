@@ -10,6 +10,7 @@ Kakav je moj izgovor?
 Što ova rijEČ znači?
 oPROstite
 Ne znam.
+Hvala.
 */
 
 export const allPhrases = {
@@ -622,8 +623,8 @@ export const allPhrases = {
         { foreign: 'plakar', english: 'closet' },
         { foreign: 'ormar (namještaj)', english: 'wardrobe (furniture)', hard: true },
         { foreign: 'gardeROba (odjeća)', english: 'wardrobe (clothes)', hard: true },
-        { foreign: 'prije', english: 'before', hard: true },
-        { foreign: 'nakon', english: 'after', hard: true },
+        { foreign: 'prije', english: 'before' },
+        { foreign: 'nakon', english: 'after' },
         { foreign: 'tiJEkom', english: 'during', hard: true },
         { foreign: 'Ne bih...', english: 'I wouldn’t...' },
         { foreign: 'Nisam...', english: 'I’m not...' },
@@ -755,6 +756,55 @@ export const allPhrases = {
         { foreign: 'banka', english: 'bank' },
         { foreign: 'hotel', english: 'hotel' },
         { foreign: 'blizu', english: 'near / close', hard: true },
+      ],
+    },
+  },
+  unit3: {
+    chapter1: {
+      name: 'Time for sports',
+      lesson1: [
+        {
+          foreign: 'Želiš li igrati tenis?',
+          english: 'Do you want to play tennis? (Informal singular)',
+          hard: true,
+        },
+        {
+          foreign: 'Ne, hvala. Već sam se razGIbao.',
+          english: 'No, thanks. I already did my exercise. (Male speaker)',
+          hard: true,
+        },
+        { foreign: 'Ne, hvala.', english: 'No thanks.' },
+        { foreign: 'Hvala.', english: 'Thanks.' },
+        { foreign: 'veċ', english: 'already' },
+        {
+          foreign: 'Što si radio / radila?',
+          english: 'What did you do? (Informal, to a male / female)',
+          hard: true,
+        },
+        {
+          foreign: 'Kad si igrao / igrala tenis?',
+          english: 'When did you play tennis? (Informal, to a male / female)',
+          hard: true,
+        },
+        {
+          foreign: 'Igrao sam nogomet s prijateljima.',
+          english: 'I played soccer with friends. (Male speaker)',
+          hard: true,
+        },
+      ],
+      lesson2: [
+        { foreign: 'To zvuči zabavno', english: 'That sounds fun.', hard: true },
+        {
+          foreign: 'Želiš li sutra igrati tenis?',
+          english: 'Do you want to play tennis tomorrow? (Informal singular)',
+          hard: true,
+        },
+        { foreign: 'željeti', english: 'to want', hard: true },
+        { foreign: 'rukomet', english: 'handball', hard: true },
+        { foreign: 'košarka', english: 'basketball', hard: true },
+        { foreign: 'razGIbati se', english: 'to do exercise', hard: true },
+        { foreign: 'džoGIrati', english: 'to jog', hard: true },
+        { foreign: 'hodati', english: 'to walk', hard: true },
       ],
     },
   },
