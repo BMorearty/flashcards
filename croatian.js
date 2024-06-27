@@ -609,7 +609,7 @@ export const allPhrases = {
         { foreign: 'remen', english: 'belt' },
         { foreign: 'kupaći kostim', english: 'swimsuit' },
         { foreign: 'piDŽAma', english: 'pajamas' },
-        { foreign: 'Istuširat ću se.', english: 'I’ll take a shower.', hard: true },
+        { foreign: 'IstuŠIrat ću se.', english: 'I’ll take a shower.', hard: true },
       ],
       lesson4: [
         { foreign: 'oKUpat ću se.', english: 'I’ll take a bath.' },
@@ -685,7 +685,7 @@ export const allPhrases = {
         { foreign: 'popiti', english: 'to drink' },
         { foreign: 'nešto', english: 'something' },
         { foreign: 'Gdje mogu pojesti sendvič?', english: 'Where can I eat a sandwich?' },
-        { foreign: 'pojesti', english: 'to eat' },
+        { foreign: 'pojesti', english: 'to eat', hard: true },
         { foreign: 'sendvič', english: 'sandwich' },
       ],
       lesson5: [
