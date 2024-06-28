@@ -244,7 +244,7 @@ function showNextFlashcard(phrase) {
   );
 
   rl.question(
-    'Enter: see translation, (B)ack, (Q)uit,\nLast was (H)ard / (W)rong / (R)ight: ',
+    'Enter: see translation, (B)ack, (Q)uit,\n(P)rev / (N)ext lesson,\nLast was (H)ard / (W)rong / (R)ight: ',
     (answer) => {
       if (answer.toLowerCase() === 'q') {
         rl.close();
@@ -256,6 +256,16 @@ function showNextFlashcard(phrase) {
         );
         currentUnit = currentChapter = currentLesson = null;
         showMenu();
+        return;
+      }
+      if (answer.toLowerCase() === 'p') {
+        console.log('TODO');
+        showNextFlashcard(randomPhrase);
+        return;
+      }
+      if (answer.toLowerCase() === 'n') {
+        console.log('TODO');
+        showNextFlashcard(randomPhrase);
         return;
       }
       if (answer.toLowerCase() === 'h' && lastPhrase) {
@@ -279,7 +289,7 @@ function showNextFlashcard(phrase) {
       // If I typed a phrase, don't erase what I typed. I want to compare it to the correct answer.
       const moveUpAndClearLine = answer === '' ? '\u001b[1A\u001b[K' : '';
       console.log(
-        `${moveUpAndClearLine}${moveUpAndClearLine}    ${chalk.green((showEnglish ? randomPhrase.foreign : randomPhrase.english).replaceAll(/; */g, '\n    '))}${hard}${wrong}`,
+        `${moveUpAndClearLine}${moveUpAndClearLine}${moveUpAndClearLine}    ${chalk.green((showEnglish ? randomPhrase.foreign : randomPhrase.english).replaceAll(/; */g, '\n    '))}${hard}${wrong}`,
       );
       if (shownPhrases.size === phrases.length) {
         console.log(chalk.cyanBright.underline('All phrases have been shown.'));
