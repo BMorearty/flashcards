@@ -826,10 +826,16 @@ export const allPhrases = {
       lesson4: [
         { foreign: 'stadion', english: 'stadium' },
         { foreign: 'poslije podne', english: 'this afternoon', hard: true },
-        { foreign: 'poslije', english: 'after' },
-        { foreign: 'podne', english: 'noon' },
+        { foreign: 'poslije', english: 'after', hard: true },
+        { foreign: 'podne', english: 'noon', hard: true },
         { foreign: 'danas kasnije', english: 'later today', hard: true },
         { foreign: 'tjedan', english: 'week', hard: true },
+      ],
+      lesson5: [
+        { foreign: 'ovaj tjedan', english: 'this week', hard: true },
+        { foreign: 'prije nekoliko sati', english: 'a few hours ago', hard: true },
+        { foreign: 'danas ranije', english: 'earlier today', hard: true },
+        { foreign: 'uskoro', english: 'soon', hard: true },
       ],
     },
   },
