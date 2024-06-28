@@ -288,7 +288,7 @@ export const allPhrases = {
         },
         { foreign: 'u', english: 'in' },
         {
-          foreign: 'Čula sam za taj fakultet',
+          foreign: 'Čula sam za taj faKULtet',
           english: 'I’ve heard of that faculty. (From female)',
         },
         {
@@ -304,11 +304,11 @@ export const allPhrases = {
       lesson2: [
         { foreign: 'Što ste Vi stuDIrali?', english: 'What did *you* study? (Formal singular)' },
         {
-          foreign: 'StuDIrala sam pravo na Pravnom fakultetu u Osijeku.',
+          foreign: 'StuDIrala sam pravo na Pravnom fakulTEtu u Osijeku.',
           english: 'I studied law at the School of Law in Osijek. (Feminine)',
         },
         {
-          foreign: 'To je također vrlo dobar fakultet.',
+          foreign: 'To je također vrlo dobar faKULtet.',
           english: 'That is also a very good school.',
         },
       ],
@@ -566,7 +566,7 @@ export const allPhrases = {
           english: 'negative future tense of to wear: I will not wear, you will not wear, etc.',
           hard: true,
         },
-        { foreign: 'danas', english: 'today' },
+        { foreign: 'danas', english: 'today', hard: true },
         {
           foreign: 'Traperice i majicu kratkih ruKAva.',
           english: 'Jeans and a short-sleeved shirt.',
@@ -814,6 +814,16 @@ export const allPhrases = {
         { foreign: 'umoran / umorna / umorno', english: 'tired (masculine / feminine / neuter)' },
         { foreign: 'Da, molim.', english: 'Yes, please.' },
         { foreign: 'dvoRAna za vježbanje', english: 'gym', hard: true },
+        { foreign: 'dvoRAna', english: 'hall', hard: true },
+        { foreign: 'vježbanje', english: 'exercise', hard: true },
+      ],
+      lesson4: [
+        { foreign: 'stadion', english: 'stadium' },
+        { foreign: 'poslije podne', english: 'this afternoon' },
+        { foreign: 'poslije', english: 'after' },
+        { foreign: 'podne', english: 'noon' },
+        { foreign: 'danas kasnije', english: '' },
+        { foreign: 'tjedan', english: 'week' },
       ],
     },
   },
