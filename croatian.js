@@ -543,13 +543,13 @@ export const allPhrases = {
         { foreign: 'nositi', english: 'to wear', hard: true },
         {
           foreign:
-            'future tense of biti:; ja ću; ti ćeš; on/ona/ono će; mi ćemo; vi ćete; oni/one/ona će',
+            'htjeti, future tense of biti:; ja ću; ti ćeš; on/ona/ono će; mi ćemo; vi ćete; oni/one/ona će',
           english: 'future tense of to be: I will be, you will be, etc.',
           hard: true,
         },
         {
           foreign:
-            'negative future tense of biti:; Ja neću; ti nećeš; on/ona/ono neće; mi nećemo; vi nećete; oni/one/ona neće',
+            'negative htjeti / negative future tense of biti:; Ja neću; ti nećeš; on/ona/ono neće; mi nećemo; vi nećete; oni/one/ona neće',
           english: 'negative future tense of to be: I will not be, you will not be, etc.',
           hard: true,
         },
@@ -775,7 +775,7 @@ export const allPhrases = {
         },
         { foreign: 'Ne, hvala.', english: 'No thanks.' },
         { foreign: 'Hvala.', english: 'Thanks.' },
-        { foreign: 'veċ', english: 'already' },
+        { foreign: 'već', english: 'already' },
         {
           foreign: 'Što si radio / radila?',
           english: 'What did you do? (Informal, to a male / female)',
