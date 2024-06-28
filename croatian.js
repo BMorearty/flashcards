@@ -11,6 +11,7 @@ Kakav je moj izgovor?
 oPROstite
 Ne znam.
 Hvala.
+Da, molim.
 */
 
 export const allPhrases = {
@@ -805,6 +806,14 @@ export const allPhrases = {
         { foreign: 'razGIbati se', english: 'to do exercise', hard: true },
         { foreign: 'džoGIrati', english: 'to jog', hard: true },
         { foreign: 'hodati', english: 'to walk', hard: true },
+      ],
+      lesson3: [
+        { foreign: 'trčati', english: 'to run' },
+        { foreign: 'plivati', english: 'to swim' },
+        { foreign: 'odMArati se', english: 'to relax', hard: true },
+        { foreign: 'umoran / umorna / umorno', english: 'tired (masculine / feminine / neuter)' },
+        { foreign: 'Da, molim.', english: 'Yes, please.' },
+        { foreign: 'dvoRAna za vježbanje', english: 'gym', hard: true },
       ],
     },
   },
