@@ -835,7 +835,17 @@ export const allPhrases = {
         { foreign: 'ovaj tjedan', english: 'this week', hard: true },
         { foreign: 'prije nekoliko sati', english: 'a few hours ago', hard: true },
         { foreign: 'danas ranije', english: 'earlier today', hard: true },
+        { foreign: 'ranije', english: 'earlier', hard: true },
         { foreign: 'uskoro', english: 'soon', hard: true },
+      ],
+      lesson6: [
+        { foreign: 'utakmica', english: 'match (in a sport)', hard: true },
+        {
+          foreign: 'Idemo igrati nogomet sutra!',
+          english: 'Let’s play soccer tomorrow!',
+          hard: true,
+        },
+        { foreign: 'idemo', english: 'let’s' },
       ],
     },
   },
