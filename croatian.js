@@ -848,6 +848,42 @@ export const allPhrases = {
         { foreign: 'idemo', english: 'let’s' },
       ],
     },
+    chapter3: {
+      name: 'I love summer best',
+      lesson1: [
+        { foreign: 'Ja najviše volim ljeto.', english: 'I love summer best.', hard: true },
+        { foreign: 'više', english: 'more', hard: true },
+        { foreign: 'najviše', english: 'most', hard: true },
+        { foreign: 'ljeto', english: 'summer', hard: true },
+        {
+          foreign: 'Ljeti je najbolje vriJEme.',
+          english: 'In summer is the best weather.',
+          hard: true,
+        },
+        { foreign: 'bolje', english: 'better', hard: true },
+        { foreign: 'najbolje', english: 'best', hard: true },
+        { foreign: 'ljeti', english: 'in summer', hard: true },
+        {
+          foreign: 'Što voliš raditi ljeti?',
+          english: 'What do you like to do in summer? (Informal singular)',
+        },
+      ],
+      lesson2: [
+        { foreign: 'Uživam ići na plažu.', english: 'I enjoy going to the beach.', hard: true },
+        { foreign: 'uživati', english: 'to enjoy', hard: true },
+        { foreign: 'ići', english: 'to go', hard: true },
+        {
+          foreign: 'I ja! Volim se igrati na piJEsku.',
+          english: 'Me too! I like playing in the sand.',
+          hard: true,
+        },
+        { foreign: 'piJEsak', english: 'sand', hard: true },
+        { foreign: 'zima', english: 'winter', hard: true },
+        { foreign: 'zimi', english: 'during the winter / in winter', hard: true },
+        { foreign: 'proljeće', english: 'spring', hard: true },
+        { foreign: 'u proljeće', english: 'during the spring (in spring)', hard: true },
+      ],
+    },
   },
 };
 
