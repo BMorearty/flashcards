@@ -282,7 +282,7 @@ function showNextFlashcard(phrase) {
         `${moveUpAndClearLine}${moveUpAndClearLine}    ${chalk.green((showEnglish ? randomPhrase.foreign : randomPhrase.english).replaceAll(/; */g, '\n    '))}${hard}${wrong}`,
       );
       if (shownPhrases.size === phrases.length) {
-        console.log('All phrases have been shown.');
+        console.log(chalk.cyanBright.underline('All phrases have been shown.'));
         shownPhrases.add('don’t show that message again.');
       }
       phraseIndex++;
