@@ -333,7 +333,7 @@ function showNextFlashcard(phrase) {
       // If I typed a phrase, don't erase what I typed. I want to compare it to the correct answer.
       const moveUpAndClearLine = answer === '' ? '\u001b[1A\u001b[K' : '';
       console.log(
-        `${moveUpAndClearLine}${moveUpAndClearLine}${moveUpAndClearLine}    ${chalk.green((showEnglish ? randomPhrase.foreign : randomPhrase.english).replaceAll(/; */g, '\n    '))}${hard}${wrong}`,
+        `${moveUpAndClearLine}${moveUpAndClearLine}${prevNextPrompt ? moveUpAndClearLine : ''}    ${chalk.green((showEnglish ? randomPhrase.foreign : randomPhrase.english).replaceAll(/; */g, '\n    '))}${hard}${wrong}`,
       );
       if (shownPhrases.size === phrases.length) {
         console.log(chalk.cyanBright.underline('All phrases have been shown.'));
