@@ -848,7 +848,7 @@ export const allPhrases = {
         { foreign: 'idemo', english: 'let’s' },
       ],
     },
-    chapter3: {
+    chapter2: {
       name: 'I love summer best',
       lesson1: [
         { foreign: 'Ja najviše volim ljeto.', english: 'I love summer best.', hard: true },

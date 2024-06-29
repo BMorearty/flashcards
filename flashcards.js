@@ -242,9 +242,19 @@ function showNextFlashcard(phrase) {
   console.log(
     `  ${chalk.yellow((showEnglish ? randomPhrase.english : randomPhrase.foreign).replaceAll(/; */g, '\n  '))}`,
   );
+  const [prevUnit, prevChapter, prevLesson] = calcPrevLesson();
+  const [nextUnit, nextChapter, nextLesson] = calcNextLesson();
+  const prevNextPrompt =
+    prevUnit && nextUnit
+      ? '(P)rev / (N)ext lesson,\n'
+      : prevUnit
+        ? '(P)rev lesson,\n'
+        : nextUnit
+          ? '(N)ext lesson,\n'
+          : '';
 
   rl.question(
-    'Enter: see translation, (B)ack, (Q)uit,\n(P)rev / (N)ext lesson,\nLast was (H)ard / (W)rong / (R)ight: ',
+    `Enter: see translation, (B)ack, (Q)uit,\n${prevNextPrompt}Last was (H)ard / (W)rong / (R)ight: `,
     (answer) => {
       if (answer.toLowerCase() === 'q') {
         rl.close();
@@ -259,13 +269,29 @@ function showNextFlashcard(phrase) {
         return;
       }
       if (answer.toLowerCase() === 'p') {
-        console.log('TODO');
-        showNextFlashcard(randomPhrase);
+        if (!prevUnit) {
+          console.log(chalk.red('No previous lesson.'));
+          showNextFlashcard(randomPhrase);
+          return;
+        }
+        [currentUnit, currentChapter, currentLesson] = [prevUnit, prevChapter, prevLesson];
+        console.log(
+          `\nGoing to ${nameOf(currentUnit)}${nameOf(currentChapter)}${nameOf(currentLesson)}\n`,
+        );
+        startFlashcards();
         return;
       }
       if (answer.toLowerCase() === 'n') {
-        console.log('TODO');
-        showNextFlashcard(randomPhrase);
+        if (!nextUnit) {
+          console.log(chalk.red('No next lesson.'));
+          showNextFlashcard(randomPhrase);
+          return;
+        }
+        [currentUnit, currentChapter, currentLesson] = [nextUnit, nextChapter, nextLesson];
+        console.log(
+          `\nGoing to ${nameOf(currentUnit)}${nameOf(currentChapter)}${nameOf(currentLesson)}\n`,
+        );
+        startFlashcards();
         return;
       }
       if (answer.toLowerCase() === 'h' && lastPhrase) {
@@ -335,6 +361,96 @@ async function addHard(phrase) {
       }
     });
   }
+}
+
+function calcPrevLesson() {
+  if (!currentUnit.startsWith('unit')) {
+    // Unit is 'all', 'hard', or 'custom'
+    return [null, null, null];
+  }
+
+  const unitNum = parseInt(currentUnit.slice(4), 10);
+  const chapterNum = parseInt(currentChapter.slice(7), 10);
+  const lessonNum = parseInt(currentLesson.slice(6), 10);
+
+  if (currentLesson === 'all' || currentLesson === 'hard') {
+    if (chapterNum > 1) {
+      // Do 'all' or 'hard' in the previous chapter of this unit
+      return [currentUnit, `chapter${chapterNum - 1}`, currentLesson];
+    }
+    if (unitNum > 1) {
+      // Do 'all' or 'hard' in the last chapter of the previous unit
+      return [
+        `unit${unitNum - 1}`,
+        Object.keys(allPhrases[`unit${unitNum - 1}`]).at(-1),
+        currentLesson,
+      ];
+    }
+    // Currently at unit 1, chapter 1. There is no previous.
+    return [null, null, null];
+  }
+
+  if (lessonNum > 1) {
+    return [currentUnit, currentChapter, `lesson${lessonNum - 1}`];
+  }
+
+  if (chapterNum > 1) {
+    // Do the last lesson in the previous chapter of this unit
+    const prevChapter = `chapter${chapterNum - 1}`;
+    return [currentUnit, prevChapter, Object.keys(allPhrases[currentUnit][prevChapter]).at(-1)];
+  }
+
+  if (unitNum > 1) {
+    // Do the last lesson in the last chapter of the previous unit
+    const prevUnit = `unit${unitNum - 1}`;
+    const lastChapter = Object.keys(allPhrases[prevUnit]).at(-1);
+    const lastLesson = Object.keys(allPhrases[prevUnit][lastChapter]).at(-1);
+    return [prevUnit, lastChapter, lastLesson];
+  }
+
+  return [null, null, null];
+}
+
+function calcNextLesson() {
+  if (!currentUnit.startsWith('unit')) {
+    // Unit is 'all', 'hard', or 'custom'
+    return [null, null, null];
+  }
+
+  const unitNum = parseInt(currentUnit.slice(4), 10);
+  const chapterNum = parseInt(currentChapter.slice(7), 10);
+  const lessonNum = parseInt(currentLesson.slice(6), 10);
+
+  if (currentLesson === 'all' || currentLesson === 'hard') {
+    if (chapterNum < Object.keys(allPhrases[currentUnit]).length) {
+      // Do 'all' or 'hard' in the next chapter of this unit
+      return [currentUnit, `chapter${chapterNum + 1}`, currentLesson];
+    }
+    if (unitNum < Object.keys(allPhrases).length) {
+      // Do 'all' or 'hard' in the first chapter of the next unit
+      return [`unit${unitNum + 1}`, 'chapter1', currentLesson];
+    }
+    // Currently at the last unit, last chapter. There is no next.
+    return [null, null, null];
+  }
+
+  if (lessonNum < Object.keys(allPhrases[currentUnit][currentChapter]).length - 1) {
+    return [currentUnit, currentChapter, `lesson${lessonNum + 1}`];
+  }
+
+  if (chapterNum < Object.keys(allPhrases[currentUnit]).length) {
+    // Do the first lesson in the next chapter of this unit
+    const nextChapter = `chapter${chapterNum + 1}`;
+    return [currentUnit, nextChapter, Object.keys(allPhrases[currentUnit][nextChapter])[1]];
+  }
+
+  if (currentUnit !== Object.keys(allPhrases).at(-1)) {
+    // Do the first lesson in the first chapter of the next unit
+    const nextUnit = `unit${unitNum + 1}`;
+    return [nextUnit, 'chapter1', Object.keys(allPhrases[nextUnit].chapter1)[1]];
+  }
+
+  return [null, null, null];
 }
 
 showMenu();
