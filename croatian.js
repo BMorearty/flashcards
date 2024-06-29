@@ -851,7 +851,7 @@ export const allPhrases = {
     chapter2: {
       name: 'I love summer best',
       lesson1: [
-        { foreign: 'Ja najviše volim ljeto.', english: 'I love summer best.', hard: true },
+        { foreign: 'Ja najviše volim ljeto.', english: 'I love summer most.', hard: true },
         { foreign: 'više', english: 'more', hard: true },
         { foreign: 'najviše', english: 'most', hard: true },
         { foreign: 'ljeto', english: 'summer', hard: true },
@@ -870,7 +870,7 @@ export const allPhrases = {
       ],
       lesson2: [
         { foreign: 'Uživam ići na plažu.', english: 'I enjoy going to the beach.', hard: true },
-        { foreign: 'uživati', english: 'to enjoy', hard: true },
+        { foreign: 'uŽIvati', english: 'to enjoy', hard: true },
         { foreign: 'ići', english: 'to go', hard: true },
         {
           foreign: 'I ja! Volim se igrati na piJEsku.',

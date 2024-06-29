@@ -14,7 +14,7 @@ ${Object.keys(allPhrases)
   .filter((unit) => unit !== 'custom')
   .map((unit, index) => `${index + 1}. Unit ${index + 1}`)
   .join('\n')}
-A. All units
+A. All phrases
 H. Hard phrases
 C. Custom phrases
 Q. Quit
