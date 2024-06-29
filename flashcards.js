@@ -29,6 +29,8 @@ let lastPhrase = null;
 let wrongPhrases;
 let phraseIndex;
 let shownPhrases = new Set();
+let prevNextPrompt;
+let prevUnit, prevChapter, prevLesson, nextUnit, nextChapter, nextLesson;
 
 function showMenu() {
   console.log(menu);
@@ -157,6 +159,16 @@ function startFlashcards() {
       return;
     }
     showEnglish = answer.toLowerCase() !== 'f';
+    [prevUnit, prevChapter, prevLesson] = calcPrevLesson();
+    [nextUnit, nextChapter, nextLesson] = calcNextLesson();
+    prevNextPrompt =
+      prevUnit && nextUnit
+        ? '(P)rev / (N)ext lesson,\n'
+        : prevUnit
+          ? '(P)rev lesson,\n'
+          : nextUnit
+            ? '(N)ext lesson,\n'
+            : '';
     setupPhrases().then(() => {
       showNextFlashcard();
     });
@@ -242,19 +254,9 @@ function showNextFlashcard(phrase) {
   console.log(
     `  ${chalk.yellow((showEnglish ? randomPhrase.english : randomPhrase.foreign).replaceAll(/; */g, '\n  '))}`,
   );
-  const [prevUnit, prevChapter, prevLesson] = calcPrevLesson();
-  const [nextUnit, nextChapter, nextLesson] = calcNextLesson();
-  const prevNextPrompt =
-    prevUnit && nextUnit
-      ? '(P)rev / (N)ext lesson,\n'
-      : prevUnit
-        ? '(P)rev lesson,\n'
-        : nextUnit
-          ? '(N)ext lesson,\n'
-          : '';
 
   rl.question(
-    `Enter: see translation, (B)ack, (Q)uit,\n${prevNextPrompt}Last was (H)ard / (W)rong / (R)ight: `,
+    `[${wrongPhrases.length}] Enter: translate, (B)ack, (Q)uit,\n${prevNextPrompt}Last was (H)ard / (W)rong / (R)ight: `,
     (answer) => {
       if (answer.toLowerCase() === 'q') {
         rl.close();
