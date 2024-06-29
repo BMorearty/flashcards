@@ -528,7 +528,7 @@ export const allPhrases = {
         { foreign: 'sto dvadeset četiri', english: 'one hundred twenty-four' },
       ],
       lesson5: [
-        { foreign: 'tisuću', english: 'one thousand', hard: true },
+        { foreign: 'tisuću', english: 'one thousand', hard: true, working_on: true },
         { foreign: 'miLIjun', english: 'one million' },
       ],
     },
@@ -819,7 +819,7 @@ export const allPhrases = {
       ],
       lesson3: [
         { foreign: 'trčati', english: 'to run', hard: true },
-        { foreign: 'plivati', english: 'to swim', hard: true },
+        { foreign: 'plivati', english: 'to swim', hard: true, working_on: true },
         { foreign: 'odMArati se', english: 'to relax / rest', hard: true, working_on: true },
         { foreign: 'umoran / umorna / umorno', english: 'tired (masculine / feminine / neuter)' },
         { foreign: 'Da, molim.', english: 'Yes, please.' },
@@ -829,7 +829,7 @@ export const allPhrases = {
       ],
       lesson4: [
         { foreign: 'stadion', english: 'stadium' },
-        { foreign: 'poslije podne', english: 'this afternoon', hard: true },
+        { foreign: 'poslije podne', english: 'this afternoon', hard: true, working_on: true },
         { foreign: 'poslije', english: 'after', hard: true },
         { foreign: 'podne', english: 'noon', hard: true },
         { foreign: 'danas kasnije', english: 'later today' },
@@ -909,6 +909,16 @@ export const allPhrases = {
         { foreign: 'vlažno', english: 'humid' },
         { foreign: 'siječanj / u siječnju', english: 'January / in January', hard: true },
         { foreign: 'veljača / u veljači', english: 'February / in February', hard: true },
+      ],
+      lesson5: [
+        { foreign: 'ožujak / u ožujku', english: 'March / in March' },
+        { foreign: 'travanj / u travnju', english: 'April / in April' },
+        { foreign: 'svibanj / u svibnju', english: 'May / in May' },
+        { foreign: 'lipanj / u lipnju', english: 'June / in June' },
+        { foreign: 'srpanj / u srpnju', english: 'July / in July' },
+        { foreign: 'kolovoz / u kolovozu', english: 'August / in August' },
+        { foreign: 'rujan / u rujnu', english: 'September / in September' },
+        { foreign: 'listopad / u listopadu', english: 'October / in October' },
       ],
     },
   },
