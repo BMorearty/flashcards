@@ -892,6 +892,15 @@ export const allPhrases = {
         { foreign: 'proljeće', english: 'spring', hard: true },
         { foreign: 'u proljeće', english: 'during the spring (in spring)', hard: true },
       ],
+      lesson3: [
+        { foreign: 'jesen', english: 'fall / autumn', hard: true },
+        { foreign: 'u jesen', english: 'during the fall / in fall', hard: true },
+        { foreign: 'sunčano', english: 'sunny' },
+        { foreign: 'snijeg', english: 'snow', hard: true },
+        { foreign: 'kiša', english: 'rain' },
+        { foreign: 'oblačno', english: 'cloudy' },
+        { foreign: 'kišno vrijeme', english: 'rainy weather', hard: true },
+      ],
     },
   },
 };
