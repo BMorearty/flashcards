@@ -699,7 +699,7 @@ export const allPhrases = {
       ],
       lesson6: [
         { foreign: 'prodavaOnica odjeće', english: 'clothing store', hard: true },
-        { foreign: 'robna kuća', english: 'department store', hard: true },
+        { foreign: 'robna kuća', english: 'department store', hard: true, working_on: true },
       ],
     },
     chapter5: {
@@ -718,6 +718,7 @@ export const allPhrases = {
           foreign: 'Onda skrenite liJEvo na uglu.',
           english: 'Then turn left at the corner. (Formal singular)',
           hard: true,
+          working_on: true,
         },
         { foreign: 'onda', english: 'then (in a list of instructions)' },
         { foreign: 'liJEvo', english: 'left' },
@@ -740,7 +741,12 @@ export const allPhrases = {
       ],
       lesson3: [
         { foreign: 'raskrižje', english: 'intersection', hard: true },
-        { foreign: 'KoLIko je daLEko ...?', english: 'How far is ...?', hard: true },
+        {
+          foreign: 'KoLIko je daLEko ...?',
+          english: 'How far is ...?',
+          hard: true,
+          working_on: true,
+        },
         { foreign: 'dolje', english: 'down', hard: true },
         {
           foreign: 'Ima deset milja do ...? (It has ...)',
@@ -800,7 +806,7 @@ export const allPhrases = {
         },
       ],
       lesson2: [
-        { foreign: 'To zvuči zabavno', english: 'That sounds fun.', hard: true },
+        { foreign: 'To zvuči zabavno', english: 'That sounds fun.', hard: true, working_on: true },
         {
           foreign: 'Želiš li sutra igrati tenis?',
           english: 'Do you want to play tennis tomorrow? (Informal singular)',
@@ -811,15 +817,15 @@ export const allPhrases = {
         { foreign: 'košarka', english: 'basketball', hard: true },
         { foreign: 'razGIbati se', english: 'to do exercise', hard: true },
         { foreign: 'džoGIrati', english: 'to jog', hard: true },
-        { foreign: 'hodati', english: 'to walk', hard: true },
+        { foreign: 'hodati', english: 'to walk', hard: true, working_on: true },
       ],
       lesson3: [
         { foreign: 'trčati', english: 'to run', hard: true },
         { foreign: 'plivati', english: 'to swim', hard: true },
-        { foreign: 'odMArati se', english: 'to relax / rest', hard: true },
+        { foreign: 'odMArati se', english: 'to relax / rest', hard: true, working_on: true },
         { foreign: 'umoran / umorna / umorno', english: 'tired (masculine / feminine / neuter)' },
         { foreign: 'Da, molim.', english: 'Yes, please.' },
-        { foreign: 'dvoRAna za vježbanje', english: 'gym', hard: true },
+        { foreign: 'dvoRAna za vježbanje', english: 'gym', hard: true, working_on: true },
         { foreign: 'dvoRAna', english: 'hall', hard: true },
         { foreign: 'vježbanje', english: 'exercise', hard: true },
       ],
@@ -836,10 +842,10 @@ export const allPhrases = {
         { foreign: 'prije nekoliko sati', english: 'a few hours ago', hard: true },
         { foreign: 'danas ranije', english: 'earlier today', hard: true },
         { foreign: 'ranije', english: 'earlier', hard: true },
-        { foreign: 'uskoro', english: 'soon', hard: true },
+        { foreign: 'uskoro', english: 'soon', hard: true, working_on: true },
       ],
       lesson6: [
-        { foreign: 'utakmica', english: 'match (in a sport)', hard: true },
+        { foreign: 'utakmica', english: 'match (in a sport)', hard: true, working_on: true },
         {
           foreign: 'Idemo igrati nogomet sutra!',
           english: 'Let’s play soccer tomorrow!',
@@ -851,7 +857,12 @@ export const allPhrases = {
     chapter2: {
       name: 'I love summer best',
       lesson1: [
-        { foreign: 'Ja najviše volim ljeto.', english: 'I love summer most.', hard: true },
+        {
+          foreign: 'Ja najviše volim ljeto.',
+          english: 'I love summer most.',
+          hard: true,
+          working_on: true,
+        },
         { foreign: 'više', english: 'more', hard: true },
         { foreign: 'najviše', english: 'most', hard: true },
         { foreign: 'ljeto', english: 'summer', hard: true },
@@ -859,6 +870,7 @@ export const allPhrases = {
           foreign: 'Ljeti je najbolje vriJEme.',
           english: 'In summer is the best weather.',
           hard: true,
+          working_on: true,
         },
         { foreign: 'bolje', english: 'better', hard: true },
         { foreign: 'najbolje', english: 'best', hard: true },

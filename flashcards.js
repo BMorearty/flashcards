@@ -16,6 +16,7 @@ ${Object.keys(allPhrases)
   .join('\n')}
 A. All phrases
 H. Hard phrases
+W. Working on
 C. Custom phrases
 Q. Quit
 `;
@@ -51,6 +52,11 @@ function handleMenuChoice(choice) {
   }
   if (choice.toLowerCase() === 'h') {
     currentUnit = 'hard';
+    startFlashcards();
+    return;
+  }
+  if (choice.toLowerCase() === 'w') {
+    currentUnit = 'working_on';
     startFlashcards();
     return;
   }
@@ -181,7 +187,7 @@ async function setupPhrases() {
   phraseIndex = 0;
   shownPhrases = new Set();
   const hardPhrases = await dynHardPhrases();
-  if (currentUnit === 'all' || currentUnit === 'hard') {
+  if (['all', 'hard', 'working_on'].includes(currentUnit)) {
     for (let unit in allPhrases) {
       if (unit === 'custom') {
         if (currentUnit === 'hard') {
@@ -190,6 +196,10 @@ async function setupPhrases() {
               (phrase) => phrase.hard || hardPhrases.includes(phrase.foreign),
             ),
           );
+          continue;
+        }
+        if (currentUnit === 'working_on') {
+          phrases = phrases.concat(allPhrases[unit].filter((phrase) => phrase.working_on));
           continue;
         }
         phrases = phrases.concat(allPhrases[unit]);
@@ -205,6 +215,12 @@ async function setupPhrases() {
               allPhrases[unit][chapter][lesson].filter(
                 (phrase) => phrase.hard || hardPhrases.includes(phrase.foreign),
               ),
+            );
+            continue;
+          }
+          if (currentUnit === 'working_on') {
+            phrases = phrases.concat(
+              allPhrases[unit][chapter][lesson].filter((phrase) => phrase.working_on),
             );
             continue;
           }
