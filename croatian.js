@@ -901,6 +901,15 @@ export const allPhrases = {
         { foreign: 'oblačno', english: 'cloudy' },
         { foreign: 'kišno vrijeme', english: 'rainy weather', hard: true },
       ],
+      lesson4: [
+        { foreign: 'vruće', english: 'hot' },
+        { foreign: 'Vruće je.', english: 'It’s hot.' },
+        { foreign: 'hladno', english: 'cold' },
+        { foreign: 'Hladno je.', english: 'It’s cold.' },
+        { foreign: 'vlažno', english: 'humid' },
+        { foreign: 'siječanj / u siječnju', english: 'January / in January', hard: true },
+        { foreign: 'veljača / u veljači', english: 'February / in February', hard: true },
+      ],
     },
   },
 };
