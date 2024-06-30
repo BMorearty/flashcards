@@ -716,7 +716,6 @@ export const allPhrases = {
           foreign: 'Onda skrenite liJEvo na uglu.',
           english: 'Then turn left at the corner. (Formal singular)',
           hard: true,
-          working_on: true,
         },
         { foreign: 'onda', english: 'then (in a list of instructions)' },
         { foreign: 'liJEvo', english: 'left' },
@@ -815,7 +814,7 @@ export const allPhrases = {
         { foreign: 'košarka', english: 'basketball' },
         { foreign: 'razGIbati se', english: 'to do exercise', hard: true, working_on: true },
         { foreign: 'džoGIrati', english: 'to jog', hard: true },
-        { foreign: 'hodati', english: 'to walk', hard: true, working_on: true },
+        { foreign: 'hodati', english: 'to walk', hard: true },
       ],
       lesson3: [
         { foreign: 'trčati', english: 'to run', hard: true },
@@ -880,7 +879,7 @@ export const allPhrases = {
       lesson2: [
         { foreign: 'Uživam ići na plažu.', english: 'I enjoy going to the beach.', hard: true },
         { foreign: 'uŽIvati', english: 'to enjoy', hard: true },
-        { foreign: 'ići', english: 'to go', hard: true },
+        { foreign: 'ići', english: 'to go' },
         {
           foreign: 'I ja! Volim se igrati na piJEsku.',
           english: 'Me too! I like playing in the sand.',
@@ -899,7 +898,7 @@ export const allPhrases = {
         { foreign: 'snijeg', english: 'snow', hard: true },
         { foreign: 'kiša', english: 'rain' },
         { foreign: 'oblačno', english: 'cloudy' },
-        { foreign: 'kišno vrijeme', english: 'rainy weather', hard: true },
+        { foreign: 'kišno vriJEme', english: 'rainy weather', hard: true },
       ],
       lesson4: [
         { foreign: 'vruće', english: 'hot' },
@@ -925,7 +924,7 @@ export const allPhrases = {
         { foreign: 'prosinac / u prosincu', english: 'December / in December' },
         { foreign: 'Ima puno sniJEga u prosincu.', english: 'There’s a lot of snow in December.' },
         { foreign: 'ima', english: 'it has (there is)' },
-        { foreign: 'Ljeti je uvijek sunčano.', english: 'It’s always sunny in the summer.' },
+        { foreign: 'Ljeti je uvijek sunčano.', english: 'It’s always sunny in the summer.', hard: true },
         { foreign: 'uvijek', english: 'always' },
       ],
     },
