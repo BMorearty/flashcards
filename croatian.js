@@ -193,7 +193,12 @@ export const allPhrases = {
         { foreign: 'debela (žena)', english: 'fat (woman)' },
         { foreign: 'oSOBnost', english: 'personality', hard: true },
         { foreign: 'To mi se sviđa.', english: 'I like it.', hard: true },
-        { foreign: 'poznanik / poznanici', english: 'acquaintance / acquaintances (male)' },
+        {
+          foreign: 'poznanik / poznanici',
+          english: 'acquaintance / acquaintances (male)',
+          hard: true,
+          working_on: true,
+        },
         { foreign: 'poznanica', english: 'acquaintance (female)', hard: true },
       ],
       lesson5: [
@@ -879,17 +884,17 @@ export const allPhrases = {
       ],
       lesson2: [
         { foreign: 'Uživam ići na plažu.', english: 'I enjoy going to the beach.', hard: true },
-        { foreign: 'uŽIvati', english: 'to enjoy', hard: true },
+        { foreign: 'uŽIvati', english: 'to enjoy', hard: true, working_on: true },
         { foreign: 'ići', english: 'to go' },
         {
           foreign: 'I ja! Volim se igrati na piJEsku.',
           english: 'Me too! I like playing in the sand.',
           hard: true,
         },
-        { foreign: 'piJEsak', english: 'sand', hard: true },
+        { foreign: 'piJEsak', english: 'sand', hard: true, working_on: true },
         { foreign: 'zima', english: 'winter' },
         { foreign: 'zimi', english: 'during the winter / in winter' },
-        { foreign: 'proljeće', english: 'spring', hard: true },
+        { foreign: 'proljeće', english: 'spring', hard: true, working_on: true },
         { foreign: 'u proljeće', english: 'during the spring (in spring)', hard: true },
       ],
       lesson3: [
@@ -931,6 +936,32 @@ export const allPhrases = {
           hard: true,
         },
         { foreign: 'uvijek', english: 'always' },
+      ],
+    },
+    chapter3: {
+      name: 'What are you doing this weekend?',
+      lesson1: [
+        {
+          foreign: 'Što radiš ovaj vikend?',
+          english: 'What are you doing this weekend? (Informal singular)',
+        },
+        {
+          foreign: 'U nedjelju mi je rođendan.',
+          english: 'On Sunday is my birthday. (In Sunday to me is birthday.)',
+          hard: true,
+        },
+        { foreign: 'nedjelju / u nedjelju', english: 'Sunday / on Sunday', hard: true },
+        { foreign: 'To je sjajno!', english: 'That is splendid!', hard: true },
+        { foreign: 'Proslavimo ga ranije.', english: 'Let’s celebrate it earlier.', hard: true },
+        { foreign: 'ga', english: 'it (masculine, genitive case)' },
+        {
+          foreign: 'Napravimo zabavu u petak ili subotu.',
+          english: 'Let’s have a party on Friday or Saturday.',
+          hard: true,
+        },
+        { foreign: 'petak / u petak', english: 'Friday / on Friday' },
+        { foreign: 'subota / u subotu', english: 'Saturday / on Saturday', hard: true },
+        { foreign: 'ili', english: 'or' },
       ],
     },
   },
