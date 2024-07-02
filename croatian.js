@@ -889,7 +889,7 @@ export const allPhrases = {
           english: 'Me too! I like playing in the sand.',
           hard: true,
         },
-        { foreign: 'piJEsak', english: 'sand', hard: true, working_on: true },
+        { foreign: 'piJEsak', english: 'sand', hard: true },
         { foreign: 'zima', english: 'winter' },
         { foreign: 'zimi', english: 'during the winter / in winter' },
         { foreign: 'proljeće', english: 'spring', hard: true },
