@@ -821,7 +821,7 @@ export const allPhrases = {
       lesson3: [
         { foreign: 'trčati', english: 'to run', hard: true },
         { foreign: 'plivati', english: 'to swim', hard: true },
-        { foreign: 'odMArati se', english: 'to relax / rest', hard: true, working_on: true },
+        { foreign: 'odMArati se', english: 'to relax / rest', hard: true },
         { foreign: 'umoran / umorna / umorno', english: 'tired (masculine / feminine / neuter)' },
         { foreign: 'Da, molim.', english: 'Yes, please.' },
         { foreign: 'dvoRAna za vježbanje', english: 'gym', hard: true },
@@ -892,7 +892,7 @@ export const allPhrases = {
         { foreign: 'piJEsak', english: 'sand', hard: true, working_on: true },
         { foreign: 'zima', english: 'winter' },
         { foreign: 'zimi', english: 'during the winter / in winter' },
-        { foreign: 'proljeće', english: 'spring', hard: true, working_on: true },
+        { foreign: 'proljeće', english: 'spring', hard: true },
         { foreign: 'u proljeće', english: 'during the spring (in spring)', hard: true },
       ],
       lesson3: [
