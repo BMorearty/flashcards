@@ -47,7 +47,7 @@ export const allPhrases = {
       english: 'To have, negative present tense:; I don’t have, you don’t have, etc.',
       hard: true,
     },
-    { foreign: 'Ja trebam pomoć.', english: 'I need help.', hard: true, working_on: true },
+    { foreign: 'Trebam pomoć.', english: 'I need help.', hard: true, working_on: true },
   ],
   unit1: {
     chapter1: {
@@ -148,7 +148,7 @@ export const allPhrases = {
         { foreign: 'unuk', english: 'grandson', hard: true },
         { foreign: 'unuka', english: 'granddaughter', hard: true },
         { foreign: 'neĆAKinja', english: 'niece' },
-        { foreign: 'NEćak', english: 'nephew' },
+        { foreign: 'NEćak', english: 'nephew', working_on: true },
       ],
     },
     chapter3: {
@@ -630,7 +630,7 @@ export const allPhrases = {
         { foreign: 'ormar (namještaj)', english: 'wardrobe (furniture)', hard: true },
         { foreign: 'gardeROba (odjeća)', english: 'wardrobe (clothes)' },
         { foreign: 'prije', english: 'before' },
-        { foreign: 'nakon', english: 'after' },
+        { foreign: 'nakon', english: 'after', working_on: true },
         { foreign: 'tiJEkom', english: 'during', hard: true },
         { foreign: 'Ne bih...', english: 'I wouldn’t...' },
         { foreign: 'Nisam...', english: 'I’m not...' },
@@ -849,7 +849,7 @@ export const allPhrases = {
         },
         { foreign: 'danas ranije', english: 'earlier today' },
         { foreign: 'ranije', english: 'earlier' },
-        { foreign: 'uskoro', english: 'soon', hard: true },
+        { foreign: 'uskoro', english: 'soon', hard: true, working_on: true },
       ],
       lesson6: [
         { foreign: 'utakmica', english: 'match (in a sport)', hard: true },
@@ -915,7 +915,12 @@ export const allPhrases = {
         { foreign: 'Hladno je.', english: 'It’s cold.' },
         { foreign: 'vlažno', english: 'humid' },
         { foreign: 'siječanj / u siječnju', english: 'January / in January', hard: true },
-        { foreign: 'veljača / u veljači', english: 'February / in February', hard: true },
+        {
+          foreign: 'veljača / u veljači',
+          english: 'February / in February',
+          hard: true,
+          working_on: true,
+        },
       ],
       lesson5: [
         { foreign: 'ožujak / u ožujku', english: 'March / in March', hard: true },
@@ -980,7 +985,12 @@ export const allPhrases = {
       lesson3: [
         { foreign: 'poNEdjeljak / u poNEdjeljak', english: 'Monday / on Monday', hard: true },
         { foreign: 'utorak / u utorak', english: 'Tuesday / on Tuesday' },
-        { foreign: 'sriJEda / u sriJEdu', english: 'Wednesday / on Wednesday', hard: true },
+        {
+          foreign: 'sriJEda / u sriJEdu',
+          english: 'Wednesday / on Wednesday',
+          hard: true,
+          working_on: true,
+        },
         { foreign: 'četVRtak / u četVRtak', english: 'Thursday / on Thursday' },
         { foreign: 'Idem plesati.', english: 'I’m going to dance.', hard: true },
         { foreign: 'godišnjica', english: 'anniversary' },
@@ -1006,9 +1016,19 @@ export const allPhrases = {
         },
         { foreign: 'veČEras', english: 'tonight (this evening)', hard: true },
         { foreign: 'idemo', english: 'let’s go' },
-        { foreign: 'U koje vrijeme počinje?', english: 'What time does it start?', hard: true },
+        {
+          foreign: 'U koje vrijeme počinje?',
+          english: 'What time does it start?',
+          hard: true,
+          working_on: true,
+        },
         { foreign: 'vriJEme', english: 'time' },
-        { foreign: 'Počinje u devet sati navečer.', english: 'It starts at 9:00pm.', hard: true },
+        {
+          foreign: 'Počinje u devet sati navečer.',
+          english: 'It starts at 9:00pm.',
+          hard: true,
+          working_on: true,
+        },
         { foreign: 'navečer', english: 'in the evening', hard: true },
         { foreign: 'Dolje u centru je, u disku.', english: 'It is downtown, at the Disco.' },
         { foreign: 'centar', english: 'center' },
@@ -1029,8 +1049,42 @@ export const allPhrases = {
         { foreign: 'u zoru', english: 'at dawn' },
         { foreign: 'kuća / kuće', english: 'house / houses' },
         { foreign: 'rođendanska zabava', english: 'birthday party (birthday’s party)' },
-        { foreign: 'događaj', english: 'event' },
+        { foreign: 'događaj', english: 'event', hard: true },
         { foreign: 'miNUta', english: 'minutes' },
+      ],
+      lesson4: [
+        { foreign: 'dvadeset sati / osam sati navečer', english: '8:00pm' },
+        { foreign: 'jedan sat u noći', english: '1:00am' },
+      ],
+      lesson5: [{ foreign: 'šest sati i trideset miNUta / pola sedam uJUtro', english: '6:30am' }],
+    },
+    chapter5: {
+      name: 'I love this place',
+      lesson1: [
+        { foreign: 'Divno je biti ovdje.', english: 'It’s wonderful to be here.' },
+        {
+          foreign: 'Bilo nam je tako zabavno.',
+          english: 'We had so much fun. (It was so much fun to us.)',
+        },
+        { foreign: 'nam', english: 'to us' },
+        { foreign: 'bilo je', english: 'it was' },
+        {
+          foreign:
+            'biti, past tense masculine/feminine/neuter:; bio sam/bila sam; bio si/bila si; bio je/bila je/bilo je; bili smo; bili ste; bili su/bile su/bila su. To describe a past event you will use: it was Bilo je... dobro "good", divno "great, wonderful", loše "bad", dosadno "boring"...',
+          english: 'to be, past tense: I was, you were, etc.',
+        },
+        { foreign: 'Bilo je dobro.', english: 'It was good.' },
+        { foreign: 'Bilo je divno.', english: 'It was great.' },
+        { foreign: 'Bilo mi je loše.', english: 'It was bad to me.' },
+        { foreign: 'Bilo mi je dosadno.', english: 'It was boring to me.' },
+        {
+          foreign: 'Kako ti je bilo? / Kako vam je bilo?',
+          english: 'How was it to you? (Informal singular / formal singular)',
+        },
+        {
+          foreign: 'Sjećaš li se kad smo otišli na plaNInu?',
+          english: 'Remember when we went to the mountain? (Informal singular)',
+        },
       ],
     },
   },
