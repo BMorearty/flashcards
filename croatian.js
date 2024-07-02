@@ -1009,6 +1009,16 @@ export const allPhrases = {
         { foreign: 'Dolje u centru je, u disku.', english: 'It is downtown, at the Disco.' },
         { foreign: 'centar', english: 'center' },
       ],
+      lesson2: [
+        { foreign: 'Da poZOvem prijatelje?', english: 'Should I invite my friends?' },
+        { foreign: 'Što više to bolje.', english: 'The more the merrier.' },
+        { foreign: 'početi', english: 'to begin' },
+        { foreign: 'pozvati', english: 'to invite' },
+        { foreign: 'ponoć', english: 'midnight' },
+        { foreign: 'prije podne', english: 'a.m.' },
+        { foreign: 'poslije podne', english: 'afternoon' },
+        { foreign: 'večer', english: 'evening' },
+      ],
     },
   },
 };
