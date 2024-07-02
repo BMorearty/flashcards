@@ -12,43 +12,58 @@ oPROstite
 Ne znam.
 Hvala.
 Da, molim.
-Ja trebam pomoć.
+Trebam pomoć.
 */
 
 export const allPhrases = {
-  custom: [
-    { foreign: 'žena / žene', english: 'woman / women' },
-    { foreign: 'stolica / stolice', english: 'chair / chairs', hard: true },
-    { foreign: 'pivo / piva', english: 'beer / beers' },
-    { foreign: 'vino / vina', english: 'wine / wines', hard: true },
-    { foreign: 'sunce', english: 'sun' },
-    { foreign: 'more / mora', english: 'sea / seas', hard: true },
-    { foreign: 'televizor / televizori', english: 'TV / TVs' },
-    { foreign: 'susjed / susjedi', english: 'neighbor / neighbors' },
-    { foreign: 'most / mostovi', english: 'bridge / bridges' },
-    { foreign: 'stol / stolovi', english: 'table / tables', hard: true },
-    { foreign: 'liječnik / liječnici', english: 'doctor / doctors', hard: true },
-    { foreign: 'čovjek / ljudi', english: 'man (human) / people', hard: true },
-    { foreign: 'brat / braća', english: 'brother / brothers', hard: true },
-    { foreign: 'kći / kćeri', english: 'daughter / daughters' },
-    { foreign: 'djete / djeca', english: 'child / children' },
-    { foreign: 'nož / noževi', english: 'knife / knives' },
-    { foreign: 'dobra večer', english: 'good evening', hard: true },
-    { foreign: 'Bok.', english: 'Hi. / Bye.', hard: true },
-    {
-      foreign:
-        'imati, present tense:; (ja) imam; (ti) imaš; (on/ona/ono) ima; (mi) imamo; (vi) imate; (oni/one/ona) imaju',
-      english: 'To have, present tense:; I have, you have, etc.',
-      hard: true,
+  custom: {
+    chapter1: {
+      name: 'Plurals',
+      lesson1: [
+        { foreign: 'žena / žene', english: 'woman / women' },
+        { foreign: 'stolica / stolice', english: 'chair / chairs', hard: true },
+        { foreign: 'pivo / piva', english: 'beer / beers' },
+        { foreign: 'vino / vina', english: 'wine / wines', hard: true },
+        { foreign: 'sunce', english: 'sun' },
+        { foreign: 'more / mora', english: 'sea / seas', hard: true },
+        { foreign: 'televizor / televizori', english: 'TV / TVs' },
+        { foreign: 'susjed / susjedi', english: 'neighbor / neighbors' },
+        { foreign: 'most / mostovi', english: 'bridge / bridges' },
+        { foreign: 'stol / stolovi', english: 'table / tables', hard: true },
+        { foreign: 'liječnik / liječnici', english: 'doctor / doctors', hard: true },
+        { foreign: 'čovjek / ljudi', english: 'man (human) / people', hard: true },
+        { foreign: 'brat / braća', english: 'brother / brothers', hard: true },
+        { foreign: 'kći / kćeri', english: 'daughter / daughters' },
+        { foreign: 'djete / djeca', english: 'child / children' },
+        { foreign: 'nož / noževi', english: 'knife / knives' },
+      ],
     },
-    {
-      foreign:
-        'imati, negative present tense:; (ja) nemam; (ti) nemaš; (on/ona/ono) nema; (mi) nemamo; (vi) nemate; (oni/one/ona) nemaju',
-      english: 'To have, negative present tense:; I don’t have, you don’t have, etc.',
-      hard: true,
+    chapter2: {
+      name: 'Conjugations',
+      lesson1: [
+        {
+          foreign:
+            'imati, present tense:; (ja) imam; (ti) imaš; (on/ona/ono) ima; (mi) imamo; (vi) imate; (oni/one/ona) imaju',
+          english: 'To have, present tense:; I have, you have, etc.',
+          hard: true,
+        },
+        {
+          foreign:
+            'imati, negative present tense:; (ja) nemam; (ti) nemaš; (on/ona/ono) nema; (mi) nemamo; (vi) nemate; (oni/one/ona) nemaju',
+          english: 'To have, negative present tense:; I don’t have, you don’t have, etc.',
+          hard: true,
+        },
+      ],
     },
-    { foreign: 'Trebam pomoć.', english: 'I need help.', hard: true, working_on: true },
-  ],
+    chapter3: {
+      name: 'General phrases',
+      lesson1: [
+        { foreign: 'Bok.', english: 'Hi. / Bye.', hard: true },
+        { foreign: 'Trebam pomoć.', english: 'I need help.', hard: true, working_on: true },
+        { foreign: 'dobra večer', english: 'good evening', hard: true },
+      ],
+    },
+  },
   unit1: {
     chapter1: {
       name: 'Who are you?',

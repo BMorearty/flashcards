@@ -62,7 +62,7 @@ function handleMenuChoice(choice) {
   }
   if (choice.toLowerCase() === 'c') {
     currentUnit = 'custom';
-    startFlashcards();
+    showChapterMenu();
     return;
   }
   const choiceNum = parseInt(choice, 10);
@@ -189,22 +189,6 @@ async function setupPhrases() {
   const hardPhrases = await dynHardPhrases();
   if (['all', 'hard', 'working_on'].includes(currentUnit)) {
     for (let unit in allPhrases) {
-      if (unit === 'custom') {
-        if (currentUnit === 'hard') {
-          phrases = phrases.concat(
-            allPhrases[unit].filter(
-              (phrase) => phrase.hard || hardPhrases.includes(phrase.foreign),
-            ),
-          );
-          continue;
-        }
-        if (currentUnit === 'working_on') {
-          phrases = phrases.concat(allPhrases[unit].filter((phrase) => phrase.working_on));
-          continue;
-        }
-        phrases = phrases.concat(allPhrases[unit]);
-        continue;
-      }
       for (let chapter in allPhrases[unit]) {
         for (let lesson in allPhrases[unit][chapter]) {
           if (lesson === 'name') {
@@ -228,8 +212,6 @@ async function setupPhrases() {
         }
       }
     }
-  } else if (currentUnit === 'custom') {
-    phrases = allPhrases[currentUnit];
   } else if (currentLesson === 'all') {
     for (let lesson in allPhrases[currentUnit][currentChapter]) {
       if (lesson === 'name') {
@@ -382,8 +364,8 @@ async function addHard(phrase) {
 }
 
 function calcPrevLesson() {
-  if (!currentUnit.startsWith('unit')) {
-    // Unit is 'all', 'hard', or 'custom'
+  if (!(currentUnit.startsWith('unit') || currentUnit === 'custom')) {
+    // Unit is 'all' or 'hard'
     return [null, null, null];
   }
 
@@ -396,7 +378,7 @@ function calcPrevLesson() {
       // Do 'all' or 'hard' in the previous chapter of this unit
       return [currentUnit, `chapter${chapterNum - 1}`, currentLesson];
     }
-    if (unitNum > 1) {
+    if (unitNum && unitNum > 1) {
       // Do 'all' or 'hard' in the last chapter of the previous unit
       return [
         `unit${unitNum - 1}`,
@@ -404,7 +386,7 @@ function calcPrevLesson() {
         currentLesson,
       ];
     }
-    // Currently at unit 1, chapter 1. There is no previous.
+    // Currently at unit 1 or custom, chapter 1. There is no previous.
     return [null, null, null];
   }
 
@@ -418,7 +400,7 @@ function calcPrevLesson() {
     return [currentUnit, prevChapter, Object.keys(allPhrases[currentUnit][prevChapter]).at(-1)];
   }
 
-  if (unitNum > 1) {
+  if (unitNum && unitNum > 1) {
     // Do the last lesson in the last chapter of the previous unit
     const prevUnit = `unit${unitNum - 1}`;
     const lastChapter = Object.keys(allPhrases[prevUnit]).at(-1);
@@ -430,7 +412,7 @@ function calcPrevLesson() {
 }
 
 function calcNextLesson() {
-  if (!currentUnit.startsWith('unit')) {
+  if (!(currentUnit.startsWith('unit') || currentUnit === 'custom')) {
     // Unit is 'all', 'hard', or 'custom'
     return [null, null, null];
   }
@@ -444,11 +426,11 @@ function calcNextLesson() {
       // Do 'all' or 'hard' in the next chapter of this unit
       return [currentUnit, `chapter${chapterNum + 1}`, currentLesson];
     }
-    if (unitNum < Object.keys(allPhrases).length) {
+    if (unitNum && unitNum < Object.keys(allPhrases).length) {
       // Do 'all' or 'hard' in the first chapter of the next unit
       return [`unit${unitNum + 1}`, 'chapter1', currentLesson];
     }
-    // Currently at the last unit, last chapter. There is no next.
+    // Currently at the last unit or custom, last chapter. There is no next.
     return [null, null, null];
   }
 
@@ -462,7 +444,7 @@ function calcNextLesson() {
     return [currentUnit, nextChapter, Object.keys(allPhrases[currentUnit][nextChapter])[1]];
   }
 
-  if (currentUnit !== Object.keys(allPhrases).at(-1)) {
+  if (currentUnit !== 'custom' && currentUnit !== Object.keys(allPhrases).at(-1)) {
     // Do the first lesson in the first chapter of the next unit
     const nextUnit = `unit${unitNum + 1}`;
     return [nextUnit, 'chapter1', Object.keys(allPhrases[nextUnit].chapter1)[1]];
