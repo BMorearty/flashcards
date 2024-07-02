@@ -12,11 +12,11 @@ oPROstite
 Ne znam.
 Hvala.
 Da, molim.
+Ja trebam pomoć.
 */
 
 export const allPhrases = {
   custom: [
-    { foreign: 'kuća / kuće', english: 'house / houses' },
     { foreign: 'žena / žene', english: 'woman / women' },
     { foreign: 'stolica / stolice', english: 'chair / chairs', hard: true },
     { foreign: 'pivo / piva', english: 'beer / beers' },
@@ -47,6 +47,7 @@ export const allPhrases = {
       english: 'To have, negative present tense:; I don’t have, you don’t have, etc.',
       hard: true,
     },
+    { foreign: 'Ja trebam pomoć.', english: 'I need help.', hard: true, working_on: true },
   ],
   unit1: {
     chapter1: {
@@ -291,7 +292,9 @@ export const allPhrases = {
         { foreign: 'u', english: 'in' },
         {
           foreign: 'Čula sam za taj faKULtet',
-          english: 'I’ve heard of that faculty. (From female)',
+          english: 'I’ve heard of that school. (From female)',
+          hard: true,
+          working_on: true,
         },
         {
           foreign:
@@ -434,6 +437,7 @@ export const allPhrases = {
           foreign: 'Molim te, poNOvi pitanje.',
           english: 'Please repeat the question. (Informal singular)',
           hard: true,
+          working_on: true,
         },
         { foreign: 'pitanje', english: 'question' },
         { foreign: 'stvar', english: 'thing' },
@@ -1018,6 +1022,15 @@ export const allPhrases = {
         { foreign: 'prije podne', english: 'a.m.' },
         { foreign: 'poslije podne', english: 'afternoon' },
         { foreign: 'večer', english: 'evening' },
+      ],
+      lesson3: [
+        { foreign: 'noću', english: 'at night' },
+        { foreign: 'zora', english: 'dawn' },
+        { foreign: 'u zoru', english: 'at dawn' },
+        { foreign: 'kuća / kuće', english: 'house / houses' },
+        { foreign: 'rođendanska zabava', english: 'birthday party (birthday’s party)' },
+        { foreign: 'događaj', english: 'event' },
+        { foreign: 'miNUta', english: 'minutes' },
       ],
     },
   },
