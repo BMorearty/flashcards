@@ -66,7 +66,7 @@ function handleMenuChoice(choice) {
     return;
   }
   const choiceNum = parseInt(choice, 10);
-  if (choiceNum > 0 && choiceNum <= Object.keys(allPhrases).length) {
+  if (choiceNum > 0 && choiceNum <= Object.keys(allPhrases).length - 1) {
     currentUnit = `unit${choiceNum}`;
     showChapterMenu();
     return;
