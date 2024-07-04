@@ -1146,6 +1146,20 @@ export const allPhrases = {
           english: 'How long will you be here? (Informal singular)',
         },
       ],
+      lesson4: [
+        { foreign: 'Ovdje sam pet dana.', english: 'I have been here for five days.' },
+        { foreign: 'dana', english: 'days (genitive)' },
+        { foreign: 'Odlazim sutra.', english: 'I leave tomorrow.' },
+      ],
+      lesson5: [
+        { foreign: 'Odlazim za tri dana.', english: 'I leave in 3 days.' },
+        { foreign: 'dan / dani', english: 'day / days (nominative)' },
+        { foreign: 'tjedni', english: 'weeks' },
+        { foreign: 'mjesec', english: 'month' },
+        { foreign: 'mjeSEci', english: 'months' },
+        { foreign: 'Bit ću ovdje za...', english: 'I’ll be here for...' },
+        { foreign: 'bit ću', english: 'I’ll be' },
+      ],
     },
   },
 };
