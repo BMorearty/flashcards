@@ -60,7 +60,7 @@ export const allPhrases = {
       lesson1: [
         { foreign: 'Bok.', english: 'Hi. / Bye.', hard: true },
         { foreign: 'Trebam pomoć.', english: 'I need help.', hard: true, working_on: true },
-        { foreign: 'dobra večer', english: 'good evening', hard: true },
+        { foreign: 'dobra večer', english: 'good evening', hard: true, working_on: true },
       ],
     },
   },
@@ -163,7 +163,7 @@ export const allPhrases = {
         { foreign: 'unuk', english: 'grandson', hard: true },
         { foreign: 'unuka', english: 'granddaughter', hard: true },
         { foreign: 'neĆAKinja', english: 'niece' },
-        { foreign: 'NEćak', english: 'nephew', working_on: true },
+        { foreign: 'NEćak', english: 'nephew' },
       ],
     },
     chapter3: {
@@ -833,7 +833,7 @@ export const allPhrases = {
         { foreign: 'željeti', english: 'to want', hard: true },
         { foreign: 'rukomet', english: 'handball', hard: true },
         { foreign: 'košarka', english: 'basketball' },
-        { foreign: 'razGIbati se', english: 'to do exercise', hard: true, working_on: true },
+        { foreign: 'razGIbati se', english: 'to do exercise', hard: true },
         { foreign: 'džoGIrati', english: 'to jog', hard: true },
         { foreign: 'hodati', english: 'to walk', hard: true },
       ],
