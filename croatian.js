@@ -1014,7 +1014,7 @@ export const allPhrases = {
       ],
       lesson4: [
         { foreign: 'izvrsno', english: 'great' },
-        { foreign: 'mirno', english: 'quiet' },
+        { foreign: 'mirno', english: 'quiet', working_on: true },
         { foreign: 'radni dan', english: 'weekday (“working day”)' },
         { foreign: 'Kad je tvoj rođendan?', english: 'When is your birthday? (Informal singular)' },
         { foreign: 'kad', english: 'when' },
@@ -1029,6 +1029,7 @@ export const allPhrases = {
           foreign: 'Idemo na zabavu veČEras.',
           english: 'Let’s go to the party tonight.',
           hard: true,
+          working_on: true,
         },
         { foreign: 'veČEras', english: 'tonight (this evening)', hard: true },
         { foreign: 'idemo', english: 'let’s go' },
@@ -1058,7 +1059,7 @@ export const allPhrases = {
         },
         { foreign: 'Što više to bolje.', english: 'The more the merrier.' },
         { foreign: 'početi', english: 'to begin', working_on: true },
-        { foreign: 'pozvati', english: 'to invite' },
+        { foreign: 'pozvati', english: 'to invite', working_on: true },
         { foreign: 'ponoć', english: 'midnight' },
         { foreign: 'prije podne', english: 'a.m.' },
         { foreign: 'poslije podne', english: 'afternoon' },
@@ -1077,7 +1078,13 @@ export const allPhrases = {
         { foreign: 'dvadeset sati / osam sati navečer', english: '8:00pm' },
         { foreign: 'jedan sat u noći', english: '1:00am' },
       ],
-      lesson5: [{ foreign: 'šest sati i trideset miNUta / pola sedam uJUtro', english: '6:30am' }],
+      lesson5: [
+        {
+          foreign: 'šest sati i trideset miNUta / pola sedam uJUtro',
+          english: '6:30am',
+          working_on: true,
+        },
+      ],
     },
     chapter5: {
       name: 'I love this place',
@@ -1115,10 +1122,16 @@ export const allPhrases = {
       lesson2: [
         {
           foreign: 'Uživala sam u pjeŠAčenju.',
-          english: 'I loved/enjoyed the hike. (From a female)',
+          english: 'I loved the hike. (From a female)',
           hard: true,
+          working_on: true,
         },
-        { foreign: 'Sviđa mi se Hrvatska.', english: 'I like Croatia.', hard: true },
+        {
+          foreign: 'Sviđa mi se Hrvatska.',
+          english: 'I like Croatia.',
+          hard: true,
+          working_on: true,
+        },
         {
           foreign: 'Kad ćeš ponovno doći?',
           english: 'When will you come again? (Informal singular)',
