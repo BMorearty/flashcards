@@ -419,6 +419,7 @@ export const allPhrases = {
           foreign: 'Ti si pravi stručnjak.',
           english: 'You are a real expert. (Informal singular)',
           hard: true,
+          working_on: true,
         },
         { foreign: 'pravi', english: 'real / true / proper', hard: true },
         { foreign: 'stručnjak', english: 'expert', hard: true },
@@ -759,7 +760,7 @@ export const allPhrases = {
         { foreign: 'selo / iza sela', english: 'village / behind the village' },
       ],
       lesson3: [
-        { foreign: 'raskrižje', english: 'intersection', hard: true },
+        { foreign: 'raskrižje', english: 'intersection', hard: true, working_on: true },
         {
           foreign: 'KoLIko je daLEko ...?',
           english: 'How far is ...?',
@@ -1106,7 +1107,7 @@ export const allPhrases = {
         },
         {
           foreign: 'Sjećaš li se kad smo otišli na plaNInu?',
-          english: 'Remember when we went to the mountain? (Informal singular)',
+          english: 'Remember when we went (left) to the mountain? (Informal singular)',
           hard: true,
           working_on: true,
         },
