@@ -232,6 +232,8 @@ export const allPhrases = {
         {
           foreign: 'Ja sam iz Sjedinjenih Država.',
           english: 'I am from the United States.',
+          hard: true,
+          working_on: true,
         },
         {
           foreign: 'Stvarno? Vrlo dobro govorite hrvatski.',
@@ -350,7 +352,12 @@ export const allPhrases = {
         { foreign: 'psihoLOgija', english: 'philosophy' },
         { foreign: 'fizika', english: 'physics' },
         { foreign: 'profesor', english: 'professor' },
-        { foreign: 'učenik (srednja škola)', english: 'student (high school)', hard: true },
+        {
+          foreign: 'učenik (srednja škola)',
+          english: 'student (high school)',
+          hard: true,
+          working_on: true,
+        },
         { foreign: 'ImpresiONiran sam.', english: 'I’m impressed. (male)' },
         { foreign: 'Impresionirana sam.', english: 'I’m impressed. (female)' },
       ],
@@ -504,7 +511,7 @@ export const allPhrases = {
         },
         { foreign: 'Molim Vas', english: 'please (Formal singular)' },
         { foreign: 'možete li ...?', english: 'can you ...? (Formal singular)' },
-        { foreign: 'To je previše.', english: 'That is too much.', hard: true },
+        { foreign: 'To je previše.', english: 'That is too much.', hard: true, working_on: true },
         { foreign: 'skupo', english: 'expensive' },
         { foreign: 'jeftino', english: 'cheap' },
         { foreign: 'skup kaput', english: 'expensive coat' },
@@ -679,6 +686,7 @@ export const allPhrases = {
           foreign: 'Je li ta prodavaOnica još otvorena?',
           english: 'Is that store still open?',
           hard: true,
+          working_on: true,
         },
         { foreign: 'ta', english: 'that (as in “that thing”), feminine' },
         { foreign: 'još', english: 'still (e.g. still open)', hard: true },
@@ -709,7 +717,7 @@ export const allPhrases = {
       ],
       lesson5: [
         { foreign: 'zatvoreno / zatvorena', english: 'closed' },
-        { foreign: 'prodavaOnica hrane', english: 'grocery store' },
+        { foreign: 'prodavaOnica hrane', english: 'grocery store', working_on: true },
         { foreign: 'prodavaOnica elekTROničke robe', english: 'electronics store' },
       ],
       lesson6: [
@@ -776,7 +784,7 @@ export const allPhrases = {
           english: 'It is five kilometers from ...?',
           hard: true,
         },
-        { foreign: 'desno', english: 'right (direction)', hard: true },
+        { foreign: 'desno', english: 'right (direction)', hard: true, working_on: true },
         { foreign: 'ispred', english: 'in front of' },
         { foreign: 'iza', english: 'behind' },
       ],
@@ -832,7 +840,7 @@ export const allPhrases = {
         { foreign: 'rukomet', english: 'handball', hard: true },
         { foreign: 'košarka', english: 'basketball' },
         { foreign: 'razGIbati se', english: 'to do exercise', hard: true },
-        { foreign: 'džoGIrati', english: 'to jog', hard: true },
+        { foreign: 'džoGIrati', english: 'to jog', hard: true, working_on: true },
         { foreign: 'hodati', english: 'to walk', hard: true },
       ],
       lesson3: [
@@ -971,7 +979,7 @@ export const allPhrases = {
           hard: true,
         },
         { foreign: 'nedjelja / u nedjelju', english: 'Sunday / on Sunday', hard: true },
-        { foreign: 'To je sjajno!', english: 'That is splendid!', hard: true },
+        { foreign: 'To je sjajno!', english: 'That is splendid!', hard: true, working_on: true },
         {
           foreign: 'Proslavimo ga ranije.',
           english: 'Let’s celebrate it earlier.',
@@ -991,7 +999,12 @@ export const allPhrases = {
         { foreign: 'KoLIko imaš godina?', english: 'How old are you? (Informal singular)' },
         { foreign: 'godina', english: 'year' },
         { foreign: 'Imam dvadeset osam godina.', english: 'I am 28 years old.' },
-        { foreign: 'Ali, to je tajna.', english: 'But, it is a secret.', hard: true },
+        {
+          foreign: 'Ali, to je tajna.',
+          english: 'But, it is a secret.',
+          hard: true,
+          working_on: true,
+        },
       ],
       lesson3: [
         { foreign: 'poNEdjeljak / u poNEdjeljak', english: 'Monday / on Monday', hard: true },
@@ -1010,7 +1023,7 @@ export const allPhrases = {
       lesson4: [
         { foreign: 'izvrsno', english: 'great' },
         { foreign: 'mirno', english: 'quiet' },
-        { foreign: 'radni dan', english: 'weekday (“working day”)' },
+        { foreign: 'radni dan', english: 'weekday (“working day”)', working_on: true },
         { foreign: 'Kad je tvoj rođendan?', english: 'When is your birthday? (Informal singular)' },
         { foreign: 'kad', english: 'when' },
         { foreign: 'tvoj', english: 'your (Informal singular, masculine object)' },
@@ -1061,7 +1074,7 @@ export const allPhrases = {
       lesson3: [
         { foreign: 'noću', english: 'at night' },
         { foreign: 'zora', english: 'dawn' },
-        { foreign: 'u zoru', english: 'at dawn' },
+        { foreign: 'u zoru', english: 'at dawn', hard: true },
         { foreign: 'kuća / kuće', english: 'house / houses' },
         { foreign: 'rođendanska zabava', english: 'birthday party (birthday’s party)' },
         { foreign: 'događaj', english: 'event', hard: true },
@@ -1135,14 +1148,14 @@ export const allPhrases = {
           english: 'Next year. Hopefully!',
           hard: true,
         },
-        { foreign: 'nadati se', english: 'to hope' },
+        { foreign: 'nadati se', english: 'to hope', hard: true },
         { foreign: 'nadam se', english: 'hopefully' },
       ],
       lesson3: [
         { foreign: 'plaNIna', english: 'mountain' },
         { foreign: 'pjeŠAčenje', english: 'hike (noun)' },
-        { foreign: 'jučer', english: 'yesterday' },
-        { foreign: 'sljedeći tjedan', english: 'next week' },
+        { foreign: 'jučer', english: 'yesterday', hard: true },
+        { foreign: 'sljedeći tjedan', english: 'next week', hard: true },
         { foreign: 'sljedeći', english: 'next (masculine)' },
         { foreign: 'jutros', english: 'this morning' },
         {
@@ -1166,7 +1179,61 @@ export const allPhrases = {
       ],
       lesson6: [
         { foreign: 'Vratit ću se za…', english: 'I will be back in...', hard: true },
-        { foreign: 'vratiti se', english: 'to return' },
+        { foreign: 'vratiti se', english: 'to return', hard: true },
+      ],
+    },
+  },
+  unit4: {
+    chapter1: {
+      name: 'I don’t feel well',
+      lesson1: [
+        { foreign: 'Trebam neki liJEK.', english: 'I need some medicine.', hard: true },
+        {
+          foreign: 'Koji su Vaši simpTOmi?',
+          english: 'What are your symptoms? (Formal singular)',
+          hard: true,
+        },
+        {
+          foreign: 'Imam kašalj i začepljen nos.',
+          english: 'I have a cough and a stuffy nose.',
+          hard: true,
+        },
+        { foreign: 'I prsa me bole.', english: 'My chest hurts also.', hard: true },
+      ],
+      lesson2: [
+        { foreign: 'Uzmite ovaj lijek za prehladu.', english: 'Take this cold medicine.' },
+        { foreign: 'prehlada', english: 'cold (sickness)' },
+        { foreign: 'bol (feminine)', english: 'pain' },
+        { foreign: 'sol', english: 'salt' },
+        {
+          foreign:
+            'Osjećam bol. (Bol is feminine but accusative and other forms don’t change ending.)',
+          english: 'I feel pain.',
+        },
+        {
+          foreign:
+            'Trebam sol. (Sol is feminine but accusative and other forms don’t change ending.)',
+          english: 'I need some salt.',
+        },
+        { foreign: 'Boli me noga.', english: 'My leg hurts.' },
+        { foreign: 'Imam prehladu.', english: 'I have a cold.' },
+        { foreign: 'gripa', english: 'flu' },
+        { foreign: 'glava', english: 'head' },
+      ],
+      lesson3: [
+        { foreign: 'glavobolja', english: 'headache' },
+        { foreign: 'stopalo / stopala', english: 'foot / feet' },
+        { foreign: 'ruka', english: 'arm or hand' },
+        { foreign: 'noga', english: 'leg' },
+        { foreign: 'vrat', english: 'neck' },
+      ],
+      lesson4: [
+        { foreign: 'lakat', english: 'elbow' },
+        { foreign: 'koljeno', english: 'knee' },
+        { foreign: 'grlo', english: 'throat' },
+        { foreign: 'uho / uši', english: 'ear / ears' },
+        { foreign: 'oko / oči', english: 'eye / eyes' },
+        { foreign: 'zub', english: 'tooth' },
       ],
     },
   },
