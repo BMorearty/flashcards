@@ -1174,6 +1174,10 @@ export const allPhrases = {
         { foreign: 'Bit ću ovdje za...', english: 'I’ll be here for...' },
         { foreign: 'bit ću', english: 'I’ll be' },
       ],
+      lesson6: [
+        { foreign: 'Vratit ću se za…', english: 'I will be back in…' },
+        { foreign: 'vratiti se', english: 'to return' },
+      ],
     },
   },
 };
