@@ -254,7 +254,7 @@ function showNextFlashcard(phrase) {
   );
 
   rl.question(
-    `[${wrongPhrases.length}W][${shownPhrases.size}/${phrases.length}] Enter: translate, (B)ack, (Q)uit,\n${prevNextPrompt}Last was (H)ard / (W)rong / (R)ight: `,
+    `[${wrongPhrases.length}W][${shownPhrases.size}/${phrases.length}] Enter: answer, (B)ack, (Q)uit,\n${prevNextPrompt}Last was (H)ard / (W)rong / (R)ight: `,
     (answer) => {
       if (answer.toLowerCase() === 'q') {
         rl.close();
