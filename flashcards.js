@@ -25,7 +25,7 @@ let currentUnit = null;
 let currentChapter = null;
 let currentLesson = null;
 let showEnglish = true;
-let phrases = [];
+let phrases;
 let lastPhrase = null;
 let wrongPhrases;
 let phraseIndex;
@@ -254,7 +254,7 @@ function showNextFlashcard(phrase) {
   );
 
   rl.question(
-    `[${wrongPhrases.length}] Enter: translate, (B)ack, (Q)uit,\n${prevNextPrompt}Last was (H)ard / (W)rong / (R)ight: `,
+    `[${wrongPhrases.length}W][${shownPhrases.size}/${phrases.length}] Enter: translate, (B)ack, (Q)uit,\n${prevNextPrompt}Last was (H)ard / (W)rong / (R)ight: `,
     (answer) => {
       if (answer.toLowerCase() === 'q') {
         rl.close();
