@@ -52,6 +52,7 @@ export const allPhrases = {
             'imati, negative present tense:; (ja) nemam; (ti) nemaš; (on/ona/ono) nema; (mi) nemamo; (vi) nemate; (oni/one/ona) nemaju',
           english: 'To have, negative present tense:; I don’t have, you don’t have, etc.',
           hard: true,
+          working_on: true,
         },
       ],
     },
@@ -62,6 +63,10 @@ export const allPhrases = {
         { foreign: 'Trebam pomoć.', english: 'I need help.', hard: true, working_on: true },
         { foreign: 'dobra večer', english: 'good evening', hard: true },
       ],
+    },
+    chapter4: {
+      name: 'Vocabulary',
+      lesson1: [{ foreign: 'ako', english: 'if' }],
     },
   },
   unit1: {
@@ -242,7 +247,7 @@ export const allPhrases = {
         {
           foreign:
             'govoriti, present tense:; (ja) govorim; (ti) govoriš; (on/ona/ono) govori; (mi) govorimo; (vi) govorite; (oni/one/ona) govore',
-          english: 'to speak, present tense:; I speak; you speak, etc',
+          english: 'to speak, present tense:; I speak, you speak, etc',
           hard: true,
         },
         {
@@ -532,11 +537,11 @@ export const allPhrases = {
         { foreign: 'devet', english: 'nine', hard: true },
         { foreign: 'deset', english: 'ten' },
         { foreign: 'jeDAnaest', english: 'eleven' },
-        { foreign: 'DVAnaest', english: 'twelve' },
-        { foreign: 'TRInaest', english: 'thirteen' },
+        { foreign: 'dvanaest', english: 'twelve' },
+        { foreign: 'trinaest', english: 'thirteen' },
         { foreign: 'čeTRnaest', english: 'fourteen' },
-        { foreign: 'PETnaest', english: 'fifteen' },
-        { foreign: 'ŠESnaest', english: 'sixteen' },
+        { foreign: 'petnaest', english: 'fifteen' },
+        { foreign: 'šesnaest', english: 'sixteen' },
         { foreign: 'seDAMnaest', english: 'seventeen' },
         { foreign: 'oSAMnaest', english: 'eighteen' },
         { foreign: 'deVETnaest', english: 'nineteen' },
@@ -571,13 +576,13 @@ export const allPhrases = {
         { foreign: 'nositi', english: 'to wear' },
         {
           foreign:
-            'htjeti, future tense of biti:; ja ću; ti ćeš; on/ona/ono će; mi ćemo; vi ćete; oni/one/ona će',
-          english: 'future tense of to be: I will be, you will be, etc.',
+            'htjeti, future tense auxiliary verb:; (ja) ću; (ti) ćeš; (on/ona/ono) će; (mi) ćemo; (vi) ćete; (oni/one/ona) će',
+          english: 'future tense: I will, you will, etc.',
           hard: true,
         },
         {
           foreign:
-            'negative htjeti / negative future tense of biti:; Ja neću; ti nećeš; on/ona/ono neće; mi nećemo; vi nećete; oni/one/ona neće',
+            'negative htjeti / negative future tense auxiliary verb:; (Ja) neću; (ti) nećeš; (on/ona/ono) neće; (mi) nećemo; (vi) nećete; (oni/one/ona) neće',
           english: 'negative future tense of to be: I will not be, you will not be, etc.',
           hard: true,
         },
@@ -1201,7 +1206,10 @@ export const allPhrases = {
         { foreign: 'I prsa me bole.', english: 'My chest hurts also.', hard: true },
       ],
       lesson2: [
-        { foreign: 'Uzmite ovaj liJEK za prehladu.', english: 'Take this cold medicine. (Formal singular)' },
+        {
+          foreign: 'Uzmite ovaj liJEK za prehladu.',
+          english: 'Take this cold medicine. (Formal singular)',
+        },
         { foreign: 'prehlada', english: 'cold (sickness)' },
         { foreign: 'bol (feminine)', english: 'pain' },
         { foreign: 'sol', english: 'salt' },
