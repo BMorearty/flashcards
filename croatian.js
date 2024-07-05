@@ -1201,7 +1201,7 @@ export const allPhrases = {
         { foreign: 'I prsa me bole.', english: 'My chest hurts also.', hard: true },
       ],
       lesson2: [
-        { foreign: 'Uzmite ovaj lijek za prehladu.', english: 'Take this cold medicine.' },
+        { foreign: 'Uzmite ovaj liJEK za prehladu.', english: 'Take this cold medicine. (Formal singular)' },
         { foreign: 'prehlada', english: 'cold (sickness)' },
         { foreign: 'bol (feminine)', english: 'pain' },
         { foreign: 'sol', english: 'salt' },
