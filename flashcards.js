@@ -252,9 +252,10 @@ function showNextFlashcard(phrase) {
   console.log(
     `  ${chalk.yellow((showEnglish ? randomPhrase.english : randomPhrase.foreign).replaceAll(/; */g, '\n  '))}`,
   );
+  const shownPhrasesCounter = Math.min(shownPhrases.size, phrases.length);
 
   rl.question(
-    `[${wrongPhrases.length}W][${shownPhrases.size}/${phrases.length}] Enter: answer, (B)ack, (Q)uit,\n${prevNextPrompt}Last was (H)ard / (W)rong / (R)ight: `,
+    `[${wrongPhrases.length}W][${shownPhrasesCounter}/${phrases.length}] Enter: answer, (B)ack, (Q)uit,\n${prevNextPrompt}Last was (H)ard / (W)rong / (R)ight: `,
     (answer) => {
       if (answer.toLowerCase() === 'q') {
         rl.close();
