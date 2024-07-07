@@ -979,7 +979,7 @@ export const allPhrases = {
           hard: true,
         },
         { foreign: 'nedjelja / u nedjelju', english: 'Sunday / on Sunday', hard: true },
-        { foreign: 'To je sjajno!', english: 'That is splendid!', hard: true, working_on: true },
+        { foreign: 'To je sjajno!', english: 'That is splendid!', hard: true },
         {
           foreign: 'Proslavimo ga ranije.',
           english: 'Let’s celebrate it earlier.',
@@ -1145,7 +1145,7 @@ export const allPhrases = {
         { foreign: 'plaNIna', english: 'mountain' },
         { foreign: 'pjeŠAčenje', english: 'hike (noun)' },
         { foreign: 'jučer', english: 'yesterday', hard: true },
-        { foreign: 'sljedeći tjedan', english: 'next week', hard: true, working_on: true },
+        { foreign: 'sljedeći tjedan', english: 'next week', hard: true },
         { foreign: 'sljedeći', english: 'next (masculine)' },
         { foreign: 'jutros', english: 'this morning' },
         {
@@ -1190,7 +1190,6 @@ export const allPhrases = {
           foreign: 'Trebam neki liJEK.',
           english: 'I need some medicine.',
           hard: true,
-          working_on: true,
         },
         {
           foreign: 'Koji su Vaši simpTOmi?',
@@ -1203,7 +1202,7 @@ export const allPhrases = {
           hard: true,
           working_on: true,
         },
-        { foreign: 'kašalj', english: 'cough', hard: true, working_on: true },
+        { foreign: 'kašalj', english: 'cough', hard: true },
         { foreign: 'začepljen', english: 'stuffed up', hard: true, working_on: true },
         { foreign: 'nos', english: 'nose' },
         { foreign: 'I prsa me bole.', english: 'My chest hurts also.', hard: true },
@@ -1213,7 +1212,6 @@ export const allPhrases = {
           foreign: 'Uzmite ovaj liJEK za prehladu.',
           english: 'Take this cold medicine. (Formal singular)',
           hard: true,
-          working_on: true,
         },
         { foreign: 'prehlada', english: 'cold (sickness)', hard: true },
         { foreign: 'bol (feminine)', english: 'pain' },
@@ -1242,7 +1240,7 @@ export const allPhrases = {
         { foreign: 'vrat', english: 'neck' },
       ],
       lesson4: [
-        { foreign: 'lakat', english: 'elbow', hard: true, working_on: true },
+        { foreign: 'lakat', english: 'elbow', hard: true },
         { foreign: 'koljeno', english: 'knee', hard: true, working_on: true },
         { foreign: 'grlo', english: 'throat' },
         { foreign: 'uho / uši', english: 'ear / ears' },
