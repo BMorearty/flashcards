@@ -1008,12 +1008,7 @@ export const allPhrases = {
       lesson3: [
         { foreign: 'poNEdjeljak / u poNEdjeljak', english: 'Monday / on Monday', hard: true },
         { foreign: 'utorak / u utorak', english: 'Tuesday / on Tuesday' },
-        {
-          foreign: 'sriJEda / u sriJEdu',
-          english: 'Wednesday / on Wednesday',
-          hard: true,
-          working_on: true,
-        },
+        { foreign: 'sriJEda / u sriJEdu', english: 'Wednesday / on Wednesday', hard: true },
         { foreign: 'četVRtak / u četVRtak', english: 'Thursday / on Thursday' },
         { foreign: 'Idem plesati.', english: 'I’m going to dance.', hard: true },
         { foreign: 'godišnjica', english: 'anniversary' },
@@ -1172,8 +1167,7 @@ export const allPhrases = {
         },
         { foreign: 'dan / dani', english: 'day / days (nominative)' },
         { foreign: 'tjedni', english: 'weeks' },
-        { foreign: 'mjesec', english: 'month' },
-        { foreign: 'mjeSEci', english: 'months' },
+        { foreign: 'mjesec / mjeSEci', english: 'month / months', hard: true },
         { foreign: 'Bit ću ovdje za...', english: 'I’ll be here for...' },
         { foreign: 'bit ću', english: 'I’ll be' },
       ],
@@ -1212,12 +1206,7 @@ export const allPhrases = {
         { foreign: 'kašalj', english: 'cough', hard: true, working_on: true },
         { foreign: 'začepljen', english: 'stuffed up', hard: true, working_on: true },
         { foreign: 'nos', english: 'nose' },
-        {
-          foreign: 'I prsa me bole.',
-          english: 'My chest hurts also.',
-          hard: true,
-          working_on: true,
-        },
+        { foreign: 'I prsa me bole.', english: 'My chest hurts also.', hard: true },
       ],
       lesson2: [
         {
@@ -1234,7 +1223,6 @@ export const allPhrases = {
             'Osjećam bol. (Bol is feminine but accusative and other forms don’t change ending.)',
           english: 'I feel pain.',
           hard: true,
-          working_on: true,
         },
         {
           foreign:
