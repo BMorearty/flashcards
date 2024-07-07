@@ -847,7 +847,7 @@ export const allPhrases = {
       lesson3: [
         { foreign: 'trčati', english: 'to run', hard: true },
         { foreign: 'plivati', english: 'to swim', hard: true },
-        { foreign: 'odMArati se', english: 'to relax / rest', hard: true },
+        { foreign: 'odMArati se', english: 'to relax / rest', hard: true, working_on: true },
         { foreign: 'umoran / umorna / umorno', english: 'tired (masculine / feminine / neuter)' },
         { foreign: 'Da, molim.', english: 'Yes, please.' },
         { foreign: 'dvoRAna za vježbanje', english: 'gym', hard: true },
@@ -1257,6 +1257,34 @@ export const allPhrases = {
         },
         { foreign: 'liJEčnički recept', english: 'doctor’s prescription' },
         { foreign: 'ljekarna', english: 'drugstore' },
+      ],
+    },
+    chapter2: {
+      name: 'Let’s eat',
+      lesson1: [
+        {
+          foreign: 'Želite li naručiti nešto?',
+          english: 'Do you want to order something? (Formal singular)',
+        },
+        { foreign: 'Želite li ...?', english: 'Do you want ...? (Formal singular)' },
+        { foreign: 'naručiti', english: 'to order' },
+        {
+          foreign: 'Htio bih naručiti sarmu.',
+          english: 'I would like to order sarma. (Formal, male speaker)',
+        },
+        { foreign: 'Htio bih ...', english: 'I would like ... (Formal, male speaker)' },
+        {
+          foreign: 'Želite li nešto popiti?',
+          english: 'Do you want something to drink? (Formal singular)',
+        },
+        {
+          foreign: 'Jedno pivo i čašu vode.',
+          english: 'One beer and a glass of water.',
+          hard: true,
+        },
+        { foreign: 'čaša', english: 'glass (of liquid)', hard: true },
+        { foreign: 'voda', english: 'water' },
+        { foreign: 'vode', english: 'of water' },
       ],
     },
   },
