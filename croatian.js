@@ -1247,7 +1247,16 @@ export const allPhrases = {
         { foreign: 'grlo', english: 'throat' },
         { foreign: 'uho / uši', english: 'ear / ears' },
         { foreign: 'oko / oči', english: 'eye / eyes' },
-        { foreign: 'zub', english: 'tooth', hard: true },
+        { foreign: 'zub / zubi', english: 'tooth / teeth', hard: true },
+      ],
+      lesson5: [
+        { foreign: 'slomiti', english: 'to break' },
+        {
+          foreign: 'Slomio / Slomila sam nogu.',
+          english: 'I broke my leg. (Male speaker / Female speaker)',
+        },
+        { foreign: 'liJEčnički recept', english: 'doctor’s prescription' },
+        { foreign: 'ljekarna', english: 'drugstore' },
       ],
     },
   },
