@@ -1150,7 +1150,7 @@ export const allPhrases = {
         { foreign: 'plaNIna', english: 'mountain' },
         { foreign: 'pjeŠAčenje', english: 'hike (noun)' },
         { foreign: 'jučer', english: 'yesterday', hard: true },
-        { foreign: 'sljedeći tjedan', english: 'next week', hard: true },
+        { foreign: 'sljedeći tjedan', english: 'next week', hard: true, working_on: true },
         { foreign: 'sljedeći', english: 'next (masculine)' },
         { foreign: 'jutros', english: 'this morning' },
         {
@@ -1164,7 +1164,12 @@ export const allPhrases = {
         { foreign: 'Odlazim sutra.', english: 'I leave tomorrow.', hard: true },
       ],
       lesson5: [
-        { foreign: 'Odlazim za tri dana.', english: 'I leave in 3 days.', hard: true },
+        {
+          foreign: 'Odlazim za tri dana.',
+          english: 'I leave in 3 days.',
+          hard: true,
+          working_on: true,
+        },
         { foreign: 'dan / dani', english: 'day / days (nominative)' },
         { foreign: 'tjedni', english: 'weeks' },
         { foreign: 'mjesec', english: 'month' },
@@ -1173,8 +1178,13 @@ export const allPhrases = {
         { foreign: 'bit ću', english: 'I’ll be' },
       ],
       lesson6: [
-        { foreign: 'Vratit ću se za…', english: 'I will be back in...', hard: true },
-        { foreign: 'vratiti se', english: 'to return', hard: true },
+        {
+          foreign: 'Vratit ću se za…',
+          english: 'I will be back in...',
+          hard: true,
+          working_on: true,
+        },
+        { foreign: 'vratiti se', english: 'to return', hard: true, working_on: true },
       ],
     },
   },
@@ -1199,6 +1209,9 @@ export const allPhrases = {
           hard: true,
           working_on: true,
         },
+        { foreign: 'kašalj', english: 'cough', hard: true, working_on: true },
+        { foreign: 'začepljen', english: 'stuffed up', hard: true, working_on: true },
+        { foreign: 'nos', english: 'nose' },
         {
           foreign: 'I prsa me bole.',
           english: 'My chest hurts also.',
