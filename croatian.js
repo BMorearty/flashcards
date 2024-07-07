@@ -53,6 +53,13 @@ export const allPhrases = {
           english: 'To have, negative present tense:; I don’t have, you don’t have, etc.',
           hard: true,
         },
+        {
+          foreign:
+            'otići, present tense:; (ja) odlazim; (ti) odlaziš; (on/ona/ono) odlazi; (mi) odlazimo; (vi) odlazite; (oni/one/ona) odlaze',
+          english: 'To leave, present tense:; I’m leaving, you’re leaving, etc.',
+          hard: true,
+          working_on: true,
+        },
       ],
     },
     chapter3: {
@@ -654,7 +661,7 @@ export const allPhrases = {
         { foreign: 'prije', english: 'before' },
         { foreign: 'nakon', english: 'after' },
         { foreign: 'tiJEkom', english: 'during', hard: true },
-        { foreign: 'Ne bih...', english: 'I wouldn’t...' },
+        { foreign: 'Ne bih...', english: 'I wouldn’t...', working_on: true },
         { foreign: 'Nisam...', english: 'I’m not...' },
       ],
       lesson6: [
