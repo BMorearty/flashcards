@@ -1345,7 +1345,7 @@ export const allPhrases = {
           working_on: true,
         },
         {
-          foreign: 'Ali, ja sam vegetarijanac.',
+          foreign: 'Ali, ja sam vegetariJAnac.',
           english: 'But, I am a vegetarian. (Male speaker)',
         },
         {
