@@ -23,7 +23,6 @@ export const allPhrases = {
         { foreign: 'žena / žene', english: 'woman / women' },
         { foreign: 'stolica / stolice', english: 'chair / chairs', hard: true },
         { foreign: 'pivo / piva', english: 'beer / beers' },
-        { foreign: 'vino / vina', english: 'wine / wines', hard: true },
         { foreign: 'sunce', english: 'sun' },
         { foreign: 'more / mora', english: 'sea / seas', hard: true },
         { foreign: 'televizor / televizori', english: 'TV / TVs' },
@@ -35,7 +34,6 @@ export const allPhrases = {
         { foreign: 'brat / braća', english: 'brother / brothers', hard: true },
         { foreign: 'kći / kćeri', english: 'daughter / daughters' },
         { foreign: 'djete / djeca', english: 'child / children' },
-        { foreign: 'nož / noževi', english: 'knife / knives' },
       ],
     },
     chapter2: {
@@ -969,6 +967,7 @@ export const allPhrases = {
           foreign: 'Ljeti je uvijek sunčano.',
           english: 'It’s always sunny in the summer.',
           hard: true,
+          working_on: true,
         },
         { foreign: 'uvijek', english: 'always' },
       ],
@@ -1240,7 +1239,7 @@ export const allPhrases = {
         { foreign: 'glava', english: 'head' },
       ],
       lesson3: [
-        { foreign: 'glavobolja', english: 'headache' },
+        { foreign: 'glaVObolja', english: 'headache' },
         { foreign: 'stopalo / stopala', english: 'foot / feet', hard: true },
         { foreign: 'ruka', english: 'arm or hand' },
         { foreign: 'noga', english: 'leg' },
@@ -1255,7 +1254,7 @@ export const allPhrases = {
         { foreign: 'zub / zubi', english: 'tooth / teeth', hard: true },
       ],
       lesson5: [
-        { foreign: 'slomiti', english: 'to break' },
+        { foreign: 'slomiti', english: 'to break', working_on: true },
         {
           foreign: 'Slomio / Slomila sam nogu.',
           english: 'I broke my leg. (Male speaker / Female speaker)',
@@ -1290,6 +1289,55 @@ export const allPhrases = {
         { foreign: 'čaša', english: 'glass (of liquid)', hard: true },
         { foreign: 'voda', english: 'water' },
         { foreign: 'vode', english: 'of water' },
+      ],
+      lesson2: [
+        { foreign: 'Bez leda, molim.', english: 'No ice please.', hard: true },
+        { foreign: 'I malo kruha, molim.', english: 'And a little bread, please.' },
+        { foreign: 'kruh', english: 'bread' },
+        { foreign: 'juha / malo juhe', english: 'soup / a little soup' },
+        { foreign: 'salata / malo salate', english: 'salad / a little salad' },
+        { foreign: 'jelo', english: 'dish', hard: true },
+        { foreign: 'tanjur', english: 'plate', hard: true },
+        { foreign: 'žlica', english: 'spoon' },
+      ],
+      lesson3: [
+        { foreign: 'vilica', english: 'fork', hard: true },
+        { foreign: 'nož / noževi', english: 'knife / knives' },
+        { foreign: 'salveta', english: 'napkin' },
+        { foreign: 'ručak', english: 'lunch' },
+        { foreign: 'doručak', english: 'breakfast' },
+        { foreign: 'večera', english: 'dinner' },
+        { foreign: 'mlijeko', english: 'milk' },
+        { foreign: 'zdjela', english: 'bowl', hard: true },
+      ],
+      lesson4: [
+        { foreign: 'gaZIrani sok', english: 'soda' },
+        {
+          foreign:
+            'željeti:; želim li (do I want); želiš li (do you want); želi li (on/ona) (does he/she want); želimo li (do we want); želite li (do you want); žele li (do they want)',
+          english:
+            'to ask if someone wants, present tense, all conjugations: do I want, do you want, does he/she want, ...',
+          hard: true,
+        },
+        { foreign: 'vino / vina', english: 'wine / wines', hard: true },
+        { foreign: 'još', english: 'more' },
+        { foreign: 'vina', english: 'of wine' },
+      ],
+    },
+    chapter3: {
+      name: 'I can’t eat that',
+      lesson1: [
+        {
+          foreign: 'Gladno sam / Gladna sam, idemo jesti.',
+          english: 'I am hungry, let’s eat. (Male / Female speaker)',
+        },
+        { foreign: 'Sve izgleda ukusno!', english: 'Everything looks delicious!' },
+        {
+          foreign: 'Ali, ja sam vegetarijanac.',
+          english: 'But, I am a vegetarian. (Male speaker)',
+        },
+        { foreign: 'Ima li mesa u ovom jelu?', english: 'Is there meat in this dish?' },
+        { foreign: 'meso', english: 'meat' },
       ],
     },
   },
