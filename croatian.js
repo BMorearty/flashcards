@@ -1333,7 +1333,7 @@ export const allPhrases = {
       name: 'I can’t eat that',
       lesson1: [
         {
-          foreign: 'Gladno sam / Gladna sam, idemo jesti.',
+          foreign: 'Gladan sam / Gladna sam, idemo jesti.',
           english: 'I am hungry, let’s eat. (Male / Female speaker)',
           hard: true,
           working_on: true,
@@ -1355,6 +1355,28 @@ export const allPhrases = {
           working_on: true,
         },
         { foreign: 'meso', english: 'meat' },
+      ],
+      lesson2: [
+        {
+          foreign: 'Ne, ali ima školjki u juhi.',
+          english: 'No, but there is shellfish in the soup.',
+        },
+        {
+          foreign: 'aLERrgičan sam na školjke!',
+          english: 'I am allergic to shellfish! (Male speaker)',
+          hard: true,
+        },
+        { foreign: 'Ali sigurno dobro miriše.', english: 'But it sure smells good.', hard: true },
+        { foreign: 'doručkovati', english: 'to have breakfast', hard: true },
+        { foreign: 'ručati', english: 'to have lunch' },
+        { foreign: 'večerati', english: 'to have dinner' },
+      ],
+      lesson3: [
+        { foreign: 'slano', english: 'salty' },
+        { foreign: 'papar', english: 'pepper' },
+        { foreign: 'začinjeno', english: 'spicy' },
+        { foreign: 'ljuto', english: 'hot (food)' },
+        { foreign: 'Volim ljutu hranu.', english: 'I like hot food.' },
       ],
     },
   },
