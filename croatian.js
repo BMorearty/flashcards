@@ -359,11 +359,7 @@ export const allPhrases = {
         { foreign: 'psihoLOgija', english: 'philosophy' },
         { foreign: 'fizika', english: 'physics' },
         { foreign: 'profesor', english: 'professor' },
-        {
-          foreign: 'učenik (srednja škola)',
-          english: 'student (high school)',
-          hard: true,
-        },
+        { foreign: 'učenik (srednja škola)', english: 'student (high school)', hard: true },
         { foreign: 'ImpresiONiran sam.', english: 'I’m impressed. (male)' },
         { foreign: 'Impresionirana sam.', english: 'I’m impressed. (female)' },
       ],
@@ -416,10 +412,7 @@ export const allPhrases = {
           english: 'Can you say that again? (Informal singular)',
           hard: true,
         },
-        {
-          foreign: 'možeš li ...?',
-          english: 'can you ...? (Informal singular)',
-        },
+        { foreign: 'možeš li ...?', english: 'can you ...? (Informal singular)' },
         { foreign: 'rećiti', english: 'to say' },
         { foreign: 'ponovo', english: 'again' },
       ],
@@ -771,11 +764,7 @@ export const allPhrases = {
       ],
       lesson3: [
         { foreign: 'raskrižje', english: 'intersection', hard: true },
-        {
-          foreign: 'KoLIko je daLEko ...?',
-          english: 'How far is ...?',
-          hard: true,
-        },
+        { foreign: 'KoLIko je daLEko ...?', english: 'How far is ...?', hard: true },
         { foreign: 'dolje', english: 'down', hard: true },
         {
           foreign: 'Ima deset milja do ...? (It has ...)',
@@ -868,32 +857,21 @@ export const allPhrases = {
       ],
       lesson5: [
         { foreign: 'ovaj tjedan', english: 'this week' },
-        {
-          foreign: 'prije nekoliko sati',
-          english: 'a few hours ago',
-          hard: true,
-        },
+        { foreign: 'prije nekoliko sati', english: 'a few hours ago', hard: true },
         { foreign: 'danas ranije', english: 'earlier today' },
         { foreign: 'ranije', english: 'earlier' },
         { foreign: 'uskoro', english: 'soon', hard: true },
       ],
       lesson6: [
         { foreign: 'utakmica', english: 'match (in a sport)', hard: true },
-        {
-          foreign: 'Idemo igrati nogomet sutra!',
-          english: 'Let’s play soccer tomorrow!',
-        },
+        { foreign: 'Idemo igrati nogomet sutra!', english: 'Let’s play soccer tomorrow!' },
         { foreign: 'idemo', english: 'let’s' },
       ],
     },
     chapter2: {
       name: 'I love summer best',
       lesson1: [
-        {
-          foreign: 'Ja najviše volim ljeto.',
-          english: 'I love summer most.',
-          hard: true,
-        },
+        { foreign: 'Ja najviše volim ljeto.', english: 'I love summer most.', hard: true },
         { foreign: 'više', english: 'more', hard: true },
         { foreign: 'najviše', english: 'most', hard: true },
         { foreign: 'ljeto', english: 'summer' },
@@ -941,11 +919,7 @@ export const allPhrases = {
         { foreign: 'Hladno je.', english: 'It’s cold.' },
         { foreign: 'vlažno', english: 'humid' },
         { foreign: 'siječanj / u siječnju', english: 'January / in January', hard: true },
-        {
-          foreign: 'veljača / u veljači',
-          english: 'February / in February',
-          hard: true,
-        },
+        { foreign: 'veljača / u veljači', english: 'February / in February', hard: true },
       ],
       lesson5: [
         { foreign: 'ožujak / u ožujku', english: 'March / in March', hard: true },
@@ -984,11 +958,7 @@ export const allPhrases = {
         },
         { foreign: 'nedjelja / u nedjelju', english: 'Sunday / on Sunday', hard: true },
         { foreign: 'To je sjajno!', english: 'That is splendid!', hard: true },
-        {
-          foreign: 'Proslavimo ga ranije.',
-          english: 'Let’s celebrate it earlier.',
-          hard: true,
-        },
+        { foreign: 'Proslavimo ga ranije.', english: 'Let’s celebrate it earlier.', hard: true },
         { foreign: 'ga', english: 'it (masculine, genitive case)' },
         {
           foreign: 'Napravimo zabavu u petak ili subotu.',
@@ -1003,11 +973,7 @@ export const allPhrases = {
         { foreign: 'KoLIko imaš godina?', english: 'How old are you? (Informal singular)' },
         { foreign: 'godina', english: 'year' },
         { foreign: 'Imam dvadeset osam godina.', english: 'I am 28 years old.' },
-        {
-          foreign: 'Ali, to je tajna.',
-          english: 'But, it is a secret.',
-          hard: true,
-        },
+        { foreign: 'Ali, to je tajna.', english: 'But, it is a secret.', hard: true },
       ],
       lesson3: [
         { foreign: 'poNEdjeljak / u poNEdjeljak', english: 'Monday / on Monday', hard: true },
@@ -1038,11 +1004,7 @@ export const allPhrases = {
         },
         { foreign: 'veČEras', english: 'tonight (this evening)', hard: true },
         { foreign: 'idemo', english: 'let’s go' },
-        {
-          foreign: 'U koje vrijeme počinje?',
-          english: 'What time does it start?',
-          hard: true,
-        },
+        { foreign: 'U koje vrijeme počinje?', english: 'What time does it start?', hard: true },
         { foreign: 'vriJEme', english: 'time' },
         {
           foreign: 'Počinje u devet sati navečer.',
@@ -1054,11 +1016,7 @@ export const allPhrases = {
         { foreign: 'centar', english: 'center' },
       ],
       lesson2: [
-        {
-          foreign: 'Da poZOvem prijatelje?',
-          english: 'Should I invite my friends?',
-          hard: true,
-        },
+        { foreign: 'Da poZOvem prijatelje?', english: 'Should I invite my friends?', hard: true },
         { foreign: 'Što više to bolje.', english: 'The more the merrier.' },
         { foreign: 'početi', english: 'to begin' },
         { foreign: 'pozvati', english: 'to invite' },
@@ -1080,12 +1038,7 @@ export const allPhrases = {
         { foreign: 'dvadeset sati / osam sati navečer', english: '8:00pm' },
         { foreign: 'jedan sat u noći', english: '1:00am' },
       ],
-      lesson5: [
-        {
-          foreign: 'šest sati i trideset miNUta / pola sedam uJUtro',
-          english: '6:30am',
-        },
-      ],
+      lesson5: [{ foreign: 'šest sati i trideset miNUta / pola sedam uJUtro', english: '6:30am' }],
     },
     chapter5: {
       name: 'I love this place',
@@ -1125,11 +1078,7 @@ export const allPhrases = {
           english: 'I loved the hike. (From a female)',
           hard: true,
         },
-        {
-          foreign: 'Sviđa mi se Hrvatska.',
-          english: 'I like Croatia.',
-          hard: true,
-        },
+        { foreign: 'Sviđa mi se Hrvatska.', english: 'I like Croatia.', hard: true },
         {
           foreign: 'Kad ćeš ponovno doći?',
           english: 'When will you come again? (Informal singular)',
@@ -1137,11 +1086,7 @@ export const allPhrases = {
         },
         { foreign: 'ponovno', english: 'again' },
         { foreign: 'doći', english: 'to come', hard: true },
-        {
-          foreign: 'Sljedeće godine. Nadam se.',
-          english: 'Next year. Hopefully!',
-          hard: true,
-        },
+        { foreign: 'Sljedeće godine. Nadam se.', english: 'Next year. Hopefully!', hard: true },
         { foreign: 'nadati se', english: 'to hope', hard: true },
         { foreign: 'nadam se', english: 'hopefully' },
       ],
@@ -1163,11 +1108,7 @@ export const allPhrases = {
         { foreign: 'Odlazim sutra.', english: 'I leave tomorrow.', hard: true },
       ],
       lesson5: [
-        {
-          foreign: 'Odlazim za tri dana.',
-          english: 'I leave in 3 days.',
-          hard: true,
-        },
+        { foreign: 'Odlazim za tri dana.', english: 'I leave in 3 days.', hard: true },
         { foreign: 'dan / dani', english: 'day / days (nominative)' },
         { foreign: 'tjedni', english: 'weeks' },
         { foreign: 'mjesec / mjeSEci', english: 'month / months', hard: true },
@@ -1175,11 +1116,7 @@ export const allPhrases = {
         { foreign: 'bit ću', english: 'I’ll be' },
       ],
       lesson6: [
-        {
-          foreign: 'Vratit ću se za…',
-          english: 'I will be back in...',
-          hard: true,
-        },
+        { foreign: 'Vratit ću se za…', english: 'I will be back in...', hard: true },
         { foreign: 'vratiti se', english: 'to return', hard: true },
       ],
     },
@@ -1188,11 +1125,7 @@ export const allPhrases = {
     chapter1: {
       name: 'I don’t feel well',
       lesson1: [
-        {
-          foreign: 'Trebam neki liJEK.',
-          english: 'I need some medicine.',
-          hard: true,
-        },
+        { foreign: 'Trebam neki liJEK.', english: 'I need some medicine.', hard: true },
         {
           foreign: 'Koji su Vaši simpTOmi?',
           english: 'What are your symptoms? (Formal singular)',
@@ -1286,11 +1219,7 @@ export const allPhrases = {
         { foreign: 'vode', english: 'of water' },
       ],
       lesson2: [
-        {
-          foreign: 'Bez leda, molim.',
-          english: 'Without ice please.',
-          hard: true,
-        },
+        { foreign: 'Bez leda, molim.', english: 'Without ice please.', hard: true },
         { foreign: 'I malo kruha, molim.', english: 'And a little bread, please.' },
         { foreign: 'kruh', english: 'bread' },
         { foreign: 'juha / malo juhe', english: 'soup / a little soup' },
@@ -1353,11 +1282,7 @@ export const allPhrases = {
           english: 'I am allergic to shellfish! (Male speaker)',
           hard: true,
         },
-        {
-          foreign: 'Ali sigurno dobro miriše.',
-          english: 'But it sure smells good.',
-          hard: true,
-        },
+        { foreign: 'Ali sigurno dobro miriše.', english: 'But it sure smells good.', hard: true },
         { foreign: 'doručkovati', english: 'to have breakfast', hard: true },
         { foreign: 'ručati', english: 'to have lunch' },
         { foreign: 'večerati', english: 'to have dinner' },
