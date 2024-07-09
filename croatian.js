@@ -1260,7 +1260,12 @@ export const allPhrases = {
           english: 'I am hungry, let’s eat. (Male / Female speaker)',
           hard: true,
         },
-        { foreign: 'Sve izgleda ukusno!', english: 'Everything looks delicious!', hard: true },
+        {
+          foreign: 'Sve izgleda ukusno!',
+          english: 'Everything looks delicious!',
+          hard: true,
+          working_on: true,
+        },
         {
           foreign: 'Ali, ja sam vegetariJAnac.',
           english: 'But, I am a vegetarian. (Male speaker)',
@@ -1283,7 +1288,7 @@ export const allPhrases = {
           hard: true,
         },
         { foreign: 'Ali sigurno dobro miriše.', english: 'But it sure smells good.', hard: true },
-        { foreign: 'doručkovati', english: 'to have breakfast', hard: true },
+        { foreign: 'doručkovati', english: 'to have breakfast', hard: true, working_on: true },
         { foreign: 'ručati', english: 'to have lunch' },
         { foreign: 'večerati', english: 'to have dinner' },
       ],
