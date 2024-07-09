@@ -32,6 +32,7 @@ let phraseIndex;
 let shownPhrases = new Set();
 let prevNextPrompt;
 let prevUnit, prevChapter, prevLesson, nextUnit, nextChapter, nextLesson;
+let showUnseen;
 
 function showMenu() {
   console.log(menu);
@@ -169,11 +170,11 @@ function startFlashcards() {
     [nextUnit, nextChapter, nextLesson] = calcNextLesson();
     prevNextPrompt =
       prevUnit && nextUnit
-        ? '(P)rev / (N)ext lesson,\n'
+        ? '(P)rev / (N)ext lesson, '
         : prevUnit
-          ? '(P)rev lesson,\n'
+          ? '(P)rev lesson, '
           : nextUnit
-            ? '(N)ext lesson,\n'
+            ? '(N)ext lesson, '
             : '';
     setupPhrases().then(() => {
       showNextFlashcard();
@@ -185,7 +186,8 @@ async function setupPhrases() {
   phrases = [];
   wrongPhrases = [];
   phraseIndex = 0;
-  shownPhrases = new Set();
+  shownPhrases.clear();
+  showUnseen = false;
   const hardPhrases = await dynHardPhrases();
   if (['all', 'hard', 'working_on'].includes(currentUnit)) {
     for (let unit in allPhrases) {
@@ -239,11 +241,18 @@ async function setupPhrases() {
 }
 
 function showNextFlashcard(phrase) {
-  const randomPhrase =
-    phrase ??
-    (phraseIndex % 3 === 0 && wrongPhrases.length > 0
-      ? wrongPhrases[Math.floor(Math.random() * wrongPhrases.length)]
-      : phrases[Math.floor(Math.random() * phrases.length)]);
+  let randomPhrase;
+  if (phrase) {
+    randomPhrase = phrase;
+  } else if (showUnseen && shownPhrases.size < phrases.length) {
+    const unseenPhrases = phrases.filter((phrase) => !shownPhrases.has(phrase.foreign));
+    randomPhrase = unseenPhrases[Math.floor(Math.random() * unseenPhrases.length)];
+    showUnseen = false;
+  } else if (phraseIndex % 3 === 0 && wrongPhrases.length > 0) {
+    randomPhrase = wrongPhrases[Math.floor(Math.random() * wrongPhrases.length)];
+  } else {
+    randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
+  }
   const hard = randomPhrase.hard ? '  (hard)' : '';
   const wrong = wrongPhrases.map((phrase) => phrase.foreign).includes(randomPhrase.foreign)
     ? '  (wrong before)'
@@ -253,9 +262,14 @@ function showNextFlashcard(phrase) {
     `  ${chalk.yellow((showEnglish ? randomPhrase.english : randomPhrase.foreign).replaceAll(/; */g, '\n  '))}`,
   );
   const shownPhrasesCounter = Math.min(shownPhrases.size, phrases.length);
+  const anyMoreUnseen = shownPhrases.size < phrases.length;
+  const showUnseenPrompt = anyMoreUnseen ? 'Show (U)nseen,' : '';
+  const secondPromptLine = `${prevNextPrompt}${showUnseenPrompt}`
+    ? `${prevNextPrompt}${showUnseenPrompt}\n`
+    : '';
 
   rl.question(
-    `[${wrongPhrases.length}W][${shownPhrasesCounter}/${phrases.length}] Enter: answer, (B)ack, (Q)uit,\n${prevNextPrompt}Last was (H)ard / (W)rong / (R)ight: `,
+    `[${wrongPhrases.length}W][${shownPhrasesCounter}/${phrases.length}] Enter: answer, (B)ack, (Q)uit,\n${secondPromptLine}Last was (H)ard / (W)rong / (R)ight: `,
     (answer) => {
       if (answer.toLowerCase() === 'q') {
         rl.close();
@@ -295,6 +309,16 @@ function showNextFlashcard(phrase) {
         startFlashcards();
         return;
       }
+      if (answer.toLowerCase() === 'u') {
+        if (shownPhrases.size >= phrases.length) {
+          console.log(chalk.red('There are no unseen phrases.'));
+          showNextFlashcard(randomPhrase);
+        } else {
+          showUnseen = true;
+          showNextFlashcard();
+        }
+        return;
+      }
       if (answer.toLowerCase() === 'h' && lastPhrase) {
         addHard(lastPhrase).then(() => {
           showNextFlashcard(randomPhrase);
@@ -316,7 +340,7 @@ function showNextFlashcard(phrase) {
       // If I typed a phrase, don't erase what I typed. I want to compare it to the correct answer.
       const moveUpAndClearLine = answer === '' ? '\u001b[1A\u001b[K' : '';
       console.log(
-        `${moveUpAndClearLine}${moveUpAndClearLine}${prevNextPrompt ? moveUpAndClearLine : ''}    ${chalk.green((showEnglish ? randomPhrase.foreign : randomPhrase.english).replaceAll(/; */g, '\n    '))}${hard}${wrong}`,
+        `${moveUpAndClearLine}${moveUpAndClearLine}${secondPromptLine ? moveUpAndClearLine : ''}    ${chalk.green((showEnglish ? randomPhrase.foreign : randomPhrase.english).replaceAll(/; */g, '\n    '))}${hard}${wrong}`,
       );
       if (shownPhrases.size === phrases.length) {
         console.log(chalk.cyanBright.underline('All phrases have been shown.'));
