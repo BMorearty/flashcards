@@ -1056,6 +1056,7 @@ export const allPhrases = {
             'biti, past tense masculine/feminine/neuter:; bio sam/bila sam; bio si/bila si; bio je/bila je/bilo je; bili smo; bili ste; bili su/bile su/bila su.',
           english: 'to be, past tense: I was, you were, etc.',
           hard: true,
+          working_on: true,
         },
         { foreign: 'Bilo je dobro.', english: 'It was good.' },
         { foreign: 'Bilo je divno.', english: 'It was great.', hard: true },
@@ -1236,7 +1237,7 @@ export const allPhrases = {
         { foreign: 'doručak', english: 'breakfast' },
         { foreign: 'večera', english: 'dinner' },
         { foreign: 'mlijeko', english: 'milk' },
-        { foreign: 'zdjela', english: 'bowl', hard: true },
+        { foreign: 'zdjela', english: 'bowl', hard: true, working_on: true },
       ],
       lesson4: [
         { foreign: 'gaZIrani sok', english: 'soda' },
@@ -1310,6 +1311,43 @@ export const allPhrases = {
         { foreign: 'To nije ukusno.', english: 'It doesn’t taste good.', hard: true },
       ],
       lesson5: [{ foreign: 'To je bezukusno.', english: 'It is tasteless.' }],
+    },
+    chapter4: {
+      name: 'Help!',
+      lesson1: [
+        {
+          foreign: 'Oprostite, trebam pomoć!',
+          english: 'Excuse me, I need help! (Formal singular)',
+        },
+        { foreign: 'Što se doGOdilo?', english: 'What happened?' },
+        { foreign: 'Ne mogu naći svoj novČAnik.', english: 'I can’t find my wallet.' },
+        {
+          foreign:
+            'moći:; (ja) mogu; (ti) možeš; (on/ona/ono) može; (mi) možemo; (vi) možete; (oni/one/ona) mogu',
+          english: 'To be able to (can), present tense conjugations:; I can, you can, etc.',
+        },
+        {
+          foreign: 'moći, negative:; ne mogu; ne možeš; ne može; ne možemo; ne možete; ne mogu',
+          english: 'Unable to (can’t), present tense conjugations:; I can’t, you can’t, etc.',
+        },
+        { foreign: 'Je li uKRAden?', english: 'Is it stolen?' },
+        { foreign: 'Ne znam, možda.', english: 'I don’t know, maybe.' },
+        { foreign: 'Gdje ste zadnje bili?', english: 'Where were you last? (Formal singular)' },
+        { foreign: 'Gdje ste bili?', english: 'Where were you? (Formal singular)' },
+        { foreign: 'Gdje si bila?', english: 'Where were you? (Feminine familiar)' },
+        { foreign: 'Gdje si bio?', english: 'Where were you? (Masculine familiar)' },
+        { foreign: 'Gdje sam bio?', english: 'Where was I? (Masculine)' },
+      ],
+      lesson2: [
+        {
+          foreign: 'Bila sam u podzemnoj željeznici.',
+          english: 'I was on the subway. (Female speaker)',
+        },
+        { foreign: 'kada', english: 'when' },
+        { foreign: 'Mogu li nazvati poLIciju?', english: 'May I call the police?' },
+        { foreign: 'problem', english: 'issue' },
+        { foreign: 'inciDENT', english: 'incident' },
+      ],
     },
   },
 };
