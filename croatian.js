@@ -1378,6 +1378,16 @@ export const allPhrases = {
         { foreign: 'ljuto', english: 'hot (food)' },
         { foreign: 'Volim ljutu hranu.', english: 'I like hot food.' },
       ],
+      lesson4: [
+        { foreign: 'vegan', english: 'vegan' },
+        { foreign: 'soja', english: 'soy' },
+        { foreign: 'riba', english: 'fish' },
+        { foreign: 'Ne volim...', english: 'I don’t like...' },
+        { foreign: 'Ne volim ribu.', english: 'I don’t like fish.' },
+        { foreign: 'To je ukusno.', english: 'It tastes good.' },
+        { foreign: 'ukusno', english: 'delicious' },
+        { foreign: 'To nije ukusno.', english: 'It doesn’t taste good.' },
+      ],
     },
   },
 };
