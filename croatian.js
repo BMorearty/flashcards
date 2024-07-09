@@ -919,10 +919,15 @@ export const allPhrases = {
         { foreign: 'Hladno je.', english: 'It’s cold.' },
         { foreign: 'vlažno', english: 'humid' },
         { foreign: 'siječanj / u siječnju', english: 'January / in January', hard: true },
-        { foreign: 'veljača / u veljači', english: 'February / in February', hard: true },
+        {
+          foreign: 'veljača / u veljači',
+          english: 'February / in February',
+          hard: true,
+          working_on: true,
+        },
       ],
       lesson5: [
-        { foreign: 'ožujak / u ožujku', english: 'March / in March', hard: true },
+        { foreign: 'ožujak / u ožujku', english: 'March / in March', hard: true, working_on: true },
         { foreign: 'travanj / u travnju', english: 'April / in April' },
         { foreign: 'svibanj / u svibnju', english: 'May / in May' },
         { foreign: 'lipanj / u lipnju', english: 'June / in June' },
@@ -1031,7 +1036,7 @@ export const allPhrases = {
         { foreign: 'u zoru', english: 'at dawn', hard: true },
         { foreign: 'kuća / kuće', english: 'house / houses' },
         { foreign: 'rođendanska zabava', english: 'birthday party (birthday’s party)' },
-        { foreign: 'događaj', english: 'event', hard: true },
+        { foreign: 'događaj', english: 'event', hard: true, working_on: true },
         { foreign: 'miNUta', english: 'minutes' },
       ],
       lesson4: [
@@ -1348,6 +1353,15 @@ export const allPhrases = {
         { foreign: 'problem', english: 'issue' },
         { foreign: 'inciDENT', english: 'incident' },
       ],
+      lesson3: [
+        { foreign: 'prijava', english: 'report (noun)' },
+        { foreign: 'Nema mi novčaNIka.', english: 'My wallet is missing.' },
+        { foreign: 'sigurno', english: 'certainly' },
+        { foreign: 'Gdje je toaLET?', english: 'Where is the restroom?' },
+      ],
+    },
+    chapter5: {
+      name: 'What is Your Emergency?',
     },
   },
 };
