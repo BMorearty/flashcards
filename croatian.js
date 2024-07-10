@@ -1365,7 +1365,7 @@ export const allPhrases = {
         { foreign: 'inciDENT', english: 'incident' },
       ],
       lesson3: [
-        { foreign: 'prijava', english: 'report (noun)', hard: true },
+        { foreign: 'prijava', english: 'report (noun)', hard: true, working_on: true },
         {
           foreign: 'Nema mi novčaNIka.',
           english: 'My wallet is missing.',
