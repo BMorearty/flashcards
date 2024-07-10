@@ -927,7 +927,7 @@ export const allPhrases = {
         },
       ],
       lesson5: [
-        { foreign: 'ožujak / u ožujku', english: 'March / in March', hard: true, working_on: true },
+        { foreign: 'ožujak / u ožujku', english: 'March / in March', hard: true },
         { foreign: 'travanj / u travnju', english: 'April / in April' },
         { foreign: 'svibanj / u svibnju', english: 'May / in May' },
         { foreign: 'lipanj / u lipnju', english: 'June / in June' },
@@ -1061,7 +1061,6 @@ export const allPhrases = {
             'biti, past tense masculine/feminine/neuter:; bio sam/bila sam; bio si/bila si; bio je/bila je/bilo je; bili smo; bili ste; bili su/bile su/bila su.',
           english: 'to be, past tense: I was, you were, etc.',
           hard: true,
-          working_on: true,
         },
         { foreign: 'Bilo je dobro.', english: 'It was good.' },
         { foreign: 'Bilo je divno.', english: 'It was great.', hard: true },
@@ -1231,7 +1230,7 @@ export const allPhrases = {
         { foreign: 'juha / malo juhe', english: 'soup / a little soup' },
         { foreign: 'salata / malo salate', english: 'salad / a little salad' },
         { foreign: 'jelo', english: 'dish', hard: true },
-        { foreign: 'tanjur', english: 'plate', hard: true, working_on: true },
+        { foreign: 'tanjur', english: 'plate', hard: true },
         { foreign: 'žlica', english: 'spoon' },
       ],
       lesson3: [
@@ -1242,7 +1241,7 @@ export const allPhrases = {
         { foreign: 'doručak', english: 'breakfast' },
         { foreign: 'večera', english: 'dinner' },
         { foreign: 'mlijeko', english: 'milk' },
-        { foreign: 'zdjela', english: 'bowl', hard: true, working_on: true },
+        { foreign: 'zdjela', english: 'bowl', hard: true },
       ],
       lesson4: [
         { foreign: 'gaZIrani sok', english: 'soda' },
@@ -1266,12 +1265,7 @@ export const allPhrases = {
           english: 'I am hungry, let’s eat. (Male / Female speaker)',
           hard: true,
         },
-        {
-          foreign: 'Sve izgleda ukusno!',
-          english: 'Everything looks delicious!',
-          hard: true,
-          working_on: true,
-        },
+        { foreign: 'Sve izgleda ukusno!', english: 'Everything looks delicious!', hard: true },
         {
           foreign: 'Ali, ja sam vegetariJAnac.',
           english: 'But, I am a vegetarian. (Male speaker)',
@@ -1301,7 +1295,7 @@ export const allPhrases = {
       lesson3: [
         { foreign: 'slano', english: 'salty', hard: true },
         { foreign: 'papar', english: 'pepper' },
-        { foreign: 'začinjeno', english: 'spicy', working_on: true },
+        { foreign: 'začinjeno', english: 'spicy' },
         { foreign: 'ljuto', english: 'hot (food)' },
         { foreign: 'Volim ljutu hranu.', english: 'I like hot food.' },
       ],
@@ -1325,7 +1319,12 @@ export const allPhrases = {
           english: 'Excuse me, I need help! (Formal singular)',
         },
         { foreign: 'Što se doGOdilo?', english: 'What happened?', hard: true, working_on: true },
-        { foreign: 'Ne mogu naći svoj novČAnik.', english: 'I can’t find my wallet.', hard: true, working_on: true },
+        {
+          foreign: 'Ne mogu naći svoj novČAnik.',
+          english: 'I can’t find my wallet.',
+          hard: true,
+          working_on: true,
+        },
         {
           foreign:
             'moći:; (ja) mogu; (ti) možeš; (on/ona/ono) može; (mi) možemo; (vi) možete; (oni/one/ona) mogu',
@@ -1356,13 +1355,23 @@ export const allPhrases = {
           working_on: true,
         },
         { foreign: 'kada', english: 'when' },
-        { foreign: 'Mogu li nazvati poLIciju?', english: 'May I call the police?', hard: true, working_on: true },
+        {
+          foreign: 'Mogu li nazvati poLIciju?',
+          english: 'May I call the police?',
+          hard: true,
+          working_on: true,
+        },
         { foreign: 'problem', english: 'issue' },
         { foreign: 'inciDENT', english: 'incident' },
       ],
       lesson3: [
         { foreign: 'prijava', english: 'report (noun)', hard: true },
-        { foreign: 'Nema mi novčaNIka.', english: 'My wallet is missing.', hard: true, working_on: true	 },
+        {
+          foreign: 'Nema mi novčaNIka.',
+          english: 'My wallet is missing.',
+          hard: true,
+          working_on: true,
+        },
         { foreign: 'sigurno', english: 'certainly' },
         { foreign: 'Gdje je toaLET?', english: 'Where is the restroom?' },
       ],
