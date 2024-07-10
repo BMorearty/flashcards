@@ -71,6 +71,27 @@ export const allPhrases = {
       name: 'Vocabulary',
       lesson1: [{ foreign: 'ako', english: 'if' }],
     },
+    chapter5: {
+      name: 'Slang',
+      lesson1: [
+        { foreign: 'fora', english: 'cool (slang)' },
+        { foreign: 'ovaj', english: 'um (slang)' },
+        {
+          foreign: 'joj',
+          english: 'oh / wow / oh no, can be positive but usually negative (slang)',
+        },
+        { foreign: 'poLAko', english: 'slow down / no rush (slang)' },
+        { foreign: 'ajme', english: 'oh my goodness (positive or negative) (slang)' },
+        {
+          foreign: 'ono',
+          english: 'filler word at the beginning of a sentence, like "like" (slang)',
+        },
+        { foreign: 'može', english: 'yes / sure / ok (slang)' },
+        { foreign: '', english: '' },
+        { foreign: '', english: '' },
+        { foreign: '', english: '' },
+      ],
+    },
   },
   unit1: {
     chapter1: {
@@ -1028,7 +1049,7 @@ export const allPhrases = {
         { foreign: 'ponoć', english: 'midnight' },
         { foreign: 'prije podne', english: 'a.m.' },
         { foreign: 'poslije podne', english: 'afternoon' },
-        { foreign: 'večer', english: 'evening' },
+        { foreign: 'večer', english: 'evening', working_on: true },
       ],
       lesson3: [
         { foreign: 'noću', english: 'at night' },
@@ -1239,7 +1260,7 @@ export const allPhrases = {
         { foreign: 'salveta', english: 'napkin' },
         { foreign: 'ručak', english: 'lunch', hard: true },
         { foreign: 'doručak', english: 'breakfast' },
-        { foreign: 'večera', english: 'dinner' },
+        { foreign: 'večera', english: 'dinner', working_on: true },
         { foreign: 'mlijeko', english: 'milk' },
         { foreign: 'zdjela', english: 'bowl', hard: true },
       ],
@@ -1378,6 +1399,17 @@ export const allPhrases = {
     },
     chapter5: {
       name: 'What is Your Emergency?',
+      lesson1: [
+        { foreign: 'Hitna služba, izVOlite?', english: 'Emergency service, can I help you?' },
+        { foreign: 'izVOlite', english: 'can I help you? / here you go' },
+        { foreign: 'molim', english: 'please / you’re welcome' },
+        {
+          foreign: 'Imao sam prometnu nezgodu autom.',
+          english: 'I had a car accident (traffic accident by car). (Male speaker)',
+        },
+        { foreign: 'Je li netko povrijeđen?', english: 'Is somebody injured?' },
+        { foreign: 'promet', english: 'traffic' },
+      ],
     },
   },
 };
