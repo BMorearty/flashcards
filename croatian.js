@@ -92,7 +92,7 @@ export const allPhrases = {
       lesson3: [
         { foreign: 'Što radiš?', english: 'What are you doing? (Informal singular)' },
         { foreign: 'Vidimo se sutra', english: 'See each other tomorrow' },
-        { foreign: 'Odlično', english: 'Excellent', hard: true },
+        { foreign: 'odlično', english: 'Excellent', hard: true },
       ],
       lesson4: [
         { foreign: 'loše', english: 'bad' },
@@ -405,7 +405,7 @@ export const allPhrases = {
           english: 'How do you say "xyz" in Croatian?',
           hard: true,
         },
-        { foreign: 'jeziku', english: 'language' },
+        { foreign: 'jezik', english: 'language' },
         { foreign: 'To je knjiga.', english: 'That is a book.' },
         {
           foreign: 'Možeš li to reći ponovo?',
@@ -1324,8 +1324,8 @@ export const allPhrases = {
           foreign: 'Oprostite, trebam pomoć!',
           english: 'Excuse me, I need help! (Formal singular)',
         },
-        { foreign: 'Što se doGOdilo?', english: 'What happened?' },
-        { foreign: 'Ne mogu naći svoj novČAnik.', english: 'I can’t find my wallet.' },
+        { foreign: 'Što se doGOdilo?', english: 'What happened?', hard: true },
+        { foreign: 'Ne mogu naći svoj novČAnik.', english: 'I can’t find my wallet.', hard: true },
         {
           foreign:
             'moći:; (ja) mogu; (ti) možeš; (on/ona/ono) može; (mi) možemo; (vi) možete; (oni/one/ona) mogu',
@@ -1335,9 +1335,13 @@ export const allPhrases = {
           foreign: 'moći, negative:; ne mogu; ne možeš; ne može; ne možemo; ne možete; ne mogu',
           english: 'Unable to (can’t), present tense conjugations:; I can’t, you can’t, etc.',
         },
-        { foreign: 'Je li uKRAden?', english: 'Is it stolen?' },
+        { foreign: 'Je li uKRAden?', english: 'Is it stolen?', hard: true },
         { foreign: 'Ne znam, možda.', english: 'I don’t know, maybe.' },
-        { foreign: 'Gdje ste zadnje bili?', english: 'Where were you last? (Formal singular)' },
+        {
+          foreign: 'Gdje ste zadnje bili?',
+          english: 'Where were you last? (Formal singular)',
+          hard: true,
+        },
         { foreign: 'Gdje ste bili?', english: 'Where were you? (Formal singular)' },
         { foreign: 'Gdje si bila?', english: 'Where were you? (Feminine familiar)' },
         { foreign: 'Gdje si bio?', english: 'Where were you? (Masculine familiar)' },
@@ -1347,15 +1351,16 @@ export const allPhrases = {
         {
           foreign: 'Bila sam u podzemnoj željeznici.',
           english: 'I was on the subway. (Female speaker)',
+          hard: true,
         },
         { foreign: 'kada', english: 'when' },
-        { foreign: 'Mogu li nazvati poLIciju?', english: 'May I call the police?' },
+        { foreign: 'Mogu li nazvati poLIciju?', english: 'May I call the police?', hard: true },
         { foreign: 'problem', english: 'issue' },
         { foreign: 'inciDENT', english: 'incident' },
       ],
       lesson3: [
-        { foreign: 'prijava', english: 'report (noun)' },
-        { foreign: 'Nema mi novčaNIka.', english: 'My wallet is missing.' },
+        { foreign: 'prijava', english: 'report (noun)', hard: true },
+        { foreign: 'Nema mi novčaNIka.', english: 'My wallet is missing.', hard: true },
         { foreign: 'sigurno', english: 'certainly' },
         { foreign: 'Gdje je toaLET?', english: 'Where is the restroom?' },
       ],
