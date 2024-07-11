@@ -943,8 +943,7 @@ export const allPhrases = {
           foreign: 'veljača / u veljači',
           english: 'February / in February',
           hard: true,
-          working_on: true,
-        },
+       },
       ],
       lesson5: [
         { foreign: 'ožujak / u ožujku', english: 'March / in March', hard: true },
@@ -1046,9 +1045,9 @@ export const allPhrases = {
         { foreign: 'početi', english: 'to begin' },
         { foreign: 'pozvati', english: 'to invite' },
         { foreign: 'ponoć', english: 'midnight' },
-        { foreign: 'prije podne', english: 'a.m.', working_on: true },
+        { foreign: 'prije podne', english: 'a.m.' },
         { foreign: 'poslije podne', english: 'afternoon' },
-        { foreign: 'večer', english: 'evening', working_on: true },
+        { foreign: 'večer', english: 'evening' },
       ],
       lesson3: [
         { foreign: 'noću', english: 'at night' },
@@ -1056,7 +1055,7 @@ export const allPhrases = {
         { foreign: 'u zoru', english: 'at dawn', hard: true },
         { foreign: 'kuća / kuće', english: 'house / houses' },
         { foreign: 'rođendanska zabava', english: 'birthday party (birthday’s party)' },
-        { foreign: 'događaj', english: 'event', hard: true, working_on: true },
+        { foreign: 'događaj', english: 'event', hard: true },
         { foreign: 'miNUta', english: 'minutes' },
       ],
       lesson4: [
@@ -1308,7 +1307,7 @@ export const allPhrases = {
           hard: true,
         },
         { foreign: 'Ali sigurno dobro miriše.', english: 'But it sure smells good.', hard: true },
-        { foreign: 'doručkovati', english: 'to have breakfast', hard: true, working_on: true },
+        { foreign: 'doručkovati', english: 'to have breakfast', hard: true },
         { foreign: 'ručati', english: 'to have lunch' },
         { foreign: 'večerati', english: 'to have dinner' },
       ],
@@ -1343,7 +1342,6 @@ export const allPhrases = {
           foreign: 'Ne mogu naći svoj novČAnik.',
           english: 'I can’t find my wallet.',
           hard: true,
-          working_on: true,
         },
         {
           foreign:
@@ -1379,7 +1377,6 @@ export const allPhrases = {
           foreign: 'Mogu li nazvati poLIciju?',
           english: 'May I call the police?',
           hard: true,
-          working_on: true,
         },
         { foreign: 'problem', english: 'issue' },
         { foreign: 'inciDENT', english: 'incident' },
@@ -1390,7 +1387,6 @@ export const allPhrases = {
           foreign: 'Nema mi novčaNIka.',
           english: 'My wallet is missing.',
           hard: true,
-          working_on: true,
         },
         { foreign: 'sigurno', english: 'certainly' },
         { foreign: 'Gdje je toaLET?', english: 'Where is the restroom?' },
