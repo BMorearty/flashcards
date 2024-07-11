@@ -160,7 +160,7 @@ Q. Quit
 }
 
 function startFlashcards() {
-  rl.question('Do you want to see English phrases\nor foreign phrases? (E/f): ', (answer) => {
+  rl.question('\nDo you want to see English phrases\nor foreign phrases? (E/f): ', (answer) => {
     if (answer.toLowerCase() === 'q') {
       rl.close();
       return;
@@ -176,9 +176,10 @@ function startFlashcards() {
           : nextUnit
             ? '(N)ext lesson, '
             : '';
-    if (currentChapter) {
-      console.log(`\nStarting “${allPhrases[currentUnit][currentChapter].name}”\n`);
-    }
+    const name = currentChapter ? `- “${allPhrases[currentUnit][currentChapter].name}”\n` : '';
+    console.log(
+      `\nStarting ${nameOf(currentUnit)}${nameOf(currentChapter)}${nameOf(currentLesson)}${name}`,
+    );
     setupPhrases().then(() => {
       showNextFlashcard();
     });
@@ -293,9 +294,6 @@ function showNextFlashcard(phrase) {
           return;
         }
         [currentUnit, currentChapter, currentLesson] = [prevUnit, prevChapter, prevLesson];
-        console.log(
-          `\nGoing to ${nameOf(currentUnit)}${nameOf(currentChapter)}${nameOf(currentLesson)}\n`,
-        );
         startFlashcards();
         return;
       }
@@ -306,9 +304,6 @@ function showNextFlashcard(phrase) {
           return;
         }
         [currentUnit, currentChapter, currentLesson] = [nextUnit, nextChapter, nextLesson];
-        console.log(
-          `\nGoing to ${nameOf(currentUnit)}${nameOf(currentChapter)}${nameOf(currentLesson)}\n`,
-        );
         startFlashcards();
         return;
       }
