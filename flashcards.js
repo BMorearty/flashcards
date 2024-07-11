@@ -176,6 +176,9 @@ function startFlashcards() {
           : nextUnit
             ? '(N)ext lesson, '
             : '';
+    if (currentChapter) {
+      console.log(`\nStarting “${allPhrases[currentUnit][currentChapter].name}”\n`);
+    }
     setupPhrases().then(() => {
       showNextFlashcard();
     });
