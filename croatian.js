@@ -480,7 +480,7 @@ export const allPhrases = {
         },
         { foreign: 'pitanje', english: 'question' },
         { foreign: 'stvar', english: 'thing' },
-        { foreign: 'odgovor', english: 'answer', working_on: true },
+        { foreign: 'odgovor', english: 'answer' },
         { foreign: 'čitati', english: 'to read' },
       ],
       lesson7: [
@@ -1369,7 +1369,6 @@ export const allPhrases = {
           foreign: 'Bila sam u podzemnoj željeznici.',
           english: 'I was on the subway. (Female speaker)',
           hard: true,
-          working_on: true,
         },
         { foreign: 'kada', english: 'when' },
         {
@@ -1381,7 +1380,7 @@ export const allPhrases = {
         { foreign: 'inciDENT', english: 'incident' },
       ],
       lesson3: [
-        { foreign: 'prijava', english: 'report (noun)', hard: true, working_on: true },
+        { foreign: 'prijava', english: 'report (noun)', hard: true },
         {
           foreign: 'Nema mi novčaNIka.',
           english: 'My wallet is missing.',
@@ -1398,15 +1397,17 @@ export const allPhrases = {
           foreign: 'Hitna služba, izVOlite?',
           english: 'Emergency service, can I help you?',
           hard: true,
+          working_on: true,
         },
-        { foreign: 'izVOlite', english: 'can I help you? / here you go' },
+        { foreign: 'izVOlite', english: 'can I help you? / here you go', hard: true, working_on: true, },
         { foreign: 'molim', english: 'please / you’re welcome' },
         {
           foreign: 'Imao sam prometnu nezgodu autom.',
           english: 'I had a car accident (traffic accident by car). (Male speaker)',
           hard: true,
+          working_on: true,
         },
-        { foreign: 'Je li netko povrijeđen?', english: 'Is somebody injured?', hard: true },
+        { foreign: 'Je li netko povrijeđen?', english: 'Is somebody injured?', hard: true, working_on: true },
         { foreign: 'promet', english: 'traffic' },
       ],
       lesson2: [
@@ -1419,6 +1420,7 @@ export const allPhrases = {
           foreign: 'Gdje se nalazite?',
           english: 'Where are you located? (Where do you find yourself?) (Formal singular)',
           hard: true,
+          working_on: true,
         },
         { foreign: 'Ja sam na autocesti.', english: 'I am on the highway.' },
         { foreign: 'autocesta', english: 'highway' },
