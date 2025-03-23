@@ -20,6 +20,29 @@ export const allPhrases = {
         { foreign: 'κάνεις (KAHnees)', english: 'you do (informal)' },
         { foreign: 'Τι γίνεται; (tee YEEnehteh)', english: "What's up?" },
       ],
+      lesson3: [
+        {
+          foreign: 'Καλά, ευχαριστώ. (kahLAH efhahreeSTOH)',
+          english: 'Good, thanks. (Literally well, thanks.)',
+        },
+        { foreign: 'καλά (kahLAH)', english: 'good (literally, well)' },
+        { foreign: 'Ευχαριστώ! (efhahreeSTOH)', english: 'Thanks!' },
+        { foreign: 'Μια χαρά! (myah hahRAH)', english: 'Great!' },
+        { foreign: 'Μια χαρά, ευχαριστώ! (myah hahRAH, efhahreeSTOH!)', english: 'Great, thanks!' },
+        { foreign: 'πολύ (pohLEE)', english: 'very' },
+        { foreign: 'πολύ καλά (pohLEE kahLAH)', english: 'very good/well' },
+        { foreign: 'Εσείς; (ehSEES)', english: 'You (And you?) (formal)' },
+        {
+          foreign: 'Πολύ καλά! Ευχαριστώ! (pohLEE kahLAH! efhahreeSTOH!)',
+          english: 'Very good! Thanks!',
+        },
+        {
+          foreign: 'Πολύ καλά, ευχαριστώ. Εσείς; (pohLEE kahLAH! efhahreeSTOH! ehSEES?)',
+          english: 'Very good, thanks. And you? (formal)',
+        },
+        { foreign: 'Εσύ; (ehSEE)', english: 'You (And you?) (informal)' },
+        { foreign: 'Μια χαρά! Εσύ; (myah hahRAH! ehSEE?)', english: 'Great! And you? (informal)' },
+      ],
     },
   },
 };
