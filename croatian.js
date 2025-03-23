@@ -40,20 +40,20 @@ export const allPhrases = {
       lesson1: [
         {
           foreign:
-            'imati, present tense:; (ja) imam; (ti) imaš; (on/ona/ono) ima; (mi) imamo; (vi) imate; (oni/one/ona) imaju',
-          english: 'To have, present tense:; I have, you have, etc.',
+            'imati, present tense:| (ja) imam| (ti) imaš| (on/ona/ono) ima| (mi) imamo| (vi) imate| (oni/one/ona) imaju',
+          english: 'To have, present tense:| I have, you have, etc.',
           hard: true,
         },
         {
           foreign:
-            'imati, negative present tense:; (ja) nemam; (ti) nemaš; (on/ona/ono) nema; (mi) nemamo; (vi) nemate; (oni/one/ona) nemaju',
-          english: 'To have, negative present tense:; I don’t have, you don’t have, etc.',
+            'imati, negative present tense:| (ja) nemam| (ti) nemaš| (on/ona/ono) nema| (mi) nemamo| (vi) nemate| (oni/one/ona) nemaju',
+          english: 'To have, negative present tense:| I don’t have, you don’t have, etc.',
           hard: true,
         },
         {
           foreign:
-            'odlaziti, present tense:; (ja) odlazim; (ti) odlaziš; (on/ona/ono) odlazi; (mi) odlazimo; (vi) odlazite; (oni/one/ona) odlaze',
-          english: 'To leave, present tense:; I’m leaving, you’re leaving, etc.',
+            'odlaziti, present tense:| (ja) odlazim| (ti) odlaziš| (on/ona/ono) odlazi| (mi) odlazimo| (vi) odlazite| (oni/one/ona) odlaze',
+          english: 'To leave, present tense:| I’m leaving, you’re leaving, etc.',
           hard: true,
         },
       ],
@@ -268,8 +268,8 @@ export const allPhrases = {
         },
         {
           foreign:
-            'govoriti, present tense:; (ja) govorim; (ti) govoriš; (on/ona/ono) govori; (mi) govorimo; (vi) govorite; (oni/one/ona) govore',
-          english: 'to speak, present tense:; I speak, you speak, etc',
+            'govoriti, present tense:| (ja) govorim| (ti) govoriš| (on/ona/ono) govori| (mi) govorimo| (vi) govorite| (oni/one/ona) govore',
+          english: 'to speak, present tense:| I speak, you speak, etc',
           hard: true,
         },
         {
@@ -280,7 +280,7 @@ export const allPhrases = {
         },
         {
           foreign:
-            'učiti, present tense:; (ja) učim; (ti) učiš; (on/ona/ono) ući; (mi) učimo; (vi) učite; (oni/one/ona) uće',
+            'učiti, present tense:| (ja) učim| (ti) učiš| (on/ona/ono) ući| (mi) učimo| (vi) učite| (oni/one/ona) uće',
           english: 'To learn, present tense: (I) learn, (you) learn, etc.',
         },
         { foreign: 'Ne učim.', english: 'I am not learning.' },
@@ -318,13 +318,13 @@ export const allPhrases = {
         },
         {
           foreign:
-            'stuDIRati, past tense masculine/feminine:; (ja) sam studirao/studirala (studirao sam); (ti) si studirao/studirala (studirao si); (on/ona/ono) je studirao/studirala (studirao je); (mi) smo studirali (studirali smo); (vi) ste studirali (studirali ste); (oni/one/ona) su studirali (studiraoli su)',
+            'stuDIRati, past tense masculine/feminine:| (ja) sam studirao/studirala (studirao sam)| (ti) si studirao/studirala (studirao si)| (on/ona/ono) je studirao/studirala (studirao je)| (mi) smo studirali (studirali smo)| (vi) ste studirali (studirali ste)| (oni/one/ona) su studirali (studiraoli su)',
           english: 'to study, past tense masculine/feminine speaker: I studied, etc.',
           hard: true,
         },
         {
           foreign:
-            'biti, present tense:; (ja) sam; (ti) si; (on/ona/ono) je; (mi) smo; (vi) ste; (oni/one/ona) su',
+            'biti, present tense:| (ja) sam| (ti) si| (on/ona/ono) je| (mi) smo| (vi) ste| (oni/one/ona) su',
           english: 'to be, present tense. I am, you are, etc.',
           hard: true,
         },
@@ -341,7 +341,7 @@ export const allPhrases = {
         },
         {
           foreign:
-            'negative past tense form on the verb čuti:; (ja) nisam čuo/čula; (ti) nisi čuo/čula; (on/ona/ono) nije čuo/čula/čulo; (mi) nismo čuli/čule; (vi) niste čuli/čule; (oni/one/ona) nisu čuli/čule/čula',
+            'negative past tense form on the verb čuti:| (ja) nisam čuo/čula| (ti) nisi čuo/čula| (on/ona/ono) nije čuo/čula/čulo| (mi) nismo čuli/čule| (vi) niste čuli/čule| (oni/one/ona) nisu čuli/čule/čula',
           english:
             'Negative past tense conjugation of to hear: I haven’t heard/didn’t hear, you haven’t heard/didn’t hear, etc.',
           hard: true,
@@ -590,25 +590,25 @@ export const allPhrases = {
         { foreign: 'nositi', english: 'to wear' },
         {
           foreign:
-            'htjeti:; (ja) ću; (ti) ćeš; (on/ona/ono) će; (mi) ćemo; (vi) ćete; (oni/one/ona) će',
+            'htjeti:| (ja) ću| (ti) ćeš| (on/ona/ono) će| (mi) ćemo| (vi) ćete| (oni/one/ona) će',
           english: 'future tense auxiliary verb: I will, you will, etc.',
           hard: true,
         },
         {
           foreign:
-            'negative htjeti / negative future tense auxiliary verb:; (Ja) neću; (ti) nećeš; (on/ona/ono) neće; (mi) nećemo; (vi) nećete; (oni/one/ona) neće',
+            'negative htjeti / negative future tense auxiliary verb:| (Ja) neću| (ti) nećeš| (on/ona/ono) neće| (mi) nećemo| (vi) nećete| (oni/one/ona) neće',
           english: 'negative future tense of to be: I will not be, you will not be, etc.',
           hard: true,
         },
         {
           foreign:
-            'future tense of nositi:; ja ću nositi (nosit ću); ti ćeš nositi (nosit ćeš); on/ona/ono će nositi (nosit će); mi ćemo nositi (nosit ćemo); vi ćete nositi (nosit ćete); oni/one/ona će nositi (nosit će)',
+            'future tense of nositi:| ja ću nositi (nosit ću)| ti ćeš nositi (nosit ćeš)| on/ona/ono će nositi (nosit će)| mi ćemo nositi (nosit ćemo)| vi ćete nositi (nosit ćete)| oni/one/ona će nositi (nosit će)',
           english: 'future tense of to wear: I will wear, you will wear, etc.',
           hard: true,
         },
         {
           foreign:
-            'negative future tense of nositi:; neću nositi; nećeš nositi; neće nositi; nećemo nositi; nećete nositi; neće nositi',
+            'negative future tense of nositi:| neću nositi| nećeš nositi| neće nositi| nećemo nositi| nećete nositi| neće nositi',
           english: 'negative future tense of to wear: I will not wear, you will not wear, etc.',
           hard: true,
         },
@@ -943,7 +943,7 @@ export const allPhrases = {
           foreign: 'veljača / u veljači',
           english: 'February / in February',
           hard: true,
-       },
+        },
       ],
       lesson5: [
         { foreign: 'ožujak / u ožujku', english: 'March / in March', hard: true },
@@ -1077,7 +1077,7 @@ export const allPhrases = {
         { foreign: 'bilo je', english: 'it was', hard: true },
         {
           foreign:
-            'biti, past tense masculine/feminine/neuter:; bio sam/bila sam; bio si/bila si; bio je/bila je/bilo je; bili smo; bili ste; bili su/bile su/bila su.',
+            'biti, past tense masculine/feminine/neuter:| bio sam/bila sam| bio si/bila si| bio je/bila je/bilo je| bili smo| bili ste| bili su/bile su/bila su.',
           english: 'to be, past tense: I was, you were, etc.',
           hard: true,
         },
@@ -1266,7 +1266,7 @@ export const allPhrases = {
         { foreign: 'gaZIrani sok', english: 'soda' },
         {
           foreign:
-            'željeti:; želim li (do I want); želiš li (do you want); želi li (on/ona) (does he/she want); želimo li (do we want); želite li (do you want); žele li (do they want)',
+            'željeti:| želim li (do I want)| želiš li (do you want)| želi li (on/ona) (does he/she want)| želimo li (do we want)| želite li (do you want)| žele li (do they want)',
           english:
             'to ask if someone wants, present tense, all conjugations: do I want, do you want, does he/she want, ...',
           hard: true,
@@ -1345,12 +1345,12 @@ export const allPhrases = {
         },
         {
           foreign:
-            'moći:; (ja) mogu; (ti) možeš; (on/ona/ono) može; (mi) možemo; (vi) možete; (oni/one/ona) mogu',
-          english: 'To be able to (can), present tense conjugations:; I can, you can, etc.',
+            'moći:| (ja) mogu| (ti) možeš| (on/ona/ono) može| (mi) možemo| (vi) možete| (oni/one/ona) mogu',
+          english: 'To be able to (can), present tense conjugations:| I can, you can, etc.',
         },
         {
-          foreign: 'moći, negative:; ne mogu; ne možeš; ne može; ne možemo; ne možete; ne mogu',
-          english: 'Unable to (can’t), present tense conjugations:; I can’t, you can’t, etc.',
+          foreign: 'moći, negative:| ne mogu| ne možeš| ne može| ne možemo| ne možete| ne mogu',
+          english: 'Unable to (can’t), present tense conjugations:| I can’t, you can’t, etc.',
         },
         { foreign: 'Je li uKRAden?', english: 'Is it stolen?', hard: true },
         { foreign: 'Ne znam, možda.', english: 'I don’t know, maybe.' },
@@ -1399,7 +1399,12 @@ export const allPhrases = {
           hard: true,
           working_on: true,
         },
-        { foreign: 'izVOlite', english: 'can I help you? / here you go', hard: true, working_on: true, },
+        {
+          foreign: 'izVOlite',
+          english: 'can I help you? / here you go',
+          hard: true,
+          working_on: true,
+        },
         { foreign: 'molim', english: 'please / you’re welcome' },
         {
           foreign: 'Imao sam prometnu nezgodu autom.',
@@ -1407,7 +1412,12 @@ export const allPhrases = {
           hard: true,
           working_on: true,
         },
-        { foreign: 'Je li netko povrijeđen?', english: 'Is somebody injured?', hard: true, working_on: true },
+        {
+          foreign: 'Je li netko povrijeđen?',
+          english: 'Is somebody injured?',
+          hard: true,
+          working_on: true,
+        },
         { foreign: 'promet', english: 'traffic' },
       ],
       lesson2: [

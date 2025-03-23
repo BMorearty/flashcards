@@ -263,7 +263,7 @@ function showNextFlashcard(phrase) {
     : '';
   shownPhrases.add(randomPhrase.foreign);
   console.log(
-    `  ${chalk.yellow((showEnglish ? randomPhrase.english : randomPhrase.foreign).replaceAll(/; */g, '\n  '))}`,
+    `  ${chalk.yellow((showEnglish ? randomPhrase.english : randomPhrase.foreign).replaceAll(/\| */g, '\n  '))}`,
   );
   const shownPhrasesCounter = Math.min(shownPhrases.size, phrases.length);
   const anyMoreUnseen = shownPhrases.size < phrases.length;
@@ -338,7 +338,7 @@ function showNextFlashcard(phrase) {
       // If I typed a phrase, don't erase what I typed. I want to compare it to the correct answer.
       const moveUpAndClearLine = answer === '' ? '\u001b[1A\u001b[K' : '';
       console.log(
-        `${moveUpAndClearLine}${moveUpAndClearLine}${secondPromptLine ? moveUpAndClearLine : ''}    ${chalk.green((showEnglish ? randomPhrase.foreign : randomPhrase.english).replaceAll(/; */g, '\n    '))}${hard}${wrong}`,
+        `${moveUpAndClearLine}${moveUpAndClearLine}${secondPromptLine ? moveUpAndClearLine : ''}    ${chalk.green((showEnglish ? randomPhrase.foreign : randomPhrase.english).replaceAll(/\| */g, '\n    '))}${hard}${wrong}`,
       );
       if (shownPhrases.size === phrases.length) {
         console.log(chalk.cyanBright.underline('All phrases have been shown.'));
