@@ -4,8 +4,8 @@ export const allPhrases = {
     chapter1: {
       name: 'Basics',
       lesson1: [
-        { foreign: 'Καλημέρα! (Kalimera!)', english: 'Good morning! (literally good day)' },
-        { foreign: 'Καλησπέρα! (Kalispera!)', english: 'Good afternoon! (Used after 1pm.)' },
+        { foreign: 'Καλημέρα! (kaliMEra!)', english: 'Good morning! (literally good day)' },
+        { foreign: 'Καλησπέρα! (kaliSPAra!)', english: 'Good afternoon! (Used after 1pm.)' },
         { foreign: 'Γεια! (Ya!)', english: 'Hi! or Bye! (informal)' },
       ],
       lesson2: [
@@ -22,7 +22,7 @@ export const allPhrases = {
       ],
       lesson3: [
         {
-          foreign: 'Καλά, ευχαριστώ. (kahLAH efhahreeSTOH)',
+          foreign: 'Καλά, ευχαριστώ. (kahLAH, efhahreeSTOH)',
           english: 'Good, thanks. (Literally well, thanks.)',
         },
         { foreign: 'καλά (kahLAH)', english: 'good (literally, well)' },
@@ -37,7 +37,7 @@ export const allPhrases = {
           english: 'Very good! Thanks!',
         },
         {
-          foreign: 'Πολύ καλά, ευχαριστώ. Εσείς; (pohLEE kahLAH! efhahreeSTOH! ehSEES?)',
+          foreign: 'Πολύ καλά, ευχαριστώ. Εσείς; (pohLEE kahLAH, efhahreeSTOH! ehSEES?)',
           english: 'Very good, thanks. And you? (formal)',
         },
         { foreign: 'Εσύ; (ehSEE)', english: 'You (And you?) (informal)' },
