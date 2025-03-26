@@ -65,6 +65,23 @@ export const allPhrases = {
           english: 'Yes, very beautiful day.',
         },
       ],
+      lesson5: [
+        { foreign: 'Αντίο! (ahDEEoh)', english: 'Goodbye!' },
+        { foreign: 'Τα λέμε! (tah LEHmeh)', english: 'Talk to you later!', hard: true },
+        { foreign: 'σας (sahs)', english: 'to you (formal or plural)' },
+        { foreign: 'Αντίο σας! (ahDEEoh sahs)', english: 'Goodbye to you! (formal but warm)' },
+        { foreign: 'Καληνύχτα! (kahleeNEEhta)', english: 'Goodnight!' },
+        {
+          foreign: 'Καληνύχτα σας! / Καλη σας νύχτα (kahleeNEEhta sahs / kahlee sahs NEEhta)',
+          english: 'Goodnight to you! (formal but warm)',
+        },
+        {
+          foreign: 'Καλημέρα σας! / Καλη σας μέρα (kaliMEra sahs / kali sahs MEra)',
+          english: 'Good morning to you / good day to you! (formal but warm)',
+        },
+        { foreign: 'Λοιπόν... (leePOHn)', english: 'Well...; So...' },
+        { foreign: 'Λοιπόν, καληνύχτα. (leePOHn, kahleeNEEhta)', english: 'Well, goodnight.' },
+      ],
     },
   },
 };
