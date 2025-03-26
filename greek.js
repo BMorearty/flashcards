@@ -2,7 +2,7 @@ export const allPhrases = {
   custom: {},
   unit1: {
     chapter1: {
-      name: 'Basics',
+      name: 'Salutations and Small Talk',
       lesson1: [
         { foreign: 'Καλημέρα! (kaliMEra!)', english: 'Good morning! (literally good day)' },
         { foreign: 'Καλησπέρα! (kaliSPAra!)', english: 'Good afternoon! (Used after 1pm.)' },
@@ -42,6 +42,28 @@ export const allPhrases = {
         },
         { foreign: 'Εσύ; (ehSEE)', english: 'You (And you?) (informal)' },
         { foreign: 'Μια χαρά! Εσύ; (myah hahRAH! ehSEE?)', english: 'Great! And you? (informal)' },
+      ],
+      lesson4: [
+        { foreign: 'Ωραίος καιρός. (ohREHohs kehROHs.)', english: 'Beautiful weather.' },
+        { foreign: 'ωραίος (ohREHohs)', english: 'beautiful; nice' },
+        { foreign: 'ο καιρός (oh kehROHs)', english: 'the weather' },
+        { foreign: 'σήμερα (SEEmehrah)', english: 'today' },
+        {
+          foreign: 'Ωραίος καιρός σήμερα. (ohREHohs kehROHs SEEmehrah)',
+          english: 'Beautiful weather today.',
+        },
+        { foreign: 'μέρα (MEHrah)', english: 'day' },
+        { foreign: 'η μέρα (ee MEHrah)', english: 'the day' },
+        { foreign: 'Ωραία μέρα. (ohREHah MEHrah)', english: 'Beautiful day.' },
+        { foreign: 'Ναι. (neh)', english: 'Yes.' },
+        {
+          foreign: 'Ναι, πολύ ωραίος καιρός. (neh, pohLEE ohREHos kehROHs.)',
+          english: 'Yes, very beautiful weather.',
+        },
+        {
+          foreign: 'Ναι, πολύ ωραία μέρα. (neh, pohLEE ohREHah MEHra)',
+          english: 'Yes, very beautiful day.',
+        },
       ],
     },
   },
