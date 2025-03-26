@@ -100,6 +100,46 @@ export const allPhrases = {
         { foreign: 'Μιλάτε ελληνικά; (meeLAHteh ehleeneeKAH?)', english: 'Do you speak Greek?' },
         { foreign: 'Ναι, λίγα. (neh, LEEgah)', english: 'Yes, a little.' },
       ],
+      lesson2: [
+        {
+          foreign: 'Συγγνώμη! (seeGNOHmee)',
+          english: 'Excuse me! (to get someone’s attention or ask pardon?)',
+        },
+        {
+          foreign: 'Συγγνώμη! Μιλάτε αγγλικά; (seeGNOHmee! meeLAHteh ahngleeKAH?)',
+          english: 'Excuse me! Do you speak English? (formal or plural)',
+        },
+      ],
+      lesson3: [
+        {
+          foreign: 'Δεν μιλάω αγγλικά. (thehn meeLAoh ahngleeKAH)',
+          english: 'I don’t speak English.',
+        },
+        { foreign: 'Δεν μιλάω. (thehn meeLAoh)', english: 'I don’t speak.' },
+        {
+          foreign: 'Δεν μιλάω ελληνικά. (thehn meeLAoh ehleeneeKAH)',
+          english: 'I don’t speak Greek.',
+        },
+        { foreign: 'Λυπάμαι! (leePAHmeh)', english: 'I’m sorry!' },
+        {
+          foreign: 'Δεν μιλάω καλά ελληνικά. (thehn meeLAoh kahLAH ehleeneeKAH)',
+          english: 'I don’t speak Greek well.',
+        },
+        {
+          foreign: 'Λυπάμαι, δεν μιλάω αγγλικά. (leePAHmeh, thehn meeLAoh ahngleeKAH)',
+          english: 'I’m sorry, I don’t speak English.',
+        },
+        { foreign: 'Όχι. (OH-hee)', english: 'No.' },
+        {
+          foreign: 'Όχι, δεν μιλάω αγγλικά. (OH-hee, thehn meeLAoh ahngleeKAH)',
+          english: 'No, I don’t speak English.',
+        },
+        { foreign: 'καταλαβαίνω (kahtahlahVEHnoh)', english: 'I understand', hard: true },
+        {
+          foreign: 'Λυπάμαι. Δεν καταλαβαίνω. (leePAHmeh. thehn kahtahlahVEHnoh)',
+          english: 'I’m sorry. I don’t understand.',
+        },
+      ],
     },
   },
 };
