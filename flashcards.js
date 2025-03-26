@@ -311,11 +311,11 @@ function showNextFlashcard(phrase) {
         if (shownPhrases.size >= phrases.length) {
           console.log(chalk.red('There are no unseen phrases.'));
           showNextFlashcard(randomPhrase);
+          return;
         } else {
           showUnseen = true;
-          showNextFlashcard();
+          // Fall through so we'll show the last answer before showing the next flashcard.
         }
-        return;
       }
       if (answer.toLowerCase() === 'h' && lastPhrase) {
         addHard(lastPhrase).then(() => {
