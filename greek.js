@@ -11,12 +11,12 @@ export const allPhrases = {
       lesson2: [
         {
           foreign: 'Τι κάνετε; (tee KAHnehteh)',
-          english: 'How are you? (Literally, what do you do?) (formal)',
+          english: 'How are you? (Literally, what do you do?) (formal or plural)',
         },
         { foreign: 'Τι κάνεις; (tee KAHnees)', english: 'How are you? (informal)' },
         { foreign: 'τι', english: 'what' },
         { foreign: 'κάνω (KAHnoh)', english: 'I do' },
-        { foreign: 'κάνετε (KAHnehteh)', english: 'you do (formal)' },
+        { foreign: 'κάνετε (KAHnehteh)', english: 'you do (formal or plural)' },
         { foreign: 'κάνεις (KAHnees)', english: 'you do (informal)' },
         { foreign: 'Τι γίνεται; (tee YEEnehteh)', english: "What's up?" },
       ],
@@ -31,14 +31,14 @@ export const allPhrases = {
         { foreign: 'Μια χαρά, ευχαριστώ! (myah hahRAH, efhahreeSTOH!)', english: 'Great, thanks!' },
         { foreign: 'πολύ (pohLEE)', english: 'very' },
         { foreign: 'πολύ καλά (pohLEE kahLAH)', english: 'very good/well' },
-        { foreign: 'Εσείς; (ehSEES)', english: 'You (And you?) (formal)' },
+        { foreign: 'Εσείς; (ehSEES)', english: 'You (And you?) (formal or plural)' },
         {
           foreign: 'Πολύ καλά! Ευχαριστώ! (pohLEE kahLAH! efhahreeSTOH!)',
           english: 'Very good! Thanks!',
         },
         {
           foreign: 'Πολύ καλά, ευχαριστώ. Εσείς; (pohLEE kahLAH, efhahreeSTOH! ehSEES?)',
-          english: 'Very good, thanks. And you? (formal)',
+          english: 'Very good, thanks. And you? (formal or plural)',
         },
         { foreign: 'Εσύ; (ehSEE)', english: 'You (And you?) (informal)' },
         { foreign: 'Μια χαρά! Εσύ; (myah hahRAH! ehSEE?)', english: 'Great! And you? (informal)' },
