@@ -83,6 +83,24 @@ export const allPhrases = {
         { foreign: 'Λοιπόν, καληνύχτα. (leePOHn, kahleeNEEhta)', english: 'Well, goodnight.' },
       ],
     },
+    chapter2: {
+      name: 'Languages and Origins',
+      lesson1: [
+        { foreign: 'Μιλάω αγγλικά. (meeLAoh ahngleeKAH)', english: 'I speak English.' },
+        { foreign: 'μιλάτε (meeLAHteh)', english: 'you speak (formal or plural)' },
+        { foreign: 'Μιλάτε αγγλικά. (meelAHteh ahngleeKAH)', english: 'You speak English.' },
+        { foreign: 'μιλάτε; (meeLAHteh?)', english: 'do you speak?' },
+        { foreign: 'Μιλάτε αγγλικά; (meeLAHteh ahngleeKAH?)', english: 'Do you speak English?' },
+        { foreign: 'λίγα (LEEgah)', english: 'a little' },
+        { foreign: 'ελληνικά (ehleeneeKAH)', english: 'Greek' },
+        {
+          foreign: 'Μιλάω λίγα ελληνικά. (meeLAoh LEEgah ehleeneeKAH)',
+          english: 'I speak a little Greek.',
+        },
+        { foreign: 'Μιλάτε ελληνικά; (meeLAHteh ehleeneeKAH?)', english: 'Do you speak Greek?' },
+        { foreign: 'Ναι, λίγα. (neh, LEEgah)', english: 'Yes, a little.' },
+      ],
+    },
   },
 };
 
