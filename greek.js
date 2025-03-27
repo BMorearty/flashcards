@@ -237,6 +237,10 @@ export const allPhrases = {
           english: 'This is my friend, Katharine.',
         },
       ],
+      lesson2: [
+        { foreign: 'Με λένε Γιώργο. (meh LEHneh YOHrgoh)', english: 'My name is George.' },
+        { foreign: 'με λένε (meh LEHneh)', english: 'my name is (literally, “they call me”)' },
+      ],
     },
   },
 };
