@@ -44,9 +44,13 @@ export const allPhrases = {
         { foreign: 'Μια χαρά! Εσύ; (myah hahRAH! ehSEE?)', english: 'Great! And you? (informal)' },
       ],
       lesson4: [
-        { foreign: 'Ωραίος καιρός. (ohREHohs kehROHs.)', english: 'Beautiful weather.' },
+        {
+          foreign: 'Ωραίος καιρός. (ohREHohs kehROHs.)',
+          english: 'Beautiful weather.',
+          hard: true,
+        },
         { foreign: 'ωραίος (ohREHohs)', english: 'beautiful; nice' },
-        { foreign: 'ο καιρός (oh kehROHs)', english: 'the weather' },
+        { foreign: 'ο καιρός (oh kehROHs)', english: 'the weather', hard: true },
         { foreign: 'σήμερα (SEEmehrah)', english: 'today' },
         {
           foreign: 'Ωραίος καιρός σήμερα. (ohREHohs kehROHs SEEmehrah)',
@@ -104,6 +108,7 @@ export const allPhrases = {
         {
           foreign: 'Συγγνώμη! (seeGNOHmee)',
           english: 'Excuse me! (to get someone’s attention or ask pardon?)',
+          hard: true,
         },
         {
           foreign: 'Συγγνώμη! Μιλάτε αγγλικά; (seeGNOHmee! meeLAHteh ahngleeKAH?)',
@@ -120,7 +125,7 @@ export const allPhrases = {
           foreign: 'Δεν μιλάω ελληνικά. (thehn meeLAoh ehleeneeKAH)',
           english: 'I don’t speak Greek.',
         },
-        { foreign: 'Λυπάμαι! (leePAHmeh)', english: 'I’m sorry!' },
+        { foreign: 'Λυπάμαι! (leePAHmeh)', english: 'I’m sorry!', hard: true },
         {
           foreign: 'Δεν μιλάω καλά ελληνικά. (thehn meeLAoh kahLAH ehleeneeKAH)',
           english: 'I don’t speak Greek well.',
