@@ -145,6 +145,21 @@ export const allPhrases = {
           english: 'I’m sorry. I don’t understand.',
         },
       ],
+      lesson4: [
+        {
+          foreign: 'Από πού είστε; (ahPOH poo EEsteh)',
+          english: 'Where are you from? (formal or plural)',
+        },
+        { foreign: 'από (ahPOH)', english: 'from' },
+        { foreign: 'πού; (poo?)', english: 'where?' },
+        { foreign: 'είστε (EEsteh)', english: 'you are (formal or plural)' },
+        {
+          foreign: 'Συγγνώμη! Από πού είστε; (seeGNOHmee! ahPOH poo EEsteh?)',
+          english: 'Excuse me! Where are you from? (formal or plural)',
+        },
+        { foreign: 'είσαι (EEseh)', english: 'you are (informal)' },
+        { foreign: 'Από πού είσαι; (ahPOH poo EEseh)', english: 'Where are you from? (informal)' },
+      ],
     },
   },
 };
