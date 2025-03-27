@@ -184,6 +184,60 @@ export const allPhrases = {
         },
       ],
     },
+    chapter3: {
+      name: 'Names and Introductions',
+      lesson1: [
+        {
+          foreign: "Από 'δω η γυναίκα μου. (ahPOH thoh ee yeeNEHkah moo)",
+          english: 'This is my wife.',
+        },
+        {
+          foreign: "Από 'δω ... (ahPOH thoh ...)",
+          english: 'This is ... (only for introductions)',
+        },
+        { foreign: 'η γυναίκα (ee yeeNEHkah)', english: 'the woman', hard: true },
+        { foreign: 'μου (moo)', english: 'my' },
+        { foreign: 'Κατερίνα (kahtehREEnah)', english: 'Katharine' },
+        {
+          foreign: 'η γυναίκα μου, η Κατερίνα (ee yeeNEHkah moo, ee kahtehREEnah)',
+          english: 'my wife, Katharine',
+        },
+        {
+          foreign:
+            "Από 'δω η γυναίκα μου, η Κατερίνα. (ahPOH thoh ee yeeNEHkah moo, ee kahtehREEnah)",
+          english: 'This is my wife, Katharine.',
+        },
+        { foreign: 'ο άντρας (oh AHndrahs)', english: 'the man', hard: true },
+        { foreign: 'ο άντρας μου (oh AHndrahs moo)', english: 'my husband' },
+        {
+          foreign: "Από 'δω ο άντρας μου. (ahPOH thoh oh AHndrahs moo)",
+          english: 'This is my husband.',
+        },
+        { foreign: 'Γιώργος (YOHrgohs)', english: 'George' },
+        {
+          foreign: "Από 'δω ο άντρας μου, ο Γιώργος. (ahPOH thoh oh AHndrahs moo, oh YOHrgohs)",
+          english: 'This is my husband, George.',
+        },
+        { foreign: 'ο φίλος (oh FEElohs)', english: 'the friend (about a male)' },
+        {
+          foreign: "Από 'δω ο φίλος μου. (ahPOH thoh oh FEElohs moo)",
+          english: 'This is my friend. (about a male)',
+        },
+        {
+          foreign: "Από 'δω ο φίλος μου, ο Τομ. (ahPOH thoh oh FEElohs moo, oh tom)",
+          english: 'This is my friend Tom.',
+        },
+        { foreign: 'η φίλη (ee FEElee)', english: 'the friend (about a female)' },
+        {
+          foreign: "Από 'δω η φίλη μου. (ahPOH thoh ee FEElee moo)",
+          english: 'This is my friend. (about a female)',
+        },
+        {
+          foreign: "Από 'δω η φίλη μου, η Κατερίνα. (ahPOH thoh ee FEElee moo, ee kahtehREEnah)",
+          english: 'This is my friend, Katharine.',
+        },
+      ],
+    },
   },
 };
 
