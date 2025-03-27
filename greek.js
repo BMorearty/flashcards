@@ -160,6 +160,29 @@ export const allPhrases = {
         { foreign: 'είσαι (EEseh)', english: 'you are (informal)' },
         { foreign: 'Από πού είσαι; (ahPOH poo EEseh)', english: 'Where are you from? (informal)' },
       ],
+      lesson5: [
+        {
+          foreign: 'Είμαι από την Αμερική. (EEmeh ahPOH teen ahmehreeKEE)',
+          english: 'I’m from America.',
+        },
+        { foreign: 'η Αμερική (ee ahmehreeKEE)', english: 'America' },
+        { foreign: 'είμαι (EEmeh)', english: 'I am' },
+        { foreign: 'η Ελλάδα (ee ehLAHthah)', english: 'Greece' },
+        {
+          foreign: 'Από την Ελλάδα. (ahPOH teen ehLAHthah)',
+          english: 'From Greece. (full sentence in answer to where are you from?)',
+        },
+        {
+          foreign: 'Είμαι από την Ελλάδα. (EEmeh ahPOH teen ehLAHthah)',
+          english: 'I’m from Greece.',
+        },
+        { foreign: 'και (keh)', english: 'and' },
+        {
+          foreign:
+            'Είμαι από την Αμερική και μιλάω αγγλικά. (EEmeh ahPOH teen ahmehreeKEE keh meeLAoh ahngleeKAH)',
+          english: 'I’m from America and I speak English.',
+        },
+      ],
     },
   },
 };
