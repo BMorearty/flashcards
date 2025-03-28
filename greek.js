@@ -165,6 +165,7 @@ export const allPhrases = {
         {
           foreign: 'Είμαι από την Αμερική. (EEmeh ahPOH teen ahmehreeKEE)',
           english: 'I’m from America.',
+          hard: true,
         },
         { foreign: 'η Αμερική (ee ahmehreeKEE)', english: 'America' },
         { foreign: 'είμαι (EEmeh)', english: 'I am' },
@@ -279,6 +280,19 @@ export const allPhrases = {
         {
           foreign: 'Χαίρω πολύ, κύριε! (HYEHroh pohLEE, KEEree-e)',
           english: 'Nice to meet you, sir!',
+        },
+      ],
+      lesson5: [
+        { foreign: 'Κι εγώ! (kee-ehGOH)', english: 'Nice to meet you too! (Literally “and I.”)' },
+        { foreign: 'κι (kee)', english: 'and, but only when followed by a vowel' },
+        { foreign: 'εγώ (ehGOH)', english: 'I' },
+        {
+          foreign: 'Κι εγώ, κύριε! (kee-ehGOH, KEEree-e)',
+          english: 'Nice to meet you too, sir! (And I, sir!)',
+        },
+        {
+          foreign: 'Κι εγώ, κυρία! (kee-ehGOH, keeREEah)',
+          english: 'Nice to meet you too, ma’am! (And I, ma’am!)',
         },
       ],
     },
