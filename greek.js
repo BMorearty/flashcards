@@ -283,7 +283,7 @@ export const allPhrases = {
         },
       ],
       lesson5: [
-        { foreign: 'Κι εγώ! (kee-ehGOH)', english: 'Nice to meet you too! (Literally “and I.”)' },
+        { foreign: 'Κι εγώ! (kee-ehGOH)', english: 'Nice to meet you too!' },
         { foreign: 'κι (kee)', english: 'and, but only when followed by a vowel' },
         { foreign: 'εγώ (ehGOH)', english: 'I' },
         {
@@ -292,7 +292,86 @@ export const allPhrases = {
         },
         {
           foreign: 'Κι εγώ, κυρία! (kee-ehGOH, keeREEah)',
-          english: 'Nice to meet you too, ma’am! (And I, ma’am!)',
+          english: 'Nice to meet you too, ma’am!',
+        },
+      ],
+      lesson6: [
+        {
+          foreign: 'Είμαι Αμερικανός. (EEmeh ahmehreekahNOHs)',
+          english: 'I’m American. (by a man)',
+        },
+        {
+          foreign: 'Είστε Αμερικανός; (EEsteh ahmehreekahNOHs)',
+          english: 'Are you American? (formal, to a man)',
+        },
+        {
+          foreign: 'Είσαι Αμερικανός; (EEseh ahmehreekahNOHs)',
+          english: 'Are you American? (informal, to a man)',
+        },
+        { foreign: 'Έλληνας (EHleenahs)', english: 'Greek (about a man)' },
+        {
+          foreign: 'Όχι, είμαι Έλληνας. (OH-hee, EEmeh EHleenahs)',
+          english: 'No, I’m Greek. (by a man)',
+        },
+        { foreign: 'δεν είμαι (thehn EEmeh)', english: 'I’m not' },
+        {
+          foreign:
+            'Δεν είμαι Έλληνας. Είμαι Αμερικανός. (thehn EEmeh EHleenahs. EEmeh ahmehreekahNOHs)',
+          english: 'I’m not Greek. I’m American. (from a man)',
+        },
+        {
+          foreign:
+            'Δεν είμαι από την Αμερική. Είμαι Έλληνας. (thehn EEmeh ahPOH teen ahmehreeKEE. EEmeh EHleenahs)',
+          english: 'I’m not from America. I’m Greek. (from a man)',
+        },
+        { foreign: 'Ελληνίδα (ehleeNEEthah)', english: 'Greek (about a woman)' },
+        {
+          foreign: 'Είσαι Ελληνίδα; (EEseh ehleeNEEthah?)',
+          english: 'Are you Greek? (to a woman) (informal)',
+        },
+        { foreign: 'Αμερικανίδα (ahmehreekahNEEthah)', english: 'American (about a woman)' },
+        {
+          foreign: 'Όχι. Eίμαι Αμερικανίδα. (OH-hee, EEmeh ahmehreekahNEEthah)',
+          english: 'No. I’m American. (by a woman)',
+        },
+        { foreign: 'είναι (EEneh)', english: 'he / she / it is' },
+        { foreign: 'Είναι Ελληνίδα. (EEHneh ehleeNEEthah)', english: 'She is Greek.' },
+        {
+          foreign: 'Η γυναίκα μου είναι Ελληνίδα. (ee yeeNEHkah moo EEneh ehleeNEEthah)',
+          english: 'My wife is Greek.',
+        },
+        {
+          foreign: 'Η Κατερίνα είναι Αμερικανίδα. (ee kahtehREEnah EEneh ahmehreekahNEEthah)',
+          english: 'Katharine is Greek.',
+        },
+        {
+          foreign: 'Ο άντρας μου είναι Έλληνας. (oh ANdrahs moo EEneh EHleenahs)',
+          english: 'My husband is Greek.',
+        },
+        {
+          foreign: 'Ο Τομ είναι Αμερικανός. (oh tom EEneh ahmehreekahNOHs)',
+          english: 'Tom is American.',
+        },
+        {
+          foreign:
+            'Ο Τομ δεν είναι Αμερικανός. Είναι Έλληνας. (oh tom thehn EEneh ahmehreekahNOHs. EEneh EHleenahs)',
+          english: 'Tom is not American. He is Greek.',
+        },
+        { foreign: 'αλλά (ahLAH)', english: 'but' },
+        {
+          foreign:
+            'Εγώ είμαι Αμερικανός, αλλά η γυναίκα μου είναι Ελληνίδα. (ehGOH EEmeh ahmehreekahNOHs, ahLAH ee yeeNEHkah moo EEneh ehleeNEEthah)',
+          english: 'I am American, but my wife is Greek.',
+        },
+        {
+          foreign:
+            'Εγώ είμαι Έλληνας, αλλά η Κατερίνα είναι Αμερικανίδα. (ehGOH EEmeh EHleenahs ahLAH ee kahtehREEnah EEneh ahmehreekahNEEthah)',
+          english: 'I am Greek, but Katharine is American. (from a man)',
+        },
+        {
+          foreign:
+            'Εγώ είμαι Ελληνίδα, αλλά ο άντρας μου είναι Αμερικανός. (ehGOH eemeh ehleeNEEthah, ahLAH oh ANdrahs moo EEneh ahmehreekahNOHs)',
+          english: 'I am Greek, but my husband is American.',
         },
       ],
     },
