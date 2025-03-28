@@ -265,6 +265,22 @@ export const allPhrases = {
           english: 'Excuse me! What is your name? (formal)',
         },
       ],
+      lesson4: [
+        { foreign: 'Χαίρω πολύ! (HYEHroh pohLEE)', english: 'Nice to meet you!' },
+        { foreign: 'κυρία (keeREEah)', english: 'ma’am' },
+        {
+          foreign: 'Χαίρω πολύ, κυρία! (HYEHroh pohLEE, keeREEah)',
+          english: 'Nice to meet you, ma’am!',
+        },
+        {
+          foreign: 'κύριος / κύριε (KEEreeohs / KEEree-e)',
+          english: 'sir / sir when addressing someone',
+        },
+        {
+          foreign: 'Χαίρω πολύ, κύριε! (HYEHroh pohLEE, KEEree-e)',
+          english: 'Nice to meet you, sir!',
+        },
+      ],
     },
   },
 };
