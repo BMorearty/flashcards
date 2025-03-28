@@ -149,6 +149,7 @@ export const allPhrases = {
         {
           foreign: 'Από πού είστε; (ahPOH poo EEsteh)',
           english: 'Where are you from? (formal or plural)',
+          hard: true,
         },
         { foreign: 'από (ahPOH)', english: 'from' },
         { foreign: 'πού; (poo?)', english: 'where?' },
@@ -171,10 +172,12 @@ export const allPhrases = {
         {
           foreign: 'Από την Ελλάδα. (ahPOH teen ehLAHthah)',
           english: 'From Greece. (full sentence in answer to where are you from?)',
+          hard: true,
         },
         {
           foreign: 'Είμαι από την Ελλάδα. (EEmeh ahPOH teen ehLAHthah)',
           english: 'I’m from Greece.',
+          hard: true,
         },
         { foreign: 'και (keh)', english: 'and' },
         {
