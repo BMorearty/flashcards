@@ -93,7 +93,7 @@ export const allPhrases = {
         { foreign: 'Μιλάω αγγλικά. (meeLAoh ahngleeKAH)', english: 'I speak English.' },
         { foreign: 'μιλάτε (meeLAHteh)', english: 'you speak (formal or plural)' },
         { foreign: 'Μιλάτε αγγλικά. (meelAHteh ahngleeKAH)', english: 'You speak English.' },
-        { foreign: 'μιλάτε; (meeLAHteh?)', english: 'do you speak?' },
+        { foreign: 'μιλάτε; (meeLAHteh?)', english: 'do you speak? (formal or plural)' },
         { foreign: 'Μιλάτε αγγλικά; (meeLAHteh ahngleeKAH?)', english: 'Do you speak English?' },
         { foreign: 'λίγα (LEEgah)', english: 'a little' },
         { foreign: 'ελληνικά (ehleeneeKAH)', english: 'Greek' },
@@ -243,6 +243,27 @@ export const allPhrases = {
       lesson2: [
         { foreign: 'Με λένε Γιώργο. (meh LEHneh YOHrgoh)', english: 'My name is George.' },
         { foreign: 'με λένε (meh LEHneh)', english: 'my name is (literally, “they call me”)' },
+      ],
+      lesson3: [
+        {
+          foreign: 'Πώς σε λένε; (pohs seh LEHneh)',
+          english: 'What is your name? (How do they call you?) (informal)',
+        },
+        { foreign: 'σε λένε (seh LEHneh)', english: 'your name is (they call you) (informal)' },
+        { foreign: 'λέγεστε (LEHgyesteh)', english: 'you are called (formal)' },
+        {
+          foreign: 'Πώς λέγεστε; (pohs LEHgyesteh)',
+          english: 'What is your name? (How do they call you?) (formal)',
+        },
+        { foreign: 'παρακαλώ (pahrahkahLOH)', english: 'please' },
+        {
+          foreign: 'Πώς λέγεστε, παρακαλώ; (pohs LEHgyesteh, pahrahkahLOH)',
+          english: 'What is your name, please? (formal)',
+        },
+        {
+          foreign: 'Συγγνώμη! Πώς λέγεστε; (seeGNOHmee! pohs LEHgyesteh)',
+          english: 'Excuse me! What is your name? (formal)',
+        },
       ],
     },
   },
