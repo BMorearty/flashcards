@@ -13,7 +13,7 @@ export const allPhrases = {
           foreign: 'Τι κάνετε; (tee KAHnehteh)',
           english: 'How are you? (Literally, what do you do?) (formal or plural)',
         },
-        { foreign: 'Τι κάνεις; (tee KAHnees)', english: 'How are you? (informal)' },
+        { foreign: 'Τι κάνεις; (tee KAHnees)', english: 'How are you? (informal)', hard: true },
         { foreign: 'τι', english: 'what' },
         { foreign: 'κάνω (KAHnoh)', english: 'I do' },
         { foreign: 'κάνετε (KAHnehteh)', english: 'you do (formal or plural)' },
@@ -31,7 +31,7 @@ export const allPhrases = {
         { foreign: 'Μια χαρά, ευχαριστώ! (myah hahRAH, efhahreeSTOH!)', english: 'Great, thanks!' },
         { foreign: 'πολύ (pohLEE)', english: 'very' },
         { foreign: 'πολύ καλά (pohLEE kahLAH)', english: 'very good/well' },
-        { foreign: 'Εσείς; (ehSEES)', english: 'You (And you?) (formal or plural)' },
+        { foreign: 'Εσείς; (ehSEES)', english: 'You (And you?) (formal or plural)', hard: true },
         {
           foreign: 'Πολύ καλά! Ευχαριστώ! (pohLEE kahLAH! efhahreeSTOH!)',
           english: 'Very good! Thanks!',
@@ -39,8 +39,9 @@ export const allPhrases = {
         {
           foreign: 'Πολύ καλά, ευχαριστώ. Εσείς; (pohLEE kahLAH, efhahreeSTOH! ehSEES?)',
           english: 'Very good, thanks. And you? (formal or plural)',
+          hard: true,
         },
-        { foreign: 'Εσύ; (ehSEE)', english: 'You (And you?) (informal)' },
+        { foreign: 'Εσύ; (ehSEE)', english: 'You (And you?) (informal)', hard: true },
         { foreign: 'Μια χαρά! Εσύ; (myah hahRAH! ehSEE?)', english: 'Great! And you? (informal)' },
       ],
       lesson4: [
@@ -83,20 +84,26 @@ export const allPhrases = {
           foreign: 'Καλημέρα σας! / Καλη σας μέρα (kaliMEra sahs / kali sahs MEra)',
           english: 'Good morning to you / good day to you! (formal but warm)',
         },
-        { foreign: 'Λοιπόν... (leePOHn)', english: 'Well...; So...' },
+        { foreign: 'Λοιπόν... (leePOHn)', english: 'Well...; So...', hard: true },
         { foreign: 'Λοιπόν, καληνύχτα. (leePOHn, kahleeNEEhta)', english: 'Well, goodnight.' },
       ],
     },
     chapter2: {
       name: 'Languages and Origins',
       lesson1: [
-        { foreign: 'Μιλάω αγγλικά. (meeLAoh ahngleeKAH)', english: 'I speak English.' },
+        { foreign: 'Μιλάω αγγλικά. (meeLAoh ahngleeKAH)', english: 'I speak English.', hard: true },
         { foreign: 'μιλάτε (meeLAHteh)', english: 'you speak (formal or plural)' },
-        { foreign: 'Μιλάτε αγγλικά. (meelAHteh ahngleeKAH)', english: 'You speak English.' },
+        {
+          foreign: 'Μιλάτε αγγλικά. (meelAHteh ahngleeKAH)',
+          english: 'You speak English. (formal)',
+        },
         { foreign: 'μιλάτε; (meeLAHteh?)', english: 'do you speak? (formal or plural)' },
-        { foreign: 'Μιλάτε αγγλικά; (meeLAHteh ahngleeKAH?)', english: 'Do you speak English?' },
+        {
+          foreign: 'Μιλάτε αγγλικά; (meeLAHteh ahngleeKAH?)',
+          english: 'Do you speak English? (formal)',
+        },
         { foreign: 'λίγα (LEEgah)', english: 'a little' },
-        { foreign: 'ελληνικά (ehleeneeKAH)', english: 'Greek' },
+        { foreign: 'ελληνικά (ehleeneeKAH)', english: 'Greek (language)', hard: true },
         {
           foreign: 'Μιλάω λίγα ελληνικά. (meeLAoh LEEgah ehleeneeKAH)',
           english: 'I speak a little Greek.',
@@ -108,7 +115,6 @@ export const allPhrases = {
         {
           foreign: 'Συγγνώμη! (seeGNOHmee)',
           english: 'Excuse me! (to get someone’s attention or ask pardon?)',
-          hard: true,
         },
         {
           foreign: 'Συγγνώμη! Μιλάτε αγγλικά; (seeGNOHmee! meeLAHteh ahngleeKAH?)',
@@ -167,9 +173,9 @@ export const allPhrases = {
           english: 'I’m from America.',
           hard: true,
         },
-        { foreign: 'η Αμερική (ee ahmehreeKEE)', english: 'America' },
+        { foreign: 'η Αμερική (ee ahmehreeKEE)', english: 'America', hard: true },
         { foreign: 'είμαι (EEmeh)', english: 'I am' },
-        { foreign: 'η Ελλάδα (ee ehLAHthah)', english: 'Greece' },
+        { foreign: 'η Ελλάδα (ee ehLAHthah)', english: 'Greece', hard: true },
         {
           foreign: 'Από την Ελλάδα. (ahPOH teen ehLAHthah)',
           english: 'From Greece. (full sentence in answer to where are you from?)',
@@ -242,24 +248,39 @@ export const allPhrases = {
         },
       ],
       lesson2: [
-        { foreign: 'Με λένε Γιώργο. (meh LEHneh YOHrgoh)', english: 'My name is George.' },
-        { foreign: 'με λένε (meh LEHneh)', english: 'my name is (literally, “they call me”)' },
+        {
+          foreign: 'Με λένε Γιώργο. (meh LEHneh YOHrgoh)',
+          english: 'My name is George.',
+          hard: true,
+        },
+        {
+          foreign: 'με λένε (meh LEHneh)',
+          english: 'my name is (literally, “they call me”)',
+          hard: true,
+        },
       ],
       lesson3: [
         {
           foreign: 'Πώς σε λένε; (pohs seh LEHneh)',
           english: 'What is your name? (How do they call you?) (informal)',
+          hard: true,
         },
-        { foreign: 'σε λένε (seh LEHneh)', english: 'your name is (they call you) (informal)' },
-        { foreign: 'λέγεστε (LEHgyesteh)', english: 'you are called (formal)' },
+        {
+          foreign: 'σε λένε (seh LEHneh)',
+          english: 'your name is (they call you) (informal)',
+          hard: true,
+        },
+        { foreign: 'λέγεστε (LEHgyesteh)', english: 'you are called (formal)', hard: true },
         {
           foreign: 'Πώς λέγεστε; (pohs LEHgyesteh)',
           english: 'What is your name? (How do they call you?) (formal)',
+          hard: true,
         },
-        { foreign: 'παρακαλώ (pahrahkahLOH)', english: 'please' },
+        { foreign: 'παρακαλώ (pahrahkahLOH)', english: 'please', hard: true },
         {
           foreign: 'Πώς λέγεστε, παρακαλώ; (pohs LEHgyesteh, pahrahkahLOH)',
           english: 'What is your name, please? (formal)',
+          hard: true,
         },
         {
           foreign: 'Συγγνώμη! Πώς λέγεστε; (seeGNOHmee! pohs LEHgyesteh)',
@@ -267,11 +288,12 @@ export const allPhrases = {
         },
       ],
       lesson4: [
-        { foreign: 'Χαίρω πολύ! (HYEHroh pohLEE)', english: 'Nice to meet you!' },
-        { foreign: 'κυρία (keeREEah)', english: 'ma’am' },
+        { foreign: 'Χαίρω πολύ! (HYEHroh pohLEE)', english: 'Nice to meet you!', hard: true },
+        { foreign: 'κυρία (keeREEah)', english: 'ma’am', hard: true },
         {
           foreign: 'Χαίρω πολύ, κυρία! (HYEHroh pohLEE, keeREEah)',
           english: 'Nice to meet you, ma’am!',
+          hard: true,
         },
         {
           foreign: 'κύριος / κύριε (KEEreeohs / KEEree-e)',
@@ -280,19 +302,22 @@ export const allPhrases = {
         {
           foreign: 'Χαίρω πολύ, κύριε! (HYEHroh pohLEE, KEEree-e)',
           english: 'Nice to meet you, sir!',
+          hard: true,
         },
       ],
       lesson5: [
-        { foreign: 'Κι εγώ! (kee-ehGOH)', english: 'Nice to meet you too!' },
+        { foreign: 'Κι εγώ! (kee-ehGOH)', english: 'Nice to meet you too!', hard: true },
         { foreign: 'κι (kee)', english: 'and, but only when followed by a vowel' },
         { foreign: 'εγώ (ehGOH)', english: 'I' },
         {
           foreign: 'Κι εγώ, κύριε! (kee-ehGOH, KEEree-e)',
-          english: 'Nice to meet you too, sir! (And I, sir!)',
+          english: 'Nice to meet you too, sir!',
+          hard: true,
         },
         {
           foreign: 'Κι εγώ, κυρία! (kee-ehGOH, keeREEah)',
           english: 'Nice to meet you too, ma’am!',
+          hard: true,
         },
       ],
       lesson6: [
@@ -339,10 +364,11 @@ export const allPhrases = {
         {
           foreign: 'Η γυναίκα μου είναι Ελληνίδα. (ee yeeNEHkah moo EEneh ehleeNEEthah)',
           english: 'My wife is Greek.',
+          hard: true,
         },
         {
           foreign: 'Η Κατερίνα είναι Αμερικανίδα. (ee kahtehREEnah EEneh ahmehreekahNEEthah)',
-          english: 'Katharine is Greek.',
+          english: 'Katharine is American.',
         },
         {
           foreign: 'Ο άντρας μου είναι Έλληνας. (oh ANdrahs moo EEneh EHleenahs)',
