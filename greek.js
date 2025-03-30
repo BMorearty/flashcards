@@ -448,6 +448,30 @@ export const allPhrases = {
           english: 'Excuse me, where is the Acropolis?',
         },
       ],
+      lesson3: [
+        { foreign: 'Δεν είναι μακριά. (thehn EEneh mahkreeAH)', english: 'It’s not far.' },
+        { foreign: 'δεν είναι (thehn EEneh)', english: 'it isn’t' },
+        { foreign: 'μακριά (mahkreeAH)', english: 'far' },
+        { foreign: 'κοντά (kohNDAH)', english: 'near' },
+        { foreign: 'Είναι κοντά. (EEneh kohNDAH)', english: 'It’s near.' },
+        { foreign: 'λίγο (LEEgoh)', english: 'a bit (adverb)' },
+        { foreign: 'Είναι λίγο μακριά. (EEneh LEEgoh mahkreeAH)', english: 'It’s a bit far.' },
+        { foreign: 'εκεί (ehKEE)', english: 'there' },
+        {
+          foreign: 'Το μουσείο είναι εκεί. (toh mooSEEoh EEneh ehKEE)',
+          english: 'The museum is there.',
+        },
+        {
+          foreign: 'Η τουαλέτα είναι εκεί. (ee tooahLEHtah EEneh ehKEE)',
+          english: 'The restroom is there.',
+        },
+        { foreign: 'εδώ (ehTHOH)', english: 'here' },
+        { foreign: 'Είναι εδώ κοντά. (EEneh ehTHOH kohNDAH)', english: 'It’s near here.' },
+        {
+          foreign: 'Η στάση είναι εδώ κοντά. (ee STAHsee EEneh ehTHOH kohNDAH)',
+          english: 'The bus stop is near here.',
+        },
+      ],
     },
   },
 };
