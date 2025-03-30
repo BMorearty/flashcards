@@ -436,6 +436,18 @@ export const allPhrases = {
           english: 'Where is the museum on the map?',
         },
       ],
+      lesson2: [
+        { foreign: 'η στάση (ee STAHsee)', english: 'the bus stop' },
+        {
+          foreign: 'Πού είναι η στάση, παρακαλώ; (poo EEneh ee STAHsee, pahrahkahLOH?)',
+          english: 'Where is the bus stop, please?',
+        },
+        { foreign: 'η Ακρόπολη (ee ahKROHpohlee)', english: 'the Acropolis' },
+        {
+          foreign: 'Συγγνώμη, πού είναι η Ακρόπολη; (seeGNOHmee, poo EEneh ee ahKROHpohlee?)',
+          english: 'Excuse me, where is the Acropolis?',
+        },
+      ],
     },
   },
 };
