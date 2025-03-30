@@ -472,6 +472,42 @@ export const allPhrases = {
           english: 'The bus stop is near here.',
         },
       ],
+      lesson4: [
+        {
+          foreign: 'Υπάρχει τράπεζα εδώ κοντά; (eePARhee TRAHpehzah ehTHOH konDAH?)',
+          english: 'Is there a bank near here?',
+          hard: true,
+        },
+        { foreign: 'υπάρχει (eePARhee)', english: 'there is', hard: true },
+        { foreign: 'τράπεζα (TRAHpehzah)', english: 'bank', hard: true },
+        { foreign: 'υπάρχει τράπεζα (eePARhee TRAHpehza)', english: 'there is a bank' },
+        { foreign: 'υπάρχει τράπεζα; (eePARhee TRAHpehza?)', english: 'is there a bank?' },
+        { foreign: 'το ταξί (toh tahkSEE)', english: 'the taxi' },
+        { foreign: 'η πιάτσα ταξί (ee P-HEEAHtsah tahKSEE)', english: 'the taxi stand' },
+        {
+          foreign: 'Υπάρχει πιάτσα ταξί εδώ κοντά; (eePARhee P-HEEAHtsah tahKSEE ehTHOH konDAH?)',
+          english: 'Is there a taxi stand near here?',
+        },
+        { foreign: 'γύρω (YEEroh)', english: 'around' },
+        { foreign: 'εδώ γύρω (ehTHOH YEEroh)', english: 'around here' },
+        { foreign: 'βιβλιοπωλείο (veevleeohpohLEEoh)', english: 'bookstore', hard: true },
+        {
+          foreign: 'Υπάρχει βιβλιοπωλείο εδώ γύρω; (eePARhee veevleeohpohLEEoh ehTHOH YEEroh?)',
+          english: 'Is there a bookstore around here?',
+        },
+        { foreign: 'ο σταθμός (oh stathMOHS)', english: 'the station' },
+        { foreign: 'το μετρό (toh mehTROH)', english: 'the subway' },
+        {
+          foreign: 'ο σταθμός του μετρό (oh stathMOHS too mehTROH)',
+          english: 'the subway station',
+        },
+        { foreign: 'του (too)', english: 'of' },
+        {
+          foreign:
+            'Υπάρχει σταθμός του μετρό εδώ κοντά; (eePARhee stathMOHS too mehTROH ehTHOH konDAH?)',
+          english: 'Is there a subway station near here?',
+        },
+      ],
     },
   },
 };
