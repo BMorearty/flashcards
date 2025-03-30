@@ -260,6 +260,7 @@ export const allPhrases = {
         },
       ],
       lesson3: [
+        { foreign: 'πος', english: 'how', hard: true },
         {
           foreign: 'Πώς σε λένε; (pohs seh LEHneh)',
           english: 'What is your name? (How do they call you?) (informal)',
@@ -398,6 +399,41 @@ export const allPhrases = {
           foreign:
             'Εγώ είμαι Ελληνίδα, αλλά ο άντρας μου είναι Αμερικανός. (ehGOH eemeh ehleeNEEthah, ahLAH oh ANdrahs moo EEneh ahmehreekahNOHs)',
           english: 'I am Greek, but my husband is American.',
+        },
+      ],
+    },
+    chapter4: {
+      name: 'Places and Directions',
+      lesson1: [
+        {
+          foreign: 'Πού είναι η τουαλέτα; (poo EEneh ee tooahLEHtah?)',
+          english: 'Where is the restroom?',
+        },
+        { foreign: 'η τουαλέτα (ee tooahLEHtah)', english: 'the restroom' },
+        { foreign: 'το ξενοδοχείο (toh ksehnohthoHEEoh)', english: 'the hotel', hard: true },
+        {
+          foreign:
+            'Συγγνώμη, πού είναι το ξενοδοχείο; (seeGNOHmee, poo EEneh toh ksehnohthoHEEoh?)',
+          english: 'Excuse me, where is the hotel?',
+          hard: true,
+        },
+        { foreign: 'εστιατόριο (ehsteeahTOHreeoh)', english: 'restaurant' },
+        {
+          foreign:
+            'Πού είναι το εστιατόριο, παρακαλώ; (poo EEneh toh ehsteeahTOHreeoh, pahrahkahLOH?)',
+          english: 'Where is the restaurant, please?',
+        },
+        { foreign: 'μουσείο (mooSEEoh)', english: 'museum' },
+        {
+          foreign: 'Πού είναι το μουσείο; (poo EEneh toh mooSEEoh?)',
+          english: 'Where is the museum?',
+        },
+        { foreign: 'ο χάρτης (oh HArtees)', english: 'the map' },
+        { foreign: 'σε (seh)', english: 'on / in / at / to' },
+        { foreign: 'στον χάρτη (stohn HArtee)', english: 'on the map' },
+        {
+          foreign: 'Πού είναι το μουσείο στον χάρτη; (poo EEneh toh mooSEEoh stohn HArtee?)',
+          english: 'Where is the museum on the map?',
         },
       ],
     },
