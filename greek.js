@@ -410,14 +410,19 @@ export const allPhrases = {
           english: 'Where is the restroom?',
         },
         { foreign: 'η τουαλέτα (ee tooahLEHtah)', english: 'the restroom' },
-        { foreign: 'το ξενοδοχείο (toh ksehnohthoHEEoh)', english: 'the hotel', hard: true },
+        {
+          foreign: 'το ξενοδοχείο (toh ksehnohthoHEEoh)',
+          english: 'the hotel',
+          hard: true,
+          working_on: true,
+        },
         {
           foreign:
             'Συγγνώμη, πού είναι το ξενοδοχείο; (seeGNOHmee, poo EEneh toh ksehnohthoHEEoh?)',
           english: 'Excuse me, where is the hotel?',
           hard: true,
         },
-        { foreign: 'εστιατόριο (ehsteeahTOHreeoh)', english: 'restaurant' },
+        { foreign: 'εστιατόριο (ehsteeahTOHreeoh)', english: 'restaurant', hard: true },
         {
           foreign:
             'Πού είναι το εστιατόριο, παρακαλώ; (poo EEneh toh ehsteeahTOHreeoh, pahrahkahLOH?)',
@@ -437,7 +442,7 @@ export const allPhrases = {
         },
       ],
       lesson2: [
-        { foreign: 'η στάση (ee STAHsee)', english: 'the bus stop' },
+        { foreign: 'η στάση (ee STAHsee)', english: 'the bus stop', hard: true, working_on: true },
         {
           foreign: 'Πού είναι η στάση, παρακαλώ; (poo EEneh ee STAHsee, pahrahkahLOH?)',
           english: 'Where is the bus stop, please?',
@@ -483,7 +488,11 @@ export const allPhrases = {
         { foreign: 'υπάρχει τράπεζα (eePARhee TRAHpehza)', english: 'there is a bank' },
         { foreign: 'υπάρχει τράπεζα; (eePARhee TRAHpehza?)', english: 'is there a bank?' },
         { foreign: 'το ταξί (toh tahkSEE)', english: 'the taxi' },
-        { foreign: 'η πιάτσα ταξί (ee P-HEEAHtsah tahKSEE)', english: 'the taxi stand' },
+        {
+          foreign: 'η πιάτσα ταξί (ee P-HEEAHtsah tahKSEE)',
+          english: 'the taxi stand',
+          working_on: true,
+        },
         {
           foreign: 'Υπάρχει πιάτσα ταξί εδώ κοντά; (eePARhee P-HEEAHtsah tahKSEE ehTHOH konDAH?)',
           english: 'Is there a taxi stand near here?',
@@ -506,6 +515,76 @@ export const allPhrases = {
           foreign:
             'Υπάρχει σταθμός του μετρό εδώ κοντά; (eePARhee stathMOHS too mehTROH ehTHOH konDAH?)',
           english: 'Is there a subway station near here?',
+        },
+      ],
+      lesson5: [
+        { foreign: 'Ναι, υπάρχει. (neh, eePARhee)', english: 'Yes, there is.' },
+        { foreign: 'Όχι, δεν υπάρχει. (OH-hee, thehn eePARhee)', english: 'No, there isn’t.' },
+      ],
+      lesson6: [
+        {
+          foreign: 'Πηγαίνετε ευθεία μπροστά. (peeYEHnehteh efTHEEah brohSTAH)',
+          english: 'Go straight ahead. (formal)',
+          hard: true,
+        },
+        { foreign: 'πηγαίνω (peeYEHnoh)', english: 'I go' },
+        { foreign: 'πηγαίνω (peeYEHnehteh)', english: 'You go (formal)' },
+        { foreign: 'Πηγαίνετε! (peeYEHnehteh!)', english: 'Go! (imperative, formal)' },
+        { foreign: 'ευθεία (efTHEEah)', english: 'straight', hard: true },
+        { foreign: 'μπροστά (brohSTAH)', english: 'ahead' },
+        {
+          foreign: 'Είναι ευθεία μπροστά. (EEneh efTHEEah brohSTAH)',
+          english: 'It’s straight ahead.',
+        },
+        {
+          foreign: 'Το μουσείο είναι ευθεία μπροστά. (toh mooSEEoh EEneh efTHEEah brohSTAH)',
+          english: 'The museum is straight ahead.',
+        },
+        { foreign: 'δεξιά (thehkseeAH)', english: 'right' },
+        { foreign: 'στα δεξιά (stah thehkseeAH)', english: 'on the right' },
+        { foreign: 'Πηγαίνετε δεξιά. (peeYEHnehteh thehkseeAH)', english: 'Go right. (formal)' },
+        { foreign: 'μετά (mehTAH)', english: 'then' },
+        { foreign: 'και μετά δεξιά (keh mehTAH thehkseeAH)', english: 'and then right' },
+        {
+          foreign:
+            'Πηγαίνετε ευθεία μπροστά και μετά δεξιά. (peeYEHnehteh efTHEEah brohSTAH keh mehTAH thehkseeAH)',
+          english: 'Go straight ahead and then right. (formal)',
+        },
+        { foreign: 'αριστερά (ahreestehRAH)', english: 'left' },
+        { foreign: 'στα αριστερά (stah ahreestehRAH)', english: 'on the left' },
+        { foreign: 'και μετά αριστερά (keh mehTAH ahreestehRAH)', english: 'and then left' },
+        {
+          foreign:
+            'Πηγαίνετε ευθεία μπροστά και μετά αριστερά. (peeYEHnehteh efTHEEah brohSTAH keh mehTAH ahreestehRAH)',
+          english: 'Go straight ahead and then left. (formal)',
+        },
+      ],
+      lesson7: [
+        { foreign: 'πίσω από (PEEsoh ahPOH)', english: 'behind' },
+        {
+          foreign:
+            'πίσω από τον σταθμό του μετρό (PEEsoh ahPOH tohn stathMOH too mehTROH) (the n in τον is hardly pronounced)',
+          english: 'behind the subway station',
+        },
+        { foreign: 'μπροστά από (brohSTAH ahPOH)', english: 'in front of' },
+        {
+          foreign: 'μπροστά από το ξενοδοχείο (brohSTAH ahPOH toh ksehnohthoHEEoh)',
+          english: 'in front of the hotel',
+        },
+        {
+          foreign:
+            'Το ξενοδοχείο είναι πίσω από τον σταθμό. (toh ksehnohthoHEEoh EEneh PEEsoh ahPOH tohn stathMOH) (the n in τον is hardly pronounced)',
+          english: 'The hotel is behind the station.',
+        },
+        { foreign: 'δίπλα από (THEEplah ahPOH)', english: 'next to; by', hard: true },
+        {
+          foreign: 'δίπλα από την τράπεζα (THEEplah ahPOH teen TRAHpehzah)',
+          english: 'next to the bank',
+        },
+        {
+          foreign:
+            'Η πιάτσα ταξί είναι δίπλα από την τράπεζα. (ee P-HEEAHtsah tahKSEE EEneh THEEplah ahPOH teen TRAHpehzah)',
+          english: 'The taxi stand is next to the bank.',
         },
       ],
     },
