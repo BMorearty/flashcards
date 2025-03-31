@@ -587,6 +587,15 @@ export const allPhrases = {
           english: 'The taxi stand is next to the bank.',
         },
       ],
+      lesson8: [
+        { foreign: 'Ευχαριστώ πολύ! (efhahreeSTOH pohLEE!)', english: 'Thanks a lot!' },
+        { foreign: 'πάρα πολύ (PAHrah pohLEE)', english: 'very much' },
+        {
+          foreign: 'Ευχαριστώ πάρα πολύ! (efhahreeSTOH PAHrah pohLEE!)',
+          english: 'Thanks very much! (I really appreciate it! Stronger than thanks a lot.)',
+        },
+        { foreign: 'Παρακαλώ! (pahrahkahLOH!)', english: 'You’re welcome!' },
+      ],
     },
   },
 };
