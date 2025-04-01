@@ -605,6 +605,52 @@ export const allPhrases = {
         { foreign: 'Παρακαλώ! (pahrahkahLOH!)', english: 'You’re welcome!' },
       ],
     },
+    chapter5: {
+      name: 'Currency and Counting',
+      lesson1: [
+        { foreign: 'Έχετε χάρτες; (EH-hehteh HArtehs?)', english: 'Do you have maps? (formal)' },
+        { foreign: 'έχω (EH-hoh)', english: 'I have' },
+        { foreign: 'έχετε (EH-hehteh)', english: 'you have (formal)' },
+        { foreign: 'έχετε; (EH-hehteh?)', english: 'do you have? (formal)' },
+        { foreign: 'χάρτες (HArtehs)', english: 'maps' },
+        { foreign: 'η Αθήνα (ee ahTHEEnah)', english: 'Athens' },
+        {
+          foreign: 'o χάρτης της Αθήνας (oh HArtees tees ahTHEEnahs)',
+          english: 'the map of Athens',
+        },
+        { foreign: 'χάρτες της Αθήνας (HArtehs tees ahTHEEnahs)', english: 'maps of Athens' },
+        {
+          foreign: 'Έχετε χάρτες της Αθήνας; (EH-hehteh HArtehs tees ahTHEEnahs?)',
+          english: 'Do you have maps of Athens?',
+        },
+        { foreign: 'χάρτες της Ελλάδας (HArtehs tees ehLAHthahs)', english: 'maps of Greece' },
+        {
+          foreign: 'Έχετε χάρτες της Ελλάδας; (EH-hehteh HArtehs tees ehLAHthahs?)',
+          english: 'Do you have maps of Greece?',
+        },
+        { foreign: 'η σαγιονάρα (ee sahyohNAHrah)', english: 'the flip-flop' },
+        { foreign: 'σαγιονάρες (sahyohNAHrehs)', english: 'flip-flops' },
+        {
+          foreign: 'αντιηλιακό (andeeleeaKOH) (the n isn’t always pronounced)',
+          english: 'suntan lotion',
+          hard: true,
+        },
+        {
+          foreign: 'αντιηλιακά (andeeleeaKAH) (the n isn’t always pronounced)',
+          english: 'suntan lotions',
+        },
+        {
+          foreign: 'Έχετε αντιηλιακά; (EH-hehteh andeeleeaKAH?)',
+          english: 'Do you have suntan lotions?',
+        },
+        { foreign: 'παγωτό (pahgohTOH) (the g is super soft)', english: 'ice cream', hard: true },
+        { foreign: 'παγωτά (pahgohTAH) (the g is super soft)', english: 'ice creams' },
+        {
+          foreign: 'Έχετε παγωτά, παρακαλώ; (EH-hehteh pahgohTAH pahrahkahLOH?)',
+          english: 'Do you have ice creams, please?',
+        },
+      ],
+    },
   },
 };
 
