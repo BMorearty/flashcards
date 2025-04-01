@@ -621,12 +621,12 @@ export const allPhrases = {
         { foreign: 'χάρτες της Αθήνας (HArtehs tees ahTHEEnahs)', english: 'maps of Athens' },
         {
           foreign: 'Έχετε χάρτες της Αθήνας; (EH-hehteh HArtehs tees ahTHEEnahs?)',
-          english: 'Do you have maps of Athens?',
+          english: 'Do you have maps of Athens? (formal)',
         },
         { foreign: 'χάρτες της Ελλάδας (HArtehs tees ehLAHthahs)', english: 'maps of Greece' },
         {
           foreign: 'Έχετε χάρτες της Ελλάδας; (EH-hehteh HArtehs tees ehLAHthahs?)',
-          english: 'Do you have maps of Greece?',
+          english: 'Do you have maps of Greece? (formal)',
         },
         { foreign: 'η σαγιονάρα (ee sahyohNAHrah)', english: 'the flip-flop' },
         { foreign: 'σαγιονάρες (sahyohNAHrehs)', english: 'flip-flops' },
@@ -641,13 +641,13 @@ export const allPhrases = {
         },
         {
           foreign: 'Έχετε αντιηλιακά; (EH-hehteh andeeleeaKAH?)',
-          english: 'Do you have suntan lotions?',
+          english: 'Do you have suntan lotions? (formal)',
         },
         { foreign: 'παγωτό (pahgohTOH) (the g is super soft)', english: 'ice cream', hard: true },
         { foreign: 'παγωτά (pahgohTAH) (the g is super soft)', english: 'ice creams' },
         {
           foreign: 'Έχετε παγωτά, παρακαλώ; (EH-hehteh pahgohTAH pahrahkahLOH?)',
-          english: 'Do you have ice creams, please?',
+          english: 'Do you have ice creams, please? (formal)',
         },
       ],
       lesson2: [
@@ -660,6 +660,45 @@ export const allPhrases = {
         { foreign: 'Όχι, δεν έχουμε. (OH-hee, thehn EH-hoomeh)', english: 'No, we don’t (have).' },
         { foreign: 'Βεβαίως! (vehVEHohs!)', english: 'Sure!' },
         { foreign: 'Yes, sure! (neh, vehVEHohs!)', english: 'Yes, sure!' },
+      ],
+      lesson3: [
+        { foreign: "Ελάτε από 'δω. (eLAHteh ahPOH thoh)", english: 'Come this way. (formal)' },
+        { foreign: 'Ελάτε! (eLAHteh!)', english: 'Come! (formal)' },
+        { foreign: "από 'δω (ahPOH thoh)", english: 'this way' },
+        { foreign: 'μαζί μου (mahZEE moo)', english: 'with me' },
+        {
+          foreign: 'Ναι, ελάτε μαζί μου! (neh, eLAHteh mahZEE moo)',
+          english: 'Yes, come with me! (formal)',
+        },
+        {
+          foreign: "Είναι από 'δω. Ελάτε μαζί μου. (EEneh ahPOH thoh. eLAHteh mahZEE moo)",
+          english: 'They are this way. Come with me. (formal)',
+        },
+        { foreign: 'οι χάρτες (ee HArtehs)', english: 'the maps' },
+        {
+          foreign: 'Οι χάρτες είναι εκεί. (ee HArtehs EEneh ehKEE)',
+          english: 'The maps are there.',
+        },
+        {
+          foreign:
+            'Βεβαίως! Ελάτε μαζί μου. Είναι εκεί. (vehVEHohs! eLAHteh mahZEE moo. EEneh ehKEE.)',
+          english: 'Sure! Come with me. They are there. (formal)',
+        },
+        {
+          foreign: 'Οι σαγιονάρες είναι εκεί. (ee sahyohNAHrehs EEneh ehKEE)',
+          english: 'The flip-flops are there.',
+        },
+        { foreign: 'το ψυγείο (toh pseeGEEoh/pseeYEEoh)', english: 'the fridge' },
+        { foreign: 'στο ψυγείο (stoh pseeGEEoh/pseeYEEoh)', english: 'in the fridge' },
+        {
+          foreign: 'Τα παγωτά είναι στο ψυγείο. (tah pahgohTAH EEneh stoh pseeGEEoh/pseeYEEoh)',
+          english: 'The ice creams are in the fridge.',
+        },
+        {
+          foreign:
+            "Ελάτε από 'δω. Τα παγωτά είναι στο ψυγείο εκεί. (eLAHteh ahPOH thoh. tah pahgohTAH EEneh stoh pseeGEEoh/pseeYEEoh ehKEE)",
+          english: 'Come this way. The ice creams are in the fridge there. (formal)',
+        },
       ],
     },
   },
