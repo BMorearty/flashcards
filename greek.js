@@ -650,6 +650,17 @@ export const allPhrases = {
           english: 'Do you have ice creams, please?',
         },
       ],
+      lesson2: [
+        { foreign: 'Όχι, δεν έχω. (OH-hee, thehn EH-hoh)', english: 'No, I don’t (have).' },
+        { foreign: 'έχουμε (EH-hoomeh)', english: 'we have' },
+        {
+          foreign: 'Όχι, δεν έχουμε σαγιονάρες. (OH-hee, thehn EH-hoomeh sahyohNAHrehs)',
+          english: 'No, we don’t have flip-flops.',
+        },
+        { foreign: 'Όχι, δεν έχουμε. (OH-hee, thehn EH-hoomeh)', english: 'No, we don’t (have).' },
+        { foreign: 'Βεβαίως! (vehVEHohs!)', english: 'Sure!' },
+        { foreign: 'Yes, sure! (neh, vehVEHohs!)', english: 'Yes, sure!' },
+      ],
     },
   },
 };
