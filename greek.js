@@ -31,7 +31,7 @@ export const allPhrases = {
         { foreign: 'Μια χαρά, ευχαριστώ! (myah hahRAH, efhahreeSTOH!)', english: 'Great, thanks!' },
         { foreign: 'πολύ (pohLEE)', english: 'very' },
         { foreign: 'πολύ καλά (pohLEE kahLAH)', english: 'very good/well' },
-        { foreign: 'Εσείς; (ehSEES)', english: 'You (And you?) (formal or plural)', hard: true },
+        { foreign: 'Εσείς; (ehSEES)', english: 'You (And you?) (formal or plural)' },
         {
           foreign: 'Πολύ καλά! Ευχαριστώ! (pohLEE kahLAH! efhahreeSTOH!)',
           english: 'Very good! Thanks!',
@@ -156,6 +156,7 @@ export const allPhrases = {
           foreign: 'Από πού είστε; (ahPOH poo EEsteh)',
           english: 'Where are you from? (formal or plural)',
           hard: true,
+          working_on: true,
         },
         { foreign: 'από (ahPOH)', english: 'from' },
         { foreign: 'πού; (poo?)', english: 'where?' },
@@ -217,7 +218,7 @@ export const allPhrases = {
             "Από 'δω η γυναίκα μου, η Κατερίνα. (ahPOH thoh ee yeeNEHkah moo, ee kahtehREEnah)",
           english: 'This is my wife, Katharine.',
         },
-        { foreign: 'ο άντρας (oh AHndrahs)', english: 'the man', hard: true },
+        { foreign: 'ο άντρας (oh AHndrahs)', english: 'the man' },
         { foreign: 'ο άντρας μου (oh AHndrahs moo)', english: 'my husband' },
         {
           foreign: "Από 'δω ο άντρας μου. (ahPOH thoh oh AHndrahs moo)",
@@ -260,7 +261,7 @@ export const allPhrases = {
         },
       ],
       lesson3: [
-        { foreign: 'πος', english: 'how', hard: true },
+        { foreign: 'πος', english: 'how', hard: true, working_on: true },
         {
           foreign: 'Πώς σε λένε; (pohs seh LEHneh)',
           english: 'What is your name? (How do they call you?) (informal)',
@@ -289,7 +290,12 @@ export const allPhrases = {
         },
       ],
       lesson4: [
-        { foreign: 'Χαίρω πολύ! (HYEHroh pohLEE)', english: 'Nice to meet you!', hard: true },
+        {
+          foreign: 'Χαίρω πολύ! (HYEHroh pohLEE)',
+          english: 'Nice to meet you!',
+          hard: true,
+          working_on: true,
+        },
         { foreign: 'κυρία (keeREEah)', english: 'ma’am', hard: true },
         {
           foreign: 'Χαίρω πολύ, κυρία! (HYEHroh pohLEE, keeREEah)',
@@ -414,7 +420,6 @@ export const allPhrases = {
           foreign: 'το ξενοδοχείο (toh ksehnohthoHEEoh)',
           english: 'the hotel',
           hard: true,
-          working_on: true,
         },
         {
           foreign:
@@ -442,7 +447,7 @@ export const allPhrases = {
         },
       ],
       lesson2: [
-        { foreign: 'η στάση (ee STAHsee)', english: 'the bus stop', hard: true, working_on: true },
+        { foreign: 'η στάση (ee STAHsee)', english: 'the bus stop', hard: true },
         {
           foreign: 'Πού είναι η στάση, παρακαλώ; (poo EEneh ee STAHsee, pahrahkahLOH?)',
           english: 'Where is the bus stop, please?',
@@ -488,11 +493,7 @@ export const allPhrases = {
         { foreign: 'υπάρχει τράπεζα (eePARhee TRAHpehza)', english: 'there is a bank' },
         { foreign: 'υπάρχει τράπεζα; (eePARhee TRAHpehza?)', english: 'is there a bank?' },
         { foreign: 'το ταξί (toh tahkSEE)', english: 'the taxi' },
-        {
-          foreign: 'η πιάτσα ταξί (ee P-HEEAHtsah tahKSEE)',
-          english: 'the taxi stand',
-          working_on: true,
-        },
+        { foreign: 'η πιάτσα ταξί (ee P-HEEAHtsah tahKSEE)', english: 'the taxi stand' },
         {
           foreign: 'Υπάρχει πιάτσα ταξί εδώ κοντά; (eePARhee P-HEEAHtsah tahKSEE ehTHOH konDAH?)',
           english: 'Is there a taxi stand near here?',
@@ -542,7 +543,12 @@ export const allPhrases = {
           english: 'The museum is straight ahead.',
         },
         { foreign: 'δεξιά (thehkseeAH)', english: 'right', hard: true },
-        { foreign: 'στα δεξιά (stah thehkseeAH)', english: 'on the right', hard: true },
+        {
+          foreign: 'στα δεξιά (stah thehkseeAH)',
+          english: 'on the right',
+          hard: true,
+          working_on: true,
+        },
         { foreign: 'Πηγαίνετε δεξιά. (peeYEHnehteh thehkseeAH)', english: 'Go right. (formal)' },
         { foreign: 'μετά (mehTAH)', english: 'then' },
         {
@@ -565,7 +571,7 @@ export const allPhrases = {
         },
       ],
       lesson7: [
-        { foreign: 'πίσω από (PEEsoh ahPOH)', english: 'behind' },
+        { foreign: 'πίσω από (PEEsoh ahPOH)', english: 'behind', hard: true, working_on: true },
         {
           foreign:
             'πίσω από τον σταθμό του μετρό (PEEsoh ahPOH tohn stathMOH too mehTROH) (the n in τον is hardly pronounced)',
@@ -583,7 +589,12 @@ export const allPhrases = {
           english: 'The hotel is behind the station.',
           hard: true,
         },
-        { foreign: 'δίπλα από (THEEplah ahPOH)', english: 'next to; by', hard: true },
+        {
+          foreign: 'δίπλα από (THEEplah ahPOH)',
+          english: 'next to; by',
+          hard: true,
+          working_on: true,
+        },
         {
           foreign: 'δίπλα από την τράπεζα (THEEplah ahPOH teen TRAHpehzah)',
           english: 'next to the bank',
@@ -634,6 +645,7 @@ export const allPhrases = {
           foreign: 'αντιηλιακό (andeeleeaKOH) (the n isn’t always pronounced)',
           english: 'suntan lotion',
           hard: true,
+          working_on: true,
         },
         {
           foreign: 'αντιηλιακά (andeeleeaKAH) (the n isn’t always pronounced)',
@@ -642,6 +654,8 @@ export const allPhrases = {
         {
           foreign: 'Έχετε αντιηλιακά; (EH-hehteh andeeleeaKAH?)',
           english: 'Do you have suntan lotions? (formal)',
+          hard: true,
+          working_on: true,
         },
         { foreign: 'παγωτό (pahgohTOH) (the g is super soft)', english: 'ice cream', hard: true },
         { foreign: 'παγωτά (pahgohTAH) (the g is super soft)', english: 'ice creams' },
@@ -693,6 +707,8 @@ export const allPhrases = {
         {
           foreign: 'Τα παγωτά είναι στο ψυγείο. (tah pahgohTAH EEneh stoh pseeGEEoh/pseeYEEoh)',
           english: 'The ice creams are in the fridge.',
+          hard: true,
+          working_on: true,
         },
         {
           foreign:
