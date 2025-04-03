@@ -1,14 +1,25 @@
 export const allPhrases = {
   custom: {
     chapter1: {
-      name: 'articles',
+      name: 'Articles',
       lesson1: [
         { foreign: 'η (ee)', english: 'the (feminine)' },
         { foreign: 'μια (myah)', english: 'a (feminine)' },
+        { foreign: 'μία (mEEah)', english: 'one (feminine)' },
         { foreign: 'o (oh)', english: 'the (masculine)' },
-        { foreign: 'ένας (EHnahs)', english: 'a (masculine)' },
+        { foreign: 'ένας (EHnahs)', english: 'a / one (masculine)' },
         { foreign: 'το (toh)', english: 'the (neuter)' },
-        { foreign: 'ένα (EHnah)', english: 'a (neuter)' },
+        { foreign: 'ένα (EHnah)', english: 'a / one (neuter)' },
+      ],
+    },
+    chapter2: {
+      name: 'Verb conjugations',
+      lesson1: [
+        {
+          foreign:
+            'κάνω, present tense:| (εγω) κάνω| (εσυ) κάνεις| (αυτ(ος/ή/ό)) κάνει| (εμείς) κάνουμε| (εσείς) κάνετε| (αυτ(οί/ές/ά)) κάνουν',
+          english: 'to do, present tense. I do, you do, etc.',
+        },
       ],
     },
   },
