@@ -1,3 +1,7 @@
+/*
+   Verb conjugations: https://cooljugator.com/gr
+ */
+
 export const allPhrases = {
   custom: {
     chapter1: {
@@ -19,6 +23,11 @@ export const allPhrases = {
           foreign:
             'κάνω, present tense:| (εγω) κάνω| (εσυ) κάνεις| (αυτ(ος/ή/ό)) κάνει| (εμείς) κάνουμε| (εσείς) κάνετε| (αυτ(οί/ές/ά)) κάνουν',
           english: 'to do, present tense. I do, you do, etc.',
+        },
+        {
+          foreign:
+            'έχω, present tense:| (εγω) έχω| (εσυ) έχεις| (αυτ(ος/ή/ό)) έχει| (εμείς) έχουμε| (εσείς) έχετε| (αυτ(οί/ές/ά)) έχουν',
+          english: 'to have, present tense. I have, you have, etc.',
         },
       ],
     },
