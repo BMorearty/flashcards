@@ -814,6 +814,62 @@ export const allPhrases = {
           english: 'One stamp for America, please.',
         },
       ],
+      lesson6: [
+        {
+          foreign: 'Πόσο κάνει ο χάρτης; (POHsoh KAHnee oh HArtees?)',
+          english: 'How much does the map cost? (Literally amount does the map?)',
+        },
+        { foreign: 'πόσο (POHsoh)', english: 'how much / amount' },
+        { foreign: 'Πόσο κάνει; (POHsoh KAHnee?)', english: 'How much does it cost?' },
+        {
+          foreign: 'Πόσο κάνει το παγωτό, παρακαλώ; (POHsoh KAHnee toh pahgohTOH, pahrahkahLOH?)',
+          english: 'How much does the ice cream cost, please?',
+        },
+        { foreign: 'Πόσο κάνουν; (POHsoh KAHnoon?)', english: 'How much do they cost?' },
+        {
+          foreign: 'Πόσο κάνουν τα γραμματόσημα; (POHsoh KAHnoon tah grahmahTOHseemah)',
+          english: 'How much do the stamps cost?',
+        },
+        {
+          foreign: 'Συγγνώμη, πόσο κάνουν οι κάρτες; (seeGNOHmee, POHsoh KAHnoon ee KAHrtehs?)',
+          english: 'Excuse me, how much do the postcards cost?',
+        },
+        {
+          foreign: 'Πόσο κάνουν οι τυρόπιτες; (POHsoh KAHnoon ee teeROHpeetehs?)',
+          english: 'How much do the cheese pies cost?',
+        },
+        {
+          foreign: 'Πόσο κάνουν οι δύο κάρτες; (POHsoh KAHnoon ee THEEoh KAHrtehs)',
+          english: 'How much do the two postcards cost?',
+        },
+        { foreign: 'έχει (EH-hee)', english: 'it has' },
+        {
+          foreign: 'Πόσο έχει; (POHsoh EH-hee?)',
+          english: 'How much is it? (Literally how much does it have?)',
+        },
+        {
+          foreign: 'Πόσο έχει ο χάρτης; (POHsoh EH-hee oh HArtees?)',
+          english: 'How much is the map?',
+        },
+        { foreign: 'ένας χάρτης (EHnahs HArtees)', english: 'a map' },
+        {
+          foreign: 'Πόσο έχει ένας χάρτης; (POHsoh EH-hee EHnahs HArtees)',
+          english: 'How much is a map?',
+        },
+        { foreign: 'Πόσο έχουν; (POHsoh EH-hoon?)', english: 'How much are they?' },
+        {
+          foreign:
+            'Συγγνώμη! Θα ήθελα δύο καπέλα. Πόσο έχουν; (seeGNOHmee! thah EEthehlah THEEoh kahPEHlah. POHsoh EH-hoon?)',
+          english: 'Excuse me! I’d like two hats. How much are they?',
+        },
+        { foreign: 'εισιτήριο (eeseeTEEreeoh)', english: 'ticket' },
+        { foreign: 'εισιτήρια (eeseeTEEreeah)', english: 'tickets' },
+        {
+          foreign:
+            'Θα ήθελα δύο εισιτήρια. Πόσο κάνουν; (thah EEthehlah THEEoh eeseeTEEreeah. POHsoh KAHnoon?)',
+          english: 'I’d like two tickets. How much do they cost?',
+        },
+      ],
     },
   },
 };
