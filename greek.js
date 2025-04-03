@@ -1,5 +1,17 @@
 export const allPhrases = {
-  custom: {},
+  custom: {
+    chapter1: {
+      name: 'articles',
+      lesson1: [
+        { foreign: 'η (ee)', english: 'the (feminine)' },
+        { foreign: 'μια (myah)', english: 'a (feminine)' },
+        { foreign: 'o (oh)', english: 'the (masculine)' },
+        { foreign: 'ένας (EHnahs)', english: 'a (masculine)' },
+        { foreign: 'το (toh)', english: 'the (neuter)' },
+        { foreign: 'ένα (EHnah)', english: 'a (neuter)' },
+      ],
+    },
+  },
   unit1: {
     chapter1: {
       name: 'Salutations and Small Talk',
