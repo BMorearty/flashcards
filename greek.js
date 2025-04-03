@@ -777,10 +777,27 @@ export const allPhrases = {
         {
           foreign: 'Θα ήθελα δύο τυρόπιτες. (thah EEthehlah THEEoh teeROHpeetehs)',
           english: 'I’d like two cheese pies.',
+          hard: true,
         },
         { foreign: 'κάρτα (KAHrtah)', english: 'postcard' },
         { foreign: 'μια κάρτα (myah KAHrtah)', english: 'a postcard' },
         { foreign: 'μία κάρτα (mEEah KAHrtah)', english: 'one postcard' },
+      ],
+      lesson5: [
+        { foreign: 'γραμματόσημο (grahmahTOHseemoh)', english: 'stamp' },
+        { foreign: 'γραμματόσημα (grahmahTOHseemah)', english: 'stamps' },
+        {
+          foreign:
+            'Δύο κάρτες και δύο γραμματόσημα, παρακαλώ. (THEEoh KAHrtehs keh THEEO grahmahTOHseemah, pahrahkahLOH)',
+          english: 'Two postcards and two stamps, please.',
+        },
+        { foreign: 'για (yah)', english: 'for' },
+        { foreign: 'για την Αμερική (yah teen ahmehreeKEE)', english: 'for America' },
+        {
+          foreign:
+            'Ένα γραμματόσημο για την Αμερική, παρακαλώ. (EHnah grahmahTOHseemoh yah teen ahmehreeKEE, pahrahkahLOH)',
+          english: 'One stamp for America, please.',
+        },
       ],
     },
   },
