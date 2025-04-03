@@ -728,6 +728,60 @@ export const allPhrases = {
           english: 'Come this way. The ice creams are in the fridge there. (formal)',
         },
       ],
+      lesson4: [
+        {
+          foreign: 'Θα ήθελα ένα σάντουιτς. (thah EEthehlah EHnah SAHndooeets)',
+          english: 'I’d like a sandwich.',
+        },
+        { foreign: 'θα ήθελα (thah EEthehlah)', english: 'I’d like', hard: true },
+        { foreign: 'το σάντουιτς (toh SAHndooeets)', english: 'the sandwich' },
+        { foreign: 'ένα σάντουιτς (EHnah SAHndooeets)', english: 'a sandwich' },
+        { foreign: 'η τυρόπιτα (ee teeROHpeetah)', english: 'the cheese pie' },
+        { foreign: 'μια τυρόπιτα (myah teeROHpeetah)', english: 'a cheese pie', hard: true },
+        {
+          foreign: 'Θα ήθελα μια τυρόπιτα. (thah EEthehlah myah teeROHpeetah)',
+          english: 'I’d like a cheese pie.',
+        },
+        {
+          foreign:
+            'Θα ήθελα μία τυρόπιτα, παρακαλώ. (thah EEthehlah mEEah teeROHpeetah, pahrahkahLOH)',
+          english: 'I’d like one cheese pie, please.',
+        },
+        { foreign: 'οι τυρόπιτες (ee teeROHpeetehs)', english: 'the cheese pies' },
+        { foreign: 'δύο (THEEoh)', english: 'two' },
+        { foreign: 'δύο τυρόπιτες (THEEoh teeROHpeetehs)', english: 'two cheese pies' },
+        {
+          foreign:
+            'Ένα σάντουιτς και δύο τυρόπιτες, παρακαλώ. (EHnah SAHndooeets keh THEEoh teeROHpeetehs, pahrahkahLOH)',
+          english: 'One sandwich and two cheese pies, please.',
+          hard: true,
+        },
+        {
+          foreign:
+            'Θα ήθελα δύο χάρτες της Αθήνας. (thah EEthehlah THEEoh HArtehs tees ahTHEEnahs)',
+          english: "I'd like two maps of Athens.",
+        },
+        { foreign: 'καπέλο (kahPEHloh)', english: 'hat' },
+        { foreign: 'ένα καπέλο (EHnah kahPEHloh)', english: 'a hat' },
+        {
+          foreign:
+            'Ένα καπέλο και σαγιονάρες, παρακαλώ. (EHnah kahPEHloh keh sahyohNAHrehs, pahrahkahLOH)',
+          english: 'A hat and flip-flops, please.',
+        },
+        { foreign: 'καπέλα (kahPEHlah)', english: 'hats' },
+        {
+          foreign:
+            'Έχετε καπέλα; Θα ήθελα δύο, παρακαλώ. (EH-hehteh kahPEHlah? thah EEthehlah THEEoh, pahrahkahLOH)',
+          english: 'Do you have hats? I’d like two, please.',
+        },
+        {
+          foreign: 'Θα ήθελα δύο τυρόπιτες. (thah EEthehlah THEEoh teeROHpeetehs)',
+          english: 'I’d like two cheese pies.',
+        },
+        { foreign: 'κάρτα (KAHrtah)', english: 'postcard' },
+        { foreign: 'μια κάρτα (myah KAHrtah)', english: 'a postcard' },
+        { foreign: 'μία κάρτα (mEEah KAHrtah)', english: 'one postcard' },
+      ],
     },
   },
 };
