@@ -130,6 +130,7 @@ export const allPhrases = {
         {
           foreign: 'Μιλάω λίγα ελληνικά. (meeLAoh LEEgah ehleeneeKAH)',
           english: 'I speak a little Greek.',
+          working_on: true,
         },
         { foreign: 'Μιλάτε ελληνικά; (meeLAHteh ehleeneeKAH?)', english: 'Do you speak Greek?' },
         { foreign: 'Ναι, λίγα. (neh, LEEgah)', english: 'Yes, a little.' },
@@ -172,6 +173,7 @@ export const allPhrases = {
         {
           foreign: 'Λυπάμαι. Δεν καταλαβαίνω. (leePAHmeh. thehn kahtahlahVEHnoh)',
           english: 'I’m sorry. I don’t understand.',
+          working_on: true,
         },
       ],
       lesson4: [
@@ -224,6 +226,7 @@ export const allPhrases = {
         {
           foreign: "Από 'δω η γυναίκα μου. (ahPOH thoh ee yeeNEHkah moo)",
           english: 'This is my wife.',
+          working_on: true,
         },
         {
           foreign: "Από 'δω ... (ahPOH thoh ...)",
@@ -265,6 +268,7 @@ export const allPhrases = {
         {
           foreign: "Από 'δω η φίλη μου. (ahPOH thoh ee FEElee moo)",
           english: 'This is my friend. (about a female)',
+          working_on: true,
         },
         {
           foreign: "Από 'δω η φίλη μου, η Κατερίνα. (ahPOH thoh ee FEElee moo, ee kahtehREEnah)",
