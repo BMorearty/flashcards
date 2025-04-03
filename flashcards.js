@@ -8,6 +8,8 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
+checkDupes();
+
 const menu = `
 Choose an option:
 ${Object.keys(allPhrases)
@@ -33,6 +35,34 @@ let shownPhrases = new Set();
 let prevNextPrompt;
 let prevUnit, prevChapter, prevLesson, nextUnit, nextChapter, nextLesson;
 let showUnseen;
+
+function checkDupes() {
+  const seen = new Set();
+  const dupes = [];
+
+  for (let unit in allPhrases) {
+    for (let chapter in allPhrases[unit]) {
+      for (let lesson in allPhrases[unit][chapter]) {
+        if (lesson === 'name') {
+          continue;
+        }
+        for (let phrase of allPhrases[unit][chapter][lesson]) {
+          if (seen.has(phrase.foreign)) {
+            dupes.push(phrase.foreign);
+          } else {
+            seen.add(phrase.foreign);
+          }
+        }
+      }
+    }
+  }
+
+  if (dupes.length > 0) {
+    console.log(chalk.red('Duplicate phrases found: '));
+    console.log('  ' + dupes.join('\n  ') + '\n\n');
+    process.exit(1);
+  }
+}
 
 function showMenu() {
   console.log(menu);
