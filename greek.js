@@ -29,6 +29,11 @@ export const allPhrases = {
             'έχω, present tense:| (εγω) έχω| (εσυ) έχεις| (αυτ(ος/ή/ό)) έχει| (εμείς) έχουμε| (εσείς) έχετε| (αυτ(οί/ές/ά)) έχουν',
           english: 'to have, present tense. I have, you have, etc.',
         },
+        {
+          foreign:
+            'είμαι, present tense:| (εγω) είμαι| (εσυ) είσαι| (αυτ(ος/ή/ό)) είναι| (εμείς) είμαστε| (εσείς) είστε| (αυτ(οί/ές/ά)) είναι',
+          english: 'to be, present tense. I am, you are, etc.',
+        },
       ],
     },
   },
