@@ -7,12 +7,12 @@ export const allPhrases = {
     chapter1: {
       name: 'Articles',
       lesson1: [
-        { foreign: 'η (ee)', english: 'the (feminine)' },
+        { foreign: 'η (ee)', english: 'the (feminine singular)' },
         { foreign: 'μια (myah)', english: 'a (feminine)' },
         { foreign: 'μία (mEEah)', english: 'one (feminine)' },
-        { foreign: 'o (oh)', english: 'the (masculine)' },
+        { foreign: 'o (oh)', english: 'the (masculine singular)' },
         { foreign: 'ένας (EHnahs)', english: 'a / one (masculine)' },
-        { foreign: 'το (toh)', english: 'the (neuter)' },
+        { foreign: 'το (toh)', english: 'the (neuter singular)' },
         { foreign: 'ένα (EHnah)', english: 'a / one (neuter)' },
       ],
     },
