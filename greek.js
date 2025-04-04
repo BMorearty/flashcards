@@ -884,6 +884,27 @@ export const allPhrases = {
           english: 'I’d like two tickets. How much do they cost?',
         },
       ],
+      lesson7: [
+        {
+          foreign: 'Ένα ευρώ και πενήντα λεπτά (1,50€). (EHnah evROH keh pehNEEndah lePTAH)',
+          english: 'One euro and fifty cents.',
+        },
+        { foreign: 'το ευρώ (toh evROH)', english: 'the euro' },
+        { foreign: 'ένα ευρώ (EHnah evROH)', english: 'one euro' },
+        { foreign: 'το λεπτό (toh lehpTOH)', english: 'the cent' },
+        {
+          foreign: 'δύο ευρώ (THEEoh evROH)',
+          english: 'two euros (euro doesn’t change for plural)',
+        },
+        { foreign: 'τα λεπτά (tah lepTAH)', english: 'the cents' },
+        { foreign: 'πενήντα (pehNEEndah)', english: 'fifty' },
+        { foreign: 'τρία (TREEah)', english: 'three' },
+        { foreign: 'τέσσερα (TEHsehrah)', english: 'four' },
+        { foreign: 'πέντε (PEHndeh)', english: 'five' },
+        { foreign: 'έξι (EHksee)', english: 'six' },
+        { foreign: 'Κάνουν έξι ευρώ (KAHnoon EHksee evROH)', english: 'They cost six euros.' },
+        { foreign: 'επτά (ehPTAH)', english: 'seven' },
+      ],
     },
   },
 };
