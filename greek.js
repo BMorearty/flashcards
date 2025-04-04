@@ -624,6 +624,7 @@ export const allPhrases = {
             'Το ξενοδοχείο είναι πίσω από τον σταθμό. (toh ksehnohthoHEEoh EEneh PEEsoh ahPOH tohn stathMOH) (the n in τον is hardly pronounced)',
           english: 'The hotel is behind the station.',
           hard: true,
+          working_on: true,
         },
         {
           foreign: 'δίπλα από (THEEplah ahPOH)',
@@ -702,7 +703,7 @@ export const allPhrases = {
       ],
       lesson2: [
         { foreign: 'Όχι, δεν έχω. (OH-hee, thehn EH-hoh)', english: 'No, I don’t (have).' },
-        { foreign: 'έχουμε (EH-hoomeh)', english: 'we have' },
+        { foreign: 'έχουμε (EH-hoomeh)', english: 'we have', working_on: true },
         {
           foreign: 'Όχι, δεν έχουμε σαγιονάρες. (OH-hee, thehn EH-hoomeh sahyohNAHrehs)',
           english: 'No, we don’t have flip-flops.',
@@ -834,7 +835,11 @@ export const allPhrases = {
           foreign: 'Πόσο κάνει το παγωτό, παρακαλώ; (POHsoh KAHnee toh pahgohTOH, pahrahkahLOH?)',
           english: 'How much does the ice cream cost, please?',
         },
-        { foreign: 'Πόσο κάνουν; (POHsoh KAHnoon?)', english: 'How much do they cost?' },
+        {
+          foreign: 'Πόσο κάνουν; (POHsoh KAHnoon?)',
+          english: 'How much do they cost?',
+          working_on: true,
+        },
         {
           foreign: 'Πόσο κάνουν τα γραμματόσημα; (POHsoh KAHnoon tah grahmahTOHseemah)',
           english: 'How much do the stamps cost?',
