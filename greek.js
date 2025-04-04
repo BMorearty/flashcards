@@ -239,7 +239,7 @@ export const allPhrases = {
         },
         {
           foreign: "Από 'δω ... (ahPOH thoh ...)",
-          english: 'This is ... (only for introductions)',
+          english: 'This is ... (only for introductions) (literally "from me...")',
         },
         { foreign: 'η γυναίκα (ee yeeNEHkah)', english: 'the woman', hard: true },
         { foreign: 'μου (moo)', english: 'my' },
@@ -641,6 +641,7 @@ export const allPhrases = {
             'Η πιάτσα ταξί είναι δίπλα από την τράπεζα. (ee P-HEEAHtsah tahKSEE EEneh THEEplah ahPOH teen TRAHpehzah)',
           english: 'The taxi stand is next to the bank.',
           hard: true,
+          working_on: true,
         },
       ],
       lesson8: [
@@ -715,7 +716,7 @@ export const allPhrases = {
       lesson3: [
         { foreign: "Ελάτε από 'δω. (eLAHteh ahPOH thoh)", english: 'Come this way. (formal)' },
         { foreign: 'Ελάτε! (eLAHteh!)', english: 'Come! (formal)' },
-        { foreign: "από 'δω (ahPOH thoh)", english: 'this way' },
+        { foreign: "από 'δω (ahPOH thoh)", english: 'this way (literally "from me")' },
         { foreign: 'μαζί μου (mahZEE moo)', english: 'with me' },
         {
           foreign: 'Ναι, ελάτε μαζί μου! (neh, eLAHteh mahZEE moo)',
