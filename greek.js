@@ -932,6 +932,38 @@ export const allPhrases = {
           english: 'The hat costs twelve euros and the flip-flops fifteen euros.',
         },
       ],
+      lesson9: [
+        {
+          foreign: 'Ορίστε ο χάρτης σας. (ohREEsteh oh HArtees sahs)',
+          english: 'Here is your map. (formal)',
+        },
+        { foreign: 'ορίστε (ohREEsteh)', english: 'here is / here are' },
+        { foreign: 'οι χάρτες σας (ee HArtehs sahs)', english: 'your maps (formal)' },
+        {
+          foreign: 'Ορίστε οι χάρτες σας. (ohREEsteh ee HArtehs sahs)',
+          english: 'Here are your maps. (formal)',
+        },
+        {
+          foreign: 'Ορίστε το παγωτό σας. (ohREEsteh toh pahgohTOH sahs)',
+          english: 'Here is your ice cream. (formal)',
+        },
+        {
+          foreign:
+            'Ορίστε το σάντουιτς. Τρία ευρώ, παρακαλώ. (ohREEsteh toh SAHndooeets. TREEah evROH, pahrahkahLOH)',
+          english: 'Here is the sandwich. Three euros, please.',
+        },
+        {
+          foreign:
+            'Ορίστε η τυρόπιτά σας. Κάνει δύο ευρώ και δέκα λεπτά. (ohREEsteh ee teeROHpeeTAH sahs. KAHnee THEEoh evROH keh THEHkah lePTAH)',
+          english: 'Here is your cheese pie. It costs two euros and ten cents. (formal)',
+        },
+        { foreign: 'Εντάξει. (ehnDAHksee, but can be shortened to ehDAHks)', english: 'Ok.' },
+        {
+          foreign:
+            'Εντάξει. Ορίστε έντεκα και πενήντα. (ehnDAHksee. ohREEsteh EHndekah keh pehNEEndah)',
+          english: 'Ok. Here is eleven fifty.',
+        },
+      ],
     },
   },
 };
