@@ -906,6 +906,32 @@ export const allPhrases = {
         { foreign: 'Κάνουν έξι ευρώ (KAHnoon EHksee evROH)', english: 'They cost six euros.' },
         { foreign: 'επτά (ehPTAH)', english: 'seven' },
       ],
+      lesson8: [
+        { foreign: 'οκτώ (ohKTOH)', english: 'eight' },
+        { foreign: 'Κάνουν οκτώ ευρώ (KAHnoon ohKTOH evROH)', english: 'They cost eight euros.' },
+        { foreign: 'εννέα (ehNEHah)', english: 'nine' },
+        { foreign: 'δέκα (THEHkah)', english: 'ten' },
+        { foreign: 'έντεκα (EHndehkah)', english: 'eleven' },
+        { foreign: 'δώδεκα (THOHthehkah)', english: 'twelve' },
+        {
+          foreign: 'Δεκατέσσερα ευρώ, παρακαλώ. (thehkahTEHsehrah evROH, pahrahkahLOH)',
+          english: 'Fourteen euros, please.',
+        },
+        { foreign: 'Πέντε και πενήντα (PEHndeh keh pehNEEndah)', english: 'five fifty' },
+        {
+          foreign: 'Κάνουν επτά και πενήντα (KAHnoon ehPTAH keh pehNEEndah)',
+          english: 'They cost seven fifty.',
+        },
+        {
+          foreign: 'Τα τρία παγωτά κάνουν έξι ευρώ. (tah TREEah pahgohTAH KAHnoon EHksee evROH)',
+          english: 'The three ice creams cost six euros.',
+        },
+        {
+          foreign:
+            'Το καπέλο κάνει δώδεκα ευρώ και οι σαγιονάρες δεκαπέντε ευρώ. (toh kahPEHloh KAHnee THOHthehkah evROH keh ee sahyohNAHrehs thehkahPEHndeh evROH)',
+          english: 'The hat costs twelve euros and the flip-flops fifteen euros.',
+        },
+      ],
     },
   },
 };
