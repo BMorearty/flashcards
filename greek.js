@@ -815,7 +815,7 @@ export const allPhrases = {
             'Δύο κάρτες και δύο γραμματόσημα, παρακαλώ. (THEEoh KAHrtehs keh THEEO grahmahTOHseemah, pahrahkahLOH)',
           english: 'Two postcards and two stamps, please.',
         },
-        { foreign: 'για (yah)', english: 'for' },
+        { foreign: 'για (yah)', english: 'for', working_on: true },
         { foreign: 'για την Αμερική (yah teen ahmehreeKEE)', english: 'for America' },
         {
           foreign:
