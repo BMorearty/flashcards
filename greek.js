@@ -468,7 +468,12 @@ export const allPhrases = {
           english: 'Excuse me, where is the hotel?',
           hard: true,
         },
-        { foreign: 'εστιατόριο (ehsteeahTOHreeoh)', english: 'restaurant', hard: true },
+        {
+          foreign: 'εστιατόριο (ehsteeahTOHreeoh)',
+          english: 'restaurant',
+          hard: true,
+          working_on: true,
+        },
         {
           foreign:
             'Πού είναι το εστιατόριο, παρακαλώ; (poo EEneh toh ehsteeahTOHreeoh, pahrahkahLOH?)',
@@ -479,7 +484,7 @@ export const allPhrases = {
           foreign: 'Πού είναι το μουσείο; (poo EEneh toh mooSEEoh?)',
           english: 'Where is the museum?',
         },
-        { foreign: 'ο χάρτης (oh HArtees)', english: 'the map', hard: true },
+        { foreign: 'ο χάρτης (oh HArtees)', english: 'the map' },
         { foreign: 'σε (seh)', english: 'on / in / at / to' },
         { foreign: 'στον χάρτη (stohn HArtee)', english: 'on the map' },
         {
@@ -569,6 +574,7 @@ export const allPhrases = {
           foreign: 'Πηγαίνετε ευθεία μπροστά. (peeYEHnehteh efTHEEah brohSTAH)',
           english: 'Go straight ahead. (formal)',
           hard: true,
+          working_on: true,
         },
         { foreign: 'πηγαίνω (peeYEHnoh)', english: 'I go' },
         { foreign: 'πηγαίνω (peeYEHnehteh)', english: 'You go (formal)' },
@@ -768,7 +774,12 @@ export const allPhrases = {
         { foreign: 'το σάντουιτς (toh SAHndooeets)', english: 'the sandwich' },
         { foreign: 'ένα σάντουιτς (EHnah SAHndooeets)', english: 'a sandwich' },
         { foreign: 'η τυρόπιτα (ee teeROHpeetah)', english: 'the cheese pie' },
-        { foreign: 'μια τυρόπιτα (myah teeROHpeetah)', english: 'a cheese pie', hard: true },
+        {
+          foreign: 'μια τυρόπιτα (myah teeROHpeetah)',
+          english: 'a cheese pie',
+          hard: true,
+          working_on: true,
+        },
         {
           foreign: 'Θα ήθελα μια τυρόπιτα. (thah EEthehlah myah teeROHpeetah)',
           english: 'I’d like a cheese pie.',
