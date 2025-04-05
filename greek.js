@@ -981,6 +981,48 @@ export const allPhrases = {
         },
       ],
     },
+    chapter6: {
+      name: 'Food and Drink Culture',
+      lesson1: [
+        {
+          foreign: 'Τι θα πάρετε; (tee thah PAHrehteh?)',
+          english: 'What would you like to order? (Literally, “What will you take?) (formal)',
+        },
+        { foreign: 'παίρνω (PEHrnoh)', english: 'I take; I get' },
+        { foreign: 'θα πάρω (thah PAHroh)', english: 'I will take' },
+        { foreign: 'θα πάρετε (thah PAHrehteh)', english: 'you will take (formal)' },
+        {
+          foreign:
+            'Γεια σας! Τι θα πάρετε, παρακαλώ; (yah sahs! tee thah PAHrehteh, pahrahkahLOH?)',
+          english: 'Hello! What would you like to order, please? (formal)',
+        },
+        { foreign: 'θα θέλατε (thah THEHlahteh)', english: 'you’d like (formal)' },
+        {
+          foreign: 'Tι θα θέλατε; (tee thah THEHlahteh)',
+          english: 'What would you like? (formal)',
+        },
+        {
+          foreign: 'θα θέλατε να πιείτε (thah THEHlahteh nah P-HEEteh)',
+          english: 'you would like to drink (formal)',
+        },
+        {
+          foreign: 'Τι θα θέλατε να πιείτε; (tee thah THEHlahteh nah P-HEEteh?)',
+          english: 'What would you like to drink? (formal)',
+        },
+        { foreign: 'φραπέ (frahPEH)', english: 'frappé' },
+        { foreign: 'φέρνω (FEHrnoh)', english: 'I bring' },
+        { foreign: 'να σας φέρω (nah sahs FEHroh)', english: 'shall I bring you (formal)' },
+        {
+          foreign: 'Τι να σας φέρω; (tee nah sahs FEHroh?)',
+          english: 'What shall I bring you? (formal)',
+        },
+        {
+          foreign: 'Γεια σας! Τι να σας φέρω; (yah sahs! tee nah sahs FEHroh?)',
+          english: 'Hello! What shall I bring you? (to a group)',
+        },
+        { foreign: 'μεζέδες (mehZEHthehs)', english: 'starters' },
+      ],
+    },
   },
 };
 
