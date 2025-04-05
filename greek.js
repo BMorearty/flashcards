@@ -988,9 +988,13 @@ export const allPhrases = {
           foreign: 'Τι θα πάρετε; (tee thah PAHrehteh?)',
           english: 'What would you like to order? (Literally, “What will you take?) (formal)',
         },
-        { foreign: 'παίρνω (PEHrnoh)', english: 'I take; I get' },
-        { foreign: 'θα πάρω (thah PAHroh)', english: 'I will take' },
-        { foreign: 'θα πάρετε (thah PAHrehteh)', english: 'you will take (formal)' },
+        { foreign: 'παίρνω (PEHrnoh)', english: 'I take; I get', hard: true },
+        { foreign: 'θα πάρω (thah PAHroh)', english: 'I will take (when ordering)', hard: true },
+        {
+          foreign: 'θα πάρετε (thah PAHrehteh)',
+          english: 'you will take (when ordering) (formal)',
+          hard: true,
+        },
         {
           foreign:
             'Γεια σας! Τι θα πάρετε, παρακαλώ; (yah sahs! tee thah PAHrehteh, pahrahkahLOH?)',
@@ -1010,7 +1014,7 @@ export const allPhrases = {
           english: 'What would you like to drink? (formal)',
         },
         { foreign: 'φραπέ (frahPEH)', english: 'frappé' },
-        { foreign: 'φέρνω (FEHrnoh)', english: 'I bring' },
+        { foreign: 'φέρνω (FEHrnoh)', english: 'I bring', hard: true },
         { foreign: 'να σας φέρω (nah sahs FEHroh)', english: 'shall I bring you (formal)' },
         {
           foreign: 'Τι να σας φέρω; (tee nah sahs FEHroh?)',
@@ -1020,7 +1024,7 @@ export const allPhrases = {
           foreign: 'Γεια σας! Τι να σας φέρω; (yah sahs! tee nah sahs FEHroh?)',
           english: 'Hello! What shall I bring you? (to a group)',
         },
-        { foreign: 'μεζέδες (mehZEHthehs)', english: 'starters' },
+        { foreign: 'μεζέδες (mehZEHthehs)', english: 'starters / appetizers' },
       ],
     },
   },
