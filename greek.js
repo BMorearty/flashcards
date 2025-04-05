@@ -1028,6 +1028,40 @@ export const allPhrases = {
         },
         { foreign: 'μεζέδες (mehZEHthehs)', english: 'starters / appetizers' },
       ],
+      lesson2: [
+        {
+          foreign:
+            'Μου δίνετε τον κατάλογο, παρακαλώ; (moo THEEnehteh tohn kahTAHlohgoh, pahrahkahLOH?)',
+          english:
+            'Can I have the menu, please? (Literally, “You give the menu to me, please?”) (formal)',
+          hard: true,
+        },
+        { foreign: 'ο κατάλογος (oh kahTAHlohgohs)', english: 'the menu' },
+        { foreign: 'δίνω (THEEnoh)', english: 'I give' },
+        { foreign: 'δίνετε (THEEnehteh)', english: 'you give (formal)' },
+        { foreign: 'μου δίνετε (moo THEEnehteh)', english: 'you give to me (formal)' },
+        { foreign: 'μου φέρνετε (moo FEHrnehteh)', english: 'you bring to me (formal)' },
+        { foreign: 'το ποτήρι (toh pohTEEree)', english: 'the glass', hard: true },
+        { foreign: 'ένα ποτήρι (EHnah pohTEEree)', english: 'a glass' },
+        { foreign: 'νερό (nehROH)', english: 'water' },
+        { foreign: 'ένα ποτήρι νερό (EHnah pohTEEree nehROH)', english: 'a glass of water' },
+        {
+          foreign:
+            'Μου φέρνετε ένα ποτήρι νερό, παρακαλώ; (moo FEHrnehteh EHnah pohTEEree nehROH, pahrahkahLOH?)',
+          english: 'Could you bring me a glass of water, please? (formal)',
+        },
+        { foreign: 'πιρούνι (peeROOnee)', english: 'fork', hard: true },
+        {
+          foreign: 'Μου φέρνετε ένα πιρούνι; (moo FEHrnehteh EHnah peeROOnee?)',
+          english: 'Could you bring me a fork?',
+        },
+        { foreign: 'μαχαίρι (mahHEHree)', english: 'knife' },
+        {
+          foreign:
+            'Ένα πιρούνι και ένα μαχαίρι, παρακαλώ. (EHnah peeROOnee keh keh EHnah mahHEHree, pahrahkahLOH)',
+          english: 'A fork and a knife, please.',
+        },
+      ],
     },
   },
 };
