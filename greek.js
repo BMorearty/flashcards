@@ -66,7 +66,7 @@ export const allPhrases = {
         { foreign: 'Ευχαριστώ! (efhahreeSTOH)', english: 'Thanks!' },
         { foreign: 'Μια χαρά! (myah hahRAH)', english: 'Great!' },
         { foreign: 'Μια χαρά, ευχαριστώ! (myah hahRAH, efhahreeSTOH!)', english: 'Great, thanks!' },
-        { foreign: 'πολύ (pohLEE)', english: 'very' },
+        { foreign: 'πολύ (pohLEE)', english: 'very / a lot' },
         { foreign: 'πολύ καλά (pohLEE kahLAH)', english: 'very good/well' },
         { foreign: 'Εσείς; (ehSEES)', english: 'You (And you?) (formal or plural)' },
         {
@@ -110,7 +110,7 @@ export const allPhrases = {
       lesson5: [
         { foreign: 'Αντίο! (ahDEEoh)', english: 'Goodbye!' },
         { foreign: 'Τα λέμε! (tah LEHmeh)', english: 'Talk to you later!', hard: true },
-        { foreign: 'σας (sahs)', english: 'to you (formal or plural)' },
+        { foreign: 'σας (sahs)', english: 'to you / your (formal or plural)' },
         { foreign: 'Αντίο σας! (ahDEEoh sahs)', english: 'Goodbye to you! (formal but warm)' },
         { foreign: 'Καληνύχτα! (kahleeNEEhta)', english: 'Goodnight!' },
         {
@@ -247,7 +247,7 @@ export const allPhrases = {
           english: 'This is ... (only for introductions) (literally "from me...")',
         },
         { foreign: 'η γυναίκα (ee yeeNEHkah)', english: 'the woman', hard: true },
-        { foreign: 'μου (moo)', english: 'my' },
+        { foreign: 'μου (moo)', english: 'my / to me' },
         { foreign: 'Κατερίνα (kahtehREEnah)', english: 'Katharine' },
         {
           foreign: 'η γυναίκα μου, η Κατερίνα (ee yeeNEHkah moo, ee kahtehREEnah)',
@@ -319,7 +319,7 @@ export const allPhrases = {
           english: 'What is your name? (How do they call you?) (formal)',
           hard: true,
         },
-        { foreign: 'παρακαλώ (pahrahkahLOH)', english: 'please', hard: true },
+        { foreign: 'παρακαλώ (pahrahkahLOH)', english: 'please / you’re welcome' },
         {
           foreign: 'Πώς λέγεστε, παρακαλώ; (pohs LEHgyesteh, pahrahkahLOH)',
           english: 'What is your name, please? (formal)',
@@ -407,7 +407,7 @@ export const allPhrases = {
           foreign: 'Όχι. Eίμαι Αμερικανίδα. (OH-hee, EEmeh ahmehreekahNEEthah)',
           english: 'No. I’m American. (by a woman)',
         },
-        { foreign: 'είναι (EEneh)', english: 'he / she / it is' },
+        { foreign: 'είναι (EEneh)', english: 'he / she / it is / they are' },
         { foreign: 'Είναι Ελληνίδα. (EEHneh ehleeNEEthah)', english: 'She is Greek.' },
         {
           foreign: 'Η γυναίκα μου είναι Ελληνίδα. (ee yeeNEHkah moo EEneh ehleeNEEthah)',
@@ -877,6 +877,7 @@ export const allPhrases = {
         {
           foreign: 'Πόσο έχει; (POHsoh EH-hee?)',
           english: 'How much is it? (Literally how much does it have?)',
+          working_on: true,
         },
         {
           foreign: 'Πόσο έχει ο χάρτης; (POHsoh EH-hee oh HArtees?)',
@@ -958,6 +959,7 @@ export const allPhrases = {
         {
           foreign: 'Ορίστε οι χάρτες σας. (ohREEsteh ee HArtehs sahs)',
           english: 'Here are your maps. (formal)',
+          working_on: true,
         },
         {
           foreign: 'Ορίστε το παγωτό σας. (ohREEsteh toh pahgohTOH sahs)',
