@@ -1063,20 +1063,28 @@ export const allPhrases = {
         },
       ],
       lesson3: [
-        { foreign: 'ψωμί (psohMEE)', english: 'bread' },
+        { foreign: 'ψωμί (psohMEE)', english: 'bread', working_on: true },
         {
           foreign: 'Να σας φέρω ψωμί; (nah sahs FEHroh psohMEE?)',
           english: 'Shall I bring you some bread? (formal)',
+          working_on: true,
         },
         {
           foreign: 'Να σας φέρω τον κατάλογο; (nah sahs FEHroh tohn kahTAHlohgoh?)',
           english: 'Shall I bring you the menu? (formal)',
+          hard: true,
+          working_on: true,
         },
         { foreign: 'όλα (OHlah)', english: 'everything' },
         { foreign: 'Όλα καλά; (OHlah kahLAH?)', english: 'Is everything alright?' },
         { foreign: 'Ναι, όλα καλά. (neh, OHlah kahLAH)', english: 'Yes, everything is alright.' },
         { foreign: 'το φαγητό (toh fahyeeTOH)', english: 'the food; the dish' },
-        { foreign: 'νόστιμος (NOHsteemohs)', english: 'tasty; delicious' },
+        {
+          foreign: 'νόστιμος (NOHsteemohs)',
+          english: 'tasty; delicious',
+          hard: true,
+          working_on: true,
+        },
         {
           foreign: 'Το φαγητό είναι νόστιμο. (toh fahyeeTOH EEneh NOHsteemoh)',
           english: 'The food is delicious.',
@@ -1084,22 +1092,28 @@ export const allPhrases = {
         {
           foreign: 'Το φαγητό είναι πολύ νόστιμο. (toh fahyeeTOH EEneh pohLEE NOHsteemoh)',
           english: 'The food is very delicious.',
+          working_on: true,
         },
-        { foreign: 'ο λογαριασμός (oh lohgahryahZMOHs)', english: 'the check' },
+        { foreign: 'ο λογαριασμός (oh lohgahryahZMOHs)', english: 'the check', working_on: true },
         {
           foreign:
             'Μου φέρνετε τον λογαριασμό, παρακαλώ; (moo FEHrnehteh tohn lohgahryahZMOH, pahrahkahLOH?)',
           english: 'Could you bring me the check, please? (formal)',
+          working_on: true,
         },
         {
           foreign: 'Στην υγειά σας! (steen eeYAH sahs)',
           english: 'Cheers! (Literally, “To your health!”)',
+          hard: true,
+          working_on: true,
         },
         { foreign: 'καλός (kahLOHS)', english: 'good' },
-        { foreign: 'όρεξη (OHrehksee)', english: 'appetite' },
+        { foreign: 'όρεξη (OHrehksee)', english: 'appetite', working_on: true },
         {
           foreign: 'Καλή όρεξη! (kahLEE OHrehksee)',
           english: 'Enjoy your meal! (Literally, “Good appetite!”)',
+          hard: true,
+          working_on: true,
         },
       ],
     },
