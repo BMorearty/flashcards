@@ -661,6 +661,7 @@ export const allPhrases = {
         {
           foreign: 'Ευχαριστώ πάρα πολύ! (efhahreeSTOH PAHrah pohLEE!)',
           english: 'Thanks very much! (I really appreciate it! Stronger than thanks a lot.)',
+          working_on: true,
         },
         { foreign: 'Παρακαλώ! (pahrahkahLOH!)', english: 'You’re welcome!' },
       ],
@@ -975,7 +976,12 @@ export const allPhrases = {
             'Ορίστε η τυρόπιτά σας. Κάνει δύο ευρώ και δέκα λεπτά. (ohREEsteh ee teeROHpeeTAH sahs. KAHnee THEEoh evROH keh THEHkah lePTAH)',
           english: 'Here is your cheese pie. It costs two euros and ten cents. (formal)',
         },
-        { foreign: 'Εντάξει. (ehnDAHksee, but can be shortened to ehDAHks)', english: 'Ok.' },
+        {
+          foreign: 'Εντάξει. (ehnDAHksee, but can be shortened to ehDAHks)',
+          english: 'Ok.',
+          hard: true,
+          working_on: true,
+        },
         {
           foreign:
             'Εντάξει. Ορίστε έντεκα και πενήντα. (ehnDAHksee. ohREEsteh EHndekah keh pehNEEndah)',
@@ -1133,6 +1139,82 @@ export const allPhrases = {
           english: 'Enjoy your meal! (Literally, “Good appetite!”)',
           hard: true,
           working_on: true,
+        },
+      ],
+      lesson4: [
+        {
+          foreign:
+            'Θα ήθελα έναν μουσακά, παρακαλώ. (thah EEthehlah EHnahn moosahKAH, pahrahkahLOH)',
+          english: "I'd like one moussaka, please.",
+        },
+        { foreign: 'ο μουσακάς (oh moosahKAHs)', english: 'The moussaka' },
+        {
+          foreign: 'ένας μουσακάς (EHnahs moosahKAHs)',
+          english: 'one moussaka',
+          hard: true,
+          working_on: true,
+        },
+        {
+          foreign: 'Ο μουσακάς είναι πολύ νόστιμος. (oh moosahKAHs EEneh pohLEE NOHsteemohs)',
+          english: 'The moussaka is very tasty.',
+        },
+        { foreign: 'η τομάτα (ee tohMAHtah)', english: 'the tomato' },
+        { foreign: 'γεμιστός (yehmeeSTOHs)', english: 'stuffed', hard: true, working_on: true },
+        {
+          foreign: 'γεμιστή τομάτα (yehmeeSTEE tohMAHtah)',
+          english: 'stuffed tomato',
+          hard: true,
+          working_on: true,
+        },
+        { foreign: 'οι τομάτες (ee tohMAHtehs)', english: 'the tomatoes' },
+        {
+          foreign: 'γεμιστές τομάτες (yehmeeSTEHs tohMAHtehs)',
+          english: 'stuffed tomatoes',
+          hard: true,
+          working_on: true,
+        },
+        {
+          foreign:
+            'Θα ήθελα γεμιστές τομάτες, παρακαλώ. (thah EEthehlah yehmeeSTEHs tohMAHtehs, pahrahkahLOH)',
+          english: 'I’d like stuffed tomatoes, please.',
+        },
+        { foreign: 'η πατάτα (ee pahTAHtah)', english: 'the potato' },
+        { foreign: 'οι πατάτες (ee pahTAHtehs)', english: 'the potatoes' },
+        { foreign: 'τηγανητός (teegahneeTOHs)', english: 'fried', hard: true, working_on: true },
+        {
+          foreign: 'τηγανητές πατάτες (teegahneeTEHs pahTAHtehs)',
+          english: 'french fries',
+          hard: true,
+          working_on: true,
+        },
+        { foreign: 'η μερίδα (ee mehREEthah)', english: 'the serving' },
+        {
+          foreign: 'Μία μερίδα τηγανητές πατάτες. (mEEah mehREEthah teegahneeTEHs pahTAHtehs)',
+          english: 'One serving of french fries.',
+          hard: true,
+          working_on: true,
+        },
+        { foreign: 'το σουβλάκι (toh sooVLAHkee)', english: 'the meat skewer' },
+        { foreign: 'ένα σουβλάκι (EHnah sooVLAHkee)', english: 'one meat skewer' },
+        { foreign: 'τα σουβλάκια (tah sooVLAHkeeah)', english: 'the meat skewers' },
+        {
+          foreign: 'Μετά μία μερίδα σουβλάκια. (mehTAH, mEEah mehREEthah sooVLAHkeeah)',
+          english: 'Then, one serving of meat skewers.',
+        },
+        { foreign: 'με (meh)', english: 'with' },
+        {
+          foreign: 'με τηγανητές πατάτες (meh teegahneeTEHs pahTAHtehs)',
+          english: 'with french fries',
+        },
+        { foreign: 'το κοτόπουλο (toh kohTOHpooloh)', english: 'the chicken' },
+        {
+          foreign: 'Ένα σουβλάκι με κοτόπουλο. (EHnah sooVLAHkee meh kohTOHpooloh)',
+          english: 'One chicken skewer. (Literally, one skewer with chicken.)',
+        },
+        { foreign: 'με πατάτες (meh pahTAHtehs)', english: 'with potatoes' },
+        {
+          foreign: 'Θα ήθελα κοτόπουλο με πατάτες. (thah EEthehlah kohTOHpooloh meh pahTAHtehs)',
+          english: 'I’d like chicken with potatoes.',
         },
       ],
     },
