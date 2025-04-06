@@ -1062,6 +1062,46 @@ export const allPhrases = {
           english: 'A fork and a knife, please.',
         },
       ],
+      lesson3: [
+        { foreign: 'ψωμί (psohMEE)', english: 'bread' },
+        {
+          foreign: 'Να σας φέρω ψωμί; (nah sahs FEHroh psohMEE?)',
+          english: 'Shall I bring you some bread? (formal)',
+        },
+        {
+          foreign: 'Να σας φέρω τον κατάλογο; (nah sahs FEHroh tohn kahTAHlohgoh?)',
+          english: 'Shall I bring you the menu? (formal)',
+        },
+        { foreign: 'όλα (OHlah)', english: 'everything' },
+        { foreign: 'Όλα καλά; (OHlah kahLAH?)', english: 'Is everything alright?' },
+        { foreign: 'Ναι, όλα καλά. (neh, OHlah kahLAH)', english: 'Yes, everything is alright.' },
+        { foreign: 'το φαγητό (toh fahyeeTOH)', english: 'the food; the dish' },
+        { foreign: 'νόστιμος (NOHsteemohs)', english: 'tasty; delicious' },
+        {
+          foreign: 'Το φαγητό είναι νόστιμο. (toh fahyeeTOH EEneh NOHsteemoh)',
+          english: 'The food is delicious.',
+        },
+        {
+          foreign: 'Το φαγητό είναι πολύ νόστιμο. (toh fahyeeTOH EEneh pohLEE NOHsteemoh)',
+          english: 'The food is very delicious.',
+        },
+        { foreign: 'ο λογαριασμός (oh lohgahryahZMOHs)', english: 'the check' },
+        {
+          foreign:
+            'Μου φέρνετε τον λογαριασμό, παρακαλώ; (moo FEHrnehteh tohn lohgahryahZMOH, pahrahkahLOH?)',
+          english: 'Could you bring me the check, please? (formal)',
+        },
+        {
+          foreign: 'Στην υγειά σας! (steen eeYAH sahs)',
+          english: 'Cheers! (Literally, “To your health!”)',
+        },
+        { foreign: 'καλός (kahLOHS)', english: 'good' },
+        { foreign: 'όρεξη (OHrehksee)', english: 'appetite' },
+        {
+          foreign: 'Καλή όρεξη! (kahLEE OHrehksee)',
+          english: 'Enjoy your meal! (Literally, “Good appetite!”)',
+        },
+      ],
     },
   },
 };
