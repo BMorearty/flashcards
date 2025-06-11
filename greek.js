@@ -1,5 +1,11 @@
 /*
    Verb conjugations: https://cooljugator.com/gr
+
+   υπάρχει (eePARhee): There is / there are
+   ορίστε (ohREEsteh): Here is / here are
+   εντάξει (ehnDAHksee, but can be shortened to ehDAHks): ok
+
+   Unit 1, chapter 6, lesson 1 is really hard
  */
 
 export const allPhrases = {
@@ -28,6 +34,8 @@ export const allPhrases = {
           foreign:
             'έχω, present tense:| (εγω) έχω| (εσυ) έχεις| (αυτ(ος/ή/ό)) έχει| (εμείς) έχουμε| (εσείς) έχετε| (αυτ(οί/ές/ά)) έχουν',
           english: 'to have, present tense. I have, you have, etc.',
+          hard: true,
+          working_on: true,
         },
         {
           foreign:
@@ -42,18 +50,18 @@ export const allPhrases = {
       name: 'Salutations and Small Talk',
       lesson1: [
         { foreign: 'Καλημέρα! (kaliMEra!)', english: 'Good morning! (literally good day)' },
-        { foreign: 'Καλησπέρα! (kaliSPAra!)', english: 'Good afternoon! (Used after 1pm.)' },
+        { foreign: 'Καλησπέρα! (kaliSPEra!)', english: 'Good afternoon! (Used after 1pm.)' },
         { foreign: 'Γεια! (Ya!)', english: 'Hi! or Bye! (informal)' },
       ],
       lesson2: [
         {
           foreign: 'Τι κάνετε; (tee KAHnehteh)',
-          english: 'How are you? (Literally, what do you do?) (formal or plural)',
+          english: 'How are you? (Literally, what do you do?) (formal)',
         },
         { foreign: 'Τι κάνεις; (tee KAHnees)', english: 'How are you? (informal)', hard: true },
         { foreign: 'τι', english: 'what' },
         { foreign: 'κάνω (KAHnoh)', english: 'I do' },
-        { foreign: 'κάνετε (KAHnehteh)', english: 'you do (formal or plural)' },
+        { foreign: 'κάνετε (KAHnehteh)', english: 'you do (formal)' },
         { foreign: 'κάνεις (KAHnees)', english: 'you do (informal)' },
         { foreign: 'Τι γίνεται; (tee YEEnehteh)', english: "What's up?" },
       ],
@@ -67,15 +75,15 @@ export const allPhrases = {
         { foreign: 'Μια χαρά! (myah hahRAH)', english: 'Great!' },
         { foreign: 'Μια χαρά, ευχαριστώ! (myah hahRAH, efhahreeSTOH!)', english: 'Great, thanks!' },
         { foreign: 'πολύ (pohLEE)', english: 'very / a lot' },
-        { foreign: 'πολύ καλά (pohLEE kahLAH)', english: 'very good/well' },
-        { foreign: 'Εσείς; (ehSEES)', english: 'You (And you?) (formal or plural)' },
+        { foreign: 'πολύ καλά (pohLEE kahLAH)', english: 'very good/well', hard: true },
+        { foreign: 'Εσείς; (ehSEES)', english: 'You (And you?) (formal)' },
         {
           foreign: 'Πολύ καλά! Ευχαριστώ! (pohLEE kahLAH! efhahreeSTOH!)',
           english: 'Very good! Thanks!',
         },
         {
           foreign: 'Πολύ καλά, ευχαριστώ. Εσείς; (pohLEE kahLAH, efhahreeSTOH! ehSEES?)',
-          english: 'Very good, thanks. And you? (formal or plural)',
+          english: 'Very good, thanks. And you? (formal)',
           hard: true,
         },
         { foreign: 'Εσύ; (ehSEE)', english: 'You (And you?) (informal)', hard: true },
@@ -94,7 +102,7 @@ export const allPhrases = {
           foreign: 'Ωραίος καιρός σήμερα. (ohREHohs kehROHs SEEmehrah)',
           english: 'Beautiful weather today.',
         },
-        { foreign: 'μέρα (MEHrah)', english: 'day' },
+        { foreign: 'μέρα (MEHrah)', english: 'day', hard: true, working_on: true },
         { foreign: 'η μέρα (ee MEHrah)', english: 'the day' },
         { foreign: 'Ωραία μέρα. (ohREHah MEHrah)', english: 'Beautiful day.' },
         { foreign: 'Ναι. (neh)', english: 'Yes.' },
@@ -109,7 +117,12 @@ export const allPhrases = {
       ],
       lesson5: [
         { foreign: 'Αντίο! (ahDEEoh)', english: 'Goodbye!' },
-        { foreign: 'Τα λέμε! (tah LEHmeh)', english: 'Talk to you later!', hard: true },
+        {
+          foreign: 'Τα λέμε! (tah LEHmeh)',
+          english: 'Talk to you later!',
+          hard: true,
+          working_on: true,
+        },
         { foreign: 'σας (sahs)', english: 'to you / your (formal or plural)' },
         { foreign: 'Αντίο σας! (ahDEEoh sahs)', english: 'Goodbye to you! (formal but warm)' },
         { foreign: 'Καληνύχτα! (kahleeNEEhta)', english: 'Goodnight!' },
@@ -129,12 +142,12 @@ export const allPhrases = {
       name: 'Languages and Origins',
       lesson1: [
         { foreign: 'Μιλάω αγγλικά. (meeLAoh ahngleeKAH)', english: 'I speak English.', hard: true },
-        { foreign: 'μιλάτε (meeLAHteh)', english: 'you speak (formal or plural)' },
+        { foreign: 'μιλάτε (meeLAHteh)', english: 'you speak (formal)' },
         {
           foreign: 'Μιλάτε αγγλικά. (meelAHteh ahngleeKAH)',
           english: 'You speak English. (formal)',
         },
-        { foreign: 'μιλάτε; (meeLAHteh?)', english: 'do you speak? (formal or plural)' },
+        { foreign: 'μιλάτε; (meeLAHteh?)', english: 'do you speak? (formal)' },
         {
           foreign: 'Μιλάτε αγγλικά; (meeLAHteh ahngleeKAH?)',
           english: 'Do you speak English? (formal)',
@@ -146,7 +159,10 @@ export const allPhrases = {
           english: 'I speak a little Greek.',
           working_on: true,
         },
-        { foreign: 'Μιλάτε ελληνικά; (meeLAHteh ehleeneeKAH?)', english: 'Do you speak Greek?' },
+        {
+          foreign: 'Μιλάτε ελληνικά; (meeLAHteh ehleeneeKAH?)',
+          english: 'Do you speak Greek? (formal)',
+        },
         { foreign: 'Ναι, λίγα. (neh, LEEgah)', english: 'Yes, a little.' },
       ],
       lesson2: [
@@ -156,7 +172,7 @@ export const allPhrases = {
         },
         {
           foreign: 'Συγγνώμη! Μιλάτε αγγλικά; (seeGNOHmee! meeLAHteh ahngleeKAH?)',
-          english: 'Excuse me! Do you speak English? (formal or plural)',
+          english: 'Excuse me! Do you speak English? (formal)',
         },
       ],
       lesson3: [
@@ -173,6 +189,8 @@ export const allPhrases = {
         {
           foreign: 'Δεν μιλάω καλά ελληνικά. (thehn meeLAoh kahLAH ehleeneeKAH)',
           english: 'I don’t speak Greek well.',
+          hard: true,
+          working_on: true,
         },
         {
           foreign: 'Λυπάμαι, δεν μιλάω αγγλικά. (leePAHmeh, thehn meeLAoh ahngleeKAH)',
@@ -193,16 +211,16 @@ export const allPhrases = {
       lesson4: [
         {
           foreign: 'Από πού είστε; (ahPOH poo EEsteh)',
-          english: 'Where are you from? (formal or plural)',
+          english: 'Where are you from? (formal)',
           hard: true,
           working_on: true,
         },
         { foreign: 'από (ahPOH)', english: 'from' },
         { foreign: 'πού; (poo?)', english: 'where?' },
-        { foreign: 'είστε (EEsteh)', english: 'you are (formal or plural)' },
+        { foreign: 'είστε (EEsteh)', english: 'you are (formal)' },
         {
           foreign: 'Συγγνώμη! Από πού είστε; (seeGNOHmee! ahPOH poo EEsteh?)',
-          english: 'Excuse me! Where are you from? (formal or plural)',
+          english: 'Excuse me! Where are you from? (formal)',
         },
         { foreign: 'είσαι (EEseh)', english: 'you are (informal)' },
         { foreign: 'Από πού είσαι; (ahPOH poo EEseh)', english: 'Where are you from? (informal)' },
@@ -215,7 +233,7 @@ export const allPhrases = {
         },
         { foreign: 'η Αμερική (ee ahmehreeKEE)', english: 'America', hard: true },
         { foreign: 'είμαι (EEmeh)', english: 'I am' },
-        { foreign: 'η Ελλάδα (ee ehLAHthah)', english: 'Greece', hard: true },
+        { foreign: 'η Ελλάδα (ee ehLAHthah)', english: 'Greece', hard: true, working_on: true },
         {
           foreign: 'Από την Ελλάδα. (ahPOH teen ehLAHthah)',
           english: 'From Greece. (full sentence in answer to where are you from?)',
@@ -273,6 +291,8 @@ export const allPhrases = {
         {
           foreign: "Από 'δω ο φίλος μου. (ahPOH thoh oh FEElohs moo)",
           english: 'This is my friend. (about a male)',
+          hard: true,
+          working_on: true,
         },
         {
           foreign: "Από 'δω ο φίλος μου, ο Τομ. (ahPOH thoh oh FEElohs moo, oh tom)",
@@ -312,6 +332,7 @@ export const allPhrases = {
           foreign: 'σε λένε (seh LEHneh)',
           english: 'your name is (they call you) (informal)',
           hard: true,
+          working_on: true,
         },
         { foreign: 'λέγεστε (LEHgyesteh)', english: 'you are called (formal)', hard: true },
         {
@@ -351,6 +372,7 @@ export const allPhrases = {
           foreign: 'Χαίρω πολύ, κύριε! (HYEHroh pohLEE, KEEree-e)',
           english: 'Nice to meet you, sir!',
           hard: true,
+          working_on: true,
         },
       ],
       lesson5: [
@@ -505,11 +527,15 @@ export const allPhrases = {
         },
       ],
       lesson3: [
-        { foreign: 'Δεν είναι μακριά. (thehn EEneh mahkreeAH)', english: 'It’s not far.' },
+        {
+          foreign: 'Δεν είναι μακριά. (thehn EEneh mahkreeAH)',
+          english: 'It’s not far.',
+          working_on: true,
+        },
         { foreign: 'δεν είναι (thehn EEneh)', english: 'it isn’t' },
         { foreign: 'μακριά (mahkreeAH)', english: 'far' },
         { foreign: 'κοντά (kohNDAH)', english: 'near' },
-        { foreign: 'Είναι κοντά. (EEneh kohNDAH)', english: 'It’s near.' },
+        { foreign: 'Είναι κοντά. (EEneh kohNDAH)', english: 'It’s near.', working_on: true },
         { foreign: 'λίγο (LEEgoh)', english: 'a bit (adverb)' },
         { foreign: 'Είναι λίγο μακριά. (EEneh LEEgoh mahkreeAH)', english: 'It’s a bit far.' },
         { foreign: 'εκεί (ehKEE)', english: 'there', hard: true },
@@ -539,14 +565,23 @@ export const allPhrases = {
         { foreign: 'υπάρχει τράπεζα (eePARhee TRAHpehza)', english: 'there is a bank' },
         { foreign: 'υπάρχει τράπεζα; (eePARhee TRAHpehza?)', english: 'is there a bank?' },
         { foreign: 'το ταξί (toh tahkSEE)', english: 'the taxi' },
-        { foreign: 'η πιάτσα ταξί (ee P-HEEAHtsah tahKSEE)', english: 'the taxi stand' },
+        {
+          foreign: 'η πιάτσα ταξί (ee P-HEEAHtsah tahKSEE)',
+          english: 'the taxi stand',
+          working_on: true,
+        },
         {
           foreign: 'Υπάρχει πιάτσα ταξί εδώ κοντά; (eePARhee P-HEEAHtsah tahKSEE ehTHOH konDAH?)',
           english: 'Is there a taxi stand near here?',
         },
         { foreign: 'γύρω (YEEroh)', english: 'around' },
-        { foreign: 'εδώ γύρω (ehTHOH YEEroh)', english: 'around here' },
-        { foreign: 'βιβλιοπωλείο (veevleeohpohLEEoh)', english: 'bookstore', hard: true },
+        { foreign: 'εδώ γύρω (ehTHOH YEEroh)', english: 'around here', working_on: true },
+        {
+          foreign: 'βιβλιοπωλείο (veevleeohpohLEEoh)',
+          english: 'bookstore',
+          hard: true,
+          working_on: true,
+        },
         {
           foreign: 'Υπάρχει βιβλιοπωλείο εδώ γύρω; (eePARhee veevleeohpohLEEoh ehTHOH YEEroh?)',
           english: 'Is there a bookstore around here?',
@@ -577,10 +612,10 @@ export const allPhrases = {
           working_on: true,
         },
         { foreign: 'πηγαίνω (peeYEHnoh)', english: 'I go' },
-        { foreign: 'πηγαίνω (peeYEHnehteh)', english: 'You go (formal)' },
+        { foreign: 'πηγαίνω (peeYEHnehteh)', english: 'You go (formal)', working_on: true },
         { foreign: 'Πηγαίνετε! (peeYEHnehteh!)', english: 'Go! (imperative, formal)' },
         { foreign: 'ευθεία (efTHEEah)', english: 'straight', hard: true },
-        { foreign: 'μπροστά (brohSTAH)', english: 'ahead' },
+        { foreign: 'μπροστά (brohSTAH)', english: 'ahead', working_on: true },
         {
           foreign: 'Είναι ευθεία μπροστά. (EEneh efTHEEah brohSTAH)',
           english: 'It’s straight ahead.',
@@ -602,6 +637,7 @@ export const allPhrases = {
           foreign: 'και μετά δεξιά (keh mehTAH thehkseeAH)',
           english: 'and then right',
           hard: true,
+          working_on: true,
         },
         {
           foreign:
@@ -625,7 +661,7 @@ export const allPhrases = {
           english: 'behind the subway station',
           hard: true,
         },
-        { foreign: 'μπροστά από (brohSTAH ahPOH)', english: 'in front of' },
+        { foreign: 'μπροστά από (brohSTAH ahPOH)', english: 'in front of', working_on: true },
         {
           foreign: 'μπροστά από το ξενοδοχείο (brohSTAH ahPOH toh ksehnohthoHEEoh)',
           english: 'in front of the hotel',
@@ -722,11 +758,16 @@ export const allPhrases = {
           english: 'No, we don’t have flip-flops.',
         },
         { foreign: 'Όχι, δεν έχουμε. (OH-hee, thehn EH-hoomeh)', english: 'No, we don’t (have).' },
-        { foreign: 'Βεβαίως! (vehVEHohs!)', english: 'Sure!' },
-        { foreign: 'Yes, sure! (neh, vehVEHohs!)', english: 'Yes, sure!' },
+        { foreign: 'Βεβαίως! (vehVEHohs!)', english: 'Sure!', working_on: true },
+        { foreign: 'Ναι, βεβαίως! (neh, vehVEHohs!)', english: 'Yes, sure!' },
       ],
       lesson3: [
-        { foreign: "Ελάτε από 'δω. (eLAHteh ahPOH thoh)", english: 'Come this way. (formal)' },
+        {
+          foreign: "Ελάτε από 'δω. (eLAHteh ahPOH thoh)",
+          english: 'Come this way. (formal)',
+          hard: true,
+          working_on: true,
+        },
         { foreign: 'Ελάτε! (eLAHteh!)', english: 'Come! (formal)' },
         { foreign: "από 'δω (ahPOH thoh)", english: 'this way (literally "from me")' },
         { foreign: 'μαζί μου (mahZEE moo)', english: 'with me' },
@@ -737,6 +778,8 @@ export const allPhrases = {
         {
           foreign: "Είναι από 'δω. Ελάτε μαζί μου. (EEneh ahPOH thoh. eLAHteh mahZEE moo)",
           english: 'They are this way. Come with me. (formal)',
+          hard: true,
+          working_on: true,
         },
         { foreign: 'οι χάρτες (ee HArtehs)', english: 'the maps' },
         {
@@ -770,6 +813,8 @@ export const allPhrases = {
         {
           foreign: 'Θα ήθελα ένα σάντουιτς. (thah EEthehlah EHnah SAHndooeets)',
           english: 'I’d like a sandwich.',
+          hard: true,
+          working_on: true,
         },
         { foreign: 'θα ήθελα (thah EEthehlah)', english: 'I’d like', hard: true },
         { foreign: 'το σάντουιτς (toh SAHndooeets)', english: 'the sandwich' },
@@ -827,15 +872,25 @@ export const allPhrases = {
         { foreign: 'μία κάρτα (mEEah KAHrtah)', english: 'one postcard' },
       ],
       lesson5: [
-        { foreign: 'γραμματόσημο (grahmahTOHseemoh)', english: 'stamp' },
+        {
+          foreign: 'γραμματόσημο (grahmahTOHseemoh)',
+          english: 'stamp',
+          hard: true,
+          working_on: true,
+        },
         { foreign: 'γραμματόσημα (grahmahTOHseemah)', english: 'stamps' },
         {
           foreign:
             'Δύο κάρτες και δύο γραμματόσημα, παρακαλώ. (THEEoh KAHrtehs keh THEEO grahmahTOHseemah, pahrahkahLOH)',
           english: 'Two postcards and two stamps, please.',
         },
-        { foreign: 'για (yah)', english: 'for', working_on: true },
-        { foreign: 'για την Αμερική (yah teen ahmehreeKEE)', english: 'for America' },
+        { foreign: 'για (yah)', english: 'for', hard: true, working_on: true },
+        {
+          foreign: 'για την Αμερική (yah teen ahmehreeKEE)',
+          english: 'for America',
+          hard: true,
+          working_on: true,
+        },
         {
           foreign:
             'Ένα γραμματόσημο για την Αμερική, παρακαλώ. (EHnah grahmahTOHseemoh yah teen ahmehreeKEE, pahrahkahLOH)',
@@ -889,14 +944,19 @@ export const allPhrases = {
           foreign: 'Πόσο έχει ένας χάρτης; (POHsoh EH-hee EHnahs HArtees)',
           english: 'How much is a map?',
         },
-        { foreign: 'Πόσο έχουν; (POHsoh EH-hoon?)', english: 'How much are they?' },
+        {
+          foreign: 'Πόσο έχουν; (POHsoh EH-hoon?)',
+          english: 'How much are they?',
+          hard: true,
+          working_on: true,
+        },
         {
           foreign:
             'Συγγνώμη! Θα ήθελα δύο καπέλα. Πόσο έχουν; (seeGNOHmee! thah EEthehlah THEEoh kahPEHlah. POHsoh EH-hoon?)',
           english: 'Excuse me! I’d like two hats. How much are they?',
         },
         { foreign: 'εισιτήριο (eeseeTEEreeoh)', english: 'ticket' },
-        { foreign: 'εισιτήρια (eeseeTEEreeah)', english: 'tickets' },
+        { foreign: 'εισιτήρια (eeseeTEEreeah)', english: 'tickets', hard: true, working_on: true },
         {
           foreign:
             'Θα ήθελα δύο εισιτήρια. Πόσο κάνουν; (thah EEthehlah THEEoh eeseeTEEreeah. POHsoh KAHnoon?)',
@@ -907,13 +967,14 @@ export const allPhrases = {
         {
           foreign: 'Ένα ευρώ και πενήντα λεπτά (1,50€). (EHnah evROH keh pehNEEndah lePTAH)',
           english: 'One euro and fifty cents.',
+          working_on: true,
         },
         { foreign: 'το ευρώ (toh evROH)', english: 'the euro' },
         { foreign: 'ένα ευρώ (EHnah evROH)', english: 'one euro' },
         { foreign: 'το λεπτό (toh lehpTOH)', english: 'the cent' },
         {
           foreign: 'δύο ευρώ (THEEoh evROH)',
-          english: 'two euros (euro doesn’t change for plural)',
+          english: 'two euros',
         },
         { foreign: 'τα λεπτά (tah lepTAH)', english: 'the cents' },
         { foreign: 'πενήντα (pehNEEndah)', english: 'fifty' },
@@ -955,8 +1016,18 @@ export const allPhrases = {
           foreign: 'Ορίστε ο χάρτης σας. (ohREEsteh oh HArtees sahs)',
           english: 'Here is your map. (formal)',
         },
-        { foreign: 'ορίστε (ohREEsteh)', english: 'here is / here are' },
-        { foreign: 'οι χάρτες σας (ee HArtehs sahs)', english: 'your maps (formal)' },
+        {
+          foreign: 'ορίστε (ohREEsteh)',
+          english: 'here is / here are',
+          hard: true,
+          working_on: true,
+        },
+        {
+          foreign: 'οι χάρτες σας (ee HArtehs sahs)',
+          english: 'your maps (formal)',
+          hard: true,
+          working_on: true,
+        },
         {
           foreign: 'Ορίστε οι χάρτες σας. (ohREEsteh ee HArtehs sahs)',
           english: 'Here are your maps. (formal)',
@@ -965,6 +1036,8 @@ export const allPhrases = {
         {
           foreign: 'Ορίστε το παγωτό σας. (ohREEsteh toh pahgohTOH sahs)',
           english: 'Here is your ice cream. (formal)',
+          hard: true,
+          working_on: true,
         },
         {
           foreign:
@@ -995,6 +1068,8 @@ export const allPhrases = {
         {
           foreign: 'Τι θα πάρετε; (tee thah PAHrehteh?)',
           english: 'What would you like to order? (Literally, “What will you take?) (formal)',
+          hard: true,
+          working_on: true,
         },
         { foreign: 'παίρνω (PEHrnoh)', english: 'I take; I get', hard: true },
         {
@@ -1016,26 +1091,44 @@ export const allPhrases = {
           hard: true,
           working_on: true,
         },
-        { foreign: 'θα θέλατε (thah THEHlahteh)', english: 'you’d like (formal)' },
+        {
+          foreign: 'θα θέλατε (thah THEHlahteh)',
+          english: 'you’d like (formal)',
+          hard: true,
+          working_on: true,
+        },
         {
           foreign: 'Tι θα θέλατε; (tee thah THEHlahteh)',
           english: 'What would you like? (formal)',
+          hard: true,
+          working_on: true,
         },
         {
           foreign: 'Τι θα θέλατε να πιείτε; (tee thah THEHlahteh nah P-HEEteh?)',
           english: 'What would you like to drink? (formal)',
+          hard: true,
+          working_on: true,
         },
         { foreign: 'φραπέ (frahPEH)', english: 'frappé' },
         { foreign: 'φέρνω (FEHrnoh)', english: 'I bring', hard: true, working_on: true },
         {
           foreign: 'Τι να σας φέρω; (tee nah sahs FEHroh?)',
           english: 'What shall I bring you? (formal)',
+          hard: true,
+          working_on: true,
         },
         {
           foreign: 'Γεια σας! Τι να σας φέρω; (yah sahs! tee nah sahs FEHroh?)',
           english: 'Hello! What shall I bring you? (to a group)',
+          hard: true,
+          working_on: true,
         },
-        { foreign: 'μεζέδες (mehZEHthehs)', english: 'starters / appetizers' },
+        {
+          foreign: 'μεζέδες (mehZEHthehs)',
+          english: 'starters / appetizers',
+          hard: true,
+          working_on: true,
+        },
       ],
       lesson2: [
         {
@@ -1068,7 +1161,7 @@ export const allPhrases = {
           hard: true,
           working_on: true,
         },
-        { foreign: 'νερό (nehROH)', english: 'water' },
+        { foreign: 'νερό (nehROH)', english: 'water', working_on: true },
         { foreign: 'ένα ποτήρι νερό (EHnah pohTEEree nehROH)', english: 'a glass of water' },
         {
           foreign:
@@ -1080,7 +1173,7 @@ export const allPhrases = {
           foreign: 'Μου φέρνετε ένα πιρούνι; (moo FEHrnehteh EHnah peeROOnee?)',
           english: 'Could you bring me a fork?',
         },
-        { foreign: 'μαχαίρι (mahHEHree)', english: 'knife' },
+        { foreign: 'μαχαίρι (mahHEHree)', english: 'knife', working_on: true },
         {
           foreign:
             'Ένα πιρούνι και ένα μαχαίρι, παρακαλώ. (EHnah peeROOnee keh EHnah mahHEHree, pahrahkahLOH)',
@@ -1102,7 +1195,11 @@ export const allPhrases = {
         },
         { foreign: 'όλα (OHlah)', english: 'everything' },
         { foreign: 'Όλα καλά; (OHlah kahLAH?)', english: 'Is everything alright?' },
-        { foreign: 'Ναι, όλα καλά. (neh, OHlah kahLAH)', english: 'Yes, everything is alright.' },
+        {
+          foreign: 'Ναι, όλα καλά. (neh, OHlah kahLAH)',
+          english: 'Yes, everything is alright.',
+          working_on: true,
+        },
         { foreign: 'το φαγητό (toh fahyeeTOH)', english: 'the food; the dish' },
         {
           foreign: 'νόστιμος (NOHsteemohs)',
@@ -1113,6 +1210,8 @@ export const allPhrases = {
         {
           foreign: 'Το φαγητό είναι νόστιμο. (toh fahyeeTOH EEneh NOHsteemoh)',
           english: 'The food is delicious.',
+          hard: true,
+          working_on: true,
         },
         {
           foreign: 'Το φαγητό είναι πολύ νόστιμο. (toh fahyeeTOH EEneh pohLEE NOHsteemoh)',
