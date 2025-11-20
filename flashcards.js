@@ -14,7 +14,10 @@ const menu = `
 Choose an option:
 ${Object.keys(allPhrases)
   .filter((unit) => unit !== 'custom')
-  .map((unit, index) => `${index + 1}. Unit ${index + 1}`)
+  .map(
+    (unit, index) =>
+      `${index + 1}. Unit ${index + 1}${allPhrases[unit].name ? `: ${allPhrases[unit].name}` : ''}`,
+  )
   .join('\n')}
 A. All phrases
 H. Hard phrases
@@ -42,6 +45,9 @@ function checkDupes() {
 
   for (let unit in allPhrases) {
     for (let chapter in allPhrases[unit]) {
+      if (chapter === 'name') {
+        continue;
+      }
       for (let lesson in allPhrases[unit][chapter]) {
         if (lesson === 'name') {
           continue;
@@ -110,6 +116,7 @@ function showChapterMenu() {
   const chapterMenu = `
 Choose a chapter:
 ${Object.keys(allPhrases[currentUnit])
+  .filter((chapter) => chapter !== 'name')
   .map((chapter, index) => {
     return `${index + 1}. Chapter ${index + 1}: ${allPhrases[currentUnit][chapter].name}`;
   })
@@ -206,9 +213,13 @@ function startFlashcards() {
           : nextUnit
             ? '(N)ext lesson, '
             : '';
+    const unitName =
+      currentUnit && allPhrases[currentUnit] && allPhrases[currentUnit].name
+        ? `- “${allPhrases[currentUnit].name}”\n`
+        : '';
     const name = currentChapter ? `- “${allPhrases[currentUnit][currentChapter].name}”\n` : '';
     console.log(
-      `\nStarting ${nameOf(currentUnit)}${nameOf(currentChapter)}${nameOf(currentLesson)}${name}`,
+      `\nStarting ${nameOf(currentUnit)}${unitName}${nameOf(currentChapter)}${nameOf(currentLesson)}${name}`,
     );
     setupPhrases().then(() => {
       showNextFlashcard();
@@ -226,6 +237,9 @@ async function setupPhrases() {
   if (['all', 'hard', 'working_on'].includes(currentUnit)) {
     for (let unit in allPhrases) {
       for (let chapter in allPhrases[unit]) {
+        if (chapter === 'name') {
+          continue;
+        }
         for (let lesson in allPhrases[unit][chapter]) {
           if (lesson === 'name') {
             continue;
@@ -474,8 +488,12 @@ function calcNextLesson() {
   const chapterNum = parseInt(currentChapter.slice(7), 10);
   const lessonNum = parseInt(currentLesson.slice(6), 10);
 
+  const numChapters = allPhrases[currentUnit].name
+    ? Object.keys(allPhrases[currentUnit]).length - 1
+    : Object.keys(allPhrases[currentUnit]).length;
+
   if (currentLesson === 'all' || currentLesson === 'hard') {
-    if (chapterNum < Object.keys(allPhrases[currentUnit]).length) {
+    if (chapterNum < numChapters) {
       // Do 'all' or 'hard' in the next chapter of this unit
       return [currentUnit, `chapter${chapterNum + 1}`, currentLesson];
     }
@@ -491,7 +509,8 @@ function calcNextLesson() {
     return [currentUnit, currentChapter, `lesson${lessonNum + 1}`];
   }
 
-  if (chapterNum < Object.keys(allPhrases[currentUnit]).length) {
+  // If current unit has a name, don't count it as a chapter
+  if (chapterNum < numChapters) {
     // Do the first lesson in the next chapter of this unit
     const nextChapter = `chapter${chapterNum + 1}`;
     return [currentUnit, nextChapter, Object.keys(allPhrases[currentUnit][nextChapter])[1]];

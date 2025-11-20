@@ -4,6 +4,7 @@
 export const allPhrases = {
   custom: {},
   unit1: {
+    name: 'Introductions',
     chapter1: {
       name: 'Salutations and Small Talk',
       lesson1: [
