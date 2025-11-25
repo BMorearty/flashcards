@@ -82,6 +82,26 @@ export const allPhrases = {
         { foreign: '¡Qué día tan húmedo!', english: 'What a humid day!' },
         { foreign: '¡Qué noche tan húmeda!', english: 'What a humid night!' },
       ],
+      lesson6: [
+        { foreign: 'Que tenga un buen día.', english: 'Have a good day.' },
+        { foreign: 'un día', english: 'a day' },
+        { foreign: 'bueno', english: 'good' },
+        { foreign: 'un buen día', english: 'a good day' },
+        {
+          foreign: 'que',
+          english:
+            'that (the subordinate conjunction “that” as in, “I hope that you have a good day.”)',
+        },
+        { foreign: 'tener', english: 'to have' },
+        { foreign: 'tenga', english: '(you) have [subjunctive] (formal)' },
+        { foreign: 'lunes', english: 'Monday' },
+        { foreign: '¡Que tenga un buen lunes!', english: 'Have a good Monday!' },
+        { foreign: 'Igualmente.', english: 'Likewise.' },
+        { foreign: 'ver', english: 'to see' },
+        { foreign: 'Nos vemos.', english: 'See you.' },
+        { foreign: 'el martes', english: 'on Tuesday' },
+        { foreign: 'Nos vemos el martes.', english: 'See you on Tuesday.' },
+      ],
     },
   },
 };
