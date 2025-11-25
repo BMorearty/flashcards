@@ -75,6 +75,13 @@ export const allPhrases = {
         { foreign: 'la mañana calurosa', english: 'the hot morning', hard: true },
         { foreign: 'La mañana está calurosa.', english: 'The morning is hot.', hard: true },
       ],
+      lesson5: [
+        { foreign: 'noche', english: 'night' },
+        { foreign: '¡Qué noche tan calurosa!', english: 'What a hot night!' },
+        { foreign: 'húmedo', english: 'humid' },
+        { foreign: '¡Qué día tan húmedo!', english: 'What a humid day!' },
+        { foreign: '¡Qué noche tan húmeda!', english: 'What a humid night!' },
+      ],
     },
   },
 };
