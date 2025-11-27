@@ -2,7 +2,17 @@
  */
 
 export const allPhrases = {
-  custom: {},
+  custom: {
+    chapter1: {
+      name: 'Random vocab',
+      lesson1: [
+        { foreign: 'largo', english: 'long', working_on: true },
+        { foreign: 'Tenga cuidado.', english: 'Be careful. (formal) (to male)', working_on: true },
+        { foreign: 'aquí', english: 'here', working_on: true },
+        { foreign: 'tiempo', english: 'weather', working_on: true },
+      ],
+    },
+  },
   unit1: {
     name: 'Introductions',
     chapter1: {
