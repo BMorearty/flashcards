@@ -13,7 +13,7 @@ checkDupes();
 const menu = `
 Choose an option:
 ${Object.keys(allPhrases)
-  .filter((unit) => unit !== 'custom')
+  .filter((unit) => unit !== 'custom' && unit !== 'genders')
   .map(
     (unit, index) =>
       `${index + 1}. Unit ${index + 1}${allPhrases[unit].name ? `: ${allPhrases[unit].name}` : ''}`,
@@ -23,19 +23,18 @@ A. All phrases
 H. Hard phrases
 W. Working on
 C. Custom phrases
+G. Genders
 Q. Quit
 `;
 
 let currentUnit = null;
 let currentChapter = null;
 let currentLesson = null;
-let showEnglish = true;
 let phrases;
 let lastPhrase = null;
 let wrongPhrases;
 let phraseIndex;
 let shownPhrases = new Set();
-let prevNextPrompt;
 let prevUnit, prevChapter, prevLesson, nextUnit, nextChapter, nextLesson;
 let showUnseen;
 
@@ -100,6 +99,13 @@ function handleMenuChoice(choice) {
   if (choice.toLowerCase() === 'c') {
     currentUnit = 'custom';
     showChapterMenu();
+    return;
+  }
+  if (choice.toLowerCase() === 'g') {
+    currentUnit = 'genders';
+    currentChapter = 'chapter1';
+    currentLesson = 'lesson1';
+    startFlashcards();
     return;
   }
   const choiceNum = parseInt(choice, 10);
@@ -197,34 +203,41 @@ Q. Quit
 }
 
 function startFlashcards() {
-  rl.question('\nDo you want to see English phrases\nor foreign phrases? (E/f): ', (answer) => {
-    if (answer.toLowerCase() === 'q') {
-      rl.close();
-      return;
-    }
-    showEnglish = answer.toLowerCase() !== 'f';
-    [prevUnit, prevChapter, prevLesson] = calcPrevLesson();
-    [nextUnit, nextChapter, nextLesson] = calcNextLesson();
-    prevNextPrompt =
-      prevUnit && nextUnit
-        ? '(P)rev / (N)ext lesson, '
-        : prevUnit
-          ? '(P)rev lesson, '
-          : nextUnit
-            ? '(N)ext lesson, '
-            : '';
-    const unitName =
-      currentUnit && allPhrases[currentUnit] && allPhrases[currentUnit].name
-        ? `- “${allPhrases[currentUnit].name}”\n`
-        : '';
-    const name = currentChapter ? `- “${allPhrases[currentUnit][currentChapter].name}”\n` : '';
-    console.log(
-      `\nStarting ${nameOf(currentUnit)}${unitName}${nameOf(currentChapter)}${nameOf(currentLesson)}${name}`,
-    );
+  if (currentUnit === 'genders') {
+    console.log(`\nStarting genders`);
     setupPhrases().then(() => {
-      showNextFlashcard();
+      showNextFlashcard(undefined, false, '');
     });
-  });
+  } else {
+    rl.question('\nDo you want to see English phrases\nor foreign phrases? (E/f): ', (answer) => {
+      if (answer.toLowerCase() === 'q') {
+        rl.close();
+        return;
+      }
+      const showEnglish = answer.toLowerCase() !== 'f';
+      [prevUnit, prevChapter, prevLesson] = calcPrevLesson();
+      [nextUnit, nextChapter, nextLesson] = calcNextLesson();
+      const prevNextPrompt =
+        prevUnit && nextUnit
+          ? '(P)rev / (N)ext lesson, '
+          : prevUnit
+            ? '(P)rev lesson, '
+            : nextUnit
+              ? '(N)ext lesson, '
+              : '';
+      const unitName =
+        currentUnit && allPhrases[currentUnit] && allPhrases[currentUnit].name
+          ? `- “${allPhrases[currentUnit].name}”\n`
+          : '';
+      const name = currentChapter ? `- “${allPhrases[currentUnit][currentChapter].name}”\n` : '';
+      console.log(
+        `\nStarting ${nameOf(currentUnit)}${unitName}${nameOf(currentChapter)}${nameOf(currentLesson)}${name}`,
+      );
+      setupPhrases().then(() => {
+        showNextFlashcard(undefined, showEnglish, prevNextPrompt);
+      });
+    });
+  }
 }
 
 async function setupPhrases() {
@@ -288,7 +301,7 @@ async function setupPhrases() {
   }
 }
 
-function showNextFlashcard(phrase) {
+function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
   let randomPhrase;
   if (phrase) {
     randomPhrase = phrase;
@@ -334,7 +347,7 @@ function showNextFlashcard(phrase) {
       if (answer.toLowerCase() === 'p') {
         if (!prevUnit) {
           console.log(chalk.red('No previous lesson.'));
-          showNextFlashcard(randomPhrase);
+          showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
           return;
         }
         [currentUnit, currentChapter, currentLesson] = [prevUnit, prevChapter, prevLesson];
@@ -344,7 +357,7 @@ function showNextFlashcard(phrase) {
       if (answer.toLowerCase() === 'n') {
         if (!nextUnit) {
           console.log(chalk.red('No next lesson.'));
-          showNextFlashcard(randomPhrase);
+          showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
           return;
         }
         [currentUnit, currentChapter, currentLesson] = [nextUnit, nextChapter, nextLesson];
@@ -354,7 +367,7 @@ function showNextFlashcard(phrase) {
       if (answer.toLowerCase() === 'u') {
         if (shownPhrases.size >= phrases.length) {
           console.log(chalk.red('There are no unseen phrases.'));
-          showNextFlashcard(randomPhrase);
+          showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
           return;
         } else {
           showUnseen = true;
@@ -363,7 +376,7 @@ function showNextFlashcard(phrase) {
       }
       if (answer.toLowerCase() === 'h' && lastPhrase) {
         addHard(lastPhrase).then(() => {
-          showNextFlashcard(randomPhrase);
+          showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
         });
         return;
       }
@@ -371,12 +384,12 @@ function showNextFlashcard(phrase) {
         if (!wrongPhrases.map((phrase) => phrase.foreign).includes(lastPhrase.foreign)) {
           wrongPhrases.push(lastPhrase);
         }
-        showNextFlashcard(randomPhrase);
+        showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
         return;
       }
       if (answer.toLowerCase() === 'r' && lastPhrase) {
         wrongPhrases = wrongPhrases.filter((phrase) => phrase.foreign !== lastPhrase.foreign);
-        showNextFlashcard(randomPhrase);
+        showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
         return;
       }
       // If I typed a phrase, don't erase what I typed. I want to compare it to the correct answer.
@@ -390,7 +403,7 @@ function showNextFlashcard(phrase) {
       }
       phraseIndex++;
       lastPhrase = randomPhrase;
-      showNextFlashcard();
+      showNextFlashcard(undefined, showEnglish, prevNextPrompt);
     },
   );
 }

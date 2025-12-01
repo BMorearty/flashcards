@@ -41,6 +41,56 @@ export const allPhrases = {
       ],
     },
   },
+  genders: {
+    chapter1: {
+      lesson1: [
+        {
+          foreign: '-a',
+          english: 'Feminine. Ejemplo: la gata (girl cat), la manzana (apple). Excepción: el día.',
+        },
+        {
+          foreign: '-ad, -ed, -id, -ud',
+          english:
+            'Feminine. Ejemplo: la amistad (friendship), la pared (wall), la salud (health).',
+        },
+        { foreign: '-ción', english: 'Feminine. Ejemplo: la canción, la emoción, la situación.' },
+        { foreign: '-eza', english: 'Feminine. Ejemplo: la tristeza (sadness), la cabeza (head).' },
+        { foreign: '-is', english: 'Feminine. Ejemplo: la crisis, la otitis' },
+        {
+          foreign: '-z',
+          english:
+            'Feminine. Ejemplo: la cruz (cross), la nariz (nose). Excepción: el lápiz (pencil), el arroz (rice)',
+        },
+        {
+          foreign: 'Las letras del abecedario',
+          english: 'Feminine. Ejemplo: la a, la b, la c, ...',
+        },
+        { foreign: '-o', english: 'Masculine. Ejemplo: el banco. Excepción:  la mano' },
+        {
+          foreign: '-ar, -er, -or',
+          english:
+            'Masculine. Ejemplo: el titular (owner), el computador, el taller (shop). Excepción: la flor (flower).',
+        },
+        {
+          foreign: '-ma',
+          english: 'Masculine. Ejemplo: el clima (weather), el problema, el sistema.',
+        },
+        { foreign: '-y', english: 'Masculine. Ejemplo: el buey (ox). Excepción: la ley (law).' },
+        { foreign: '-x', english: 'Masculine. Ejemplo: el tórax (thorax).' },
+        { foreign: '-al', english: 'Masculine. Ejemplo: el hospital, el terminal.' },
+        {
+          foreign: 'Los días de la semana',
+          english: 'Masculine. El lunes, el martes, el miércoles, ...',
+        },
+        {
+          foreign: 'Los puntos cardinales',
+          english: 'Masculine. El norte, el sur, el esta, el oeste',
+        },
+        { foreign: 'Los mesos', english: 'Masculine. El enero, el febrero, el marzo, ...' },
+        { foreign: 'Los números', english: 'Masculine. El uno, el dos, el tres, ...' },
+      ],
+    },
+  },
   unit1: {
     name: 'Introductions',
     chapter1: {
