@@ -9,6 +9,7 @@ const rl = readline.createInterface({
 });
 
 checkDupes();
+addShowEnglish();
 
 const menu = `
 Choose an option:
@@ -48,7 +49,7 @@ function checkDupes() {
         continue;
       }
       for (let lesson in allPhrases[unit][chapter]) {
-        if (lesson === 'name') {
+        if (['name', 'showEnglish'].includes(lesson)) {
           continue;
         }
         for (let phrase of allPhrases[unit][chapter][lesson]) {
@@ -66,6 +67,27 @@ function checkDupes() {
     console.log(chalk.red('Duplicate phrases found: '));
     console.log('  ' + dupes.join('\n  ') + '\n\n');
     process.exit(1);
+  }
+}
+
+// Copy 'showEnglish' prop down into each phrase
+function addShowEnglish() {
+  for (let unit in allPhrases) {
+    for (let chapter in allPhrases[unit]) {
+      if (chapter === 'name') {
+        continue;
+      }
+      for (let lesson in allPhrases[unit][chapter]) {
+        if (['name', 'showEnglish'].includes(lesson)) {
+          continue;
+        }
+        for (let phrase of allPhrases[unit][chapter][lesson]) {
+          if ('showEnglish' in allPhrases[unit][chapter]) {
+            phrase.showEnglish = allPhrases[unit][chapter].showEnglish;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -103,13 +125,13 @@ function handleMenuChoice(choice) {
   }
   if (choice.toLowerCase() === 'g') {
     currentUnit = 'genders';
-    currentChapter = 'chapter1';
-    currentLesson = 'lesson1';
-    startFlashcards();
+    showChapterMenu();
     return;
   }
   const choiceNum = parseInt(choice, 10);
-  if (choiceNum > 0 && choiceNum <= Object.keys(allPhrases).length - 1) {
+  const { name, genders, ...unitKeys } = allPhrases;
+  const numUnits = Object.keys(unitKeys).length;
+  if (choiceNum > 0 && choiceNum <= numUnits - 1) {
     currentUnit = `unit${choiceNum}`;
     showChapterMenu();
     return;
@@ -141,7 +163,9 @@ Q. Quit
       return;
     }
     const choiceNum = parseInt(choice, 10);
-    if (choiceNum > 0 && choiceNum <= Object.keys(allPhrases[currentUnit]).length) {
+    const { name, ...chapterKeys } = allPhrases[currentUnit];
+    const numChapters = Object.keys(chapterKeys).length;
+    if (choiceNum > 0 && choiceNum <= numChapters) {
       currentChapter = `chapter${choiceNum}`;
       showLessonMenu();
       return;
@@ -152,14 +176,16 @@ Q. Quit
 }
 
 function showLessonMenu() {
+  let skipped = 0;
   const lessonMenu = `
 Choose a lesson:
 ${Object.keys(allPhrases[currentUnit][currentChapter])
   .map((lesson, index) => {
-    if (lesson === 'name') {
+    if (['name', 'showEnglish'].includes(lesson)) {
+      skipped++;
       return null;
     }
-    return `${index}. Lesson ${index}`;
+    return `${index + 1 - skipped}. Lesson ${index + 1 - skipped}`;
   })
   .filter(Boolean)
   .join('\n')}
@@ -191,7 +217,7 @@ Q. Quit
     const choiceNum = parseInt(choice, 10);
     if (
       choiceNum > 0 &&
-      choiceNum <= Object.keys(allPhrases[currentUnit][currentChapter]).length - 1
+      choiceNum <= Object.keys(allPhrases[currentUnit][currentChapter]).length - skipped
     ) {
       currentLesson = `lesson${choiceNum}`;
       startFlashcards();
@@ -203,41 +229,52 @@ Q. Quit
 }
 
 function startFlashcards() {
-  if (currentUnit === 'genders') {
-    console.log(`\nStarting genders`);
-    setupPhrases().then(() => {
-      showNextFlashcard(undefined, false, '');
-    });
-  } else {
-    rl.question('\nDo you want to see English phrases\nor foreign phrases? (E/f): ', (answer) => {
+  let showEnglish;
+  if ('showEnglish' in (allPhrases?.[currentUnit]?.[currentChapter] ?? {})) {
+    showEnglish = allPhrases[currentUnit][currentChapter].showEnglish;
+  }
+  if (typeof showEnglish === 'undefined') {
+    rl.question(`\nDo you want to see English phrases\nor foreign phrases? (E/f)): `, (answer) => {
       if (answer.toLowerCase() === 'q') {
         rl.close();
         return;
       }
       const showEnglish = answer.toLowerCase() !== 'f';
-      [prevUnit, prevChapter, prevLesson] = calcPrevLesson();
-      [nextUnit, nextChapter, nextLesson] = calcNextLesson();
-      const prevNextPrompt =
-        prevUnit && nextUnit
-          ? '(P)rev / (N)ext lesson, '
-          : prevUnit
-            ? '(P)rev lesson, '
-            : nextUnit
-              ? '(N)ext lesson, '
-              : '';
-      const unitName =
-        currentUnit && allPhrases[currentUnit] && allPhrases[currentUnit].name
-          ? `- “${allPhrases[currentUnit].name}”\n`
-          : '';
-      const name = currentChapter ? `- “${allPhrases[currentUnit][currentChapter].name}”\n` : '';
-      console.log(
-        `\nStarting ${nameOf(currentUnit)}${unitName}${nameOf(currentChapter)}${nameOf(currentLesson)}${name}`,
-      );
-      setupPhrases().then(() => {
-        showNextFlashcard(undefined, showEnglish, prevNextPrompt);
-      });
+      setupPrompts(showEnglish);
     });
+  } else {
+    setupPrompts(showEnglish);
   }
+}
+
+function setupPrompts(showEnglish) {
+  [prevUnit, prevChapter, prevLesson] = calcPrevLesson();
+  [nextUnit, nextChapter, nextLesson] = calcNextLesson();
+  const prevNextPrompt =
+    prevUnit && nextUnit
+      ? '(P)rev / (N)ext lesson, '
+      : prevUnit
+        ? '(P)rev lesson, '
+        : nextUnit
+          ? '(N)ext lesson, '
+          : '';
+  const unitName =
+    currentUnit && allPhrases[currentUnit] && allPhrases[currentUnit].name
+      ? `- “${allPhrases[currentUnit].name}”\n`
+      : '';
+  const name = currentChapter ? `- “${allPhrases[currentUnit][currentChapter].name}”\n` : '';
+  console.log(
+    `\nStarting ${nameOf(currentUnit)}${unitName}${nameOf(currentChapter)}${nameOf(currentLesson)}${name}`,
+  );
+  setupPhrases().then(() => {
+    if (phrases.length === 0) {
+      console.log(chalk.red('No phrases found.'));
+      // currentUnit = currentChapter = currentLesson = null;
+      showMenu();
+      return;
+    }
+    showNextFlashcard(undefined, showEnglish, prevNextPrompt);
+  });
 }
 
 async function setupPhrases() {
@@ -254,7 +291,7 @@ async function setupPhrases() {
           continue;
         }
         for (let lesson in allPhrases[unit][chapter]) {
-          if (lesson === 'name') {
+          if (['name', 'showEnglish'].includes(lesson)) {
             continue;
           }
           if (currentUnit === 'hard') {
@@ -277,14 +314,14 @@ async function setupPhrases() {
     }
   } else if (currentLesson === 'all') {
     for (let lesson in allPhrases[currentUnit][currentChapter]) {
-      if (lesson === 'name') {
+      if (['name', 'showEnglish'].includes(lesson)) {
         continue;
       }
       phrases = phrases.concat(allPhrases[currentUnit][currentChapter][lesson]);
     }
   } else if (currentLesson === 'hard') {
     for (let lesson in allPhrases[currentUnit][currentChapter]) {
-      if (lesson === 'name') {
+      if (['name', 'showEnglish'].includes(lesson)) {
         continue;
       }
       phrases = phrases.concat(
@@ -319,8 +356,9 @@ function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
     ? '  (wrong before)'
     : '';
   shownPhrases.add(randomPhrase.foreign);
+  const englishNow = 'showEnglish' in randomPhrase ? randomPhrase.showEnglish : showEnglish;
   console.log(
-    `  ${chalk.yellow((showEnglish ? randomPhrase.english : randomPhrase.foreign).replaceAll(/\| */g, '\n  '))}`,
+    `  ${chalk.yellow((englishNow ? randomPhrase.english : randomPhrase.foreign).replaceAll(/\| */g, '\n  '))}`,
   );
   const shownPhrasesCounter = Math.min(shownPhrases.size, phrases.length);
   const anyMoreUnseen = shownPhrases.size < phrases.length;
@@ -395,7 +433,7 @@ function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
       // If I typed a phrase, don't erase what I typed. I want to compare it to the correct answer.
       const moveUpAndClearLine = answer === '' ? '\u001b[1A\u001b[K' : '';
       console.log(
-        `${moveUpAndClearLine}${moveUpAndClearLine}${secondPromptLine ? moveUpAndClearLine : ''}    ${chalk.green((showEnglish ? randomPhrase.foreign : randomPhrase.english).replaceAll(/\| */g, '\n    '))}${hard}${wrong}`,
+        `${moveUpAndClearLine}${moveUpAndClearLine}${secondPromptLine ? moveUpAndClearLine : ''}    ${chalk.green((englishNow ? randomPhrase.foreign : randomPhrase.english).replaceAll(/\| */g, '\n    '))}${hard}${wrong}`,
       );
       if (shownPhrases.size === phrases.length) {
         console.log(chalk.cyanBright.underline('All phrases have been shown.'));
@@ -445,7 +483,7 @@ async function addHard(phrase) {
 
 function calcPrevLesson() {
   if (!(currentUnit.startsWith('unit') || currentUnit === 'custom')) {
-    // Unit is 'all' or 'hard'
+    // Unit is 'all', 'hard'
     return [null, null, null];
   }
 
@@ -493,7 +531,7 @@ function calcPrevLesson() {
 
 function calcNextLesson() {
   if (!(currentUnit.startsWith('unit') || currentUnit === 'custom')) {
-    // Unit is 'all', 'hard', or 'custom'
+    // Unit is 'all', 'hard'
     return [null, null, null];
   }
 
