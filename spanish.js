@@ -14,6 +14,13 @@ export const allPhrases = {
         },
         { foreign: 'aquí', english: 'here', working_on: true },
         { foreign: 'tiempo', english: 'weather', working_on: true },
+        {
+          foreign: '¿Qué significa esa palabra?',
+          english: 'What does that word mean?',
+          working_on: true,
+        },
+        { foreign: 'Suena bien.', english: 'Sounds good.', working_on: true },
+        { foreign: 'sin embargo', english: 'however', working_on: true },
       ],
     },
     chapter2: {
