@@ -129,7 +129,7 @@ export const allPhrases = {
             'Feminine. Ejemplo: la cruz (cross), la nariz (nose). Excepción: el lápiz (pencil), el arroz (rice)',
         },
         {
-          foreign: 'Las letras del abecedario',
+          foreign: 'letras del abecedario',
           english: 'Feminine. Ejemplo: la a, la b, la c, ...',
         },
         { foreign: '-o', english: 'Masculine. Ejemplo: el banco. Excepción: la mano, la foto' },
@@ -149,15 +149,15 @@ export const allPhrases = {
         { foreign: '-x', english: 'Masculine. Ejemplo: el tórax (thorax).' },
         { foreign: '-al', english: 'Masculine. Ejemplo: el hospital, el terminal.' },
         {
-          foreign: 'Los días de la semana',
+          foreign: 'días de la semana',
           english: 'Masculine. El lunes, el martes, el miércoles, ...',
         },
         {
-          foreign: 'Los puntos cardinales',
+          foreign: 'puntos cardinales',
           english: 'Masculine. El norte, el sur, el esta, el oeste',
         },
-        { foreign: 'Los mesos', english: 'Masculine. El enero, el febrero, el marzo, ...' },
-        { foreign: 'Los números', english: 'Masculine. El uno, el dos, el tres, ...' },
+        { foreign: 'mesos', english: 'Masculine. El enero, el febrero, el marzo, ...' },
+        { foreign: 'números', english: 'Masculine. El uno, el dos, el tres, ...' },
       ],
     },
     chapter2: {
