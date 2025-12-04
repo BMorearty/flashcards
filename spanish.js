@@ -162,6 +162,16 @@ export const allPhrases = {
         },
       ],
     },
+    chapter7: {
+      name: 'Seasons',
+      lesson1: [
+        { foreign: 'estación(es)', english: 'season(s)', working_on: true },
+        { foreign: 'invierno', english: 'winter', working_on: true },
+        { foreign: 'primavera', english: 'spring', working_on: true },
+        { foreign: 'verano', english: 'summer', working_on: true },
+        { foreign: 'otoño', english: 'fall / autumn', working_on: true },
+      ],
+    },
   },
   genders: {
     chapter1: {
