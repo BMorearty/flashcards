@@ -31,11 +31,11 @@ export const allPhrases = {
       lesson1: [
         { foreign: 'lunes', english: 'Monday' },
         { foreign: 'martes', english: 'Tuesday' },
-        { foreign: 'miércoles', english: 'Wednesday', working_on: true },
+        { foreign: 'miércoles', english: 'Wednesday' },
         { foreign: 'jueves', english: 'Thursday', working_on: true },
-        { foreign: 'viernes', english: 'Friday', working_on: true },
-        { foreign: 'sábado', english: 'Saturday', working_on: true },
-        { foreign: 'domingo', english: 'Sunday', working_on: true },
+        { foreign: 'viernes', english: 'Friday' },
+        { foreign: 'sábado', english: 'Saturday' },
+        { foreign: 'domingo', english: 'Sunday' },
       ],
     },
     chapter3: {
@@ -145,6 +145,7 @@ export const allPhrases = {
             '| (vosotros / vosotras) estáis' +
             '| (ellos / ellas / ustedes) están',
           english: 'to be (position, location, action, condition, emotion):| I am, you are, etc.',
+          working_on: true,
         },
         {
           foreign:
@@ -157,6 +158,7 @@ export const allPhrases = {
             '| (ellos / ellas / ustedes) son',
           english:
             'to be (date/day, occupation, characteristic/class, time, origin, relation/religion):| I am, you are, etc.',
+          working_on: true,
         },
       ],
     },
