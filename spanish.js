@@ -23,6 +23,7 @@ export const allPhrases = {
         { foreign: 'sin embargo', english: 'however', working_on: true },
         { foreign: 'ambos', english: 'both', working_on: true },
         { foreign: 'entonces', english: 'so / then (like French alors)', working_on: true },
+        { foreign: 'estadounidense/es', english: 'American' },
       ],
     },
     chapter2: {
@@ -128,6 +129,34 @@ export const allPhrases = {
         {
           foreign: 'ustedes',
           english: 'you (formal plural in Spain; both formal and informal plural in Latin America)',
+        },
+      ],
+    },
+    chapter6: {
+      name: 'Verb conjugations',
+      lesson1: [
+        {
+          foreign:
+            'estar, present tense:' +
+            '| (yo) estoy' +
+            '| (tú) estás' +
+            '| (él, ella, usted) está' +
+            '| (nosotros / nosotras) estamos' +
+            '| (vosotros / vosotras) estáis' +
+            '| (ellos / ellas / ustedes) están',
+          english: 'to be (position, location, action, condition, emotion):| I am, you are, etc.',
+        },
+        {
+          foreign:
+            'ser, present tense:' +
+            '| (yo) soy' +
+            '| (tú) eres' +
+            '| (él, ella, usted) es' +
+            '| (nosotros / nosotras) somos' +
+            '| (vosotros / vosotras) sóis' +
+            '| (ellos / ellas / ustedes) son',
+          english:
+            'to be (date/day, occupation, characteristic/class, time, origin, relation/religion):| I am, you are, etc.',
         },
       ],
     },
