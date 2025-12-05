@@ -482,7 +482,7 @@ async function addHard(phrase) {
 }
 
 function calcPrevLesson() {
-  if (!(currentUnit.startsWith('unit') || currentUnit === 'custom')) {
+  if (!(currentUnit.startsWith('unit') || currentUnit === 'custom' || currentUnit === 'genders')) {
     // Unit is 'all', 'hard'
     return [null, null, null];
   }
@@ -504,7 +504,7 @@ function calcPrevLesson() {
         currentLesson,
       ];
     }
-    // Currently at unit 1 or custom, chapter 1. There is no previous.
+    // Currently at unit 1 or custom or genders, chapter 1. There is no previous.
     return [null, null, null];
   }
 
@@ -530,7 +530,7 @@ function calcPrevLesson() {
 }
 
 function calcNextLesson() {
-  if (!(currentUnit.startsWith('unit') || currentUnit === 'custom')) {
+  if (!(currentUnit.startsWith('unit') || currentUnit === 'custom' || currentUnit === 'genders')) {
     // Unit is 'all', 'hard'
     return [null, null, null];
   }
@@ -539,16 +539,20 @@ function calcNextLesson() {
   const chapterNum = parseInt(currentChapter.slice(7), 10);
   const lessonNum = parseInt(currentLesson.slice(6), 10);
 
-  const numChapters = allPhrases[currentUnit].name
-    ? Object.keys(allPhrases[currentUnit]).length - 1
-    : Object.keys(allPhrases[currentUnit]).length;
+  const numUnits = Object.keys(allPhrases).filter((un) => un.startsWith('unit')).length;
+  const numChapters = Object.keys(allPhrases[currentUnit]).filter((ch) =>
+    ch.startsWith('chapter'),
+  ).length;
+  const numLessons = Object.keys(allPhrases[currentUnit][currentChapter]).filter((les) =>
+    les.startsWith('lesson'),
+  ).length;
 
   if (currentLesson === 'all' || currentLesson === 'hard') {
     if (chapterNum < numChapters) {
       // Do 'all' or 'hard' in the next chapter of this unit
       return [currentUnit, `chapter${chapterNum + 1}`, currentLesson];
     }
-    if (unitNum && unitNum < Object.keys(allPhrases).length) {
+    if (unitNum && unitNum < numUnits) {
       // Do 'all' or 'hard' in the first chapter of the next unit
       return [`unit${unitNum + 1}`, 'chapter1', currentLesson];
     }
@@ -556,7 +560,7 @@ function calcNextLesson() {
     return [null, null, null];
   }
 
-  if (lessonNum < Object.keys(allPhrases[currentUnit][currentChapter]).length - 1) {
+  if (lessonNum < numLessons) {
     return [currentUnit, currentChapter, `lesson${lessonNum + 1}`];
   }
 
@@ -567,7 +571,10 @@ function calcNextLesson() {
     return [currentUnit, nextChapter, Object.keys(allPhrases[currentUnit][nextChapter])[1]];
   }
 
-  if (currentUnit !== 'custom' && currentUnit !== Object.keys(allPhrases).at(-1)) {
+  if (
+    !['custom', 'genders'].includes(currentUnit) &&
+    currentUnit !== Object.keys(allPhrases).at(-1)
+  ) {
     // Do the first lesson in the first chapter of the next unit
     const nextUnit = `unit${unitNum + 1}`;
     return [nextUnit, 'chapter1', Object.keys(allPhrases[nextUnit].chapter1)[1]];
