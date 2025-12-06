@@ -218,7 +218,11 @@ export const allPhrases = {
           english: 'Masculine. Ejemplo: el rey (king), el buey (ox). Excepción: la ley (law).',
         },
         { foreign: '-x', english: 'Masculine. Ejemplo: el tórax (thorax).' },
-        { foreign: '-al', english: 'Masculine. Ejemplo: el hospital, el terminal.' },
+        {
+          foreign: '-al',
+          english: 'Masculine. Ejemplo: el hospital, el terminal.',
+          working_on: true,
+        },
         {
           foreign: 'días de la semana',
           english: 'Masculine. El lunes, el martes, el miércoles, ...',
