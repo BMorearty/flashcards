@@ -258,7 +258,7 @@ export const allPhrases = {
         { foreign: 'la c', english: 'the c' },
         { foreign: 'el banco', english: 'the bank' },
         { foreign: 'la mano', english: 'the hand' },
-        { foreign: 'la foto', english: 'the photo', working_on: true },
+        { foreign: 'la foto', english: 'the photo', working_on: true, hard: true },
         { foreign: 'el titular', english: 'the owner' },
         { foreign: 'el computador/la computadora', english: 'the computer' },
         { foreign: 'el taller', english: 'the shop', working_on: true },
