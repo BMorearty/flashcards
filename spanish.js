@@ -109,7 +109,7 @@ export const allPhrases = {
           working_on: true,
         },
         { foreign: 'travieso', english: 'mischievous', working_on: true },
-        { foreign: 'avergonzado', english: 'ashamed', working_on: true },
+        { foreign: 'avergonzado', english: 'ashamed', working_on: true, hard: true },
         { foreign: 'Eso es verdad.', english: 'That’s true.', working_on: true },
         { foreign: 'Eso es falso.', english: 'That’s false.', working_on: true },
       ],
