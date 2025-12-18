@@ -1,4 +1,8 @@
 /*
+ Verbo ESTAR: https://docs.google.com/presentation/d/1EgpZ_7aTz-3PkhxYvJh4LOxi5-UsBuy2/edit?slide=id.p2#slide=id.p2
+   PLACE: Position, Location, Action, Condition, Emotion
+ Verbo SER:   https://docs.google.com/presentation/d/1EgpZ_7aTz-3PkhxYvJh4LOxi5-UsBuy2/edit?slide=id.p6#slide=id.p6
+   DOCTOR: Date/Day, Occupation, Characteristic/Class, Time, Origin, Relation/Religion
  */
 
 export const allPhrases = {
@@ -233,7 +237,8 @@ export const allPhrases = {
             '| (nosotros / nosotras) estamos' +
             '| (vosotros / vosotras) estáis' +
             '| (ellos / ellas / ustedes) están',
-          english: 'to be (position, location, action, condition, emotion):| I am, you are, etc.',
+          english:
+            'to be (PLACE: position, location, action, condition, emotion):| I am, you are, etc.',
         },
         {
           foreign:
@@ -245,7 +250,7 @@ export const allPhrases = {
             '| (vosotros / vosotras) sóis' +
             '| (ellos / ellas / ustedes) son',
           english:
-            'to be (date/day, occupation, characteristic/class, time, origin, relation/religion):| I am, you are, etc.',
+            'to be (DOCTOR: date/day, occupation, characteristic/class, time, origin, relation/religion):| I am, you are, etc.',
         },
       ],
     },
@@ -257,6 +262,166 @@ export const allPhrases = {
         { foreign: 'primavera', english: 'spring' },
         { foreign: 'verano', english: 'summer', hard: true },
         { foreign: 'otoño', english: 'fall / autumn' },
+      ],
+    },
+    chapter8: {
+      name: 'Random',
+      lesson1: [
+        { foreign: 'ahora', english: 'now', working_on: true },
+        { foreign: 'así', english: 'like that / like this', working_on: true },
+      ],
+    },
+    chapter9: {
+      name: 'Present participle in present continuous tense',
+      lesson1: [
+        {
+          foreign: 'Ellos están caminando en la playa.',
+          english: 'They are walking on the beach.',
+          working_on: true,
+        },
+        {
+          foreign: 'La niña está estudiando español.',
+          english: 'The girl is studying Spanish.',
+          working_on: true,
+        },
+        {
+          foreign: 'Ella está escuchando música ahora.',
+          english: 'She is listening to music now.',
+          working_on: true,
+        },
+        {
+          foreign: 'Ellos están trabajando en la oficina.',
+          english: 'They are working in the office.',
+          working_on: true,
+        },
+        {
+          foreign: 'Ella está comiendo chocolate.',
+          english: 'She is eating chocolate.',
+          working_on: true,
+        },
+        {
+          foreign: 'La niña está haciendo la tarea.',
+          english: 'The girl is doing her homework.',
+          working_on: true,
+        },
+        {
+          foreign: 'Ella está viviendo en Nueva York.',
+          english: 'She is living in New York.',
+          working_on: true,
+        },
+        {
+          foreign: 'La niña está escribiendo en su cuaderno.',
+          english: 'The girl is writing in her notebook.',
+          working_on: true,
+        },
+        {
+          foreign: 'El gatito está durmiendo sobre la cama.',
+          english: 'The kitten is sleeping on the bed.',
+          working_on: true,
+        },
+        {
+          foreign: 'El niño está diciendo la verdad.',
+          english: 'The boy is telling the truth.',
+          working_on: true,
+        },
+        { foreign: 'La chica está leyendo.', english: 'The girl is reading.', working_on: true },
+        { foreign: 'El ladrón está huyendo.', english: 'The thief is fleeing.', working_on: true },
+        {
+          foreign: 'Están construyendo un edificio.',
+          english: 'They are building a building.',
+          working_on: true,
+        },
+        { foreign: 'Él está muriendo.', english: 'He is dying.', working_on: true },
+        {
+          foreign: 'El político está mintiendo.',
+          english: 'The politician is lying.',
+          working_on: true,
+        },
+        {
+          foreign: 'Ella está oyendo música de su cantante favorito.',
+          english: 'She is hearing music by her favorite singer.',
+          working_on: true,
+        },
+        {
+          foreign: 'Desafortunadamente, las cosas no están yendo bien en el planeta.',
+          english: 'Unfortunately, things are not going well on the planet.',
+          working_on: true,
+        },
+        {
+          foreign: 'Ellos están jugando fútbol en el parque.',
+          english: 'They are playing soccer in the park.',
+          working_on: true,
+        },
+        {
+          foreign: 'La familia está mirando la televisión.',
+          english: 'The family is watching television.',
+          working_on: true,
+        },
+        {
+          foreign: 'La lluvia está cayendo sobre el techo.',
+          english: 'The rain is falling on the roof.',
+          working_on: true,
+        },
+        {
+          foreign: 'Hoy está nevando mucho.',
+          english: 'Today it is snowing a lot.',
+          working_on: true,
+        },
+        {
+          foreign: 'El político está influyendo en la gente.',
+          english: 'The politician is influencing people.',
+          working_on: true,
+        },
+        { foreign: 'Él está cocinando.', english: 'He is cooking.', working_on: true },
+        {
+          foreign: 'Él está vistiendose para ir a la escuela.',
+          english: 'He is getting dressed to go to school.',
+          working_on: true,
+        },
+        { foreign: 'Estoy hablando.', english: 'I am speaking.', working_on: true },
+        { foreign: 'Estoy pensando.', english: 'I am thinking.', working_on: true },
+        { foreign: 'Estoy almorzando.', english: 'I am having lunch.', working_on: true },
+        { foreign: 'Estoy cenando.', english: 'I am having dinner.', working_on: true },
+        { foreign: 'Estoy bañando a mi perro.', english: 'I am bathing my dog.', working_on: true },
+        { foreign: 'Estoy bañandome.', english: 'I am taking a bath.', working_on: true },
+        {
+          foreign: 'Estoy acostando al niño.',
+          english: 'I am putting the boy to bed.',
+          working_on: true,
+        },
+        { foreign: 'Estoy acostandome.', english: 'I am going to bed.', working_on: true },
+        { foreign: 'Estoy bebiendo.', english: 'I am drinking.', working_on: true },
+        {
+          foreign: 'Estoy conociendo a un chico.',
+          english: 'I’m getting to know a guy.',
+          working_on: true,
+        },
+        {
+          foreign: 'Estoy comprendiendo esta lección.',
+          english: 'I am comprehending this lesson.',
+          working_on: true,
+        },
+        {
+          foreign: 'Estoy abriendo la puerta.',
+          english: 'I am opening the door.',
+          working_on: true,
+        },
+        {
+          foreign: 'Estoy aprendiendo español.',
+          english: 'I am learning Spanish',
+          working_on: true,
+        },
+        {
+          foreign: 'Estoy pidiendo una bebida.',
+          english: 'I’m asking for a drink.',
+          working_on: true,
+        },
+        {
+          foreign: 'Estoy repitiendo la pregunta.',
+          english: 'I am repeating the question.',
+          working_on: true,
+        },
+        { foreign: 'Estoy sonriendo.', english: 'I’m smiling.', working_on: true },
       ],
     },
   },
