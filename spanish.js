@@ -274,6 +274,7 @@ export const allPhrases = {
     chapter9: {
       name: 'Present participle in present continuous tense',
       lesson1: [
+        /* regular */
         {
           foreign: 'Ellos están caminando en la playa.',
           english: 'They are walking on the beach.',
@@ -317,6 +318,59 @@ export const allPhrases = {
           working_on: true,
         },
         {
+          foreign: 'Ellos están jugando fútbol en el parque.',
+          english: 'They are playing soccer in the park.',
+          working_on: true,
+        },
+        {
+          foreign: 'La familia está mirando la televisión.',
+          english: 'The family is watching television.',
+          working_on: true,
+        },
+        {
+          foreign: 'Hoy está nevando mucho.',
+          english: 'Today it is snowing a lot.',
+          working_on: true,
+        },
+        { foreign: 'Él está cocinando.', english: 'He is cooking.', working_on: true },
+        { foreign: 'Estoy hablando.', english: 'I am speaking.', working_on: true },
+        { foreign: 'Estoy pensando.', english: 'I am thinking.', working_on: true },
+        { foreign: 'Estoy almorzando.', english: 'I am having lunch.', working_on: true },
+        { foreign: 'Estoy cenando.', english: 'I am having dinner.', working_on: true, hard: true },
+        { foreign: 'Estoy bañando a mi perro.', english: 'I am bathing my dog.', working_on: true },
+        { foreign: 'Estoy bañandome.', english: 'I am taking a bath.', working_on: true },
+        {
+          foreign: 'Estoy acostando al niño.',
+          english: 'I am putting the boy to bed.',
+          working_on: true,
+          hard: true,
+        },
+        { foreign: 'Estoy acostandome.', english: 'I am going to bed.', working_on: true },
+        { foreign: 'Estoy bebiendo.', english: 'I am drinking.', working_on: true },
+        {
+          foreign: 'Estoy conociendo a un chico.',
+          english: 'I’m getting to know a guy.',
+          working_on: true,
+        },
+        {
+          foreign: 'Estoy comprendiendo esta lección.',
+          english: 'I am comprehending this lesson.',
+          working_on: true,
+        },
+        {
+          foreign: 'Estoy abriendo la puerta.',
+          english: 'I am opening the door.',
+          working_on: true,
+        },
+        {
+          foreign: 'Estoy aprendiendo español.',
+          english: 'I am learning Spanish.',
+          working_on: true,
+        },
+      ],
+      lesson2: [
+        /* irregular */
+        {
           foreign: 'El gatito está durmiendo sobre la cama.',
           english: 'The kitten is sleeping on the bed.',
           working_on: true,
@@ -356,71 +410,21 @@ export const allPhrases = {
           working_on: true,
         },
         {
-          foreign: 'Ellos están jugando fútbol en el parque.',
-          english: 'They are playing soccer in the park.',
-          working_on: true,
-        },
-        {
-          foreign: 'La familia está mirando la televisión.',
-          english: 'The family is watching television.',
-          working_on: true,
-        },
-        {
           foreign: 'La lluvia está cayendo sobre el techo.',
           english: 'The rain is falling on the roof.',
           working_on: true,
           hard: true,
         },
         {
-          foreign: 'Hoy está nevando mucho.',
-          english: 'Today it is snowing a lot.',
-          working_on: true,
-        },
-        {
           foreign: 'El político está influyendo en la gente.',
           english: 'The politician is influencing people.',
           working_on: true,
         },
-        { foreign: 'Él está cocinando.', english: 'He is cooking.', working_on: true },
         {
           foreign: 'Él está vistiendose para ir a la escuela.',
           english: 'He is getting dressed to go to school.',
           working_on: true,
           hard: true,
-        },
-        { foreign: 'Estoy hablando.', english: 'I am speaking.', working_on: true },
-        { foreign: 'Estoy pensando.', english: 'I am thinking.', working_on: true },
-        { foreign: 'Estoy almorzando.', english: 'I am having lunch.', working_on: true },
-        { foreign: 'Estoy cenando.', english: 'I am having dinner.', working_on: true, hard: true },
-        { foreign: 'Estoy bañando a mi perro.', english: 'I am bathing my dog.', working_on: true },
-        { foreign: 'Estoy bañandome.', english: 'I am taking a bath.', working_on: true },
-        {
-          foreign: 'Estoy acostando al niño.',
-          english: 'I am putting the boy to bed.',
-          working_on: true,
-          hard: true,
-        },
-        { foreign: 'Estoy acostandome.', english: 'I am going to bed.', working_on: true },
-        { foreign: 'Estoy bebiendo.', english: 'I am drinking.', working_on: true },
-        {
-          foreign: 'Estoy conociendo a un chico.',
-          english: 'I’m getting to know a guy.',
-          working_on: true,
-        },
-        {
-          foreign: 'Estoy comprendiendo esta lección.',
-          english: 'I am comprehending this lesson.',
-          working_on: true,
-        },
-        {
-          foreign: 'Estoy abriendo la puerta.',
-          english: 'I am opening the door.',
-          working_on: true,
-        },
-        {
-          foreign: 'Estoy aprendiendo español.',
-          english: 'I am learning Spanish.',
-          working_on: true,
         },
         {
           foreign: 'Estoy pidiendo una bebida.',
