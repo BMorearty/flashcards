@@ -76,7 +76,6 @@ export const allPhrases = {
         {
           foreign: 'Nos vemos más tarde.',
           english: 'See you later.',
-          working_on: true,
           hard: true, // because tarde, not tardes
         },
         {
@@ -94,7 +93,7 @@ export const allPhrases = {
         { foreign: 'cuántos/cuántas', english: 'how many' },
         { foreign: 'una hora', english: 'an hour' },
         { foreign: 'sueño', english: 'sleep (n.)' },
-        { foreign: 'divertido', english: 'fun (adj.)', working_on: true },
+        { foreign: 'divertido', english: 'fun (adj.)' },
         { foreign: 'más', english: 'more' },
       ],
       lesson4: [
@@ -115,6 +114,26 @@ export const allPhrases = {
         { foreign: 'avergonzado', english: 'ashamed', working_on: true, hard: true },
         { foreign: 'Eso es verdad.', english: 'That’s true.', working_on: true },
         { foreign: 'Eso es falso.', english: 'That’s false.', working_on: true },
+      ],
+      lesson5: [
+        { foreign: 'ahora', english: 'now' },
+        { foreign: 'así', english: 'like that / like this', working_on: true, hard: true },
+      ],
+      lesson6: [
+        { foreign: 'casi', english: 'almost', working_on: true },
+        { foreign: 'ya', english: 'already', working_on: true },
+        { foreign: 'milagro', english: 'miracle', working_on: true },
+        {
+          foreign: 'mayor',
+          english: 'senior / elderly, adj. (polite way to refer to an old person)',
+          working_on: true,
+        },
+        { foreign: 'después de la escuela', english: 'after school', working_on: true },
+        {
+          foreign: 'ese (m), esos (m pl), esa (f), esas (f pl), eso (neutral)',
+          english: 'that (as in "that thing" or "that person")',
+          working_on: true,
+        },
       ],
     },
     chapter2: {
@@ -263,13 +282,6 @@ export const allPhrases = {
         { foreign: 'otoño', english: 'fall / autumn' },
       ],
     },
-    chapter8: {
-      name: 'Random',
-      lesson1: [
-        { foreign: 'ahora', english: 'now' },
-        { foreign: 'así', english: 'like that / like this', working_on: true, hard: true },
-      ],
-    },
     chapter9: {
       name: 'Present participle in present continuous tense',
       lesson1: [
@@ -298,7 +310,6 @@ export const allPhrases = {
         {
           foreign: 'La niña está escribiendo en su cuaderno.',
           english: 'The girl is writing in her notebook.',
-          working_on: true,
         },
         {
           foreign: 'Ellos están jugando fútbol en el parque.',
@@ -337,7 +348,6 @@ export const allPhrases = {
         {
           foreign: 'Estoy conociendo a un chico.',
           english: 'I’m getting to know a guy.',
-          working_on: true,
         },
         {
           foreign: 'Estoy comprendiendo esta lección.',
@@ -380,7 +390,6 @@ export const allPhrases = {
         {
           foreign: 'La lluvia está cayendo sobre el techo.',
           english: 'The rain is falling on the roof.',
-          working_on: true,
           hard: true,
         },
         {
