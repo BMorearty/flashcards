@@ -234,7 +234,7 @@ function startFlashcards() {
     showEnglish = allPhrases[currentUnit][currentChapter].showEnglish;
   }
   if (typeof showEnglish === 'undefined') {
-    rl.question(`\nDo you want to see English phrases\nor foreign phrases? (E/f)): `, (answer) => {
+    rl.question(`\nDo you want to see English phrases\nor foreign phrases? (E/f): `, (answer) => {
       if (answer.toLowerCase() === 'q') {
         rl.close();
         return;
