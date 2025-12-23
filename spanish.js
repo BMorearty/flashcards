@@ -46,7 +46,7 @@ export const allPhrases = {
         { foreign: 'muy', english: 'very' },
         { foreign: 'Muy bien.', english: 'Very well.' },
         { foreign: 'No muy bien.', english: 'Not very well.' },
-        { foreign: 'Más o menos.', english: 'So-so.' },
+        { foreign: 'Más o menos.', english: 'So-so.', working_on: true },
         { foreign: 'aburrido', english: 'bored' },
         { foreign: 'contento', english: 'glad' },
         { foreign: 'enojado', english: 'angry', working_on: true, hard: true },
@@ -59,7 +59,6 @@ export const allPhrases = {
         {
           foreign: 'Encantado de conocerlo.',
           english: 'Pleased to meet you. (to a male)',
-          working_on: true,
           hard: true,
         },
         { foreign: 'Igual.', english: 'Likewise. (short version)' },
@@ -113,7 +112,7 @@ export const allPhrases = {
         { foreign: 'travieso', english: 'mischievous', working_on: true, hard: true },
         { foreign: 'avergonzado', english: 'ashamed', working_on: true, hard: true },
         { foreign: 'Eso es verdad.', english: 'That’s true.', working_on: true },
-        { foreign: 'Eso es falso.', english: 'That’s false.', working_on: true },
+        { foreign: 'Eso es falso.', english: 'That’s false.' },
       ],
       lesson5: [
         { foreign: 'ahora', english: 'now' },
@@ -122,11 +121,10 @@ export const allPhrases = {
       lesson6: [
         { foreign: 'casi', english: 'almost', working_on: true },
         { foreign: 'ya', english: 'already', working_on: true },
-        { foreign: 'milagro', english: 'miracle', working_on: true },
+        { foreign: 'milagro', english: 'miracle' },
         {
           foreign: 'mayor',
           english: 'senior / elderly, adj. (polite way to refer to an old person)',
-          working_on: true,
         },
         { foreign: 'después de la escuela', english: 'after school', working_on: true },
         {
@@ -395,13 +393,11 @@ export const allPhrases = {
         {
           foreign: 'El político está influyendo en la gente.',
           english: 'The politician is influencing people.',
-          working_on: true,
           hard: true, // because of 'en'
         },
         {
           foreign: 'Él está vistiendose para ir a la escuela.',
           english: 'He is getting dressed to go to school.',
-          working_on: true,
           hard: true,
         },
         {
@@ -414,7 +410,7 @@ export const allPhrases = {
           foreign: 'Estoy repitiendo la pregunta.',
           english: 'I am repeating the question.',
         },
-        { foreign: 'Estoy sonriendo.', english: 'I’m smiling.', working_on: true, hard: true },
+        { foreign: 'Estoy sonriendo.', english: 'I’m smiling.', hard: true },
       ],
     },
   },
@@ -671,7 +667,44 @@ export const allPhrases = {
         {
           foreign: 'Disculpe, ¿habla usted francés o alemán?',
           english: 'Excuse me, do you speak French or German? (formal)',
+          working_on: true,
         },
+      ],
+      lesson2: [
+        {
+          foreign: 'Hablo un poco de español.',
+          english: 'I speak a little bit of Spanish.',
+        },
+        { foreign: 'hablo', english: '(I) speak' },
+        { foreign: 'un poco', english: 'a little bit' },
+        { foreign: 'de', english: 'of / from' },
+        { foreign: 'sí', english: 'yes' },
+        { foreign: 'italiano', english: 'Italian' },
+        { foreign: 'no', english: 'no' },
+        { foreign: 'No hablo inglés.', english: 'I don’t speak English.' },
+        {
+          foreign: 'Ella habla un poco de inglés.',
+          english: 'She speaks a little bit of English.',
+        },
+      ],
+      lesson3: [
+        {
+          foreign: '¿De dónde es usted?',
+          english: 'Where are you from? (formal)',
+          working_on: true,
+        },
+        { foreign: 'dónde', english: 'where' },
+        { foreign: '¿De dónde?', english: 'From where?' },
+        { foreign: '¿De dónde eres?', english: 'Where are you from? (informal)', working_on: true },
+        { foreign: 'ellos', english: 'they' },
+        { foreign: '¿De dónde son ellos?', english: 'Where are they from?', working_on: true },
+        { foreign: 'ellas', english: 'they (females)', working_on: true },
+        {
+          foreign: 'Disculpe. ¿De dónde son ellas?',
+          english: 'Excuse me. Where are they from? (formal) (about a group of females)',
+          working_on: true,
+        },
+        { foreign: '¿De dónde es?', english: 'Where is she from?', working_on: true },
       ],
     },
   },
