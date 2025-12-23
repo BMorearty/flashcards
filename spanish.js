@@ -69,7 +69,7 @@ export const allPhrases = {
           hard: true,
         },
         { foreign: 'Muchas gracias.', english: 'Thank you very much.' },
-        { foreign: 'Con gusto.', english: 'You’re welcome. (With pleasure.)' },
+        { foreign: 'Con gusto.', english: 'You’re welcome. (With pleasure.)', working_on: true },
         { foreign: '¡Chao!', english: 'Bye!' },
         { foreign: '¡Cuídate!', english: 'Take care! (informal)', working_on: true, hard: true },
         { foreign: '¡Cuídense!', english: 'Take care! (to a group)', working_on: true, hard: true },
@@ -130,7 +130,7 @@ export const allPhrases = {
         },
         { foreign: 'después de la escuela', english: 'after school', working_on: true },
         {
-          foreign: 'ese (m), esos (m pl), esa (f), esas (f pl), eso (neutral)',
+          foreign: 'ese (m)| esos (m pl)| esa (f)| esas (f pl)| eso (neutral)',
           english: 'that (as in "that thing" or "that person")',
           working_on: true,
         },
