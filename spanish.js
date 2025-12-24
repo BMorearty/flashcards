@@ -14,7 +14,6 @@ export const allPhrases = {
         {
           foreign: 'Tenga cuidado.',
           english: 'Be careful. (formal) (to a male)',
-          working_on: true,
         },
         { foreign: 'aquí', english: 'here' },
         { foreign: 'tiempo', english: 'weather (right now)' },
@@ -26,7 +25,7 @@ export const allPhrases = {
         { foreign: 'sin embargo', english: 'however' },
         { foreign: 'ambos', english: 'both' },
         { foreign: 'entonces', english: 'so / then (like French alors)' },
-        { foreign: 'estadounidense/es', english: 'American' },
+        { foreign: 'estadounidense/es', english: 'American (singular and plural)' },
         { foreign: 'hay', english: 'there is/there are' },
         {
           foreign: 'Estoy retirado/a / jubilado/a.',
@@ -68,7 +67,7 @@ export const allPhrases = {
           hard: true,
         },
         { foreign: 'Muchas gracias.', english: 'Thank you very much.' },
-        { foreign: 'Con gusto.', english: 'You’re welcome. (With pleasure.)', working_on: true },
+        { foreign: 'Con gusto.', english: 'You’re welcome. (With pleasure.)' },
         { foreign: '¡Chao!', english: 'Bye!' },
         { foreign: '¡Cuídate!', english: 'Take care! (informal)', working_on: true, hard: true },
         { foreign: '¡Cuídense!', english: 'Take care! (to a group)', working_on: true, hard: true },
@@ -111,12 +110,12 @@ export const allPhrases = {
         },
         { foreign: 'travieso', english: 'mischievous', working_on: true, hard: true },
         { foreign: 'avergonzado', english: 'ashamed', working_on: true, hard: true },
-        { foreign: 'Eso es verdad.', english: 'That’s true.', working_on: true },
+        { foreign: 'Eso es verdad.', english: 'That’s true.' },
         { foreign: 'Eso es falso.', english: 'That’s false.' },
       ],
       lesson5: [
         { foreign: 'ahora', english: 'now' },
-        { foreign: 'así', english: 'like that / like this', working_on: true, hard: true },
+        { foreign: 'así', english: 'like that / like this', hard: true },
       ],
       lesson6: [
         { foreign: 'casi', english: 'almost', working_on: true },
@@ -129,7 +128,7 @@ export const allPhrases = {
         { foreign: 'después de la escuela', english: 'after school', working_on: true },
         {
           foreign: 'ese (m)| esos (m pl)| esa (f)| esas (f pl)| eso (neutral)',
-          english: 'that (as in "that thing" or "that person")',
+          english: 'that (as in "that thing" or "that person") (all forms)',
           working_on: true,
         },
       ],
@@ -329,7 +328,6 @@ export const allPhrases = {
         {
           foreign: 'Estoy almorzando.',
           english: 'I am having lunch.',
-          working_on: true,
           hard: true,
         },
         { foreign: 'Estoy cenando.', english: 'I am having dinner.', hard: true },
@@ -338,7 +336,6 @@ export const allPhrases = {
         {
           foreign: 'Estoy acostando al niño.',
           english: 'I am putting the boy to bed.',
-          working_on: true,
           hard: true,
         },
         { foreign: 'Estoy acostandome.', english: 'I am going to bed.' },
@@ -403,7 +400,6 @@ export const allPhrases = {
         {
           foreign: 'Estoy pidiendo una bebida.',
           english: 'I’m asking for a drink.',
-          working_on: true,
           hard: true,
         },
         {
@@ -705,6 +701,56 @@ export const allPhrases = {
           working_on: true,
         },
         { foreign: '¿De dónde es?', english: 'Where is she from?', working_on: true },
+      ],
+      lesson4: [
+        {
+          foreign: 'Soy de los Estados Unidos.',
+          english: 'I’m from the United States.',
+        },
+        { foreign: 'soy', english: '(I) am (for permanent states of being)' },
+        {
+          foreign: 'Usted es de los Estados Unidos.',
+          english: 'You are from the United States. (formal)',
+        },
+        {
+          foreign: 'Disculpe. ¿Es usted de los Estados Unidos?',
+          english: 'Excuse me. Are you from the United States? (formal)',
+        },
+        { foreign: 'México', english: 'Mexico' },
+        { foreign: 'Soy de México.', english: 'I am from Mexico.' },
+        { foreign: 'Soy mexicano.', english: 'I’m Mexican. (male)' },
+        {
+          foreign: 'Usted es estadounidense.',
+          english: 'You are American. (formal)',
+        },
+        {
+          foreign: 'Eres estadounidense.',
+          english: 'You are American. (informal)',
+        },
+        { foreign: 'Canadá', english: 'Canada' },
+        { foreign: 'canadiense/es', english: 'Canadian (singular and plural)' },
+        { foreign: 'Ellos son de México.', english: 'They are from Mexico.' },
+        { foreign: 'Son mexicanos.', english: 'They are Mexican.' },
+      ],
+      lesson5: [
+        { foreign: 'hablan', english: '(they) speak' },
+        {
+          foreign: 'Ellos no son de México y no hablan español.',
+          english: 'They are not from Mexico and they don’t speak Spanish.',
+        },
+        { foreign: 'vivir', english: 'to live' },
+        { foreign: 'vivo', english: 'I live' },
+        { foreign: 'en', english: 'in' },
+        { foreign: 'Vivo en México.', english: 'I live in Mexico.' },
+        { foreign: 'pero', english: 'but' },
+        {
+          foreign: 'Soy de Canadá pero vivo en México.',
+          english: 'I’m from Canada but I live in Mexico.',
+        },
+        {
+          foreign: 'Soy canadiense pero vivo en los Estados Unidos.',
+          english: 'I’m Canadian but I live in the United States.',
+        },
       ],
     },
   },
