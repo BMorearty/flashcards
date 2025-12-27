@@ -159,49 +159,6 @@ export const allPhrases = {
           working_on: true,
         },
       ],
-      lesson7: [
-        { foreign: 'casi', english: 'almost', working_on: true, hard: true },
-        { foreign: 'ya', english: 'already', working_on: true, hard: true },
-        { foreign: 'todavía no / no todavía', english: 'not yet', working_on: true, hard: true },
-        { foreign: 'todavía', english: 'still', working_on: true, hard: true },
-        { foreign: 'ya no', english: 'not anymore', working_on: true, hard: true },
-        {
-          foreign: 'Ella ya tiene cinco años.',
-          english: 'She is already five years old.',
-          working_on: true,
-          hard: true,
-        },
-        {
-          foreign: 'Nosotros estamos casi en casa.',
-          english: 'We are almost home.',
-          working_on: true,
-          hard: true,
-        },
-        {
-          foreign: 'Todavía no ha terminado de leer.',
-          english: 'He hasn’t finished reading yet.',
-          working_on: true,
-          hard: true,
-        },
-        {
-          foreign: 'Todavía no estamos en casa.',
-          english: 'We are not yet home.',
-          working_on: true,
-          hard: true,
-        },
-        {
-          foreign: 'Todavía estoy conduciendo.',
-          english: 'I am still driving.',
-          working_on: true,
-          hard: true,
-        },
-        {
-          foreign: 'Ya no tengo hambre.',
-          english: 'I am not hungry anymore.',
-          working_on: true,
-          hard: true,
-        },
-      ],
     },
     chapter2: {
       name: 'Days of the week',
@@ -349,7 +306,7 @@ export const allPhrases = {
         { foreign: 'otoño', english: 'fall / autumn' },
       ],
     },
-    chapter9: {
+    chapter8: {
       name: 'Present participle in present continuous tense',
       lesson1: [
         /* regular */
@@ -477,6 +434,52 @@ export const allPhrases = {
           english: 'I am repeating the question.',
         },
         { foreign: 'Estoy sonriendo.', english: 'I’m smiling.', hard: true },
+      ],
+    },
+    chapter9: {
+      name: 'Almost, already, still, not yet, not anymore, etc.',
+      lesson1: [
+        { foreign: 'casi', english: 'almost', working_on: true, hard: true },
+        { foreign: 'ya', english: 'already', working_on: true, hard: true },
+        { foreign: 'todavía no / no todavía', english: 'not yet', working_on: true, hard: true },
+        { foreign: 'todavía', english: 'still', working_on: true, hard: true },
+        { foreign: 'ya no', english: 'not anymore', working_on: true, hard: true },
+        {
+          foreign: 'Ella ya tiene cinco años.',
+          english: 'She is already five years old.',
+          working_on: true,
+          hard: true,
+        },
+        {
+          foreign: 'Nosotros estamos casi en casa.',
+          english: 'We are almost home.',
+          working_on: true,
+          hard: true,
+        },
+        {
+          foreign: 'Todavía no ha terminado de leer.',
+          english: 'He hasn’t finished reading yet.',
+          working_on: true,
+          hard: true,
+        },
+        {
+          foreign: 'Todavía no estamos en casa.',
+          english: 'We are not yet home.',
+          working_on: true,
+          hard: true,
+        },
+        {
+          foreign: 'Todavía estoy conduciendo.',
+          english: 'I am still driving.',
+          working_on: true,
+          hard: true,
+        },
+        {
+          foreign: 'Ya no tengo hambre.',
+          english: 'I am not hungry anymore.',
+          working_on: true,
+          hard: true,
+        },
       ],
     },
   },
