@@ -122,8 +122,6 @@ export const allPhrases = {
       lesson5: [
         { foreign: 'ahora', english: 'now' },
         { foreign: 'así', english: 'like that / like this', hard: true },
-      ],
-      lesson6: [
         { foreign: 'milagro', english: 'miracle' },
         {
           foreign: 'mayor',
@@ -135,9 +133,31 @@ export const allPhrases = {
           english: 'that (one or thing) (demonstrative pronoun) (all forms)',
           working_on: true,
         },
+      ],
+      lesson6: [
         { foreign: 'afuera', english: 'outside', working_on: true },
         { foreign: 'adentro', english: 'inside', working_on: true },
         { foreign: 'juntos', english: 'together', working_on: true },
+        { foreign: 'novios', english: 'boyfriend and girlfriend / a couple', working_on: true },
+        { foreign: 'mensajes de audio', english: 'audio messages', working_on: true },
+        { foreign: 'todo el día', english: 'all day', working_on: true },
+        {
+          foreign: 'Se extrañan mucho.',
+          english: 'They miss each other very much.',
+          working_on: true,
+        },
+        { foreign: 'desayunar', english: 'to have breakfast', working_on: true },
+        { foreign: 'Estoy desayunando.', english: 'I’m having breakfast.', working_on: true },
+        {
+          foreign: '¿Qué estás haciendo?',
+          english: 'What are you doing? (informal)',
+          working_on: true,
+        },
+        {
+          foreign: 'Estoy cocinando el almuerzo.',
+          english: 'I’m cooking lunch.',
+          working_on: true,
+        },
       ],
       lesson7: [
         { foreign: 'casi', english: 'almost', working_on: true, hard: true },
