@@ -3,6 +3,12 @@
    PLACE: Position, Location, Action, Condition, Emotion
  Verbo SER:   https://docs.google.com/presentation/d/1EgpZ_7aTz-3PkhxYvJh4LOxi5-UsBuy2/edit?slide=id.p6#slide=id.p6
    DOCTOR: Date/Day, Occupation, Characteristic/Class, Time, Origin, Relation/Religion
+
+  casi = almost,
+  ya = already,
+  ya no = not anymore,
+  todavía = still,
+  todavía no / no todavía = not yet,
  */
 
 export const allPhrases = {
@@ -118,8 +124,6 @@ export const allPhrases = {
         { foreign: 'así', english: 'like that / like this', hard: true },
       ],
       lesson6: [
-        { foreign: 'casi', english: 'almost', working_on: true },
-        { foreign: 'ya', english: 'already', working_on: true },
         { foreign: 'milagro', english: 'miracle' },
         {
           foreign: 'mayor',
@@ -128,8 +132,54 @@ export const allPhrases = {
         { foreign: 'después de la escuela', english: 'after school', working_on: true },
         {
           foreign: 'ese (m)| esos (m pl)| esa (f)| esas (f pl)| eso (neutral)',
-          english: 'that (as in "that thing" or "that person") (all forms)',
+          english: 'that (one or thing) (demonstrative pronoun) (all forms)',
           working_on: true,
+        },
+        { foreign: 'afuera', english: 'outside', working_on: true },
+        { foreign: 'adentro', english: 'inside', working_on: true },
+        { foreign: 'juntos', english: 'together', working_on: true },
+      ],
+      lesson7: [
+        { foreign: 'casi', english: 'almost', working_on: true, hard: true },
+        { foreign: 'ya', english: 'already', working_on: true, hard: true },
+        { foreign: 'todavía no / no todavía', english: 'not yet', working_on: true, hard: true },
+        { foreign: 'todavía', english: 'still', working_on: true, hard: true },
+        { foreign: 'ya no', english: 'not anymore', working_on: true, hard: true },
+        {
+          foreign: 'Ella ya tiene cinco años.',
+          english: 'She is already five years old.',
+          working_on: true,
+          hard: true,
+        },
+        {
+          foreign: 'Nosotros estamos casi en casa.',
+          english: 'We are almost home.',
+          working_on: true,
+          hard: true,
+        },
+        {
+          foreign: 'Todavía no ha terminado de leer.',
+          english: 'He hasn’t finished reading yet.',
+          working_on: true,
+          hard: true,
+        },
+        {
+          foreign: 'Todavía no estamos en casa.',
+          english: 'We are not yet home.',
+          working_on: true,
+          hard: true,
+        },
+        {
+          foreign: 'Todavía estoy conduciendo.',
+          english: 'I am still driving.',
+          working_on: true,
+          hard: true,
+        },
+        {
+          foreign: 'Ya no tengo hambre.',
+          english: 'I am not hungry anymore.',
+          working_on: true,
+          hard: true,
         },
       ],
     },
