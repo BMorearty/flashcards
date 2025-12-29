@@ -134,6 +134,7 @@ export const allPhrases = {
           working_on: true,
         },
         { foreign: 'mismo / misma', english: 'same', working_on: true },
+        { foreign: 'ahorita', english: 'right now', working_on: true },
       ],
       lesson6: [
         { foreign: 'afuera', english: 'outside', working_on: true, hard: true },
@@ -817,6 +818,37 @@ export const allPhrases = {
         {
           foreign: 'Soy canadiense pero vivo en los Estados Unidos.',
           english: 'I’m Canadian but I live in the United States.',
+        },
+      ],
+      lesson6: [
+        {
+          foreign: 'Me encanta Chile en primavera.',
+          english: 'I love Chile in spring.',
+          working_on: true,
+        },
+        { foreign: 'Me encanta.', english: 'I love it.', working_on: true },
+        { foreign: 'Me encanta la primavera.', english: 'I love spring.', working_on: true },
+        {
+          foreign: 'Chile es frío en invierno.',
+          english: 'Chile is cold in winter.',
+          working_on: true,
+        },
+        { foreign: '¿Es verano?', english: 'Is it summer?', working_on: true },
+        {
+          foreign: '¿Es verano en Argentina?',
+          english: 'Is it summer in Argentina?',
+          working_on: true,
+        },
+        { foreign: 'enero', english: 'January', working_on: true },
+        {
+          foreign: 'Me encanta México en enero.',
+          english: 'I love Mexico in January.',
+          working_on: true,
+        },
+        {
+          foreign: '¿Es verano en Argentina en enero?',
+          english: 'Is it summer in Argentina in January?',
+          working_on: true,
         },
       ],
     },
