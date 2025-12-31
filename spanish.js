@@ -114,7 +114,7 @@ export const allPhrases = {
           foreign: 'Los niños son felices. (Use ser with feliz)',
           english: 'The children are happy.',
         },
-        { foreign: 'travieso', english: 'mischievous', working_on: true, hard: true },
+        { foreign: 'travieso', english: 'mischievous', hard: true },
         { foreign: 'avergonzado', english: 'ashamed', working_on: true, hard: true },
         { foreign: 'Eso es verdad.', english: 'That’s true.' },
         { foreign: 'Eso es falso.', english: 'That’s false.' },
@@ -131,18 +131,17 @@ export const allPhrases = {
         {
           foreign: 'ese (m)| esos (m pl)| esa (f)| esas (f pl)| eso (neutral)',
           english: 'that (one or thing) (demonstrative pronoun) (all forms)',
-          working_on: true,
         },
         { foreign: 'mismo / misma', english: 'same', working_on: true },
-        { foreign: 'ahorita', english: 'right now', working_on: true },
+        { foreign: 'ahorita', english: 'right now' },
       ],
       lesson6: [
         { foreign: 'afuera', english: 'outside', working_on: true, hard: true },
         { foreign: 'adentro', english: 'inside', working_on: true, hard: true },
         { foreign: 'juntos', english: 'together', working_on: true },
         { foreign: 'novios', english: 'boyfriend and girlfriend / a couple', working_on: true },
-        { foreign: 'mensajes de audio', english: 'audio messages', working_on: true },
-        { foreign: 'todo el día', english: 'all day', working_on: true },
+        { foreign: 'mensajes de audio', english: 'audio messages' },
+        { foreign: 'todo el día', english: 'all day' },
         {
           foreign: 'Se extrañan mucho.',
           english: 'They miss each other very much.',
@@ -441,7 +440,7 @@ export const allPhrases = {
     chapter9: {
       name: 'Almost, already, still, not yet, not anymore, etc.',
       lesson1: [
-        { foreign: 'casi', english: 'almost', working_on: true, hard: true },
+        { foreign: 'casi', english: 'almost', hard: true },
         { foreign: 'ya', english: 'already', working_on: true, hard: true },
         { foreign: 'todavía no / no todavía', english: 'not yet', working_on: true, hard: true },
         { foreign: 'todavía', english: 'still (still happening)', working_on: true, hard: true },
@@ -706,12 +705,10 @@ export const allPhrases = {
         {
           foreign: '¡Disculpe!',
           english: 'Excuse me! (for getting attention or interrupting) (formal)',
-          working_on: true,
         },
         {
           foreign: '¡Disculpa!',
           english: 'Excuse me! (for getting attention or interrupting) (informal)',
-          working_on: true,
         },
         { foreign: 'español', english: 'Spanish' },
         { foreign: 'alemán', english: 'German' },
@@ -732,7 +729,6 @@ export const allPhrases = {
         {
           foreign: 'Disculpe, ¿habla usted francés o alemán?',
           english: 'Excuse me, do you speak French or German? (formal)',
-          working_on: true,
         },
       ],
       lesson2: [
@@ -831,19 +827,17 @@ export const allPhrases = {
         {
           foreign: 'Chile es frío en invierno.',
           english: 'Chile is cold in winter.',
-          working_on: true,
         },
-        { foreign: '¿Es verano?', english: 'Is it summer?', working_on: true },
+        { foreign: '¿Es verano?', english: 'Is it summer?' },
         {
           foreign: '¿Es verano en Argentina?',
           english: 'Is it summer in Argentina?',
           working_on: true,
         },
-        { foreign: 'enero', english: 'January', working_on: true },
+        { foreign: 'enero', english: 'January' },
         {
           foreign: 'Me encanta México en enero.',
           english: 'I love Mexico in January.',
-          working_on: true,
         },
         {
           foreign: '¿Es verano en Argentina en enero?',
