@@ -49,7 +49,7 @@ function checkDupes() {
         continue;
       }
       for (let lesson in allPhrases[unit][chapter]) {
-        if (['name', 'showEnglish'].includes(lesson)) {
+        if (['name', 'show_english'].includes(lesson)) {
           continue;
         }
         for (let phrase of allPhrases[unit][chapter][lesson]) {
@@ -70,7 +70,7 @@ function checkDupes() {
   }
 }
 
-// Copy 'showEnglish' prop down into each phrase
+// Copy 'show_english' prop down into each phrase
 function addShowEnglish() {
   for (let unit in allPhrases) {
     for (let chapter in allPhrases[unit]) {
@@ -78,12 +78,12 @@ function addShowEnglish() {
         continue;
       }
       for (let lesson in allPhrases[unit][chapter]) {
-        if (['name', 'showEnglish'].includes(lesson)) {
+        if (['name', 'show_english'].includes(lesson)) {
           continue;
         }
         for (let phrase of allPhrases[unit][chapter][lesson]) {
-          if ('showEnglish' in allPhrases[unit][chapter]) {
-            phrase.showEnglish = allPhrases[unit][chapter].showEnglish;
+          if ('show_english' in allPhrases[unit][chapter]) {
+            phrase.showEnglish = allPhrases[unit][chapter].show_english;
           }
         }
       }
@@ -181,7 +181,7 @@ function showLessonMenu() {
 Choose a lesson:
 ${Object.keys(allPhrases[currentUnit][currentChapter])
   .map((lesson, index) => {
-    if (['name', 'showEnglish'].includes(lesson)) {
+    if (['name', 'show_english'].includes(lesson)) {
       skipped++;
       return null;
     }
@@ -230,8 +230,8 @@ Q. Quit
 
 function startFlashcards() {
   let showEnglish;
-  if ('showEnglish' in (allPhrases?.[currentUnit]?.[currentChapter] ?? {})) {
-    showEnglish = allPhrases[currentUnit][currentChapter].showEnglish;
+  if ('show_english' in (allPhrases?.[currentUnit]?.[currentChapter] ?? {})) {
+    showEnglish = allPhrases[currentUnit][currentChapter].show_english;
   }
   if (typeof showEnglish === 'undefined') {
     rl.question(`\nDo you want to see English phrases\nor foreign phrases? (E/f): `, (answer) => {
@@ -291,7 +291,7 @@ async function setupPhrases() {
           continue;
         }
         for (let lesson in allPhrases[unit][chapter]) {
-          if (['name', 'showEnglish'].includes(lesson)) {
+          if (['name', 'show_english'].includes(lesson)) {
             continue;
           }
           if (currentUnit === 'hard') {
@@ -314,14 +314,14 @@ async function setupPhrases() {
     }
   } else if (currentLesson === 'all') {
     for (let lesson in allPhrases[currentUnit][currentChapter]) {
-      if (['name', 'showEnglish'].includes(lesson)) {
+      if (['name', 'show_english'].includes(lesson)) {
         continue;
       }
       phrases = phrases.concat(allPhrases[currentUnit][currentChapter][lesson]);
     }
   } else if (currentLesson === 'hard') {
     for (let lesson in allPhrases[currentUnit][currentChapter]) {
-      if (['name', 'showEnglish'].includes(lesson)) {
+      if (['name', 'show_english'].includes(lesson)) {
         continue;
       }
       phrases = phrases.concat(
@@ -356,7 +356,7 @@ function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
     ? '  (wrong before)'
     : '';
   shownPhrases.add(randomPhrase.foreign);
-  const englishNow = 'showEnglish' in randomPhrase ? randomPhrase.showEnglish : showEnglish;
+  const englishNow = 'show_english' in randomPhrase ? randomPhrase.show_english : showEnglish;
   console.log(
     `  ${chalk.yellow((englishNow ? randomPhrase.english : randomPhrase.foreign).replaceAll(/\| */g, '\n  '))}`,
   );

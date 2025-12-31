@@ -51,7 +51,7 @@ export const allPhrases = {
         { foreign: 'muy', english: 'very' },
         { foreign: 'Muy bien.', english: 'Very well.' },
         { foreign: 'No muy bien.', english: 'Not very well.' },
-        { foreign: 'Más o menos.', english: 'So-so.', working_on: true },
+        { foreign: 'Más o menos.', english: 'So-so.', working_on: true, show_english: false },
         { foreign: 'aburrido', english: 'bored' },
         { foreign: 'contento', english: 'glad' },
         { foreign: 'enojado', english: 'angry', working_on: true, hard: true },
@@ -139,7 +139,7 @@ export const allPhrases = {
         { foreign: 'afuera', english: 'outside', working_on: true, hard: true },
         { foreign: 'adentro', english: 'inside', working_on: true, hard: true },
         { foreign: 'juntos', english: 'together', working_on: true },
-        { foreign: 'novios', english: 'boyfriend and girlfriend / a couple', working_on: true },
+        { foreign: 'novios', english: 'boyfriend and girlfriend / a couple' },
         { foreign: 'mensajes de audio', english: 'audio messages' },
         { foreign: 'todo el día', english: 'all day' },
         {
@@ -481,7 +481,7 @@ export const allPhrases = {
   genders: {
     chapter1: {
       name: 'Noun endings',
-      showEnglish: false,
+      show_english: false,
       lesson1: [
         {
           foreign: '-a',
@@ -820,9 +820,8 @@ export const allPhrases = {
         {
           foreign: 'Me encanta Chile en primavera.',
           english: 'I love Chile in spring.',
-          working_on: true,
         },
-        { foreign: 'Me encanta.', english: 'I love it.', working_on: true },
+        { foreign: 'Me encanta.', english: 'I love it.' },
         { foreign: 'Me encanta la primavera.', english: 'I love spring.', working_on: true },
         {
           foreign: 'Chile es frío en invierno.',
@@ -832,7 +831,6 @@ export const allPhrases = {
         {
           foreign: '¿Es verano en Argentina?',
           english: 'Is it summer in Argentina?',
-          working_on: true,
         },
         { foreign: 'enero', english: 'January' },
         {
