@@ -295,6 +295,28 @@ export const allPhrases = {
           english:
             'to be (DOCTOR: date/day, occupation, characteristic/class, time, origin, relation/religion):| I am, you are, etc.',
         },
+        {
+          foreign:
+            'tener, present tense:' +
+            '| (yo) tengo' +
+            '| (tú) tienes' +
+            '| (él, ella, usted) tiene' +
+            '| (nosotros / nosotras) tenemos' +
+            '| (vosotros / vosotras) tenéis' +
+            '| (ellos / ellas / ustedes) tienen',
+          english: 'to have (a belonging or sensation):| I have, you have, etc.',
+        },
+        {
+          foreign:
+            'hacer, present perfect tense:' +
+            '| (yo) he (infinitivo)' +
+            '| (tú) has (infinitivo)' +
+            '| (él, ella, usted) ha (infinitivo)' +
+            '| (nosotros / nosotras) hemos (infinitivo)' +
+            '| (vosotros / vosotras) habéis (infinitivo)' +
+            '| (ellos / ellas / ustedes) han (infinitivo)',
+          english: 'to have (done something):| I have (gone), you have (gone), etc.',
+        },
       ],
     },
     chapter7: {
@@ -474,6 +496,59 @@ export const allPhrases = {
           english: 'We are still home.',
           working_on: true,
           hard: true,
+        },
+      ],
+    },
+    chapter10: {
+      name: 'tener y hacer',
+      lesson1: [
+        {
+          foreign: 'Brian tiene un hermano gemelo.',
+          english: 'Brian has a twin brother.',
+          working_on: true,
+        },
+        { foreign: 'Yo tengo un carro.', english: 'I have a car.', working_on: true },
+        { foreign: 'El niño tiene un juguete.', english: 'The child has a toy.', working_on: true },
+        { foreign: 'La niña tiene un gato.', english: 'The girl has a cat.', working_on: true },
+        {
+          foreign: 'El profesor tiene una casa.',
+          english: 'The professor has a house.',
+          working_on: true,
+        },
+        { foreign: 'Yo tengo un computador.', english: 'I have a computer.', working_on: true },
+        { foreign: 'Tengo sed.', english: 'I am thirsty.', working_on: true },
+        { foreign: 'Tengo mucho hambre.', english: 'I am very hungry.', working_on: true },
+        { foreign: 'Tengo sueño.', english: 'I am sleepy.', working_on: true },
+        { foreign: 'Tengo frío.', english: 'I am cold.', working_on: true },
+        { foreign: 'Tengo un resfriado.', english: 'I have a cold.', working_on: true },
+        { foreign: 'Yo tengo mucha suerte.', english: 'I am very lucky.', working_on: true },
+        { foreign: 'Ella tiene pereza.', english: 'She is lazy.', working_on: true },
+        {
+          foreign: 'El hombre tiene prisa. Está atrasado.',
+          english: 'The man is in a hurry. He is late.',
+          working_on: true,
+        },
+        {
+          foreign: 'El niño tiene miedo de los monstruos.',
+          english: 'The boy is afraid of monsters.',
+          working_on: true,
+        },
+        {
+          foreign: 'El bebé tiene ganas de llorar.',
+          english: 'The baby feels like crying.',
+          working_on: true,
+        },
+        {
+          foreign: 'Hay que tener cuidado. Hay hielo en la calle.',
+          english: 'You have to be careful. There’s ice on the street.',
+          working_on: true,
+        },
+        { foreign: 'Tiene que ir.', english: 'He has to go.', working_on: true },
+        { foreign: 'Yo he hecho mi trabajo.', english: 'I have done my job.', working_on: true },
+        {
+          foreign: 'Ella ha ido al gimnasio.',
+          english: 'She has gone to the gym.',
+          working_on: true,
         },
       ],
     },
