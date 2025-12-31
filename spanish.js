@@ -159,6 +159,9 @@ export const allPhrases = {
           english: 'I’m cooking lunch.',
           working_on: true,
         },
+        { foreign: 'árbol', english: 'tree', working_on: true },
+        { foreign: 'ventana', english: 'window', working_on: true },
+        { foreign: 'llevar una chaqueta', english: 'to wear a jacket', working_on: true },
       ],
     },
     chapter2: {
