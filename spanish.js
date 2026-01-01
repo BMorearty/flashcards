@@ -138,7 +138,7 @@ export const allPhrases = {
       lesson6: [
         { foreign: 'afuera', english: 'outside', working_on: true, hard: true },
         { foreign: 'adentro', english: 'inside', working_on: true, hard: true },
-        { foreign: 'juntos', english: 'together', working_on: true },
+        { foreign: 'juntos', english: 'together' },
         { foreign: 'novios', english: 'boyfriend and girlfriend / a couple' },
         { foreign: 'mensajes de audio', english: 'audio messages' },
         { foreign: 'todo el día', english: 'all day' },
@@ -161,7 +161,12 @@ export const allPhrases = {
         },
         { foreign: 'árbol', english: 'tree', working_on: true },
         { foreign: 'ventana', english: 'window', working_on: true },
-        { foreign: 'llevar una chaqueta', english: 'to wear a jacket', working_on: true },
+        {
+          foreign: 'llevar una chaqueta',
+          english: 'to wear a jacket',
+          working_on: true,
+          hard: true,
+        },
       ],
     },
     chapter2: {
@@ -523,13 +528,14 @@ export const allPhrases = {
         { foreign: 'Tengo mucho hambre.', english: 'I am very hungry.', working_on: true },
         { foreign: 'Tengo sueño.', english: 'I am sleepy.', working_on: true },
         { foreign: 'Tengo frío.', english: 'I am cold.', working_on: true },
-        { foreign: 'Tengo un resfriado.', english: 'I have a cold.', working_on: true },
+        { foreign: 'Tengo un resfriado.', english: 'I have a cold.', working_on: true, hard: true },
         { foreign: 'Yo tengo mucha suerte.', english: 'I am very lucky.', working_on: true },
         { foreign: 'Ella tiene pereza.', english: 'She is lazy.', working_on: true },
         {
           foreign: 'El hombre tiene prisa. Está atrasado.',
           english: 'The man is in a hurry. He is late.',
           working_on: true,
+          hard: true,
         },
         {
           foreign: 'El niño tiene miedo de los monstruos.',
@@ -545,6 +551,7 @@ export const allPhrases = {
           foreign: 'Hay que tener cuidado. Hay hielo en la calle.',
           english: 'You have to be careful. There’s ice on the street.',
           working_on: true,
+          hard: true,
         },
         { foreign: 'Tiene que ir.', english: 'He has to go.', working_on: true },
         { foreign: 'Yo he hecho mi trabajo.', english: 'I have done my job.', working_on: true },
@@ -888,6 +895,7 @@ export const allPhrases = {
         {
           foreign: 'Soy de Canadá pero vivo en México.',
           english: 'I’m from Canada but I live in Mexico.',
+          working_on: true,
         },
         {
           foreign: 'Soy canadiense pero vivo en los Estados Unidos.',
@@ -918,7 +926,6 @@ export const allPhrases = {
         {
           foreign: '¿Es verano en Argentina en enero?',
           english: 'Is it summer in Argentina in January?',
-          working_on: true,
         },
       ],
     },

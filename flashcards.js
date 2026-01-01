@@ -352,6 +352,7 @@ function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
     randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
   }
   const hard = randomPhrase.hard ? '  (hard)' : '';
+  const workingOn = randomPhrase.working_on ? '  (working on)' : '';
   const wrong = wrongPhrases.map((phrase) => phrase.foreign).includes(randomPhrase.foreign)
     ? '  (wrong before)'
     : '';
@@ -433,7 +434,7 @@ function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
       // If I typed a phrase, don't erase what I typed. I want to compare it to the correct answer.
       const moveUpAndClearLine = answer === '' ? '\u001b[1A\u001b[K' : '';
       console.log(
-        `${moveUpAndClearLine}${moveUpAndClearLine}${secondPromptLine ? moveUpAndClearLine : ''}    ${chalk.green((englishNow ? randomPhrase.foreign : randomPhrase.english).replaceAll(/\| */g, '\n    '))}${hard}${wrong}`,
+        `${moveUpAndClearLine}${moveUpAndClearLine}${secondPromptLine ? moveUpAndClearLine : ''}    ${chalk.green((englishNow ? randomPhrase.foreign : randomPhrase.english).replaceAll(/\| */g, '\n    '))}${hard}${workingOn}${wrong}`,
       );
       if (shownPhrases.size === phrases.length) {
         console.log(chalk.cyanBright.underline('All phrases have been shown.'));
