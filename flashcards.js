@@ -14,7 +14,7 @@ addShowEnglish();
 const menu = `
 Choose an option:
 ${Object.keys(allPhrases)
-  .filter((unit) => unit !== 'custom' && unit !== 'genders')
+  .filter((unit) => unit !== 'custom')
   .map(
     (unit, index) =>
       `${index + 1}. Unit ${index + 1}${allPhrases[unit].name ? `: ${allPhrases[unit].name}` : ''}`,
@@ -24,7 +24,6 @@ A. All phrases
 H. Hard phrases
 W. Working on
 C. Custom phrases
-G. Genders
 Q. Quit
 `;
 
@@ -123,13 +122,8 @@ function handleMenuChoice(choice) {
     showChapterMenu();
     return;
   }
-  if (choice.toLowerCase() === 'g') {
-    currentUnit = 'genders';
-    showChapterMenu();
-    return;
-  }
   const choiceNum = parseInt(choice, 10);
-  const { name, genders, ...unitKeys } = allPhrases;
+  const { name, ...unitKeys } = allPhrases;
   const numUnits = Object.keys(unitKeys).length;
   if (choiceNum > 0 && choiceNum <= numUnits - 1) {
     currentUnit = `unit${choiceNum}`;
@@ -485,7 +479,7 @@ async function addHard(phrase) {
 }
 
 function calcPrevLesson() {
-  if (!(currentUnit.startsWith('unit') || currentUnit === 'custom' || currentUnit === 'genders')) {
+  if (!(currentUnit.startsWith('unit') || currentUnit === 'custom')) {
     // Unit is 'all', 'hard'
     return [null, null, null];
   }
@@ -507,7 +501,7 @@ function calcPrevLesson() {
         currentLesson,
       ];
     }
-    // Currently at unit 1 or custom or genders, chapter 1. There is no previous.
+    // Currently at unit 1 or custom, chapter 1. There is no previous.
     return [null, null, null];
   }
 
@@ -533,7 +527,7 @@ function calcPrevLesson() {
 }
 
 function calcNextLesson() {
-  if (!(currentUnit.startsWith('unit') || currentUnit === 'custom' || currentUnit === 'genders')) {
+  if (!(currentUnit.startsWith('unit') || currentUnit === 'custom')) {
     // Unit is 'all', 'hard'
     return [null, null, null];
   }
@@ -574,10 +568,7 @@ function calcNextLesson() {
     return [currentUnit, nextChapter, Object.keys(allPhrases[currentUnit][nextChapter])[1]];
   }
 
-  if (
-    !['custom', 'genders'].includes(currentUnit) &&
-    currentUnit !== Object.keys(allPhrases).at(-1)
-  ) {
+  if (currentUnit !== 'custom' && currentUnit !== Object.keys(allPhrases).at(-1)) {
     // Do the first lesson in the first chapter of the next unit
     const nextUnit = `unit${unitNum + 1}`;
     return [nextUnit, 'chapter1', Object.keys(allPhrases[nextUnit].chapter1)[1]];
