@@ -57,7 +57,7 @@ export const allPhrases = {
         { foreign: 'muy', english: 'very' },
         { foreign: 'Muy bien.', english: 'Very well.' },
         { foreign: 'No muy bien.', english: 'Not very well.' },
-        { foreign: 'Más o menos.', english: 'So-so.', working_on: true, show_english: false },
+        { foreign: 'Más o menos.', english: 'So-so.', working_on: true, showEnglish: false },
         { foreign: 'aburrido', english: 'bored', working_on: true },
         { foreign: 'contento', english: 'glad' },
         { foreign: 'enojado', english: 'angry', working_on: true, hard: true },
@@ -639,7 +639,7 @@ export const allPhrases = {
   genders: {
     chapter1: {
       name: 'Noun endings',
-      show_english: false,
+      showEnglish: false,
       lesson1: [
         {
           foreign: '-a',
