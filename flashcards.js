@@ -372,11 +372,12 @@ function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
   rl.question(
     `[${wrongPhrases.length}W][${shownPhrasesCounter}/${phrases.length}] Enter: ans, (B)ack, (Q)uit,\n${secondPromptLine}Last was (H)ard / (W)rong / (R)ight: `,
     (answer) => {
-      if (answer.toLowerCase() === 'q') {
+      answer = answer.toLowerCase();
+      if (answer === 'q') {
         rl.close();
         return;
       }
-      if (answer.toLowerCase() === 'b') {
+      if (answer === 'b') {
         console.log(
           `\nFinished with ${nameOf(currentUnit)}${nameOf(currentChapter)}${nameOf(currentLesson)}`,
         );
@@ -384,7 +385,7 @@ function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
         showMenu();
         return;
       }
-      if (answer.toLowerCase() === 'p') {
+      if (answer === 'p') {
         if (!prevUnit) {
           console.log(chalk.red('No previous lesson.'));
           showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
@@ -394,7 +395,7 @@ function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
         startFlashcards();
         return;
       }
-      if (answer.toLowerCase() === 'n') {
+      if (answer === 'n') {
         if (!nextUnit) {
           console.log(chalk.red('No next lesson.'));
           showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
@@ -404,7 +405,7 @@ function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
         startFlashcards();
         return;
       }
-      if (answer.toLowerCase() === 'u') {
+      if (answer === 'u') {
         if (shownPhrases.size >= phrases.length) {
           console.log(chalk.red('There are no unseen phrases.'));
           showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
@@ -414,26 +415,26 @@ function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
           // Fall through so we'll show the last answer before showing the next flashcard.
         }
       }
-      if (answer.toLowerCase() === 'h' && lastPhrase) {
+      if (answer === 'h' && lastPhrase) {
         addHard(lastPhrase).then(() => {
           showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
         });
         return;
       }
-      if (answer.toLowerCase() === 'w' && lastPhrase) {
+      if (answer === 'w' && lastPhrase) {
         if (!wrongPhrases.map((phrase) => phrase.foreign).includes(lastPhrase.foreign)) {
           wrongPhrases.push(lastPhrase);
         }
         showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
         return;
       }
-      if (answer.toLowerCase() === 'r' && lastPhrase) {
+      if (answer === 'r' && lastPhrase) {
         wrongPhrases = wrongPhrases.filter((phrase) => phrase.foreign !== lastPhrase.foreign);
         showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
         return;
       }
       // If I typed a phrase, don't erase what I typed. I want to compare it to the correct answer.
-      const moveUpAndClearLine = answer === '' ? '\u001b[1A\u001b[K' : '';
+      const moveUpAndClearLine = ['', 'u'].includes(answer) ? '\u001b[1A\u001b[K' : '';
       console.log(
         `${moveUpAndClearLine}${moveUpAndClearLine}${secondPromptLine ? moveUpAndClearLine : ''}    ${chalk.green((englishNow ? randomPhrase.foreign : randomPhrase.english).replaceAll(/\| */g, '\n    '))}${hard}${workingOn}${wrong}`,
       );
