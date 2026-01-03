@@ -177,6 +177,7 @@ export const allPhrases = {
           workingOn: true,
           hard: true,
         },
+        { foreign: 'unos lápices de colores', english: 'some colored pencils', workingOn: true },
       ],
     },
     chapter2: {
@@ -326,7 +327,7 @@ export const allPhrases = {
         },
         {
           foreign:
-            'hacer, present perfect tense:' +
+            'haber, present perfect tense:' +
             '| (yo) he (infinitivo)' +
             '| (tú) has (infinitivo)' +
             '| (él, ella, usted) ha (infinitivo)' +
@@ -390,6 +391,12 @@ export const allPhrases = {
         {
           foreign: 'Hoy está nevando mucho.',
           english: 'Today it is snowing a lot.',
+          hard: true,
+          workingOn: true,
+        },
+        {
+          foreign: 'Hoy está lloviendo mucho.',
+          english: 'Today it is raining a lot.',
           hard: true,
           workingOn: true,
         },
@@ -529,7 +536,7 @@ export const allPhrases = {
       ],
     },
     chapter10: {
-      name: 'tener y hacer',
+      name: 'tener y haber',
       lesson1: [
         {
           foreign: 'Brian tiene un hermano gemelo.',
@@ -545,12 +552,17 @@ export const allPhrases = {
         },
         { foreign: 'Yo tengo un computador.', english: 'I have a computer.' },
         { foreign: 'Tengo sed.', english: 'I am thirsty.', workingOn: true },
-        { foreign: 'Tengo mucho hambre.', english: 'I am very hungry.', workingOn: true },
+        { foreign: 'Tengo mucha hambre.', english: 'I am very hungry.', workingOn: true },
         { foreign: 'Tengo sueño.', english: 'I am sleepy.', workingOn: true },
         { foreign: 'Tengo frío.', english: 'I am cold.', workingOn: true },
         { foreign: 'Tengo un resfriado.', english: 'I have a cold.', workingOn: true, hard: true },
         { foreign: 'Yo tengo mucha suerte.', english: 'I am very lucky.', workingOn: true },
         { foreign: 'Ella tiene pereza.', english: 'She is lazy.', workingOn: true },
+        {
+          foreign: 'El niño tiene dos años.',
+          english: 'The child is two years old.',
+          workingOn: true,
+        },
         {
           foreign: 'El hombre tiene prisa. Está atrasado.',
           english: 'The man is in a hurry. He is late.',
