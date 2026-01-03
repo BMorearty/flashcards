@@ -114,7 +114,7 @@ function handleMenuChoice(choice) {
     return;
   }
   if (choice.toLowerCase() === 'w') {
-    currentUnit = 'working_on';
+    currentUnit = 'workingOn';
     startFlashcards();
     return;
   }
@@ -285,7 +285,7 @@ async function setupPhrases() {
   shownPhrases.clear();
   showUnseen = false;
   const hardPhrases = await dynHardPhrases();
-  if (['all', 'hard', 'working_on'].includes(currentUnit)) {
+  if (['all', 'hard', 'workingOn'].includes(currentUnit)) {
     for (let unit in allPhrases) {
       for (let chapter in allPhrases[unit]) {
         if (chapter === 'name') {
@@ -303,9 +303,9 @@ async function setupPhrases() {
             );
             continue;
           }
-          if (currentUnit === 'working_on') {
+          if (currentUnit === 'workingOn') {
             phrases = phrases.concat(
-              allPhrases[unit][chapter][lesson].filter((phrase) => phrase.working_on),
+              allPhrases[unit][chapter][lesson].filter((phrase) => phrase.workingOn),
             );
             continue;
           }
@@ -353,7 +353,7 @@ function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
     randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
   }
   const hard = randomPhrase.hard ? '  (hard)' : '';
-  const workingOn = randomPhrase.working_on ? '  (working on)' : '';
+  const workingOn = randomPhrase.workingOn ? '  (working on)' : '';
   const wrong = wrongPhrases.map((phrase) => phrase.foreign).includes(randomPhrase.foreign)
     ? '  (wrong before)'
     : '';
