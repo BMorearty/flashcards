@@ -668,7 +668,7 @@ export const allPhrases = {
           english: 'The professor has a house.',
         },
         { foreign: 'Yo tengo un computador.', english: 'I have a computer.' },
-        { foreign: 'Tengo sed.', english: 'I am thirsty.', workingOn: true },
+        { foreign: 'Tengo sed.', english: 'I am thirsty.', hard: true, workingOn: true },
         { foreign: 'Tengo mucha hambre.', english: 'I am very hungry.', workingOn: true },
         { foreign: 'Tengo sueño.', english: 'I am sleepy.', workingOn: true },
         { foreign: 'Tengo frío.', english: 'I am cold.' },
