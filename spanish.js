@@ -34,7 +34,6 @@ export const allPhrases = {
           foreign: 'entonces',
           english: 'so / then (like French alors)',
           hard: true,
-          workingOn: true,
         },
         { foreign: 'estadounidense/es', english: 'American (singular and plural)' },
         { foreign: 'hay', english: 'there is/there are' },
@@ -222,7 +221,7 @@ export const allPhrases = {
         { foreign: 'el/la bebé', english: 'the baby' },
       ],
       lesson3: [
-        { foreign: 'la campana', english: 'the bell', hard: true, workingOn: true },
+        { foreign: 'la campana', english: 'the bell', hard: true },
         { foreign: 'el queso', english: 'the cheese' },
         { foreign: 'el kilo', english: 'the kilo' },
         { foreign: 'el conejo', english: 'the rabbit', hard: true },
@@ -395,7 +394,7 @@ export const allPhrases = {
         },
         {
           foreign: 'puntos cardinales',
-          english: 'Masculine. El norte, el sur, el esta, el oeste',
+          english: 'Masculine. El norte, el sur, el este, el oeste',
         },
         { foreign: 'mesos', english: 'Masculine. El enero, el febrero, el marzo, ...' },
         { foreign: 'números', english: 'Masculine. El uno, el dos, el tres, ...' },
@@ -442,7 +441,7 @@ export const allPhrases = {
         { foreign: 'el miércoles', english: 'the Wednesday (on Wednesday)' },
         { foreign: 'el norte', english: 'the north' },
         { foreign: 'el sur', english: 'the south' },
-        { foreign: 'el esta', english: 'the east', hard: true },
+        { foreign: 'el este', english: 'the east', hard: true, workingOn: true },
         { foreign: 'el oeste', english: 'the west', hard: true },
         { foreign: 'el enero', english: 'the January' },
         { foreign: 'el febrero', english: 'the February' },
@@ -586,7 +585,6 @@ export const allPhrases = {
           foreign: 'El político está influyendo en la gente.',
           english: 'The politician is influencing people.',
           hard: true, // because of 'en'
-          workingOn: true,
         },
         {
           foreign: 'Él está vistiendose para ir a la escuela.',
