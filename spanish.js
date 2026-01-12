@@ -1075,6 +1075,7 @@ export const allPhrases = {
         {
           foreign: 'Chile es frío en invierno.',
           english: 'Chile is cold in winter.',
+          hard: true,
         },
         { foreign: '¿Es verano?', english: 'Is it summer?' },
         {
