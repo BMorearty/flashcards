@@ -9,6 +9,12 @@
   ya no = not anymore,
   todavía = still,
   todavía no / no todavía = not yet,
+
+  quizás = maybe
+  ¡Claro! = Of course! / Sure! / You'r welcome!
+  además = besides
+  Por supuesto. = Of course.
+  ¡Perdón! = Sorry! / Excuse me!
  */
 
 export const allPhrases = {
@@ -175,26 +181,27 @@ export const allPhrases = {
         { foreign: 'unos lápices de colores', english: 'some colored pencils' },
       ],
       lesson7: [
-        { foreign: 'éxito', english: 'success', workingOn: true },
+        { foreign: 'éxito', english: 'success' },
         { foreign: 'hace un rato', english: 'a while ago', workingOn: true },
-        { foreign: 'hace un mes', english: 'a month ago', workingOn: true },
-        { foreign: 'hace un minuto', english: 'a minute ago', workingOn: true },
-        { foreign: 'cuñado', english: 'brother-in-law', workingOn: true },
-        { foreign: 'cuñada', english: 'sister-in-law', workingOn: true },
+        { foreign: 'hace un mes', english: 'a month ago' },
+        { foreign: 'hace un minuto', english: 'a minute ago' },
+        { foreign: 'cuñado', english: 'brother-in-law' },
+        { foreign: 'cuñada', english: 'sister-in-law' },
         { foreign: 'todo está bien', english: 'everything is fine', workingOn: true },
         { foreign: 'todos están bien', english: 'everyone is fine', workingOn: true },
         { foreign: 'nos parece extraño', english: 'it seems strange to us', workingOn: true },
-        { foreign: 'quizás', english: 'maybe', workingOn: true },
+        { foreign: 'quizás', english: 'maybe', workingOn: true, hard: true },
         { foreign: 'mejor', english: 'better', workingOn: true },
-        { foreign: 'esperar', english: 'to wait / to hope', workingOn: true },
-        { foreign: 'colegio / escuela', english: 'school', workingOn: true },
+        { foreign: 'esperar', english: 'to wait / to hope' },
+        { foreign: 'colegio / escuela', english: 'school' },
         {
           foreign: 'debe ser aterrador / tiene que ser aterrador',
           english: 'it must be scary',
           workingOn: true,
+          hard: true,
         },
-        { foreign: 'Tengo tres hijos.', english: 'I have three children.', workingOn: true },
-        { foreign: 'hijos', english: 'sons and daughters', workingOn: true },
+        { foreign: 'Tengo tres hijos.', english: 'I have three children.' },
+        { foreign: 'hijos', english: 'sons and daughters' },
       ],
     },
     chapter2: {
@@ -463,7 +470,7 @@ export const allPhrases = {
         { foreign: 'el miércoles', english: 'the Wednesday (on Wednesday)' },
         { foreign: 'el norte', english: 'the north' },
         { foreign: 'el sur', english: 'the south' },
-        { foreign: 'el este', english: 'the east', hard: true, workingOn: true },
+        { foreign: 'el este', english: 'the east', hard: true },
         { foreign: 'el oeste', english: 'the west', hard: true },
         { foreign: 'el enero', english: 'the January' },
         { foreign: 'el febrero', english: 'the February' },
@@ -629,9 +636,9 @@ export const allPhrases = {
       name: 'Almost, already, still, not yet, not anymore, etc.',
       lesson1: [
         { foreign: 'casi', english: 'almost', hard: true },
-        { foreign: 'ya', english: 'already', workingOn: true, hard: true },
+        { foreign: 'ya', english: 'already', hard: true },
         { foreign: 'todavía no / no todavía', english: 'not yet', workingOn: true, hard: true },
-        { foreign: 'todavía', english: 'still (still happening)', workingOn: true, hard: true },
+        { foreign: 'todavía', english: 'still (still happening)', hard: true },
         { foreign: 'ya no', english: 'not anymore', workingOn: true, hard: true },
         {
           foreign: 'Nosotros estamos casi en casa.',
@@ -785,7 +792,7 @@ export const allPhrases = {
         { foreign: 'Francia', english: 'France' },
         { foreign: 'Gran Bretaña', english: 'Great Britain' },
         { foreign: 'Inglaterra', english: 'England' },
-        { foreign: 'Reino Unido', english: 'United Kingdom', workingOn: true },
+        { foreign: 'Reino Unido', english: 'United Kingdom' },
         { foreign: 'Rusia', english: 'Russia' },
         { foreign: 'Turquía', english: 'Turkey' },
       ],
@@ -795,7 +802,7 @@ export const allPhrases = {
         { foreign: 'holandés', english: 'Dutch (language)' },
         { foreign: 'idioma', english: 'language' },
         { foreign: 'japonés', english: 'Japanese (language)' },
-        { foreign: 'lengua originaria', english: 'indigenous language', workingOn: true },
+        { foreign: 'lengua originaria', english: 'indigenous language' },
         { foreign: 'portugués', english: 'Portuguese (language)' },
         { foreign: 'ruso', english: 'Russian (language)' },
         { foreign: 'turco', english: 'Turkish (language)' },
@@ -804,17 +811,17 @@ export const allPhrases = {
     chapter14: {
       name: 'Small talk',
       lesson1: [
-        { foreign: 'Absolutamente nada.', english: 'Nothing at all.', workingOn: true },
-        { foreign: 'Bienvenido.', english: 'Welcome. (to my humble abode)', workingOn: true },
+        { foreign: 'Absolutamente nada.', english: 'Nothing at all.' },
+        { foreign: 'Bienvenido.', english: 'Welcome. (to my humble abode)' },
         { foreign: '¡Claro!', english: 'Of course! / Sure! / You’re welcome!', workingOn: true },
         { foreign: 'Lo siento.', english: 'I’m sorry.', workingOn: true },
         { foreign: 'No mucho.', english: 'Not much.' },
         { foreign: '¡Perdón!', english: 'Sorry! / Excuse me!', workingOn: true },
-        { foreign: '¿Perdón?', english: 'Pardon?', workingOn: true },
-        { foreign: 'Por supuesto.', english: 'Of course.', workingOn: true },
+        { foreign: '¿Perdón?', english: 'Pardon?' },
+        { foreign: 'Por supuesto.', english: 'Of course.', workingOn: true, hard: true },
         { foreign: 'Un poquito.', english: 'A little bit.' },
-        { foreign: 'además', english: 'besides / also', workingOn: true },
-        { foreign: 'entender', english: 'understand', workingOn: true },
+        { foreign: 'además', english: 'besides', workingOn: true },
+        { foreign: 'entender', english: 'understand' },
         { foreign: 'escribir', english: 'to write' },
         { foreign: 'escuchar', english: 'to hear / to listen to' },
         { foreign: 'leer', english: 'to read' },
