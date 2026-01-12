@@ -11,7 +11,7 @@
   todavía no / no todavía = not yet,
 
   quizás = maybe
-  ¡Claro! = Of course! / Sure! / You'r welcome!
+  ¡Claro! = Of course! / Sure! / You’re welcome!
   además = besides
   Por supuesto. = Of course.
   ¡Perdón! = Sorry! / Excuse me!
