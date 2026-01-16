@@ -231,6 +231,25 @@ export const allPhrases = {
         { foreign: 'dar un paseo', english: 'to go for a walk', workingOn: true },
         { foreign: 'Querido primo', english: 'Dear cousin (writing a letter)' },
       ],
+      lesson9: [
+        { foreign: 'desde', english: 'from (place or time of origin) / since', workingOn: true },
+        { foreign: 'desde ... hasta', english: 'from ... until', workingOn: true },
+        {
+          foreign: 'Se habla español en América Latina, desde México hasta Argentina.',
+          english: 'People speak Spanish in Latin America, from Mexico to Argentina.',
+          workingOn: true,
+        },
+        {
+          foreign: 'El avión vuela desde Nueva York a Los Ángeles.',
+          english: 'The plane flies from New York to Los Angeles.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Desde aqui se ve toda la ciudad.',
+          english: 'From here you can see the whole city.',
+          workingOn: true,
+        },
+      ],
     },
     chapter2: {
       name: 'Days of the week',
@@ -1125,6 +1144,24 @@ export const allPhrases = {
         },
         { foreign: 'la clase', english: 'the class' },
         { foreign: 'con fluidez', english: 'fluently', hard: true },
+      ],
+    },
+    chapter3: {
+      name: 'Introductions and Professions',
+      lesson1: [
+        {
+          foreign: '¿Cómo se llama usted? / ¿Usted cómo se llama?',
+          english: 'What is your name? (formal)',
+          workingOn: true,
+        },
+        { foreign: 'llamarse', english: 'to call oneself', workingOn: true },
+        { foreign: 'usted se llama', english: 'you call yourself (formal)', workingOn: true },
+        { foreign: 'te llamas', english: 'you call yourself (informal)', workingOn: true },
+        { foreign: '¿Cómo te llamas?', english: 'What is your name? (informal)', workingOn: true },
+        { foreign: 'ella se llama', english: 'she calls herself', workingOn: true },
+        { foreign: '¿Cómo se llama ella?', english: 'What is her name?', workingOn: true },
+        { foreign: 'él se llama', english: 'he calls himself', workingOn: true },
+        { foreign: '¿Cómo se llama?', english: 'What is his name?', workingOn: true },
       ],
     },
   },
