@@ -9,12 +9,6 @@
   ya no = not anymore,
   todavía = still,
   todavía no / no todavía = not yet,
-
-  quizás = maybe
-  ¡Claro! = Of course! / Sure! / You’re welcome!
-  además = besides
-  Por supuesto. = Of course.
-  ¡Perdón! = Sorry! / Excuse me!
  */
 
 export const allPhrases = {
@@ -1160,6 +1154,29 @@ export const allPhrases = {
         { foreign: '¿Cómo se llama ella?', english: 'What is her name?' },
         { foreign: 'él se llama', english: 'he calls himself' },
         { foreign: '¿Cómo se llama?', english: 'What is his name?' },
+      ],
+      lesson2: [
+        { foreign: 'Me llamo Tom.', english: 'My name is Tom.', workingOn: true },
+        { foreign: 'me llamo', english: 'I call myself', workingOn: true },
+        { foreign: 'Ella se llama María.', english: 'Her name is Maria.', workingOn: true },
+        { foreign: 'Él se llama Carlos.', english: 'His name is Carlos.', workingOn: true },
+        { foreign: 'ellos se llaman', english: 'they call themselves', workingOn: true },
+        {
+          foreign: 'Se llaman Carlos y María.',
+          english: 'Their names are Carlos and María.',
+          workingOn: true,
+        },
+        { foreign: 'Soy John.', english: 'I’m John.', workingOn: true },
+        {
+          foreign: 'No soy María. Me llamo Juana.',
+          english: 'I’m not Maria. My name is Juana.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Hola, me llamo Tom y soy de los Estados Unidos.',
+          english: 'Hi, my name is Tom and I’m from the United States.',
+          workingOn: true,
+        },
       ],
     },
   },
