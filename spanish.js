@@ -9,6 +9,8 @@
   ya no = not anymore,
   todavía = still,
   todavía no / no todavía = not yet,
+
+  para = for (for someone), por = because of
  */
 
 export const allPhrases = {
@@ -239,6 +241,25 @@ export const allPhrases = {
         {
           foreign: 'Desde aqui se ve toda la ciudad.',
           english: 'From here you can see the whole city.',
+        },
+      ],
+      lesson10: [
+        { foreign: 'Mira, ...', english: 'Look, ...', workingOn: true },
+        { foreign: 'No hay problema.', english: 'No problem.', workingOn: true },
+        {
+          foreign: 'Algunos les dicen a otros lo que hay que hacer.',
+          english: 'Some tell others what to do.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Le digo a él "Buenas tardes." / Le digo "Buenas tardes" a él.',
+          english: 'I say "Good afternoon" to him.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Esto es lo que él quería para su casa.',
+          english: 'This is what he wanted for his house.',
+          workingOn: true,
         },
       ],
     },
