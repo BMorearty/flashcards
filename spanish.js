@@ -1250,9 +1250,8 @@ export const allPhrases = {
         {
           foreign: 'Mi esposo es policía.',
           english: 'My husband is a police officer.',
-          workingOn: true,
         },
-        { foreign: 'Él es policía.', english: 'He’s a police officer.', workingOn: true },
+        { foreign: 'Él es policía.', english: 'He’s a police officer.' },
         {
           foreign: 'Mi hermana es policía.',
           english: 'My sister is a police officer.',
