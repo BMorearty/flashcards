@@ -262,6 +262,33 @@ export const allPhrases = {
           workingOn: true,
         },
       ],
+      lesson11: [
+        {
+          foreign: 'Ese no es un nombre que ellos se dan a sí mismos.',
+          english: 'That’s not a name they give themselves.',
+          workingOn: true,
+        },
+        { foreign: 'Él me cae bien.', english: 'I like him.', workingOn: true },
+        { foreign: 'Él me cae mal.', english: 'I don’t like him.', workingOn: true },
+        {
+          foreign: 'La camisa te queda bien.',
+          english: 'The shirt looks good on you / suits you. (informal)',
+          workingOn: true,
+        },
+        { foreign: 'amenazar', english: 'to threaten', workingOn: true },
+        { foreign: 'Sí, eso parece.', english: 'Yes, it seems so.', workingOn: true },
+        { foreign: 'Él tiene la piel morena.', english: 'He has brown skin.', workingOn: true },
+        {
+          foreign:
+            'A veces en español decir la palabra "negro" es un poco ofensivo, entonces a veces decimos "es un poco moreno", también podemos decir "persona de color".',
+          english:
+            'Sometimes in Spanish, saying the word "black" is a bit offensive, so sometimes we say "he/she is a little dark-skinned," or we can also say "person of color."',
+          workingOn: true,
+        },
+        { foreign: 'una minoría', english: 'a minority', workingOn: true },
+        { foreign: 'sí mismos', english: 'themselves', workingOn: true },
+        { foreign: 'un/una inmigrante', english: 'an immigrant', workingOn: true },
+      ],
     },
     chapter2: {
       name: 'Days of the week',
@@ -849,6 +876,8 @@ export const allPhrases = {
         { foreign: 'Reino Unido', english: 'United Kingdom' },
         { foreign: 'Rusia', english: 'Russia' },
         { foreign: 'Turquía', english: 'Turkey' },
+        { foreign: 'Dinamarca', english: 'Denmark', workingOn: true },
+        { foreign: 'Groenlandia', english: 'Greenland', workingOn: true },
       ],
       lesson3: [
         { foreign: 'chino', english: 'Chinese (language)' },
