@@ -1195,7 +1195,7 @@ export const allPhrases = {
         },
       ],
       lesson3: [
-        { foreign: 'Ella es mi hermana.', english: 'This is my sister.', workingOn: true },
+        { foreign: 'Ella es mi hermana.', english: 'This is my sister.' },
         { foreign: 'mi', english: 'my' },
         { foreign: 'hermana', english: 'sister' },
         {
@@ -1204,7 +1204,7 @@ export const allPhrases = {
         },
         { foreign: 'hermano', english: 'brother' },
         { foreign: 'esposo', english: 'husband' },
-        { foreign: 'Él es mi esposo.', english: 'This is my husband.', workingOn: true },
+        { foreign: 'Él es mi esposo.', english: 'This is my husband.' },
         {
           foreign: 'Él no es mi hermano. Es mi esposo.',
           english: 'He’s not my brother. He’s my husband.',
@@ -1221,7 +1221,68 @@ export const allPhrases = {
         },
         { foreign: 'amigos', english: 'friends' },
         { foreign: 'mis amigos', english: 'my friends' },
-        { foreign: 'Ellos son mis amigos.', english: 'They are my friends.', workingOn: true },
+        { foreign: 'Ellos son mis amigos.', english: 'They are my friends.' },
+      ],
+      lesson4: [
+        {
+          foreign: 'Es un gusto / placer conocerlo.',
+          english: 'It is a pleasure to meet you. (formal) (to a male)',
+          workingOn: true,
+        },
+        { foreign: 'conocer', english: 'to meet / to know', workingOn: true },
+        {
+          foreign: 'Gusto conocerlo.',
+          english: 'Pleasure to meet you. (formal) (to a male)',
+          workingOn: true,
+        },
+        {
+          foreign: 'Es un gusto / placer conocerla.',
+          english: 'It is a pleasure to meet you. (formal) (to a female)',
+          workingOn: true,
+        },
+        {
+          foreign: 'Es un gusto / placer conocerte.',
+          english: 'It is a pleasure to meet you. (informal)',
+          workingOn: true,
+        },
+      ],
+      lesson5: [
+        {
+          foreign: 'Mi esposo es policía.',
+          english: 'My husband is a police officer.',
+          workingOn: true,
+        },
+        { foreign: 'Él es policía.', english: 'He’s a police officer.', workingOn: true },
+        {
+          foreign: 'Mi hermana es policía.',
+          english: 'My sister is a police officer.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Disculpe, ¿es usted policía?',
+          english: 'Excuse me, are you a police officer? (formal)',
+          workingOn: true,
+        },
+        { foreign: 'enfermero', english: 'nurse', workingOn: true },
+        { foreign: 'Yo soy enfermera.', english: 'I’m a nurse. (from a female)', workingOn: true },
+        {
+          foreign: 'Yo soy enfermera y él es policía.',
+          english: 'I’m a nurse, and he is a police officer. (from a female)',
+          workingOn: true,
+        },
+        { foreign: 'periodista', english: 'journalist', workingOn: true },
+        {
+          foreign: 'Me llamo Juan. Soy periodista.',
+          english: 'My name is Juan. I’m a journalist.',
+          workingOn: true,
+        },
+        { foreign: 'empleado', english: 'employee', workingOn: true },
+        { foreign: 'Nosotros somos empleados.', english: 'We are employees.', workingOn: true },
+        {
+          foreign: 'Nosotros no somos empleados. Somos periodistas.',
+          english: 'We are not employees. We are journalists.',
+          workingOn: true,
+        },
       ],
     },
   },
