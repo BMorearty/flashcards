@@ -63,7 +63,8 @@ export const allPhrases = {
         { foreign: 'Muy bien.', english: 'Very well.' },
         { foreign: 'No muy bien.', english: 'Not very well.' },
         { foreign: 'Más o menos.', english: 'So-so.', showEnglish: false },
-        { foreign: 'aburrido', english: 'bored' },
+        { foreign: 'Está aburrido.', english: 'He’s bored.' },
+        { foreign: 'Es aburrido.', english: 'He’s boring.', workingOn: true },
         { foreign: 'contento', english: 'glad' },
         { foreign: 'enojado', english: 'angry', hard: true },
         { foreign: 'estresado', english: 'stressed' },
@@ -236,7 +237,6 @@ export const allPhrases = {
         {
           foreign: 'El avión vuela desde Nueva York a Los Ángeles.',
           english: 'The plane flies from New York to Los Angeles.',
-          workingOn: true,
         },
         {
           foreign: 'Desde aqui se ve toda la ciudad.',
@@ -266,16 +266,18 @@ export const allPhrases = {
         {
           foreign: 'Ese no es un nombre que ellos se dan a sí mismos.',
           english: 'That’s not a name they give themselves.',
+          hard: true,
           workingOn: true,
         },
-        { foreign: 'Él me cae bien.', english: 'I like him.', workingOn: true },
-        { foreign: 'Él me cae mal.', english: 'I don’t like him.', workingOn: true },
+        { foreign: 'Él me cae bien.', english: 'I like him.', hard: true, workingOn: true },
+        { foreign: 'Él me cae mal.', english: 'I don’t like him.', hard: true, workingOn: true },
         {
           foreign: 'La camisa te queda bien.',
           english: 'The shirt looks good on you / suits you. (informal)',
+          hard: true,
           workingOn: true,
         },
-        { foreign: 'amenazar', english: 'to threaten', workingOn: true },
+        { foreign: 'amenazar', english: 'to threaten', hard: true, workingOn: true },
         { foreign: 'Sí, eso parece.', english: 'Yes, it seems so.', workingOn: true },
         { foreign: 'Él tiene la piel morena.', english: 'He has brown skin.', workingOn: true },
         {
@@ -1258,7 +1260,7 @@ export const allPhrases = {
           english: 'It is a pleasure to meet you. (formal) (to a male)',
           workingOn: true,
         },
-        { foreign: 'conocer', english: 'to meet / to know', workingOn: true },
+        { foreign: 'conocer', english: 'to meet / to know' },
         {
           foreign: 'Gusto conocerlo.',
           english: 'Pleasure to meet you. (formal) (to a male)',
@@ -1284,7 +1286,6 @@ export const allPhrases = {
         {
           foreign: 'Mi hermana es policía.',
           english: 'My sister is a police officer.',
-          workingOn: true,
         },
         {
           foreign: 'Disculpe, ¿es usted policía?',
@@ -1296,9 +1297,8 @@ export const allPhrases = {
         {
           foreign: 'Yo soy enfermera y él es policía.',
           english: 'I’m a nurse, and he is a police officer. (from a female)',
-          workingOn: true,
         },
-        { foreign: 'periodista', english: 'journalist', workingOn: true },
+        { foreign: 'periodista', english: 'journalist' },
         {
           foreign: 'Me llamo Juan. Soy periodista.',
           english: 'My name is Juan. I’m a journalist.',
