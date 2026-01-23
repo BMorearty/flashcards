@@ -64,7 +64,7 @@ export const allPhrases = {
         { foreign: 'No muy bien.', english: 'Not very well.' },
         { foreign: 'Más o menos.', english: 'So-so.', showEnglish: false },
         { foreign: 'Está aburrido.', english: 'He’s bored.' },
-        { foreign: 'Es aburrido.', english: 'He’s boring.', workingOn: true },
+        { foreign: 'Es aburrido.', english: 'He’s boring.' },
         { foreign: 'contento', english: 'glad' },
         { foreign: 'enojado', english: 'angry', hard: true },
         { foreign: 'estresado', english: 'stressed' },
@@ -244,7 +244,7 @@ export const allPhrases = {
         },
       ],
       lesson10: [
-        { foreign: 'Mira, ...', english: 'Look, ...', workingOn: true },
+        { foreign: 'Mira, ...', english: 'Look, ...' },
         { foreign: 'No hay problema.', english: 'No problem.', workingOn: true },
         {
           foreign: 'Algunos les dicen a otros lo que hay que hacer.',
@@ -254,7 +254,6 @@ export const allPhrases = {
         {
           foreign: 'Le digo a él "Buenas tardes." / Le digo "Buenas tardes" a él.',
           english: 'I say "Good afternoon" to him.',
-          workingOn: true,
         },
         {
           foreign: 'Esto es lo que él quería para su casa.',
@@ -287,7 +286,7 @@ export const allPhrases = {
             'Sometimes in Spanish, saying the word "black" is a bit offensive, so sometimes we say "he/she is a little dark-skinned," or we can also say "person of color."',
           workingOn: true,
         },
-        { foreign: 'una minoría', english: 'a minority', workingOn: true },
+        { foreign: 'una minoría', english: 'a minority' },
         { foreign: 'sí mismos', english: 'themselves', workingOn: true },
         { foreign: 'un/una inmigrante', english: 'an immigrant', workingOn: true },
       ],
@@ -878,8 +877,8 @@ export const allPhrases = {
         { foreign: 'Reino Unido', english: 'United Kingdom' },
         { foreign: 'Rusia', english: 'Russia' },
         { foreign: 'Turquía', english: 'Turkey' },
-        { foreign: 'Dinamarca', english: 'Denmark', workingOn: true },
-        { foreign: 'Groenlandia', english: 'Greenland', workingOn: true },
+        { foreign: 'Dinamarca', english: 'Denmark' },
+        { foreign: 'Groenlandia', english: 'Greenland' },
       ],
       lesson3: [
         { foreign: 'chino', english: 'Chinese (language)' },
@@ -1258,23 +1257,19 @@ export const allPhrases = {
         {
           foreign: 'Es un gusto / placer conocerlo.',
           english: 'It is a pleasure to meet you. (formal) (to a male)',
-          workingOn: true,
         },
         { foreign: 'conocer', english: 'to meet / to know' },
         {
           foreign: 'Gusto conocerlo.',
           english: 'Pleasure to meet you. (formal) (to a male)',
-          workingOn: true,
         },
         {
           foreign: 'Es un gusto / placer conocerla.',
           english: 'It is a pleasure to meet you. (formal) (to a female)',
-          workingOn: true,
         },
         {
           foreign: 'Es un gusto / placer conocerte.',
           english: 'It is a pleasure to meet you. (informal)',
-          workingOn: true,
         },
       ],
       lesson5: [
@@ -1290,10 +1285,9 @@ export const allPhrases = {
         {
           foreign: 'Disculpe, ¿es usted policía?',
           english: 'Excuse me, are you a police officer? (formal)',
-          workingOn: true,
         },
-        { foreign: 'enfermero', english: 'nurse', workingOn: true },
-        { foreign: 'Yo soy enfermera.', english: 'I’m a nurse. (from a female)', workingOn: true },
+        { foreign: 'enfermero', english: 'nurse' },
+        { foreign: 'Yo soy enfermera.', english: 'I’m a nurse. (from a female)' },
         {
           foreign: 'Yo soy enfermera y él es policía.',
           english: 'I’m a nurse, and he is a police officer. (from a female)',
@@ -1302,14 +1296,12 @@ export const allPhrases = {
         {
           foreign: 'Me llamo Juan. Soy periodista.',
           english: 'My name is Juan. I’m a journalist.',
-          workingOn: true,
         },
-        { foreign: 'empleado', english: 'employee', workingOn: true },
-        { foreign: 'Nosotros somos empleados.', english: 'We are employees.', workingOn: true },
+        { foreign: 'empleado', english: 'employee' },
+        { foreign: 'Nosotros somos empleados.', english: 'We are employees.' },
         {
           foreign: 'Nosotros no somos empleados. Somos periodistas.',
           english: 'We are not employees. We are journalists.',
-          workingOn: true,
         },
       ],
     },
