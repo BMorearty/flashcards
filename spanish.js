@@ -245,7 +245,7 @@ export const allPhrases = {
       ],
       lesson10: [
         { foreign: 'Mira, ...', english: 'Look, ...' },
-        { foreign: 'No hay problema.', english: 'No problem.', workingOn: true },
+        { foreign: 'No hay problema.', english: 'No problem.' },
         {
           foreign: 'Algunos les dicen a otros lo que hay que hacer.',
           english: 'Some tell others what to do.',
@@ -276,11 +276,21 @@ export const allPhrases = {
             'A veces en español decir la palabra "negro" es un poco ofensivo, entonces a veces decimos "es un poco moreno", también podemos decir "persona de color".',
           english:
             'Sometimes in Spanish, saying the word "black" is a bit offensive, so sometimes we say "he/she is a little dark-skinned," or we can also say "person of color."',
-          workingOn: true,
         },
         { foreign: 'una minoría', english: 'a minority' },
         { foreign: 'sí mismos', english: 'themselves', workingOn: true },
-        { foreign: 'un/una inmigrante', english: 'an immigrant', workingOn: true },
+        { foreign: 'un/una inmigrante', english: 'an immigrant' },
+      ],
+      lesson12: [
+        { foreign: 'escarcha', english: 'frost that affects crops', workingOn: true },
+        { foreign: 'helada', english: 'frost or ice that looks pretty', workingOn: true },
+        { foreign: 'tierno', english: 'cute', workingOn: true },
+        { foreign: 'lindo', english: 'mix of beautiful and cute', workingOn: true },
+        {
+          foreign: 'Nos parece bien / mal tu idea.',
+          english: 'We like / don’t like your idea.',
+          workingOn: true,
+        },
       ],
     },
     chapter2: {
@@ -924,8 +934,19 @@ export const allPhrases = {
     chapter16: {
       name: 'Verbos afectivos (verbs that require an indirect object pronouns)',
       lesson1: [
-        { foreign: 'Él me cae bien.', english: 'I like him.', hard: true, workingOn: true },
-        { foreign: 'Él me cae mal.', english: 'I don’t like him.', hard: true, workingOn: true },
+        {
+          foreign: 'Él me cae bien.',
+          english: 'I like him. (respect, admire, get along with, platonically)',
+          hard: true,
+          workingOn: true,
+        },
+        {
+          foreign: 'Él me cae mal.',
+          english:
+            'I don’t like him. (don’t respect, don’t admire, don’t get along with, platonically)',
+          hard: true,
+          workingOn: true,
+        },
         {
           foreign: 'La camisa te queda bien.',
           english: 'The shirt looks good on you / suits you. (informal)',
