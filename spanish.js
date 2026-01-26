@@ -250,7 +250,6 @@ export const allPhrases = {
           foreign: 'Algunos les dicen a otros lo que hay que hacer.',
           english: 'Some tell others what to do.',
           hard: true,
-          workingOn: true,
         },
         {
           foreign: 'Le digo a él "Buenas tardes." / Le digo "Buenas tardes" a él.',
@@ -296,7 +295,12 @@ export const allPhrases = {
           workingOn: true,
         },
         { foreign: 'tierno', english: 'cute', workingOn: true },
-        { foreign: 'lindo', english: 'mix of beautiful and cute', workingOn: true },
+        {
+          foreign: 'lindo',
+          english:
+            'pretty / attractive / good-looking / lovely / nice - “mix of beautiful and cute”',
+          workingOn: true,
+        },
         {
           foreign: 'Nos parece bien / mal tu idea.',
           english: 'We like / don’t like your idea.',
