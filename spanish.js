@@ -249,6 +249,7 @@ export const allPhrases = {
         {
           foreign: 'Algunos les dicen a otros lo que hay que hacer.',
           english: 'Some tell others what to do.',
+          hard: true,
           workingOn: true,
         },
         {
@@ -269,7 +270,7 @@ export const allPhrases = {
           workingOn: true,
         },
         { foreign: 'amenazar', english: 'to threaten', hard: true, workingOn: true },
-        { foreign: 'Sí, eso parece.', english: 'Yes, it seems so.', workingOn: true },
+        { foreign: 'Sí, eso parece.', english: 'Yes, it seems so.', hard: true, workingOn: true },
         { foreign: 'Él tiene la piel morena.', english: 'He has brown skin.', workingOn: true },
         {
           foreign:
@@ -282,15 +283,45 @@ export const allPhrases = {
         { foreign: 'un/una inmigrante', english: 'an immigrant' },
       ],
       lesson12: [
-        { foreign: 'escarcha', english: 'frost that affects crops', workingOn: true },
-        { foreign: 'helada', english: 'frost or ice that looks pretty', workingOn: true },
+        {
+          foreign: 'escarcha',
+          english: 'frost (a thin layer of ice crystals that form on surfaces on cold nights)',
+          hard: true,
+          workingOn: true,
+        },
+        {
+          foreign: 'una helada',
+          english: 'a frost or freeze (weather event)',
+          hard: true,
+          workingOn: true,
+        },
         { foreign: 'tierno', english: 'cute', workingOn: true },
         { foreign: 'lindo', english: 'mix of beautiful and cute', workingOn: true },
         {
           foreign: 'Nos parece bien / mal tu idea.',
           english: 'We like / don’t like your idea.',
+          hard: true,
           workingOn: true,
         },
+        { foreign: 'la contaminación', english: 'pollution', workingOn: true },
+        {
+          foreign: 'la basura tirada por las calles',
+          english: 'the trash thrown in the streets',
+          workingOn: true,
+        },
+        {
+          foreign: 'el humo negro de los autobuses',
+          english: 'the black smoke from the buses',
+          workingOn: true,
+        },
+        {
+          foreign: 'sacar a pasear al perro',
+          english: 'to take the dog for a walk',
+          workingOn: true,
+        },
+        { foreign: 'una película', english: 'a movie', workingOn: true },
+        { foreign: 'hacer deporte', english: 'to do sports', workingOn: true },
+        { foreign: 'salir a correr', english: 'to go for a run', workingOn: true },
       ],
     },
     chapter2: {
@@ -1065,6 +1096,17 @@ export const allPhrases = {
         {
           foreign: 'Al niño le encanta la lluvia, al perro no le gusta para nada.',
           english: 'The boy loves the rain, the dog doesn’t like it at all.',
+          workingOn: true,
+        },
+        {
+          foreign: 'A ella le gusta bastante pintar.',
+          english: 'She quite likes painting.',
+          workingOn: true,
+        },
+        {
+          foreign: 'A Cristina le gusta caminar por la montaña.',
+          english: 'Cristina likes to walk in the mountains.',
+          hard: true,
           workingOn: true,
         },
       ],
