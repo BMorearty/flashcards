@@ -327,6 +327,32 @@ export const allPhrases = {
         { foreign: 'hacer deporte', english: 'to do sports', workingOn: true },
         { foreign: 'salir a correr', english: 'to go for a run', workingOn: true },
       ],
+      lesson13: [
+        {
+          foreign: '¿Puedo dirigirme a usted con tú?',
+          english: 'May I address you informally? (more formal)',
+          workingOn: true,
+        },
+        {
+          foreign: '¿Puedo tratarle de tú?',
+          english: 'May I address you informally? (more common)',
+          workingOn: true,
+        },
+        {
+          foreign: 'Ellos están tratándose de tú. / de tú a tú.',
+          english: 'They are using tú with each other.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Quedaste bien con tu discurso.',
+          english: 'You did well (made a good impression) with your speech.',
+          workingOn: true,
+        },
+        { foreign: 'verdadero', english: 'true', workingOn: true },
+        { foreign: 'chocolate con leche', english: 'milk chocolate', workingOn: true },
+        { foreign: 'chocolate oscuro', english: 'dark chocolate', workingOn: true },
+        { foreign: 'saludable', english: 'healthy', workingOn: true },
+      ],
     },
     chapter2: {
       name: 'Days of the week',
@@ -983,7 +1009,7 @@ export const allPhrases = {
           workingOn: true,
         },
         {
-          foreign: 'La camisa te queda bien.',
+          foreign: '(A ti) la camisa te queda bien.',
           english: 'The shirt looks good on you / suits you. (informal)',
           hard: true,
           workingOn: true,
