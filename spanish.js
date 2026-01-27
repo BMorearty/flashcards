@@ -351,6 +351,15 @@ export const allPhrases = {
         { foreign: 'chocolate con leche', english: 'milk chocolate', workingOn: true },
         { foreign: 'chocolate oscuro', english: 'dark chocolate', workingOn: true },
         { foreign: 'saludable', english: 'healthy', workingOn: true },
+        { foreign: 'gobierno', english: 'government', workingOn: true },
+        {
+          foreign: 'empresa privada',
+          english: 'private company / private enterprise',
+          workingOn: true,
+        },
+        { foreign: 'Estoy de acuerdo.', english: 'I agree.', workingOn: true },
+        { foreign: 'alguien', english: 'someone', workingOn: true },
+        { foreign: 'enviar', english: 'to send', workingOn: true },
       ],
     },
     chapter2: {
