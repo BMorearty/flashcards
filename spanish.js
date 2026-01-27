@@ -258,7 +258,6 @@ export const allPhrases = {
         {
           foreign: 'Esto es lo que él quería para su casa.',
           english: 'This is what he wanted for his house.',
-          workingOn: true,
         },
       ],
       lesson11: [
@@ -1012,7 +1011,6 @@ export const allPhrases = {
           foreign: '(A ti) la camisa te queda bien.',
           english: 'The shirt looks good on you / suits you. (informal)',
           hard: true,
-          workingOn: true,
         },
         {
           foreign: 'A mí me gusta la pizza y los espaguetis también.',
@@ -1072,7 +1070,6 @@ export const allPhrases = {
           foreign: 'A mi hermana y a mí nos impresiona esa ciudad.',
           english: 'My sister and I are impressed by that city.',
           hard: true,
-          workingOn: true,
         },
         {
           foreign: 'A ellos no les molesta la música a alto volumen.',
@@ -1110,7 +1107,6 @@ export const allPhrases = {
           foreign: 'No le divierten las matemáticas.',
           english: 'He doesn’t enjoy math.',
           hard: true,
-          workingOn: true,
         },
         {
           foreign: 'Les divierte ver televisión.',
@@ -1126,7 +1122,6 @@ export const allPhrases = {
         {
           foreign: 'Al niño le encanta la lluvia, al perro no le gusta para nada.',
           english: 'The boy loves the rain, the dog doesn’t like it at all.',
-          workingOn: true,
         },
         {
           foreign: 'A ella le gusta bastante pintar.',
@@ -1137,6 +1132,21 @@ export const allPhrases = {
           foreign: 'A Cristina le gusta caminar por la montaña.',
           english: 'Cristina likes to walk in the mountains.',
           hard: true,
+          workingOn: true,
+        },
+        {
+          foreign: 'Señora, le importa decirme su nombre?',
+          english: 'Madam, would you mind telling me your name?',
+          workingOn: true,
+        },
+        {
+          foreign: 'No me asustan las tormentas. Me parecen muy bonitas.',
+          english: 'I’m not afraid of storms. I think they’re very beautiful.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Qué les pasa a los niños? Están nerviosos porque tienen un examen.',
+          english: 'What’s wrong with the children? They’re nervous because they have an exam.',
           workingOn: true,
         },
       ],
