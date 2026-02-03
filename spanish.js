@@ -265,11 +265,10 @@ export const allPhrases = {
           foreign: 'Ese no es un nombre que ellos se dan a sí mismos.',
           english: 'That’s not a name they give themselves.',
           hard: true,
-          workingOn: true,
         },
         { foreign: 'amenazar', english: 'to threaten', hard: true, workingOn: true },
         { foreign: 'Sí, eso parece.', english: 'Yes, it seems so.', hard: true, workingOn: true },
-        { foreign: 'Él tiene la piel morena.', english: 'He has brown skin.', workingOn: true },
+        { foreign: 'Él tiene la piel morena.', english: 'He has brown skin.' },
         {
           foreign:
             'A veces en español decir la palabra "negro" es un poco ofensivo, entonces a veces decimos "es un poco moreno", también podemos decir "persona de color".',
@@ -311,11 +310,11 @@ export const allPhrases = {
           foreign: 'la basura tirada por las calles',
           english: 'the trash thrown in the streets',
           workingOn: true,
+          hard: true,
         },
         {
           foreign: 'el humo negro de los autobuses',
           english: 'the black smoke from the buses',
-          workingOn: true,
         },
         {
           foreign: 'sacar a pasear al perro',
@@ -331,6 +330,7 @@ export const allPhrases = {
           foreign: '¿Puedo dirigirme a usted con tú?',
           english: 'May I address you informally? (more formal)',
           workingOn: true,
+          hard: true,
         },
         {
           foreign: '¿Puedo tratarle de tú?',
@@ -344,21 +344,23 @@ export const allPhrases = {
         },
         {
           foreign: 'Quedaste bien con tu discurso.',
-          english: 'You did well (made a good impression) with your speech.',
+          english: 'You did well (made a good impression) with your speech. (informal)',
           workingOn: true,
+          hard: true,
         },
         { foreign: 'verdadero', english: 'true', workingOn: true },
         { foreign: 'chocolate con leche', english: 'milk chocolate', workingOn: true },
-        { foreign: 'chocolate oscuro', english: 'dark chocolate', workingOn: true },
+        { foreign: 'chocolate oscuro', english: 'dark chocolate', workingOn: true, hard: true },
         { foreign: 'saludable', english: 'healthy', workingOn: true },
         { foreign: 'gobierno', english: 'government', workingOn: true },
         {
           foreign: 'empresa privada',
           english: 'private company / private enterprise',
           workingOn: true,
+          hard: true,
         },
         { foreign: 'Estoy de acuerdo.', english: 'I agree.', workingOn: true },
-        { foreign: 'alguien', english: 'someone', workingOn: true },
+        { foreign: 'alguien', english: 'someone', workingOn: true, hard: true },
         { foreign: 'enviar', english: 'to send', workingOn: true },
       ],
     },
@@ -1024,7 +1026,6 @@ export const allPhrases = {
         {
           foreign: 'A mí me gusta la pizza y los espaguetis también.',
           english: 'I like pizza and spaghetti too.',
-          workingOn: true,
         },
         {
           foreign: 'A ti te encanta dormir hasta tarde.',
@@ -1056,7 +1057,6 @@ export const allPhrases = {
         {
           foreign: 'Tú comes manzanas, te gustan.',
           english: 'You eat apples, you like them. (informal)',
-          workingOn: true,
         },
         {
           foreign: 'Él ve mucha televisión. Le divierte.',
@@ -1126,7 +1126,6 @@ export const allPhrases = {
         {
           foreign: 'Me impresiona la torre Eiffel.',
           english: 'I’m impressed by the Eiffel Tower.',
-          workingOn: true,
         },
         {
           foreign: 'Al niño le encanta la lluvia, al perro no le gusta para nada.',
@@ -1147,16 +1146,19 @@ export const allPhrases = {
           foreign: 'Señora, le importa decirme su nombre?',
           english: 'Madam, would you mind telling me your name?',
           workingOn: true,
+          hard: true,
         },
         {
           foreign: 'No me asustan las tormentas. Me parecen muy bonitas.',
           english: 'I’m not afraid of storms. I think they’re very beautiful.',
           workingOn: true,
+          hard: true,
         },
         {
           foreign: 'Qué les pasa a los niños? Están nerviosos porque tienen un examen.',
           english: 'What’s wrong with the children? They’re nervous because they have an exam.',
           workingOn: true,
+          hard: true,
         },
       ],
     },
