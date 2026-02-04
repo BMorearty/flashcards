@@ -361,6 +361,36 @@ export const allPhrases = {
         { foreign: 'alguien', english: 'someone', workingOn: true, hard: true },
         { foreign: 'enviar', english: 'to send', workingOn: true },
       ],
+      lesson14: [
+        { foreign: '¡Santo cielo!', english: 'Holy cow!', workingOn: true },
+        { foreign: 'impresionante', english: 'stunning / awesome', workingOn: true },
+        { foreign: 'Me duele el estómago.', english: 'My stomach hurts.', workingOn: true },
+        {
+          foreign: 'No me siento bien. Tengo tos.',
+          english: 'I don’t feel well. I have a cough.',
+          workingOn: true,
+        },
+        { foreign: '¿Te duele algo?', english: 'Does something hurt? (informal)', workingOn: true },
+        { foreign: 'Me duele la garganta.', english: 'My throat hurts.', workingOn: true },
+        { foreign: 'Me duele la rodilla.', english: 'My knee hurts.', workingOn: true },
+        {
+          foreign: 'Hola. ¿Cómo te sientes?',
+          english: 'Hello. How are you feeling? (informal)',
+          workingOn: true,
+        },
+        {
+          foreign: 'No me siento bien. / Me siento mal.',
+          english: 'I don’t feel well.',
+          workingOn: true,
+        },
+        { foreign: 'Me duele el hombro.', english: 'My shoulder hurts.', workingOn: true },
+        { foreign: 'Me duele la espalda.', english: 'My back hurts.', workingOn: true },
+        {
+          foreign: 'Me alegro de oír eso. / Me alegra oír eso.',
+          english: 'I’m glad to hear that.',
+          workingOn: true,
+        },
+      ],
     },
     chapter2: {
       name: 'Days of the week',
