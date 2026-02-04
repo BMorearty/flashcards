@@ -266,8 +266,8 @@ export const allPhrases = {
           english: 'That’s not a name they give themselves.',
           hard: true,
         },
-        { foreign: 'amenazar', english: 'to threaten', hard: true, workingOn: true },
-        { foreign: 'Sí, eso parece.', english: 'Yes, it seems so.', hard: true, workingOn: true },
+        { foreign: 'amenazar', english: 'to threaten', hard: true },
+        { foreign: 'Sí, eso parece.', english: 'Yes, it seems so.', hard: true },
         { foreign: 'Él tiene la piel morena.', english: 'He has brown skin.' },
         {
           foreign:
@@ -276,7 +276,7 @@ export const allPhrases = {
             'Sometimes in Spanish, saying the word "black" is a bit offensive, so sometimes we say "he/she is a little dark-skinned," or we can also say "person of color."',
         },
         { foreign: 'una minoría', english: 'a minority' },
-        { foreign: 'sí mismos', english: 'themselves', workingOn: true },
+        { foreign: 'sí mismos', english: 'themselves' },
         { foreign: 'un/una inmigrante', english: 'an immigrant' },
       ],
       lesson12: [
@@ -284,7 +284,6 @@ export const allPhrases = {
           foreign: 'escarcha',
           english: 'frost (a thin layer of ice crystals that form on surfaces on cold nights)',
           hard: true,
-          workingOn: true,
         },
         {
           foreign: 'una helada',
@@ -303,7 +302,6 @@ export const allPhrases = {
           foreign: 'Nos parece bien / mal tu idea.',
           english: 'We like / don’t like your idea.',
           hard: true,
-          workingOn: true,
         },
         { foreign: 'la contaminación', english: 'pollution', workingOn: true },
         {
@@ -1009,14 +1007,12 @@ export const allPhrases = {
           foreign: 'Él me cae bien.',
           english: 'I like him. (respect, admire, get along with, platonically)',
           hard: true,
-          workingOn: true,
         },
         {
           foreign: 'Él me cae mal.',
           english:
             'I don’t like him. (don’t respect, don’t admire, don’t get along with, platonically)',
           hard: true,
-          workingOn: true,
         },
         {
           foreign: '(A ti) la camisa te queda bien.',
@@ -1035,24 +1031,20 @@ export const allPhrases = {
         {
           foreign: 'A ella le interesa aprender español.',
           english: 'She is interested in learning Spanish.',
-          workingOn: true,
         },
         {
           foreign: 'A nosotros nos importan los animales.',
           english: 'Animals matter to us. / We care about animals.',
-          workingOn: true,
         },
         {
           foreign: 'A mí me parece una buena idea.',
           english: 'I think it’s a good idea.',
           hard: true,
-          workingOn: true,
         },
         {
           foreign: 'A ellos les gusta el café con leche.',
           english: 'They like coffee with milk.',
           hard: true,
-          workingOn: true,
         },
         {
           foreign: 'Tú comes manzanas, te gustan.',
@@ -1067,13 +1059,11 @@ export const allPhrases = {
         {
           foreign: 'Ella trabaja mucho. Le gusta su trabajo.',
           english: 'She works a lot. She likes her job.',
-          workingOn: true,
         },
         {
           foreign: 'A ella le disgusta el mal tiempo.',
           english: 'She dislikes bad weather.',
           hard: true,
-          workingOn: true,
         },
         {
           foreign: 'A mi hermana y a mí nos impresiona esa ciudad.',
@@ -1098,19 +1088,16 @@ export const allPhrases = {
           foreign: 'A ella le aburre la lluvia.',
           english: 'She is bored by the rain.',
           hard: true,
-          workingOn: true,
         },
         {
           foreign: '¿Te importa el español?',
           english: 'Do you care about Spanish? (informal)',
           hard: true,
-          workingOn: true,
         },
         {
           foreign: 'Nos impresionan las montañas Rocallosas.',
           english: 'We are impressed by the Rocky Mountains.',
           hard: true,
-          workingOn: true,
         },
         {
           foreign: 'No le divierten las matemáticas.',
@@ -1121,7 +1108,6 @@ export const allPhrases = {
           foreign: 'Les divierte ver televisión.',
           english: 'They enjoy watching television.',
           hard: true,
-          workingOn: true,
         },
         {
           foreign: 'Me impresiona la torre Eiffel.',
@@ -1134,13 +1120,11 @@ export const allPhrases = {
         {
           foreign: 'A ella le gusta bastante pintar.',
           english: 'She quite likes painting.',
-          workingOn: true,
         },
         {
           foreign: 'A Cristina le gusta caminar por la montaña.',
           english: 'Cristina likes to walk in the mountains.',
           hard: true,
-          workingOn: true,
         },
         {
           foreign: 'Señora, le importa decirme su nombre?',
