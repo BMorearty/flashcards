@@ -1,6 +1,8 @@
 import readline from 'readline';
 import fs from 'fs';
 import chalk from 'chalk';
+
+const language = 'spanish';
 import { allPhrases } from './spanish.js';
 
 const rl = readline.createInterface({
@@ -278,7 +280,6 @@ async function setupPhrases() {
   phraseIndex = 0;
   shownPhrases.clear();
   showUnseen = false;
-  const hardPhrases = await dynHardPhrases();
   if (['all', 'hard', 'workingOn'].includes(currentUnit)) {
     for (let unit in allPhrases) {
       for (let chapter in allPhrases[unit]) {
@@ -291,9 +292,7 @@ async function setupPhrases() {
           }
           if (currentUnit === 'hard') {
             phrases = phrases.concat(
-              allPhrases[unit][chapter][lesson].filter(
-                (phrase) => phrase.hard || hardPhrases.includes(phrase.foreign),
-              ),
+              allPhrases[unit][chapter][lesson].filter((phrase) => phrase.hard),
             );
             continue;
           }
@@ -325,11 +324,6 @@ async function setupPhrases() {
     }
   } else if (currentLesson) {
     phrases = allPhrases[currentUnit][currentChapter][currentLesson];
-  }
-  for (let phrase of phrases) {
-    if (hardPhrases.includes(phrase.foreign)) {
-      phrase.hard = true;
-    }
   }
 }
 
@@ -410,7 +404,7 @@ function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
         }
       }
       if (answer === 'h' && lastPhrase) {
-        addHard(lastPhrase).then(() => {
+        markPhraseAsHard(lastPhrase).then(() => {
           showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
         });
         return;
@@ -449,33 +443,34 @@ function nameOf(thing) {
     : '';
 }
 
-// Phrases in the hard phrases text file
-async function dynHardPhrases() {
-  const hardPhrases = [];
+async function markPhraseAsHard(phrase) {
+  if (phrase.hard) return; // Already marked
 
-  const rl = readline.createInterface({
-    input: fs.createReadStream('hardphrases.txt'),
-    crlfDelay: Infinity,
+  const filePath = `./${language}.js`;
+  let content = fs.readFileSync(filePath, 'utf8');
+
+  // Escape special regex characters in both foreign and english text
+  const escapedForeign = phrase.foreign.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const escapedEnglish = phrase.english.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+  // Find the phrase by matching both foreign and english, then insert hard: true after english
+  // Pattern: { foreign: '...', english: '...' } -> { foreign: '...', english: '...', hard: true }
+  const regex = new RegExp(
+    `(\\{[^}]*foreign:\\s*['"]${escapedForeign}['"][^}]*english:\\s*['"]${escapedEnglish}['"])`,
+    's'
+  );
+
+  content = content.replace(regex, (match) => {
+    if (match.includes('hard:')) {
+      return match; // Already has hard property, don't modify
+    } else {
+      // Insert hard: true right after the english property's closing quote
+      return match + ', hard: true';
+    }
   });
 
-  rl.on('line', (line) => {
-    hardPhrases.push(line);
-  });
-
-  await new Promise((resolve) => rl.on('close', resolve));
-
-  return hardPhrases;
-}
-
-async function addHard(phrase) {
-  if (!(await dynHardPhrases()).includes(phrase.foreign)) {
-    phrase.hard = true;
-    fs.appendFile('hardphrases.txt', `${phrase.foreign}\n`, (err) => {
-      if (err) {
-        console.error(err);
-      }
-    });
-  }
+  fs.writeFileSync(filePath, content, 'utf8');
+  phrase.hard = true;
 }
 
 function calcPrevLesson() {
