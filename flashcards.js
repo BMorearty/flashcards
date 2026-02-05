@@ -461,9 +461,8 @@ function nameOf(thing) {
     : '';
 }
 
-async function markPhraseAsHard(phrase) {
-  if (phrase.hard) return; // Already marked
-
+// Core function to add a property to a phrase in the source file
+async function addPhraseProperty(phrase, property) {
   const filePath = `./${language}.js`;
   let content = fs.readFileSync(filePath, 'utf8');
 
@@ -471,104 +470,66 @@ async function markPhraseAsHard(phrase) {
   const escapedForeign = phrase.foreign.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const escapedEnglish = phrase.english.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
-  // Find the phrase by matching both foreign and english, then insert hard: true after english
-  // Pattern: { foreign: '...', english: '...' } -> { foreign: '...', english: '...', hard: true }
+  // Find the phrase by matching both foreign and english, then insert property after english
   const regex = new RegExp(
     `(\\{[^}]*foreign:\\s*['"]${escapedForeign}['"][^}]*english:\\s*['"]${escapedEnglish}['"])`,
     's'
   );
 
   content = content.replace(regex, (match) => {
-    if (match.includes('hard:')) {
-      return match; // Already has hard property, don't modify
+    if (match.includes(`${property}:`)) {
+      return match; // Already has property, don't modify
     } else {
-      // Insert hard: true right after the english property's closing quote
-      return match + ', hard: true';
+      return match + `, ${property}: true`;
     }
   });
 
   fs.writeFileSync(filePath, content, 'utf8');
-  phrase.hard = true;
+  phrase[property] = true;
+}
+
+// Core function to remove a property from a phrase in the source file
+async function removePhraseProperty(phrase, property) {
+  const filePath = `./${language}.js`;
+  let content = fs.readFileSync(filePath, 'utf8');
+
+  // Escape special regex characters in both foreign and english text
+  const escapedForeign = phrase.foreign.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const escapedEnglish = phrase.english.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+  // Find the phrase and remove the property from it
+  const regex = new RegExp(
+    `(\\{[^}]*foreign:\\s*['"]${escapedForeign}['"][^}]*english:\\s*['"]${escapedEnglish}['"][^}]*)(,\\s*${property}:\\s*true)`,
+    's'
+  );
+
+  content = content.replace(regex, (match, beforeProperty, propertyPart) => {
+    return beforeProperty; // Remove the property part
+  });
+
+  fs.writeFileSync(filePath, content, 'utf8');
+  phrase[property] = false;
+}
+
+// Wrapper functions for specific properties (keeps call sites readable)
+async function markPhraseAsHard(phrase) {
+  if (phrase.hard) return;
+  await addPhraseProperty(phrase, 'hard');
 }
 
 async function unmarkPhraseAsHard(phrase) {
-  if (!phrase.hard) return; // Not marked as hard
-
-  const filePath = `./${language}.js`;
-  let content = fs.readFileSync(filePath, 'utf8');
-
-  // Escape special regex characters in both foreign and english text
-  const escapedForeign = phrase.foreign.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const escapedEnglish = phrase.english.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-
-  // Find the phrase and remove ', hard: true' from it
-  // Match the entire phrase object to find it, then remove the hard property
-  const regex = new RegExp(
-    `(\\{[^}]*foreign:\\s*['"]${escapedForeign}['"][^}]*english:\\s*['"]${escapedEnglish}['"][^}]*)(,\\s*hard:\\s*true)`,
-    's'
-  );
-
-  content = content.replace(regex, (match, beforeHard, hardPart) => {
-    // Remove the ', hard: true' part
-    return beforeHard;
-  });
-
-  fs.writeFileSync(filePath, content, 'utf8');
-  phrase.hard = false;
+  if (!phrase.hard) return;
+  await removePhraseProperty(phrase, 'hard');
 }
 
 async function markPhraseAsWorkingOn(phrase) {
-  if (phrase.workingOn) return; // Already marked
-
-  const filePath = `./${language}.js`;
-  let content = fs.readFileSync(filePath, 'utf8');
-
-  // Escape special regex characters in both foreign and english text
-  const escapedForeign = phrase.foreign.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const escapedEnglish = phrase.english.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-
-  // Find the phrase by matching both foreign and english, then insert workingOn: true after english
-  const regex = new RegExp(
-    `(\\{[^}]*foreign:\\s*['"]${escapedForeign}['"][^}]*english:\\s*['"]${escapedEnglish}['"])`,
-    's'
-  );
-
-  content = content.replace(regex, (match) => {
-    if (match.includes('workingOn:')) {
-      return match; // Already has workingOn property, don't modify
-    } else {
-      // Insert workingOn: true right after the english property's closing quote
-      return match + ', workingOn: true';
-    }
-  });
-
-  fs.writeFileSync(filePath, content, 'utf8');
-  phrase.workingOn = true;
+  if (phrase.workingOn) return;
+  await addPhraseProperty(phrase, 'workingOn');
 }
 
 async function unmarkPhraseAsWorkingOn(phrase) {
-  if (!phrase.workingOn) return; // Not marked as working on
-
-  const filePath = `./${language}.js`;
-  let content = fs.readFileSync(filePath, 'utf8');
-
-  // Escape special regex characters in both foreign and english text
-  const escapedForeign = phrase.foreign.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const escapedEnglish = phrase.english.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-
-  // Find the phrase and remove ', workingOn: true' from it
-  const regex = new RegExp(
-    `(\\{[^}]*foreign:\\s*['"]${escapedForeign}['"][^}]*english:\\s*['"]${escapedEnglish}['"][^}]*)(,\\s*workingOn:\\s*true)`,
-    's'
-  );
-
-  content = content.replace(regex, (match, beforeWorkingOn, workingOnPart) => {
-    // Remove the ', workingOn: true' part
-    return beforeWorkingOn;
-  });
-
-  fs.writeFileSync(filePath, content, 'utf8');
-  phrase.workingOn = false;
+  if (!phrase.workingOn) return;
+  await removePhraseProperty(phrase, 'workingOn');
 }
 
 function calcPrevLesson() {
