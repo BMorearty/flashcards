@@ -289,21 +289,19 @@ export const allPhrases = {
           foreign: 'una helada',
           english: 'a frost or freeze (weather event)',
           hard: true,
-          workingOn: true,
         },
-        { foreign: 'tierno', english: 'cute', workingOn: true },
+        { foreign: 'tierno', english: 'cute' },
         {
           foreign: 'lindo',
           english:
             'pretty / attractive / good-looking / lovely / nice - “mix of beautiful and cute”',
-          workingOn: true,
         },
         {
           foreign: 'Nos parece bien / mal tu idea.',
           english: 'We like / don’t like your idea.',
           hard: true,
         },
-        { foreign: 'la contaminación', english: 'pollution', workingOn: true },
+        { foreign: 'la contaminación', english: 'pollution' },
         {
           foreign: 'la basura tirada por las calles',
           english: 'the trash thrown in the streets',
@@ -319,9 +317,9 @@ export const allPhrases = {
           english: 'to take the dog for a walk',
           workingOn: true,
         },
-        { foreign: 'una película', english: 'a movie', workingOn: true },
+        { foreign: 'una película', english: 'a movie' },
         { foreign: 'hacer deporte', english: 'to do sports', workingOn: true },
-        { foreign: 'salir a correr', english: 'to go for a run', workingOn: true },
+        { foreign: 'salir a correr', english: 'to go for a run' },
       ],
       lesson13: [
         {
@@ -347,9 +345,9 @@ export const allPhrases = {
           hard: true,
         },
         { foreign: 'verdadero', english: 'true', workingOn: true },
-        { foreign: 'chocolate con leche', english: 'milk chocolate', workingOn: true },
+        { foreign: 'chocolate con leche', english: 'milk chocolate' },
         { foreign: 'chocolate oscuro', english: 'dark chocolate', workingOn: true, hard: true },
-        { foreign: 'saludable', english: 'healthy', workingOn: true },
+        { foreign: 'saludable', english: 'healthy' },
         { foreign: 'gobierno', english: 'government', workingOn: true },
         {
           foreign: 'empresa privada',
@@ -359,11 +357,11 @@ export const allPhrases = {
         },
         { foreign: 'Estoy de acuerdo.', english: 'I agree.', workingOn: true },
         { foreign: 'alguien', english: 'someone', workingOn: true, hard: true },
-        { foreign: 'enviar', english: 'to send', workingOn: true },
+        { foreign: 'enviar', english: 'to send' },
       ],
       lesson14: [
         { foreign: '¡Santo cielo!', english: 'Holy cow!', workingOn: true },
-        { foreign: 'impresionante', english: 'stunning / awesome', workingOn: true },
+        { foreign: 'impresionante', english: 'stunning / awesome', workingOn: true, hard: true },
         { foreign: 'Me duele el estómago.', english: 'My stomach hurts.', workingOn: true },
         {
           foreign: 'No me siento bien. Tengo tos.',
@@ -1056,7 +1054,6 @@ export const allPhrases = {
         {
           foreign: 'A ti te encanta dormir hasta tarde.',
           english: 'You love to sleep in late. (informal)',
-          workingOn: true,
         },
         {
           foreign: 'A ella le interesa aprender español.',
@@ -1084,7 +1081,6 @@ export const allPhrases = {
           foreign: 'Él ve mucha televisión. Le divierte.',
           english: 'He watches a lot of television. He enjoys it.',
           hard: true,
-          workingOn: true,
         },
         {
           foreign: 'Ella trabaja mucho. Le gusta su trabajo.',
@@ -1112,7 +1108,6 @@ export const allPhrases = {
           foreign: '¿Te duele la cabeza?',
           english: 'Do you have a headache? (informal)',
           hard: true,
-          workingOn: true,
         },
         {
           foreign: 'A ella le aburre la lluvia.',
