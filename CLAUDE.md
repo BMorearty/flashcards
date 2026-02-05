@@ -64,7 +64,9 @@ Phrase objects contain:
 **Hard Phrases**:
 - Marked with `hard: true` property directly in the language file (e.g., spanish.js)
 - User can mark phrases as hard during practice (H key)
+- User can unmark hard phrases during practice (NH key)
 - When marked, `markPhraseAsHard()` modifies the source file to add `hard: true` to the phrase object
+- When unmarked, `unmarkPhraseAsHard()` removes the `hard: true` property from the phrase object
 - Changes are persisted immediately to the file system
 
 **Duplicate Detection**:

@@ -358,7 +358,7 @@ function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
     : '';
 
   rl.question(
-    `[${wrongPhrases.length}W][${shownPhrasesCounter}/${phrases.length}] Enter: ans, (B)ack, (Q)uit,\n${secondPromptLine}Last was (H)ard / (W)rong / (R)ight: `,
+    `[${wrongPhrases.length}W][${shownPhrasesCounter}/${phrases.length}] Enter: ans, (B)ack, (Q)uit,\n${secondPromptLine}Last was (H)ard / (NH) Not Hard / (W)rong / (R)ight: `,
     (answer) => {
       answer = answer.toLowerCase();
       if (answer === 'q') {
@@ -405,6 +405,12 @@ function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
       }
       if (answer === 'h' && lastPhrase) {
         markPhraseAsHard(lastPhrase).then(() => {
+          showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
+        });
+        return;
+      }
+      if (answer === 'nh' && lastPhrase) {
+        unmarkPhraseAsHard(lastPhrase).then(() => {
           showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
         });
         return;
@@ -471,6 +477,32 @@ async function markPhraseAsHard(phrase) {
 
   fs.writeFileSync(filePath, content, 'utf8');
   phrase.hard = true;
+}
+
+async function unmarkPhraseAsHard(phrase) {
+  if (!phrase.hard) return; // Not marked as hard
+
+  const filePath = `./${language}.js`;
+  let content = fs.readFileSync(filePath, 'utf8');
+
+  // Escape special regex characters in both foreign and english text
+  const escapedForeign = phrase.foreign.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const escapedEnglish = phrase.english.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+  // Find the phrase and remove ', hard: true' from it
+  // Match the entire phrase object to find it, then remove the hard property
+  const regex = new RegExp(
+    `(\\{[^}]*foreign:\\s*['"]${escapedForeign}['"][^}]*english:\\s*['"]${escapedEnglish}['"][^}]*)(,\\s*hard:\\s*true)`,
+    's'
+  );
+
+  content = content.replace(regex, (match, beforeHard, hardPart) => {
+    // Remove the ', hard: true' part
+    return beforeHard;
+  });
+
+  fs.writeFileSync(filePath, content, 'utf8');
+  phrase.hard = false;
 }
 
 function calcPrevLesson() {
