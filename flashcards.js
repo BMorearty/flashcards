@@ -358,7 +358,7 @@ function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
     : '';
 
   rl.question(
-    `[${wrongPhrases.length}W][${shownPhrasesCounter}/${phrases.length}] Enter: ans, (B)ack, (Q)uit,\n${secondPromptLine}Last was (H)ard / (NH) Not Hard / (W)rong / (R)ight: `,
+    `[${wrongPhrases.length}W][${shownPhrasesCounter}/${phrases.length}] Enter: ans, (B)ack, (Q)uit,\n${secondPromptLine}Last was (H)ard / (NH) / (WO)rking On / (NWO) / (W)rong / (R)ight: `,
     (answer) => {
       answer = answer.toLowerCase();
       if (answer === 'q') {
@@ -411,6 +411,18 @@ function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
       }
       if (answer === 'nh' && lastPhrase) {
         unmarkPhraseAsHard(lastPhrase).then(() => {
+          showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
+        });
+        return;
+      }
+      if (answer === 'wo' && lastPhrase) {
+        markPhraseAsWorkingOn(lastPhrase).then(() => {
+          showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
+        });
+        return;
+      }
+      if (answer === 'nwo' && lastPhrase) {
+        unmarkPhraseAsWorkingOn(lastPhrase).then(() => {
           showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
         });
         return;
@@ -503,6 +515,60 @@ async function unmarkPhraseAsHard(phrase) {
 
   fs.writeFileSync(filePath, content, 'utf8');
   phrase.hard = false;
+}
+
+async function markPhraseAsWorkingOn(phrase) {
+  if (phrase.workingOn) return; // Already marked
+
+  const filePath = `./${language}.js`;
+  let content = fs.readFileSync(filePath, 'utf8');
+
+  // Escape special regex characters in both foreign and english text
+  const escapedForeign = phrase.foreign.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const escapedEnglish = phrase.english.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+  // Find the phrase by matching both foreign and english, then insert workingOn: true after english
+  const regex = new RegExp(
+    `(\\{[^}]*foreign:\\s*['"]${escapedForeign}['"][^}]*english:\\s*['"]${escapedEnglish}['"])`,
+    's'
+  );
+
+  content = content.replace(regex, (match) => {
+    if (match.includes('workingOn:')) {
+      return match; // Already has workingOn property, don't modify
+    } else {
+      // Insert workingOn: true right after the english property's closing quote
+      return match + ', workingOn: true';
+    }
+  });
+
+  fs.writeFileSync(filePath, content, 'utf8');
+  phrase.workingOn = true;
+}
+
+async function unmarkPhraseAsWorkingOn(phrase) {
+  if (!phrase.workingOn) return; // Not marked as working on
+
+  const filePath = `./${language}.js`;
+  let content = fs.readFileSync(filePath, 'utf8');
+
+  // Escape special regex characters in both foreign and english text
+  const escapedForeign = phrase.foreign.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const escapedEnglish = phrase.english.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+  // Find the phrase and remove ', workingOn: true' from it
+  const regex = new RegExp(
+    `(\\{[^}]*foreign:\\s*['"]${escapedForeign}['"][^}]*english:\\s*['"]${escapedEnglish}['"][^}]*)(,\\s*workingOn:\\s*true)`,
+    's'
+  );
+
+  content = content.replace(regex, (match, beforeWorkingOn, workingOnPart) => {
+    // Remove the ', workingOn: true' part
+    return beforeWorkingOn;
+  });
+
+  fs.writeFileSync(filePath, content, 'utf8');
+  phrase.workingOn = false;
 }
 
 function calcPrevLesson() {

@@ -69,6 +69,14 @@ Phrase objects contain:
 - When unmarked, `unmarkPhraseAsHard()` removes the `hard: true` property from the phrase object
 - Changes are persisted immediately to the file system
 
+**Working On Phrases**:
+- Marked with `workingOn: true` property directly in the language file
+- User can mark phrases as working on during practice (WO key)
+- User can unmark working on phrases during practice (NWO key)
+- When marked, `markPhraseAsWorkingOn()` modifies the source file to add `workingOn: true` to the phrase object
+- When unmarked, `unmarkPhraseAsWorkingOn()` removes the `workingOn: true` property from the phrase object
+- Changes are persisted immediately to the file system
+
 **Duplicate Detection**:
 - `checkDupes()` runs at startup to ensure no duplicate foreign phrases exist across all units
 
