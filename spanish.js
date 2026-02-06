@@ -297,7 +297,7 @@ export const allPhrases = {
             'pretty / attractive / good-looking / lovely / nice - “mix of beautiful and cute”',
         },
         {
-          foreign: 'Nos parece bien / mal tu idea.',
+          foreign: 'Nos parece buena / mala tu idea.',
           english: 'We like / don’t like your idea.',
           hard: true,
         },
