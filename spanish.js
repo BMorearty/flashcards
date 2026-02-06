@@ -1003,7 +1003,7 @@ export const allPhrases = {
         { foreign: '¿Perdón?', english: 'Pardon?' },
         { foreign: 'Por supuesto.', english: 'Of course.', hard: true },
         { foreign: 'Un poquito.', english: 'A little bit.' },
-        { foreign: 'además', english: 'besides', hard: true, workingOn: true, showEnglish: false },
+        { foreign: 'además', english: 'besides', hard: true, showEnglish: false },
         { foreign: 'entender', english: 'understand' },
         { foreign: 'escribir', english: 'to write' },
         { foreign: 'escuchar', english: 'to hear / to listen to' },
