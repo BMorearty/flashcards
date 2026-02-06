@@ -305,7 +305,6 @@ export const allPhrases = {
         {
           foreign: 'la basura tirada por las calles',
           english: 'the trash thrown in the streets',
-          workingOn: true,
           hard: true,
         },
         {
@@ -318,7 +317,7 @@ export const allPhrases = {
           workingOn: true,
         },
         { foreign: 'una película', english: 'a movie' },
-        { foreign: 'hacer deporte', english: 'to do sports', workingOn: true },
+        { foreign: 'hacer deporte', english: 'to do sports' },
         { foreign: 'salir a correr', english: 'to go for a run' },
       ],
       lesson13: [
@@ -331,7 +330,6 @@ export const allPhrases = {
         {
           foreign: '¿Puedo tratarle de tú?',
           english: 'May I address you informally? (more common)',
-          workingOn: true,
         },
         {
           foreign: 'Ellos están tratándose de tú. / de tú a tú.',
@@ -344,32 +342,31 @@ export const allPhrases = {
           workingOn: true,
           hard: true,
         },
-        { foreign: 'verdadero', english: 'true', workingOn: true },
+        { foreign: 'verdadero', english: 'true' },
         { foreign: 'chocolate con leche', english: 'milk chocolate' },
-        { foreign: 'chocolate oscuro', english: 'dark chocolate', workingOn: true, hard: true },
+        { foreign: 'chocolate oscuro', english: 'dark chocolate', hard: true },
         { foreign: 'saludable', english: 'healthy' },
-        { foreign: 'gobierno', english: 'government', workingOn: true },
+        { foreign: 'gobierno', english: 'government' },
         {
           foreign: 'empresa privada',
           english: 'private company / private enterprise',
           workingOn: true,
           hard: true,
         },
-        { foreign: 'Estoy de acuerdo.', english: 'I agree.', workingOn: true },
-        { foreign: 'alguien', english: 'someone', workingOn: true, hard: true },
+        { foreign: 'Estoy de acuerdo.', english: 'I agree.' },
+        { foreign: 'alguien', english: 'someone', hard: true },
         { foreign: 'enviar', english: 'to send' },
       ],
       lesson14: [
         { foreign: '¡Santo cielo!', english: 'Holy cow!', workingOn: true },
         { foreign: 'impresionante', english: 'stunning / awesome', workingOn: true, hard: true },
-        { foreign: 'Me duele el estómago.', english: 'My stomach hurts.', workingOn: true },
+        { foreign: 'Me duele el estómago.', english: 'My stomach hurts.' },
         {
           foreign: 'No me siento bien. Tengo tos.',
           english: 'I don’t feel well. I have a cough.',
-          workingOn: true,
         },
         { foreign: '¿Te duele algo?', english: 'Does something hurt? (informal)', workingOn: true },
-        { foreign: 'Me duele la garganta.', english: 'My throat hurts.', workingOn: true },
+        { foreign: 'Me duele la garganta.', english: 'My throat hurts.' },
         { foreign: 'Me duele la rodilla.', english: 'My knee hurts.', workingOn: true },
         {
           foreign: 'Hola. ¿Cómo te sientes?',
@@ -386,6 +383,7 @@ export const allPhrases = {
         {
           foreign: 'Me alegro de oír eso. / Me alegra oír eso.',
           english: 'I’m glad to hear that.',
+          hard: true,
           workingOn: true,
         },
       ],
@@ -1100,7 +1098,6 @@ export const allPhrases = {
           foreign: 'A ellos no les molesta la música a alto volumen.',
           english: 'They don’t mind loud music.',
           hard: true,
-          workingOn: true,
         },
       ],
       lesson2: [
@@ -1154,19 +1151,16 @@ export const allPhrases = {
         {
           foreign: 'Señora, le importa decirme su nombre?',
           english: 'Madam, would you mind telling me your name?',
-          workingOn: true,
           hard: true,
         },
         {
           foreign: 'No me asustan las tormentas. Me parecen muy bonitas.',
           english: 'I’m not afraid of storms. I think they’re very beautiful.',
-          workingOn: true,
           hard: true,
         },
         {
           foreign: 'Qué les pasa a los niños? Están nerviosos porque tienen un examen.',
           english: 'What’s wrong with the children? They’re nervous because they have an exam.',
-          workingOn: true,
           hard: true,
         },
       ],

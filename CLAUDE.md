@@ -13,6 +13,7 @@ node flashcards.js
 ```
 
 The application will start an interactive menu where you can:
+
 - Select a language unit, chapter, or lesson
 - Practice all phrases, hard phrases only, or phrases you're working on
 - Choose whether to see English or foreign language prompts
@@ -44,6 +45,7 @@ Each language file exports an `allPhrases` object structured as:
 ```
 
 Phrase objects contain:
+
 - `foreign`: The foreign language text (supports `|` for line breaks)
 - `english`: The English translation
 - `hard`: Boolean flag (persisted directly in the language file)
@@ -53,15 +55,18 @@ Phrase objects contain:
 ### Key Implementation Details
 
 **Phrase Selection Algorithm**:
+
 - Every 3rd phrase is a previously-wrong phrase (from `wrongPhrases`)
 - Otherwise randomly selects from current lesson/unit
 - Can show unseen phrases on demand
 
 **Navigation**:
+
 - Supports prev/next lesson navigation with automatic boundary detection
 - Calculates `prevUnit/prevChapter/prevLesson` and `nextUnit/nextChapter/nextLesson`
 
 **Hard Phrases**:
+
 - Marked with `hard: true` property directly in the language file (e.g., spanish.js)
 - User can mark phrases as hard during practice (H key)
 - User can unmark hard phrases during practice (NH key)
@@ -70,6 +75,7 @@ Phrase objects contain:
 - Changes are persisted immediately to the file system
 
 **Working On Phrases**:
+
 - Marked with `workingOn: true` property directly in the language file
 - User can mark phrases as working on during practice (WO key)
 - User can unmark working on phrases during practice (NWO key)
@@ -78,6 +84,7 @@ Phrase objects contain:
 - Changes are persisted immediately to the file system
 
 **Duplicate Detection**:
+
 - `checkDupes()` runs at startup to ensure no duplicate foreign phrases exist across all units
 
 ## Development Commands

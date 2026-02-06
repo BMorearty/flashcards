@@ -473,7 +473,7 @@ async function addPhraseProperty(phrase, property) {
   // Find the phrase by matching both foreign and english, then insert property after english
   const regex = new RegExp(
     `(\\{[^}]*foreign:\\s*['"]${escapedForeign}['"][^}]*english:\\s*['"]${escapedEnglish}['"])`,
-    's'
+    's',
   );
 
   content = content.replace(regex, (match) => {
@@ -500,7 +500,7 @@ async function removePhraseProperty(phrase, property) {
   // Find the phrase and remove the property from it
   const regex = new RegExp(
     `(\\{[^}]*foreign:\\s*['"]${escapedForeign}['"][^}]*english:\\s*['"]${escapedEnglish}['"][^}]*)(,\\s*${property}:\\s*true)`,
-    's'
+    's',
   );
 
   content = content.replace(regex, (match, beforeProperty, propertyPart) => {
