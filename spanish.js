@@ -321,7 +321,6 @@ export const allPhrases = {
         {
           foreign: 'sacar a pasear al perro',
           english: 'to take the dog for a walk',
-          workingOn: true,
         },
         { foreign: 'una película', english: 'a movie' },
         { foreign: 'hacer deporte', english: 'to do sports' },
@@ -341,7 +340,6 @@ export const allPhrases = {
         {
           foreign: 'Ellos están tratándose de tú. / de tú a tú.',
           english: 'They are using tú with each other.',
-          workingOn: true,
         },
         {
           foreign: 'Quedaste bien con tu discurso.',
@@ -378,7 +376,6 @@ export const allPhrases = {
         {
           foreign: 'Hola. ¿Cómo te sientes?',
           english: 'Hello. How are you feeling? (informal)',
-          workingOn: true,
         },
         {
           foreign: 'No me siento bien. / Me siento mal.',
@@ -398,7 +395,6 @@ export const allPhrases = {
         {
           foreign: 'el azúcar (masc. or fem! Usually masc.)',
           english: 'the sugar',
-          workingOn: true,
         },
         { foreign: 'el agua (fem.)', english: 'the water', workingOn: true },
         { foreign: 'azúcar moreno', english: 'brown sugar', workingOn: true },
@@ -411,10 +407,10 @@ export const allPhrases = {
           english: 'You have a nice weekend too.',
           workingOn: true,
         },
-        { foreign: 'darse cuenta', english: 'to realize', workingOn: true },
+        { foreign: 'darse cuenta', english: 'to realize', hard: true, workingOn: true },
         { foreign: 'montaña rusa', english: 'roller coaster', workingOn: true },
         { foreign: 'de la nada', english: 'out of nowhere / out of the blue', workingOn: true },
-        { foreign: 'la habilidad', english: 'the skill / the ability', workingOn: true },
+        { foreign: 'la habilidad', english: 'the skill', workingOn: true },
       ],
     },
     chapter2: {
