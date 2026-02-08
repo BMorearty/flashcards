@@ -606,6 +606,18 @@ export const allPhrases = {
           english: 'to leave, present tense regular verb conjugation',
           workingOn: true,
         },
+        {
+          foreign:
+            'decir, present tense:' +
+            '| (yo) digo' +
+            '| (tú) dices' +
+            '| (él, ella, usted) dice' +
+            '| (nosotros / nosotras) decimos' +
+            '| (vosotros / vosotras) deís' +
+            '| (ellos / ellas / ustedes) dicen',
+          english: 'to say, present tense conjugation',
+          workingOn: true,
+        },
       ],
     },
     chapter7: {
