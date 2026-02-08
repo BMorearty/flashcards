@@ -533,7 +533,7 @@ export const allPhrases = {
             '| (vosotros / vosotras) estáis' +
             '| (ellos / ellas / ustedes) están',
           english:
-            'to be (PLACE: position, location, action, condition, emotion):| I am, you are, etc.',
+            'to be (PLACE: position, location, action, condition, emotion), present tense:| I am, you are, etc.',
         },
         {
           foreign:
@@ -545,7 +545,7 @@ export const allPhrases = {
             '| (vosotros / vosotras) sóis' +
             '| (ellos / ellas / ustedes) son',
           english:
-            'to be (DOCTOR: date/day, occupation, characteristic/class, time, origin, relation/religion):| I am, you are, etc.',
+            'to be (DOCTOR: date/day, occupation, characteristic/class, time, origin, relation/religion), present tense:| I am, you are, etc.',
         },
         {
           foreign:
@@ -556,7 +556,7 @@ export const allPhrases = {
             '| (nosotros / nosotras) tenemos' +
             '| (vosotros / vosotras) tenéis' +
             '| (ellos / ellas / ustedes) tienen',
-          english: 'to have (a belonging or sensation):| I have, you have, etc.',
+          english: 'to have (a belonging or sensation), present tense:| I have, you have, etc.',
         },
         {
           foreign:
@@ -569,6 +569,42 @@ export const allPhrases = {
             '| (ellos / ellas / ustedes) han (infinitivo)',
           english: 'to have (done something):| I have (gone), you have (gone), etc.',
           hard: true,
+        },
+        {
+          foreign:
+            'caminar, present tense:' +
+            '| (yo) camino' +
+            '| (tú) caminas' +
+            '| (él, ella, usted) camina' +
+            '| (nosotros / nosotras) caminamos' +
+            '| (vosotros / vosotras) camináis' +
+            '| (ellos / ellas / ustedes) caminan (ca-MEE-nan)',
+          english: 'to walk, present tense regular verb conjugation',
+          workingOn: true,
+        },
+        {
+          foreign:
+            'comer, present tense:' +
+            '| (yo) como' +
+            '| (tú) comes' +
+            '| (él, ella, usted) come' +
+            '| (nosotros / nosotras) comemos' +
+            '| (vosotros / vosotras) coméis' +
+            '| (ellos / ellas / ustedes) comen',
+          english: 'to eat, present tense regular verb conjugation',
+          workingOn: true,
+        },
+        {
+          foreign:
+            'partir, present tense:' +
+            '| (yo) parto' +
+            '| (tú) partes' +
+            '| (él, ella, usted) parte' +
+            '| (nosotros / nosotras) partimos' +
+            '| (vosotros / vosotras) partís' +
+            '| (ellos / ellas / ustedes) parten',
+          english: 'to leave, present tense regular verb conjugation',
+          workingOn: true,
         },
       ],
     },
