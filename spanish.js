@@ -344,7 +344,6 @@ export const allPhrases = {
         {
           foreign: 'Quedaste bien con tu discurso.',
           english: 'You did well (made a good impression) with your speech. (informal)',
-          workingOn: true,
           hard: true,
         },
         { foreign: 'verdadero', english: 'true' },
@@ -355,7 +354,6 @@ export const allPhrases = {
         {
           foreign: 'empresa privada',
           english: 'private company / private enterprise',
-          workingOn: true,
           hard: true,
         },
         { foreign: 'Estoy de acuerdo.', english: 'I agree.' },
@@ -363,7 +361,7 @@ export const allPhrases = {
         { foreign: 'enviar', english: 'to send' },
       ],
       lesson14: [
-        { foreign: '¡Santo cielo!', english: 'Holy cow!', workingOn: true },
+        { foreign: '¡Santo cielo!', english: 'Holy cow!' },
         { foreign: 'impresionante', english: 'stunning / awesome', workingOn: true, hard: true },
         { foreign: 'Me duele el estómago.', english: 'My stomach hurts.' },
         {
@@ -372,7 +370,7 @@ export const allPhrases = {
         },
         { foreign: '¿Te duele algo?', english: 'Does something hurt? (informal)', workingOn: true },
         { foreign: 'Me duele la garganta.', english: 'My throat hurts.' },
-        { foreign: 'Me duele la rodilla.', english: 'My knee hurts.', workingOn: true },
+        { foreign: 'Me duele la rodilla.', english: 'My knee hurts.' },
         {
           foreign: 'Hola. ¿Cómo te sientes?',
           english: 'Hello. How are you feeling? (informal)',
@@ -399,7 +397,7 @@ export const allPhrases = {
         { foreign: 'el agua (fem.)', english: 'the water', workingOn: true },
         { foreign: 'azúcar moreno', english: 'brown sugar', workingOn: true },
         { foreign: 'azúcar blanca', english: 'white sugar', workingOn: true },
-        { foreign: 'afición', english: 'hobby / pastime / fondness', workingOn: true },
+        { foreign: 'afición', english: 'hobby / pastime / fondness' },
         { foreign: 'pasado / pasada', english: 'last (most recent)', workingOn: true },
         { foreign: 'siguiente / próxima / próximo', english: 'next', workingOn: true },
         {
@@ -408,8 +406,8 @@ export const allPhrases = {
           workingOn: true,
         },
         { foreign: 'darse cuenta', english: 'to realize', hard: true, workingOn: true },
-        { foreign: 'montaña rusa', english: 'roller coaster', workingOn: true },
-        { foreign: 'de la nada', english: 'out of nowhere / out of the blue', workingOn: true },
+        { foreign: 'montaña rusa', english: 'roller coaster' },
+        { foreign: 'de la nada', english: 'out of nowhere / out of the blue' },
         { foreign: 'la habilidad', english: 'the skill', workingOn: true },
       ],
     },
