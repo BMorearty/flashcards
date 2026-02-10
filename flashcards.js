@@ -352,107 +352,109 @@ function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
   );
   const shownPhrasesCounter = Math.min(shownPhrases.size, phrases.length);
   const anyMoreUnseen = shownPhrases.size < phrases.length;
-  const showUnseenPrompt = anyMoreUnseen ? 'Show (U)nseen,' : '';
-  const secondPromptLine = `${prevNextPrompt}${showUnseenPrompt}`
-    ? `${prevNextPrompt}${showUnseenPrompt}\n`
+  const showUnseenPrompt = anyMoreUnseen ? 'Show (U)nseen, ' : ' ';
+  const morePrompts = `${prevNextPrompt}${showUnseenPrompt}`
+    ? `${prevNextPrompt}${showUnseenPrompt}`
     : '';
+  const prompt = `[${wrongPhrases.length}W][${shownPhrasesCounter}/${phrases.length}] Enter: ans, (B)ack, (Q)uit, ${morePrompts}Last was (H)ard / (NH) / (WO)rking On / (NWO) / (W)rong / (R)ight: `;
+  const winWidth = process.stdout.columns;
+  const wrappedPrompt =
+    prompt.length > winWidth ? prompt.replace('Last was', '\nLast was') : prompt;
 
-  rl.question(
-    `[${wrongPhrases.length}W][${shownPhrasesCounter}/${phrases.length}] Enter: ans, (B)ack, (Q)uit,\n${secondPromptLine}Last was (H)ard / (NH) / (WO)rking On / (NWO) / (W)rong / (R)ight: `,
-    (answer) => {
-      answer = answer.toLowerCase();
-      if (answer === 'q') {
-        rl.close();
-        return;
-      }
-      if (answer === 'b') {
-        console.log(
-          `\nFinished with ${nameOf(currentUnit)}${nameOf(currentChapter)}${nameOf(currentLesson)}`,
-        );
-        currentUnit = currentChapter = currentLesson = null;
-        showMenu();
-        return;
-      }
-      if (answer === 'p') {
-        if (!prevUnit) {
-          console.log(chalk.red('No previous lesson.'));
-          showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
-          return;
-        }
-        [currentUnit, currentChapter, currentLesson] = [prevUnit, prevChapter, prevLesson];
-        startFlashcards();
-        return;
-      }
-      if (answer === 'n') {
-        if (!nextUnit) {
-          console.log(chalk.red('No next lesson.'));
-          showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
-          return;
-        }
-        [currentUnit, currentChapter, currentLesson] = [nextUnit, nextChapter, nextLesson];
-        startFlashcards();
-        return;
-      }
-      if (answer === 'u') {
-        if (shownPhrases.size >= phrases.length) {
-          console.log(chalk.red('There are no unseen phrases.'));
-          showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
-          return;
-        } else {
-          showUnseen = true;
-          // Fall through so we'll show the last answer before showing the next flashcard.
-        }
-      }
-      if (answer === 'h' && lastPhrase) {
-        markPhraseAsHard(lastPhrase).then(() => {
-          showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
-        });
-        return;
-      }
-      if (answer === 'nh' && lastPhrase) {
-        unmarkPhraseAsHard(lastPhrase).then(() => {
-          showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
-        });
-        return;
-      }
-      if (answer === 'wo' && lastPhrase) {
-        markPhraseAsWorkingOn(lastPhrase).then(() => {
-          showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
-        });
-        return;
-      }
-      if (answer === 'nwo' && lastPhrase) {
-        unmarkPhraseAsWorkingOn(lastPhrase).then(() => {
-          showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
-        });
-        return;
-      }
-      if (answer === 'w' && lastPhrase) {
-        if (!wrongPhrases.map((phrase) => phrase.foreign).includes(lastPhrase.foreign)) {
-          wrongPhrases.push(lastPhrase);
-        }
-        showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
-        return;
-      }
-      if (answer === 'r' && lastPhrase) {
-        wrongPhrases = wrongPhrases.filter((phrase) => phrase.foreign !== lastPhrase.foreign);
-        showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
-        return;
-      }
-      // If I typed a phrase, don't erase what I typed. I want to compare it to the correct answer.
-      const moveUpAndClearLine = ['', 'u'].includes(answer) ? '\u001b[1A\u001b[K' : '';
+  rl.question(wrappedPrompt, (answer) => {
+    answer = answer.toLowerCase();
+    if (answer === 'q') {
+      rl.close();
+      return;
+    }
+    if (answer === 'b') {
       console.log(
-        `${moveUpAndClearLine}${moveUpAndClearLine}${secondPromptLine ? moveUpAndClearLine : ''}    ${chalk.green((englishNow ? randomPhrase.foreign : randomPhrase.english).replaceAll(/\| */g, '\n    '))}${hard}${workingOn}${wrong}`,
+        `\nFinished with ${nameOf(currentUnit)}${nameOf(currentChapter)}${nameOf(currentLesson)}`,
       );
-      if (shownPhrases.size === phrases.length) {
-        console.log(chalk.cyanBright.underline('All phrases have been shown.'));
-        shownPhrases.add('don’t show that message again.');
+      currentUnit = currentChapter = currentLesson = null;
+      showMenu();
+      return;
+    }
+    if (answer === 'p') {
+      if (!prevUnit) {
+        console.log(chalk.red('No previous lesson.'));
+        showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
+        return;
       }
-      phraseIndex++;
-      lastPhrase = randomPhrase;
-      showNextFlashcard(undefined, showEnglish, prevNextPrompt);
-    },
-  );
+      [currentUnit, currentChapter, currentLesson] = [prevUnit, prevChapter, prevLesson];
+      startFlashcards();
+      return;
+    }
+    if (answer === 'n') {
+      if (!nextUnit) {
+        console.log(chalk.red('No next lesson.'));
+        showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
+        return;
+      }
+      [currentUnit, currentChapter, currentLesson] = [nextUnit, nextChapter, nextLesson];
+      startFlashcards();
+      return;
+    }
+    if (answer === 'u') {
+      if (shownPhrases.size >= phrases.length) {
+        console.log(chalk.red('There are no unseen phrases.'));
+        showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
+        return;
+      } else {
+        showUnseen = true;
+        // Fall through so we'll show the last answer before showing the next flashcard.
+      }
+    }
+    if (answer === 'h' && lastPhrase) {
+      markPhraseAsHard(lastPhrase).then(() => {
+        showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
+      });
+      return;
+    }
+    if (answer === 'nh' && lastPhrase) {
+      unmarkPhraseAsHard(lastPhrase).then(() => {
+        showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
+      });
+      return;
+    }
+    if (answer === 'wo' && lastPhrase) {
+      markPhraseAsWorkingOn(lastPhrase).then(() => {
+        showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
+      });
+      return;
+    }
+    if (answer === 'nwo' && lastPhrase) {
+      unmarkPhraseAsWorkingOn(lastPhrase).then(() => {
+        showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
+      });
+      return;
+    }
+    if (answer === 'w' && lastPhrase) {
+      if (!wrongPhrases.map((phrase) => phrase.foreign).includes(lastPhrase.foreign)) {
+        wrongPhrases.push(lastPhrase);
+      }
+      showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
+      return;
+    }
+    if (answer === 'r' && lastPhrase) {
+      wrongPhrases = wrongPhrases.filter((phrase) => phrase.foreign !== lastPhrase.foreign);
+      showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
+      return;
+    }
+    // If I typed a phrase, don't erase what I typed. I want to compare it to the correct answer.
+    const moveUpAndClearLine = ['', 'u'].includes(answer) ? '\u001b[1A\u001b[K' : '';
+    const linesToClear = (wrappedPrompt.match(/\n/g) || []).length + 1;
+    console.log(
+      `${moveUpAndClearLine.repeat(linesToClear)}    ${chalk.green((englishNow ? randomPhrase.foreign : randomPhrase.english).replaceAll(/\| */g, '\n    '))}${hard}${workingOn}${wrong}`,
+    );
+    if (shownPhrases.size === phrases.length) {
+      console.log(chalk.cyanBright.underline('All phrases have been shown.'));
+      shownPhrases.add('don’t show that message again.');
+    }
+    phraseIndex++;
+    lastPhrase = randomPhrase;
+    showNextFlashcard(undefined, showEnglish, prevNextPrompt);
+  });
 }
 
 function nameOf(thing) {
