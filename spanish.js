@@ -378,7 +378,6 @@ export const allPhrases = {
         {
           foreign: 'No me siento bien. / Me siento mal.',
           english: 'I don’t feel well.',
-          workingOn: true,
         },
         { foreign: 'Me duele el hombro.', english: 'My shoulder hurts.', workingOn: true },
         { foreign: 'Me duele la espalda.', english: 'My back hurts.', workingOn: true },
@@ -394,8 +393,8 @@ export const allPhrases = {
           foreign: 'el azúcar (masc. or fem! Usually masc.)',
           english: 'the sugar',
         },
-        { foreign: 'el agua (fem.)', english: 'the water', workingOn: true },
-        { foreign: 'azúcar moreno', english: 'brown sugar', workingOn: true },
+        { foreign: 'el agua (fem.)', english: 'the water' },
+        { foreign: 'azúcar moreno', english: 'brown sugar' },
         { foreign: 'azúcar blanca', english: 'white sugar', workingOn: true },
         { foreign: 'afición', english: 'hobby / pastime / fondness' },
         { foreign: 'pasado / pasada', english: 'last (most recent)', workingOn: true },
