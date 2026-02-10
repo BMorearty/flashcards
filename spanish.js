@@ -87,7 +87,7 @@ export const allPhrases = {
         { foreign: 'Muchas gracias.', english: 'Thank you very much.' },
         { foreign: 'Con gusto.', english: 'You’re welcome. (With pleasure.)' },
         { foreign: '¡Chao!', english: 'Bye!' },
-        { foreign: '¡Cuídate!', english: 'Take care! (informal)', hard: true },
+        { foreign: '¡Cuídate!', english: 'Take care! (informal)', hard: true, workingOn: true },
         { foreign: '¡Cuídense!', english: 'Take care! (to a group)', hard: true },
         {
           foreign: 'Nos vemos más tarde.',
@@ -1346,10 +1346,12 @@ export const allPhrases = {
         {
           foreign: '¡Disculpe!',
           english: 'Excuse me! (for getting attention or interrupting) (formal)',
+          workingOn: true,
         },
         {
           foreign: '¡Disculpa!',
           english: 'Excuse me! (for getting attention or interrupting) (informal)',
+          workingOn: true,
         },
         { foreign: 'español', english: 'Spanish (language)' },
         { foreign: 'alemán', english: 'German (language)' },
@@ -1577,6 +1579,7 @@ export const allPhrases = {
         {
           foreign: 'Es un gusto / placer conocerte.',
           english: 'It is a pleasure to meet you. (informal)',
+          workingOn: true,
         },
       ],
       lesson5: [
@@ -1609,6 +1612,42 @@ export const allPhrases = {
         {
           foreign: 'Nosotros no somos empleados. Somos periodistas.',
           english: 'We are not employees. We are journalists.',
+        },
+      ],
+      lesson6: [
+        { foreign: 'trabajar', english: 'to work' },
+        { foreign: 'trabajamos', english: '(we) work' },
+        {
+          foreign: 'Mi hermano y yo trabajamos juntos.',
+          english: 'My brother and I work together.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Nosotros somos periodistas. Trabajamos juntos.',
+          english: 'We are journalists. We work together.',
+          workingOn: true,
+        },
+        { foreign: 'comerciante', english: 'merchant', workingOn: true },
+        { foreign: '¿Es ella comerciante?', english: 'Is she a merchant?', workingOn: true },
+        {
+          foreign: 'Mi esposa no es comerciante, es periodista.',
+          english: 'My wife is not a merchant, she is a journalist.',
+          workingOn: true,
+        },
+        { foreign: 'hacer', english: 'to do / to make' },
+        { foreign: 'hace', english: '(you) do (formal)', workingOn: true },
+        { foreign: '¿Qué hace usted?', english: 'What do you do? (formal)' },
+        {
+          foreign: 'Yo soy comerciante, ¿qué hace usted?',
+          english: 'I’m a merchant. What do you do? (formal)',
+          workingOn: true,
+        },
+        { foreign: 'haces', english: '(you) do (informal)', workingOn: true },
+        { foreign: '¿Qué haces tú?', english: 'What do you do? (informal)', workingOn: true },
+        {
+          foreign: 'Mi esposa y yo somos periodistas. ¿Qué haces tú?',
+          english: 'My wife and I are journalists. What do you do? (informal)',
+          workingOn: true,
         },
       ],
     },
