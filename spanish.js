@@ -368,7 +368,7 @@ export const allPhrases = {
           foreign: 'No me siento bien. Tengo tos.',
           english: 'I don’t feel well. I have a cough.',
         },
-        { foreign: '¿Te duele algo?', english: 'Does something hurt? (informal)', workingOn: true },
+        { foreign: '¿Te duele algo?', english: 'Does something hurt? (informal)' },
         { foreign: 'Me duele la garganta.', english: 'My throat hurts.' },
         { foreign: 'Me duele la rodilla.', english: 'My knee hurts.' },
         {
@@ -408,6 +408,51 @@ export const allPhrases = {
         { foreign: 'montaña rusa', english: 'roller coaster' },
         { foreign: 'de la nada', english: 'out of nowhere / out of the blue' },
         { foreign: 'la habilidad', english: 'the skill', workingOn: true },
+      ],
+      lesson16: [
+        { foreign: 'el gatito', english: 'the kitten', workingOn: true },
+        { foreign: 'el perrito', english: 'the puppy', workingOn: true },
+        { foreign: 'el caballo', english: 'the horse', workingOn: true },
+        { foreign: 'la ballena', english: 'the whale', workingOn: true },
+        { foreign: 'el tigre', english: 'the tiger', workingOn: true },
+        { foreign: 'la ardilla', english: 'the squirrel', hard: true, workingOn: true },
+        { foreign: 'el león', english: 'the lion', workingOn: true },
+        { foreign: 'el elefante', english: 'the elephant', workingOn: true },
+        { foreign: 'el mono', english: 'the monkey', workingOn: true },
+        { foreign: 'la selva', english: 'the jungle', workingOn: true },
+        { foreign: 'demasiado', english: 'too', hard: true, workingOn: true },
+        {
+          foreign: 'aproximadamente mes por medio',
+          english: 'about once every other month',
+          hard: true,
+          workingOn: true,
+        },
+        { foreign: 'error de escritura', english: 'typo', workingOn: true },
+        { foreign: 'Tiene sentido.', english: 'It makes sense.', workingOn: true },
+        {
+          foreign: 'Me gusta de chocolate con vainilla. ¿Qué sabor te gusta?',
+          english: 'I like chocolate with vanilla. What flavor do you like? (informal)',
+          workingOn: true,
+        },
+        {
+          foreign: 'No me gusta levantarme temprano.',
+          english: 'I don’t like getting up early.',
+          workingOn: true,
+        },
+        { foreign: 'el chiste', english: 'the joke', workingOn: true },
+        { foreign: 'Que maravilloso.', english: 'How wonderful.', workingOn: true },
+        { foreign: 'Dame una pista.', english: 'Give me a hint. (informal)', workingOn: true },
+        {
+          foreign: 'El animal tiene cuatro patas.',
+          english: 'The animal has four legs.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Los humanos tenemos dos piernas.',
+          english: 'Humans have two legs.',
+          workingOn: true,
+        },
+        { foreign: 'Yo bebo en el bar.', english: 'I drink at the bar.', workingOn: true },
       ],
     },
     chapter2: {
@@ -610,7 +655,7 @@ export const allPhrases = {
             '| (tú) dices' +
             '| (él, ella, usted) dice' +
             '| (nosotros / nosotras) decimos' +
-            '| (vosotros / vosotras) deís' +
+            '| (vosotros / vosotras) decís' +
             '| (ellos / ellas / ustedes) dicen',
           english: 'to say, present tense conjugation',
           workingOn: true,
