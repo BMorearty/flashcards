@@ -56,7 +56,7 @@ export const allPhrases = {
         { foreign: '¿Qué tal?', english: 'How’s it going?', hard: true },
         {
           foreign: '¿Qué tal estás?',
-          english: 'How are you? (informal) (how’s it going, you?)',
+          english: 'How are you? (informal) (how’s it going, are you?)',
           hard: true,
         },
         { foreign: 'muy', english: 'very' },
@@ -75,7 +75,7 @@ export const allPhrases = {
         { foreign: '¿Y tú?', english: 'And you? (informal)' },
         {
           foreign: 'Encantado de conocerlo.',
-          english: 'Pleased to meet you. (to a male)',
+          english: 'Pleased to meet you. (to a male) (formal)',
           hard: true,
         },
         { foreign: 'Igual.', english: 'Likewise. (short version)' },
@@ -515,8 +515,8 @@ export const allPhrases = {
         { foreign: 'el semáforo', english: 'the traffic light' },
         { foreign: 'el zinc', english: 'the zinc' },
         { foreign: 'el cine', english: 'the cinema' },
-        { foreign: 'la silla', english: 'the chair', hard: true },
-        { foreign: 'el zorro', english: 'the fox', hard: true },
+        { foreign: 'la silla', english: 'the chair', workingOn: true, hard: true },
+        { foreign: 'el zorro', english: 'the fox' },
       ],
       lesson5: [
         { foreign: 'el jabón', english: 'the soap', hard: true },
@@ -533,7 +533,7 @@ export const allPhrases = {
         { foreign: 'la hamburguesa', english: 'the hamburger' },
         { foreign: 'la guitarra', english: 'the guitar' },
         { foreign: 'el águila', english: 'the eagle', hard: true },
-        { foreign: 'la gorra', english: 'the cap' },
+        { foreign: 'la gorra', english: 'the cap', hard: true },
         { foreign: 'el gusano', english: 'the worm', hard: true },
       ],
       lesson7: [
@@ -677,43 +677,52 @@ export const allPhrases = {
       showEnglish: false,
       lesson1: [
         {
-          foreign: '-a',
+          foreign: '-a (masc. or fem.)',
           english: 'Feminine. Ejemplo: la gata (girl cat), la manzana (apple). Excepción: el día.',
         },
         {
-          foreign: '-ad, -ed, -id, -ud',
+          foreign: '-ad, -ed, -id, -ud (masc. or fem.)',
           english:
             'Feminine. Ejemplo: la amistad (friendship), la pared (wall), la salud (health).',
         },
-        { foreign: '-ción', english: 'Feminine. Ejemplo: la canción, la emoción, la situación.' },
-        { foreign: '-eza', english: 'Feminine. Ejemplo: la tristeza (sadness), la cabeza (head).' },
-        { foreign: '-is', english: 'Feminine. Ejemplo: la crisis, la tendonitis' },
         {
-          foreign: '-z',
+          foreign: '-ción (masc. or fem.)',
+          english: 'Feminine. Ejemplo: la canción, la emoción, la situación.',
+        },
+        {
+          foreign: '-eza (masc. or fem.)',
+          english: 'Feminine. Ejemplo: la tristeza (sadness), la cabeza (head).',
+        },
+        { foreign: '-is (masc. or fem.)', english: 'Feminine. Ejemplo: la crisis, la tendonitis' },
+        {
+          foreign: '-z (masc. or fem.)',
           english:
             'Feminine. Ejemplo: la cruz (cross), la nariz (nose). Excepción: el lápiz (pencil), el arroz (rice)',
         },
         {
-          foreign: 'letras del abecedario',
+          foreign: 'letras del abecedario (masc. or fem.)',
           english: 'Feminine. Ejemplo: la a, la b, la c, ...',
         },
-        { foreign: '-o', english: 'Masculine. Ejemplo: el banco. Excepción: la mano, la foto' },
         {
-          foreign: '-ar, -er, -or',
+          foreign: '-o (masc. or fem.)',
+          english: 'Masculine. Ejemplo: el banco. Excepción: la mano, la foto',
+        },
+        {
+          foreign: '-ar, -er, -or (masc. or fem.)',
           english:
             'Masculine. Ejemplo: el titular (owner), el computador, el taller (shop). Excepción: la flor (flower).',
         },
         {
-          foreign: '-ma',
+          foreign: '-ma (masc. or fem.)',
           english: 'Masculine. Ejemplo: el clima (weather), el problema, el sistema.',
         },
         {
-          foreign: '-y',
+          foreign: '-y (masc. or fem.)',
           english: 'Masculine. Ejemplo: el rey (king), el buey (ox). Excepción: la ley (law).',
         },
-        { foreign: '-x', english: 'Masculine. Ejemplo: el tórax (thorax).' },
+        { foreign: '-x (masc. or fem.)', english: 'Masculine. Ejemplo: el tórax (thorax).' },
         {
-          foreign: '-al',
+          foreign: '-al (masc. or fem.)',
           english: 'Masculine. Ejemplo: el hospital, el terminal.',
         },
         {
@@ -721,11 +730,14 @@ export const allPhrases = {
           english: 'Masculine. El lunes, el martes, el miércoles, ...',
         },
         {
-          foreign: 'puntos cardinales',
+          foreign: 'puntos cardinales (masc. or fem.)',
           english: 'Masculine. El norte, el sur, el este, el oeste',
         },
-        { foreign: 'mesos', english: 'Masculine. El enero, el febrero, el marzo, ...' },
-        { foreign: 'números', english: 'Masculine. El uno, el dos, el tres, ...' },
+        {
+          foreign: 'mesos (masc. or fem.)',
+          english: 'Masculine. El enero, el febrero, el marzo, ...',
+        },
+        { foreign: 'números (masc. or fem.)', english: 'Masculine. El uno, el dos, el tres, ...' },
       ],
     },
     chapter9: {
@@ -1004,13 +1016,15 @@ export const allPhrases = {
         {
           foreign: 'El bebé tiene ganas de llorar.',
           english: 'The baby feels like crying.',
+          hard: true,
         },
         {
           foreign: 'Hay que tener cuidado. Hay hielo en la calle.',
           english: 'You have to be careful. There’s ice on the street.',
+          workingOn: true,
           hard: true,
         },
-        { foreign: 'Tiene que ir.', english: 'He has to go.' },
+        { foreign: 'Tiene que ir.', english: 'He has to go.', hard: true },
         { foreign: 'Yo he hecho mi trabajo.', english: 'I have done my job.' },
         {
           foreign: 'Ella ha ido al gimnasio.',
