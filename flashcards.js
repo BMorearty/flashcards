@@ -5,7 +5,7 @@ import chalk from 'chalk';
 const language = 'spanish';
 import { allPhrases } from './spanish.js';
 
-const rl = readline.createInterface({
+let rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
@@ -330,11 +330,21 @@ async function setupPhrases() {
 // Read a single character from stdin
 function readSingleChar() {
   return new Promise((resolve) => {
+    // Close readline to cleanly remove its listeners and state
+    rl.close();
+
     process.stdin.setRawMode(true);
     process.stdin.resume();
     process.stdin.once('data', (key) => {
       process.stdin.setRawMode(false);
       process.stdin.pause();
+
+      // Recreate readline interface
+      rl = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout,
+      });
+
       resolve(key.toString());
     });
   });
@@ -354,19 +364,21 @@ async function showTextLineByLine(text, color, prefix) {
   for (let i = 0; i < lines.length; i++) {
     process.stdout.write(`${prefix}${color(lines[i])}`);
 
-    // If this is the last line, don't wait for input
-    if (i === lines.length - 1) {
-      return;
-    }
     // Wait for user to press any key to continue
     const char = await readSingleChar();
-    // Print newline
-    console.log();
+
+    // If this is not the last line, print newline
+    if (i !== lines.length - 1) {
+      console.log();
+    }
 
     // If user types q or Q, show all remaining lines and continue
     if (char.toLowerCase() === 'q') {
       for (let j = i + 1; j < lines.length; j++) {
-        console.log(`${prefix}${color(lines[j])}`);
+        process.stdout.write(`${prefix}${color(lines[j])}`);
+        if (j !== lines.length - 1) {
+          console.log();
+        }
       }
       return;
     }
@@ -491,9 +503,9 @@ async function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
     const moveUpAndClearLine = ['', 'u'].includes(answer) ? '\u001b[1A\u001b[K' : '';
     const linesToClear = (wrappedPrompt.match(/\n/g) || []).length + 1;
 
-    // Show the answer line by line
+    // Clear the prompt and show the answer line by line
+    process.stdout.write(`${moveUpAndClearLine.repeat(linesToClear)}`);
     const answerText = englishNow ? randomPhrase.foreign : randomPhrase.english;
-    process.stdout.write(moveUpAndClearLine.repeat(linesToClear));
     await showTextLineByLine(answerText, chalk.green, '    ');
     console.log(`${hard}${workingOn}${wrong}`);
 
