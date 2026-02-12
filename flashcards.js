@@ -327,7 +327,53 @@ async function setupPhrases() {
   }
 }
 
-function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
+// Read a single character from stdin
+function readSingleChar() {
+  return new Promise((resolve) => {
+    process.stdin.setRawMode(true);
+    process.stdin.resume();
+    process.stdin.once('data', (key) => {
+      process.stdin.setRawMode(false);
+      process.stdin.pause();
+      resolve(key.toString());
+    });
+  });
+}
+
+// Show text one line at a time, waiting for single character input between lines
+async function showTextLineByLine(text, color, prefix) {
+  const lines = text.split(/\| */);
+
+  if (lines.length === 1) {
+    // No line breaks, show normally
+    process.stdout.write(`${prefix}${color(text)}`);
+    return;
+  }
+
+  // Multiple lines - show one at a time
+  for (let i = 0; i < lines.length; i++) {
+    process.stdout.write(`${prefix}${color(lines[i])}`);
+
+    // If this is the last line, don't wait for input
+    if (i === lines.length - 1) {
+      return;
+    }
+    // Wait for user to press any key to continue
+    const char = await readSingleChar();
+    // Print newline
+    console.log();
+
+    // If user types q or Q, show all remaining lines and continue
+    if (char.toLowerCase() === 'q') {
+      for (let j = i + 1; j < lines.length; j++) {
+        console.log(`${prefix}${color(lines[j])}`);
+      }
+      return;
+    }
+  }
+}
+
+async function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
   let randomPhrase;
   if (phrase) {
     randomPhrase = phrase;
@@ -361,7 +407,7 @@ function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
   const wrappedPrompt =
     prompt.length > winWidth ? prompt.replace('Last was', '\nLast was') : prompt;
 
-  rl.question(wrappedPrompt, (answer) => {
+  rl.question(wrappedPrompt, async (answer) => {
     answer = answer.toLowerCase();
     if (answer === 'q') {
       rl.close();
@@ -444,9 +490,13 @@ function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
     // If I typed a phrase, don't erase what I typed. I want to compare it to the correct answer.
     const moveUpAndClearLine = ['', 'u'].includes(answer) ? '\u001b[1A\u001b[K' : '';
     const linesToClear = (wrappedPrompt.match(/\n/g) || []).length + 1;
-    console.log(
-      `${moveUpAndClearLine.repeat(linesToClear)}    ${chalk.green((englishNow ? randomPhrase.foreign : randomPhrase.english).replaceAll(/\| */g, '\n    '))}${hard}${workingOn}${wrong}`,
-    );
+
+    // Show the answer line by line
+    const answerText = englishNow ? randomPhrase.foreign : randomPhrase.english;
+    process.stdout.write(moveUpAndClearLine.repeat(linesToClear));
+    await showTextLineByLine(answerText, chalk.green, '    ');
+    console.log(`${hard}${workingOn}${wrong}`);
+
     if (shownPhrases.size === phrases.length) {
       console.log(chalk.cyanBright.underline('All phrases have been shown.'));
       shownPhrases.add('don’t show that message again.');
