@@ -453,6 +453,36 @@ export const allPhrases = {
         },
         { foreign: 'Yo bebo en el bar.', english: 'I drink at the bar.', workingOn: true },
       ],
+      lesson17: [
+        { foreign: 'incluso cuando', english: 'even when', workingOn: true },
+        { foreign: 'la cara', english: 'the face', workingOn: true },
+        {
+          foreign: 'Este lápiz cuesta un ojo de la cara.',
+          english: 'This pencil costs an arm and a leg.',
+          workingOn: true,
+        },
+        { foreign: 'expresiones idiomáticas', english: 'idioms', workingOn: true },
+        { foreign: 'un dicho', english: 'a saying', workingOn: true },
+        { foreign: 'la carpeta', english: 'the folder', workingOn: true },
+        { foreign: 'signos de exclamación', english: 'exclamation marks', workingOn: true },
+        {
+          foreign: 'signo de exclamación abierto',
+          english: 'opening exclamation mark',
+          workingOn: true,
+        },
+        {
+          foreign: 'signo de exclamación cerrado',
+          english: 'closing exclamation mark',
+          workingOn: true,
+        },
+        { foreign: 'una araña', english: 'a spider', workingOn: true },
+        { foreign: 'aterrador / aterradora', english: 'scary', workingOn: true },
+        {
+          foreign: 'Para mí las arañas son aterradoras.',
+          english: 'To me, spiders are terrifying.',
+          workingOn: true,
+        },
+      ],
     },
     chapter2: {
       name: 'Days of the week',
