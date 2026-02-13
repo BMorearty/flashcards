@@ -175,11 +175,11 @@ export const allPhrases = {
           english: 'to wear a jacket',
           hard: true,
         },
-        { foreign: 'unos lápices de colores', english: 'some colored pencils' },
+        { foreign: 'unos lápices de colores', english: 'some colored pencils', workingOn: true },
       ],
       lesson7: [
         { foreign: 'éxito', english: 'success' },
-        { foreign: 'hace un rato', english: 'a while ago' },
+        { foreign: 'hace un rato', english: 'a while ago', workingOn: true },
         { foreign: 'hace un mes', english: 'a month ago' },
         { foreign: 'hace un minuto', english: 'a minute ago' },
         { foreign: 'cuñado', english: 'brother-in-law' },
@@ -299,7 +299,6 @@ export const allPhrases = {
         {
           foreign: 'Nos parece buena / bien tu idea.',
           english: 'We like your idea.',
-          workingOn: true,
           hard: true,
         },
         {
@@ -330,7 +329,6 @@ export const allPhrases = {
         {
           foreign: '¿Puedo dirigirme a usted con tú?',
           english: 'May I address you informally? (more formal)',
-          workingOn: true,
           hard: true,
         },
         {
@@ -379,7 +377,7 @@ export const allPhrases = {
           foreign: 'No me siento bien. / Me siento mal.',
           english: 'I don’t feel well.',
         },
-        { foreign: 'Me duele el hombro.', english: 'My shoulder hurts.', workingOn: true },
+        { foreign: 'Me duele el hombro.', english: 'My shoulder hurts.' },
         { foreign: 'Me duele la espalda.', english: 'My back hurts.', workingOn: true },
         {
           foreign: 'Me alegro de oír eso. / Me alegra oír eso.',
@@ -441,7 +439,7 @@ export const allPhrases = {
         },
         { foreign: 'el chiste', english: 'the joke', workingOn: true },
         { foreign: 'Que maravilloso.', english: 'How wonderful.', workingOn: true },
-        { foreign: 'Dame una pista.', english: 'Give me a hint. (informal)', workingOn: true },
+        { foreign: 'Dame una pista.', english: 'Give me a hint. (informal)' },
         {
           foreign: 'El animal tiene cuatro patas.',
           english: 'The animal has four legs.',
@@ -492,7 +490,7 @@ export const allPhrases = {
         { foreign: 'el yate', english: 'the yacht' },
       ],
       lesson2: [
-        { foreign: 'la bañera', english: 'the bathtub', hard: true },
+        { foreign: 'la bañera', english: 'the bathtub', workingOn: true, hard: true },
         { foreign: 'el vestido', english: 'the dress', hard: true },
         { foreign: 'el virus', english: 'the virus' },
         { foreign: 'la botella', english: 'the bottle' },
@@ -827,7 +825,11 @@ export const allPhrases = {
           english: 'She is eating chocolate.',
           hard: true,
         },
-        { foreign: 'La niña está haciendo la tarea.', english: 'The girl is doing her homework.' },
+        {
+          foreign: 'La niña está haciendo la tarea.',
+          english: 'The girl is doing her homework.',
+          workingOn: true,
+        },
         { foreign: 'Ella está viviendo en Nueva York.', english: 'She is living in New York.' },
         {
           foreign: 'La niña está escribiendo en su cuaderno.',
@@ -934,6 +936,7 @@ export const allPhrases = {
         {
           foreign: 'Estoy pidiendo una bebida.',
           english: 'I’m asking for a drink.',
+          workingOn: true,
           hard: true,
         },
         {
@@ -1035,7 +1038,7 @@ export const allPhrases = {
     chapter13: {
       name: 'Nationalities and origins, places and countries, languages',
       lesson1: [
-        { foreign: 'nacionalidad', english: 'nationality' },
+        { foreign: 'nacionalidad', english: 'nationality', workingOn: true },
         { foreign: 'árabe', english: 'Arab (adj.)' },
         { foreign: 'argentino / argentina', english: 'Argentinian (adj.)' },
         { foreign: 'australiano / australiana', english: 'Australian (adj.)' },
@@ -1697,11 +1700,10 @@ export const allPhrases = {
           workingOn: true,
         },
         { foreign: 'haces', english: '(you) do (informal)' },
-        { foreign: '¿Qué haces tú?', english: 'What do you do? (informal)', workingOn: true },
+        { foreign: '¿Qué haces tú?', english: 'What do you do? (informal)' },
         {
           foreign: 'Mi esposa y yo somos periodistas. ¿Qué haces tú?',
           english: 'My wife and I are journalists. What do you do? (informal)',
-          workingOn: true,
         },
       ],
     },
