@@ -368,6 +368,7 @@ export const allPhrases = {
         },
         { foreign: '¿Te duele algo?', english: 'Does something hurt? (informal)' },
         { foreign: 'Me duele la garganta.', english: 'My throat hurts.' },
+        { foreign: 'Me duele el cuello.', english: 'My neck hurts.', workingOn: true },
         { foreign: 'Me duele la rodilla.', english: 'My knee hurts.' },
         {
           foreign: 'Hola. ¿Cómo te sientes?',
