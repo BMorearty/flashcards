@@ -3,7 +3,7 @@ import fs from 'fs';
 import chalk from 'chalk';
 
 const language = 'spanish';
-import { allPhrases } from './spanish.js';
+const { allPhrases } = await import(`./${language}.js`);
 
 let rl = readline.createInterface({
   input: process.stdin,
