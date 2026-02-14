@@ -87,7 +87,7 @@ export const allPhrases = {
         { foreign: 'Muchas gracias.', english: 'Thank you very much.' },
         { foreign: 'Con gusto.', english: 'You’re welcome. (With pleasure.)' },
         { foreign: '¡Chao!', english: 'Bye!' },
-        { foreign: '¡Cuídate!', english: 'Take care! (informal)', hard: true, workingOn: true },
+        { foreign: '¡Cuídate!', english: 'Take care! (informal)', hard: true },
         { foreign: '¡Cuídense!', english: 'Take care! (to a group)', hard: true },
         {
           foreign: 'Nos vemos más tarde.',
@@ -304,7 +304,6 @@ export const allPhrases = {
         {
           foreign: 'Nos parece mala / mal tu idea.',
           english: 'We don’t like your idea.',
-          workingOn: true,
           hard: true,
         },
         { foreign: 'la contaminación', english: 'pollution' },
@@ -379,7 +378,7 @@ export const allPhrases = {
           english: 'I don’t feel well.',
         },
         { foreign: 'Me duele el hombro.', english: 'My shoulder hurts.' },
-        { foreign: 'Me duele la espalda.', english: 'My back hurts.', workingOn: true },
+        { foreign: 'Me duele la espalda.', english: 'My back hurts.' },
         {
           foreign: 'Me alegro de oír eso. / Me alegra oír eso.',
           english: 'I’m glad to hear that.',
@@ -397,7 +396,7 @@ export const allPhrases = {
         { foreign: 'azúcar blanca', english: 'white sugar' },
         { foreign: 'afición', english: 'hobby / pastime / fondness' },
         { foreign: 'pasado / pasada', english: 'last (most recent)', workingOn: true },
-        { foreign: 'siguiente / próxima / próximo', english: 'next', workingOn: true },
+        { foreign: 'siguiente / próxima / próximo', english: 'next' },
         {
           foreign: 'Feliz fin de semana para ti también.',
           english: 'You have a nice weekend too. (informal)',
@@ -414,7 +413,7 @@ export const allPhrases = {
         { foreign: 'el caballo', english: 'the horse' },
         { foreign: 'la ballena', english: 'the whale' },
         { foreign: 'el tigre', english: 'the tiger' },
-        { foreign: 'la ardilla', english: 'the squirrel', hard: true, workingOn: true },
+        { foreign: 'la ardilla', english: 'the squirrel', hard: true },
         { foreign: 'el león', english: 'the lion' },
         { foreign: 'el elefante', english: 'the elephant' },
         { foreign: 'el mono', english: 'the monkey' },
@@ -439,19 +438,18 @@ export const allPhrases = {
           workingOn: true,
         },
         { foreign: 'el chiste', english: 'the joke', workingOn: true },
-        { foreign: 'Que maravilloso.', english: 'How wonderful.', workingOn: true },
+        { foreign: 'Que maravilloso.', english: 'How wonderful.' },
         { foreign: 'Dame una pista.', english: 'Give me a hint. (informal)' },
         {
           foreign: 'El animal tiene cuatro patas.',
           english: 'The animal has four legs.',
-          workingOn: true,
         },
         {
           foreign: 'Los humanos tenemos dos piernas.',
           english: 'Humans have two legs.',
           workingOn: true,
         },
-        { foreign: 'Yo bebo en el bar.', english: 'I drink at the bar.', workingOn: true },
+        { foreign: 'Yo bebo en el bar.', english: 'I drink at the bar.' },
       ],
       lesson17: [
         { foreign: 'incluso cuando', english: 'even when', workingOn: true },
@@ -1438,12 +1436,10 @@ export const allPhrases = {
         {
           foreign: '¡Disculpe!',
           english: 'Excuse me! (for getting attention or interrupting) (formal)',
-          workingOn: true,
         },
         {
           foreign: '¡Disculpa!',
           english: 'Excuse me! (for getting attention or interrupting) (informal)',
-          workingOn: true,
         },
         { foreign: 'español', english: 'Spanish (language)' },
         { foreign: 'alemán', english: 'German (language)' },
@@ -1728,7 +1724,6 @@ export const allPhrases = {
         {
           foreign: 'Yo soy comerciante, ¿qué hace usted?',
           english: 'I’m a merchant. What do you do? (formal)',
-          workingOn: true,
         },
         { foreign: 'haces', english: '(you) do (informal)' },
         { foreign: '¿Qué haces tú?', english: 'What do you do? (informal)' },
