@@ -15,7 +15,7 @@ node flashcards.js
 The application will start an interactive menu where you can:
 
 - Select a language unit, chapter, or lesson
-- Practice all phrases, hard phrases only, or phrases you're working on
+- Practice all phrases, hard phrases only, custom phrases, or phrases you're working on
 - Choose whether to see English or foreign language prompts
 
 ## Code Architecture
