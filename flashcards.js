@@ -40,6 +40,7 @@ let shownPhrases = new Set();
 let prevUnit, prevChapter, prevLesson, nextUnit, nextChapter, nextLesson;
 let showUnseen;
 
+// Check for duplicate foreign phrases across all units/chapters/lessons
 function checkDupes() {
   const seen = new Set();
   const dupes = [];
@@ -92,6 +93,7 @@ function addShowEnglish() {
   }
 }
 
+// Show top-level menu
 function showMenu() {
   console.log(menu);
   rl.question('Your choice: ', (answer) => {
@@ -103,6 +105,7 @@ function showMenu() {
   });
 }
 
+// Respond to top-level menu choice
 function handleMenuChoice(choice) {
   if (choice.toLowerCase() === 'a') {
     currentUnit = 'all';
@@ -136,6 +139,7 @@ function handleMenuChoice(choice) {
   showMenu();
 }
 
+// Show the chapter menu for the current unit
 function showChapterMenu() {
   const chapterMenu = `
 Choose a chapter:
@@ -171,6 +175,7 @@ Q. Quit
   });
 }
 
+// Show the lesson menu for the current unit+chapter
 function showLessonMenu() {
   let skipped = 0;
   const lessonMenu = `
@@ -224,6 +229,8 @@ Q. Quit
   });
 }
 
+// Start the flashcard session for the current unit+chapter+lesson,
+// but first ask whether to show English or foreign phrases.
 function startFlashcards() {
   // If current unit+chapter has showEnglish set to true or false, don't ask.
   let showEnglish;
@@ -244,6 +251,8 @@ function startFlashcards() {
   }
 }
 
+// Set up (P)rev/(N)ext prompts based on whether there are previous/next lessons,
+// then start showing flashcards.
 function setupPrompts(showEnglish) {
   [prevUnit, prevChapter, prevLesson] = calcPrevLesson();
   [nextUnit, nextChapter, nextLesson] = calcNextLesson();
@@ -266,7 +275,6 @@ function setupPrompts(showEnglish) {
   setupPhrases().then(() => {
     if (phrases.length === 0) {
       console.log(chalk.red('No phrases found.'));
-      // currentUnit = currentChapter = currentLesson = null;
       showMenu();
       return;
     }
@@ -274,6 +282,8 @@ function setupPrompts(showEnglish) {
   });
 }
 
+// Set up the phrases array based on the current unit/chapter/lesson and filters like
+// hard/workingOn.
 async function setupPhrases() {
   phrases = [];
   wrongPhrases = [];
@@ -385,6 +395,7 @@ async function showTextLineByLine(text, color, prefix) {
   }
 }
 
+// Show the next flashcard and wait for a user command.
 async function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
   let randomPhrase;
   if (phrase) {
@@ -519,13 +530,14 @@ async function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
   });
 }
 
+// Convert unit/chapter/lesson keys into readable names, e.g. "unit1" to "Unit 1"
 function nameOf(thing) {
   return thing
     ? `${thing[0].toUpperCase() + thing.slice(1).replace(/([a-z])([0-9])/gi, '$1 $2')} `
     : '';
 }
 
-// Core function to add a property to a phrase in the source file
+// Add a property to a phrase in the source file
 async function addPhraseProperty(phrase, property) {
   const filePath = `./${language}.js`;
   let content = fs.readFileSync(filePath, 'utf8');
@@ -552,7 +564,7 @@ async function addPhraseProperty(phrase, property) {
   phrase[property] = true;
 }
 
-// Core function to remove a property from a phrase in the source file
+// Remove a property from a phrase in the source file
 async function removePhraseProperty(phrase, property) {
   const filePath = `./${language}.js`;
   let content = fs.readFileSync(filePath, 'utf8');
@@ -575,27 +587,31 @@ async function removePhraseProperty(phrase, property) {
   phrase[property] = false;
 }
 
-// Wrapper functions for specific properties (keeps call sites readable)
+// Add hard: true to a phrase in the language file and in memory
 async function markPhraseAsHard(phrase) {
   if (phrase.hard) return;
   await addPhraseProperty(phrase, 'hard');
 }
 
+// Remove hard: true from a phrase in the language file and in memory
 async function unmarkPhraseAsHard(phrase) {
   if (!phrase.hard) return;
   await removePhraseProperty(phrase, 'hard');
 }
 
+// Add workingOn: true to a phrase in the language file and in memory
 async function markPhraseAsWorkingOn(phrase) {
   if (phrase.workingOn) return;
   await addPhraseProperty(phrase, 'workingOn');
 }
 
+// Remove workingOn: true from a phrase in the language file and in memory
 async function unmarkPhraseAsWorkingOn(phrase) {
   if (!phrase.workingOn) return;
   await removePhraseProperty(phrase, 'workingOn');
 }
 
+// Calculate the previous lesson based on the current unit/chapter/lesson.
 function calcPrevLesson() {
   if (!(currentUnit.startsWith('unit') || currentUnit === 'custom')) {
     // Unit is 'all', 'hard'
@@ -644,6 +660,7 @@ function calcPrevLesson() {
   return [null, null, null];
 }
 
+// Calculate the next lesson based on the current unit/chapter/lesson.
 function calcNextLesson() {
   if (!(currentUnit.startsWith('unit') || currentUnit === 'custom')) {
     // Unit is 'all', 'hard'
@@ -695,4 +712,5 @@ function calcNextLesson() {
   return [null, null, null];
 }
 
+// Start the app by showing the top-level menu.
 showMenu();
