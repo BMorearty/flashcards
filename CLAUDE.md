@@ -68,20 +68,16 @@ Phrase objects contain:
 **Hard Phrases**:
 
 - Marked with `hard: true` property directly in the language file (e.g., spanish.js)
-- User can mark phrases as hard during practice (H key)
-- User can unmark hard phrases during practice (NH key)
-- When marked, `markPhraseAsHard()` modifies the source file to add `hard: true` to the phrase object
-- When unmarked, `unmarkPhraseAsHard()` removes the `hard: true` property from the phrase object
-- Changes are persisted immediately to the file system
+- User can mark phrases as hard during practice (H key) which calls markPhraseAsHard()
+- User can unmark hard phrases during practice (NH key) which calls unmarkPhraseAsHard().
+  This removes `hard: true` instead of changing it to `hard: false`.
 
 **Working On Phrases**:
 
 - Marked with `workingOn: true` property directly in the language file
-- User can mark phrases as working on during practice (WO key)
-- User can unmark working on phrases during practice (NWO key)
-- When marked, `markPhraseAsWorkingOn()` modifies the source file to add `workingOn: true` to the phrase object
-- When unmarked, `unmarkPhraseAsWorkingOn()` removes the `workingOn: true` property from the phrase object
-- Changes are persisted immediately to the file system
+- User can mark phrases as working on during practice (WO key) which calls markPhraseAsWorkingOn()
+- User can unmark working on phrases during practice (NWO key) which calls unmarkPhraseAsWorkingOn().
+  This removes `workingOn: true` instead of changing it to `workingOn: false`.
 
 **Duplicate Detection**:
 
