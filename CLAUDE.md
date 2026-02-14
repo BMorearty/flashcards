@@ -46,11 +46,13 @@ Each language file exports an `allPhrases` object structured as:
 
 Phrase objects contain:
 
-- `foreign`: The foreign language text (supports `|` for line breaks)
-- `english`: The English translation
+- `foreign`: The foreign language text (supports `|` for line breaks) - **ALWAYS first property**
+- `english`: The English translation - **ALWAYS second property**
 - `hard`: Boolean flag (persisted directly in the language file)
 - `workingOn`: Boolean flag for phrases in active practice
 - `showEnglish`: Optional override for display direction
+
+**IMPORTANT**: `foreign` and `english` must always be the first two properties in that order. Other properties (hard, workingOn, showEnglish) come after.
 
 ### Key Implementation Details
 

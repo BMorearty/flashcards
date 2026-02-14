@@ -37,6 +37,7 @@ let lastPhrase = null;
 let wrongPhrases;
 let phraseIndex;
 let shownPhrases = new Set();
+let allPhrasesShownMessageDisplayed = false;
 let prevUnit, prevChapter, prevLesson, nextUnit, nextChapter, nextLesson;
 let showUnseen;
 
@@ -72,7 +73,7 @@ function checkDupes() {
   }
 }
 
-// Copy 'showEnglish' prop down into each phrase
+// Copy 'showEnglish' prop down into each phrase (only if phrase doesn't already have it)
 function addShowEnglish() {
   for (let unit in allPhrases) {
     for (let chapter in allPhrases[unit]) {
@@ -84,7 +85,7 @@ function addShowEnglish() {
           continue;
         }
         for (let phrase of allPhrases[unit][chapter][lesson]) {
-          if ('showEnglish' in allPhrases[unit][chapter]) {
+          if ('showEnglish' in allPhrases[unit][chapter] && !('showEnglish' in phrase)) {
             phrase.showEnglish = allPhrases[unit][chapter].showEnglish;
           }
         }
@@ -258,12 +259,12 @@ function setupPrompts(showEnglish) {
   [nextUnit, nextChapter, nextLesson] = calcNextLesson();
   const prevNextPrompt =
     prevUnit && nextUnit
-      ? '(P)rev / (N)ext lesson, '
+      ? ' (P)rev / (N)ext lesson, '
       : prevUnit
-        ? '(P)rev lesson, '
+        ? ' (P)rev lesson, '
         : nextUnit
-          ? '(N)ext lesson, '
-          : '';
+          ? ' (N)ext lesson, '
+          : ' ';
   const unitName =
     currentUnit && allPhrases[currentUnit] && allPhrases[currentUnit].name
       ? `- “${allPhrases[currentUnit].name}”\n`
@@ -289,6 +290,7 @@ async function setupPhrases() {
   wrongPhrases = [];
   phraseIndex = 0;
   shownPhrases.clear();
+  allPhrasesShownMessageDisplayed = false;
   showUnseen = false;
   if (['all', 'hard', 'workingOn'].includes(currentUnit)) {
     for (let unit in allPhrases) {
@@ -421,11 +423,9 @@ async function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
   );
   const shownPhrasesCounter = Math.min(shownPhrases.size, phrases.length);
   const anyMoreUnseen = shownPhrases.size < phrases.length;
-  const showUnseenPrompt = anyMoreUnseen ? 'Show (U)nseen, ' : ' ';
-  const morePrompts = `${prevNextPrompt}${showUnseenPrompt}`
-    ? `${prevNextPrompt}${showUnseenPrompt}`
-    : '';
-  const prompt = `[${wrongPhrases.length}W][${shownPhrasesCounter}/${phrases.length}] Enter: ans, (B)ack, (Q)uit, ${morePrompts}Last was (H)ard / (NH) / (WO)rking On / (NWO) / (W)rong / (R)ight: `;
+  const showUnseenPrompt = anyMoreUnseen ? 'Show (U)nseen, ' : '';
+  const morePrompts = `${prevNextPrompt}${showUnseenPrompt}`;
+  const prompt = `[${wrongPhrases.length}W][${shownPhrasesCounter}/${phrases.length}] Enter: ans, (B)ack, (Q)uit,${morePrompts}Last was (H)ard / (NH) / (WO)rking On / (NWO) / (W)rong / (R)ight: `;
   const winWidth = process.stdout.columns;
   const wrappedPrompt =
     prompt.length > winWidth ? prompt.replace('Last was', '\nLast was') : prompt;
@@ -520,9 +520,9 @@ async function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
     await showTextLineByLine(answerText, chalk.green, '    ');
     console.log(`${hard}${workingOn}${wrong}`);
 
-    if (shownPhrases.size === phrases.length) {
+    if (shownPhrases.size === phrases.length && !allPhrasesShownMessageDisplayed) {
       console.log(chalk.cyanBright.underline('All phrases have been shown.'));
-      shownPhrases.add('don’t show that message again.');
+      allPhrasesShownMessageDisplayed = true;
     }
     phraseIndex++;
     lastPhrase = randomPhrase;
@@ -539,6 +539,11 @@ function nameOf(thing) {
 
 // Add a property to a phrase in the source file
 async function addPhraseProperty(phrase, property) {
+  // Check if property is already set in memory
+  if (phrase[property]) {
+    return;
+  }
+
   const filePath = `./${language}.js`;
   let content = fs.readFileSync(filePath, 'utf8');
 
@@ -566,6 +571,11 @@ async function addPhraseProperty(phrase, property) {
 
 // Remove a property from a phrase in the source file
 async function removePhraseProperty(phrase, property) {
+  // Check if property is already unset in memory
+  if (!phrase[property]) {
+    return;
+  }
+
   const filePath = `./${language}.js`;
   let content = fs.readFileSync(filePath, 'utf8');
 
@@ -584,30 +594,26 @@ async function removePhraseProperty(phrase, property) {
   });
 
   fs.writeFileSync(filePath, content, 'utf8');
-  phrase[property] = false;
+  delete phrase[property];
 }
 
 // Add hard: true to a phrase in the language file and in memory
 async function markPhraseAsHard(phrase) {
-  if (phrase.hard) return;
   await addPhraseProperty(phrase, 'hard');
 }
 
 // Remove hard: true from a phrase in the language file and in memory
 async function unmarkPhraseAsHard(phrase) {
-  if (!phrase.hard) return;
   await removePhraseProperty(phrase, 'hard');
 }
 
 // Add workingOn: true to a phrase in the language file and in memory
 async function markPhraseAsWorkingOn(phrase) {
-  if (phrase.workingOn) return;
   await addPhraseProperty(phrase, 'workingOn');
 }
 
 // Remove workingOn: true from a phrase in the language file and in memory
 async function unmarkPhraseAsWorkingOn(phrase) {
-  if (!phrase.workingOn) return;
   await removePhraseProperty(phrase, 'workingOn');
 }
 
