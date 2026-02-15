@@ -23,7 +23,6 @@ export const allPhrases = {
           foreign: 'Tenga cuidado.',
           english: 'Be careful. (formal) (to a male)',
         },
-        { foreign: 'aquí', english: 'here' },
         { foreign: 'tiempo', english: 'weather (right now)' },
         {
           foreign: '¿Qué significa esa palabra?',
@@ -179,7 +178,7 @@ export const allPhrases = {
       ],
       lesson7: [
         { foreign: 'éxito', english: 'success' },
-        { foreign: 'hace un rato', english: 'a while ago', workingOn: true },
+        { foreign: 'hace un rato', english: 'a while ago' },
         { foreign: 'hace un mes', english: 'a month ago' },
         { foreign: 'hace un minuto', english: 'a minute ago' },
         { foreign: 'cuñado', english: 'brother-in-law' },
@@ -239,7 +238,7 @@ export const allPhrases = {
           english: 'The plane flies from New York to Los Angeles.',
         },
         {
-          foreign: 'Desde aqui se ve toda la ciudad.',
+          foreign: 'Desde aquí se ve toda la ciudad.',
           english: 'From here you can see the whole city.',
         },
       ],
@@ -400,7 +399,6 @@ export const allPhrases = {
         {
           foreign: 'Feliz fin de semana para ti también.',
           english: 'You have a nice weekend too. (informal)',
-          workingOn: true,
         },
         { foreign: 'darse cuenta', english: 'to realize', workingOn: true, hard: true },
         { foreign: 'montaña rusa', english: 'roller coaster' },
@@ -409,7 +407,7 @@ export const allPhrases = {
       ],
       lesson16: [
         { foreign: 'el gatito', english: 'the kitten' },
-        { foreign: 'el perrito', english: 'the puppy', workingOn: true },
+        { foreign: 'el perrito', english: 'the puppy' },
         { foreign: 'el caballo', english: 'the horse' },
         { foreign: 'la ballena', english: 'the whale' },
         { foreign: 'el tigre', english: 'the tiger' },
@@ -423,21 +421,19 @@ export const allPhrases = {
           foreign: 'aproximadamente mes por medio',
           english: 'about once every other month',
           hard: true,
-          workingOn: true,
         },
         { foreign: 'el error de escritura', english: 'the typo', workingOn: true },
         { foreign: 'Tiene sentido.', english: 'It makes sense.', hard: true, workingOn: true },
         {
           foreign: 'Me gusta de chocolate con vainilla. ¿Qué sabor te gusta?',
           english: 'I like chocolate with vanilla. What flavor do you like? (informal)',
-          workingOn: true,
         },
         {
           foreign: 'No me gusta levantarme temprano.',
           english: 'I don’t like getting up early.',
           workingOn: true,
         },
-        { foreign: 'el chiste', english: 'the joke', workingOn: true },
+        { foreign: 'el chiste', english: 'the joke' },
         { foreign: 'Que maravilloso.', english: 'How wonderful.' },
         { foreign: 'Dame una pista.', english: 'Give me a hint. (informal)' },
         {
@@ -473,7 +469,7 @@ export const allPhrases = {
           english: 'closing exclamation mark',
           workingOn: true,
         },
-        { foreign: 'una araña', english: 'a spider', workingOn: true },
+        { foreign: 'una araña', english: 'a spider' },
         { foreign: 'aterrador / aterradora', english: 'scary', workingOn: true },
         {
           foreign: 'Para mí las arañas son aterradoras.',
@@ -519,7 +515,7 @@ export const allPhrases = {
         { foreign: 'el yate', english: 'the yacht' },
       ],
       lesson2: [
-        { foreign: 'la bañera', english: 'the bathtub', workingOn: true, hard: true },
+        { foreign: 'la bañera', english: 'the bathtub', hard: true },
         { foreign: 'el vestido', english: 'the dress', hard: true },
         { foreign: 'el virus', english: 'the virus' },
         { foreign: 'la botella', english: 'the bottle' },
@@ -542,7 +538,7 @@ export const allPhrases = {
         { foreign: 'el semáforo', english: 'the traffic light' },
         { foreign: 'el zinc', english: 'the zinc' },
         { foreign: 'el cine', english: 'the cinema' },
-        { foreign: 'la silla', english: 'the chair', workingOn: true, hard: true },
+        { foreign: 'la silla', english: 'the chair', hard: true },
         { foreign: 'el zorro', english: 'the fox' },
       ],
       lesson5: [
@@ -857,7 +853,6 @@ export const allPhrases = {
         {
           foreign: 'La niña está haciendo la tarea.',
           english: 'The girl is doing her homework.',
-          workingOn: true,
         },
         { foreign: 'Ella está viviendo en Nueva York.', english: 'She is living in New York.' },
         {
@@ -965,7 +960,6 @@ export const allPhrases = {
         {
           foreign: 'Estoy pidiendo una bebida.',
           english: 'I’m asking for a drink.',
-          workingOn: true,
           hard: true,
         },
         {
@@ -1067,7 +1061,7 @@ export const allPhrases = {
     chapter13: {
       name: 'Nationalities and origins, places and countries, languages',
       lesson1: [
-        { foreign: 'nacionalidad', english: 'nationality', workingOn: true },
+        { foreign: 'nacionalidad', english: 'nationality' },
         { foreign: 'árabe', english: 'Arab (adj.)' },
         { foreign: 'argentino / argentina', english: 'Argentinian (adj.)' },
         { foreign: 'australiano / australiana', english: 'Australian (adj.)' },
@@ -1323,6 +1317,67 @@ export const allPhrases = {
           foreign: 'Qué les pasa a los niños? Están nerviosos porque tienen un examen.',
           english: 'What’s wrong with the children? They’re nervous because they have an exam.',
           hard: true,
+        },
+      ],
+    },
+    chapter17: {
+      name: 'Determinantes y pronombres demostrativos',
+      lesson1: [
+        { foreign: 'aquí', english: 'here', workingOn: true },
+        { foreign: 'ahí', english: 'there', workingOn: true },
+        { foreign: 'allá', english: 'over there', workingOn: true },
+        {
+          foreign: 'cerca: esta / estas / este / estos',
+          english: 'this / these (nearby)',
+          workingOn: true,
+        },
+        {
+          foreign: 'distancia media: esa / esas / ese / esos',
+          english: 'that / those (medium distance)',
+          workingOn: true,
+        },
+        {
+          foreign: 'lejos: aquella / aquellas / aquel / aquellos',
+          english: 'that / those (far away)',
+          workingOn: true,
+        },
+      ],
+      lesson2: [
+        { foreign: 'Esta jirafa come.', english: 'This giraffe eats.', workingOn: true },
+        { foreign: 'Esa jirafa come.', english: 'That giraffe eats.', workingOn: true },
+        {
+          foreign: 'Aquella jirafa come.',
+          english: 'That giraffe over there eats.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Estas fresas son rojas .',
+          english: 'These strawberries are red.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Esas fresas son rojas.',
+          english: 'Those strawberries are red.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Aquellas fresas son rojas.',
+          english: 'Those strawberries over there are red.',
+          workingOn: true,
+        },
+        { foreign: 'Este carro es mío.', english: 'This car is mine.', workingOn: true },
+        { foreign: 'Ese carro es mío.', english: 'That car is mine.', workingOn: true },
+        {
+          foreign: 'Aquel carro es mío.',
+          english: 'That car over there is mine.',
+          workingOn: true,
+        },
+        { foreign: 'Estos gatos juegan.', english: 'These cats play.', workingOn: true },
+        { foreign: 'Esos gatos juegan.', english: 'Those cats play.', workingOn: true },
+        {
+          foreign: 'Aquellos gatos juegan.',
+          english: 'Those cats over there play.',
+          workingOn: true,
         },
       ],
     },
