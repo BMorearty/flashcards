@@ -400,7 +400,7 @@ export const allPhrases = {
           foreign: 'Feliz fin de semana para ti también.',
           english: 'You have a nice weekend too. (informal)',
         },
-        { foreign: 'darse cuenta', english: 'to realize', workingOn: true, hard: true },
+        { foreign: 'darse cuenta', english: 'to realize', hard: true },
         { foreign: 'montaña rusa', english: 'roller coaster' },
         { foreign: 'de la nada', english: 'out of nowhere / out of the blue' },
         { foreign: 'la habilidad', english: 'the skill' },
@@ -423,7 +423,7 @@ export const allPhrases = {
           hard: true,
         },
         { foreign: 'el error de escritura', english: 'the typo' },
-        { foreign: 'Tiene sentido.', english: 'It makes sense.', hard: true, workingOn: true },
+        { foreign: 'Tiene sentido.', english: 'It makes sense.', hard: true },
         {
           foreign: 'Me gusta de chocolate con vainilla. ¿Qué sabor te gusta?',
           english: 'I like chocolate with vanilla. What flavor do you like? (informal)',
@@ -453,7 +453,7 @@ export const allPhrases = {
         { foreign: 'expresiones idiomáticas', english: 'idioms' },
         { foreign: 'un dicho', english: 'a saying', workingOn: true },
         { foreign: 'la carpeta', english: 'the folder', workingOn: true },
-        { foreign: 'signos de exclamación', english: 'exclamation marks', workingOn: true },
+        { foreign: 'signos de exclamación', english: 'exclamation marks' },
         {
           foreign: 'signo de exclamación abierto',
           english: 'opening exclamation mark',
@@ -465,11 +465,10 @@ export const allPhrases = {
           workingOn: true,
         },
         { foreign: 'una araña', english: 'a spider' },
-        { foreign: 'aterrador / aterradora', english: 'scary', workingOn: true },
+        { foreign: 'aterrador / aterradora', english: 'scary' },
         {
           foreign: 'Para mí las arañas son aterradoras.',
           english: 'To me, spiders are terrifying.',
-          workingOn: true,
         },
       ],
     },
@@ -1313,7 +1312,7 @@ export const allPhrases = {
     chapter17: {
       name: 'Determinantes y pronombres demostrativos',
       lesson1: [
-        { foreign: 'aquí', english: 'here', workingOn: true },
+        { foreign: 'aquí', english: 'here' },
         { foreign: 'ahí', english: 'there', workingOn: true },
         { foreign: 'allá', english: 'over there', workingOn: true },
         {
@@ -1341,7 +1340,7 @@ export const allPhrases = {
           workingOn: true,
         },
         {
-          foreign: 'Estas fresas son rojas .',
+          foreign: 'Estas fresas son rojas.',
           english: 'These strawberries are red.',
           workingOn: true,
         },
