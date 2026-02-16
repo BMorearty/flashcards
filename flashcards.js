@@ -537,6 +537,28 @@ function nameOf(thing) {
     : '';
 }
 
+// Builds a regex pattern that matches text in source file format.
+// Handles both single-line ('text') and multi-line ('text' + '| more') formats.
+// Also handles single-line phrases with literal pipe characters ('text | more').
+function buildSourcePatternForText(text) {
+  // Helper to escape special regex characters
+  const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+  // Build single-line pattern with or without pipes in the text: 'text' or 'text| more text'
+  const singleLinePattern = `'${escapeRegex(text)}'`;
+
+  // Build multi-line pattern ('part1' + '| part2' + '| part3')
+  const parts = text.split('|');
+  let multiLinePattern = `'${escapeRegex(parts[0])}'`;
+  for (let i = 1; i < parts.length; i++) {
+    multiLinePattern += `\\s*\\+\\s*'\\|${escapeRegex(parts[i])}'`;
+  }
+
+  // Return pattern that matches either format
+  // Try multi-line first (more specific), then single-line
+  return `(?:${multiLinePattern}|${singleLinePattern})`;
+}
+
 // Add a property to a phrase in the source file
 async function addPhraseProperty(phrase, property) {
   // Check if property is already set in memory
@@ -547,13 +569,13 @@ async function addPhraseProperty(phrase, property) {
   const filePath = `./${language}.js`;
   let content = fs.readFileSync(filePath, 'utf8');
 
-  // Escape special regex characters in both foreign and english text
-  const escapedForeign = phrase.foreign.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const escapedEnglish = phrase.english.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  // Build regex patterns that match source file format (handles multi-line)
+  const foreignPattern = buildSourcePatternForText(phrase.foreign);
+  const englishPattern = buildSourcePatternForText(phrase.english);
 
   // Find the phrase by matching both foreign and english, then insert property after english
   const regex = new RegExp(
-    `(\\{[^}]*foreign:\\s*['"]${escapedForeign}['"][^}]*english:\\s*['"]${escapedEnglish}['"])`,
+    `(\\{[^}]*foreign:\\s*${foreignPattern}[^}]*english:\\s*${englishPattern})`,
     's',
   );
 
@@ -579,13 +601,13 @@ async function removePhraseProperty(phrase, property) {
   const filePath = `./${language}.js`;
   let content = fs.readFileSync(filePath, 'utf8');
 
-  // Escape special regex characters in both foreign and english text
-  const escapedForeign = phrase.foreign.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const escapedEnglish = phrase.english.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  // Build regex patterns that match source file format (handles multi-line)
+  const foreignPattern = buildSourcePatternForText(phrase.foreign);
+  const englishPattern = buildSourcePatternForText(phrase.english);
 
   // Find the phrase and remove the property from it
   const regex = new RegExp(
-    `(\\{[^}]*foreign:\\s*['"]${escapedForeign}['"][^}]*english:\\s*['"]${escapedEnglish}['"][^}]*)(,\\s*${property}:\\s*true)`,
+    `(\\{[^}]*foreign:\\s*${foreignPattern}[^}]*english:\\s*${englishPattern}[^}]*)(,\\s*${property}:\\s*true)`,
     's',
   );
 
