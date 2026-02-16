@@ -1786,6 +1786,41 @@ export const allPhrases = {
           english: 'My wife and I are journalists. What do you do? (informal)',
         },
       ],
+      lesson7: [
+        {
+          foreign: '¿Quién es su esposo?',
+          english: 'Who is your husband? (formal)',
+          workingOn: true,
+        },
+        { foreign: 'quién', english: 'who (singular)', workingOn: true },
+        { foreign: '¿Quién es?', english: 'Who is he?', workingOn: true },
+        { foreign: 'su', english: 'your (formal)', workingOn: true },
+        { foreign: 'jefe', english: 'boss', workingOn: true },
+        { foreign: '¿Quién es su jefe?', english: 'Who is your boss? (formal)', workingOn: true },
+        {
+          foreign: 'Yo soy el jefe. ¿Quién es usted?',
+          english: 'I’m the boss. Who are you?',
+          workingOn: true,
+        },
+        { foreign: '¿Quién eres tú?', english: 'Who are you? (informal)', workingOn: true },
+        {
+          foreign: '¿Quién es su hermana?',
+          english: 'Who is your sister? (formal)',
+          workingOn: true,
+        },
+        { foreign: 'quiénes', english: 'who (plural)', workingOn: true },
+        {
+          foreign: '¿Quiénes son ellas?',
+          english: 'Who are they? (about a group of women)',
+          workingOn: true,
+        },
+        { foreign: 'tu', english: 'your (informal)', workingOn: true },
+        {
+          foreign: '¿Quiénes son tus hermanos?',
+          english: 'Who are your brothers? (informal)',
+          workingOn: true,
+        },
+      ],
     },
   },
 };
