@@ -174,7 +174,7 @@ export const allPhrases = {
           english: 'to wear a jacket',
           hard: true,
         },
-        { foreign: 'unos lápices de colores', english: 'some colored pencils', workingOn: true },
+        { foreign: 'unos lápices de colores', english: 'some colored pencils' },
       ],
       lesson7: [
         { foreign: 'éxito', english: 'success' },
@@ -422,7 +422,7 @@ export const allPhrases = {
           english: 'about once every other month',
           hard: true,
         },
-        { foreign: 'el error de escritura', english: 'the typo', workingOn: true },
+        { foreign: 'el error de escritura', english: 'the typo' },
         { foreign: 'Tiene sentido.', english: 'It makes sense.', hard: true, workingOn: true },
         {
           foreign: 'Me gusta de chocolate con vainilla. ¿Qué sabor te gusta?',
@@ -449,13 +449,8 @@ export const allPhrases = {
       ],
       lesson17: [
         { foreign: 'incluso cuando', english: 'even when', workingOn: true },
-        { foreign: 'la cara', english: 'the face', workingOn: true },
-        {
-          foreign: 'Este lápiz cuesta un ojo de la cara.',
-          english: 'This pencil costs an arm and a leg.',
-          workingOn: true,
-        },
-        { foreign: 'expresiones idiomáticas', english: 'idioms', workingOn: true },
+        { foreign: 'la cara', english: 'the face' },
+        { foreign: 'expresiones idiomáticas', english: 'idioms' },
         { foreign: 'un dicho', english: 'a saying', workingOn: true },
         { foreign: 'la carpeta', english: 'the folder', workingOn: true },
         { foreign: 'signos de exclamación', english: 'exclamation marks', workingOn: true },
@@ -645,7 +640,6 @@ export const allPhrases = {
             '| (vosotros / vosotras) camináis' +
             '| (ellos / ellas / ustedes) caminan (ca-MEE-nan)',
           english: 'to walk, present tense regular verb conjugation',
-          workingOn: true,
         },
         {
           foreign:
@@ -657,7 +651,6 @@ export const allPhrases = {
             '| (vosotros / vosotras) coméis' +
             '| (ellos / ellas / ustedes) comen',
           english: 'to eat, present tense regular verb conjugation',
-          workingOn: true,
         },
         {
           foreign:
@@ -669,7 +662,6 @@ export const allPhrases = {
             '| (vosotros / vosotras) partís' +
             '| (ellos / ellas / ustedes) parten',
           english: 'to leave, present tense regular verb conjugation',
-          workingOn: true,
         },
         {
           foreign:
@@ -681,7 +673,6 @@ export const allPhrases = {
             '| (vosotros / vosotras) decís' +
             '| (ellos / ellas / ustedes) dicen',
           english: 'to say, present tense conjugation',
-          workingOn: true,
         },
       ],
     },
@@ -1047,7 +1038,6 @@ export const allPhrases = {
         {
           foreign: 'Hay que tener cuidado. Hay hielo en la calle.',
           english: 'You have to be careful. There’s ice on the street.',
-          workingOn: true,
           hard: true,
         },
         { foreign: 'Tiene que ir.', english: 'He has to go.', hard: true },
@@ -1327,18 +1317,18 @@ export const allPhrases = {
         { foreign: 'ahí', english: 'there', workingOn: true },
         { foreign: 'allá', english: 'over there', workingOn: true },
         {
-          foreign: 'cerca: esta / estas / este / estos',
-          english: 'this / these (nearby)',
+          foreign: 'cerca:| esta| estas| este| estos',
+          english: 'near: this / these',
           workingOn: true,
         },
         {
-          foreign: 'distancia media: esa / esas / ese / esos',
-          english: 'that / those (medium distance)',
+          foreign: 'distancia media:| esa| esas| ese| esos',
+          english: 'medium distance: that / those',
           workingOn: true,
         },
         {
-          foreign: 'lejos: aquella / aquellas / aquel / aquellos',
-          english: 'that / those (far away)',
+          foreign: 'lejos:| aquella| aquellas| aquel| aquellos',
+          english: 'far away: that / those',
           workingOn: true,
         },
       ],
@@ -1377,6 +1367,16 @@ export const allPhrases = {
         {
           foreign: 'Aquellos gatos juegan.',
           english: 'Those cats over there play.',
+          workingOn: true,
+        },
+      ],
+    },
+    chapter18: {
+      name: 'Idioms',
+      lesson1: [
+        {
+          foreign: 'Este lápiz cuesta un ojo de la cara.',
+          english: 'This pencil costs an arm and a leg.',
           workingOn: true,
         },
       ],
