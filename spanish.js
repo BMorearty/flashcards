@@ -382,7 +382,6 @@ export const allPhrases = {
           foreign: 'Me alegro de oír eso. / Me alegra oír eso.',
           english: 'I’m glad to hear that.',
           hard: true,
-          workingOn: true,
         },
       ],
       lesson15: [
@@ -1799,7 +1798,7 @@ export const allPhrases = {
         { foreign: '¿Quién es su jefe?', english: 'Who is your boss? (formal)', workingOn: true },
         {
           foreign: 'Yo soy el jefe. ¿Quién es usted?',
-          english: 'I’m the boss. Who are you?',
+          english: 'I’m the boss. Who are you? (formal)',
           workingOn: true,
         },
         { foreign: '¿Quién eres tú?', english: 'Who are you? (informal)', workingOn: true },
