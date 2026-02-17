@@ -393,7 +393,7 @@ export const allPhrases = {
         { foreign: 'azúcar moreno', english: 'brown sugar' },
         { foreign: 'azúcar blanca', english: 'white sugar' },
         { foreign: 'afición', english: 'hobby / pastime / fondness' },
-        { foreign: 'pasado / pasada', english: 'last (most recent)', workingOn: true },
+        { foreign: 'pasado / pasada', english: 'last (most recent)' },
         { foreign: 'siguiente / próxima / próximo', english: 'next' },
         {
           foreign: 'Feliz fin de semana para ti también.',
@@ -430,7 +430,6 @@ export const allPhrases = {
         {
           foreign: 'No me gusta levantarme temprano.',
           english: 'I don’t like getting up early.',
-          workingOn: true,
         },
         { foreign: 'el chiste', english: 'the joke' },
         { foreign: 'Que maravilloso.', english: 'How wonderful.' },
@@ -442,7 +441,6 @@ export const allPhrases = {
         {
           foreign: 'Los humanos tenemos dos piernas.',
           english: 'Humans have two legs.',
-          workingOn: true,
         },
         { foreign: 'Yo bebo en el bar.', english: 'I drink at the bar.' },
       ],
@@ -456,12 +454,10 @@ export const allPhrases = {
         {
           foreign: 'signo de exclamación abierto',
           english: 'opening exclamation mark',
-          workingOn: true,
         },
         {
           foreign: 'signo de exclamación cerrado',
           english: 'closing exclamation mark',
-          workingOn: true,
         },
         { foreign: 'una araña', english: 'a spider' },
         { foreign: 'aterrador / aterradora', english: 'scary' },
@@ -1794,7 +1790,7 @@ export const allPhrases = {
         { foreign: 'quién', english: 'who (singular)', workingOn: true },
         { foreign: '¿Quién es?', english: 'Who is he?', workingOn: true },
         { foreign: 'su', english: 'your (formal)', workingOn: true },
-        { foreign: 'jefe', english: 'boss', workingOn: true },
+        { foreign: 'jefe', english: 'boss' },
         { foreign: '¿Quién es su jefe?', english: 'Who is your boss? (formal)', workingOn: true },
         {
           foreign: 'Yo soy el jefe. ¿Quién es usted?',
@@ -1813,7 +1809,7 @@ export const allPhrases = {
           english: 'Who are they? (about a group of women)',
           workingOn: true,
         },
-        { foreign: 'tu', english: 'your (informal)', workingOn: true },
+        { foreign: 'tu', english: 'your (informal)' },
         {
           foreign: '¿Quiénes son tus hermanos?',
           english: 'Who are your brothers? (informal)',
