@@ -5,11 +5,23 @@ import chalk from 'chalk';
 const language = 'spanish';
 let { allPhrases } = await import(`./${language}.js`);
 
-let rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
+// Readline interface
+let rl;
 
+function createReadlineInterface() {
+  rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+  });
+
+  // Handle `fg` after Ctrl+Z. Resume input stream and prompt again
+  rl.on('SIGCONT', () => {
+    rl.resume();
+    rl.prompt();
+  });
+}
+
+createReadlineInterface();
 checkDupes();
 addShowEnglish();
 
@@ -352,10 +364,7 @@ function readSingleChar() {
       process.stdin.pause();
 
       // Recreate readline interface
-      rl = readline.createInterface({
-        input: process.stdin,
-        output: process.stdout,
-      });
+      createReadlineInterface();
 
       resolve(key.toString());
     });
