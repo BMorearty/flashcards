@@ -414,7 +414,7 @@ export const allPhrases = {
         { foreign: 'el león', english: 'the lion' },
         { foreign: 'el elefante', english: 'the elephant' },
         { foreign: 'el mono', english: 'the monkey' },
-        { foreign: 'la selva', english: 'the jungle', workingOn: true },
+        { foreign: 'la selva', english: 'the jungle' },
         { foreign: 'demasiado', english: 'too (e.g. too hot, etc.)', hard: true, workingOn: true },
         {
           foreign: 'aproximadamente mes por medio',
@@ -1371,7 +1371,6 @@ export const allPhrases = {
         {
           foreign: 'Este lápiz cuesta un ojo de la cara.',
           english: 'This pencil costs an arm and a leg.',
-          workingOn: true,
         },
       ],
     },
