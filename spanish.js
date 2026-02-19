@@ -358,7 +358,7 @@ export const allPhrases = {
       ],
       lesson14: [
         { foreign: '¡Santo cielo!', english: 'Holy cow!' },
-        { foreign: 'impresionante', english: 'stunning / awesome', workingOn: true, hard: true },
+        { foreign: 'impresionante', english: 'stunning / awesome', hard: true },
         { foreign: 'Me duele el estómago.', english: 'My stomach hurts.' },
         {
           foreign: 'No me siento bien. Tengo tos.',
@@ -366,7 +366,7 @@ export const allPhrases = {
         },
         { foreign: '¿Te duele algo?', english: 'Does something hurt? (informal)' },
         { foreign: 'Me duele la garganta.', english: 'My throat hurts.' },
-        { foreign: 'Me duele el cuello.', english: 'My neck hurts.', workingOn: true },
+        { foreign: 'Me duele el cuello.', english: 'My neck hurts.' },
         { foreign: 'Me duele la rodilla.', english: 'My knee hurts.' },
         {
           foreign: 'Hola. ¿Cómo te sientes?',
@@ -445,10 +445,10 @@ export const allPhrases = {
         { foreign: 'Yo bebo en el bar.', english: 'I drink at the bar.' },
       ],
       lesson17: [
-        { foreign: 'incluso cuando', english: 'even when', workingOn: true },
+        { foreign: 'incluso cuando', english: 'even when' },
         { foreign: 'la cara', english: 'the face' },
         { foreign: 'expresiones idiomáticas', english: 'idioms' },
-        { foreign: 'un dicho', english: 'a saying', workingOn: true },
+        { foreign: 'un dicho', english: 'a saying' },
         { foreign: 'la carpeta', english: 'the folder', workingOn: true },
         { foreign: 'signos de exclamación', english: 'exclamation marks' },
         {
@@ -1784,13 +1784,12 @@ export const allPhrases = {
         {
           foreign: '¿Quién es su esposo?',
           english: 'Who is your husband? (formal)',
-          workingOn: true,
         },
-        { foreign: 'quién', english: 'who (singular)', workingOn: true },
-        { foreign: '¿Quién es?', english: 'Who is he?', workingOn: true },
-        { foreign: 'su', english: 'your (formal)', workingOn: true },
+        { foreign: 'quién', english: 'who (singular)' },
+        { foreign: '¿Quién es?', english: 'Who is he?' },
+        { foreign: 'su', english: 'your (formal)' },
         { foreign: 'jefe', english: 'boss' },
-        { foreign: '¿Quién es su jefe?', english: 'Who is your boss? (formal)', workingOn: true },
+        { foreign: '¿Quién es su jefe?', english: 'Who is your boss? (formal)' },
         {
           foreign: 'Yo soy el jefe. ¿Quién es usted?',
           english: 'I’m the boss. Who are you? (formal)',
@@ -1800,9 +1799,8 @@ export const allPhrases = {
         {
           foreign: '¿Quién es su hermana?',
           english: 'Who is your sister? (formal)',
-          workingOn: true,
         },
-        { foreign: 'quiénes', english: 'who (plural)', workingOn: true },
+        { foreign: 'quiénes', english: 'who (plural)' },
         {
           foreign: '¿Quiénes son ellas?',
           english: 'Who are they? (about a group of women)',
@@ -1812,7 +1810,6 @@ export const allPhrases = {
         {
           foreign: '¿Quiénes son tus hermanos?',
           english: 'Who are your brothers? (informal)',
-          workingOn: true,
         },
       ],
     },
