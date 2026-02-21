@@ -466,6 +466,31 @@ export const allPhrases = {
           english: 'To me, spiders are terrifying.',
         },
       ],
+      lesson18: [
+        {
+          foreign: 'Disculpa por lo del martes.',
+          english: 'I’m sorry about Tuesday.',
+          workingOn: true,
+        },
+        { foreign: 'un día feriado / un feriado', english: 'a holiday', workingOn: true },
+        {
+          foreign: 'Es para celebrar los cumpleaños de Washington y Lincoln.',
+          english: 'It’s to celebrate the birthdays of Washington and Lincoln.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Estoy acostumbrado a tomar café todas las mañanas.',
+          english: 'I am used to drinking coffee every morning.',
+          workingOn: true,
+        },
+        { foreign: 'un carterista / una carterista', english: 'a pickpocket', workingOn: true },
+        { foreign: 'bolsillo', english: 'pocket', workingOn: true },
+        { foreign: 'nadie', english: 'nobody', workingOn: true },
+        { foreign: 'intentar', english: 'to try', workingOn: true },
+        { foreign: 'gritar', english: 'scream / shout', workingOn: true },
+        { foreign: 'lugar', english: 'place', workingOn: true },
+        { foreign: 'lugares turísticos', english: 'tourist attractions', workingOn: true },
+      ],
     },
     chapter2: {
       name: 'Days of the week',
