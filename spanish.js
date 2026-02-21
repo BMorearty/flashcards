@@ -1,16 +1,6 @@
 /*
- Verbo ESTAR: https://docs.google.com/presentation/d/1EgpZ_7aTz-3PkhxYvJh4LOxi5-UsBuy2/edit?slide=id.p2#slide=id.p2
-   PLACE: Position, Location, Action, Condition, Emotion
- Verbo SER:   https://docs.google.com/presentation/d/1EgpZ_7aTz-3PkhxYvJh4LOxi5-UsBuy2/edit?slide=id.p6#slide=id.p6
-   DOCTOR: Date/Day, Occupation, Characteristic/Class, Time, Origin, Relation/Religion
-
-  casi = almost,
-  ya = already,
-  ya no = not anymore,
-  todavía = still,
-  todavía no / no todavía = not yet,
-
-  para = for (for someone), por = because of
+  para = for (for someone), or before an infinitive
+  por = because of
  */
 
 export const allPhrases = {
@@ -469,10 +459,15 @@ export const allPhrases = {
       lesson18: [
         {
           foreign: 'Disculpa por lo del martes.',
-          english: 'I’m sorry about Tuesday.',
+          english: 'I’m sorry about Tuesday. (informal)',
           workingOn: true,
         },
-        { foreign: 'un día feriado / un feriado', english: 'a holiday', workingOn: true },
+        {
+          foreign: 'un día feriado / un feriado',
+          english: 'a holiday',
+          hard: true,
+          workingOn: true,
+        },
         {
           foreign: 'Es para celebrar los cumpleaños de Washington y Lincoln.',
           english: 'It’s to celebrate the birthdays of Washington and Lincoln.',
@@ -487,7 +482,7 @@ export const allPhrases = {
         { foreign: 'bolsillo', english: 'pocket', workingOn: true },
         { foreign: 'nadie', english: 'nobody', workingOn: true },
         { foreign: 'intentar', english: 'to try', workingOn: true },
-        { foreign: 'gritar', english: 'scream / shout', workingOn: true },
+        { foreign: 'gritar', english: 'to scream / shout', workingOn: true },
         { foreign: 'lugar', english: 'place', workingOn: true },
         { foreign: 'lugares turísticos', english: 'tourist attractions', workingOn: true },
       ],
@@ -1352,8 +1347,8 @@ export const allPhrases = {
         },
       ],
       lesson2: [
-        { foreign: 'Esta jirafa come.', english: 'This giraffe eats.', workingOn: true },
-        { foreign: 'Esa jirafa come.', english: 'That giraffe eats.', workingOn: true },
+        { foreign: 'Esta jirafa come.', english: 'This giraffe eats.' },
+        { foreign: 'Esa jirafa come.', english: 'That giraffe eats.' },
         {
           foreign: 'Aquella jirafa come.',
           english: 'That giraffe over there eats.',
@@ -1461,7 +1456,7 @@ export const allPhrases = {
         },
         { foreign: 'empleo', english: 'job', workingOn: true },
         { foreign: 'escritor / escritora', english: 'writer', workingOn: true },
-        { foreign: 'especialista', english: 'specialist', workingOn: true },
+        { foreign: 'un / una especialista', english: 'a specialist', workingOn: true },
         {
           foreign: 'estudiante de primaria',
           english: 'elementary school student',
@@ -1473,8 +1468,8 @@ export const allPhrases = {
           english: 'university student',
           workingOn: true,
         },
-        { foreign: 'gerente (heiREHNtay)', english: 'manager', workingOn: true },
-        { foreign: 'juez / jueza', english: 'judge', workingOn: true },
+        { foreign: 'gerente (heiREHNtay)', english: 'manager', hard: true, workingOn: true },
+        { foreign: 'juez / jueza', english: 'judge', hard: true, workingOn: true },
         {
           foreign: 'maestro de primaria / maestra de primaria',
           english: 'primary school teacher',
@@ -1485,14 +1480,31 @@ export const allPhrases = {
         { foreign: 'músico / música', english: 'musician', workingOn: true },
         { foreign: 'pintor / pintora', english: 'painter', workingOn: true },
         { foreign: 'un poeta / una poeta', english: 'a poet', workingOn: true },
-        { foreign: 'político / política', english: 'politician', workingOn: true },
+        { foreign: 'político / política', english: 'politician' },
         { foreign: 'profesor / profesora', english: 'professor', workingOn: true },
         { foreign: 'programador / programadora', english: 'computer programmer', workingOn: true },
         { foreign: 'sacerdote', english: 'priest', workingOn: true },
         { foreign: 'secretario / secretaria', english: 'secretary', workingOn: true },
-        { foreign: 'soldado', english: 'soldier', workingOn: true },
+        { foreign: 'un / una soldado', english: 'a soldier', workingOn: true },
         { foreign: 'trabajador / trabajadora', english: 'worker / laborer', workingOn: true },
         { foreign: 'vendedor / vendedora', english: 'salesperson', workingOn: true },
+      ],
+    },
+    chapter21: {
+      name: 'Ordinal numbers',
+      lesson1: [
+        {
+          foreign: 'primero / primer mes / primera puerta',
+          english: 'first / first month / first door',
+          workingOn: true,
+        },
+        { foreign: 'segundo / segunda', english: 'second', workingOn: true },
+        {
+          foreign: 'tercero / tercer mes / tercera puerta',
+          english: 'third / third month / third door',
+          workingOn: true,
+        },
+        { foreign: 'cuarto / cuarta', english: 'fourth', workingOn: true },
       ],
     },
   },
@@ -1914,7 +1926,6 @@ export const allPhrases = {
         {
           foreign: 'Yo soy el jefe. ¿Quién es usted?',
           english: 'I’m the boss. Who are you? (formal)',
-          workingOn: true,
         },
         { foreign: '¿Quién eres tú?', english: 'Who are you? (informal)', workingOn: true },
         {
@@ -1925,7 +1936,6 @@ export const allPhrases = {
         {
           foreign: '¿Quiénes son ellas?',
           english: 'Who are they? (about a group of women)',
-          workingOn: true,
         },
         { foreign: 'tu', english: 'your (informal)' },
         {
