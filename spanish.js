@@ -484,10 +484,34 @@ export const allPhrases = {
         },
         { foreign: 'bolsillo', english: 'pocket' },
         { foreign: 'nadie', english: 'nobody' },
-        { foreign: 'intentar', english: 'to try', workingOn: true },
+        { foreign: 'intentar hablar español', english: 'to try to speak Spanish', workingOn: true },
         { foreign: 'gritar', english: 'to scream / shout', workingOn: true },
         { foreign: 'lugar', english: 'place' },
         { foreign: 'lugares turísticos', english: 'tourist attractions' },
+      ],
+      lesson19: [
+        {
+          foreign: 'Es mejor poner una alarma y no necesitarla, que no ponerla y perder una cita.',
+          english:
+            'It’s better to set an alarm and not need it, than not to set one and miss an appointment.',
+          workingOn: true,
+        },
+        { foreign: 'fuera de este mundo', english: 'out of this world', workingOn: true },
+        { foreign: 'qué simple', english: 'how simple', workingOn: true },
+        { foreign: 'un robot (roh-BOT) humanoide', english: 'a humanoid robot', workingOn: true },
+        { foreign: 'en el escenario', english: 'on stage', workingOn: true },
+        { foreign: 'Cuéntame.', english: 'Tell me. (informal)', workingOn: true },
+        { foreign: 'cada', english: 'each', workingOn: true },
+        { foreign: 'una entrevista', english: 'an interview', workingOn: true },
+        {
+          foreign: 'Cuéntame la última presentación a la que fuiste con tu hija. Detalles.',
+          english:
+            'Tell me about the last performance you went to with your daughter. Give details.',
+          workingOn: true,
+        },
+        { foreign: 'una milla', english: 'one mile', workingOn: true },
+        { foreign: 'Estaba equivocado.', english: 'I was wrong.', workingOn: true },
+        { foreign: 'desconocido', english: 'unknown', workingOn: true },
       ],
     },
     chapter2: {
@@ -1334,17 +1358,19 @@ export const allPhrases = {
         { foreign: 'ahí', english: 'there', workingOn: true },
         { foreign: 'allá', english: 'over there' },
         {
-          foreign: 'cerca:| esta| estas| este| estos',
-          english: 'near: this / these',
-        },
-        {
-          foreign: 'distancia media:| esa| esas| ese| esos',
-          english: 'medium distance: that / those',
+          foreign: 'cerca:| esta| estas| este| estos| esto',
+          english: 'near: this / these (fem, masc, neutral)',
           workingOn: true,
         },
         {
-          foreign: 'lejos:| aquella| aquellas| aquel| aquellos',
-          english: 'far away: that / those',
+          foreign: 'distancia media:| esa| esas| ese| esos| eso',
+          english: 'medium distance: that / those (fem, masc, neutral)',
+          workingOn: true,
+        },
+        {
+          foreign: 'lejos:| aquella| aquellas| aquel| aquellos| aquello',
+          english: 'far away: that / those (fem, masc, neutral)',
+          workingOn: true,
         },
       ],
       lesson2: [
@@ -1357,7 +1383,6 @@ export const allPhrases = {
         {
           foreign: 'Estas fresas son rojas.',
           english: 'These strawberries are red.',
-          workingOn: true,
         },
         {
           foreign: 'Esas fresas son rojas.',
@@ -1366,22 +1391,35 @@ export const allPhrases = {
         {
           foreign: 'Aquellas fresas son rojas.',
           english: 'Those strawberries over there are red.',
-          workingOn: true,
         },
         { foreign: 'Este carro es mío.', english: 'This car is mine.', workingOn: true },
-        { foreign: 'Ese carro es mío.', english: 'That car is mine.', workingOn: true },
+        { foreign: 'Ese carro es mío.', english: 'That car is mine.' },
         {
           foreign: 'Aquel carro es mío.',
           english: 'That car over there is mine.',
-          workingOn: true,
         },
-        { foreign: 'Estos gatos juegan.', english: 'These cats play.', workingOn: true },
-        { foreign: 'Esos gatos juegan.', english: 'Those cats play.', workingOn: true },
+        { foreign: 'Estos gatos juegan.', english: 'These cats play.' },
+        { foreign: 'Esos gatos juegan.', english: 'Those cats play.' },
         {
           foreign: 'Aquellos gatos juegan.',
           english: 'Those cats over there play.',
+        },
+      ],
+      lesson3: [
+        { foreign: 'esto', english: 'this (unknown gender)', workingOn: true },
+        { foreign: 'eso', english: 'that (unknown gender)', workingOn: true },
+        { foreign: 'aquello', english: 'that over there (unknown gender)', workingOn: true },
+        { foreign: '¿Qué es esto?', english: 'What is this?', workingOn: true },
+        {
+          foreign: '¿Qué es eso? Esa es una mariposa.',
+          english: 'What is that? That is a butterfly.',
           workingOn: true,
         },
+        { foreign: 'No sé eso.', english: 'I don’t know that.', workingOn: true },
+        { foreign: 'Esto es importante.', english: 'This is important.', workingOn: true },
+        { foreign: '¿Qué es aquello?', english: 'What is that over there?', workingOn: true },
+        { foreign: 'No me gusta eso.', english: 'I don’t like that.', workingOn: true },
+        { foreign: 'Esto es lo que pienso.', english: 'This is what I think.', workingOn: true },
       ],
     },
     chapter18: {
@@ -1390,6 +1428,12 @@ export const allPhrases = {
         {
           foreign: 'Este lápiz cuesta un ojo de la cara.',
           english: 'This pencil costs an arm and a leg.',
+        },
+        { foreign: '... no está de más.', english: 'It wouldn’t hurt to ...', workingOn: true },
+        {
+          foreign: 'Siempre digo que poner una alarma no está de más.',
+          english: 'I always say that it can’t hurt to set an alarm.',
+          workingOn: true,
         },
       ],
     },
@@ -1408,7 +1452,7 @@ export const allPhrases = {
           foreign: 'Mucho gusto.',
           english: 'Nice to meet you. (formal or informal)',
         },
-        { foreign: 'casado / casada', english: 'married', hard: true, workingOn: true },
+        { foreign: 'casado / casada', english: 'married', hard: true },
         { foreign: 'un colega / una colega', english: 'a colleague' },
         {
           foreign: 'compañero / compañera',
@@ -1476,7 +1520,7 @@ export const allPhrases = {
         { foreign: 'programador / programadora', english: 'computer programmer' },
         { foreign: 'sacerdote', english: 'priest', hard: true, workingOn: true },
         { foreign: 'secretario / secretaria', english: 'secretary' },
-        { foreign: 'un / una soldado', english: 'a soldier', workingOn: true },
+        { foreign: 'un / una soldado', english: 'a soldier' },
         { foreign: 'trabajador / trabajadora', english: 'worker / laborer', workingOn: true },
         { foreign: 'vendedor / vendedora', english: 'salesperson', hard: true },
       ],
