@@ -1495,7 +1495,7 @@ export const allPhrases = {
           english: 'government employee',
         },
         { foreign: 'empleo', english: 'job' },
-        { foreign: 'escritor / escritora', english: 'writer', hard: true, workingOn: true },
+        { foreign: 'escritor / escritora', english: 'writer', hard: true },
         { foreign: 'un / una especialista', english: 'a specialist', workingOn: true },
         {
           foreign: 'estudiante de primaria',
