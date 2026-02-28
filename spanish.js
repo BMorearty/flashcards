@@ -1926,7 +1926,7 @@ export const allPhrases = {
           foreign: 'Yo soy enfermera y él es policía.',
           english: 'I’m a nurse, and he is a police officer. (from a female)',
         },
-        { foreign: 'periodista', english: 'journalist' },
+        { foreign: 'un / una periodista', english: 'a journalist' },
         {
           foreign: 'Me llamo Juan. Soy periodista.',
           english: 'My name is Juan. I’m a journalist.',
@@ -1997,6 +1997,30 @@ export const allPhrases = {
         {
           foreign: '¿Quiénes son tus hermanos?',
           english: 'Who are your brothers? (informal)',
+        },
+      ],
+    },
+    chapter4: {
+      name: 'Personal Info and Preferences',
+      lesson1: [
+        {
+          foreign: 'Tengo una reserva para el viernes dos.',
+          english: 'I have a reservation for Friday the 2nd.',
+          workingOn: true,
+        },
+        { foreign: 'una reserva', english: 'a reservation', workingOn: true },
+        { foreign: 'para el viernes dos', english: 'for Friday the 2nd', workingOn: true },
+        { foreign: 'para el miércoles primero', english: 'for Wednesday the 1st', workingOn: true },
+        { foreign: 'a mi nombre', english: 'under my name', workingOn: true },
+        {
+          foreign: 'Tengo una reserva a mi nombre.',
+          english: 'I have a reservation under my name.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Tengo una reserva a mi nombre para el miércoles primero.',
+          english: 'I have a reservation under my name for Wednesday the 1st.',
+          workingOn: true,
         },
       ],
     },
