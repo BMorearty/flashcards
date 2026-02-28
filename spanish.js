@@ -1386,17 +1386,14 @@ export const allPhrases = {
         {
           foreign: 'cerca:| esta| estas| este| estos| esto',
           english: 'near: this / these (fem, masc, neutral)',
-          workingOn: true,
         },
         {
           foreign: 'distancia media:| esa| esas| ese| esos| eso',
           english: 'medium distance: that / those (fem, masc, neutral)',
-          workingOn: true,
         },
         {
           foreign: 'lejos:| aquella| aquellas| aquel| aquellos| aquello',
           english: 'far away: that / those (fem, masc, neutral)',
-          workingOn: true,
         },
       ],
       lesson2: [
@@ -1544,7 +1541,7 @@ export const allPhrases = {
         { foreign: 'político / política', english: 'politician' },
         { foreign: 'profesor / profesora', english: 'professor' },
         { foreign: 'programador / programadora', english: 'computer programmer' },
-        { foreign: 'sacerdote', english: 'priest', hard: true, workingOn: true },
+        { foreign: 'sacerdote', english: 'priest', hard: true },
         { foreign: 'secretario / secretaria', english: 'secretary' },
         { foreign: 'un / una soldado', english: 'a soldier' },
         { foreign: 'trabajador / trabajadora', english: 'worker / laborer', workingOn: true },
