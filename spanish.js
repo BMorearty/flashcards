@@ -2023,6 +2023,38 @@ export const allPhrases = {
           workingOn: true,
         },
       ],
+      lesson2: [
+        { foreign: 'domingo cuatro', english: 'Sunday the 4th', workingOn: true },
+        { foreign: 'del... al...', english: 'from... to... (dates)', workingOn: true },
+        {
+          foreign: 'del viernes dos al domingo cuatro',
+          english: 'from Friday the 2nd to Sunday the 4th',
+          workingOn: true,
+        },
+        {
+          foreign: 'una reserva del viernes dos al domingo cuatro',
+          english: 'a reservation from Friday the 2nd to Sunday the 4th',
+          workingOn: true,
+        },
+        { foreign: 'para el jueves', english: 'for Thursday', workingOn: true },
+        {
+          foreign: 'Tengo una reserva para el jueves tres.',
+          english: 'I have a reservation for Thursday the 3rd.',
+          workingOn: true,
+        },
+        { foreign: 'a nombre de', english: 'under the name of', workingOn: true },
+        {
+          foreign: 'Tengo una reserva a nombre de Lucas.',
+          english: 'I have a reservation under the name of Lucas.',
+          workingOn: true,
+        },
+        { foreign: 'para el martes', english: 'for Tuesday', workingOn: true },
+        {
+          foreign: 'Tengo una reserva a nombre de Lucas para el martes.',
+          english: 'I have a reservation under the name of Lucas for Tuesday.',
+          workingOn: true,
+        },
+      ],
     },
   },
 };
