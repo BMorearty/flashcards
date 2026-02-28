@@ -717,6 +717,30 @@ export const allPhrases = {
             '| (ellos / ellas / ustedes) dicen',
           english: 'to say, present tense conjugation',
         },
+        {
+          foreign:
+            'ver, present tense:' +
+            '| (yo) veo' +
+            '| (tú) ves' +
+            '| (él, ella, usted) ve' +
+            '| (nosotros / nosotras) vemos' +
+            '| (vosotros / vosotras) veis' +
+            '| (ellos / ellas / ustedes) ven',
+          english: 'to see, present tense conjugation',
+          workingOn: true,
+        },
+        {
+          foreign:
+            'conocer, present tense:' +
+            '| (yo) conozco' +
+            '| (tú) conoces' +
+            '| (él, ella, usted) conoce' +
+            '| (nosotros / nosotras) conocemos' +
+            '| (vosotros / vosotras) conocéis' +
+            '| (ellos / ellas / ustedes) conocen',
+          english: 'to know (someone), present tense conjugation',
+          workingOn: true,
+        },
       ],
     },
     chapter7: {
