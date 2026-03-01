@@ -1341,7 +1341,7 @@ export const allPhrases = {
         },
         {
           foreign: 'Me impresiona la torre Eiffel.',
-          english: 'I’m impressed by the Eiffel Tower.',
+          english: 'I’m impressed by the Eiffel Tower.', workingOn: true,
         },
         {
           foreign: 'Al niño le encanta la lluvia, al perro no le gusta para nada.',
@@ -1532,7 +1532,7 @@ export const allPhrases = {
         { foreign: 'mesero / mesera', english: 'waiter / waitress', hard: true },
         { foreign: 'ministro / ministra', english: '(religious) minister' },
         { foreign: 'músico / música', english: 'musician' },
-        { foreign: 'pintor / pintora', english: 'painter' },
+        { foreign: 'pintor / pintora', english: 'painter', workingOn: true },
         { foreign: 'un poeta / una poeta', english: 'a poet' },
         { foreign: 'político / política', english: 'politician' },
         { foreign: 'profesor / profesora', english: 'professor' },
