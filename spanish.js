@@ -98,7 +98,7 @@ export const allPhrases = {
         { foreign: 'cuántos/cuántas', english: 'how many' },
         { foreign: 'una hora', english: 'an hour' },
         { foreign: 'sueño', english: 'sleep (n.)' },
-        { foreign: 'divertido', english: 'fun (adj.)' },
+        { foreign: 'divertido', english: 'fun (adj.)', workingOn: true },
         { foreign: 'más', english: 'more' },
       ],
       lesson4: [
@@ -152,6 +152,7 @@ export const allPhrases = {
         {
           foreign: '¿Qué estás haciendo?',
           english: 'What are you doing? (informal)',
+          workingOn: true,
         },
         {
           foreign: 'Estoy cocinando el almuerzo.',
@@ -553,7 +554,7 @@ export const allPhrases = {
         { foreign: 'la bañera', english: 'the bathtub', hard: true },
         { foreign: 'el vestido', english: 'the dress', hard: true },
         { foreign: 'el virus', english: 'the virus' },
-        { foreign: 'la botella', english: 'the bottle' },
+        { foreign: 'la botella', english: 'the bottle', workingOn: true },
         { foreign: 'la bufanda', english: 'the scarf' },
         { foreign: 'la vaca', english: 'the cow', hard: true },
         { foreign: 'el/la bebé', english: 'the baby' },
@@ -597,7 +598,7 @@ export const allPhrases = {
       lesson7: [
         { foreign: 'el hacha', english: 'the axe' },
         { foreign: 'el helado', english: 'the ice cream' },
-        { foreign: 'el hilo', english: 'the thread' },
+        { foreign: 'el hilo', english: 'the thread', workingOn: true },
         { foreign: 'el hueso', english: 'the bone', hard: true },
         { foreign: 'el hada', english: 'the fairy', hard: true },
         { foreign: 'la huella', english: 'the fingerprint / the footprint' },
@@ -724,7 +725,6 @@ export const allPhrases = {
             '| (vosotros / vosotras) veis' +
             '| (ellos / ellas / ustedes) ven',
           english: 'to see, present tense conjugation',
-          workingOn: true,
         },
         {
           foreign:
@@ -1079,7 +1079,7 @@ export const allPhrases = {
         { foreign: 'Tengo frío.', english: 'I am cold.' },
         { foreign: 'Tengo un resfriado.', english: 'I have a cold.', hard: true },
         { foreign: 'Yo tengo mucha suerte.', english: 'I am very lucky.' },
-        { foreign: 'Ella tiene pereza.', english: 'She is lazy.' },
+        { foreign: 'Ella tiene pereza.', english: 'She is lazy.', hard: true, workingOn: true },
         {
           foreign: 'El niño tiene dos años.',
           english: 'The child is two years old.',
@@ -1108,6 +1108,7 @@ export const allPhrases = {
         {
           foreign: 'Ella ha ido al gimnasio.',
           english: 'She has gone to the gym.',
+          hard: true,
         },
       ],
     },
@@ -1191,7 +1192,7 @@ export const allPhrases = {
         { foreign: 'holandés', english: 'Dutch (language)' },
         { foreign: 'idioma', english: 'language' },
         { foreign: 'japonés', english: 'Japanese (language)' },
-        { foreign: 'lengua originaria', english: 'indigenous language' },
+        { foreign: 'lengua originaria', english: 'indigenous language', workingOn: true },
         { foreign: 'portugués', english: 'Portuguese (language)' },
         { foreign: 'ruso', english: 'Russian (language)' },
         { foreign: 'turco', english: 'Turkish (language)' },
@@ -1209,7 +1210,7 @@ export const allPhrases = {
         { foreign: '¿Perdón?', english: 'Pardon?' },
         { foreign: 'Por supuesto.', english: 'Of course.', hard: true },
         { foreign: 'Un poquito.', english: 'A little bit.' },
-        { foreign: 'además', english: 'besides', hard: true, showEnglish: false },
+        { foreign: 'además', english: 'besides', workingOn: true, hard: true, showEnglish: false },
         { foreign: 'entender', english: 'understand' },
         { foreign: 'escribir', english: 'to write' },
         { foreign: 'escuchar', english: 'to hear / to listen to' },
@@ -1341,7 +1342,8 @@ export const allPhrases = {
         },
         {
           foreign: 'Me impresiona la torre Eiffel.',
-          english: 'I’m impressed by the Eiffel Tower.', workingOn: true,
+          english: 'I’m impressed by the Eiffel Tower.',
+          workingOn: true,
         },
         {
           foreign: 'Al niño le encanta la lluvia, al perro no le gusta para nada.',
@@ -1425,7 +1427,7 @@ export const allPhrases = {
         },
       ],
       lesson3: [
-        { foreign: 'esto', english: 'this (unknown gender)', workingOn: true },
+        { foreign: 'esto', english: 'this (unknown gender)' },
         { foreign: 'eso', english: 'that (unknown gender)', workingOn: true },
         { foreign: 'aquello', english: 'that over there (unknown gender)' },
         { foreign: '¿Qué es esto?', english: 'What is this?' },
