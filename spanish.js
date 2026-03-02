@@ -1,6 +1,8 @@
 /*
   para = for (for someone), or before an infinitive
   por = because of
+
+  además: besides
  */
 
 export const allPhrases = {
@@ -2049,6 +2051,61 @@ export const allPhrases = {
         {
           foreign: 'Tengo una reserva a nombre de Lucas para el martes.',
           english: 'I have a reservation under the name of Lucas for Tuesday.',
+          workingOn: true,
+        },
+      ],
+      lesson3: [
+        {
+          foreign: 'del miércoles primero al sábado cuatro',
+          english: 'from Wednesday the 1st to Saturday the 4th',
+          workingOn: true,
+        },
+        {
+          foreign: '¿Tengo una reserva para el lunes 5?',
+          english: 'Do I have a reservation for Monday the 5th?',
+          workingOn: true,
+        },
+      ],
+      lesson4: [
+        {
+          foreign: '¿Cuál es su dirección?',
+          english: 'What is your address? (formal)',
+          workingOn: true,
+        },
+        { foreign: 'cuál', english: 'which', workingOn: true },
+        { foreign: 'la dirección', english: 'the address', workingOn: true },
+        { foreign: 'Calle San Martín 6', english: '6 San Martin Street', workingOn: true },
+        {
+          foreign: 'Mi dirección es Calle San Martín 6.',
+          english: 'My address is 6 San Martin Street.',
+          workingOn: true,
+        },
+        { foreign: 'apartamento', english: 'apartment', workingOn: true },
+        {
+          foreign: 'Mi dirección es Calle San Martín 6, apartamento 7.',
+          english: 'My address is 6 San Martin Street, apartment 7.',
+          workingOn: true,
+        },
+        { foreign: 'correo electrónico', english: 'email', workingOn: true },
+        { foreign: 'dirección de correo electrónico', english: 'email address', workingOn: true },
+        {
+          foreign: '¿Cuál es su dirección de correo electrónico?',
+          english: 'What’s your email address? (formal)',
+          workingOn: true,
+        },
+        { foreign: 'arroba', english: 'at (@)', workingOn: true },
+        {
+          foreign:
+            'Mi correo electrónico es juanperez arroba mangolanguages (mahngoLAHNguehhehs) punto com.',
+          english: 'My email is juanperez@mangolanguages.com.',
+          workingOn: true,
+        },
+        { foreign: 'teléfono', english: 'telephone', workingOn: true },
+        { foreign: 'número', english: 'number', workingOn: true },
+        { foreign: 'número de teléfono', english: 'telephone number', workingOn: true },
+        {
+          foreign: '¿Cuál es su número de teléfono?',
+          english: 'What is your telephone number? (formal)',
           workingOn: true,
         },
       ],
