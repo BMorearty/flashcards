@@ -514,6 +514,8 @@ export const allPhrases = {
         { foreign: 'un reloj', english: 'a watch' },
         { foreign: 'algo', english: 'something' },
         { foreign: 'desconocido', english: 'unknown', workingOn: true },
+        { foreign: 'despacio', english: 'slowly', workingOn: true },
+        { foreign: 'Por favor habla despacio.', english: 'Please speak slowly.', workingOn: true },
       ],
     },
     chapter2: {
