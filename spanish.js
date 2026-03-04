@@ -516,6 +516,37 @@ export const allPhrases = {
         { foreign: 'desconocido', english: 'unknown', workingOn: true },
         { foreign: 'despacio', english: 'slowly', workingOn: true },
         { foreign: 'Por favor habla despacio.', english: 'Please speak slowly.', workingOn: true },
+        { foreign: 'vecino', english: 'neighbor', workingOn: true },
+      ],
+      lesson20: [
+        { foreign: 'acabo de + infinitive', english: 'I just ...', workingOn: true },
+        {
+          foreign: 'Acabo de mudarme, así que todavía hay un poco de desorden.',
+          english: 'I just moved in, so there’s still a bit of a mess.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Acá, a mi lado, está este adorable perro.',
+          english: 'Here, next to me, is this adorable dog.',
+          workingOn: true,
+        },
+        { foreign: 'juguetón / juguetona', english: 'playful', workingOn: true },
+        { foreign: 'un sillón', english: 'an armchair', workingOn: true },
+      ],
+      lesson21: [
+        { foreign: 'acabo de + infinitive', english: 'I just ...', workingOn: true },
+        {
+          foreign: 'Acabo de mudarme, así que todavía hay un poco de desorden.',
+          english: 'I just moved in, so there’s still a bit of a mess.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Acá, a mi lado, está este adorable perro.',
+          english: 'Here, next to me, is this adorable dog.',
+          workingOn: true,
+        },
+        { foreign: 'juguetón / juguetona', english: 'playful', workingOn: true },
+        { foreign: 'un sillón', english: 'an armchair', workingOn: true },
       ],
     },
     chapter2: {
@@ -740,6 +771,18 @@ export const allPhrases = {
             '| (vosotros / vosotras) conocéis' +
             '| (ellos / ellas / ustedes) conocen',
           english: 'to know (someone), present tense conjugation',
+        },
+        {
+          foreign:
+            'acabar de, present tense:' +
+            '| (yo) acabo de...' +
+            '| (tú) acabes de...' +
+            '| (él, ella, usted) acaba de...' +
+            '| (nosotros / nosotras) acabamos de...' +
+            '| (vosotros / vosotras) acabáis de...' +
+            '| (ellos / ellas / ustedes) acaban de...',
+          english: 'to finish--or to have just done something, present tense conjugation',
+          workingOn: true,
         },
       ],
     },
@@ -1385,6 +1428,8 @@ export const allPhrases = {
         { foreign: 'aquí', english: 'here' },
         { foreign: 'ahí', english: 'there' },
         { foreign: 'allá', english: 'over there' },
+        { foreign: 'acá', english: 'here (España)', workingOn: true },
+        { foreign: 'allí', english: 'over there (España)', workingOn: true },
         {
           foreign: 'cerca:| esta| estas| este| estos| esto',
           english: 'near: this / these (fem, masc, neutral)',
@@ -1444,6 +1489,39 @@ export const allPhrases = {
         { foreign: '¿Qué es aquello?', english: 'What is that over there?' },
         { foreign: 'No me gusta eso.', english: 'I don’t like that.' },
         { foreign: 'Esto es lo que pienso.', english: 'This is what I think.' },
+        { foreign: 'No conozco a esa niña.', english: 'I don’t know that girl.', workingOn: true },
+        {
+          foreign: 'Me siento muy bien acerca de eso.',
+          english: 'I feel great about that.',
+          workingOn: true,
+        },
+      ],
+      lesson4: [
+        {
+          foreign: '¿Ese de allí es tu perro?',
+          english: 'Is that your dog over there?',
+          workingOn: true,
+        },
+        {
+          foreign: 'Aquella de allá es mi casa.',
+          english: 'That one over there is my house.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Esas alcachofas están muy sabrosas.',
+          english: 'Those artichokes are very tasty.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Usa este paraguas, está lloviendo.',
+          english: 'Use this umbrella, it’s raining.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Esa del medio es mi gata.',
+          english: 'That one in the middle is my (girl) cat.',
+          workingOn: true,
+        },
       ],
     },
     chapter18: {
@@ -1562,6 +1640,87 @@ export const allPhrases = {
           english: 'third / third month / third door',
         },
         { foreign: 'cuarto / cuarta', english: 'fourth' },
+      ],
+    },
+    chapter22: {
+      name: 'Los colores',
+      lesson1: [
+        { foreign: 'Los tomates son rojos.', english: 'The tomatoes are red.', workingOn: true },
+        { foreign: 'La manzana es roja.', english: 'The apple is red.', workingOn: true },
+        { foreign: 'La sangre es roja.', english: 'Blood is red.', workingOn: true },
+        { foreign: 'Me gusta el color rojo.', english: 'I like the color red.', workingOn: true },
+        { foreign: 'El limón es  amarillo.', english: 'El limón es  amarillo.', workingOn: true },
+        {
+          foreign: 'Los taxis de Nueva York son amarillos.',
+          english: 'New York taxis are yellow.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Las zanahorias son naranjas.',
+          english: 'Carrots are orange.',
+          workingOn: true,
+        },
+        {
+          foreign: 'La niña lleva un vestido naranja.',
+          english: 'The girl is wearing an orange dress.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Me gusta el jugo de naranja.',
+          english: 'I like orange juice.',
+          workingOn: true,
+        },
+        { foreign: 'Las plantas son verdes.', english: 'The plants are green.', workingOn: true },
+        {
+          foreign: 'El mar y el cielo son azules.',
+          english: 'The sea and the sky are blue.',
+          workingOn: true,
+        },
+        {
+          foreign: 'La bandera europea es azul con estrellas amarillas.',
+          english: 'The European flag is blue with yellow stars.',
+          workingOn: true,
+        },
+        {
+          foreign: 'El chocolate es de color marrón.',
+          english: 'Chocolate is the color brown.',
+          workingOn: true,
+        },
+        {
+          foreign: 'El hombre lleva unos zapatos marrones.',
+          english: 'The man is wearing brown shoes.',
+          workingOn: true,
+        },
+        { foreign: 'La nieve es blanca.', english: 'Snow is white.', workingOn: true },
+        {
+          foreign: 'El blanco es el color de la leche.',
+          english: 'White is the color of milk.',
+          workingOn: true,
+        },
+        { foreign: 'El gato es negro.', english: 'The cat is black.', workingOn: true },
+        {
+          foreign: 'Las cebras tienen rayas negras.',
+          english: 'Zebras have black stripes.',
+          workingOn: true,
+        },
+        {
+          foreign: 'El helado de fresa es rosa.',
+          english: 'Strawberry ice cream is pink',
+          workingOn: true,
+        },
+        {
+          foreign: 'Los flamencos son pájaros rosa.',
+          english: 'Flamingos are pink birds.',
+          workingOn: true,
+        },
+        { foreign: 'Las uvas son moradas.', english: 'The grapes are purple.', workingOn: true },
+        { foreign: 'La lavanda es morada.', english: 'Lavender is purple.', workingOn: true },
+        { foreign: 'Las delfines son grises.', english: 'Dolphins are gray.', workingOn: true },
+        {
+          foreign: 'Cuando llueve el cielo está gris.',
+          english: 'When it rains, the sky is gray.',
+          workingOn: true,
+        },
       ],
     },
   },
