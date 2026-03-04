@@ -533,21 +533,6 @@ export const allPhrases = {
         { foreign: 'juguetón / juguetona', english: 'playful', workingOn: true },
         { foreign: 'un sillón', english: 'an armchair', workingOn: true },
       ],
-      lesson21: [
-        { foreign: 'acabo de + infinitive', english: 'I just ...', workingOn: true },
-        {
-          foreign: 'Acabo de mudarme, así que todavía hay un poco de desorden.',
-          english: 'I just moved in, so there’s still a bit of a mess.',
-          workingOn: true,
-        },
-        {
-          foreign: 'Acá, a mi lado, está este adorable perro.',
-          english: 'Here, next to me, is this adorable dog.',
-          workingOn: true,
-        },
-        { foreign: 'juguetón / juguetona', english: 'playful', workingOn: true },
-        { foreign: 'un sillón', english: 'an armchair', workingOn: true },
-      ],
     },
     chapter2: {
       name: 'Days of the week',
