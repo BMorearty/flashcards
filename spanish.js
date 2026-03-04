@@ -25,7 +25,7 @@ export const allPhrases = {
         { foreign: 'ambos / ambas', english: 'both', hard: true },
         {
           foreign: 'entonces',
-          english: 'so / then (like French alors)',
+          english: 'so / then (like French alors but more like "then")',
           hard: true,
         },
         { foreign: 'estadounidense/es', english: 'American (singular and plural)' },
@@ -525,9 +525,10 @@ export const allPhrases = {
           english: 'I just moved in, so there’s still a bit of a mess.',
           workingOn: true,
         },
+        { foreign: 'así que', english: 'so (cause and effect)', workingOn: true },
         {
           foreign: 'Acá, a mi lado, está este adorable perro.',
-          english: 'Here, next to me, is this adorable dog.',
+          english: 'Here, next to me, is this adorable dog. (España)',
           workingOn: true,
         },
         { foreign: 'juguetón / juguetona', english: 'playful', workingOn: true },
@@ -759,9 +760,9 @@ export const allPhrases = {
         },
         {
           foreign:
-            'acabar de, present tense:' +
+            'acabar de (ahcahBAR de), present tense:' +
             '| (yo) acabo de...' +
-            '| (tú) acabes de...' +
+            '| (tú) acabas de...' +
             '| (él, ella, usted) acaba de...' +
             '| (nosotros / nosotras) acabamos de...' +
             '| (vosotros / vosotras) acabáis de...' +
@@ -1484,12 +1485,13 @@ export const allPhrases = {
       lesson4: [
         {
           foreign: '¿Ese de allí es tu perro?',
-          english: 'Is that your dog over there?',
+          english:
+            'Is that your dog over there? (informal) (medium distance but clarify "way over there" using Spain form)',
           workingOn: true,
         },
         {
           foreign: 'Aquella de allá es mi casa.',
-          english: 'That one over there is my house.',
+          english: 'That one over there is my house. (far away, with "over there")',
           workingOn: true,
         },
         {
@@ -1498,7 +1500,7 @@ export const allPhrases = {
           workingOn: true,
         },
         {
-          foreign: 'Usa este paraguas, está lloviendo.',
+          foreign: 'Usa este paraguas (pahRAHguas), está lloviendo.',
           english: 'Use this umbrella, it’s raining.',
           workingOn: true,
         },
@@ -1634,15 +1636,16 @@ export const allPhrases = {
         { foreign: 'La manzana es roja.', english: 'The apple is red.', workingOn: true },
         { foreign: 'La sangre es roja.', english: 'Blood is red.', workingOn: true },
         { foreign: 'Me gusta el color rojo.', english: 'I like the color red.', workingOn: true },
-        { foreign: 'El limón es  amarillo.', english: 'El limón es  amarillo.', workingOn: true },
+        { foreign: 'El limón es amarillo.', english: 'The lemon is yellow.', workingOn: true },
         {
           foreign: 'Los taxis de Nueva York son amarillos.',
           english: 'New York taxis are yellow.',
           workingOn: true,
         },
         {
-          foreign: 'Las zanahorias son naranjas.',
+          foreign: 'Las zanahorias (sahn-a-OR-ee-as) son naranjas.',
           english: 'Carrots are orange.',
+          hard: true,
           workingOn: true,
         },
         {
@@ -1673,7 +1676,7 @@ export const allPhrases = {
         },
         {
           foreign: 'El hombre lleva unos zapatos marrones.',
-          english: 'The man is wearing brown shoes.',
+          english: 'The man is wearing some brown shoes.',
           workingOn: true,
         },
         { foreign: 'La nieve es blanca.', english: 'Snow is white.', workingOn: true },
@@ -1690,7 +1693,7 @@ export const allPhrases = {
         },
         {
           foreign: 'El helado de fresa es rosa.',
-          english: 'Strawberry ice cream is pink',
+          english: 'Strawberry ice cream is pink.',
           workingOn: true,
         },
         {
@@ -1699,8 +1702,17 @@ export const allPhrases = {
           workingOn: true,
         },
         { foreign: 'Las uvas son moradas.', english: 'The grapes are purple.', workingOn: true },
-        { foreign: 'La lavanda es morada.', english: 'Lavender is purple.', workingOn: true },
-        { foreign: 'Las delfines son grises.', english: 'Dolphins are gray.', workingOn: true },
+        {
+          foreign: 'La lavanda es morada.',
+          english: 'Lavender is purple.',
+          hard: true,
+          workingOn: true,
+        },
+        {
+          foreign: 'Las delfines son grises.',
+          english: 'The (girl) dolphins are gray.',
+          workingOn: true,
+        },
         {
           foreign: 'Cuando llueve el cielo está gris.',
           english: 'When it rains, the sky is gray.',
@@ -2154,7 +2166,7 @@ export const allPhrases = {
         },
         { foreign: 'una reserva', english: 'a reservation' },
         { foreign: 'para el viernes dos', english: 'for Friday the 2nd' },
-        { foreign: 'para el miércoles primero', english: 'for Wednesday the 1st', workingOn: true },
+        { foreign: 'para el miércoles primero', english: 'for Wednesday the 1st' },
         { foreign: 'a mi nombre', english: 'under my name' },
         {
           foreign: 'Tengo una reserva a mi nombre.',
