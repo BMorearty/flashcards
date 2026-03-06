@@ -1727,6 +1727,14 @@ export const allPhrases = {
         },
         { foreign: 'juguetón / juguetona', english: 'playful', workingOn: true },
         { foreign: 'un sillón', english: 'an armchair', workingOn: true },
+        { foreign: 'peligroso', english: 'dangerous', workingOn: true },
+        {
+          foreign: 'Mi vaso está medio lleno.',
+          english: 'My glass is half-full.',
+          workingOn: true,
+        },
+        { foreign: 'Mi dormitorio está limpio.', english: 'My bedroom is clean.', workingOn: true },
+        { foreign: 'llenar los blancos', english: 'fill in the blanks', workingOn: true },
       ],
       lesson2: [
         { foreign: 'listo', english: 'ready', workingOn: true },
@@ -1738,6 +1746,23 @@ export const allPhrases = {
         { foreign: 'matar', english: 'to kill', workingOn: true },
         { foreign: 'vigilancia masiva', english: 'mass surveillance', workingOn: true },
         { foreign: 'riesgo', english: 'risk', workingOn: true },
+        {
+          foreign: 'Mi regalo tiene un lazo amarillo.',
+          english: 'My gift has a yellow bow.',
+          workingOn: true,
+        },
+        { foreign: 'antes', english: 'before', workingOn: true },
+        { foreign: 'apagón / apagones', english: 'blackout / blackouts', workingOn: true },
+        {
+          foreign: 'El gato rompió el jarrón.',
+          english: 'The cat broke the vase.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Se rompió el jarrón.',
+          english: 'The vase broke. (impersonal)',
+          workingOn: true,
+        },
       ],
     },
   },
