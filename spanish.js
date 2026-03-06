@@ -533,6 +533,17 @@ export const allPhrases = {
         { foreign: 'juguetón / juguetona', english: 'playful', workingOn: true },
         { foreign: 'un sillón', english: 'an armchair', workingOn: true },
       ],
+      lesson21: [
+        { foreign: 'listo', english: 'ready', workingOn: true },
+        { foreign: 'dar asco', english: 'to disgust', workingOn: true },
+        { foreign: 'Me da asco.', english: 'It disgusts me.', workingOn: true },
+        { foreign: 'aparato', english: 'device', workingOn: true },
+        { foreign: 'el ejército', english: 'the army', workingOn: true },
+        { foreign: 'sin', english: 'without', workingOn: true },
+        { foreign: 'matar', english: 'to kill', workingOn: true },
+        { foreign: 'vigilancia masiva', english: 'mass surveillance', workingOn: true },
+        { foreign: 'riesgo', english: 'risk', workingOn: true },
+      ],
     },
     chapter2: {
       name: 'Days of the week',
