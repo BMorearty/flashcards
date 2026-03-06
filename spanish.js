@@ -498,7 +498,7 @@ export const allPhrases = {
         { foreign: 'fuera de este mundo', english: 'out of this world' },
         { foreign: 'qué simple', english: 'how simple' },
         { foreign: 'un robot (roh-BOT) humanoide', english: 'a humanoid robot' },
-        { foreign: 'en el escenario', english: 'on stage', workingOn: true, hard: true },
+        { foreign: 'en el escenario', english: 'on stage', hard: true },
         { foreign: 'Cuéntame.', english: 'Tell me. (informal)' },
         { foreign: 'cada', english: 'each', hard: true, workingOn: true },
         { foreign: 'una entrevista', english: 'an interview' },
@@ -507,7 +507,6 @@ export const allPhrases = {
           english:
             'Tell me about the last performance you went to with your daughter. Give details.',
           hard: true,
-          workingOn: true,
         },
         { foreign: 'una milla', english: 'one mile' },
         { foreign: 'Estaba equivocado.', english: 'I was wrong.', hard: true },
@@ -525,7 +524,7 @@ export const allPhrases = {
           english: 'I just moved in, so there’s still a bit of a mess.',
           workingOn: true,
         },
-        { foreign: 'así que', english: 'so (cause and effect)', workingOn: true },
+        { foreign: 'así que', english: 'so (cause and effect)', hard: true, workingOn: true },
         {
           foreign: 'Acá, a mi lado, está este adorable perro.',
           english: 'Here, next to me, is this adorable dog. (España)',
@@ -619,7 +618,7 @@ export const allPhrases = {
       lesson7: [
         { foreign: 'el hacha', english: 'the axe' },
         { foreign: 'el helado', english: 'the ice cream' },
-        { foreign: 'el hilo', english: 'the thread', workingOn: true },
+        { foreign: 'el hilo', english: 'the thread' },
         { foreign: 'el hueso', english: 'the bone', hard: true },
         { foreign: 'el hada', english: 'the fairy', hard: true },
         { foreign: 'la huella', english: 'the fingerprint / the footprint' },
@@ -1376,7 +1375,6 @@ export const allPhrases = {
         {
           foreign: 'Me impresiona la torre Eiffel.',
           english: 'I’m impressed by the Eiffel Tower.',
-          workingOn: true,
         },
         {
           foreign: 'Al niño le encanta la lluvia, al perro no le gusta para nada.',
@@ -1486,7 +1484,7 @@ export const allPhrases = {
         {
           foreign: '¿Ese de allí es tu perro?',
           english:
-            'Is that your dog over there? (informal) (medium distance but clarify "way over there" using Spain form)',
+            'That way over there, is that your dog? (informal) (medium distance but clarify "way over there" using Spain form)',
           workingOn: true,
         },
         {
@@ -1502,6 +1500,7 @@ export const allPhrases = {
         {
           foreign: 'Usa este paraguas (pahRAHguas), está lloviendo.',
           english: 'Use this umbrella, it’s raining.',
+          hard: true,
           workingOn: true,
         },
         {
@@ -1635,7 +1634,7 @@ export const allPhrases = {
         { foreign: 'Los tomates son rojos.', english: 'The tomatoes are red.', workingOn: true },
         { foreign: 'La manzana es roja.', english: 'The apple is red.', workingOn: true },
         { foreign: 'La sangre es roja.', english: 'Blood is red.', workingOn: true },
-        { foreign: 'Me gusta el color rojo.', english: 'I like the color red.', workingOn: true },
+        { foreign: 'Me gusta el color rojo.', english: 'I like the color red.' },
         { foreign: 'El limón es amarillo.', english: 'The lemon is yellow.', workingOn: true },
         {
           foreign: 'Los taxis de Nueva York son amarillos.',
@@ -1643,7 +1642,7 @@ export const allPhrases = {
           workingOn: true,
         },
         {
-          foreign: 'Las zanahorias (sahn-a-OR-ee-as) son naranjas.',
+          foreign: 'Las zanahorias (sahnaOReeas) son naranjas.',
           english: 'Carrots are orange.',
           hard: true,
           workingOn: true,
@@ -1651,6 +1650,7 @@ export const allPhrases = {
         {
           foreign: 'La niña lleva un vestido naranja.',
           english: 'The girl is wearing an orange dress.',
+          hard: true,
           workingOn: true,
         },
         {
@@ -2175,23 +2175,20 @@ export const allPhrases = {
         {
           foreign: 'Tengo una reserva a mi nombre para el miércoles primero.',
           english: 'I have a reservation under my name for Wednesday the 1st.',
-          workingOn: true,
         },
       ],
       lesson2: [
-        { foreign: 'domingo cuatro', english: 'Sunday the 4th', workingOn: true },
+        { foreign: 'domingo cuatro', english: 'Sunday the 4th' },
         { foreign: 'del... al...', english: 'from... to... (dates)', workingOn: true },
         {
           foreign: 'del viernes dos al domingo cuatro',
           english: 'from Friday the 2nd to Sunday the 4th',
-          workingOn: true,
         },
         {
           foreign: 'una reserva del viernes dos al domingo cuatro',
           english: 'a reservation from Friday the 2nd to Sunday the 4th',
-          workingOn: true,
         },
-        { foreign: 'para el jueves', english: 'for Thursday', workingOn: true },
+        { foreign: 'para el jueves', english: 'for Thursday' },
         {
           foreign: 'Tengo una reserva para el jueves tres.',
           english: 'I have a reservation for Thursday the 3rd.',
@@ -2213,7 +2210,6 @@ export const allPhrases = {
         {
           foreign: 'del miércoles primero al sábado cuatro',
           english: 'from Wednesday the 1st to Saturday the 4th',
-          workingOn: true,
         },
         {
           foreign: '¿Tengo una reserva para el lunes cinco?',
@@ -2229,7 +2225,7 @@ export const allPhrases = {
         },
         { foreign: 'cuál', english: 'which (as in which one)', workingOn: true },
         { foreign: 'la dirección', english: 'the address', workingOn: true },
-        { foreign: 'Calle San Martín seis', english: '6 San Martin Street', workingOn: true },
+        { foreign: 'Calle San Martín seis', english: '6 San Martin Street' },
         {
           foreign: 'Mi dirección es Calle San Martín seis.',
           english: 'My address is 6 San Martin Street.',
@@ -2256,12 +2252,11 @@ export const allPhrases = {
           workingOn: true,
         },
         { foreign: 'teléfono', english: 'telephone' },
-        { foreign: 'número', english: 'number', workingOn: true },
+        { foreign: 'número', english: 'number' },
         { foreign: 'número de teléfono', english: 'telephone number' },
         {
           foreign: '¿Cuál es su número de teléfono?',
           english: 'What is your telephone number? (formal)',
-          workingOn: true,
         },
       ],
     },
