@@ -8,7 +8,7 @@
 export const allPhrases = {
   custom: {
     chapter1: {
-      name: 'Random vocab',
+      name: 'Random vocab, Nov 2025-Feb 2026',
       lesson1: [
         { foreign: 'largo', english: 'long' },
         {
@@ -516,33 +516,6 @@ export const allPhrases = {
         { foreign: 'despacio', english: 'slowly', workingOn: true },
         { foreign: 'Por favor habla despacio.', english: 'Please speak slowly.', workingOn: true },
         { foreign: 'vecino', english: 'neighbor', workingOn: true },
-      ],
-      lesson20: [
-        { foreign: 'acabo de + infinitive', english: 'I just ...', workingOn: true },
-        {
-          foreign: 'Acabo de mudarme, así que todavía hay un poco de desorden.',
-          english: 'I just moved in, so there’s still a bit of a mess.',
-          workingOn: true,
-        },
-        { foreign: 'así que', english: 'so (cause and effect)', hard: true, workingOn: true },
-        {
-          foreign: 'Acá, a mi lado, está este adorable perro.',
-          english: 'Here, next to me, is this adorable dog. (España)',
-          workingOn: true,
-        },
-        { foreign: 'juguetón / juguetona', english: 'playful', workingOn: true },
-        { foreign: 'un sillón', english: 'an armchair', workingOn: true },
-      ],
-      lesson21: [
-        { foreign: 'listo', english: 'ready', workingOn: true },
-        { foreign: 'dar asco', english: 'to disgust', workingOn: true },
-        { foreign: 'Me da asco.', english: 'It disgusts me.', workingOn: true },
-        { foreign: 'aparato', english: 'device', workingOn: true },
-        { foreign: 'el ejército', english: 'the army', workingOn: true },
-        { foreign: 'sin', english: 'without', workingOn: true },
-        { foreign: 'matar', english: 'to kill', workingOn: true },
-        { foreign: 'vigilancia masiva', english: 'mass surveillance', workingOn: true },
-        { foreign: 'riesgo', english: 'risk', workingOn: true },
       ],
     },
     chapter2: {
@@ -1735,6 +1708,36 @@ export const allPhrases = {
           english: 'When it rains, the sky is gray.',
           workingOn: true,
         },
+      ],
+    },
+    chapter23: {
+      name: 'Random vocab, Mar 2026',
+      lesson1: [
+        { foreign: 'acabo de + infinitive', english: 'I just ...', workingOn: true },
+        {
+          foreign: 'Acabo de mudarme, así que todavía hay un poco de desorden.',
+          english: 'I just moved in, so there’s still a bit of a mess.',
+          workingOn: true,
+        },
+        { foreign: 'así que', english: 'so (cause and effect)', hard: true, workingOn: true },
+        {
+          foreign: 'Acá, a mi lado, está este adorable perro.',
+          english: 'Here, next to me, is this adorable dog. (España)',
+          workingOn: true,
+        },
+        { foreign: 'juguetón / juguetona', english: 'playful', workingOn: true },
+        { foreign: 'un sillón', english: 'an armchair', workingOn: true },
+      ],
+      lesson2: [
+        { foreign: 'listo', english: 'ready', workingOn: true },
+        { foreign: 'dar asco', english: 'to disgust', workingOn: true },
+        { foreign: 'Me da asco.', english: 'It disgusts me.', workingOn: true },
+        { foreign: 'aparato', english: 'device', workingOn: true },
+        { foreign: 'el ejército', english: 'the army', workingOn: true },
+        { foreign: 'sin', english: 'without', workingOn: true },
+        { foreign: 'matar', english: 'to kill', workingOn: true },
+        { foreign: 'vigilancia masiva', english: 'mass surveillance', workingOn: true },
+        { foreign: 'riesgo', english: 'risk', workingOn: true },
       ],
     },
   },
