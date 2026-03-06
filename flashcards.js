@@ -426,7 +426,9 @@ async function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
     ? '  (wrong before)'
     : '';
   shownPhrases.add(randomPhrase.foreign);
-  const englishNow = 'showEnglish' in randomPhrase ? randomPhrase.showEnglish : showEnglish;
+  const englishNow = randomPhrase.showEnglish === 'random'
+    ? Math.random() < 0.5
+    : 'showEnglish' in randomPhrase ? randomPhrase.showEnglish : showEnglish;
   console.log(
     `  ${chalk.yellow((englishNow ? randomPhrase.english : randomPhrase.foreign).replaceAll(/\| */g, '\n  '))}`,
   );
