@@ -1208,7 +1208,7 @@ export const allPhrases = {
         { foreign: 'holandés', english: 'Dutch (language)' },
         { foreign: 'idioma', english: 'language' },
         { foreign: 'japonés', english: 'Japanese (language)' },
-        { foreign: 'lengua originaria', english: 'indigenous language', workingOn: true },
+        { foreign: 'lengua originaria', english: 'indigenous language' },
         { foreign: 'portugués', english: 'Portuguese (language)' },
         { foreign: 'ruso', english: 'Russian (language)' },
         { foreign: 'turco', english: 'Turkish (language)' },
@@ -1458,12 +1458,12 @@ export const allPhrases = {
           foreign: '¿Qué es eso? Esa es una mariposa.',
           english: 'What is that? That is a butterfly.',
         },
-        { foreign: 'No sé eso.', english: 'I don’t know that.', workingOn: true },
+        { foreign: 'No sé eso.', english: 'I don’t know that.' },
         { foreign: 'Esto es importante.', english: 'This is important.' },
         { foreign: '¿Qué es aquello?', english: 'What is that over there?' },
         { foreign: 'No me gusta eso.', english: 'I don’t like that.' },
         { foreign: 'Esto es lo que pienso.', english: 'This is what I think.' },
-        { foreign: 'No conozco a esa niña.', english: 'I don’t know that girl.', workingOn: true },
+        { foreign: 'No conozco a esa niña.', english: 'I don’t know that girl.' },
         {
           foreign: 'Me siento muy bien acerca de eso.',
           english: 'I feel great about that.',
@@ -1496,7 +1496,6 @@ export const allPhrases = {
         {
           foreign: 'Esa del medio es mi gata.',
           english: 'That one in the middle is my (girl) cat.',
-          workingOn: true,
         },
       ],
     },
@@ -1511,7 +1510,6 @@ export const allPhrases = {
         {
           foreign: 'Siempre digo que poner una alarma no está de más.',
           english: 'I always say that it can’t hurt to set an alarm.',
-          workingOn: true,
         },
       ],
     },
@@ -1621,7 +1619,7 @@ export const allPhrases = {
     chapter22: {
       name: 'Los colores',
       lesson1: [
-        { foreign: 'Los tomates son rojos.', english: 'The tomatoes are red.', workingOn: true },
+        { foreign: 'Los tomates son rojos.', english: 'The tomatoes are red.' },
         { foreign: 'La manzana es roja.', english: 'The apple is red.', workingOn: true },
         { foreign: 'La sangre es roja.', english: 'Blood is red.', workingOn: true },
         { foreign: 'Me gusta el color rojo.', english: 'I like the color red.' },
@@ -1629,7 +1627,6 @@ export const allPhrases = {
         {
           foreign: 'Los taxis de Nueva York son amarillos.',
           english: 'New York taxis are yellow.',
-          workingOn: true,
         },
         {
           foreign: 'Las zanahorias (sahnaOReeas) son naranjas.',
@@ -1646,9 +1643,8 @@ export const allPhrases = {
         {
           foreign: 'Me gusta el jugo de naranja.',
           english: 'I like orange juice.',
-          workingOn: true,
         },
-        { foreign: 'Las plantas son verdes.', english: 'The plants are green.', workingOn: true },
+        { foreign: 'Las plantas son verdes.', english: 'The plants are green.' },
         {
           foreign: 'El mar y el cielo son azules.',
           english: 'The sea and the sky are blue.',
@@ -1673,9 +1669,8 @@ export const allPhrases = {
         {
           foreign: 'El blanco es el color de la leche.',
           english: 'White is the color of milk.',
-          workingOn: true,
         },
-        { foreign: 'El gato es negro.', english: 'The cat is black.', workingOn: true },
+        { foreign: 'El gato es negro.', english: 'The cat is black.' },
         {
           foreign: 'Las cebras tienen rayas negras.',
           english: 'Zebras have black stripes.',
@@ -1713,7 +1708,11 @@ export const allPhrases = {
     chapter23: {
       name: 'Random vocab, Mar 2026',
       lesson1: [
-        { foreign: 'acabo de + infinitive', english: 'I just ...', workingOn: true },
+        {
+          foreign: 'acabo de + infinitive',
+          english: 'I just ... (did something)',
+          workingOn: true,
+        },
         {
           foreign: 'Acabo de mudarme, así que todavía hay un poco de desorden.',
           english: 'I just moved in, so there’s still a bit of a mess.',
@@ -1741,10 +1740,10 @@ export const allPhrases = {
         { foreign: 'dar asco', english: 'to disgust', workingOn: true },
         { foreign: 'Me da asco.', english: 'It disgusts me.', workingOn: true },
         { foreign: 'aparato', english: 'device', workingOn: true },
-        { foreign: 'el ejército', english: 'the army', workingOn: true },
+        { foreign: 'el ejército', english: 'the army', hard: true, workingOn: true },
         { foreign: 'sin', english: 'without', workingOn: true },
         { foreign: 'matar', english: 'to kill', workingOn: true },
-        { foreign: 'vigilancia masiva', english: 'mass surveillance', workingOn: true },
+        { foreign: 'vigilancia masiva', english: 'mass surveillance', hard: true, workingOn: true },
         { foreign: 'riesgo', english: 'risk', workingOn: true },
         {
           foreign: 'Mi regalo tiene un lazo amarillo.',
@@ -1752,10 +1751,16 @@ export const allPhrases = {
           workingOn: true,
         },
         { foreign: 'antes', english: 'before', workingOn: true },
-        { foreign: 'apagón / apagones', english: 'blackout / blackouts', workingOn: true },
+        {
+          foreign: 'apagón / apagones',
+          english: 'blackout / blackouts',
+          hard: true,
+          workingOn: true,
+        },
         {
           foreign: 'El gato rompió el jarrón.',
           english: 'The cat broke the vase.',
+          hard: true,
           workingOn: true,
         },
         {
@@ -2224,7 +2229,7 @@ export const allPhrases = {
       ],
       lesson2: [
         { foreign: 'domingo cuatro', english: 'Sunday the 4th' },
-        { foreign: 'del... al...', english: 'from... to... (dates)', workingOn: true },
+        { foreign: 'del... al...', english: 'from... to... (dates)' },
         {
           foreign: 'del viernes dos al domingo cuatro',
           english: 'from Friday the 2nd to Sunday the 4th',
@@ -2238,17 +2243,15 @@ export const allPhrases = {
           foreign: 'Tengo una reserva para el jueves tres.',
           english: 'I have a reservation for Thursday the 3rd.',
         },
-        { foreign: 'a nombre de', english: 'under the name of', workingOn: true },
+        { foreign: 'a nombre de', english: 'under the name of' },
         {
           foreign: 'Tengo una reserva a nombre de Lucas.',
           english: 'I have a reservation under the name of Lucas.',
-          workingOn: true,
         },
         { foreign: 'para el martes', english: 'for Tuesday' },
         {
           foreign: 'Tengo una reserva a nombre de Lucas para el martes.',
           english: 'I have a reservation under the name of Lucas for Tuesday.',
-          workingOn: true,
         },
       ],
       lesson3: [
@@ -2259,14 +2262,12 @@ export const allPhrases = {
         {
           foreign: '¿Tengo una reserva para el lunes cinco?',
           english: 'Do I have a reservation for Monday the 5th?',
-          workingOn: true,
         },
       ],
       lesson4: [
         {
           foreign: '¿Cuál es su dirección?',
           english: 'What is your address? (formal)',
-          workingOn: true,
         },
         { foreign: 'cuál', english: 'which (as in which one)', workingOn: true },
         { foreign: 'la dirección', english: 'the address', workingOn: true },
@@ -2280,10 +2281,9 @@ export const allPhrases = {
         {
           foreign: 'Mi dirección es Calle San Martín seis, apartamento siete.',
           english: 'My address is 6 San Martin Street, apartment 7.',
-          workingOn: true,
         },
         { foreign: 'correo electrónico', english: 'email', workingOn: true },
-        { foreign: 'dirección de correo electrónico', english: 'email address', workingOn: true },
+        { foreign: 'dirección de correo electrónico', english: 'email address' },
         {
           foreign: '¿Cuál es su dirección de correo electrónico?',
           english: 'What’s your email address? (formal)',
