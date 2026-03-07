@@ -1726,7 +1726,7 @@ export const allPhrases = {
           workingOn: true,
         },
         { foreign: 'juguetón / juguetona', english: 'playful', workingOn: true },
-        { foreign: 'un sillón', english: 'an armchair', workingOn: true },
+        { foreign: 'un sillón', english: 'an armchair' },
         { foreign: 'peligroso', english: 'dangerous', workingOn: true },
         {
           foreign: 'Mi vaso está medio lleno.',
@@ -1734,7 +1734,7 @@ export const allPhrases = {
           workingOn: true,
         },
         { foreign: 'Mi dormitorio está limpio.', english: 'My bedroom is clean.', workingOn: true },
-        { foreign: 'llenar los blancos', english: 'fill in the blanks', workingOn: true },
+        { foreign: 'llenar los blancos', english: 'to fill in the blanks', workingOn: true },
       ],
       lesson2: [
         { foreign: 'listo', english: 'ready', workingOn: true },
