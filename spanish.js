@@ -1736,7 +1736,7 @@ export const allPhrases = {
         { foreign: 'Me da asco.', english: 'It disgusts me.', workingOn: true },
         { foreign: 'aparato', english: 'device', workingOn: true },
         { foreign: 'el ejército', english: 'the army', hard: true, workingOn: true },
-        { foreign: 'sin', english: 'without', workingOn: true },
+        { foreign: 'sin', english: 'without' },
         { foreign: 'matar', english: 'to kill', workingOn: true },
         { foreign: 'vigilancia masiva', english: 'mass surveillance', hard: true, workingOn: true },
         { foreign: 'riesgo', english: 'risk', workingOn: true },
