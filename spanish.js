@@ -500,7 +500,7 @@ export const allPhrases = {
         { foreign: 'un robot (roh-BOT) humanoide', english: 'a humanoid robot' },
         { foreign: 'en el escenario', english: 'on stage', hard: true },
         { foreign: 'Cuéntame.', english: 'Tell me. (informal)' },
-        { foreign: 'cada', english: 'each', hard: true, workingOn: true },
+        { foreign: 'cada', english: 'each', hard: true },
         { foreign: 'una entrevista', english: 'an interview' },
         {
           foreign: 'Cuéntame la última presentación a la que fuiste con tu hija. Detalles.',
@@ -751,7 +751,6 @@ export const allPhrases = {
             '| (vosotros / vosotras) acabáis de...' +
             '| (ellos / ellas / ustedes) acaban de...',
           english: 'to finish--or to have just done something, present tense conjugation',
-          workingOn: true,
         },
       ],
     },
@@ -1095,7 +1094,7 @@ export const allPhrases = {
         { foreign: 'Tengo frío.', english: 'I am cold.' },
         { foreign: 'Tengo un resfriado.', english: 'I have a cold.', hard: true },
         { foreign: 'Yo tengo mucha suerte.', english: 'I am very lucky.' },
-        { foreign: 'Ella tiene pereza.', english: 'She is lazy.', hard: true, workingOn: true },
+        { foreign: 'Ella tiene pereza.', english: 'She is lazy.', hard: true },
         {
           foreign: 'El niño tiene dos años.',
           english: 'The child is two years old.',
@@ -1402,8 +1401,8 @@ export const allPhrases = {
         { foreign: 'aquí', english: 'here' },
         { foreign: 'ahí', english: 'there' },
         { foreign: 'allá', english: 'over there' },
-        { foreign: 'acá', english: 'here (España)', workingOn: true },
-        { foreign: 'allí', english: 'over there (España)', workingOn: true },
+        { foreign: 'acá', english: 'here (España)' },
+        { foreign: 'allí', english: 'over there (España)' },
         {
           foreign: 'cerca:| esta| estas| este| estos| esto',
           english: 'near: this / these (fem, masc, neutral)',
@@ -1620,16 +1619,16 @@ export const allPhrases = {
       name: 'Los colores',
       lesson1: [
         { foreign: 'Los tomates son rojos.', english: 'The tomatoes are red.' },
-        { foreign: 'La manzana es roja.', english: 'The apple is red.', workingOn: true },
-        { foreign: 'La sangre es roja.', english: 'Blood is red.', workingOn: true },
+        { foreign: 'La manzana es roja.', english: 'The apple is red.' },
+        { foreign: 'La sangre es roja.', english: 'Blood is red.' },
         { foreign: 'Me gusta el color rojo.', english: 'I like the color red.' },
-        { foreign: 'El limón es amarillo.', english: 'The lemon is yellow.', workingOn: true },
+        { foreign: 'El limón es amarillo.', english: 'The lemon is yellow.' },
         {
           foreign: 'Los taxis de Nueva York son amarillos.',
           english: 'New York taxis are yellow.',
         },
         {
-          foreign: 'Las zanahorias (sahnaOReeas) son naranjas.',
+          foreign: 'Las zanahorias (sahnaOReeas) son naranja.',
           english: 'Carrots are orange.',
           hard: true,
           workingOn: true,
@@ -1653,12 +1652,10 @@ export const allPhrases = {
         {
           foreign: 'La bandera europea es azul con estrellas amarillas.',
           english: 'The European flag is blue with yellow stars.',
-          workingOn: true,
         },
         {
           foreign: 'El chocolate es de color marrón.',
           english: 'Chocolate is the color brown.',
-          workingOn: true,
         },
         {
           foreign: 'El hombre lleva unos zapatos marrones.',
@@ -1674,19 +1671,17 @@ export const allPhrases = {
         {
           foreign: 'Las cebras tienen rayas negras.',
           english: 'Zebras have black stripes.',
-          workingOn: true,
         },
         {
           foreign: 'El helado de fresa es rosa.',
           english: 'Strawberry ice cream is pink.',
-          workingOn: true,
         },
         {
           foreign: 'Los flamencos son pájaros rosa.',
           english: 'Flamingos are pink birds.',
           workingOn: true,
         },
-        { foreign: 'Las uvas son moradas.', english: 'The grapes are purple.', workingOn: true },
+        { foreign: 'Las uvas son moradas.', english: 'The grapes are purple.' },
         {
           foreign: 'La lavanda es morada.',
           english: 'Lavender is purple.',
@@ -2269,13 +2264,12 @@ export const allPhrases = {
           foreign: '¿Cuál es su dirección?',
           english: 'What is your address? (formal)',
         },
-        { foreign: 'cuál', english: 'which (as in which one)', workingOn: true },
-        { foreign: 'la dirección', english: 'the address', workingOn: true },
+        { foreign: 'cuál', english: 'which (as in which one)' },
+        { foreign: 'la dirección', english: 'the address' },
         { foreign: 'Calle San Martín seis', english: '6 San Martin Street' },
         {
           foreign: 'Mi dirección es Calle San Martín seis.',
           english: 'My address is 6 San Martin Street.',
-          workingOn: true,
         },
         { foreign: 'apartamento', english: 'apartment' },
         {
@@ -2287,7 +2281,6 @@ export const allPhrases = {
         {
           foreign: '¿Cuál es su dirección de correo electrónico?',
           english: 'What’s your email address? (formal)',
-          workingOn: true,
         },
         { foreign: 'arroba', english: 'at (@)', workingOn: true },
         {
