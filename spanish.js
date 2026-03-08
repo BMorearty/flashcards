@@ -142,7 +142,7 @@ export const allPhrases = {
         { foreign: 'afuera', english: 'outside', hard: true },
         { foreign: 'adentro', english: 'inside', hard: true },
         { foreign: 'juntos', english: 'together' },
-        { foreign: 'novios', english: 'boyfriend and girlfriend / a couple' },
+        { foreign: 'novios', english: 'boyfriend and girlfriend / a couple', workingOn: true },
         { foreign: 'mensajes de audio', english: 'audio messages' },
         { foreign: 'todo el día', english: 'all day' },
         {
