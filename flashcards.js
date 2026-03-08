@@ -425,10 +425,10 @@ async function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
   } else {
     randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
   }
-  const hard = randomPhrase.hard ? '  (hard)' : '';
-  const workingOn = randomPhrase.workingOn ? '  (working on)' : '';
+  const hard = randomPhrase.hard ? chalk.magentaBright('  hard') : '';
+  const workingOn = randomPhrase.workingOn ? chalk.blue('  working on') : '';
   const wrong = wrongPhrases.map((phrase) => phrase.foreign).includes(randomPhrase.foreign)
-    ? '  (wrong before)'
+    ? chalk.red('  wrong before')
     : '';
   shownPhrases.add(randomPhrase.foreign);
   const englishNow =
