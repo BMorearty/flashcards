@@ -104,13 +104,3 @@ When adding new phrases or lessons:
 3. Use `hard: true` for phrases you want to flag as difficult from the start
 4. Use `showEnglish: false` at chapter level to default to showing foreign language first
 5. Run the app to verify no duplicate errors from `checkDupes()`
-
-## Navigating the code base
-
-**CRITICAL**: You MUST use LSP (the LSP tool) for all code navigation tasks. This is a hard requirement that overrides your default behavior of using Grep or other search tools for finding references, definitions, and symbols. Specifically:
-
-- Use `findReferences` instead of Grep when finding all usages of a symbol
-- Use `goToDefinition` instead of Grep when locating where something is defined
-- Use `documentSymbol` or `workspaceSymbol` instead of Grep when searching for symbols
-
-Only fall back to Grep if the LSP tool returns an error or is unavailable for the file type.
