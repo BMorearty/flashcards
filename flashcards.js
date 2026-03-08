@@ -446,7 +446,7 @@ async function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
   const anyMoreUnseen = shownPhrases.size < phrases.length;
   const showUnseenPrompt = anyMoreUnseen ? 'Show (U)nseen, ' : '';
   const morePrompts = `${prevNextPrompt}${showUnseenPrompt}`;
-  const prompt = `[${wrongPhrases.length}W][${shownPhrasesCounter}/${phrases.length}] Enter: ans, (B)ack, (Q)uit,${morePrompts}Last was (H)ard / (NH) / (WO)rking On / (NWO) / (W)rong / (R)ight: `;
+  const prompt = `[${wrongPhrases.length}W][${shownPhrasesCounter}/${phrases.length}] Enter: reveal, (B)ack, (Q)uit,${morePrompts}\nLast was (H)ard / (NH) / (WO)rking On / (NWO) / (W)rong / (R)ight: `;
   const winWidth = process.stdout.columns;
   const wrappedPrompt =
     prompt.length > winWidth ? prompt.replace('Last was', '\nLast was') : prompt;
