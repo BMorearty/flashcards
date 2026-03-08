@@ -251,14 +251,19 @@ function startFlashcards() {
     showEnglish = allPhrases[currentUnit][currentChapter].showEnglish;
   }
   if (typeof showEnglish === 'undefined') {
-    rl.question(`\nDo you want to see English phrases\nor foreign phrases? (E/f): `, (answer) => {
-      if (answer.toLowerCase() === 'q') {
-        rl.close();
-        return;
-      }
-      const showEnglish = answer.toLowerCase() !== 'f';
-      setupPrompts(showEnglish);
-    });
+    rl.question(
+      `\nDo you want to see English phrases,\nforeign phrases,\nor choose randomly? (E/f/r): `,
+      (answer) => {
+        if (answer.toLowerCase() === 'q') {
+          rl.close();
+          return;
+        }
+        const showEnglish =
+          answer.toLowerCase() === 'f' ? false : answer.toLowerCase() === 'r' ? 'random' : true;
+        console.log({ answer, showEnglish });
+        setupPrompts(showEnglish);
+      },
+    );
   } else {
     setupPrompts(showEnglish);
   }
@@ -431,7 +436,9 @@ async function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
       ? Math.random() < 0.5
       : 'showEnglish' in randomPhrase
         ? randomPhrase.showEnglish
-        : showEnglish;
+        : showEnglish === 'random'
+          ? Math.random() < 0.5
+          : showEnglish;
   console.log(
     `  ${chalk.yellow((englishNow ? randomPhrase.english : randomPhrase.foreign).replaceAll(/\| */g, '\n  '))}`,
   );
