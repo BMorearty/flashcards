@@ -1647,7 +1647,6 @@ export const allPhrases = {
         {
           foreign: 'El mar y el cielo son azules.',
           english: 'The sea and the sky are blue.',
-          workingOn: true,
         },
         {
           foreign: 'La bandera europea es azul con estrellas amarillas.',
@@ -1691,7 +1690,6 @@ export const allPhrases = {
         {
           foreign: 'Las delfines son grises.',
           english: 'The (girl) dolphins are gray.',
-          workingOn: true,
         },
         {
           foreign: 'Cuando llueve el cielo está gris.',
