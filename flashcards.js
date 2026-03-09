@@ -47,6 +47,7 @@ let currentLesson = null;
 let phrases;
 let lastPhrase = null;
 let wrongPhrases;
+let englishPhrases;
 let phraseIndex;
 let shownPhrases = new Set();
 let allPhrasesShownMessageDisplayed = false;
@@ -260,7 +261,6 @@ function startFlashcards() {
         }
         const showEnglish =
           answer.toLowerCase() === 'f' ? false : answer.toLowerCase() === 'r' ? 'random' : true;
-        console.log({ answer, showEnglish });
         setupPrompts(showEnglish);
       },
     );
@@ -305,6 +305,7 @@ function setupPrompts(showEnglish) {
 async function setupPhrases() {
   phrases = [];
   wrongPhrases = [];
+  englishPhrases = new Map();
   phraseIndex = 0;
   shownPhrases.clear();
   allPhrasesShownMessageDisplayed = false;
@@ -431,14 +432,17 @@ async function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
     ? chalk.red('  wrong before')
     : '';
   shownPhrases.add(randomPhrase.foreign);
-  const englishNow =
-    randomPhrase.showEnglish === 'random'
+  const englishNow = englishPhrases.has(randomPhrase.foreign)
+    ? englishPhrases.get(randomPhrase.foreign)
+    : randomPhrase.showEnglish === 'random'
       ? Math.random() < 0.5
       : 'showEnglish' in randomPhrase
         ? randomPhrase.showEnglish
         : showEnglish === 'random'
           ? Math.random() < 0.5
           : showEnglish;
+  // Keep showing the same phrase in the same language during this run
+  englishPhrases.set(randomPhrase.foreign, englishNow);
   console.log(
     `  ${chalk.yellow((englishNow ? randomPhrase.english : randomPhrase.foreign).replaceAll(/\| */g, '\n  '))}`,
   );
