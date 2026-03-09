@@ -383,13 +383,13 @@ async function showTextLineByLine(text, color, prefix) {
 
   if (lines.length === 1) {
     // No line breaks, show normally
-    process.stdout.write(`${prefix}${color(text)}`);
+    process.stdout.write(`${prefix}${color(text)}  `);
     return;
   }
 
   // Multiple lines - show one at a time
   for (let i = 0; i < lines.length; i++) {
-    process.stdout.write(`${prefix}${color(lines[i])}`);
+    process.stdout.write(`${prefix}${color(lines[i])}  `);
 
     // Wait for user to press any key to continue
     const char = await readSingleChar();
@@ -405,6 +405,8 @@ async function showTextLineByLine(text, color, prefix) {
         process.stdout.write(`${prefix}${color(lines[j])}`);
         if (j !== lines.length - 1) {
           console.log();
+        } else {
+          process.stdout.write('  ');
         }
       }
       return;
