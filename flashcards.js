@@ -456,6 +456,8 @@ async function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
   const winWidth = process.stdout.columns;
   const wrappedPrompt =
     prompt.length > winWidth ? prompt.replace('Last was', '\nLast was') : prompt;
+  const moveUpAndClearLine = '\u001b[1A\u001b[K';
+  const linesInPrompt = (wrappedPrompt.match(/\n/g) || []).length + 1;
 
   rl.question(wrappedPrompt, async (answer) => {
     answer = answer.toLowerCase();
@@ -529,20 +531,25 @@ async function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
       if (!wrongPhrases.map((phrase) => phrase.foreign).includes(lastPhrase.foreign)) {
         wrongPhrases.push(lastPhrase);
       }
+      console.log(
+        chalk.redBright(`${moveUpAndClearLine.repeat(linesInPrompt + 1)}    Marked as wrong`),
+      );
       showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
       return;
     }
     if (answer === 'r' && lastPhrase) {
       wrongPhrases = wrongPhrases.filter((phrase) => phrase.foreign !== lastPhrase.foreign);
+      console.log(
+        chalk.greenBright(`${moveUpAndClearLine.repeat(linesInPrompt + 1)}    Marked as right`),
+      );
       showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
       return;
     }
     // If I typed a phrase, don't erase what I typed. I want to compare it to the correct answer.
-    const moveUpAndClearLine = ['', 'u'].includes(answer) ? '\u001b[1A\u001b[K' : '';
-    const linesToClear = (wrappedPrompt.match(/\n/g) || []).length + 1;
+    const maybeClearLine = ['', 'u'].includes(answer) ? '\u001b[1A\u001b[K' : '';
 
     // Clear the prompt and show the answer line by line
-    process.stdout.write(`${moveUpAndClearLine.repeat(linesToClear)}`);
+    process.stdout.write(`${maybeClearLine.repeat(linesInPrompt)}`);
     const answerText = englishNow ? randomPhrase.foreign : randomPhrase.english;
     await showTextLineByLine(answerText, chalk.green, '    ');
     console.log(`${hard}${workingOn}${wrong}`);
