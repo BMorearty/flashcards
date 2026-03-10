@@ -100,7 +100,7 @@ export const allPhrases = {
         { foreign: 'cuántos/cuántas', english: 'how many' },
         { foreign: 'una hora', english: 'an hour' },
         { foreign: 'sueño', english: 'sleep (n.)' },
-        { foreign: 'divertido', english: 'fun (adj.)', workingOn: true },
+        { foreign: 'divertido', english: 'fun (adj.)' },
         { foreign: 'más', english: 'more' },
       ],
       lesson4: [
@@ -142,7 +142,7 @@ export const allPhrases = {
         { foreign: 'afuera', english: 'outside', hard: true },
         { foreign: 'adentro', english: 'inside', hard: true },
         { foreign: 'juntos', english: 'together' },
-        { foreign: 'novios', english: 'boyfriend and girlfriend / a couple', workingOn: true },
+        { foreign: 'novios', english: 'boyfriend and girlfriend / a couple' },
         { foreign: 'mensajes de audio', english: 'audio messages' },
         { foreign: 'todo el día', english: 'all day' },
         {
@@ -154,7 +154,6 @@ export const allPhrases = {
         {
           foreign: '¿Qué estás haciendo?',
           english: 'What are you doing? (informal)',
-          workingOn: true,
         },
         {
           foreign: 'Estoy cocinando el almuerzo.',
@@ -337,7 +336,7 @@ export const allPhrases = {
         },
         { foreign: 'verdadero', english: 'true' },
         { foreign: 'chocolate con leche', english: 'milk chocolate' },
-        { foreign: 'chocolate oscuro', english: 'dark chocolate', workingOn: true, hard: true },
+        { foreign: 'chocolate oscuro', english: 'dark chocolate', hard: true },
         { foreign: 'saludable', english: 'healthy' },
         { foreign: 'gobierno', english: 'government' },
         {
@@ -393,7 +392,7 @@ export const allPhrases = {
           english: 'You have a nice weekend too. (informal)',
         },
         { foreign: 'darse cuenta', english: 'to realize', hard: true },
-        { foreign: 'montaña rusa', english: 'roller coaster', workingOn: true },
+        { foreign: 'montaña rusa', english: 'roller coaster' },
         { foreign: 'de la nada', english: 'out of nowhere / out of the blue' },
         { foreign: 'la habilidad', english: 'the skill' },
       ],
@@ -512,9 +511,13 @@ export const allPhrases = {
         { foreign: 'Estaba equivocado.', english: 'I was wrong.', hard: true },
         { foreign: 'un reloj', english: 'a watch' },
         { foreign: 'algo', english: 'something' },
-        { foreign: 'desconocido', english: 'unknown', workingOn: true },
-        { foreign: 'despacio', english: 'slowly', workingOn: true },
-        { foreign: 'Por favor habla despacio.', english: 'Please speak slowly.', workingOn: true },
+        { foreign: 'desconocido', english: 'unknown' },
+        { foreign: 'despacio', english: 'slowly' },
+        {
+          foreign: 'Por favor hable despacio.',
+          english: 'Please speak slowly. (formal)',
+          workingOn: true,
+        },
         { foreign: 'vecino', english: 'neighbor', workingOn: true },
       ],
     },
@@ -558,13 +561,13 @@ export const allPhrases = {
         { foreign: 'la bañera', english: 'the bathtub', hard: true },
         { foreign: 'el vestido', english: 'the dress', hard: true },
         { foreign: 'el virus', english: 'the virus' },
-        { foreign: 'la botella', english: 'the bottle', workingOn: true },
+        { foreign: 'la botella', english: 'the bottle' },
         { foreign: 'la bufanda', english: 'the scarf' },
         { foreign: 'la vaca', english: 'the cow', hard: true },
         { foreign: 'el/la bebé', english: 'the baby' },
       ],
       lesson3: [
-        { foreign: 'la campana', english: 'the bell', workingOn: true, hard: true },
+        { foreign: 'la campana', english: 'the bell', hard: true },
         { foreign: 'el queso', english: 'the cheese' },
         { foreign: 'el kilo', english: 'the kilo' },
         { foreign: 'el conejo', english: 'the rabbit', hard: true },
@@ -864,7 +867,7 @@ export const allPhrases = {
         { foreign: 'el problema', english: 'the problem' },
         { foreign: 'el sistema', english: 'the system' },
         { foreign: 'el rey', english: 'the king' },
-        { foreign: 'el buey', english: 'the ox', workingOn: true },
+        { foreign: 'el buey', english: 'the ox', hard: true, workingOn: true },
         { foreign: 'la ley', english: 'the law', hard: true },
         { foreign: 'el tórax', english: 'the thorax' },
         { foreign: 'el hospital', english: 'the hospital' },
@@ -1216,7 +1219,7 @@ export const allPhrases = {
     chapter14: {
       name: 'Small talk',
       lesson1: [
-        { foreign: 'Absolutamente nada.', english: 'Nothing at all.', workingOn: true },
+        { foreign: 'Absolutamente nada.', english: 'Nothing at all.' },
         { foreign: 'Bienvenido.', english: 'Welcome. (to my humble abode)' },
         { foreign: '¡Claro!', english: 'Of course! / Sure! / You’re welcome!' },
         { foreign: 'Lo siento.', english: 'I’m sorry.' },
@@ -1228,7 +1231,6 @@ export const allPhrases = {
         {
           foreign: 'además',
           english: 'besides',
-          workingOn: true,
           hard: true,
           showEnglish: 'random',
         },
@@ -1466,7 +1468,6 @@ export const allPhrases = {
         {
           foreign: 'Me siento muy bien acerca de eso.',
           english: 'I feel great about that.',
-          workingOn: true,
         },
       ],
       lesson4: [
@@ -1474,7 +1475,6 @@ export const allPhrases = {
           foreign: '¿Ese de allí es tu perro?',
           english:
             'That way over there, is that your dog? (informal) (medium distance but clarify "way over there" using Spain form)',
-          workingOn: true,
         },
         {
           foreign: 'Aquella de allá es mi casa.',
@@ -1484,13 +1484,12 @@ export const allPhrases = {
         {
           foreign: 'Esas alcachofas están muy sabrosas.',
           english: 'Those artichokes are very tasty.',
-          workingOn: true,
         },
         {
           foreign: 'Usa este paraguas (pahRAHguas), está lloviendo.',
           english: 'Use this umbrella, it’s raining.',
-          hard: true,
           workingOn: true,
+          hard: true,
         },
         {
           foreign: 'Esa del medio es mi gata.',
@@ -1631,13 +1630,11 @@ export const allPhrases = {
           foreign: 'Las zanahorias (sahnaOReeas) son naranja.',
           english: 'Carrots are orange.',
           hard: true,
-          workingOn: true,
         },
         {
           foreign: 'La niña lleva un vestido naranja.',
           english: 'The girl is wearing an orange dress.',
           hard: true,
-          workingOn: true,
         },
         {
           foreign: 'Me gusta el jugo de naranja.',
@@ -1659,9 +1656,8 @@ export const allPhrases = {
         {
           foreign: 'El hombre lleva unos zapatos marrones.',
           english: 'The man is wearing some brown shoes.',
-          workingOn: true,
         },
-        { foreign: 'La nieve es blanca.', english: 'Snow is white.', workingOn: true },
+        { foreign: 'La nieve es blanca.', english: 'Snow is white.' },
         {
           foreign: 'El blanco es el color de la leche.',
           english: 'White is the color of milk.',
@@ -1678,14 +1674,13 @@ export const allPhrases = {
         {
           foreign: 'Los flamencos son pájaros rosa.',
           english: 'Flamingos are pink birds.',
-          workingOn: true,
+          hard: true,
         },
         { foreign: 'Las uvas son moradas.', english: 'The grapes are purple.' },
         {
           foreign: 'La lavanda es morada.',
           english: 'Lavender is purple.',
           hard: true,
-          workingOn: true,
         },
         {
           foreign: 'Las delfines son grises.',
@@ -1704,18 +1699,15 @@ export const allPhrases = {
         {
           foreign: 'acabo de + infinitive',
           english: 'I just ... (did something)',
-          workingOn: true,
         },
         {
           foreign: 'Acabo de mudarme, así que todavía hay un poco de desorden.',
           english: 'I just moved in, so there’s still a bit of a mess.',
-          workingOn: true,
         },
-        { foreign: 'así que', english: 'so (cause and effect)', hard: true, workingOn: true },
+        { foreign: 'así que', english: 'so (cause and effect)', hard: true },
         {
           foreign: 'Acá, a mi lado, está este adorable perro.',
           english: 'Here, next to me, is this adorable dog. (España)',
-          workingOn: true,
         },
         { foreign: 'juguetón / juguetona', english: 'playful', workingOn: true },
         { foreign: 'un sillón', english: 'an armchair' },
@@ -1725,23 +1717,22 @@ export const allPhrases = {
           english: 'My glass is half-full.',
           workingOn: true,
         },
-        { foreign: 'Mi dormitorio está limpio.', english: 'My bedroom is clean.', workingOn: true },
+        { foreign: 'Mi dormitorio está limpio.', english: 'My bedroom is clean.' },
         { foreign: 'llenar los blancos', english: 'to fill in the blanks', workingOn: true },
       ],
       lesson2: [
-        { foreign: 'listo', english: 'ready', workingOn: true },
+        { foreign: 'listo', english: 'ready' },
         { foreign: 'dar asco', english: 'to disgust', workingOn: true },
         { foreign: 'Me da asco.', english: 'It disgusts me.', workingOn: true },
-        { foreign: 'aparato', english: 'device', workingOn: true },
-        { foreign: 'el ejército', english: 'the army', hard: true, workingOn: true },
+        { foreign: 'aparato', english: 'device' },
+        { foreign: 'el ejército', english: 'the army', hard: true },
         { foreign: 'sin', english: 'without' },
-        { foreign: 'matar', english: 'to kill', workingOn: true },
-        { foreign: 'vigilancia masiva', english: 'mass surveillance', hard: true, workingOn: true },
-        { foreign: 'riesgo', english: 'risk', workingOn: true },
+        { foreign: 'matar', english: 'to kill' },
+        { foreign: 'vigilancia masiva', english: 'mass surveillance', hard: true },
+        { foreign: 'riesgo', english: 'risk' },
         {
           foreign: 'Mi regalo tiene un lazo amarillo.',
           english: 'My gift has a yellow bow.',
-          workingOn: true,
         },
         { foreign: 'antes', english: 'before', workingOn: true },
         {
@@ -2274,18 +2265,17 @@ export const allPhrases = {
           foreign: 'Mi dirección es Calle San Martín seis, apartamento siete.',
           english: 'My address is 6 San Martin Street, apartment 7.',
         },
-        { foreign: 'correo electrónico', english: 'email', workingOn: true },
+        { foreign: 'correo electrónico', english: 'email' },
         { foreign: 'dirección de correo electrónico', english: 'email address' },
         {
           foreign: '¿Cuál es su dirección de correo electrónico?',
           english: 'What’s your email address? (formal)',
         },
-        { foreign: 'arroba', english: 'at (@)', workingOn: true },
+        { foreign: 'arroba', english: 'at (@)' },
         {
           foreign:
             'Mi correo electrónico es juanperez arroba mangolanguages (mahngoLAHNguehhehs) punto com.',
           english: 'My email is juanperez@mangolanguages.com.',
-          workingOn: true,
         },
         { foreign: 'teléfono', english: 'telephone' },
         { foreign: 'número', english: 'number' },
