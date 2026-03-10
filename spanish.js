@@ -205,6 +205,7 @@ export const allPhrases = {
         {
           foreign: 'Cuando tienes poca energía, el café te la da.',
           english: 'When you have low energy, coffee gives you some. (informal)',
+          workingOn: true,
         },
         { foreign: 'un abrazo', english: 'a hug' },
         { foreign: 'un abrazote', english: 'a big hug' },
@@ -358,7 +359,7 @@ export const allPhrases = {
         },
         { foreign: '¿Te duele algo?', english: 'Does something hurt? (informal)' },
         { foreign: 'Me duele la garganta.', english: 'My throat hurts.' },
-        { foreign: 'Me duele el cuello.', english: 'My neck hurts.' },
+        { foreign: 'Me duele el cuello.', english: 'My neck hurts.', workingOn: true },
         { foreign: 'Me duele la rodilla.', english: 'My knee hurts.' },
         {
           foreign: 'Hola. ¿Cómo te sientes?',
@@ -988,6 +989,7 @@ export const allPhrases = {
         {
           foreign: 'El niño está diciendo la verdad.',
           english: 'The boy is telling the truth.',
+          workingOn: true,
         },
         { foreign: 'La chica está leyendo.', english: 'The girl is reading.' },
         {
@@ -1114,6 +1116,7 @@ export const allPhrases = {
         {
           foreign: 'El bebé tiene ganas de llorar.',
           english: 'The baby feels like crying.',
+          workingOn: true,
           hard: true,
         },
         {
