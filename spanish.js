@@ -1681,8 +1681,9 @@ export const allPhrases = {
         },
         { foreign: 'Las uvas son moradas.', english: 'The grapes are purple.' },
         {
-          foreign: 'La lavanda es morada.',
+          foreign: 'La lavanda es morada. (morado is masc.)',
           english: 'Lavender is purple.',
+          workingOn: true,
           hard: true,
         },
         {
