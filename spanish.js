@@ -359,7 +359,7 @@ export const allPhrases = {
         },
         { foreign: '¿Te duele algo?', english: 'Does something hurt? (informal)' },
         { foreign: 'Me duele la garganta.', english: 'My throat hurts.' },
-        { foreign: 'Me duele el cuello.', english: 'My neck hurts.', workingOn: true },
+        { foreign: 'Me duele el cuello.', english: 'My neck hurts.', hard: true, workingOn: true },
         { foreign: 'Me duele la rodilla.', english: 'My knee hurts.' },
         {
           foreign: 'Hola. ¿Cómo te sientes?',
@@ -384,7 +384,7 @@ export const allPhrases = {
         },
         { foreign: 'el agua (fem.)', english: 'the water' },
         { foreign: 'azúcar moreno', english: 'brown sugar' },
-        { foreign: 'azúcar blanca', english: 'white sugar', workingOn: true },
+        { foreign: 'azúcar blanca', english: 'white sugar' },
         { foreign: 'afición', english: 'hobby / pastime / fondness' },
         { foreign: 'pasado / pasada', english: 'last (most recent)' },
         { foreign: 'siguiente / próxima / próximo', english: 'next' },
@@ -579,7 +579,7 @@ export const allPhrases = {
       lesson4: [
         { foreign: 'el zapato', english: 'the shoe' },
         { foreign: 'el cepillo', english: 'the brush', hard: true },
-        { foreign: 'el semáforo', english: 'the traffic light', hard: true, workingOn: true },
+        { foreign: 'el semáforo', english: 'the traffic light', hard: true },
         { foreign: 'el zinc', english: 'the zinc' },
         { foreign: 'el cine', english: 'the cinema' },
         { foreign: 'la silla', english: 'the chair', hard: true },
@@ -868,7 +868,7 @@ export const allPhrases = {
         { foreign: 'el problema', english: 'the problem' },
         { foreign: 'el sistema', english: 'the system' },
         { foreign: 'el rey', english: 'the king' },
-        { foreign: 'el buey', english: 'the ox', hard: true, workingOn: true },
+        { foreign: 'el buey', english: 'the ox', hard: true },
         { foreign: 'la ley', english: 'the law', hard: true },
         { foreign: 'el tórax', english: 'the thorax' },
         { foreign: 'el hospital', english: 'the hospital' },
@@ -1482,7 +1482,6 @@ export const allPhrases = {
         {
           foreign: 'Aquella de allá es mi casa.',
           english: 'That one over there is my house. (far away, with "over there")',
-          workingOn: true,
         },
         {
           foreign: 'Esas alcachofas están muy sabrosas.',
@@ -1753,7 +1752,7 @@ export const allPhrases = {
         },
         {
           foreign: 'Se rompió el jarrón.',
-          english: 'The vase broke. (impersonal)',
+          english: 'The vase broke. (impersonal)', hard: true,
           workingOn: true,
         },
       ],
