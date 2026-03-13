@@ -2,10 +2,28 @@
 
 /**
  * Find all phrases that have been split across multiple lines and merge them into a single line
- * if the resulting line is <= 100 characters.
+ * if the resulting line fits within the printWidth from .prettierrc (default: 80).
  */
 
 import { readFileSync, writeFileSync } from 'fs';
+import { resolve, dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const PRETTIER_DEFAULT_PRINT_WIDTH = 80;
+
+function readPrintWidth() {
+  const dir = dirname(fileURLToPath(import.meta.url));
+  for (const name of ['.prettierrc', '.prettierrc.json']) {
+    try {
+      const raw = readFileSync(resolve(dir, name), 'utf8');
+      const config = JSON.parse(raw);
+      if (typeof config.printWidth === 'number') return config.printWidth;
+    } catch {}
+  }
+  return PRETTIER_DEFAULT_PRINT_WIDTH;
+}
+
+const printWidth = readPrintWidth();
 
 const filename = process.argv[2];
 if (!filename) {
@@ -46,7 +64,7 @@ while (i < lines.length) {
     const props = propLines.map((pl) => pl.trim().replace(/,$/, ''));
     const merged = `${indent}{ ${props.join(', ')} }${trailingComma}`;
 
-    if (merged.length <= 100) {
+    if (merged.length <= printWidth) {
       result.push(merged);
       mergeCount++;
       i = j + 1;
