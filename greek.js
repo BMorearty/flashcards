@@ -479,11 +479,7 @@ export const allPhrases = {
           english: 'Where is the restroom?',
         },
         { foreign: 'η τουαλέτα (ee tooahLEHtah)', english: 'the restroom' },
-        {
-          foreign: 'το ξενοδοχείο (toh ksehnohthoHEEoh)',
-          english: 'the hotel',
-          hard: true,
-        },
+        { foreign: 'το ξενοδοχείο (toh ksehnohthoHEEoh)', english: 'the hotel', hard: true },
         {
           foreign:
             'Συγγνώμη, πού είναι το ξενοδοχείο; (seeGNOHmee, poo EEneh toh ksehnohthoHEEoh?)',
@@ -972,10 +968,7 @@ export const allPhrases = {
         { foreign: 'το ευρώ (toh evROH)', english: 'the euro' },
         { foreign: 'ένα ευρώ (EHnah evROH)', english: 'one euro' },
         { foreign: 'το λεπτό (toh lehpTOH)', english: 'the cent' },
-        {
-          foreign: 'δύο ευρώ (THEEoh evROH)',
-          english: 'two euros',
-        },
+        { foreign: 'δύο ευρώ (THEEoh evROH)', english: 'two euros' },
         { foreign: 'τα λεπτά (tah lepTAH)', english: 'the cents' },
         { foreign: 'πενήντα (pehNEEndah)', english: 'fifty' },
         { foreign: 'τρία (TREEah)', english: 'three' },
@@ -1149,12 +1142,7 @@ export const allPhrases = {
         { foreign: 'δίνετε (THEEnehteh)', english: 'you give (formal)' },
         { foreign: 'μου δίνετε (moo THEEnehteh)', english: 'you give to me (formal)' },
         { foreign: 'μου φέρνετε (moo FEHrnehteh)', english: 'you bring to me (formal)' },
-        {
-          foreign: 'το ποτήρι (toh pohTEEree)',
-          english: 'the glass',
-          hard: true,
-          workingOn: true,
-        },
+        { foreign: 'το ποτήρι (toh pohTEEree)', english: 'the glass', hard: true, workingOn: true },
         {
           foreign: 'ένα ποτήρι (EHnah pohTEEree)',
           english: 'a glass',
