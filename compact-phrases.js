@@ -77,4 +77,4 @@ while (i < lines.length) {
 }
 
 writeFileSync(filename, result.join('\n'), 'utf8');
-console.log(`Merged ${mergeCount} phrase(s) in ${filename}`);
+console.log(`Compacted ${mergeCount} phrase(s) in ${filename}`);
