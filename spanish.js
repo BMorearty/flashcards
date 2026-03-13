@@ -11,15 +11,9 @@ export const allPhrases = {
       name: 'Random vocab, Nov 2025-Feb 2026',
       lesson1: [
         { foreign: 'largo', english: 'long' },
-        {
-          foreign: 'Tenga cuidado.',
-          english: 'Be careful. (formal) (to a male)',
-        },
+        { foreign: 'Tenga cuidado.', english: 'Be careful. (formal) (to a male)' },
         { foreign: 'tiempo', english: 'weather (right now)' },
-        {
-          foreign: '¿Qué significa esa palabra?',
-          english: 'What does that word mean?',
-        },
+        { foreign: '¿Qué significa esa palabra?', english: 'What does that word mean?' },
         { foreign: 'Suena bien.', english: 'Sounds good.' },
         { foreign: 'sin embargo', english: 'however', hard: true },
         { foreign: 'ambos / ambas', english: 'both', hard: true },
@@ -30,11 +24,7 @@ export const allPhrases = {
         },
         { foreign: 'estadounidense/es', english: 'American (singular and plural)' },
         { foreign: 'hay', english: 'there is/there are' },
-        {
-          foreign: 'Estoy retirado/a / jubilado/a.',
-          english: 'I’m retired.',
-          hard: true,
-        },
+        { foreign: 'Estoy retirado/a / jubilado/a.', english: 'I’m retired.', hard: true },
       ],
       lesson2: [
         { foreign: 'Buen día.', english: 'Good day.' },
@@ -70,11 +60,7 @@ export const allPhrases = {
           hard: true,
         },
         { foreign: 'Igual.', english: 'Likewise. (short version)' },
-        {
-          foreign: 'Muy amable.',
-          english: 'That’s very kind of you.',
-          hard: true,
-        },
+        { foreign: 'Muy amable.', english: 'That’s very kind of you.', hard: true },
         { foreign: 'Muchas gracias.', english: 'Thank you very much.' },
         { foreign: 'Con gusto.', english: 'You’re welcome. (With pleasure.)' },
         { foreign: '¡Chao!', english: 'Bye!' },
@@ -145,27 +131,14 @@ export const allPhrases = {
         { foreign: 'novios', english: 'boyfriend and girlfriend / a couple' },
         { foreign: 'mensajes de audio', english: 'audio messages' },
         { foreign: 'todo el día', english: 'all day' },
-        {
-          foreign: 'Se extrañan mucho.',
-          english: 'They miss each other very much.',
-        },
+        { foreign: 'Se extrañan mucho.', english: 'They miss each other very much.' },
         { foreign: 'desayunar', english: 'to have breakfast', hard: true },
         { foreign: 'Estoy desayunando.', english: 'I’m having breakfast.' },
-        {
-          foreign: '¿Qué estás haciendo?',
-          english: 'What are you doing? (informal)',
-        },
-        {
-          foreign: 'Estoy cocinando el almuerzo.',
-          english: 'I’m cooking lunch.',
-        },
+        { foreign: '¿Qué estás haciendo?', english: 'What are you doing? (informal)' },
+        { foreign: 'Estoy cocinando el almuerzo.', english: 'I’m cooking lunch.' },
         { foreign: 'árbol', english: 'tree' },
         { foreign: 'ventana', english: 'window' },
-        {
-          foreign: 'llevar una chaqueta',
-          english: 'to wear a jacket',
-          hard: true,
-        },
+        { foreign: 'llevar una chaqueta', english: 'to wear a jacket', hard: true },
         { foreign: 'unos lápices de colores', english: 'some colored pencils' },
       ],
       lesson7: [
@@ -277,22 +250,14 @@ export const allPhrases = {
           english: 'frost (a thin layer of ice crystals that form on surfaces on cold nights)',
           hard: true,
         },
-        {
-          foreign: 'una helada',
-          english: 'a frost or freeze (weather event)',
-          hard: true,
-        },
+        { foreign: 'una helada', english: 'a frost or freeze (weather event)', hard: true },
         { foreign: 'tierno', english: 'cute' },
         {
           foreign: 'lindo',
           english:
             'pretty / attractive / good-looking / lovely / nice - “mix of beautiful and cute”',
         },
-        {
-          foreign: 'Nos parece buena / bien tu idea.',
-          english: 'We like your idea.',
-          hard: true,
-        },
+        { foreign: 'Nos parece buena / bien tu idea.', english: 'We like your idea.', hard: true },
         {
           foreign: 'Nos parece mala / mal tu idea.',
           english: 'We don’t like your idea.',
@@ -304,14 +269,8 @@ export const allPhrases = {
           english: 'the trash thrown in the streets',
           hard: true,
         },
-        {
-          foreign: 'el humo negro de los autobuses',
-          english: 'the black smoke from the buses',
-        },
-        {
-          foreign: 'sacar a pasear al perro',
-          english: 'to take the dog for a walk',
-        },
+        { foreign: 'el humo negro de los autobuses', english: 'the black smoke from the buses' },
+        { foreign: 'sacar a pasear al perro', english: 'to take the dog for a walk' },
         { foreign: 'una película', english: 'a movie' },
         { foreign: 'hacer deporte', english: 'to do sports' },
         { foreign: 'salir a correr', english: 'to go for a run' },
@@ -340,11 +299,7 @@ export const allPhrases = {
         { foreign: 'chocolate oscuro', english: 'dark chocolate', hard: true },
         { foreign: 'saludable', english: 'healthy' },
         { foreign: 'gobierno', english: 'government' },
-        {
-          foreign: 'empresa privada',
-          english: 'private company / private enterprise',
-          hard: true,
-        },
+        { foreign: 'empresa privada', english: 'private company / private enterprise', hard: true },
         { foreign: 'Estoy de acuerdo.', english: 'I agree.' },
         { foreign: 'alguien', english: 'someone', hard: true },
         { foreign: 'enviar', english: 'to send' },
@@ -353,22 +308,13 @@ export const allPhrases = {
         { foreign: '¡Santo cielo!', english: 'Holy cow!' },
         { foreign: 'impresionante', english: 'stunning / awesome', hard: true },
         { foreign: 'Me duele el estómago.', english: 'My stomach hurts.' },
-        {
-          foreign: 'No me siento bien. Tengo tos.',
-          english: 'I don’t feel well. I have a cough.',
-        },
+        { foreign: 'No me siento bien. Tengo tos.', english: 'I don’t feel well. I have a cough.' },
         { foreign: '¿Te duele algo?', english: 'Does something hurt? (informal)' },
         { foreign: 'Me duele la garganta.', english: 'My throat hurts.' },
         { foreign: 'Me duele el cuello.', english: 'My neck hurts.', hard: true, workingOn: true },
         { foreign: 'Me duele la rodilla.', english: 'My knee hurts.' },
-        {
-          foreign: 'Hola. ¿Cómo te sientes?',
-          english: 'Hello. How are you feeling? (informal)',
-        },
-        {
-          foreign: 'No me siento bien. / Me siento mal.',
-          english: 'I don’t feel well.',
-        },
+        { foreign: 'Hola. ¿Cómo te sientes?', english: 'Hello. How are you feeling? (informal)' },
+        { foreign: 'No me siento bien. / Me siento mal.', english: 'I don’t feel well.' },
         { foreign: 'Me duele el hombro.', english: 'My shoulder hurts.' },
         { foreign: 'Me duele la espalda.', english: 'My back hurts.' },
         {
@@ -378,10 +324,7 @@ export const allPhrases = {
         },
       ],
       lesson15: [
-        {
-          foreign: 'el azúcar (masc. or fem! Usually masc.)',
-          english: 'the sugar',
-        },
+        { foreign: 'el azúcar (masc. or fem! Usually masc.)', english: 'the sugar' },
         { foreign: 'el agua (fem.)', english: 'the water' },
         { foreign: 'azúcar moreno', english: 'brown sugar' },
         { foreign: 'azúcar blanca', english: 'white sugar' },
@@ -420,21 +363,12 @@ export const allPhrases = {
           foreign: 'Me gusta de chocolate con vainilla. ¿Qué sabor te gusta?',
           english: 'I like chocolate with vanilla. What flavor do you like? (informal)',
         },
-        {
-          foreign: 'No me gusta levantarme temprano.',
-          english: 'I don’t like getting up early.',
-        },
+        { foreign: 'No me gusta levantarme temprano.', english: 'I don’t like getting up early.' },
         { foreign: 'el chiste', english: 'the joke' },
         { foreign: 'Que maravilloso.', english: 'How wonderful.' },
         { foreign: 'Dame una pista.', english: 'Give me a hint. (informal)' },
-        {
-          foreign: 'El animal tiene cuatro patas.',
-          english: 'The animal has four legs.',
-        },
-        {
-          foreign: 'Los humanos tenemos dos piernas.',
-          english: 'Humans have two legs.',
-        },
+        { foreign: 'El animal tiene cuatro patas.', english: 'The animal has four legs.' },
+        { foreign: 'Los humanos tenemos dos piernas.', english: 'Humans have two legs.' },
         { foreign: 'Yo bebo en el bar.', english: 'I drink at the bar.' },
       ],
       lesson17: [
@@ -444,14 +378,8 @@ export const allPhrases = {
         { foreign: 'un dicho', english: 'a saying' },
         { foreign: 'la carpeta', english: 'the folder' },
         { foreign: 'signos de exclamación', english: 'exclamation marks' },
-        {
-          foreign: 'signo de exclamación abierto',
-          english: 'opening exclamation mark',
-        },
-        {
-          foreign: 'signo de exclamación cerrado',
-          english: 'closing exclamation mark',
-        },
+        { foreign: 'signo de exclamación abierto', english: 'opening exclamation mark' },
+        { foreign: 'signo de exclamación cerrado', english: 'closing exclamation mark' },
         { foreign: 'una araña', english: 'a spider' },
         { foreign: 'aterrador / aterradora', english: 'scary' },
         {
@@ -460,15 +388,8 @@ export const allPhrases = {
         },
       ],
       lesson18: [
-        {
-          foreign: 'Disculpa por lo del martes.',
-          english: 'I’m sorry about Tuesday. (informal)',
-        },
-        {
-          foreign: 'un día feriado / un feriado',
-          english: 'a holiday',
-          hard: true,
-        },
+        { foreign: 'Disculpa por lo del martes.', english: 'I’m sorry about Tuesday. (informal)' },
+        { foreign: 'un día feriado / un feriado', english: 'a holiday', hard: true },
         {
           foreign: 'Es para celebrar los cumpleaños de Washington y Lincoln.',
           english: 'It’s to celebrate the birthdays of Washington and Lincoln.',
@@ -477,11 +398,7 @@ export const allPhrases = {
           foreign: 'Estoy acostumbrado a tomar café todas las mañanas.',
           english: 'I am used to drinking coffee every morning.',
         },
-        {
-          foreign: 'un carterista / una carterista',
-          english: 'a pickpocket',
-          hard: true,
-        },
+        { foreign: 'un carterista / una carterista', english: 'a pickpocket', hard: true },
         { foreign: 'bolsillo', english: 'pocket' },
         { foreign: 'nadie', english: 'nobody' },
         { foreign: 'intentar hablar español', english: 'to try to speak Spanish' },
@@ -889,11 +806,7 @@ export const allPhrases = {
         { foreign: 'la calle', english: 'the street', hard: true },
         { foreign: 'el campo', english: 'the field', hard: true },
         { foreign: 'el/la policia', english: 'the police officer' },
-        {
-          foreign: 'el ordenador',
-          english: 'the computer (like the French word)',
-          hard: true,
-        },
+        { foreign: 'el ordenador', english: 'the computer (like the French word)', hard: true },
         { foreign: 'la tristeza', english: 'the sadness' },
         { foreign: 'la cabeza', english: 'the head' },
       ],
@@ -921,10 +834,7 @@ export const allPhrases = {
           english: 'She is eating chocolate.',
           hard: true,
         },
-        {
-          foreign: 'La niña está haciendo la tarea.',
-          english: 'The girl is doing her homework.',
-        },
+        { foreign: 'La niña está haciendo la tarea.', english: 'The girl is doing her homework.' },
         { foreign: 'Ella está viviendo en Nueva York.', english: 'She is living in New York.' },
         {
           foreign: 'La niña está escribiendo en su cuaderno.',
@@ -939,24 +849,12 @@ export const allPhrases = {
           english: 'The family is watching television.',
           hard: true,
         },
-        {
-          foreign: 'Hoy está nevando mucho.',
-          english: 'Today it is snowing a lot.',
-          hard: true,
-        },
-        {
-          foreign: 'Hoy está lloviendo mucho.',
-          english: 'Today it is raining a lot.',
-          hard: true,
-        },
+        { foreign: 'Hoy está nevando mucho.', english: 'Today it is snowing a lot.', hard: true },
+        { foreign: 'Hoy está lloviendo mucho.', english: 'Today it is raining a lot.', hard: true },
         { foreign: 'Él está cocinando.', english: 'He is cooking.' },
         { foreign: 'Estoy hablando.', english: 'I am speaking.' },
         { foreign: 'Estoy pensando.', english: 'I am thinking.' },
-        {
-          foreign: 'Estoy almorzando.',
-          english: 'I am having lunch.',
-          hard: true,
-        },
+        { foreign: 'Estoy almorzando.', english: 'I am having lunch.', hard: true },
         { foreign: 'Estoy cenando.', english: 'I am having dinner.', hard: true },
         { foreign: 'Estoy bañando a mi perro.', english: 'I am bathing my dog.' },
         { foreign: 'Estoy bañandome.', english: 'I am taking a bath.' },
@@ -967,10 +865,7 @@ export const allPhrases = {
         },
         { foreign: 'Estoy acostandome.', english: 'I am going to bed.', hard: true },
         { foreign: 'Estoy bebiendo.', english: 'I am drinking.' },
-        {
-          foreign: 'Estoy conociendo a un chico.',
-          english: 'I’m getting to know a guy.',
-        },
+        { foreign: 'Estoy conociendo a un chico.', english: 'I’m getting to know a guy.' },
         {
           foreign: 'Estoy comprendiendo esta lección.',
           english: 'I am comprehending this lesson.',
@@ -984,27 +879,16 @@ export const allPhrases = {
           foreign: 'El gatito está durmiendo sobre la cama.',
           english: 'The kitten is sleeping on the bed.',
         },
-        {
-          foreign: 'El niño está diciendo la verdad.',
-          english: 'The boy is telling the truth.',
-        },
+        { foreign: 'El niño está diciendo la verdad.', english: 'The boy is telling the truth.' },
         { foreign: 'La chica está leyendo.', english: 'The girl is reading.' },
-        {
-          foreign: 'El ladrón está huyendo.',
-          english: 'The thief is fleeing.',
-          hard: true,
-        },
+        { foreign: 'El ladrón está huyendo.', english: 'The thief is fleeing.', hard: true },
         {
           foreign: 'Están construyendo un edificio.',
           english: 'They are building a building.',
           hard: true,
         },
         { foreign: 'Él está muriendo.', english: 'He is dying.' },
-        {
-          foreign: 'El político está mintiendo.',
-          english: 'The politician is lying.',
-          hard: true,
-        },
+        { foreign: 'El político está mintiendo.', english: 'The politician is lying.', hard: true },
         {
           foreign: 'Ella está oyendo música de su cantante favorito.',
           english: 'She is hearing music by her favorite singer.',
@@ -1028,15 +912,8 @@ export const allPhrases = {
           english: 'He is getting dressed to go to school.',
           hard: true,
         },
-        {
-          foreign: 'Estoy pidiendo una bebida.',
-          english: 'I’m asking for a drink.',
-          hard: true,
-        },
-        {
-          foreign: 'Estoy repitiendo la pregunta.',
-          english: 'I am repeating the question.',
-        },
+        { foreign: 'Estoy pidiendo una bebida.', english: 'I’m asking for a drink.', hard: true },
+        { foreign: 'Estoy repitiendo la pregunta.', english: 'I am repeating the question.' },
         { foreign: 'Estoy sonriendo.', english: 'I’m smiling.', hard: true },
       ],
     },
@@ -1058,37 +935,19 @@ export const allPhrases = {
           english: 'We are already home. (masculine, with pronoun)',
           hard: true,
         },
-        {
-          foreign: 'Ya no estamos en casa.',
-          english: 'We are not home anymore.',
-          hard: true,
-        },
-        {
-          foreign: 'Todavía no estamos en casa.',
-          english: 'We are not home yet.',
-          hard: true,
-        },
-        {
-          foreign: 'Todavía estamos en casa.',
-          english: 'We are still home.',
-          hard: true,
-        },
+        { foreign: 'Ya no estamos en casa.', english: 'We are not home anymore.', hard: true },
+        { foreign: 'Todavía no estamos en casa.', english: 'We are not home yet.', hard: true },
+        { foreign: 'Todavía estamos en casa.', english: 'We are still home.', hard: true },
       ],
     },
     chapter12: {
       name: 'tener y haber',
       lesson1: [
-        {
-          foreign: 'Brian tiene un hermano gemelo.',
-          english: 'Brian has a twin brother.',
-        },
+        { foreign: 'Brian tiene un hermano gemelo.', english: 'Brian has a twin brother.' },
         { foreign: 'Yo tengo un carro.', english: 'I have a car.' },
         { foreign: 'El niño tiene un juguete.', english: 'The child has a toy.' },
         { foreign: 'La niña tiene un gato.', english: 'The girl has a cat.' },
-        {
-          foreign: 'El profesor tiene una casa.',
-          english: 'The professor has a house.',
-        },
+        { foreign: 'El profesor tiene una casa.', english: 'The professor has a house.' },
         { foreign: 'Yo tengo un computador.', english: 'I have a computer.' },
         { foreign: 'Tengo sed.', english: 'I am thirsty.', hard: true },
         { foreign: 'Tengo mucha hambre.', english: 'I am very hungry.' },
@@ -1097,10 +956,7 @@ export const allPhrases = {
         { foreign: 'Tengo un resfriado.', english: 'I have a cold.', hard: true },
         { foreign: 'Yo tengo mucha suerte.', english: 'I am very lucky.' },
         { foreign: 'Ella tiene pereza.', english: 'She is lazy.', hard: true },
-        {
-          foreign: 'El niño tiene dos años.',
-          english: 'The child is two years old.',
-        },
+        { foreign: 'El niño tiene dos años.', english: 'The child is two years old.' },
         {
           foreign: 'El hombre tiene prisa. Está atrasado.',
           english: 'The man is in a hurry. He is late.',
@@ -1123,11 +979,7 @@ export const allPhrases = {
         },
         { foreign: 'Tiene que ir.', english: 'He has to go.', hard: true },
         { foreign: 'Yo he hecho mi trabajo.', english: 'I have done my job.' },
-        {
-          foreign: 'Ella ha ido al gimnasio.',
-          english: 'She has gone to the gym.',
-          hard: true,
-        },
+        { foreign: 'Ella ha ido al gimnasio.', english: 'She has gone to the gym.', hard: true },
       ],
     },
     chapter13: {
@@ -1149,16 +1001,9 @@ export const allPhrases = {
         },
         { foreign: 'cubano / cubana', english: 'Cuban (adj.)' },
         { foreign: 'ecuatoriano / ecuatoriana', english: 'Ecuadorean (adj.)' },
-        {
-          foreign: 'salvadoreño / salvadoreña',
-          english: 'El Salvadorian (adj.)',
-          hard: true,
-        },
+        { foreign: 'salvadoreño / salvadoreña', english: 'El Salvadorian (adj.)', hard: true },
         { foreign: 'español / española', english: 'Spanish (adj.)' },
-        {
-          foreign: 'europeo / europea (ehwrohPEHoh /ehwrohPEHah)',
-          english: 'European (adj.)',
-        },
+        { foreign: 'europeo / europea (ehwrohPEHoh /ehwrohPEHah)', english: 'European (adj.)' },
         { foreign: 'británico / británica', english: 'British (adj.)' },
         {
           foreign: 'guatemalteco / guatemalteca (gwahtehmahlTEHkoh / gwahtehmahlTEHkah)',
@@ -1168,21 +1013,14 @@ export const allPhrases = {
         { foreign: 'hondureño / hondureña', english: 'Honduran (adj.)' },
         { foreign: 'japonés / japonesa', english: 'Japanese (adj.)' },
         { foreign: 'nicaragüense', english: 'Nicaraguan (adj.)', hard: true },
-        {
-          foreign: 'panameño / panameña',
-          english: 'Panamanian (adj.)',
-          hard: true,
-        },
+        { foreign: 'panameño / panameña', english: 'Panamanian (adj.)', hard: true },
         {
           foreign: 'paraguayo / paraguaya (pahrahGWAHyoh / pahrahGWAHyah)',
           english: 'Paraguayan (adj.)',
         },
         { foreign: 'peruano / peruana', english: 'Peruvian (adj.)', hard: true },
         { foreign: 'portugués / portuguesa', english: 'Portuguese (adj.)' },
-        {
-          foreign: 'puertorriqueño / puertorriqueña',
-          english: 'Puerto Rican (adj.)',
-        },
+        { foreign: 'puertorriqueño / puertorriqueña', english: 'Puerto Rican (adj.)' },
         { foreign: 'dominicano / dominicana', english: 'Dominican (adj.)' },
         { foreign: 'ruso / rusa', english: 'Russian (adj.)' },
         { foreign: 'turco / turca', english: 'Turkish (adj.)' },
@@ -1228,12 +1066,7 @@ export const allPhrases = {
         { foreign: '¿Perdón?', english: 'Pardon?' },
         { foreign: 'Por supuesto.', english: 'Of course.', hard: true },
         { foreign: 'Un poquito.', english: 'A little bit.' },
-        {
-          foreign: 'además',
-          english: 'besides',
-          hard: true,
-          showEnglish: 'random',
-        },
+        { foreign: 'además', english: 'besides', hard: true, showEnglish: 'random' },
         { foreign: 'entender', english: 'understand' },
         { foreign: 'escribir', english: 'to write' },
         { foreign: 'escuchar', english: 'to hear / to listen to' },
@@ -1371,10 +1204,7 @@ export const allPhrases = {
           foreign: 'Al niño le encanta la lluvia, al perro no le gusta para nada.',
           english: 'The boy loves the rain, the dog doesn’t like it at all.',
         },
-        {
-          foreign: 'A ella le gusta bastante pintar.',
-          english: 'She quite likes painting.',
-        },
+        { foreign: 'A ella le gusta bastante pintar.', english: 'She quite likes painting.' },
         {
           foreign: 'A Cristina le gusta caminar por la montaña.',
           english: 'Cristina likes to walk in the mountains.',
@@ -1421,34 +1251,19 @@ export const allPhrases = {
       lesson2: [
         { foreign: 'Esta jirafa come.', english: 'This giraffe eats.' },
         { foreign: 'Esa jirafa come.', english: 'That giraffe eats.' },
-        {
-          foreign: 'Aquella jirafa come.',
-          english: 'That giraffe over there eats.',
-        },
-        {
-          foreign: 'Estas fresas son rojas.',
-          english: 'These strawberries are red.',
-        },
-        {
-          foreign: 'Esas fresas son rojas.',
-          english: 'Those strawberries are red.',
-        },
+        { foreign: 'Aquella jirafa come.', english: 'That giraffe over there eats.' },
+        { foreign: 'Estas fresas son rojas.', english: 'These strawberries are red.' },
+        { foreign: 'Esas fresas son rojas.', english: 'Those strawberries are red.' },
         {
           foreign: 'Aquellas fresas son rojas.',
           english: 'Those strawberries over there are red.',
         },
         { foreign: 'Este carro es mío.', english: 'This car is mine.' },
         { foreign: 'Ese carro es mío.', english: 'That car is mine.' },
-        {
-          foreign: 'Aquel carro es mío.',
-          english: 'That car over there is mine.',
-        },
+        { foreign: 'Aquel carro es mío.', english: 'That car over there is mine.' },
         { foreign: 'Estos gatos juegan.', english: 'These cats play.' },
         { foreign: 'Esos gatos juegan.', english: 'Those cats play.' },
-        {
-          foreign: 'Aquellos gatos juegan.',
-          english: 'Those cats over there play.',
-        },
+        { foreign: 'Aquellos gatos juegan.', english: 'Those cats over there play.' },
       ],
       lesson3: [
         { foreign: 'esto', english: 'this (unknown gender)' },
@@ -1465,10 +1280,7 @@ export const allPhrases = {
         { foreign: 'No me gusta eso.', english: 'I don’t like that.' },
         { foreign: 'Esto es lo que pienso.', english: 'This is what I think.' },
         { foreign: 'No conozco a esa niña.', english: 'I don’t know that girl.' },
-        {
-          foreign: 'Me siento muy bien acerca de eso.',
-          english: 'I feel great about that.',
-        },
+        { foreign: 'Me siento muy bien acerca de eso.', english: 'I feel great about that.' },
       ],
       lesson4: [
         {
@@ -1520,10 +1332,7 @@ export const allPhrases = {
           foreign: '¿Me permite presentarle a...?',
           english: 'May I introduce you to...? (formal)',
         },
-        {
-          foreign: 'Mucho gusto.',
-          english: 'Nice to meet you. (formal or informal)',
-        },
+        { foreign: 'Mucho gusto.', english: 'Nice to meet you. (formal or informal)' },
         { foreign: 'casado / casada', english: 'married', hard: true },
         { foreign: 'un colega / una colega', english: 'a colleague' },
         {
@@ -1556,10 +1365,7 @@ export const allPhrases = {
         { foreign: 'conductor / conductora', english: 'driver' },
         { foreign: 'director / directora', english: 'director' },
         { foreign: 'doctor / doctora', english: 'doctor' },
-        {
-          foreign: 'ejecutivo de negocios / ejecutiva de negocios',
-          english: 'business executive',
-        },
+        { foreign: 'ejecutivo de negocios / ejecutiva de negocios', english: 'business executive' },
         {
           foreign: 'empleado del gobierno / empleada del gobierno',
           english: 'government employee',
@@ -1567,10 +1373,7 @@ export const allPhrases = {
         { foreign: 'empleo', english: 'job' },
         { foreign: 'escritor / escritora', english: 'writer', hard: true },
         { foreign: 'un / una especialista', english: 'a specialist' },
-        {
-          foreign: 'estudiante de primaria',
-          english: 'elementary school student',
-        },
+        { foreign: 'estudiante de primaria', english: 'elementary school student' },
         { foreign: 'estudiante de secundaria', english: 'high school student' },
         {
           foreign: 'estudiante universitario / estudiante universitaria',
@@ -1634,41 +1437,23 @@ export const allPhrases = {
           english: 'The girl is wearing an orange dress.',
           hard: true,
         },
-        {
-          foreign: 'Me gusta el jugo de naranja.',
-          english: 'I like orange juice.',
-        },
+        { foreign: 'Me gusta el jugo de naranja.', english: 'I like orange juice.' },
         { foreign: 'Las plantas son verdes.', english: 'The plants are green.' },
-        {
-          foreign: 'El mar y el cielo son azules.',
-          english: 'The sea and the sky are blue.',
-        },
+        { foreign: 'El mar y el cielo son azules.', english: 'The sea and the sky are blue.' },
         {
           foreign: 'La bandera europea es azul con estrellas amarillas.',
           english: 'The European flag is blue with yellow stars.',
         },
-        {
-          foreign: 'El chocolate es de color marrón.',
-          english: 'Chocolate is the color brown.',
-        },
+        { foreign: 'El chocolate es de color marrón.', english: 'Chocolate is the color brown.' },
         {
           foreign: 'El hombre lleva unos zapatos marrones.',
           english: 'The man is wearing some brown shoes.',
         },
         { foreign: 'La nieve es blanca.', english: 'Snow is white.' },
-        {
-          foreign: 'El blanco es el color de la leche.',
-          english: 'White is the color of milk.',
-        },
+        { foreign: 'El blanco es el color de la leche.', english: 'White is the color of milk.' },
         { foreign: 'El gato es negro.', english: 'The cat is black.' },
-        {
-          foreign: 'Las cebras tienen rayas negras.',
-          english: 'Zebras have black stripes.',
-        },
-        {
-          foreign: 'El helado de fresa es rosa.',
-          english: 'Strawberry ice cream is pink.',
-        },
+        { foreign: 'Las cebras tienen rayas negras.', english: 'Zebras have black stripes.' },
+        { foreign: 'El helado de fresa es rosa.', english: 'Strawberry ice cream is pink.' },
         {
           foreign: 'Los flamencos son pájaros rosa.',
           english: 'Flamingos are pink birds.',
@@ -1681,10 +1466,7 @@ export const allPhrases = {
           workingOn: true,
           hard: true,
         },
-        {
-          foreign: 'Las delfines son grises.',
-          english: 'The (girl) dolphins are gray.',
-        },
+        { foreign: 'Las delfines son grises.', english: 'The (girl) dolphins are gray.' },
         {
           foreign: 'Cuando llueve el cielo está gris.',
           english: 'When it rains, the sky is gray.',
@@ -1696,10 +1478,7 @@ export const allPhrases = {
     chapter23: {
       name: 'Random vocab, Mar 2026',
       lesson1: [
-        {
-          foreign: 'acabo de + infinitive',
-          english: 'I just ... (did something)',
-        },
+        { foreign: 'acabo de + infinitive', english: 'I just ... (did something)' },
         {
           foreign: 'Acabo de mudarme, así que todavía hay un poco de desorden.',
           english: 'I just moved in, so there’s still a bit of a mess.',
@@ -1730,10 +1509,7 @@ export const allPhrases = {
         { foreign: 'matar', english: 'to kill' },
         { foreign: 'vigilancia masiva', english: 'mass surveillance', hard: true },
         { foreign: 'riesgo', english: 'risk' },
-        {
-          foreign: 'Mi regalo tiene un lazo amarillo.',
-          english: 'My gift has a yellow bow.',
-        },
+        { foreign: 'Mi regalo tiene un lazo amarillo.', english: 'My gift has a yellow bow.' },
         { foreign: 'antes', english: 'before', workingOn: true },
         { foreign: 'apagón / apagones', english: 'blackout / blackouts', hard: true },
         { foreign: 'El gato rompió el jarrón.', english: 'The cat broke the vase.', hard: true },
@@ -1856,10 +1632,7 @@ export const allPhrases = {
         { foreign: 'tarde fría', english: 'cold afternoon' },
         { foreign: 'lluvioso', english: 'rainy', hard: true },
         { foreign: 'tarde fría y lluviosa', english: 'cold and rainy afternoon' },
-        {
-          foreign: '¡Qué tarde tan fría y lluviosa!',
-          english: 'What a cold and rainy afternoon!',
-        },
+        { foreign: '¡Qué tarde tan fría y lluviosa!', english: 'What a cold and rainy afternoon!' },
         { foreign: 'caluroso', english: 'hot (weather)', hard: true },
         { foreign: 'mañana', english: 'morning' },
         { foreign: 'la mañana calurosa', english: 'the hot morning' },
@@ -1873,10 +1646,7 @@ export const allPhrases = {
         { foreign: '¡Qué noche tan húmeda!', english: 'What a humid night!' },
       ],
       lesson6: [
-        {
-          foreign: 'Que tenga un buen día.',
-          english: 'Have a good day. (formal)',
-        },
+        { foreign: 'Que tenga un buen día.', english: 'Have a good day. (formal)' },
         { foreign: 'un día', english: 'a day' },
         { foreign: 'bueno', english: 'good' },
         { foreign: 'un buen día', english: 'a good day' },
@@ -1935,10 +1705,7 @@ export const allPhrases = {
         },
       ],
       lesson2: [
-        {
-          foreign: 'Hablo un poco de español.',
-          english: 'I speak a little bit of Spanish.',
-        },
+        { foreign: 'Hablo un poco de español.', english: 'I speak a little bit of Spanish.' },
         { foreign: 'hablo', english: '(I) speak' },
         { foreign: 'un poco', english: 'a little bit' },
         { foreign: 'de', english: 'of / from' },
@@ -1952,10 +1719,7 @@ export const allPhrases = {
         },
       ],
       lesson3: [
-        {
-          foreign: '¿De dónde es usted?',
-          english: 'Where are you from? (formal)',
-        },
+        { foreign: '¿De dónde es usted?', english: 'Where are you from? (formal)' },
         { foreign: 'dónde', english: 'where' },
         { foreign: '¿De dónde?', english: 'From where?' },
         { foreign: '¿De dónde eres?', english: 'Where are you from? (informal)' },
@@ -1969,10 +1733,7 @@ export const allPhrases = {
         { foreign: '¿De dónde es?', english: 'Where is she from?' },
       ],
       lesson4: [
-        {
-          foreign: 'Soy de los Estados Unidos.',
-          english: 'I’m from the United States.',
-        },
+        { foreign: 'Soy de los Estados Unidos.', english: 'I’m from the United States.' },
         { foreign: 'soy', english: '(I) am (for permanent states of being)' },
         {
           foreign: 'Usted es de los Estados Unidos.',
@@ -1985,14 +1746,8 @@ export const allPhrases = {
         { foreign: 'México', english: 'Mexico' },
         { foreign: 'Soy de México.', english: 'I am from Mexico.' },
         { foreign: 'Soy mexicano.', english: 'I’m Mexican. (male)' },
-        {
-          foreign: 'Usted es estadounidense.',
-          english: 'You are American. (formal)',
-        },
-        {
-          foreign: 'Eres estadounidense.',
-          english: 'You are American. (informal)',
-        },
+        { foreign: 'Usted es estadounidense.', english: 'You are American. (formal)' },
+        { foreign: 'Eres estadounidense.', english: 'You are American. (informal)' },
         { foreign: 'Canadá', english: 'Canada' },
         { foreign: 'canadiense/es', english: 'Canadian (singular and plural)' },
         { foreign: 'Ellos son de México.', english: 'They are from Mexico.' },
@@ -2019,26 +1774,13 @@ export const allPhrases = {
         },
       ],
       lesson6: [
-        {
-          foreign: 'Me encanta Chile en primavera.',
-          english: 'I love Chile in spring.',
-        },
+        { foreign: 'Me encanta Chile en primavera.', english: 'I love Chile in spring.' },
         { foreign: 'Me encanta.', english: 'I love it.' },
         { foreign: 'Me encanta la primavera.', english: 'I love spring.' },
-        {
-          foreign: 'Chile es frío en invierno.',
-          english: 'Chile is cold in winter.',
-          hard: true,
-        },
+        { foreign: 'Chile es frío en invierno.', english: 'Chile is cold in winter.', hard: true },
         { foreign: '¿Es verano?', english: 'Is it summer?' },
-        {
-          foreign: '¿Es verano en Argentina?',
-          english: 'Is it summer in Argentina?',
-        },
-        {
-          foreign: 'Me encanta México en enero.',
-          english: 'I love Mexico in January.',
-        },
+        { foreign: '¿Es verano en Argentina?', english: 'Is it summer in Argentina?' },
+        { foreign: 'Me encanta México en enero.', english: 'I love Mexico in January.' },
         {
           foreign: '¿Es verano en Argentina en enero?',
           english: 'Is it summer in Argentina in January?',
@@ -2079,15 +1821,9 @@ export const allPhrases = {
         { foreign: 'Ella se llama María.', english: 'Her name is Maria.' },
         { foreign: 'Él se llama Carlos.', english: 'His name is Carlos.' },
         { foreign: 'ellos se llaman', english: 'they call themselves' },
-        {
-          foreign: 'Se llaman Carlos y María.',
-          english: 'Their names are Carlos and María.',
-        },
+        { foreign: 'Se llaman Carlos y María.', english: 'Their names are Carlos and María.' },
         { foreign: 'Soy John.', english: 'I’m John.' },
-        {
-          foreign: 'No soy María. Me llamo Juana.',
-          english: 'I’m not Maria. My name is Juana.',
-        },
+        { foreign: 'No soy María. Me llamo Juana.', english: 'I’m not Maria. My name is Juana.' },
         {
           foreign: 'Hola, me llamo Tom y soy de los Estados Unidos.',
           english: 'Hi, my name is Tom and I’m from the United States.',
@@ -2110,10 +1846,7 @@ export const allPhrases = {
         },
         { foreign: 'esposa', english: 'wife' },
         { foreign: 'Ella es mi esposa.', english: 'She is my wife.' },
-        {
-          foreign: 'Mi esposo habla italiano.',
-          english: 'My husband speaks Italian.',
-        },
+        { foreign: 'Mi esposo habla italiano.', english: 'My husband speaks Italian.' },
         {
           foreign: 'Ella es mi hermana y se llama Guadalupe.',
           english: 'She is my sister and her name is Guadalupe.',
@@ -2128,10 +1861,7 @@ export const allPhrases = {
           english: 'It is a pleasure to meet you. (formal) (to a male)',
         },
         { foreign: 'conocer', english: 'to meet / to know' },
-        {
-          foreign: 'Gusto conocerlo.',
-          english: 'Pleasure to meet you. (formal) (to a male)',
-        },
+        { foreign: 'Gusto conocerlo.', english: 'Pleasure to meet you. (formal) (to a male)' },
         {
           foreign: 'Es un gusto / placer conocerla.',
           english: 'It is a pleasure to meet you. (formal) (to a female)',
@@ -2142,15 +1872,9 @@ export const allPhrases = {
         },
       ],
       lesson5: [
-        {
-          foreign: 'Mi esposo es policía.',
-          english: 'My husband is a police officer.',
-        },
+        { foreign: 'Mi esposo es policía.', english: 'My husband is a police officer.' },
         { foreign: 'Él es policía.', english: 'He’s a police officer.' },
-        {
-          foreign: 'Mi hermana es policía.',
-          english: 'My sister is a police officer.',
-        },
+        { foreign: 'Mi hermana es policía.', english: 'My sister is a police officer.' },
         {
           foreign: 'Disculpe, ¿es usted policía?',
           english: 'Excuse me, are you a police officer? (formal)',
@@ -2205,10 +1929,7 @@ export const allPhrases = {
         },
       ],
       lesson7: [
-        {
-          foreign: '¿Quién es su esposo?',
-          english: 'Who is your husband? (formal)',
-        },
+        { foreign: '¿Quién es su esposo?', english: 'Who is your husband? (formal)' },
         { foreign: 'quién', english: 'who (singular)' },
         { foreign: '¿Quién es?', english: 'Who is he?' },
         { foreign: 'su', english: 'your (formal)' },
@@ -2219,20 +1940,11 @@ export const allPhrases = {
           english: 'I’m the boss. Who are you? (formal)',
         },
         { foreign: '¿Quién eres tú?', english: 'Who are you? (informal)' },
-        {
-          foreign: '¿Quién es su hermana?',
-          english: 'Who is your sister? (formal)',
-        },
+        { foreign: '¿Quién es su hermana?', english: 'Who is your sister? (formal)' },
         { foreign: 'quiénes', english: 'who (plural)' },
-        {
-          foreign: '¿Quiénes son ellas?',
-          english: 'Who are they? (about a group of women)',
-        },
+        { foreign: '¿Quiénes son ellas?', english: 'Who are they? (about a group of women)' },
         { foreign: 'tu', english: 'your (informal)' },
-        {
-          foreign: '¿Quiénes son tus hermanos?',
-          english: 'Who are your brothers? (informal)',
-        },
+        { foreign: '¿Quiénes son tus hermanos?', english: 'Who are your brothers? (informal)' },
       ],
     },
     chapter4: {
@@ -2293,10 +2005,7 @@ export const allPhrases = {
         },
       ],
       lesson4: [
-        {
-          foreign: '¿Cuál es su dirección?',
-          english: 'What is your address? (formal)',
-        },
+        { foreign: '¿Cuál es su dirección?', english: 'What is your address? (formal)' },
         { foreign: 'cuál', english: 'which (as in which one)' },
         { foreign: 'la dirección', english: 'the address' },
         { foreign: 'Calle San Martín seis', english: '6 San Martin Street' },
