@@ -118,7 +118,7 @@ export const allPhrases = {
           english: 'The children are happy.',
         },
         { foreign: 'travieso', english: 'mischievous', hard: true },
-        { foreign: 'avergonzado', english: 'ashamed', workingOn: true, hard: true },
+        { foreign: 'avergonzado', english: 'ashamed', hard: true },
         { foreign: 'Eso es verdad.', english: 'That’s true.' },
         { foreign: 'Eso es falso.', english: 'That’s false.' },
       ],
@@ -987,7 +987,6 @@ export const allPhrases = {
         {
           foreign: 'El niño está diciendo la verdad.',
           english: 'The boy is telling the truth.',
-          workingOn: true,
         },
         { foreign: 'La chica está leyendo.', english: 'The girl is reading.' },
         {
@@ -1488,7 +1487,6 @@ export const allPhrases = {
         {
           foreign: 'Usa este paraguas (pahRAHguas), está lloviendo.',
           english: 'Use this umbrella, it’s raining.',
-          workingOn: true,
           hard: true,
         },
         {
@@ -1678,7 +1676,7 @@ export const allPhrases = {
         },
         { foreign: 'Las uvas son moradas.', english: 'The grapes are purple.' },
         {
-          foreign: 'La lavanda es morada. (morado is masc.)',
+          foreign: 'La lavanda es morada.',
           english: 'Lavender is purple.',
           workingOn: true,
           hard: true,
@@ -1692,6 +1690,7 @@ export const allPhrases = {
           english: 'When it rains, the sky is gray.',
           workingOn: true,
         },
+        { foreign: 'morado', english: 'purple', workingOn: true },
       ],
     },
     chapter23: {
@@ -1712,18 +1711,18 @@ export const allPhrases = {
         },
         { foreign: 'juguetón / juguetona', english: 'playful', workingOn: true },
         { foreign: 'un sillón', english: 'an armchair' },
-        { foreign: 'peligroso', english: 'dangerous', workingOn: true },
+        { foreign: 'peligroso', english: 'dangerous' },
         {
           foreign: 'Mi vaso está medio lleno.',
           english: 'My glass is half-full.',
           workingOn: true,
         },
         { foreign: 'Mi dormitorio está limpio.', english: 'My bedroom is clean.' },
-        { foreign: 'llenar los blancos', english: 'to fill in the blanks', workingOn: true },
+        { foreign: 'llenar los blancos', english: 'to fill in the blanks' },
       ],
       lesson2: [
         { foreign: 'listo', english: 'ready' },
-        { foreign: 'dar asco', english: 'to disgust', workingOn: true },
+        { foreign: 'dar asco', english: 'to disgust' },
         { foreign: 'Me da asco.', english: 'It disgusts me.', workingOn: true },
         { foreign: 'aparato', english: 'device' },
         { foreign: 'el ejército', english: 'the army', hard: true },
@@ -1736,24 +1735,9 @@ export const allPhrases = {
           english: 'My gift has a yellow bow.',
         },
         { foreign: 'antes', english: 'before', workingOn: true },
-        {
-          foreign: 'apagón / apagones',
-          english: 'blackout / blackouts',
-          hard: true,
-          workingOn: true,
-        },
-        {
-          foreign: 'El gato rompió el jarrón.',
-          english: 'The cat broke the vase.',
-          hard: true,
-          workingOn: true,
-        },
-        {
-          foreign: 'Se rompió el jarrón.',
-          english: 'The vase broke. (impersonal)',
-          hard: true,
-          workingOn: true,
-        },
+        { foreign: 'apagón / apagones', english: 'blackout / blackouts', hard: true },
+        { foreign: 'El gato rompió el jarrón.', english: 'The cat broke the vase.', hard: true },
+        { foreign: 'Se rompió el jarrón.', english: 'The vase broke. (impersonal)', hard: true },
       ],
       lesson3: [
         {
@@ -1809,7 +1793,7 @@ export const allPhrases = {
         { foreign: 'el codo', english: 'the elbow', workingOn: true },
         { foreign: 'la espalda', english: 'the back', workingOn: true },
         { foreign: 'la cintura', english: 'the waist', workingOn: true },
-        { foreign: 'el trasero', english: 'the butt', workingOn: true },
+        { foreign: 'el trasero', english: 'the butt', hard: true, workingOn: true },
         { foreign: 'la pantorrilla', english: 'the calf', workingOn: true },
         { foreign: 'el talón', english: 'the heel', workingOn: true },
       ],
@@ -1853,7 +1837,7 @@ export const allPhrases = {
         { foreign: 'Está bien. or Él está bien.', english: 'He is fine.' },
         { foreign: 'cansado', english: 'tired', hard: true },
         { foreign: 'Está cansado.', english: 'He is tired.', hard: true },
-        { foreign: 'Está cansada.', english: 'She is tired.', workingOn: true, hard: true },
+        { foreign: 'Está cansada.', english: 'She is tired.', hard: true },
         {
           foreign: 'Usted está cansado.',
           english: 'You are tired. (formal) (to a male)',
