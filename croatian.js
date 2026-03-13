@@ -143,10 +143,7 @@ export const allPhrases = {
         { foreign: 'moj brat', english: 'my brother' },
         { foreign: 'moje diete', english: 'my child', hard: true },
         { foreign: 'selo', english: 'village' },
-        {
-          foreign: 'Imaš li i brata?',
-          english: 'Do you also have a brother? (Informal singular)',
-        },
+        { foreign: 'Imaš li i brata?', english: 'Do you also have a brother? (Informal singular)' },
         { foreign: 'Da. On je tamo.', english: 'Yes. He is over there.' },
         { foreign: 'Da', english: 'Yes' },
       ],
@@ -164,10 +161,7 @@ export const allPhrases = {
         { foreign: 'otac', english: 'father', workingOn: true },
         { foreign: 'majka', english: 'mother', workingOn: true },
         { foreign: 'tetka', english: 'aunt (mother’s or father’s sister)' },
-        {
-          foreign: 'TEtak',
-          english: 'uncle (husband of mother’s or father’s sister)',
-        },
+        { foreign: 'TEtak', english: 'uncle (husband of mother’s or father’s sister)' },
         { foreign: 'ujak', english: 'uncle (mother’s brother)' },
         { foreign: 'ujna', english: 'aunt (wife of mother’s brother)' },
         { foreign: 'stric', english: 'uncle (father’s brother)' },
@@ -751,11 +745,7 @@ export const allPhrases = {
           english: 'Excuse me, where is the beach? (Formal singular)',
         },
         { foreign: 'Uz more.', english: 'By the sea.' },
-        {
-          foreign: 'Haha. Samo se šalim.',
-          english: 'Haha. Just kidding.',
-          hard: true,
-        },
+        { foreign: 'Haha. Samo se šalim.', english: 'Haha. Just kidding.', hard: true },
         { foreign: 'Idite ravno.', english: 'Go straight. (Formal singular)', hard: true },
         { foreign: 'ravno', english: 'straight' },
         {
@@ -939,11 +929,7 @@ export const allPhrases = {
         { foreign: 'Hladno je.', english: 'It’s cold.' },
         { foreign: 'vlažno', english: 'humid' },
         { foreign: 'siječanj / u siječnju', english: 'January / in January', hard: true },
-        {
-          foreign: 'veljača / u veljači',
-          english: 'February / in February',
-          hard: true,
-        },
+        { foreign: 'veljača / u veljači', english: 'February / in February', hard: true },
       ],
       lesson5: [
         { foreign: 'ožujak / u ožujku', english: 'March / in March', hard: true },
@@ -1030,11 +1016,7 @@ export const allPhrases = {
         { foreign: 'idemo', english: 'let’s go' },
         { foreign: 'U koje vrijeme počinje?', english: 'What time does it start?', hard: true },
         { foreign: 'vriJEme', english: 'time' },
-        {
-          foreign: 'Počinje u devet sati navečer.',
-          english: 'It starts at 9:00pm.',
-          hard: true,
-        },
+        { foreign: 'Počinje u devet sati navečer.', english: 'It starts at 9:00pm.', hard: true },
         { foreign: 'navečer', english: 'in the evening', hard: true },
         { foreign: 'Dolje u centru je, u disku.', english: 'It is downtown, at the Disco.' },
         { foreign: 'centar', english: 'center' },
@@ -1289,11 +1271,7 @@ export const allPhrases = {
           foreign: 'Ali, ja sam vegetariJAnac.',
           english: 'But, I am a vegetarian. (Male speaker)',
         },
-        {
-          foreign: 'Ima li mesa u ovom jelu?',
-          english: 'Is there meat in this dish?',
-          hard: true,
-        },
+        { foreign: 'Ima li mesa u ovom jelu?', english: 'Is there meat in this dish?', hard: true },
         { foreign: 'meso', english: 'meat' },
       ],
       lesson2: [
@@ -1338,11 +1316,7 @@ export const allPhrases = {
           english: 'Excuse me, I need help! (Formal singular)',
         },
         { foreign: 'Što se doGOdilo?', english: 'What happened?', hard: true, workingOn: true },
-        {
-          foreign: 'Ne mogu naći svoj novČAnik.',
-          english: 'I can’t find my wallet.',
-          hard: true,
-        },
+        { foreign: 'Ne mogu naći svoj novČAnik.', english: 'I can’t find my wallet.', hard: true },
         {
           foreign:
             'moći:| (ja) mogu| (ti) možeš| (on/ona/ono) može| (mi) možemo| (vi) možete| (oni/one/ona) mogu',
@@ -1371,21 +1345,13 @@ export const allPhrases = {
           hard: true,
         },
         { foreign: 'kada', english: 'when' },
-        {
-          foreign: 'Mogu li nazvati poLIciju?',
-          english: 'May I call the police?',
-          hard: true,
-        },
+        { foreign: 'Mogu li nazvati poLIciju?', english: 'May I call the police?', hard: true },
         { foreign: 'problem', english: 'issue' },
         { foreign: 'inciDENT', english: 'incident' },
       ],
       lesson3: [
         { foreign: 'prijava', english: 'report (noun)', hard: true },
-        {
-          foreign: 'Nema mi novčaNIka.',
-          english: 'My wallet is missing.',
-          hard: true,
-        },
+        { foreign: 'Nema mi novčaNIka.', english: 'My wallet is missing.', hard: true },
         { foreign: 'sigurno', english: 'certainly' },
         { foreign: 'Gdje je toaLET?', english: 'Where is the restroom?' },
       ],
