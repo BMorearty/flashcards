@@ -354,7 +354,7 @@ export const allPhrases = {
         { foreign: 'demasiado', english: 'too (e.g. too hot, etc.)', hard: true },
         {
           foreign: 'aproximadamente mes por medio',
-          english: 'about once every other month',
+          english: 'about once every other month', workingOn: true,
           hard: true,
         },
         { foreign: 'el error de escritura', english: 'the typo' },
