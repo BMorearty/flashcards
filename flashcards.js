@@ -286,16 +286,16 @@ function setupPrompts(showEnglish) {
     currentUnit && allPhrases[currentUnit] && allPhrases[currentUnit].name
       ? `- “${allPhrases[currentUnit].name}”\n`
       : '';
-  const name = currentChapter ? `- “${allPhrases[currentUnit][currentChapter].name}”\n` : '';
-  console.log(
-    `\nStarting ${nameOf(currentUnit)}${unitName}${nameOf(currentChapter)}${nameOf(currentLesson)}${name}`,
-  );
+  const name = currentChapter ? `- “${allPhrases[currentUnit][currentChapter].name}”` : '';
+  const fullName =
+    `${nameOf(currentUnit)}${unitName}${nameOf(currentChapter)}${nameOf(currentLesson)}${name}`.trim();
   setupPhrases().then(() => {
     if (phrases.length === 0) {
-      console.log(chalk.red('No phrases found.'));
+      console.log(chalk.red(`No phrases found in ${fullName}.`));
       showMenu();
       return;
     }
+    console.log(`\nStarting ${fullName}, ${phrases.length} phrases`);
     showNextFlashcard(undefined, showEnglish, prevNextPrompt);
   });
 }
@@ -459,6 +459,10 @@ async function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
   const moveUpAndClearLine = '\u001b[1A\u001b[K';
   const linesInPrompt = (wrappedPrompt.match(/\n/g) || []).length + 1;
 
+  function replacePromptWith(message) {
+    console.log(`${moveUpAndClearLine.repeat(linesInPrompt + 1)}${message}`);
+  }
+
   rl.question(wrappedPrompt, async (answer) => {
     answer = answer.toLowerCase();
     if (answer === 'q') {
@@ -505,24 +509,28 @@ async function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
     }
     if (answer === 'h' && lastPhrase) {
       markPhraseAsHard(lastPhrase).then(() => {
+        replacePromptWith(chalk.magentaBright(`    Marked as hard`));
         showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
       });
       return;
     }
     if (answer === 'nh' && lastPhrase) {
       unmarkPhraseAsHard(lastPhrase).then(() => {
+        replacePromptWith(chalk.magentaBright(`    Marked as not hard`));
         showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
       });
       return;
     }
     if (answer === 'wo' && lastPhrase) {
       markPhraseAsWorkingOn(lastPhrase).then(() => {
+        replacePromptWith(chalk.blue(`    Marked as working on`));
         showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
       });
       return;
     }
     if (answer === 'nwo' && lastPhrase) {
       unmarkPhraseAsWorkingOn(lastPhrase).then(() => {
+        replacePromptWith(chalk.blue(`    Unmarked as working on`));
         showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
       });
       return;
@@ -531,17 +539,13 @@ async function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
       if (!wrongPhrases.map((phrase) => phrase.foreign).includes(lastPhrase.foreign)) {
         wrongPhrases.push(lastPhrase);
       }
-      console.log(
-        chalk.redBright(`${moveUpAndClearLine.repeat(linesInPrompt + 1)}    Marked as wrong`),
-      );
+      replacePromptWith(chalk.red(`    Marked as wrong`));
       showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
       return;
     }
     if (answer === 'r' && lastPhrase) {
       wrongPhrases = wrongPhrases.filter((phrase) => phrase.foreign !== lastPhrase.foreign);
-      console.log(
-        chalk.greenBright(`${moveUpAndClearLine.repeat(linesInPrompt + 1)}    Marked as right`),
-      );
+      replacePromptWith(chalk.greenBright(`    Marked as right`));
       showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
       return;
     }
