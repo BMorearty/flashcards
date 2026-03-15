@@ -354,7 +354,8 @@ export const allPhrases = {
         { foreign: 'demasiado', english: 'too (e.g. too hot, etc.)', hard: true },
         {
           foreign: 'aproximadamente mes por medio',
-          english: 'about once every other month', workingOn: true,
+          english: 'about once every other month',
+          workingOn: true,
           hard: true,
         },
         { foreign: 'el error de escritura', english: 'the typo' },
@@ -1473,6 +1474,7 @@ export const allPhrases = {
           workingOn: true,
         },
         { foreign: 'morado', english: 'purple', workingOn: true },
+        { foreign: 'rosado', english: 'rosy', workingOn: true },
       ],
     },
     chapter23: {
