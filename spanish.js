@@ -1539,6 +1539,21 @@ export const allPhrases = {
         { foreign: 'hidroavión', english: 'seaplane', workingOn: true },
         { foreign: 'orca', english: 'orca' },
         { foreign: 'trabajo', english: 'job', workingOn: true },
+        {
+          foreign: 'Ven, dame la mano.',
+          english: 'Come, give me your hand. (informal)',
+          workingOn: true,
+        },
+        {
+          foreign: 'Primero un pie y después el otro, poco a poco.',
+          english: 'First one foot, and then the other—little by little.',
+          workingOn: true,
+        },
+        {
+          foreign: '¡Ya puedes abrir los ojos!',
+          english: 'You can open your eyes now! (informal)',
+          workingOn: true,
+        },
       ],
     },
     chapter24: {
