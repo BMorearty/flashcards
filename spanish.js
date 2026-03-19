@@ -1410,6 +1410,41 @@ export const allPhrases = {
       ],
     },
     chapter22: {
+      name: 'Cardinal numbers',
+      lesson1: [
+        { foreign: 'uno', english: 'one', workingOn: true },
+        { foreign: 'dos', english: 'two', workingOn: true },
+        { foreign: 'tres', english: 'three', workingOn: true },
+        { foreign: 'cuatro', english: 'four', workingOn: true },
+        { foreign: 'cinco', english: 'five', workingOn: true },
+        { foreign: 'seis', english: 'six', workingOn: true },
+        { foreign: 'siete', english: 'seven', workingOn: true },
+        { foreign: 'ocho', english: 'eight', workingOn: true },
+        { foreign: 'nueve', english: 'nine', workingOn: true },
+        { foreign: 'diez', english: 'ten', workingOn: true },
+      ],
+      lesson2: [
+        { foreign: 'once', english: 'eleven', workingOn: true },
+        { foreign: 'doce', english: 'twelve', workingOn: true },
+        { foreign: 'trece', english: 'thirteen', workingOn: true },
+        { foreign: 'catorce', english: 'fourteen', workingOn: true },
+        { foreign: 'quince', english: 'fifteen', workingOn: true },
+        { foreign: 'dieciséis', english: 'sixteen', workingOn: true },
+        { foreign: 'diecisiete', english: 'seventeen', workingOn: true },
+        { foreign: 'dieciocho', english: 'eighteen', workingOn: true },
+        { foreign: 'diecinueve', english: 'nineteen', workingOn: true },
+        { foreign: 'veinte', english: 'twenty', workingOn: true },
+      ],
+      lesson3: [
+        { foreign: 'veintiuno', english: 'twenty-one', workingOn: true },
+        { foreign: 'veintidós', english: 'twenty-two', workingOn: true },
+        { foreign: 'veintitrés', english: 'twenty-three', workingOn: true },
+        { foreign: 'veinticuatro', english: 'twenty-four', workingOn: true },
+        { foreign: 'treinta', english: 'thirty', workingOn: true },
+        { foreign: 'cuarenta', english: 'forty', workingOn: true },
+      ],
+    },
+    chapter23: {
       name: 'Los colores',
       lesson1: [
         { foreign: 'Los tomates son rojos.', english: 'The tomatoes are red.' },
@@ -1464,7 +1499,7 @@ export const allPhrases = {
         { foreign: 'rosado', english: 'rosy' },
       ],
     },
-    chapter23: {
+    chapter24: {
       name: 'Random vocab, Mar 2026',
       lesson1: [
         { foreign: 'acabo de + infinitive', english: 'I just ... (did something)' },
@@ -1554,7 +1589,7 @@ export const allPhrases = {
         },
       ],
     },
-    chapter24: {
+    chapter25: {
       name: 'Partes del cuerpo',
       lesson1: [
         { foreign: 'la frente', english: 'the forehead' },
@@ -2054,6 +2089,57 @@ export const allPhrases = {
         {
           foreign: '¿Cuál es su número de teléfono?',
           english: 'What is your telephone number? (formal)',
+        },
+      ],
+      lesson5: [
+        { foreign: 'celular (sehlooLAHR)', english: 'cell phone', workingOn: true },
+        {
+          foreign: '¿Tiene celular?',
+          english: 'Do you have a cell phone? (formal)',
+          workingOn: true,
+        },
+        {
+          foreign: '¿Tiene celular? ¿Cuál es el número?',
+          english: 'Do you have a cell phone? What’s the number?',
+          workingOn: true,
+        },
+        { foreign: '¿Tienes correo?', english: 'Do you have email?', workingOn: true },
+        {
+          foreign: 'No tengo celular. ¿Tienes correo?',
+          english: 'I don’t have a cell phone. Do you have email?',
+          workingOn: true,
+        },
+      ],
+      lesson6: [
+        {
+          foreign: '¿Qué edad tiene usted?',
+          english: 'How old are you? (formal)',
+          workingOn: true,
+        },
+        { foreign: 'edad (fem.)', english: 'age', workingOn: true },
+        { foreign: '¿Qué edad....?', english: 'How old...?', workingOn: true },
+        { foreign: '¿Qué edad tienes?', english: 'How old are you? (informal)', workingOn: true },
+        {
+          foreign: 'Tengo treinta años. ¿Qué edad tienes tú?',
+          english: 'I’m thirty years old. How old are you? (informal)',
+          workingOn: true,
+        },
+        { foreign: '¿Tienes veinte años?', english: 'Are you twenty years old?', workingOn: true },
+        { foreign: '¡No tengo veinte!', english: 'I’m not twenty!', workingOn: true },
+        {
+          foreign: '¡No tengo veinte! ¡Tengo veintisiete!',
+          english: 'I’m not twenty! I’m twenty-seven!',
+          workingOn: true,
+        },
+        {
+          foreign: 'Yo tengo treinta y mi hermano cuarenta.',
+          english: 'I’m thirty and my brother is forty.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Yo tengo veintinueve años. ¿Qué edad tiene usted?',
+          english: 'I’m twenty-nine years old. How old are you?',
+          workingOn: true,
         },
       ],
     },
