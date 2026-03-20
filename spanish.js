@@ -73,7 +73,8 @@ export const allPhrases = {
         },
         {
           foreign: '¡Que te vaya bien!',
-          english: 'I hope it goes well with you! (informal)',
+          english: 'May it go well with you! / Have a good one! (informal)',
+          workingOn: true,
           hard: true,
         },
         { foreign: 'Nos vemos pronto.', english: 'See you soon.' },
@@ -349,7 +350,7 @@ export const allPhrases = {
         { foreign: 'el león', english: 'the lion' },
         { foreign: 'el elefante', english: 'the elephant' },
         { foreign: 'el mono', english: 'the monkey' },
-        { foreign: 'la selva', english: 'the jungle' },
+        { foreign: 'la selva', english: 'the jungle', workingOn: true, hard: true },
         { foreign: 'demasiado', english: 'too (e.g. too hot, etc.)', hard: true },
         {
           foreign: 'aproximadamente mes por medio',
@@ -793,8 +794,8 @@ export const allPhrases = {
         { foreign: 'el febrero', english: 'the February' },
         { foreign: 'el marzo', english: 'the March' },
         { foreign: 'el uno', english: 'the one' },
-        { foreign: 'el dos', english: 'the two' },
-        { foreign: 'el tres', english: 'the three' },
+        { foreign: 'el dos', english: 'the (number) two' },
+        { foreign: 'el tres', english: 'the (number) three' },
         { foreign: 'la mesa', english: 'the table' },
         { foreign: 'el sofá', english: 'the sofa' },
         { foreign: 'el planeta', english: 'the planet' },
@@ -900,6 +901,7 @@ export const allPhrases = {
         {
           foreign: 'El político está influyendo en la gente.',
           english: 'The politician is influencing people.',
+          workingOn: true,
           hard: true, // because of 'en'
         },
         {
@@ -909,7 +911,7 @@ export const allPhrases = {
         },
         { foreign: 'Estoy pidiendo una bebida.', english: 'I’m asking for a drink.', hard: true },
         { foreign: 'Estoy repitiendo la pregunta.', english: 'I am repeating the question.' },
-        { foreign: 'Estoy sonriendo.', english: 'I’m smiling.', hard: true },
+        { foreign: 'Estoy sonriendo.', english: 'I’m smiling.', workingOn: true, hard: true },
       ],
     },
     chapter11: {
@@ -940,7 +942,7 @@ export const allPhrases = {
       lesson1: [
         { foreign: 'Brian tiene un hermano gemelo.', english: 'Brian has a twin brother.' },
         { foreign: 'Yo tengo un carro.', english: 'I have a car.' },
-        { foreign: 'El niño tiene un juguete.', english: 'The child has a toy.' },
+        { foreign: 'El niño tiene un juguete.', english: 'The child has a toy.', workingOn: true },
         { foreign: 'La niña tiene un gato.', english: 'The girl has a cat.' },
         { foreign: 'El profesor tiene una casa.', english: 'The professor has a house.' },
         { foreign: 'Yo tengo un computador.', english: 'I have a computer.' },
@@ -973,7 +975,12 @@ export const allPhrases = {
         },
         { foreign: 'Tiene que ir.', english: 'He has to go.', hard: true },
         { foreign: 'Yo he hecho mi trabajo.', english: 'I have done my job.' },
-        { foreign: 'Ella ha ido al gimnasio.', english: 'She has gone to the gym.', hard: true },
+        {
+          foreign: 'Ella ha ido al gimnasio.',
+          english: 'She has gone to the gym.',
+          workingOn: true,
+          hard: true,
+        },
       ],
     },
     chapter13: {
@@ -1017,7 +1024,7 @@ export const allPhrases = {
         { foreign: 'puertorriqueño / puertorriqueña', english: 'Puerto Rican (adj.)' },
         { foreign: 'dominicano / dominicana', english: 'Dominican (adj.)' },
         { foreign: 'ruso / rusa', english: 'Russian (adj.)' },
-        { foreign: 'turco / turca', english: 'Turkish (adj.)' },
+        { foreign: 'turco / turca', english: 'Turkish (adj.)', workingOn: true },
         { foreign: 'uruguayo / uruguaya', english: 'Uruguayan (adj.)' },
         { foreign: 'venezolano / venezolana', english: 'Venezuelan (adj.)' },
         { foreign: 'maltés / maltesa', english: 'Maltese (adj.)' },
@@ -1168,6 +1175,7 @@ export const allPhrases = {
         {
           foreign: 'A ella le aburre la lluvia.',
           english: 'She is bored by the rain.',
+          workingOn: true,
           hard: true,
         },
         {
@@ -1333,13 +1341,13 @@ export const allPhrases = {
           foreign: 'compañero / compañera',
           english: 'partner / companion / classmate / coworker / colleague',
         },
-        { foreign: 'un conocido / una conocida', english: 'an acquaintance' },
+        { foreign: 'un conocido / una conocida', english: 'an acquaintance', workingOn: true },
         { foreign: 'hija', english: 'daughter' },
         { foreign: 'hijo', english: 'son' },
         { foreign: 'madre', english: 'mother' },
         { foreign: 'padre', english: 'father' },
-        { foreign: 'Don', english: 'Sir' },
-        { foreign: 'Doña', english: 'Madam' },
+        { foreign: 'Don', english: 'Sir (not Señor)' },
+        { foreign: 'Doña', english: 'Madam (not Señora)' },
         { foreign: 'presentar', english: 'to introduce' },
         { foreign: 'primo / prima', english: 'cousin' },
         { foreign: 'soltero / soltera', english: 'bachelor / single woman' },
@@ -1350,7 +1358,7 @@ export const allPhrases = {
       lesson1: [
         { foreign: 'abogado / abogada', english: 'lawyer' },
         { foreign: 'actor / actriz', english: 'actor / actress' },
-        { foreign: 'arquitecto / arquitecta', english: 'architect' },
+        { foreign: 'arquitecto / arquitecta', english: 'architect', workingOn: true },
         { foreign: 'un artista / una artista', english: 'an artist' },
         { foreign: 'autor / autora', english: 'author' },
         { foreign: 'un cantante / una cantante', english: 'a singer' },
@@ -1379,7 +1387,7 @@ export const allPhrases = {
           foreign: 'maestro de primaria / maestra de primaria',
           english: 'elementary school teacher',
         },
-        { foreign: 'mesero / mesera', english: 'waiter / waitress', hard: true },
+        { foreign: 'mesero / mesera', english: 'waiter / waitress', workingOn: true, hard: true },
         { foreign: 'ministro / ministra', english: '(religious) minister' },
         { foreign: 'músico / música', english: 'musician' },
         { foreign: 'pintor / pintora', english: 'painter' },
@@ -1845,7 +1853,7 @@ export const allPhrases = {
           english: 'I love fall. When is fall in Chile?',
         },
         { foreign: 'la clase', english: 'the class' },
-        { foreign: 'con fluidez', english: 'fluently', hard: true },
+        { foreign: 'con fluidez', english: 'fluently', workingOn: true, hard: true },
       ],
     },
     chapter3: {
@@ -2054,7 +2062,11 @@ export const allPhrases = {
         },
       ],
       lesson4: [
-        { foreign: '¿Cuál es su dirección?', english: 'What is your address? (formal)' },
+        {
+          foreign: '¿Cuál es su dirección?',
+          english: 'What is your address? (formal)',
+          workingOn: true,
+        },
         { foreign: 'cuál', english: 'which (as in which one)' },
         { foreign: 'la dirección', english: 'the address' },
         { foreign: 'Calle San Martín seis', english: '6 San Martin Street' },
