@@ -1434,7 +1434,7 @@ export const allPhrases = {
       lesson2: [
         { foreign: 'once', english: 'eleven' },
         { foreign: 'doce', english: 'twelve' },
-        { foreign: 'trece', english: 'thirteen', workingOn: true },
+        { foreign: 'trece', english: 'thirteen' },
         { foreign: 'catorce', english: 'fourteen' },
         { foreign: 'quince', english: 'fifteen' },
         { foreign: 'dieciséis', english: 'sixteen' },
