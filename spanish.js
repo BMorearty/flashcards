@@ -350,7 +350,7 @@ export const allPhrases = {
         { foreign: 'el elefante', english: 'the elephant' },
         { foreign: 'el mono', english: 'the monkey' },
         { foreign: 'la selva', english: 'the jungle', hard: true },
-        { foreign: 'demasiado', english: 'too (e.g. too hot, etc.)', hard: true },
+        { foreign: 'demasiado', english: 'too (e.g. too hot, etc.)', hard: true, workingOn: true },
         {
           foreign: 'aproximadamente mes por medio',
           english: 'about once every other month',
@@ -499,7 +499,7 @@ export const allPhrases = {
       ],
       lesson5: [
         { foreign: 'el jabón', english: 'the soap', hard: true },
-        { foreign: 'el traje', english: 'the suit' },
+        { foreign: 'el traje', english: 'the suit', workingOn: true },
         { foreign: 'la gente', english: 'the people' },
         { foreign: 'el/la jirafa', english: 'the giraffe' },
         { foreign: 'el gimnasio', english: 'the gym' },
@@ -1547,7 +1547,7 @@ export const allPhrases = {
         { foreign: 'el pizarrón', english: 'the blackboard or whiteboard' },
         { foreign: 'bolígrafo', english: 'pen' },
         { foreign: 'camiseta', english: 't-shirt' },
-        { foreign: 'un jersey', english: 'a sweater' },
+        { foreign: 'un suéter / un jersey', english: 'a sweater', workingOn: true },
         { foreign: 'un pantalón azul', english: 'a pair of blue pants' },
         { foreign: 'Está al lado de la ventana.', english: 'He is next to the window.' },
         { foreign: 'No veo a Javier.', english: 'I don’t see Javier.' },
@@ -1563,7 +1563,7 @@ export const allPhrases = {
         { foreign: 'tronco / torso', english: 'torso' },
         { foreign: 'agarrar', english: 'to grab', hard: true },
         { foreign: 'guantes', english: 'gloves' },
-        { foreign: 'calcetinas', english: 'socks', hard: true, workingOn: true },
+        { foreign: 'los calcetines', english: 'the socks', hard: true, workingOn: true },
         {
           foreign: 'Estás caminando muy raro.',
           english: 'You are walking very weirdly. (informal)',
@@ -1581,6 +1581,21 @@ export const allPhrases = {
         {
           foreign: '¡Ya puedes abrir los ojos!',
           english: 'You can open your eyes now! (informal)',
+        },
+      ],
+      lesson5: [
+        {
+          foreign: 'Ya no estoy tan joven.',
+          english: 'I’m not so young anymore.',
+          workingOn: true,
+        },
+        { foreign: 'una sonrisa', english: 'a smile', workingOn: true },
+        { foreign: 'caro / cara', english: 'expensive', workingOn: true },
+        { foreign: 'barato / barata', english: 'cheap', workingOn: true },
+        {
+          foreign: 'Ella tiene las piernas largas.',
+          english: 'She has long legs.',
+          workingOn: true,
         },
       ],
     },
@@ -1620,6 +1635,120 @@ export const allPhrases = {
         { foreign: 'el trasero', english: 'the butt', hard: true },
         { foreign: 'la pantorrilla', english: 'the calf' },
         { foreign: 'el talón', english: 'the heel' },
+      ],
+    },
+    chapter26: {
+      name: 'La ropa - clothes',
+      lesson1: [
+        { foreign: 'un armario', english: 'a closet', workingOn: true },
+        { foreign: 'la ropa', english: 'the clothes', workingOn: true },
+        { foreign: 'los accesorios', english: 'the accessories', workingOn: true },
+        {
+          foreign: 'Llevo unos pantalones cortos.',
+          english: 'I am wearing shorts.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Las camisetas son de algodón.',
+          english: 'The T-shirts are made of cotton.',
+          workingOn: true,
+        },
+        { foreign: 'corbata', english: 'tie (necktie)', workingOn: true },
+        {
+          foreign: 'Los hombres usan corbata en la oficina.',
+          english: 'Men wear ties in the office.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Las corbatas son de colores variados.',
+          english: 'The ties are of various colors.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Los suéteres están en descuento después de Navidad.',
+          english: 'Sweaters are on sale after Christmas.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Los guantes no están en oferta.',
+          english: 'The gloves are not on sale.',
+          workingOn: true,
+        },
+        {
+          foreign: 'un gorro',
+          english: 'a beanie / soft, brimless, often knitted cap',
+          workingOn: true,
+        },
+        { foreign: 'sombrero', english: 'hat', workingOn: true },
+        {
+          foreign: 'Hay un conejo dentro del sombrero.',
+          english: 'There is a rabbit inside the hat.',
+          workingOn: true,
+        },
+        {
+          foreign: 'El mago saca un conejo del sombrero.',
+          english: 'The magician pulls a rabbit out of the hat.',
+          workingOn: true,
+        },
+        {
+          foreign: 'El vestido es fucsia y tiene un cinturón turquesa.',
+          english: 'The dress is fuchsia and has a turquoise belt.',
+          workingOn: true,
+        },
+        { foreign: 'falda', english: 'skirt', workingOn: true },
+      ],
+      lesson2: [
+        {
+          foreign: 'Los calcetines calientan los pies.',
+          english: 'Socks warm the feet.',
+          workingOn: true,
+        },
+        {
+          foreign: 'La niña se pone los calcetines.',
+          english: 'The girl puts on her socks.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Está lloviendo, uso mis botas de lluvia.',
+          english: 'It’s raining; I’m wearing my rain boots.',
+          workingOn: true,
+        },
+        { foreign: 'botas de goma', english: 'rubber boots', workingOn: true },
+        { foreign: 'botas', english: 'boots', workingOn: true },
+        {
+          foreign: 'No encuentro mis zapatos favoritos.',
+          english: 'I can’t find my favorite shoes.',
+          workingOn: true,
+        },
+        { foreign: 'el traje de baño', english: 'the swimsuit', workingOn: true },
+        {
+          foreign: 'Los lentes de sol protegen los ojos de los rayos ultravioleta.',
+          english: 'Sunglasses protect the eyes from ultraviolet rays.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Las botas de invierno no se llevan en verano.',
+          english: 'Winter boots are not worn in the summer.',
+          workingOn: true,
+        },
+        {
+          foreign: 'El cinturón es de cuero marrón.',
+          english: 'The belt is made of brown leather.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Él lleva traje para la oficina.',
+          english: 'He wears a suit to the office.',
+          workingOn: true,
+        },
+        { foreign: 'El bolso es beige.', english: 'The bag is beige.', workingOn: true },
+        { foreign: 'el bolso', english: 'purse / handbag', workingOn: true },
+        { foreign: 'la bolsa', english: 'bag / sack', workingOn: true },
+        {
+          foreign: 'El cinturón y el bolso no combinan.',
+          english: 'The belt and the bag don’t match.',
+          workingOn: true,
+        },
       ],
     },
   },
