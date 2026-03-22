@@ -74,7 +74,6 @@ export const allPhrases = {
         {
           foreign: '¡Que te vaya bien!',
           english: 'May it go well with you! / Have a good one! (informal)',
-          workingOn: true,
           hard: true,
         },
         { foreign: 'Nos vemos pronto.', english: 'See you soon.' },
@@ -350,7 +349,7 @@ export const allPhrases = {
         { foreign: 'el león', english: 'the lion' },
         { foreign: 'el elefante', english: 'the elephant' },
         { foreign: 'el mono', english: 'the monkey' },
-        { foreign: 'la selva', english: 'the jungle', workingOn: true, hard: true },
+        { foreign: 'la selva', english: 'the jungle', hard: true },
         { foreign: 'demasiado', english: 'too (e.g. too hot, etc.)', hard: true },
         {
           foreign: 'aproximadamente mes por medio',
@@ -911,7 +910,7 @@ export const allPhrases = {
         },
         { foreign: 'Estoy pidiendo una bebida.', english: 'I’m asking for a drink.', hard: true },
         { foreign: 'Estoy repitiendo la pregunta.', english: 'I am repeating the question.' },
-        { foreign: 'Estoy sonriendo.', english: 'I’m smiling.', workingOn: true, hard: true },
+        { foreign: 'Estoy sonriendo.', english: 'I’m smiling.', hard: true },
       ],
     },
     chapter11: {
@@ -975,12 +974,7 @@ export const allPhrases = {
         },
         { foreign: 'Tiene que ir.', english: 'He has to go.', hard: true },
         { foreign: 'Yo he hecho mi trabajo.', english: 'I have done my job.' },
-        {
-          foreign: 'Ella ha ido al gimnasio.',
-          english: 'She has gone to the gym.',
-          workingOn: true,
-          hard: true,
-        },
+        { foreign: 'Ella ha ido al gimnasio.', english: 'She has gone to the gym.', hard: true },
       ],
     },
     chapter13: {
@@ -1358,7 +1352,7 @@ export const allPhrases = {
       lesson1: [
         { foreign: 'abogado / abogada', english: 'lawyer' },
         { foreign: 'actor / actriz', english: 'actor / actress' },
-        { foreign: 'arquitecto / arquitecta', english: 'architect', workingOn: true },
+        { foreign: 'arquitecto / arquitecta', english: 'architect' },
         { foreign: 'un artista / una artista', english: 'an artist' },
         { foreign: 'autor / autora', english: 'author' },
         { foreign: 'un cantante / una cantante', english: 'a singer' },
@@ -1579,10 +1573,7 @@ export const allPhrases = {
         { foreign: 'hidroavión', english: 'seaplane' },
         { foreign: 'orca', english: 'orca' },
         { foreign: 'trabajo', english: 'job' },
-        {
-          foreign: 'Ven, dame la mano.',
-          english: 'Come, give me your hand. (informal)',
-        },
+        { foreign: 'Ven, dame la mano.', english: 'Come, give me your hand. (informal)' },
         {
           foreign: 'Primero un pie y después el otro, poco a poco.',
           english: 'First one foot, and then the other—little by little.',
@@ -1620,7 +1611,7 @@ export const allPhrases = {
         { foreign: 'los dedos de los pies / del pie', english: 'the toes' },
         { foreign: 'los dedos', english: 'the fingers' },
         { foreign: 'el pie', english: 'the foot' },
-        { foreign: 'el cabello / el pelo', english: 'the hair', workingOn: true },
+        { foreign: 'el cabello / el pelo', english: 'the hair' },
         { foreign: 'el hombro', english: 'the shoulder' },
         { foreign: 'el cuello', english: 'the neck' },
         { foreign: 'el codo', english: 'the elbow' },
@@ -2062,11 +2053,7 @@ export const allPhrases = {
         },
       ],
       lesson4: [
-        {
-          foreign: '¿Cuál es su dirección?',
-          english: 'What is your address? (formal)',
-          workingOn: true,
-        },
+        { foreign: '¿Cuál es su dirección?', english: 'What is your address? (formal)' },
         { foreign: 'cuál', english: 'which (as in which one)' },
         { foreign: 'la dirección', english: 'the address' },
         { foreign: 'Calle San Martín seis', english: '6 San Martin Street' },
@@ -2113,23 +2100,15 @@ export const allPhrases = {
         },
       ],
       lesson6: [
-        {
-          foreign: '¿Qué edad tiene usted?',
-          english: 'How old are you? (formal)',
-          workingOn: true,
-        },
+        { foreign: '¿Qué edad tiene usted?', english: 'How old are you? (formal)' },
         { foreign: 'edad (fem.)', english: 'age' },
         { foreign: '¿Qué edad....?', english: 'How old...?' },
-        { foreign: '¿Qué edad tienes?', english: 'How old are you? (informal)', workingOn: true },
+        { foreign: '¿Qué edad tienes?', english: 'How old are you? (informal)' },
         {
           foreign: 'Tengo treinta años. ¿Qué edad tienes tú?',
           english: 'I’m thirty years old. How old are you? (informal)',
-          workingOn: true,
         },
-        {
-          foreign: '¿Tienes veinte años?',
-          english: 'Are you twenty years old? (informal)',
-        },
+        { foreign: '¿Tienes veinte años?', english: 'Are you twenty years old? (informal)' },
         { foreign: '¡No tengo veinte!', english: 'I’m not twenty!' },
         {
           foreign: '¡No tengo veinte! ¡Tengo veintisiete!',
