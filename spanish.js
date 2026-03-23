@@ -512,8 +512,8 @@ export const allPhrases = {
         { foreign: 'la guitarra', english: 'the guitar' },
         { foreign: 'el águila', english: 'the eagle', hard: true },
         {
-          foreign: 'la gorra',
-          english: 'the cap (with a visor/brim like a baseball cap)',
+          foreign: 'una gorra',
+          english: 'a cap (with a visor/brim like a baseball cap)',
           hard: true,
           workingOn: true,
         },
@@ -905,7 +905,6 @@ export const allPhrases = {
         {
           foreign: 'El político está influyendo en la gente.',
           english: 'The politician is influencing people.',
-          workingOn: true,
           hard: true, // because of 'en'
         },
         {
@@ -1386,7 +1385,7 @@ export const allPhrases = {
           foreign: 'maestro de primaria / maestra de primaria',
           english: 'elementary school teacher',
         },
-        { foreign: 'mesero / mesera', english: 'waiter / waitress', workingOn: true, hard: true },
+        { foreign: 'mesero / mesera', english: 'waiter / waitress', hard: true },
         { foreign: 'ministro / ministra', english: '(religious) minister' },
         { foreign: 'músico / música', english: 'musician' },
         { foreign: 'pintor / pintora', english: 'painter' },
@@ -1647,7 +1646,7 @@ export const allPhrases = {
       lesson1: [
         { foreign: 'un armario', english: 'a closet', workingOn: true },
         { foreign: 'la ropa', english: 'the clothes', workingOn: true },
-        { foreign: 'los accesorios', english: 'the accessories', workingOn: true },
+        { foreign: 'los accesorios', english: 'the accessories' },
         {
           foreign: 'Llevo unos pantalones cortos.',
           english: 'I am wearing shorts.',
@@ -1662,7 +1661,7 @@ export const allPhrases = {
         { foreign: 'corbata', english: 'tie (necktie)', workingOn: true },
         {
           foreign: 'Los hombres usan corbata en la oficina.',
-          english: 'Men wear ties in the office.',
+          english: 'Men wear ties in the office.', hard: true,
           workingOn: true,
         },
         {
@@ -1684,7 +1683,8 @@ export const allPhrases = {
         },
         {
           foreign: 'un gorro',
-          english: 'a beanie / soft, brimless, often knitted cap', hard: true,
+          english: 'a beanie / soft, brimless, often knitted cap',
+          hard: true,
           workingOn: true,
         },
         { foreign: 'sombrero', english: 'hat', workingOn: true },
@@ -1718,11 +1718,11 @@ export const allPhrases = {
         },
         {
           foreign: 'Está lloviendo, uso mis botas de lluvia.',
-          english: 'It’s raining; I’m wearing my rain boots.',
+          english: 'It’s raining; I’m wearing my rain boots.', hard: true,
           workingOn: true,
         },
         { foreign: 'botas de goma', english: 'rubber boots', workingOn: true },
-        { foreign: 'botas', english: 'boots', workingOn: true },
+        { foreign: 'botas', english: 'boots' },
         {
           foreign: 'No encuentro mis zapatos favoritos.',
           english: 'I can’t find my favorite shoes.',
@@ -1747,6 +1747,7 @@ export const allPhrases = {
         {
           foreign: 'Él lleva traje para la oficina.',
           english: 'He wears a suit to the office.',
+          hard: true,
           workingOn: true,
         },
         { foreign: 'El bolso es beige.', english: 'The bag is beige.', workingOn: true },
