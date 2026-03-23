@@ -499,7 +499,7 @@ export const allPhrases = {
       ],
       lesson5: [
         { foreign: 'el jabón', english: 'the soap', hard: true },
-        { foreign: 'el traje', english: 'the suit', workingOn: true },
+        { foreign: 'el traje', english: 'the suit', hard: true, workingOn: true },
         { foreign: 'la gente', english: 'the people' },
         { foreign: 'el/la jirafa', english: 'the giraffe' },
         { foreign: 'el gimnasio', english: 'the gym' },
@@ -511,7 +511,12 @@ export const allPhrases = {
         { foreign: 'la hamburguesa', english: 'the hamburger' },
         { foreign: 'la guitarra', english: 'the guitar' },
         { foreign: 'el águila', english: 'the eagle', hard: true },
-        { foreign: 'la gorra', english: 'the cap', hard: true },
+        {
+          foreign: 'la gorra',
+          english: 'the cap (with a visor/brim like a baseball cap)',
+          hard: true,
+          workingOn: true,
+        },
         { foreign: 'el gusano', english: 'the worm', hard: true },
       ],
       lesson7: [
@@ -1018,7 +1023,7 @@ export const allPhrases = {
         { foreign: 'puertorriqueño / puertorriqueña', english: 'Puerto Rican (adj.)' },
         { foreign: 'dominicano / dominicana', english: 'Dominican (adj.)' },
         { foreign: 'ruso / rusa', english: 'Russian (adj.)' },
-        { foreign: 'turco / turca', english: 'Turkish (adj.)', workingOn: true },
+        { foreign: 'turco / turca', english: 'Turkish (adj.)' },
         { foreign: 'uruguayo / uruguaya', english: 'Uruguayan (adj.)' },
         { foreign: 'venezolano / venezolana', english: 'Venezuelan (adj.)' },
         { foreign: 'maltés / maltesa', english: 'Maltese (adj.)' },
@@ -1646,6 +1651,7 @@ export const allPhrases = {
         {
           foreign: 'Llevo unos pantalones cortos.',
           english: 'I am wearing shorts.',
+          hard: true,
           workingOn: true,
         },
         {
@@ -1667,16 +1673,18 @@ export const allPhrases = {
         {
           foreign: 'Los suéteres están en descuento después de Navidad.',
           english: 'Sweaters are on sale after Christmas.',
+          hard: true,
           workingOn: true,
         },
         {
           foreign: 'Los guantes no están en oferta.',
           english: 'The gloves are not on sale.',
+          hard: true,
           workingOn: true,
         },
         {
           foreign: 'un gorro',
-          english: 'a beanie / soft, brimless, often knitted cap',
+          english: 'a beanie / soft, brimless, often knitted cap', hard: true,
           workingOn: true,
         },
         { foreign: 'sombrero', english: 'hat', workingOn: true },
@@ -1695,7 +1703,7 @@ export const allPhrases = {
           english: 'The dress is fuchsia and has a turquoise belt.',
           workingOn: true,
         },
-        { foreign: 'falda', english: 'skirt', workingOn: true },
+        { foreign: 'falda', english: 'skirt', hard: true, workingOn: true },
       ],
       lesson2: [
         {
@@ -1742,8 +1750,8 @@ export const allPhrases = {
           workingOn: true,
         },
         { foreign: 'El bolso es beige.', english: 'The bag is beige.', workingOn: true },
-        { foreign: 'el bolso', english: 'purse / handbag', workingOn: true },
-        { foreign: 'la bolsa', english: 'bag / sack', workingOn: true },
+        { foreign: 'el bolso', english: 'the purse / handbag', workingOn: true },
+        { foreign: 'la bolsa', english: 'the bag / sack', workingOn: true },
         {
           foreign: 'El cinturón y el bolso no combinan.',
           english: 'The belt and the bag don’t match.',
@@ -1973,7 +1981,7 @@ export const allPhrases = {
           english: 'I love fall. When is fall in Chile?',
         },
         { foreign: 'la clase', english: 'the class' },
-        { foreign: 'con fluidez', english: 'fluently', workingOn: true, hard: true },
+        { foreign: 'con fluidez', english: 'fluently', hard: true },
       ],
     },
     chapter3: {
