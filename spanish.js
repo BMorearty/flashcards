@@ -1595,7 +1595,7 @@ export const allPhrases = {
         },
         { foreign: 'una sonrisa', english: 'a smile', workingOn: true },
         { foreign: 'caro / cara', english: 'expensive', workingOn: true },
-        { foreign: 'barato / barata', english: 'cheap', workingOn: true },
+        { foreign: 'barato / barata', english: 'cheap', hard: true, workingOn: true },
         {
           foreign: 'Ella tiene las piernas largas.',
           english: 'She has long legs.',
