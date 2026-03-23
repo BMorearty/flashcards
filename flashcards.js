@@ -539,7 +539,7 @@ async function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
       if (!wrongPhrases.map((phrase) => phrase.foreign).includes(lastPhrase.foreign)) {
         wrongPhrases.push(lastPhrase);
       }
-      replacePromptWith(chalk.red(`    Marked as wrong`));
+      replacePromptWith(chalk.redBright(`    Marked as wrong`));
       showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
       return;
     }
