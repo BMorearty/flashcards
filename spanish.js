@@ -1551,7 +1551,7 @@ export const allPhrases = {
         { foreign: 'el pizarrón', english: 'the blackboard or whiteboard' },
         { foreign: 'bolígrafo', english: 'pen' },
         { foreign: 'camiseta', english: 't-shirt' },
-        { foreign: 'un suéter / un jersey', english: 'a sweater', workingOn: true },
+        { foreign: 'un suéter / un jersey', english: 'a sweater' },
         { foreign: 'un pantalón azul', english: 'a pair of blue pants' },
         { foreign: 'Está al lado de la ventana.', english: 'He is next to the window.' },
         { foreign: 'No veo a Javier.', english: 'I don’t see Javier.' },
@@ -1567,7 +1567,7 @@ export const allPhrases = {
         { foreign: 'tronco / torso', english: 'torso' },
         { foreign: 'agarrar', english: 'to grab', hard: true },
         { foreign: 'guantes', english: 'gloves' },
-        { foreign: 'los calcetines', english: 'the socks', hard: true, workingOn: true },
+        { foreign: 'los calcetines', english: 'the socks', hard: true },
         {
           foreign: 'Estás caminando muy raro.',
           english: 'You are walking very weirdly. (informal)',
@@ -1594,7 +1594,7 @@ export const allPhrases = {
           workingOn: true,
         },
         { foreign: 'una sonrisa', english: 'a smile', workingOn: true },
-        { foreign: 'caro / cara', english: 'expensive', workingOn: true },
+        { foreign: 'caro / cara', english: 'expensive' },
         { foreign: 'barato / barata', english: 'cheap', hard: true, workingOn: true },
         {
           foreign: 'Ella tiene las piernas largas.',
