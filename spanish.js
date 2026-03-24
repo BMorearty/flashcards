@@ -1602,6 +1602,19 @@ export const allPhrases = {
           workingOn: true,
         },
       ],
+      lesson6: [
+        { foreign: 'Está malo.', english: 'He is sick.', workingOn: true },
+        { foreign: 'Es malo.', english: 'He is bad.', workingOn: true },
+        { foreign: 'pañuelo', english: 'handkerchief', workingOn: true },
+        { foreign: 'Yo hablé.', english: 'I spoke.', workingOn: true },
+        { foreign: 'Yo comí.', english: 'I ate.', workingOn: true },
+        { foreign: 'Yo escribí.', english: 'I wrote.', workingOn: true },
+        {
+          foreign: 'Esta mujer se viste muy bien.',
+          english: 'This woman dresses very well.',
+          workingOn: true,
+        },
+      ],
     },
     chapter25: {
       name: 'Partes del cuerpo',
@@ -1661,7 +1674,8 @@ export const allPhrases = {
         { foreign: 'corbata', english: 'tie (necktie)', workingOn: true },
         {
           foreign: 'Los hombres usan corbata en la oficina.',
-          english: 'Men wear ties in the office.', hard: true,
+          english: 'Men wear ties in the office.',
+          hard: true,
           workingOn: true,
         },
         {
@@ -1718,7 +1732,8 @@ export const allPhrases = {
         },
         {
           foreign: 'Está lloviendo, uso mis botas de lluvia.',
-          english: 'It’s raining; I’m wearing my rain boots.', hard: true,
+          english: 'It’s raining; I’m wearing my rain boots.',
+          hard: true,
           workingOn: true,
         },
         { foreign: 'botas de goma', english: 'rubber boots', workingOn: true },
@@ -1758,6 +1773,8 @@ export const allPhrases = {
           english: 'The belt and the bag don’t match.',
           workingOn: true,
         },
+        { foreign: 'una cartera', english: 'a purse / wallet', workingOn: true },
+        { foreign: 'una billetera', english: 'a wallet', workingOn: true },
       ],
     },
   },
