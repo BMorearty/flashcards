@@ -523,14 +523,14 @@ async function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
     }
     if (answer === 'wo' && lastPhrase) {
       markPhraseAsWorkingOn(lastPhrase).then(() => {
-        replacePromptWith(chalk.blue(`    Marked as working on`));
+        replacePromptWith(chalk.blueBright(`    Marked as working on`));
         showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
       });
       return;
     }
     if (answer === 'nwo' && lastPhrase) {
       unmarkPhraseAsWorkingOn(lastPhrase).then(() => {
-        replacePromptWith(chalk.blue(`    Unmarked as working on`));
+        replacePromptWith(chalk.blueBright(`    Unmarked as working on`));
         showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
       });
       return;
