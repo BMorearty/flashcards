@@ -1645,7 +1645,7 @@ export const allPhrases = {
         { foreign: 'acostado / a', english: 'lying down', workingOn: true },
         { foreign: 'sentado / a', english: 'sitting down', workingOn: true },
         { foreign: 'lentes de contacto', english: 'contact lenses', workingOn: true },
-        { foreign: 'muletas', english: 'crutches', workingOn: true },
+        { foreign: 'muletas', english: 'crutches', hard: true, workingOn: true },
       ],
     },
     chapter25: {
@@ -1770,7 +1770,7 @@ export const allPhrases = {
         },
         { foreign: 'El bolso es beige.', english: 'The bag is beige.' },
         { foreign: 'el bolso', english: 'the purse / handbag' },
-        { foreign: 'la bolsa', english: 'the bag / sack', workingOn: true },
+        { foreign: 'la bolsa', english: 'the bag / sack', hard: true, workingOn: true },
         {
           foreign: 'El cinturón y el bolso no combinan.',
           english: 'The belt and the bag don’t match.',
@@ -1823,7 +1823,12 @@ export const allPhrases = {
         { foreign: 'tener pecas', english: 'to have freckles', workingOn: true },
         { foreign: 'tener un lunar', english: 'to have a mole', workingOn: true },
         { foreign: 'tener los labios pintados', english: 'to have lipstick on', workingOn: true },
-        { foreign: 'tener los labios gruesos', english: 'to have thick lips', workingOn: true },
+        {
+          foreign: 'tener los labios gruesos',
+          english: 'to have thick lips',
+          hard: true,
+          workingOn: true,
+        },
         { foreign: 'tener los labios finos', english: 'to have thin lips', workingOn: true },
         { foreign: 'tener las orejas grandes', english: 'to have big ears', workingOn: true },
         { foreign: 'tener las orejas pequeñas', english: 'to have small ears', workingOn: true },
