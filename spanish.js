@@ -1600,6 +1600,7 @@ export const allPhrases = {
       lesson6: [
         { foreign: 'Está malo.', english: 'He is sick.', workingOn: true },
         { foreign: 'Es malo.', english: 'He is bad.', workingOn: true },
+        { foreign: 'Está sano.', english: 'He is healthy.', workingOn: true },
         { foreign: 'pañuelo', english: 'handkerchief', workingOn: true, hard: true },
         { foreign: 'Yo hablé.', english: 'I spoke.', workingOn: true },
         { foreign: 'Yo comí.', english: 'I ate.', workingOn: true },
@@ -1619,7 +1620,7 @@ export const allPhrases = {
         },
         { foreign: 'He cambiado de idea.', english: 'I’ve changed my mind.', workingOn: true },
         { foreign: 'comprarse', english: 'to buy for oneself', workingOn: true },
-        { foreign: 'prestarte', english: 'to lend to you (informal)', workingOn: true },
+        { foreign: 'prestarte', english: 'to lend to you (informal)', hard: true, workingOn: true },
         { foreign: 'Ya no hace falta.', english: 'It’s no longer necessary.', workingOn: true },
         { foreign: 'Pues ven.', english: 'Well, come.', workingOn: true },
         { foreign: 'un par de', english: 'a couple of', workingOn: true },
@@ -1641,6 +1642,10 @@ export const allPhrases = {
         { foreign: 'azul verdoso', english: 'bluegreen', workingOn: true },
         { foreign: 'ser humano / humana', english: 'human being', workingOn: true },
         { foreign: 'seres humanos', english: 'human beings', workingOn: true },
+        { foreign: 'acostado / a', english: 'lying down', workingOn: true },
+        { foreign: 'sentado / a', english: 'sitting down', workingOn: true },
+        { foreign: 'lentes de contacto', english: 'contact lenses', workingOn: true },
+        { foreign: 'muletas', english: 'crutches', workingOn: true },
       ],
     },
     chapter25: {
@@ -1787,6 +1792,7 @@ export const allPhrases = {
           hard: true,
           workingOn: true,
         },
+        { foreign: 'blusa', english: 'blouse', workingOn: true },
       ],
     },
     chapter27: {
