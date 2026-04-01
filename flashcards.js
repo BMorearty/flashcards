@@ -453,17 +453,14 @@ async function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
   const showUnseenPrompt = anyMoreUnseen ? 'Show (U)nseen, ' : '';
   const morePrompts = `${prevNextPrompt}${showUnseenPrompt}`;
   const prompt = `[${wrongPhrases.length}W][${shownPhrasesCounter}/${phrases.length}] Enter: reveal, (B)ack, (Q)uit,${morePrompts}\nLast was (H)ard / (NH) / (WO)rking On / (NWO) / (W)rong / (R)ight: `;
-  const winWidth = process.stdout.columns;
-  const wrappedPrompt =
-    prompt.length > winWidth ? prompt.replace('Last was', '\nLast was') : prompt;
   const moveUpAndClearLine = '\u001b[1A\u001b[K';
-  const linesInPrompt = (wrappedPrompt.match(/\n/g) || []).length + 1;
+  const linesInPrompt = (prompt.match(/\n/g) || []).length + 1;
 
   function replacePromptWith(message) {
     console.log(`${moveUpAndClearLine.repeat(linesInPrompt + 1)}${message}`);
   }
 
-  rl.question(wrappedPrompt, async (answer) => {
+  rl.question(prompt, async (answer) => {
     answer = answer.toLowerCase();
     if (answer === 'q') {
       rl.close();
