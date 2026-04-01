@@ -300,7 +300,11 @@ export const allPhrases = {
         { foreign: 'gobierno', english: 'government' },
         { foreign: 'empresa privada', english: 'private company / private enterprise', hard: true },
         { foreign: 'Estoy de acuerdo.', english: 'I agree.' },
-        { foreign: 'alguien', english: 'someone', hard: true },
+        {
+          foreign: 'alguien',
+          english: 'someone / anyone (positive sense, like “Is anyone here?”',
+          hard: true,
+        },
         { foreign: 'enviar', english: 'to send' },
       ],
       lesson14: [
