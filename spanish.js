@@ -1846,17 +1846,17 @@ export const allPhrases = {
         { foreign: 'tener el cabello liso', english: 'to have straight hair' },
       ],
       lesson3: [
-        { foreign: 'tener / usar / llevar barba', english: 'to have a beard' },
-        { foreign: 'tener / usar / llevar bigotes', english: 'to have a mustache' },
-        { foreign: 'tener / usar / llevar - lentes / gafas', english: 'to wear glasses' },
-        { foreign: 'tener / usar / llevar moño', english: 'to wear a bun' },
+        { foreign: 'tener/usar/llevar barba', english: 'to have a beard' },
+        { foreign: 'tener /usar/llevar bigotes', english: 'to have a mustache' },
+        { foreign: 'tener /usar/llevar lentes / gafas', english: 'to wear glasses' },
+        { foreign: 'tener /usar/llevar moño', english: 'to wear a bun' },
         {
-          foreign: 'tener / usar / llevar - cola de caballo / una coleta',
+          foreign: 'tener /usar/llevar cola de caballo / coleta',
           english: 'to wear a ponytail',
           workingOn: true,
         },
         {
-          foreign: 'tener / usar / llevar - crineja / trenza',
+          foreign: 'tener /usar/llevar crineja / trenza',
           english: 'to have braids',
           hard: true,
         },
