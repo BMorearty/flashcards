@@ -1971,6 +1971,26 @@ export const allPhrases = {
         { foreign: 'suegro / suegra', english: 'father-in-law / mother-in-law', workingOn: true },
         { foreign: 'la computadora portátil', english: 'the laptop', workingOn: true },
       ],
+      lesson3: [
+        {
+          foreign: 'una cola para comprar las entradas',
+          english: 'a queue to buy tickets',
+          workingOn: true,
+        },
+        {
+          foreign: 'en la parte de adelante de la cola',
+          english: 'at the front of the line',
+          workingOn: true,
+        },
+        { foreign: 'tomar', english: 'to take', workingOn: true },
+        { foreign: 'navegador', english: 'browser', workingOn: true },
+        { foreign: 'buscador', english: 'search engine', workingOn: true },
+        { foreign: 'empecer', english: 'to begin', workingOn: true },
+        { foreign: 'empezco', english: 'I begin', workingOn: true },
+        { foreign: 'de nuevo', english: 'again', workingOn: true },
+        { foreign: 'Es por eso que ...', english: 'That is why ...', workingOn: true },
+        { foreign: 'rendirse', english: 'to give up', workingOn: true },
+      ],
     },
   },
   unit1: {
