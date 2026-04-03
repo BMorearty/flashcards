@@ -58,6 +58,22 @@ const letter = chalk.green;
 const ansiEscape = /\x1b\[[0-9;]*m/g;
 const visibleLength = str => str.replace(ansiEscape, '').length;
 
+function rawIndexForVisPos(str, visPos) {
+  let visible = 0;
+  let i = 0;
+  while (i < str.length) {
+    if (str[i] === '\x1b') {
+      while (i < str.length && str[i] !== 'm') i++;
+      i++;
+    } else {
+      if (visible === visPos) break;
+      visible++;
+      i++;
+    }
+  }
+  return i;
+}
+
 function wrapPrompt(prompt, width) {
   return prompt.split('\n').map(line => {
     if (visibleLength(line) <= width) return line;
@@ -65,15 +81,16 @@ function wrapPrompt(prompt, width) {
     let remaining = line;
     while (visibleLength(remaining) > width) {
       let breakPos = -1;
-      for (let i = width; i >= 0; i--) {
+      const startIdx = rawIndexForVisPos(remaining, width);
+      for (let i = startIdx; i >= 0; i--) {
         if (remaining[i] === ',' || remaining[i] === '/') {
           breakPos = i + 1;
           break;
         }
       }
       if (breakPos === -1) {
-        result += remaining.slice(0, width) + '\n';
-        remaining = remaining.slice(width);
+        result += remaining.slice(0, startIdx) + '\n';
+        remaining = remaining.slice(startIdx);
       } else {
         result += remaining.slice(0, breakPos) + '\n';
         remaining = remaining.slice(breakPos);
