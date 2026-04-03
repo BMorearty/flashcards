@@ -1635,7 +1635,7 @@ export const allPhrases = {
         { foreign: 'colores chillones', english: 'bright (loud) colors' },
         { foreign: 'me pongo', english: 'I put on (present tense)' },
         { foreign: 'pantuflas', english: 'slippers', workingOn: true },
-        { foreign: 'zapatillas', english: 'sneakers or sometimes slippers', workingOn: true },
+        { foreign: 'zapatillas', english: 'sneakers or sometimes slippers' },
         { foreign: 'azul verdoso', english: 'bluegreen', workingOn: true },
         { foreign: 'ser humano / humana', english: 'human being' },
         { foreign: 'seres humanos', english: 'human beings' },
@@ -1789,7 +1789,9 @@ export const allPhrases = {
         { foreign: 'un bastón', english: 'a cane' },
         {
           foreign:
-            'Lleva puestos unos vaqueros azules.|(lleva puestos == lleva; puestos must agree with gender and plurality)',
+            'Lleva puestos unos vaqueros azules.|' +
+            '(lleva: carries or wears, lleva puestos == wears; |' +
+            'puestos must agree with gender and plurality)|',
           english: 'He is wearing blue jeans.',
           hard: true,
           workingOn: true,
@@ -1915,7 +1917,7 @@ export const allPhrases = {
         { foreign: 'actividades al aire libre', english: 'outdoor activities', workingOn: true },
         {
           foreign: 'Planeamos ir de viaje a Francia y hemos invitado a Marta, la mamá de David.',
-          english: 'We plan to go on a trip to France and we have invited Marta, David’s mother.',
+          english: 'We plan to go on a trip to France and we have invited Marta, David’s mom.',
           workingOn: true,
         },
         { foreign: 'cierto', english: 'true (not starting with a v)', workingOn: true },
@@ -1945,14 +1947,14 @@ export const allPhrases = {
           workingOn: true,
         },
         {
-          foreign: 'Estudio español para hablarla. (use para for a goal)',
+          foreign: 'Estudio español para hablarlo. (use para for a goal)',
           english: 'I study Spanish to speak it.',
           workingOn: true,
         },
         { foreign: 'con un poco de suerte', english: 'hopefully', workingOn: true },
         {
-          foreign: 'Vivo junto a / con mi esposo y mi hijo.',
-          english: 'I live with my husband and son.',
+          foreign: 'Vivo junto con mi esposo y mi hijo.',
+          english: 'I live together with my husband and son.',
           workingOn: true,
         },
         { foreign: 'en forma', english: 'fit', workingOn: true },
@@ -1966,6 +1968,7 @@ export const allPhrases = {
             'Yo me estoy duchando con agua fría para despertarme. Luego, me seco el pelo y me visto para irme.',
           english:
             'I am taking a cold shower to wake up. Then, I dry my hair and get dressed to leave.',
+          hard: true,
           workingOn: true,
         },
         { foreign: 'suegro / suegra', english: 'father-in-law / mother-in-law', workingOn: true },
