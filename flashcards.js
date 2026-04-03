@@ -53,6 +53,35 @@ let shownPhrases = new Set();
 let allPhrasesShownMessageDisplayed = false;
 let prevUnit, prevChapter, prevLesson, nextUnit, nextChapter, nextLesson;
 let showUnseen;
+const letter = chalk.green;
+
+const ansiEscape = /\x1b\[[0-9;]*m/g;
+const visibleLength = str => str.replace(ansiEscape, '').length;
+
+function wrapPrompt(prompt, width) {
+  return prompt.split('\n').map(line => {
+    if (visibleLength(line) <= width) return line;
+    let result = '';
+    let remaining = line;
+    while (visibleLength(remaining) > width) {
+      let breakPos = -1;
+      for (let i = width; i >= 0; i--) {
+        if (remaining[i] === ',' || remaining[i] === '/') {
+          breakPos = i + 1;
+          break;
+        }
+      }
+      if (breakPos === -1) {
+        result += remaining.slice(0, width) + '\n';
+        remaining = remaining.slice(width);
+      } else {
+        result += remaining.slice(0, breakPos) + '\n';
+        remaining = remaining.slice(breakPos);
+      }
+    }
+    return result + remaining;
+  }).join('\n');
+}
 
 // Check for duplicate foreign phrases across all units/chapters/lessons
 function checkDupes() {
@@ -276,11 +305,11 @@ function setupPrompts(showEnglish) {
   [nextUnit, nextChapter, nextLesson] = calcNextLesson();
   const prevNextPrompt =
     prevUnit && nextUnit
-      ? ' (P)rev / (N)ext lesson, '
+      ? ` (${letter('P')})rev / (${letter('N')})ext lesson, `
       : prevUnit
-        ? ' (P)rev lesson, '
+        ? ` (${letter('P')})rev lesson, `
         : nextUnit
-          ? ' (N)ext lesson, '
+          ? ` (${letter('N')})ext lesson, `
           : ' ';
   const unitName =
     currentUnit && allPhrases[currentUnit] && allPhrases[currentUnit].name
@@ -450,17 +479,19 @@ async function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
   );
   const shownPhrasesCounter = Math.min(shownPhrases.size, phrases.length);
   const anyMoreUnseen = shownPhrases.size < phrases.length;
-  const showUnseenPrompt = anyMoreUnseen ? 'Show (U)nseen, ' : '';
+  const showUnseenPrompt = anyMoreUnseen ? `Show (${letter('U')})nseen, ` : '';
   const morePrompts = `${prevNextPrompt}${showUnseenPrompt}`;
-  const prompt = `[${wrongPhrases.length}W][${shownPhrasesCounter}/${phrases.length}] Enter: reveal, (B)ack, (Q)uit,${morePrompts}\nLast was (H)ard / (NH) / (WO)rking On / (NWO) / (W)rong / (R)ight: `;
+  const prompt = `[${wrongPhrases.length}W][${shownPhrasesCounter}/${phrases.length}] Enter: reveal, (${letter('B')})ack, (${letter('Q')})uit,${morePrompts}\nLast was (${letter('H')})ard / (${letter('NH')}) / (${letter('WO')})rking On / (${letter('NWO')}) / (${letter('W')})rong / (${letter('R')})ight: `;
+  const winWidth = process.stdout.columns;
+  const wrappedPrompt = wrapPrompt(prompt, winWidth);
   const moveUpAndClearLine = '\u001b[1A\u001b[K';
-  const linesInPrompt = (prompt.match(/\n/g) || []).length + 1;
+  const linesInPrompt = (wrappedPrompt.match(/\n/g) || []).length + 1;
 
   function replacePromptWith(message) {
     console.log(`${moveUpAndClearLine.repeat(linesInPrompt + 1)}${message}`);
   }
 
-  rl.question(prompt, async (answer) => {
+  rl.question(wrappedPrompt, async (answer) => {
     answer = answer.toLowerCase();
     if (answer === 'q') {
       rl.close();
