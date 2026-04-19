@@ -1320,7 +1320,7 @@ export const allPhrases = {
           foreign: 'Siempre digo que poner una alarma no está de más.',
           english: 'I always say that it can’t hurt to set an alarm.',
         },
-        { foreign: 'un hueso duro de roer', english: 'a tough nut to crack', workingOn: true },
+        { foreign: 'un hueso duro de roer', english: 'a tough nut to crack', hard: true, workingOn: true },
       ],
     },
     chapter19: {
@@ -1872,7 +1872,7 @@ export const allPhrases = {
           workingOn: true,
         },
         { foreign: 'cana / canas', english: 'gray hair (sing. and plural)', workingOn: true },
-        { foreign: 'arrugas', english: 'wrinkles', workingOn: true },
+        { foreign: 'arrugas', english: 'wrinkles', hard: true, workingOn: true },
         {
           foreign: 'Es de estatura promedio.',
           english: 'He is of average height.',
@@ -1894,8 +1894,8 @@ export const allPhrases = {
         { foreign: 'la cortina', english: 'the curtain', workingOn: true },
         { foreign: 'el adorno', english: 'the decoration / ornament', workingOn: true },
         { foreign: 'el techo', english: 'the ceiling / roof', workingOn: true },
-        { foreign: 'la persiana', english: 'the blind', workingOn: true },
-        { foreign: 'la estantería', english: 'the bookshelf', workingOn: true },
+        { foreign: 'la persiana', english: 'the blind (window covering)', workingOn: true },
+        { foreign: 'la estantería', english: 'the bookshelf', hard: true, workingOn: true },
         { foreign: 'la chimenea', english: 'the fireplace', workingOn: true },
         { foreign: 'la ventana panorámica', english: 'the panoramic window', workingOn: true },
         { foreign: 'el escritorio', english: 'the desk', workingOn: true },
@@ -1917,13 +1917,14 @@ export const allPhrases = {
         { foreign: 'actividades al aire libre', english: 'outdoor activities', workingOn: true },
         {
           foreign: 'Planeamos ir de viaje a Francia y hemos invitado a Marta, la mamá de David.',
-          english: 'We plan to go on a trip to France and we have invited Marta, David’s mom.',
+          english: 'We plan to go on a trip to France and we have invited Marta, David’s mother.',
+          hard: true,
           workingOn: true,
         },
         { foreign: 'cierto', english: 'true (not starting with a v)', workingOn: true },
         { foreign: 'sobre todo', english: 'above all', workingOn: true },
         { foreign: 'Me encantan los deportes.', english: 'I love sports.', workingOn: true },
-        { foreign: 'jugador', english: 'player', workingOn: true },
+        { foreign: 'jugador', english: 'player (of a sport)', workingOn: true },
         {
           foreign: 'Creo que ella puede lograrlo.',
           english: 'I think she can achieve it.',
@@ -1934,7 +1935,7 @@ export const allPhrases = {
       lesson2: [
         { foreign: 'de hecho', english: 'in fact', workingOn: true },
         { foreign: 'termómetro', english: 'thermometer', workingOn: true },
-        { foreign: 'adolescente', english: 'teenager', workingOn: true },
+        { foreign: 'adolescente', english: 'teenager' },
         { foreign: 'fluido / a', english: 'fluent', workingOn: true },
         {
           foreign: 'por cinco minutos (use por for a period of time)',
@@ -1953,11 +1954,11 @@ export const allPhrases = {
         },
         { foreign: 'con un poco de suerte', english: 'hopefully', workingOn: true },
         {
-          foreign: 'Vivo junto con mi esposo y mi hijo.',
+          foreign: 'Vivo junto a / con mi esposo y mi hijo.',
           english: 'I live together with my husband and son.',
           workingOn: true,
         },
-        { foreign: 'en forma', english: 'fit', workingOn: true },
+        { foreign: 'en forma', english: 'fit (in shape)', workingOn: true },
         {
           foreign: 'Mi mamá esta yendo a hacer la compra al mercado.',
           english: 'My mom is going to the market to do the shopping.',
@@ -1988,7 +1989,7 @@ export const allPhrases = {
         { foreign: 'tomar', english: 'to take', workingOn: true },
         { foreign: 'navegador', english: 'browser', workingOn: true },
         { foreign: 'buscador', english: 'search engine', workingOn: true },
-        { foreign: 'empecer', english: 'to begin', workingOn: true },
+        { foreign: 'empecer', english: 'to begin', hard: true, workingOn: true },
         { foreign: 'empezco', english: 'I begin', workingOn: true },
         { foreign: 'de nuevo', english: 'again', workingOn: true },
         { foreign: 'Es por eso que ...', english: 'That is why ...', workingOn: true },
