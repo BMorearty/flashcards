@@ -1653,7 +1653,12 @@ export const allPhrases = {
         { foreign: 'nunca', english: 'never', hard: true, workingOn: true },
         { foreign: 'nadie', english: 'nobody / no one', hard: true, workingOn: true },
         { foreign: 'nada', english: 'nothing' },
-        { foreign: 'en ningún lugar / en ninguna parte', english: 'nowhere', workingOn: true },
+        {
+          foreign: 'en ningún lugar / en ninguna parte',
+          english: 'nowhere',
+          hard: true,
+          workingOn: true,
+        },
       ],
     },
     chapter25: {
@@ -1901,7 +1906,7 @@ export const allPhrases = {
         { foreign: 'la chimenea', english: 'the fireplace', workingOn: true },
         { foreign: 'la ventana panorámica', english: 'the panoramic window', workingOn: true },
         { foreign: 'el escritorio', english: 'the desk', workingOn: true },
-        { foreign: 'el portalápiz', english: 'the pencil holder', workingOn: true },
+        { foreign: 'el portalápiz', english: 'the pencil holder', hard: true, workingOn: true },
       ],
     },
     chapter29: {
