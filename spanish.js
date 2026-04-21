@@ -1796,7 +1796,7 @@ export const allPhrases = {
           foreign:
             'Lleva puestos unos vaqueros azules.|' +
             '(lleva: carries or wears, lleva puestos == wears; |' +
-            'puestos must agree with gender and plurality)|',
+            'puestos must agree with gender and plurality)',
           english: 'He is wearing blue jeans.',
           hard: true,
           workingOn: true,
@@ -1859,15 +1859,11 @@ export const allPhrases = {
         { foreign: 'tener /usar/llevar lentes / gafas', english: 'to wear glasses' },
         { foreign: 'tener /usar/llevar moño', english: 'to wear a bun' },
         {
-          foreign: 'tener /usar/llevar cola de caballo / coleta',
+          foreign: 'tener/usar/llevar cola de caballo / coleta',
           english: 'to wear a ponytail',
           workingOn: true,
         },
-        {
-          foreign: 'tener /usar/llevar crineja / trenza',
-          english: 'to have braids',
-          hard: true,
-        },
+        { foreign: 'tener /usar/llevar crineja / trenza', english: 'to have braids', hard: true },
       ],
       lesson4: [
         { foreign: 'anciano / anciana', english: 'old man / woman', workingOn: true },
@@ -1881,6 +1877,7 @@ export const allPhrases = {
         {
           foreign: 'Es de estatura promedio.',
           english: 'He is of average height.',
+          hard: true,
           workingOn: true,
         },
         {
@@ -1893,7 +1890,7 @@ export const allPhrases = {
     chapter28: {
       name: 'Furnishings',
       lesson1: [
-        { foreign: 'la alfombra', english: 'the rug', workingOn: true },
+        { foreign: 'la alfombra', english: 'the rug', hard: true, workingOn: true },
         { foreign: 'los cojines', english: 'the cushions', workingOn: true },
         { foreign: 'los jarrones', english: 'the vases', workingOn: true },
         { foreign: 'la cortina', english: 'the curtain', workingOn: true },
@@ -1933,6 +1930,7 @@ export const allPhrases = {
         {
           foreign: 'Creo que ella puede lograrlo.',
           english: 'I think she can achieve it.',
+          hard: true,
           workingOn: true,
         },
         { foreign: 'alegre', english: 'cheerful', workingOn: true },
@@ -1967,6 +1965,7 @@ export const allPhrases = {
         {
           foreign: 'Mi mamá esta yendo a hacer la compra al mercado.',
           english: 'My mom is going to the market to do the shopping.',
+          hard: true,
           workingOn: true,
         },
         {
@@ -1977,7 +1976,12 @@ export const allPhrases = {
           hard: true,
           workingOn: true,
         },
-        { foreign: 'suegro / suegra', english: 'father-in-law / mother-in-law', workingOn: true },
+        {
+          foreign: 'suegro / suegra',
+          english: 'father-in-law / mother-in-law',
+          hard: true,
+          workingOn: true,
+        },
         { foreign: 'la computadora portátil', english: 'the laptop', workingOn: true },
       ],
       lesson3: [
@@ -1989,6 +1993,7 @@ export const allPhrases = {
         {
           foreign: 'en la parte de adelante de la cola',
           english: 'at the front of the line',
+          hard: true,
           workingOn: true,
         },
         { foreign: 'tomar', english: 'to take', workingOn: true },
@@ -1998,7 +2003,7 @@ export const allPhrases = {
         { foreign: 'empezco', english: 'I begin', workingOn: true },
         { foreign: 'de nuevo', english: 'again', workingOn: true },
         { foreign: 'Es por eso que ...', english: 'That is why ...', workingOn: true },
-        { foreign: 'rendirse', english: 'to give up', workingOn: true },
+        { foreign: 'rendirse', english: 'to give up', hard: true, workingOn: true },
       ],
     },
   },
