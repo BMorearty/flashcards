@@ -1320,7 +1320,12 @@ export const allPhrases = {
           foreign: 'Siempre digo que poner una alarma no está de más.',
           english: 'I always say that it can’t hurt to set an alarm.',
         },
-        { foreign: 'un hueso duro de roer', english: 'a tough nut to crack', hard: true, workingOn: true },
+        {
+          foreign: 'un hueso duro de roer',
+          english: 'a tough nut to crack',
+          hard: true,
+          workingOn: true,
+        },
       ],
     },
     chapter19: {

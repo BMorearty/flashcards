@@ -56,7 +56,7 @@ let showUnseen;
 const letter = chalk.green;
 
 const ansiEscape = /\x1b\[[0-9;]*m/g;
-const visibleLength = str => str.replace(ansiEscape, '').length;
+const visibleLength = (str) => str.replace(ansiEscape, '').length;
 
 function rawIndexForVisPos(str, visPos) {
   let visible = 0;
@@ -75,29 +75,32 @@ function rawIndexForVisPos(str, visPos) {
 }
 
 function wrapPrompt(prompt, width) {
-  return prompt.split('\n').map(line => {
-    if (visibleLength(line) <= width) return line;
-    let result = '';
-    let remaining = line;
-    while (visibleLength(remaining) > width) {
-      let breakPos = -1;
-      const startIdx = rawIndexForVisPos(remaining, width);
-      for (let i = startIdx; i >= 0; i--) {
-        if (remaining[i] === ',' || remaining[i] === '/') {
-          breakPos = i + 1;
-          break;
+  return prompt
+    .split('\n')
+    .map((line) => {
+      if (visibleLength(line) <= width) return line;
+      let result = '';
+      let remaining = line;
+      while (visibleLength(remaining) > width) {
+        let breakPos = -1;
+        const startIdx = rawIndexForVisPos(remaining, width);
+        for (let i = startIdx; i >= 0; i--) {
+          if (remaining[i] === ',' || remaining[i] === '/') {
+            breakPos = i + 1;
+            break;
+          }
+        }
+        if (breakPos === -1) {
+          result += remaining.slice(0, startIdx) + '\n';
+          remaining = remaining.slice(startIdx);
+        } else {
+          result += remaining.slice(0, breakPos) + '\n';
+          remaining = remaining.slice(breakPos);
         }
       }
-      if (breakPos === -1) {
-        result += remaining.slice(0, startIdx) + '\n';
-        remaining = remaining.slice(startIdx);
-      } else {
-        result += remaining.slice(0, breakPos) + '\n';
-        remaining = remaining.slice(breakPos);
-      }
-    }
-    return result + remaining;
-  }).join('\n');
+      return result + remaining;
+    })
+    .join('\n');
 }
 
 // Check for duplicate foreign phrases across all units/chapters/lessons
