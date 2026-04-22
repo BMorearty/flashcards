@@ -552,7 +552,7 @@ export const allPhrases = {
       lesson1: [
         {
           foreign:
-            'estar, present tense:' +
+            'estar, present tense indicative:' +
             '| (yo) estoy' +
             '| (tú) estás' +
             '| (él, ella, usted) está' +
@@ -564,7 +564,7 @@ export const allPhrases = {
         },
         {
           foreign:
-            'ser, present tense:' +
+            'ser, present tense indicative:' +
             '| (yo) soy' +
             '| (tú) eres' +
             '| (él, ella, usted) es' +
@@ -576,7 +576,7 @@ export const allPhrases = {
         },
         {
           foreign:
-            'tener, present tense:' +
+            'tener, present tense indicative:' +
             '| (yo) tengo' +
             '| (tú) tienes' +
             '| (él, ella, usted) tiene' +
@@ -599,40 +599,40 @@ export const allPhrases = {
         },
         {
           foreign:
-            'caminar, present tense:' +
+            'caminar, present tense indicative:' +
             '| (yo) camino' +
             '| (tú) caminas' +
             '| (él, ella, usted) camina' +
             '| (nosotros / nosotras) caminamos' +
             '| (vosotros / vosotras) camináis' +
             '| (ellos / ellas / ustedes) caminan (ca-MEE-nan)',
-          english: 'to walk, present tense regular verb conjugation',
+          english: 'to walk, present tense (regular -ar verb conjugation)',
         },
         {
           foreign:
-            'comer, present tense:' +
+            'comer, present tense indicative:' +
             '| (yo) como' +
             '| (tú) comes' +
             '| (él, ella, usted) come' +
             '| (nosotros / nosotras) comemos' +
             '| (vosotros / vosotras) coméis' +
             '| (ellos / ellas / ustedes) comen',
-          english: 'to eat, present tense regular verb conjugation',
+          english: 'to eat, present tense (regular -er verb conjugation)',
         },
         {
           foreign:
-            'partir, present tense:' +
+            'partir, present tense indicative:' +
             '| (yo) parto' +
             '| (tú) partes' +
             '| (él, ella, usted) parte' +
             '| (nosotros / nosotras) partimos' +
             '| (vosotros / vosotras) partís' +
             '| (ellos / ellas / ustedes) parten',
-          english: 'to leave, present tense regular verb conjugation',
+          english: 'to leave, present tense (regular -ir verb conjugation)',
         },
         {
           foreign:
-            'decir, present tense:' +
+            'decir, present tense indicative:' +
             '| (yo) digo' +
             '| (tú) dices' +
             '| (él, ella, usted) dice' +
@@ -643,7 +643,7 @@ export const allPhrases = {
         },
         {
           foreign:
-            'ver, present tense:' +
+            'ver, present tense indicative:' +
             '| (yo) veo' +
             '| (tú) ves' +
             '| (él, ella, usted) ve' +
@@ -654,7 +654,7 @@ export const allPhrases = {
         },
         {
           foreign:
-            'conocer, present tense:' +
+            'conocer, present tense indicative:' +
             '| (yo) conozco' +
             '| (tú) conoces' +
             '| (él, ella, usted) conoce' +
@@ -665,7 +665,7 @@ export const allPhrases = {
         },
         {
           foreign:
-            'acabar de (ahcahBAR de), present tense:' +
+            'acabar de (ahcahBAR de), present tense indicative:' +
             '| (yo) acabo de...' +
             '| (tú) acabas de...' +
             '| (él, ella, usted) acaba de...' +
@@ -673,6 +673,33 @@ export const allPhrases = {
             '| (vosotros / vosotras) acabáis de...' +
             '| (ellos / ellas / ustedes) acaban de...',
           english: 'to finish--or to have just done something, present tense conjugation',
+        },
+      ],
+      lesson2: [
+        {
+          foreign:
+            'ser, preterite tense:' +
+            '| (yo) fui' +
+            '| (tú) fuiste' +
+            '| (él, ella, usted) fue' +
+            '| (nosotros / nosotras) fuimos' +
+            '| (vosotros / vosotras) fuisteis' +
+            '| (ellos / ellas / ustedes) fueron',
+          english:
+            'to be (DOCTOR: date/day, occupation, characteristic/class, time, origin, relation/religion), preterite tense:| I was, you were, etc.',
+          workingOn: true,
+        },
+        {
+          foreign:
+            'ir, preterite tense:' +
+            '| (yo) fui' +
+            '| (tú) fuiste' +
+            '| (él, ella, usted) fue' +
+            '| (nosotros / nosotras) fuimos' +
+            '| (vosotros / vosotras) fuisteis' +
+            '| (ellos / ellas / ustedes) fueron',
+          english: 'to go, preterite tense: I went, you went, etc.',
+          workingOn: true,
         },
       ],
     },
@@ -1992,7 +2019,8 @@ export const allPhrases = {
       lesson3: [
         {
           foreign: 'una cola para comprar las entradas',
-          english: 'a queue to buy tickets', hard: true,
+          english: 'a queue to buy tickets',
+          hard: true,
           workingOn: true,
         },
         {
