@@ -1975,9 +1975,9 @@ export const allPhrases = {
         },
         {
           foreign:
-            'Yo me estoy duchando con agua fría para despertarme. Luego, me seco el pelo y me visto para irme.',
+            'Yo me estoy duchando con agua fría para despertarme.|Luego, me seco el pelo y me visto para irme.',
           english:
-            'I am taking a cold shower to wake up. Then, I dry my hair and get dressed to leave.',
+            'I am taking a cold shower to wake up.|Then, I dry my hair and get dressed to leave.',
           hard: true,
           workingOn: true,
         },
@@ -1992,7 +1992,7 @@ export const allPhrases = {
       lesson3: [
         {
           foreign: 'una cola para comprar las entradas',
-          english: 'a queue to buy tickets',
+          english: 'a queue to buy tickets', hard: true,
           workingOn: true,
         },
         {
