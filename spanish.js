@@ -213,6 +213,7 @@ export const allPhrases = {
         {
           foreign: 'Algunos les dicen a otros lo que hay que hacer.',
           english: 'Some tell others what to do.',
+          workingOn: true,
           hard: true,
         },
         {
@@ -392,7 +393,12 @@ export const allPhrases = {
       ],
       lesson18: [
         { foreign: 'Disculpa por lo del martes.', english: 'I’m sorry about Tuesday. (informal)' },
-        { foreign: 'un día feriado / un feriado', english: 'a holiday', hard: true },
+        {
+          foreign: 'un día feriado / un feriado',
+          english: 'a holiday',
+          workingOn: true,
+          hard: true,
+        },
         {
           foreign: 'Es para celebrar los cumpleaños de Washington y Lincoln.',
           english: 'It’s to celebrate the birthdays of Washington and Lincoln.',
@@ -403,7 +409,12 @@ export const allPhrases = {
         },
         { foreign: 'un carterista / una carterista', english: 'a pickpocket', hard: true },
         { foreign: 'bolsillo', english: 'pocket' },
-        { foreign: 'intentar hablar español', english: 'to try to speak Spanish' },
+        {
+          foreign: 'intentar hablar español',
+          english: 'to try to speak Spanish',
+          hard: true,
+          workingOn: true,
+        },
         { foreign: 'gritar', english: 'to scream / shout' },
         { foreign: 'lugar', english: 'place' },
         { foreign: 'lugares turísticos', english: 'tourist attractions' },
@@ -509,7 +520,7 @@ export const allPhrases = {
         { foreign: 'el jugo', english: 'the juice' },
       ],
       lesson6: [
-        { foreign: 'el garaje', english: 'the garage', hard: true },
+        { foreign: 'el garaje', english: 'the garage', workingOn: true, hard: true },
         { foreign: 'el guepardo', english: 'the cheetah', hard: true },
         { foreign: 'la hamburguesa', english: 'the hamburger' },
         { foreign: 'la guitarra', english: 'the guitar' },
@@ -965,7 +976,12 @@ export const allPhrases = {
           hard: true,
         },
         { foreign: 'Ya no estamos en casa.', english: 'We are not home anymore.', hard: true },
-        { foreign: 'Todavía no estamos en casa.', english: 'We are not home yet.', hard: true },
+        {
+          foreign: 'Todavía no estamos en casa.',
+          english: 'We are not home yet.',
+          workingOn: true,
+          hard: true,
+        },
         { foreign: 'Todavía estamos en casa.', english: 'We are still home.', hard: true },
       ],
     },
@@ -1721,7 +1737,7 @@ export const allPhrases = {
         { foreign: 'el codo', english: 'the elbow' },
         { foreign: 'la espalda', english: 'the back' },
         { foreign: 'la cintura', english: 'the waist' },
-        { foreign: 'el trasero', english: 'the butt', hard: true },
+        { foreign: 'el trasero', english: 'the butt', workingOn: true, hard: true },
         { foreign: 'la pantorrilla', english: 'the calf' },
         { foreign: 'el talón', english: 'the heel' },
       ],
@@ -1817,7 +1833,7 @@ export const allPhrases = {
         { foreign: 'una billetera', english: 'a wallet' },
       ],
       lesson3: [
-        { foreign: 'abrigo', english: 'coat', hard: true },
+        { foreign: 'abrigo', english: 'coat', hard: true, workingOn: true },
         { foreign: 'un pijama (j sounds like y)', english: 'a pair of pajamas' },
         { foreign: 'chaleco', english: 'vest' },
         { foreign: 'mochila', english: 'backpack', hard: true },
@@ -1924,7 +1940,7 @@ export const allPhrases = {
       lesson1: [
         { foreign: 'la alfombra', english: 'the rug', hard: true, workingOn: true },
         { foreign: 'los cojines', english: 'the cushions', workingOn: true },
-        { foreign: 'los jarrones', english: 'the vases', workingOn: true },
+        { foreign: 'los jarrones', english: 'the vases', hard: true, workingOn: true },
         { foreign: 'la cortina', english: 'the curtain', workingOn: true },
         { foreign: 'el adorno', english: 'the decoration / ornament', workingOn: true },
         { foreign: 'el techo', english: 'the ceiling / roof', workingOn: true },
