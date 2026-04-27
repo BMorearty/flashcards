@@ -520,7 +520,7 @@ export const allPhrases = {
         { foreign: 'el jugo', english: 'the juice' },
       ],
       lesson6: [
-        { foreign: 'el garaje', english: 'the garage', workingOn: true, hard: true },
+        { foreign: 'el garaje', english: 'the garage', hard: true },
         { foreign: 'el guepardo', english: 'the cheetah', hard: true },
         { foreign: 'la hamburguesa', english: 'the hamburger' },
         { foreign: 'la guitarra', english: 'the guitar' },
@@ -991,7 +991,6 @@ export const allPhrases = {
         {
           foreign: 'Todavía no estamos en casa.',
           english: 'We are not home yet.',
-          workingOn: true,
           hard: true,
         },
         { foreign: 'Todavía estamos en casa.', english: 'We are still home.', hard: true },
@@ -1683,14 +1682,13 @@ export const allPhrases = {
           foreign: 'Suena genial, creo que me apunto.',
           english: 'That sounds great; sign me up.',
           hard: true,
-          workingOn: true,
         },
         { foreign: 'Será divertido.', english: 'It will be fun.' },
       ],
       lesson8: [
         { foreign: 'conmigo', english: 'with me' },
         { foreign: 'contigo', english: 'with you (informal)' },
-        { foreign: 'la boda', english: 'the wedding', workingOn: true },
+        { foreign: 'la boda', english: 'the wedding' },
         { foreign: 'bloqueador solar / protector solar', english: 'sunscreen' },
         { foreign: 'colores chillones', english: 'bright (loud) colors' },
         { foreign: 'me pongo', english: 'I put on (present tense)' },
@@ -1699,8 +1697,8 @@ export const allPhrases = {
         { foreign: 'azul verdoso', english: 'bluegreen' },
         { foreign: 'ser humano / humana', english: 'human being' },
         { foreign: 'seres humanos', english: 'human beings' },
-        { foreign: 'acostado / a', english: 'lying down', workingOn: true },
-        { foreign: 'sentado / a', english: 'sitting down', hard: true, workingOn: true },
+        { foreign: 'acostado / a', english: 'lying down' },
+        { foreign: 'sentado / a', english: 'sitting down', hard: true },
         { foreign: 'lentes de contacto', english: 'contact lenses' },
         { foreign: 'muletas', english: 'crutches', hard: true },
       ],
@@ -1897,6 +1895,11 @@ export const allPhrases = {
         { foreign: 'tener el cabello rizado', english: 'to have curly hair', hard: true },
         { foreign: 'tener el cabello ondulado', english: 'to have wavy hair' },
         { foreign: 'tener el cabello liso', english: 'to have straight hair' },
+        {
+          foreign: 'tener el cabello crespo',
+          english: 'to have coily / frizzy hair',
+          workingOn: true,
+        },
       ],
       lesson3: [
         { foreign: 'tener/usar/llevar barba', english: 'to have a beard' },
@@ -1936,7 +1939,7 @@ export const allPhrases = {
         { foreign: 'la estantería', english: 'the bookshelf', hard: true, workingOn: true },
         { foreign: 'la chimenea', english: 'the fireplace' },
         { foreign: 'la ventana panorámica', english: 'the panoramic window' },
-        { foreign: 'el escritorio', english: 'the desk', workingOn: true },
+        { foreign: 'el escritorio', english: 'the desk' },
         { foreign: 'el portalápiz', english: 'the pencil holder', hard: true },
       ],
     },
@@ -1962,7 +1965,7 @@ export const allPhrases = {
         { foreign: 'cierto', english: 'true (not starting with a v)' },
         { foreign: 'sobre todo', english: 'above all', workingOn: true },
         { foreign: 'Me encantan los deportes.', english: 'I love sports.' },
-        { foreign: 'jugador', english: 'player (of a sport)', workingOn: true },
+        { foreign: 'jugador', english: 'player (of a sport)' },
         {
           foreign: 'Creo que ella puede lograrlo.',
           english: 'I think she can achieve it.',
@@ -1997,7 +2000,6 @@ export const allPhrases = {
           foreign: 'Mi mamá esta yendo a hacer la compra al mercado.',
           english: 'My mom is going to the market to do the shopping.',
           hard: true,
-          workingOn: true,
         },
         {
           foreign:
@@ -2064,7 +2066,6 @@ export const allPhrases = {
         {
           foreign: 'Tengo que cambiar el destino.',
           english: 'I have to change the destination.',
-          workingOn: true,
         },
         { foreign: 'servicial', english: 'helpful', workingOn: true },
         {
@@ -2120,6 +2121,17 @@ export const allPhrases = {
         },
         { foreign: 'creer', english: 'to believe', workingOn: true },
         { foreign: 'crear', english: 'to create', workingOn: true },
+        {
+          foreign: 'Yo me estoy alistando para mi cita.',
+          english: 'I am getting ready for my date.',
+          workingOn: true,
+        },
+        { foreign: 'por cierto', english: 'by the way', workingOn: true },
+        { foreign: 'hablando del tiempo', english: 'speaking of the time', workingOn: true },
+        {
+          foreign: 'No puedo creer que ya casi es hora.',
+          english: 'I can’t believe it’s almost time.',
+        },
       ],
     },
   },
