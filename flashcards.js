@@ -494,21 +494,25 @@ async function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
           : showEnglish;
   // Keep showing the same phrase in the same language during this run
   englishPhrases.set(randomPhrase.foreign, englishNow);
-  console.log(
-    `  ${chalk.yellow((englishNow ? randomPhrase.english : randomPhrase.foreign).replaceAll(/\| */g, '\n  '))}`,
-  );
+  const currentPhrase = englishNow ? randomPhrase.english : randomPhrase.foreign;
+  console.log(`  ${chalk.yellow(currentPhrase.replaceAll(/\| */g, '\n  '))}`);
   const shownPhrasesCounter = Math.min(shownPhrases.size, phrases.length);
   const anyMoreUnseen = shownPhrases.size < phrases.length;
   const showUnseenPrompt = anyMoreUnseen ? `Show (${letter('U')})nseen, ` : '';
   const morePrompts = `${prevNextPrompt}${showUnseenPrompt}`;
-  const prompt = `[${wrongPhrases.length}W][${shownPhrasesCounter}/${phrases.length}] Enter: reveal, (${letter('B')})ack, (${letter('Q')})uit,${morePrompts}\nLast was (${letter('H')})ard / (${letter('NH')}) / (${letter('WO')})rking On / (${letter('NWO')}) / (${letter('W')})rong / (${letter('R')})ight: `;
+  const prompt =
+    `[${wrongPhrases.length}W][${shownPhrasesCounter}/${phrases.length}] ` +
+    `Enter: reveal, (${letter('B')})ack, (${letter('Q')})uit,${morePrompts}\n` +
+    `Last was (${letter('H')})ard / (${letter('NH')}) / (${letter('WO')})rking On / ` +
+    `(${letter('NWO')}) / (${letter('W')})rong / (${letter('R')})ight: `;
   const winWidth = process.stdout.columns;
   const wrappedPrompt = wrapPrompt(prompt, winWidth);
   const moveUpAndClearLine = '\u001b[1A\u001b[K';
+  const linesInPhrase = (currentPhrase.match(/\|/g) || []).length + 1;
   const linesInPrompt = (wrappedPrompt.match(/\n/g) || []).length + 1;
 
   function replacePromptWith(message) {
-    console.log(`${moveUpAndClearLine.repeat(linesInPrompt + 1)}${message}`);
+    console.log(`${moveUpAndClearLine.repeat(linesInPhrase + linesInPrompt)}${message}`);
   }
 
   rl.question(wrappedPrompt, async (answer) => {
