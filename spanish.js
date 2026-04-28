@@ -129,6 +129,8 @@ export const allPhrases = {
         { foreign: 'adentro', english: 'inside', hard: true },
         { foreign: 'juntos', english: 'together' },
         { foreign: 'novios', english: 'boyfriend and girlfriend / a couple' },
+        { foreign: 'novio', english: 'boyfriend', workingOn: true },
+        { foreign: 'novia', english: 'girlfriend', workingOn: true },
         { foreign: 'mensajes de audio', english: 'audio messages' },
         { foreign: 'todo el día', english: 'all day' },
         { foreign: 'Se extrañan mucho.', english: 'They miss each other very much.' },
@@ -393,12 +395,7 @@ export const allPhrases = {
       ],
       lesson18: [
         { foreign: 'Disculpa por lo del martes.', english: 'I’m sorry about Tuesday. (informal)' },
-        {
-          foreign: 'un día feriado / un feriado',
-          english: 'a holiday',
-          workingOn: true,
-          hard: true,
-        },
+        { foreign: 'un día feriado / un feriado', english: 'a holiday', hard: true },
         {
           foreign: 'Es para celebrar los cumpleaños de Washington y Lincoln.',
           english: 'It’s to celebrate the birthdays of Washington and Lincoln.',
@@ -409,12 +406,7 @@ export const allPhrases = {
         },
         { foreign: 'un carterista / una carterista', english: 'a pickpocket', hard: true },
         { foreign: 'bolsillo', english: 'pocket' },
-        {
-          foreign: 'intentar hablar español',
-          english: 'to try to speak Spanish',
-          hard: true,
-          workingOn: true,
-        },
+        { foreign: 'intentar hablar español', english: 'to try to speak Spanish', hard: true },
         { foreign: 'gritar', english: 'to scream / shout' },
         { foreign: 'lugar', english: 'place' },
         { foreign: 'lugares turísticos', english: 'tourist attractions' },
@@ -988,11 +980,7 @@ export const allPhrases = {
           hard: true,
         },
         { foreign: 'Ya no estamos en casa.', english: 'We are not home anymore.', hard: true },
-        {
-          foreign: 'Todavía no estamos en casa.',
-          english: 'We are not home yet.',
-          hard: true,
-        },
+        { foreign: 'Todavía no estamos en casa.', english: 'We are not home yet.', hard: true },
         { foreign: 'Todavía estamos en casa.', english: 'We are still home.', hard: true },
       ],
     },
@@ -1670,7 +1658,6 @@ export const allPhrases = {
           foreign: '¿Al final vas de vacaciones a Alaska?',
           english: 'Are you going on vacation to Alaska after all? (informal)',
           hard: true,
-          workingOn: true,
         },
         { foreign: 'He cambiado de idea.', english: 'I’ve changed my mind.' },
         { foreign: 'comprarse', english: 'to buy for oneself' },
@@ -1914,12 +1901,7 @@ export const allPhrases = {
         { foreign: 'viejito / viejita', english: 'not offensive little old man / little old lady' },
         { foreign: 'cana / canas', english: 'gray hair (sing. and plural)' },
         { foreign: 'arrugas', english: 'wrinkles', hard: true, workingOn: true },
-        {
-          foreign: 'Es de estatura promedio.',
-          english: 'He is of average height.',
-          hard: true,
-          workingOn: true,
-        },
+        { foreign: 'Es de estatura promedio.', english: 'He is of average height.', hard: true },
         {
           foreign: 'Mi amigo Jake tiene rasgos asiáticos.',
           english: 'My friend Jake has Asian features.',
@@ -1929,7 +1911,7 @@ export const allPhrases = {
     chapter28: {
       name: 'Furnishings',
       lesson1: [
-        { foreign: 'la alfombra', english: 'the rug', hard: true, workingOn: true },
+        { foreign: 'la alfombra', english: 'the rug', hard: true },
         { foreign: 'los cojines', english: 'the cushions' },
         { foreign: 'los jarrones', english: 'the vases', hard: true },
         { foreign: 'la cortina', english: 'the curtain' },
@@ -1949,18 +1931,16 @@ export const allPhrases = {
         {
           foreign: 'Te contaré un poco sobre mí y mi familia.',
           english: 'I’ll tell you a little bit about myself and my family. (informal)',
-          workingOn: true,
         },
         { foreign: 'guapo', english: 'handsome' },
         { foreign: 'guapa', english: 'hot, attractive, or well-dressed (fem.)' },
         { foreign: 'Está en forma.', english: 'He is in shape.' },
         { foreign: 'amistoso / amistosa', english: 'friendly' },
-        { foreign: 'actividades al aire libre', english: 'outdoor activities', workingOn: true },
+        { foreign: 'actividades al aire libre', english: 'outdoor activities' },
         {
           foreign: 'Planeamos ir de viaje a Francia| y hemos invitado a Marta, la mamá de David.',
           english: 'We plan to go on a trip to France| and we have invited Marta, David’s mother.',
           hard: true,
-          workingOn: true,
         },
         { foreign: 'cierto', english: 'true (not starting with a v)' },
         { foreign: 'sobre todo', english: 'above all', workingOn: true },
@@ -2044,7 +2024,7 @@ export const allPhrases = {
         },
         { foreign: 'ya recuerdo', english: 'now I remember', workingOn: true },
         { foreign: 'No es ese el problema.', english: 'That’s not the problem.', workingOn: true },
-        { foreign: 'hubo', english: 'there was/there were', workingOn: true },
+        { foreign: 'hubo', english: 'there was/there were' },
         {
           foreign: 'Hubo dos veces en las que usé español| con personas que no hablaban inglés.',
           english:
@@ -2063,10 +2043,7 @@ export const allPhrases = {
           english: 'I don’t remember what she said.',
           workingOn: true,
         },
-        {
-          foreign: 'Tengo que cambiar el destino.',
-          english: 'I have to change the destination.',
-        },
+        { foreign: 'Tengo que cambiar el destino.', english: 'I have to change the destination.' },
         { foreign: 'servicial', english: 'helpful', workingOn: true },
         {
           foreign: '¿Por dónde quieres empezar?',
@@ -2078,7 +2055,6 @@ export const allPhrases = {
         {
           foreign: 'Alejandra está describiendo a su esposo, David, y a su hijo, Javier.',
           english: 'Alejandra is describing her husband, David, and her son, Javier.',
-          workingOn: true,
         },
         { foreign: 'Eso creo.', english: 'I think so.', workingOn: true },
       ],
@@ -2131,6 +2107,7 @@ export const allPhrases = {
         {
           foreign: 'No puedo creer que ya casi es hora.',
           english: 'I can’t believe it’s almost time.',
+          workingOn: true,
         },
       ],
     },
