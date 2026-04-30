@@ -697,7 +697,7 @@ export const allPhrases = {
       lesson2: [
         {
           foreign:
-            'ser, preterite tense:' +
+            'ser, tiempo pretérito:' +
             '| (yo) fui' +
             '| (tú) fuiste' +
             '| (él, ella, usted) fue' +
@@ -710,7 +710,7 @@ export const allPhrases = {
         },
         {
           foreign:
-            'ir, preterite tense:' +
+            'ir, tiempo pretérito:' +
             '| (yo) fui' +
             '| (tú) fuiste' +
             '| (él, ella, usted) fue' +
@@ -770,7 +770,7 @@ export const allPhrases = {
         {
           foreign: '-ar, -er, -or (masc. or fem.)',
           english:
-            'Masculine. Ejemplo: el titular (owner), el computador, el taller (shop). Excepción: la flor (flower).',
+            'Masculine. Ejemplo: el titular (owner), el computador, el taller (workshop). Excepción: la flor (flower).',
         },
         {
           foreign: '-ma (masc. or fem.)',
@@ -825,7 +825,7 @@ export const allPhrases = {
         { foreign: 'la foto', english: 'the photo' },
         { foreign: 'el titular', english: 'the owner', workingOn: true, hard: true },
         { foreign: 'el computador/la computadora', english: 'the computer' },
-        { foreign: 'el taller', english: 'the shop', workingOn: true, hard: true },
+        { foreign: 'el taller', english: 'the workshop', workingOn: true, hard: true },
         { foreign: 'la flor', english: 'the flower' },
         { foreign: 'el clima', english: 'the weather (climate)' },
         { foreign: 'el problema', english: 'the problem' },
@@ -1016,7 +1016,12 @@ export const allPhrases = {
         { foreign: 'Tengo mucha hambre.', english: 'I am very hungry.' },
         { foreign: 'Tengo sueño.', english: 'I am sleepy.' },
         { foreign: 'Tengo frío.', english: 'I am cold.' },
-        { foreign: 'Tengo un resfriado.', english: 'I have a cold.', workingOn: true, hard: true },
+        {
+          foreign: 'Tengo un resfriado / resfrío.',
+          english: 'I have a cold.',
+          workingOn: true,
+          hard: true,
+        },
         { foreign: 'Yo tengo mucha suerte.', english: 'I am very lucky.' },
         { foreign: 'Ella tiene pereza.', english: 'She is lazy.', workingOn: true, hard: true },
         { foreign: 'El niño tiene dos años.', english: 'The child is two years old.' },
@@ -1923,12 +1928,12 @@ export const allPhrases = {
       ],
       lesson3: [
         { foreign: 'tener/usar/llevar barba', english: 'to have a beard' },
-        { foreign: 'tener /usar/llevar bigotes', english: 'to have a mustache' },
-        { foreign: 'tener /usar/llevar lentes / gafas', english: 'to wear glasses' },
-        { foreign: 'tener /usar/llevar moño', english: 'to wear a bun' },
+        { foreign: 'tener/usar/llevar bigotes', english: 'to have a mustache' },
+        { foreign: 'tener/usar/llevar lentes/gafas', english: 'to wear glasses' },
+        { foreign: 'tener/usar/llevar moño', english: 'to wear a bun' },
         { foreign: 'tener/usar/llevar cola de caballo / coleta', english: 'to wear a ponytail' },
         {
-          foreign: 'tener /usar/llevar crineja / trenza',
+          foreign: 'tener/usar/llevar crineja/trenza',
           english: 'to have braids',
           workingOn: true,
           hard: true,
@@ -1956,7 +1961,7 @@ export const allPhrases = {
         { foreign: 'el adorno', english: 'the decoration / ornament' },
         { foreign: 'el techo', english: 'the ceiling / roof' },
         { foreign: 'la persiana', english: 'the blind (window covering)' },
-        { foreign: 'la estantería', english: 'the bookshelf', hard: true, workingOn: true },
+        { foreign: 'la estantería', english: 'the bookshelf', hard: true },
         { foreign: 'la chimenea', english: 'the fireplace' },
         { foreign: 'la ventana panorámica', english: 'the panoramic window' },
         { foreign: 'el escritorio', english: 'the desk' },
@@ -1981,7 +1986,7 @@ export const allPhrases = {
           hard: true,
         },
         { foreign: 'cierto', english: 'true (not starting with a v)' },
-        { foreign: 'sobre todo', english: 'above all', workingOn: true },
+        { foreign: 'sobre todo', english: 'above all' },
         { foreign: 'Me encantan los deportes.', english: 'I love sports.' },
         { foreign: 'jugador', english: 'player (of a sport)' },
         {
@@ -2140,7 +2145,7 @@ export const allPhrases = {
           english: 'I am getting ready for my date.',
           workingOn: true,
         },
-        { foreign: 'por cierto', english: 'by the way', workingOn: true },
+        { foreign: 'por cierto', english: 'by the way', hard: true, workingOn: true },
         { foreign: 'hablando del tiempo', english: 'speaking of the time', workingOn: true },
         {
           foreign: 'No puedo creer que ya casi es hora.',
