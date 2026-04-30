@@ -1524,6 +1524,12 @@ export const allPhrases = {
         { foreign: 'veinticuatro', english: 'twenty-four' },
         { foreign: 'treinta', english: 'thirty' },
         { foreign: 'cuarenta', english: 'forty' },
+        { foreign: 'cincuenta', english: 'fifty', workingOn: true },
+        { foreign: 'cincuenta y uno', english: 'fifty-one', workingOn: true },
+        { foreign: 'sesenta', english: 'sixty', workingOn: true },
+        { foreign: 'sesenta y cinco', english: 'fifty-five', workingOn: true },
+        { foreign: 'setenta', english: 'seventy', workingOn: true },
+        { foreign: 'setenta y tres', english: 'seventy-three', workingOn: true },
       ],
     },
     chapter23: {
@@ -2632,7 +2638,11 @@ export const allPhrases = {
         },
       ],
       lesson6: [
-        { foreign: '¿Qué edad tiene usted?', english: 'How old are you? (formal)' },
+        {
+          foreign: '¿Qué edad tiene usted?',
+          english: 'How old are you? (formal)',
+          workingOn: true,
+        },
         { foreign: 'edad (fem.)', english: 'age' },
         { foreign: '¿Qué edad....?', english: 'How old...?' },
         { foreign: '¿Qué edad tienes?', english: 'How old are you? (informal)' },
@@ -2653,6 +2663,31 @@ export const allPhrases = {
         {
           foreign: 'Yo tengo veintinueve años. ¿Qué edad tiene usted?',
           english: 'I’m twenty-nine years old. How old are you? (formal)',
+        },
+      ],
+      lesson7: [
+        {
+          foreign: 'Su habitación es la cinquenta.',
+          english: 'Your room is number fifty. (formal)',
+          workingOn: true,
+        },
+        { foreign: 'habitación', english: 'room', workingOn: true },
+        { foreign: 'hotel', english: 'hotel', workingOn: true },
+        { foreign: 'El hotel tiene gimnasio.', english: 'The hotel has a gym.', workingOn: true },
+        {
+          foreign: 'El hotel tiene sesenta y cinco habitaciones y un gimnasio.',
+          english: 'The hotel has sixty-five rooms and a gym.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Disculpe, ¿dónde está la habitación 60?',
+          english: 'Excuse me, where is room 60? (formal)',
+          workingOn: true,
+        },
+        {
+          foreign: 'Mi habitación es la setenta y tres.',
+          english: 'My room is number seventy-three.',
+          workingOn: true,
         },
       ],
     },
