@@ -560,29 +560,45 @@ async function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
       }
     }
     if (answer === 'h' && lastPhrase) {
-      markPhraseAsHard(lastPhrase).then(() => {
-        replacePromptWith(chalk.magentaBright(`    Marked as hard`));
+      markPhraseAsHard(lastPhrase).then((found) => {
+        replacePromptWith(
+          found
+            ? chalk.magentaBright(`    Marked as hard`)
+            : chalk.red(`    Warning: could not find phrase in source file`),
+        );
         showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
       });
       return;
     }
     if (answer === 'nh' && lastPhrase) {
-      unmarkPhraseAsHard(lastPhrase).then(() => {
-        replacePromptWith(chalk.magentaBright(`    Marked as not hard`));
+      unmarkPhraseAsHard(lastPhrase).then((found) => {
+        replacePromptWith(
+          found
+            ? chalk.magentaBright(`    Marked as not hard`)
+            : chalk.red(`    Warning: could not find phrase in source file`),
+        );
         showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
       });
       return;
     }
     if (answer === 'wo' && lastPhrase) {
-      markPhraseAsWorkingOn(lastPhrase).then(() => {
-        replacePromptWith(chalk.blueBright(`    Marked as working on`));
+      markPhraseAsWorkingOn(lastPhrase).then((found) => {
+        replacePromptWith(
+          found
+            ? chalk.blueBright(`    Marked as working on`)
+            : chalk.red(`    Warning: could not find phrase in source file`),
+        );
         showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
       });
       return;
     }
     if (answer === 'nwo' && lastPhrase) {
-      unmarkPhraseAsWorkingOn(lastPhrase).then(() => {
-        replacePromptWith(chalk.blueBright(`    Unmarked as working on`));
+      unmarkPhraseAsWorkingOn(lastPhrase).then((found) => {
+        replacePromptWith(
+          found
+            ? chalk.blueBright(`    Unmarked as working on`)
+            : chalk.red(`    Warning: could not find phrase in source file`),
+        );
         showNextFlashcard(randomPhrase, showEnglish, prevNextPrompt);
       });
       return;
@@ -637,12 +653,14 @@ function buildSourcePatternForText(text) {
   // Build single-line pattern with or without pipes in the text: 'text' or 'text| more text'
   const singleLinePattern = `'${escapeRegex(text)}'`;
 
-  // Build multi-line pattern ('part1' + '| part2' + '| part3')
+  // Build multi-line pattern where | can be at end of previous string or start of next:
+  //   'part1|' + 'part2'  OR  'part1' + '|part2'
   const parts = text.split('|');
-  let multiLinePattern = `'${escapeRegex(parts[0])}'`;
+  let multiLinePattern = `'${escapeRegex(parts[0])}`;
   for (let i = 1; i < parts.length; i++) {
-    multiLinePattern += `\\s*\\+\\s*'\\|${escapeRegex(parts[i])}'`;
+    multiLinePattern += `(?:\\|'\\s*\\+\\s*'|'\\s*\\+\\s*'\\|)${escapeRegex(parts[i])}`;
   }
+  multiLinePattern += `'`;
 
   // Return pattern that matches either format
   // Try multi-line first (more specific), then single-line
@@ -653,7 +671,7 @@ function buildSourcePatternForText(text) {
 async function addPhraseProperty(phrase, property) {
   // Check if property is already set in memory
   if (phrase[property]) {
-    return;
+    return true;
   }
 
   const filePath = `./${language}.js`;
@@ -669,23 +687,30 @@ async function addPhraseProperty(phrase, property) {
     's',
   );
 
+  let found = false;
   content = content.replace(regex, (match) => {
+    found = true;
     if (match.includes(`${property}:`)) {
-      return match; // Already has property, don't modify
+      return match;
     } else {
       return match + `, ${property}: true`;
     }
   });
 
+  if (!found) {
+    return false;
+  }
+
   fs.writeFileSync(filePath, content, 'utf8');
   phrase[property] = true;
+  return true;
 }
 
 // Remove a property from a phrase in the source file
 async function removePhraseProperty(phrase, property) {
   // Check if property is already unset in memory
   if (!phrase[property]) {
-    return;
+    return true;
   }
 
   const filePath = `./${language}.js`;
@@ -701,32 +726,39 @@ async function removePhraseProperty(phrase, property) {
     's',
   );
 
-  content = content.replace(regex, (match, beforeProperty, propertyPart) => {
-    return beforeProperty; // Remove the property part
+  let found = false;
+  content = content.replace(regex, (match, beforeProperty) => {
+    found = true;
+    return beforeProperty;
   });
+
+  if (!found) {
+    return false;
+  }
 
   fs.writeFileSync(filePath, content, 'utf8');
   delete phrase[property];
+  return true;
 }
 
 // Add hard: true to a phrase in the language file and in memory
 async function markPhraseAsHard(phrase) {
-  await addPhraseProperty(phrase, 'hard');
+  return addPhraseProperty(phrase, 'hard');
 }
 
 // Remove hard: true from a phrase in the language file and in memory
 async function unmarkPhraseAsHard(phrase) {
-  await removePhraseProperty(phrase, 'hard');
+  return removePhraseProperty(phrase, 'hard');
 }
 
 // Add workingOn: true to a phrase in the language file and in memory
 async function markPhraseAsWorkingOn(phrase) {
-  await addPhraseProperty(phrase, 'workingOn');
+  return addPhraseProperty(phrase, 'workingOn');
 }
 
 // Remove workingOn: true from a phrase in the language file and in memory
 async function unmarkPhraseAsWorkingOn(phrase) {
-  await removePhraseProperty(phrase, 'workingOn');
+  return removePhraseProperty(phrase, 'workingOn');
 }
 
 // Calculate the previous lesson based on the current unit/chapter/lesson.
