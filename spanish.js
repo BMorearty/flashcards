@@ -3,6 +3,8 @@
   por = because of
 
   además: besides
+  por cierto: by the way
+  en la actualidad: currently
  */
 
 export const allPhrases = {
@@ -264,7 +266,6 @@ export const allPhrases = {
         {
           foreign: 'Nos parece mala / mal tu idea.',
           english: 'We don’t like your idea.',
-          workingOn: true,
           hard: true,
         },
         { foreign: 'la contaminación', english: 'pollution' },
@@ -490,7 +491,7 @@ export const allPhrases = {
         { foreign: 'el/la bebé', english: 'the baby' },
       ],
       lesson3: [
-        { foreign: 'la campana', english: 'the bell', workingOn: true, hard: true },
+        { foreign: 'la campana', english: 'the bell', hard: true },
         { foreign: 'el queso', english: 'the cheese' },
         { foreign: 'el kilo', english: 'the kilo' },
         { foreign: 'el conejo', english: 'the rabbit', hard: true },
@@ -691,7 +692,6 @@ export const allPhrases = {
             '| (vosotros / vosotras) empezáis' +
             '| (ellos / ellas / ustedes) empiezan',
           english: 'to start, present tense conjugation',
-          workingOn: true,
         },
       ],
       lesson2: [
@@ -706,7 +706,6 @@ export const allPhrases = {
             '| (ellos / ellas / ustedes) fueron',
           english:
             'to be (DOCTOR: date/day, occupation, characteristic/class, time, origin, relation/religion), preterite tense:| I was, you were, etc.',
-          workingOn: true,
         },
         {
           foreign:
@@ -718,7 +717,6 @@ export const allPhrases = {
             '| (vosotros / vosotras) fuisteis' +
             '| (ellos / ellas / ustedes) fueron',
           english: 'to go, preterite tense: I went, you went, etc.',
-          workingOn: true,
         },
       ],
     },
@@ -994,12 +992,7 @@ export const allPhrases = {
           hard: true,
         },
         { foreign: 'Ya no estamos en casa.', english: 'We are not home anymore.', hard: true },
-        {
-          foreign: 'Todavía no estamos en casa.',
-          english: 'We are not home yet.',
-          workingOn: true,
-          hard: true,
-        },
+        { foreign: 'Todavía no estamos en casa.', english: 'We are not home yet.', hard: true },
         { foreign: 'Todavía estamos en casa.', english: 'We are still home.', hard: true },
       ],
     },
@@ -1290,8 +1283,8 @@ export const allPhrases = {
           hard: true,
         },
         {
-          foreign: 'Qué les pasa a los niños? Están nerviosos porque tienen un examen.',
-          english: 'What’s wrong with the children? They’re nervous because they have an exam.',
+          foreign: 'Qué les pasa a los niños?| Están nerviosos porque tienen un examen.',
+          english: 'What’s wrong with the children?| They’re nervous because they have an exam.',
           workingOn: true,
           hard: true,
         },
@@ -1389,12 +1382,7 @@ export const allPhrases = {
           foreign: 'Siempre digo que poner una alarma no está de más.',
           english: 'I always say that it can’t hurt to set an alarm.',
         },
-        {
-          foreign: 'un hueso duro de roer',
-          english: 'a tough nut to crack',
-          hard: true,
-          workingOn: true,
-        },
+        { foreign: 'un hueso duro de roer', english: 'a tough nut to crack', hard: true },
       ],
     },
     chapter19: {
@@ -1456,7 +1444,7 @@ export const allPhrases = {
           english: 'university student',
         },
         { foreign: 'gerente (heiREHNtay)', english: 'manager', hard: true },
-        { foreign: 'juez / jueza', english: 'judge', workingOn: true, hard: true },
+        { foreign: 'juez / jueza', english: 'judge', hard: true },
         {
           foreign: 'maestro de primaria / maestra de primaria',
           english: 'elementary school teacher',
@@ -1527,7 +1515,7 @@ export const allPhrases = {
         { foreign: 'cincuenta', english: 'fifty', workingOn: true },
         { foreign: 'cincuenta y uno', english: 'fifty-one', workingOn: true },
         { foreign: 'sesenta', english: 'sixty', workingOn: true },
-        { foreign: 'sesenta y cinco', english: 'fifty-five', workingOn: true },
+        { foreign: 'sesenta y cinco', english: 'sixty-five', workingOn: true },
         { foreign: 'setenta', english: 'seventy', workingOn: true },
         { foreign: 'setenta y tres', english: 'seventy-three', workingOn: true },
       ],
@@ -1878,7 +1866,6 @@ export const allPhrases = {
             'puestos must agree with gender and plurality)',
           english: 'He is wearing blue jeans.',
           hard: true,
-          workingOn: true,
         },
         { foreign: 'blusa', english: 'blouse' },
       ],
@@ -1938,12 +1925,7 @@ export const allPhrases = {
         { foreign: 'tener/usar/llevar lentes/gafas', english: 'to wear glasses' },
         { foreign: 'tener/usar/llevar moño', english: 'to wear a bun' },
         { foreign: 'tener/usar/llevar cola de caballo / coleta', english: 'to wear a ponytail' },
-        {
-          foreign: 'tener/usar/llevar crineja/trenza',
-          english: 'to have braids',
-          workingOn: true,
-          hard: true,
-        },
+        { foreign: 'tener/usar/llevar crineja/trenza', english: 'to have braids', hard: true },
       ],
       lesson4: [
         { foreign: 'anciano / anciana', english: 'old man / woman' },
@@ -2036,14 +2018,8 @@ export const allPhrases = {
           english:
             'I am taking a cold shower to wake up.|Then, I dry my hair and get dressed to leave.',
           hard: true,
-          workingOn: true,
         },
-        {
-          foreign: 'suegro / suegra',
-          english: 'father-in-law / mother-in-law',
-          hard: true,
-          workingOn: true,
-        },
+        { foreign: 'suegro / suegra', english: 'father-in-law / mother-in-law', hard: true },
         { foreign: 'la computadora portátil', english: 'the laptop' },
       ],
       lesson3: [
@@ -2060,7 +2036,7 @@ export const allPhrases = {
         { foreign: 'tomar', english: 'to take' },
         { foreign: 'navegador', english: 'browser' },
         { foreign: 'buscador', english: 'search engine' },
-        { foreign: 'empezar', english: 'to begin', hard: true, workingOn: true },
+        { foreign: 'empezar', english: 'to begin', hard: true },
         { foreign: 'de nuevo', english: 'again' },
         { foreign: 'Es por eso que ...', english: 'That is why ...', hard: true },
         { foreign: 'rendirse', english: 'to give up', hard: true, workingOn: true },
@@ -2080,18 +2056,13 @@ export const allPhrases = {
             'There were two times when I used Spanish| with people who didn’t speak English.',
           workingOn: true,
         },
-        { foreign: 'una escala', english: 'a layover', workingOn: true },
-        { foreign: 'una tarjeta de embarque', english: 'a boarding pass', workingOn: true },
+        { foreign: 'una escala', english: 'a layover' },
+        { foreign: 'una tarjeta de embarque', english: 'a boarding pass' },
         {
           foreign: 'Él nos dijo que fuéramos a la oficina de Vueling.',
           english: 'He told us to go to the Vueling office.',
-          workingOn: true,
         },
-        {
-          foreign: 'No recuerdo lo que ella dijo.',
-          english: 'I don’t remember what she said.',
-          workingOn: true,
-        },
+        { foreign: 'No recuerdo lo que ella dijo.', english: 'I don’t remember what she said.' },
         { foreign: 'Tengo que cambiar el destino.', english: 'I have to change the destination.' },
         { foreign: 'servicial', english: 'helpful', workingOn: true },
         {
@@ -2108,25 +2079,12 @@ export const allPhrases = {
         { foreign: 'Eso creo.', english: 'I think so.', workingOn: true },
       ],
       lesson5: [
-        {
-          foreign: 'Jake está describiendo su casa.',
-          english: 'Jake is describing his house.',
-          workingOn: true,
-        },
-        {
-          foreign: 'Jake está describiendo una cabra.',
-          english: 'Jake is describing a goat.',
-          workingOn: true,
-        },
-        {
-          foreign: 'Jake está describiendo a su cabra.',
-          english: 'Jake is describing his goat.',
-          workingOn: true,
-        },
+        { foreign: 'Jake está describiendo su casa.', english: 'Jake is describing his house.' },
+        { foreign: 'Jake está describiendo una cabra.', english: 'Jake is describing a goat.' },
+        { foreign: 'Jake está describiendo a su cabra.', english: 'Jake is describing his goat.' },
         {
           foreign: 'Jake está describiendo a sus amigos.',
           english: 'Jake is describing his friends.',
-          workingOn: true,
         },
         {
           foreign: 'Estoy describiéndote a mi esposa.',
@@ -2151,8 +2109,14 @@ export const allPhrases = {
           english: 'I am getting ready for my date.',
           workingOn: true,
         },
-        { foreign: 'por cierto', english: 'by the way', hard: true, workingOn: true },
-        { foreign: 'hablando del tiempo', english: 'speaking of the time', workingOn: true },
+        {
+          foreign: 'por cierto',
+          english: 'by the way',
+          showEnglish: 'random',
+          hard: true,
+          workingOn: true,
+        },
+        { foreign: 'hablando del tiempo', english: 'speaking of the time' },
         {
           foreign: 'No puedo creer que ya casi es hora.',
           english: 'I can’t believe it’s almost time.',
@@ -2172,17 +2136,19 @@ export const allPhrases = {
         },
         { foreign: 'me han dicho', english: 'I’ve been told', workingOn: true },
         { foreign: 'párrafo', english: 'paragraph', workingOn: true },
-        {
-          foreign: 'el país luso',
-          english: 'Portugal nickname because of Lusitania',
-          workingOn: true,
-        },
+        { foreign: 'el país luso', english: 'Portugal nickname', workingOn: true },
         { foreign: 'destacar', english: 'to stand out', workingOn: true },
         { foreign: 'ciudad costera', english: 'coastal city', workingOn: true },
         { foreign: 'urbe', english: 'large city', workingOn: true },
-        { foreign: 'en la actualidad', english: 'currently', workingOn: true },
+        {
+          foreign: 'en la actualidad / actualmente',
+          english: 'currently',
+          showEnglish: 'random',
+          hard: true,
+          workingOn: true,
+        },
         { foreign: 'océano', english: 'ocean', workingOn: true },
-        { foreign: 'salpicar', english: 'to splash or sprinkle', workingOn: true },
+        { foreign: 'salpicar', english: 'to splash or sprinkle', hard: true, workingOn: true },
         { foreign: 'el único', english: 'the only one', workingOn: true },
         {
           foreign: 'un sinfín de sorpresas',
@@ -2721,7 +2687,7 @@ export const allPhrases = {
           workingOn: true,
         },
         { foreign: 'habitación', english: 'room', workingOn: true },
-        { foreign: 'hotel', english: 'hotel', workingOn: true },
+        { foreign: 'hotel', english: 'hotel' },
         { foreign: 'El hotel tiene gimnasio.', english: 'The hotel has a gym.', workingOn: true },
         {
           foreign: 'El hotel tiene sesenta y cinco habitaciones y un gimnasio.',
@@ -2729,8 +2695,8 @@ export const allPhrases = {
           workingOn: true,
         },
         {
-          foreign: 'Disculpe, ¿dónde está la habitación 60?',
-          english: 'Excuse me, where is room 60? (formal)',
+          foreign: 'Disculpe, ¿dónde está la habitación sesenta?',
+          english: 'Excuse me, where is room sixty? (formal)',
           workingOn: true,
         },
         {
