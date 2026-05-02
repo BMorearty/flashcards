@@ -4,6 +4,19 @@ import chalk from 'chalk';
 
 const language = 'spanish';
 let { allPhrases } = await import(`./${language}.js`);
+let lastKnownFileMtime = null;
+
+function getFileMtime() {
+  try {
+    return fs.statSync(`./${language}.js`).mtimeMs;
+  } catch {
+    return null;
+  }
+}
+
+function updateKnownFileMtime() {
+  lastKnownFileMtime = getFileMtime();
+}
 
 // Readline interface
 let rl;
@@ -24,8 +37,10 @@ function createReadlineInterface() {
 createReadlineInterface();
 checkDupes();
 addShowEnglish();
+updateKnownFileMtime();
 
-const menu = `
+function buildMenu() {
+  return `
 Choose an option:
 ${Object.keys(allPhrases)
   .filter((unit) => unit !== 'custom')
@@ -40,6 +55,7 @@ W. Working on
 C. Custom phrases
 Q. Quit
 `;
+}
 
 let currentUnit = null;
 let currentChapter = null;
@@ -156,9 +172,74 @@ function addShowEnglish() {
   }
 }
 
+async function rebuildPhrasesAfterReload() {
+  const newPhrases = [];
+  if (['all', 'hard', 'workingOn'].includes(currentUnit)) {
+    for (let unit in allPhrases) {
+      for (let chapter in allPhrases[unit]) {
+        if (chapter === 'name') continue;
+        for (let lesson in allPhrases[unit][chapter]) {
+          if (['name', 'showEnglish'].includes(lesson)) continue;
+          if (currentUnit === 'hard') {
+            newPhrases.push(...allPhrases[unit][chapter][lesson].filter((p) => p.hard));
+          } else if (currentUnit === 'workingOn') {
+            newPhrases.push(...allPhrases[unit][chapter][lesson].filter((p) => p.workingOn));
+          } else {
+            newPhrases.push(...allPhrases[unit][chapter][lesson]);
+          }
+        }
+      }
+    }
+  } else if (currentLesson === 'all') {
+    for (let lesson in allPhrases[currentUnit]?.[currentChapter] ?? {}) {
+      if (['name', 'showEnglish'].includes(lesson)) continue;
+      newPhrases.push(...allPhrases[currentUnit][currentChapter][lesson]);
+    }
+  } else if (currentLesson === 'hard') {
+    for (let lesson in allPhrases[currentUnit]?.[currentChapter] ?? {}) {
+      if (['name', 'showEnglish'].includes(lesson)) continue;
+      newPhrases.push(...allPhrases[currentUnit][currentChapter][lesson].filter((p) => p.hard));
+    }
+  } else if (currentLesson && allPhrases[currentUnit]?.[currentChapter]?.[currentLesson]) {
+    newPhrases.push(...allPhrases[currentUnit][currentChapter][currentLesson]);
+  }
+  phrases = newPhrases;
+
+  const phrasesByForeign = new Map(phrases.map((p) => [p.foreign, p]));
+  wrongPhrases = wrongPhrases.map((wp) => phrasesByForeign.get(wp.foreign)).filter(Boolean);
+  if (lastPhrase) {
+    lastPhrase = phrasesByForeign.get(lastPhrase.foreign) ?? null;
+  }
+}
+
+async function reloadAllPhrases() {
+  try {
+    const { allPhrases: newPhrases } = await import(`./${language}.js?v=${Date.now()}`);
+    allPhrases = newPhrases;
+    addShowEnglish();
+    updateKnownFileMtime();
+    console.log(chalk.cyan('  Reloaded phrase file.'));
+    if (currentUnit) {
+      await rebuildPhrasesAfterReload();
+    }
+  } catch (err) {
+    console.log(chalk.red(`Failed to reload phrase file: ${err.message}`));
+    updateKnownFileMtime();
+  }
+}
+
+async function checkAndReloadIfNeeded() {
+  const currentMtime = getFileMtime();
+  if (currentMtime !== null && currentMtime !== lastKnownFileMtime) {
+    lastKnownFileMtime = currentMtime;
+    await reloadAllPhrases();
+  }
+}
+
 // Show top-level menu
-function showMenu() {
-  console.log(menu);
+async function showMenu() {
+  await checkAndReloadIfNeeded();
+  console.log(buildMenu());
   rl.question('Your choice: ', (answer) => {
     if (answer.toLowerCase() === 'q') {
       rl.close();
@@ -465,6 +546,9 @@ async function showTextLineByLine(text, color, prefix) {
 
 // Show the next flashcard and wait for a user command.
 async function showNextFlashcard(phrase, showEnglish, prevNextPrompt) {
+  if (!phrase) {
+    await checkAndReloadIfNeeded();
+  }
   let randomPhrase;
   if (phrase) {
     randomPhrase = phrase;
@@ -702,6 +786,7 @@ async function addPhraseProperty(phrase, property) {
   }
 
   fs.writeFileSync(filePath, content, 'utf8');
+  updateKnownFileMtime();
   phrase[property] = true;
   return true;
 }
@@ -737,6 +822,7 @@ async function removePhraseProperty(phrase, property) {
   }
 
   fs.writeFileSync(filePath, content, 'utf8');
+  updateKnownFileMtime();
   delete phrase[property];
   return true;
 }
