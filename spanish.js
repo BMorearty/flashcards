@@ -2675,6 +2675,60 @@ export const allPhrases = {
           workingOn: true,
         },
       ],
+      lesson8: [
+        { foreign: 'ochenta', english: 'eighty', workingOn: true },
+        { foreign: 'ochenta y dos', english: 'eighty-two', workingOn: true },
+        { foreign: 'noventa', english: 'ninety', workingOn: true },
+        { foreign: 'noventa y tres', english: 'ninety-three', workingOn: true },
+        {
+          foreign: 'Mi hermana está en la habitación 93.',
+          english: 'My sister is in room 93.',
+          workingOn: true,
+        },
+        { foreign: 'cien', english: 'one hundred', workingOn: true },
+        {
+          foreign: 'Yo estoy en la habitación cien y mi hermana en la noventa y ocho.',
+          english: 'I’m in room one hundred and my sister in ninety-eight.',
+          workingOn: true,
+        },
+      ],
+      lesson9: [
+        {
+          foreign: 'La tarjeta azul es para la piscina.',
+          english: 'The blue card is for the swimming pool.',
+          workingOn: true,
+        },
+        { foreign: 'tarjeta', english: 'card', workingOn: true },
+        { foreign: 'piscina', english: 'pool', workingOn: true },
+        { foreign: 'para', english: 'for', workingOn: true },
+        {
+          foreign: 'Es para la piscina.',
+          english: 'It is for the swimming pool.',
+          workingOn: true,
+        },
+        { foreign: '¿De qué color...?', english: 'What color...?', workingOn: true },
+        { foreign: 'bandera', english: 'flag', workingOn: true },
+        {
+          foreign: '¿De qué color es la bandera?',
+          english: 'What color is the flag?',
+          workingOn: true,
+        },
+        {
+          foreign: '¿De qué color es la bandera de Chile?',
+          english: 'What color is the Chilean flag?',
+          workingOn: true,
+        },
+        {
+          foreign: 'La bandera es roja, blanca y azul.',
+          english: 'The flag is red, white, and blue.',
+          workingOn: true,
+        },
+        {
+          foreign: 'La bandera de Colombia es amarilla, azul y roja.',
+          english: 'The Colombian flag is yellow, blue and red.',
+          workingOn: true,
+        },
+      ],
     },
   },
 };
