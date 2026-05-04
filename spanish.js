@@ -448,7 +448,7 @@ export const allPhrases = {
         { foreign: 'Estoy conociendo a un chico.', english: 'I’m getting to know a guy.' },
         {
           foreign: 'Estoy comprendiendo esta lección.',
-          english: 'I am comprehending this lesson.',
+          english: 'I am comprehending this lesson.', workingOn: true,
         },
         { foreign: 'Estoy abriendo la puerta.', english: 'I am opening the door.' },
         { foreign: 'Estoy aprendiendo español.', english: 'I am learning Spanish.' },
