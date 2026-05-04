@@ -1365,29 +1365,7 @@ export const allPhrases = {
           english: 'My friend Jake has Asian features.',
         },
       ],
-    },
-  },
-  random: {
-    chapter1: {
-      name: 'Random vocab, Nov 2025-Feb 2026',
-      lesson1: [
-        { foreign: 'largo', english: 'long' },
-        { foreign: 'Tenga cuidado.', english: 'Be careful. (formal) (to a male)' },
-        { foreign: 'tiempo', english: 'weather (right now)' },
-        { foreign: '¿Qué significa esa palabra?', english: 'What does that word mean?' },
-        { foreign: 'Suena bien.', english: 'Sounds good.' },
-        { foreign: 'sin embargo', english: 'however', hard: true },
-        { foreign: 'ambos / ambas', english: 'both', hard: true },
-        {
-          foreign: 'entonces',
-          english: 'so / then (like French alors but more like "then")',
-          hard: true,
-        },
-        { foreign: 'estadounidense/es', english: 'American (singular and plural)' },
-        { foreign: 'hay', english: 'there is/there are' },
-        { foreign: 'Estoy retirado/a / jubilado/a.', english: 'I’m retired.', hard: true },
-      ],
-      lesson2: [
+      lesson5: [
         { foreign: 'Buen día.', english: 'Good day.' },
         { foreign: 'caballero', english: 'gentleman' },
         { foreign: 'señor', english: 'sir / Mr.' },
@@ -1440,7 +1418,29 @@ export const allPhrases = {
         { foreign: 'Nos vemos pronto.', english: 'See you soon.' },
         { foreign: 'Nos vemos mañana.', english: 'See you tomorrow.' },
       ],
-      lesson3: [
+    },
+  },
+  random: {
+    chapter1: {
+      name: 'Random vocab, Nov 2025-Feb 2026',
+      lesson1: [
+        { foreign: 'largo', english: 'long' },
+        { foreign: 'Tenga cuidado.', english: 'Be careful. (formal) (to a male)' },
+        { foreign: 'tiempo', english: 'weather (right now)' },
+        { foreign: '¿Qué significa esa palabra?', english: 'What does that word mean?' },
+        { foreign: 'Suena bien.', english: 'Sounds good.' },
+        { foreign: 'sin embargo', english: 'however', hard: true },
+        { foreign: 'ambos / ambas', english: 'both', hard: true },
+        {
+          foreign: 'entonces',
+          english: 'so / then (like French alors but more like "then")',
+          hard: true,
+        },
+        { foreign: 'estadounidense/es', english: 'American (singular and plural)' },
+        { foreign: 'hay', english: 'there is/there are' },
+        { foreign: 'Estoy retirado/a / jubilado/a.', english: 'I’m retired.', hard: true },
+      ],
+      lesson2: [
         { foreign: 'ayer', english: 'yesterday' },
         { foreign: '¿Por qué?', english: 'Why?' },
         { foreign: 'porque', english: 'because' },
@@ -1450,7 +1450,7 @@ export const allPhrases = {
         { foreign: 'divertido', english: 'fun (adj.)' },
         { foreign: 'más', english: 'more' },
       ],
-      lesson4: [
+      lesson3: [
         {
           foreign: 'Es joven y está siempre activo. (use está with siempre)',
           english: 'He is young and is always active.',
@@ -1469,7 +1469,7 @@ export const allPhrases = {
         { foreign: 'Eso es verdad.', english: 'That’s true.' },
         { foreign: 'Eso es falso.', english: 'That’s false.' },
       ],
-      lesson5: [
+      lesson4: [
         { foreign: 'ahora', english: 'now' },
         { foreign: 'así', english: 'like that / like this', hard: true },
         { foreign: 'milagro', english: 'miracle' },
@@ -1485,7 +1485,7 @@ export const allPhrases = {
         { foreign: 'mismo / misma', english: 'same', hard: true },
         { foreign: 'ahorita', english: 'right now' },
       ],
-      lesson6: [
+      lesson5: [
         { foreign: 'afuera', english: 'outside', hard: true },
         { foreign: 'adentro', english: 'inside', hard: true },
         { foreign: 'juntos', english: 'together' },
@@ -1504,7 +1504,7 @@ export const allPhrases = {
         { foreign: 'llevar una chaqueta', english: 'to wear a jacket', hard: true },
         { foreign: 'unos lápices de colores', english: 'some colored pencils' },
       ],
-      lesson7: [
+      lesson6: [
         { foreign: 'éxito', english: 'success' },
         { foreign: 'hace un rato', english: 'a while ago' },
         { foreign: 'hace un mes', english: 'a month ago' },
@@ -1527,7 +1527,7 @@ export const allPhrases = {
         { foreign: 'Tengo tres hijos.', english: 'I have three children.' },
         { foreign: 'hijos', english: 'sons and daughters' },
       ],
-      lesson8: [
+      lesson7: [
         { foreign: 'tomar café', english: 'to have coffee' },
         { foreign: 'a veces / algunas veces', english: 'sometimes' },
         { foreign: '¡Aja!', english: 'Aha!' },
@@ -1555,7 +1555,7 @@ export const allPhrases = {
         { foreign: 'dar un paseo', english: 'to go for a walk' },
         { foreign: 'Querido primo', english: 'Dear cousin (writing a letter)' },
       ],
-      lesson9: [
+      lesson8: [
         { foreign: 'desde', english: 'from (place or time of origin) / since' },
         { foreign: 'desde ... hasta', english: 'from ... until' },
         {
@@ -1571,7 +1571,7 @@ export const allPhrases = {
           english: 'From here you can see the whole city.',
         },
       ],
-      lesson10: [
+      lesson9: [
         { foreign: 'Mira, ...', english: 'Look, ...' },
         { foreign: 'No hay problema.', english: 'No problem.' },
         {
@@ -1588,7 +1588,7 @@ export const allPhrases = {
           english: 'This is what he wanted for his house.',
         },
       ],
-      lesson11: [
+      lesson10: [
         {
           foreign: 'Ese no es un nombre que ellos se dan a sí mismos.',
           english: 'That’s not a name they give themselves.',
@@ -1607,7 +1607,7 @@ export const allPhrases = {
         { foreign: 'sí mismos', english: 'themselves' },
         { foreign: 'un/una inmigrante', english: 'an immigrant' },
       ],
-      lesson12: [
+      lesson11: [
         {
           foreign: 'escarcha',
           english: 'frost (a thin layer of ice crystals that form on surfaces on cold nights)',
@@ -1638,7 +1638,7 @@ export const allPhrases = {
         { foreign: 'hacer deporte', english: 'to do sports' },
         { foreign: 'salir a correr', english: 'to go for a run' },
       ],
-      lesson13: [
+      lesson12: [
         {
           foreign: '¿Puedo dirigirme a usted con tú?',
           english: 'May I address you informally? (more formal)',
@@ -1671,7 +1671,7 @@ export const allPhrases = {
         },
         { foreign: 'enviar', english: 'to send' },
       ],
-      lesson14: [
+      lesson13: [
         { foreign: '¡Santo cielo!', english: 'Holy cow!' },
         { foreign: 'impresionante', english: 'stunning / awesome', workingOn: true, hard: true },
         { foreign: 'Me duele el estómago.', english: 'My stomach hurts.' },
@@ -1690,7 +1690,7 @@ export const allPhrases = {
           hard: true,
         },
       ],
-      lesson15: [
+      lesson14: [
         { foreign: 'el azúcar (masc. or fem! Usually masc.)', english: 'the sugar' },
         { foreign: 'el agua (fem.)', english: 'the water' },
         { foreign: 'azúcar moreno', english: 'brown sugar' },
@@ -1707,7 +1707,7 @@ export const allPhrases = {
         { foreign: 'de la nada', english: 'out of nowhere / out of the blue' },
         { foreign: 'la habilidad', english: 'the skill' },
       ],
-      lesson16: [
+      lesson15: [
         { foreign: 'el gatito', english: 'the kitten' },
         { foreign: 'el perrito', english: 'the puppy' },
         { foreign: 'el caballo', english: 'the horse' },
@@ -1738,7 +1738,7 @@ export const allPhrases = {
         { foreign: 'Los humanos tenemos dos piernas.', english: 'Humans have two legs.' },
         { foreign: 'Yo bebo en el bar.', english: 'I drink at the bar.' },
       ],
-      lesson17: [
+      lesson16: [
         { foreign: 'incluso cuando', english: 'even when' },
         { foreign: 'la cara', english: 'the face' },
         { foreign: 'expresiones idiomáticas', english: 'idioms' },
@@ -1754,7 +1754,7 @@ export const allPhrases = {
           english: 'To me, spiders are terrifying.',
         },
       ],
-      lesson18: [
+      lesson17: [
         { foreign: 'Disculpa por lo del martes.', english: 'I’m sorry about Tuesday. (informal)' },
         { foreign: 'un día feriado / un feriado', english: 'a holiday', hard: true },
         {
@@ -1772,7 +1772,7 @@ export const allPhrases = {
         { foreign: 'lugar', english: 'place' },
         { foreign: 'lugares turísticos', english: 'tourist attractions' },
       ],
-      lesson19: [
+      lesson18: [
         {
           foreign: 'Es mejor poner una alarma y no necesitarla, que no ponerla y perder una cita.',
           english:
