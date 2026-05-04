@@ -16,7 +16,8 @@ Trebam pomoć.
 */
 
 export const allPhrases = {
-  custom: {
+  random: {
+    name: 'Random',
     chapter1: {
       name: 'Plurals',
       lesson1: [

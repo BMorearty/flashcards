@@ -40,10 +40,19 @@ addShowEnglish();
 updateKnownFileMtime();
 
 function buildMenu() {
+  const nonUnitKeys = Object.keys(allPhrases).filter((key) => !key.startsWith('unit'));
+  const nonUnitLines = nonUnitKeys
+    .map((key) => {
+      const shortcut = key.charAt(0).toUpperCase();
+      const name = allPhrases[key].name ?? key.charAt(0).toUpperCase() + key.slice(1);
+      return `${shortcut}. ${name}`;
+    })
+    .join('\n');
+
   return `
 Choose an option:
 ${Object.keys(allPhrases)
-  .filter((unit) => unit !== 'custom')
+  .filter((unit) => unit.startsWith('unit'))
   .map(
     (unit, index) =>
       `${index + 1}. Unit ${index + 1}${allPhrases[unit].name ? `: ${allPhrases[unit].name}` : ''}`,
@@ -52,7 +61,7 @@ ${Object.keys(allPhrases)
 A. All phrases
 H. Hard phrases
 W. Working on
-C. Custom phrases
+${nonUnitLines}
 Q. Quit
 `;
 }
@@ -266,15 +275,17 @@ function handleMenuChoice(choice) {
     startFlashcards();
     return;
   }
-  if (choice.toLowerCase() === 'c') {
-    currentUnit = 'custom';
+  const nonUnitKey = Object.keys(allPhrases)
+    .filter((k) => !k.startsWith('unit'))
+    .find((k) => k.charAt(0).toLowerCase() === choice.toLowerCase());
+  if (nonUnitKey) {
+    currentUnit = nonUnitKey;
     showChapterMenu();
     return;
   }
   const choiceNum = parseInt(choice, 10);
-  const { name, ...unitKeys } = allPhrases;
-  const numUnits = Object.keys(unitKeys).length;
-  if (choiceNum > 0 && choiceNum <= numUnits - 1) {
+  const numUnits = Object.keys(allPhrases).filter((k) => k.startsWith('unit')).length;
+  if (choiceNum > 0 && choiceNum <= numUnits) {
     currentUnit = `unit${choiceNum}`;
     showChapterMenu();
     return;
@@ -849,8 +860,8 @@ async function unmarkPhraseAsWorkingOn(phrase) {
 
 // Calculate the previous lesson based on the current unit/chapter/lesson.
 function calcPrevLesson() {
-  if (!(currentUnit.startsWith('unit') || currentUnit === 'custom')) {
-    // Unit is 'all', 'hard'
+  if (!(currentUnit in allPhrases)) {
+    // Unit is 'all', 'hard', 'workingOn'
     return [null, null, null];
   }
 
@@ -871,7 +882,7 @@ function calcPrevLesson() {
         currentLesson,
       ];
     }
-    // Currently at unit 1 or custom, chapter 1. There is no previous.
+    // Currently at unit 1 or a non-unit section, chapter 1. There is no previous.
     return [null, null, null];
   }
 
@@ -898,8 +909,8 @@ function calcPrevLesson() {
 
 // Calculate the next lesson based on the current unit/chapter/lesson.
 function calcNextLesson() {
-  if (!(currentUnit.startsWith('unit') || currentUnit === 'custom')) {
-    // Unit is 'all', 'hard'
+  if (!(currentUnit in allPhrases)) {
+    // Unit is 'all', 'hard', 'workingOn'
     return [null, null, null];
   }
 
@@ -939,7 +950,7 @@ function calcNextLesson() {
     return [currentUnit, nextChapter, Object.keys(allPhrases[currentUnit][nextChapter])[1]];
   }
 
-  if (currentUnit !== 'custom' && currentUnit !== Object.keys(allPhrases).at(-1)) {
+  if (currentUnit.startsWith('unit') && currentUnit !== Object.keys(allPhrases).at(-1)) {
     // Do the first lesson in the first chapter of the next unit
     const nextUnit = `unit${unitNum + 1}`;
     return [nextUnit, 'chapter1', Object.keys(allPhrases[nextUnit].chapter1)[1]];
