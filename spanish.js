@@ -2145,6 +2145,21 @@ export const allPhrases = {
           workingOn: true,
         },
       ],
+      lesson2: [
+        { foreign: '¡Qué rico / sabroso!', english: 'How delicious!', workingOn: true },
+        { foreign: 'Tienes razón.', english: 'You’re right.', workingOn: true },
+        { foreign: 'azucar agregada', english: 'added sugar', workingOn: true },
+        {
+          foreign: 'otro / otra (don’t say “un otro” or “una otra”)',
+          english: 'another',
+          workingOn: true,
+        },
+        {
+          foreign: 'Está casi listo.',
+          english: 'It’s almost done. (I was talking about my coffee.)',
+          workingOn: true,
+        },
+      ],
     },
   },
   unit1: {
