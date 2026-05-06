@@ -97,6 +97,7 @@ export const allPhrases = {
     chapter3: {
       name: 'Verb conjugations',
       lesson1: [
+        // Present tense indicative
         {
           foreign:
             'estar, present tense indicative:' +
@@ -186,7 +187,7 @@ export const allPhrases = {
             '| (nosotros / nosotras) decimos' +
             '| (vosotros / vosotras) decís' +
             '| (ellos / ellas / ustedes) dicen',
-          english: 'to say, present tense conjugation',
+          english: 'to say, present tense indicative',
         },
         {
           foreign:
@@ -197,7 +198,7 @@ export const allPhrases = {
             '| (nosotros / nosotras) vemos' +
             '| (vosotros / vosotras) veis' +
             '| (ellos / ellas / ustedes) ven',
-          english: 'to see, present tense conjugation',
+          english: 'to see, present tense indicative',
         },
         {
           foreign:
@@ -208,7 +209,7 @@ export const allPhrases = {
             '| (nosotros / nosotras) conocemos' +
             '| (vosotros / vosotras) conocéis' +
             '| (ellos / ellas / ustedes) conocen',
-          english: 'to know (someone), present tense conjugation',
+          english: 'to know (someone), present tense indicative',
         },
         {
           foreign:
@@ -219,7 +220,7 @@ export const allPhrases = {
             '| (nosotros / nosotras) acabamos de...' +
             '| (vosotros / vosotras) acabáis de...' +
             '| (ellos / ellas / ustedes) acaban de...',
-          english: 'to finish--or to have just done something, present tense conjugation',
+          english: 'to finish--or to have just done something, present tense indicative',
         },
         {
           foreign:
@@ -230,10 +231,23 @@ export const allPhrases = {
             '| (nosotros / nosotras) empezamos' +
             '| (vosotros / vosotras) empezáis' +
             '| (ellos / ellas / ustedes) empiezan',
-          english: 'to start, present tense conjugation',
+          english: 'to start, present tense indicative',
+        },
+        {
+          foreign:
+            'hacer, present tense indicative:' +
+            '| (yo) hago' +
+            '| (tú) haces' +
+            '| (él, ella, usted) hace' +
+            '| (nosotros / nosotras) hacemos' +
+            '| (vosotros / vosotras) hacéis' +
+            '| (ellos / ellas / ustedes) hacen',
+          english: 'to do / make, present tense indicative',
+          workingOn: true,
         },
       ],
       lesson2: [
+        // Preterite tense
         {
           foreign:
             'ser, tiempo pretérito:' +
@@ -256,6 +270,19 @@ export const allPhrases = {
             '| (vosotros / vosotras) fuisteis' +
             '| (ellos / ellas / ustedes) fueron',
           english: 'to go, preterite tense: I went, you went, etc.',
+        },
+        {
+          foreign:
+            'estar, tiempo pretérito:' +
+            '| (yo) estuve' +
+            '| (tú) estuviste' +
+            '| (él, ella, usted) estuvo' +
+            '| (nosotros / nosotras) estuvimos' +
+            '| (vosotros / vosotras) estuvisteis' +
+            '| (ellos / ellas / ustedes) estuvieron',
+          english:
+            'to be (PLACE: position, location, action, condition, emotion), preterite tense:| I was, you were, etc.',
+          workingOn: true,
         },
       ],
     },
