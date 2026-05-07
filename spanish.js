@@ -2092,7 +2092,7 @@ export const allPhrases = {
           foreign: 'Lo bonito de esa ciudad es su gente.',
           english: 'The beautiful thing about that city is its people.',
         },
-        { foreign: 'creer', english: 'to believe', workingOn: true },
+        { foreign: 'creer', english: 'to believe' },
         { foreign: 'crear', english: 'to create' },
         {
           foreign: 'Yo me estoy alistando para mi cita.',
@@ -2125,7 +2125,7 @@ export const allPhrases = {
         { foreign: 'párrafo', english: 'paragraph' },
         { foreign: 'el país luso', english: 'Portugal nickname' },
         { foreign: 'destacar', english: 'to stand out', workingOn: true },
-        { foreign: 'ciudad costera', english: 'coastal city', workingOn: true },
+        { foreign: 'ciudad costera', english: 'coastal city' },
         { foreign: 'urbe', english: 'large city' },
         {
           foreign: 'en la actualidad / actualmente',
@@ -2177,6 +2177,7 @@ export const allPhrases = {
         {
           foreign: 'Yo mejor sigo estudiando.',
           english: 'I’d better keep studying.',
+          hard: true,
           workingOn: true,
         },
         {
@@ -2185,24 +2186,24 @@ export const allPhrases = {
           workingOn: true,
         },
         { foreign: 'raro', english: 'weird', workingOn: true },
-        { foreign: 'hace calor', english: 'it’s hot', workingOn: true },
+        { foreign: 'hace calor', english: 'it’s hot (weather)', workingOn: true },
         { foreign: 'entrenador', english: 'trainer / coach', workingOn: true },
         { foreign: 'vidrio', english: 'glass (the material)', workingOn: true },
         {
           foreign: 'Ten cuidado con esa jarra; es de vidrio.',
-          english: 'Be careful with that pitcher; it’s made of glass.',
+          english: 'Be careful with that pitcher; it’s made of glass. (informal)',
           workingOn: true,
         },
         { foreign: 'tener un golpe de calor', english: 'to have heat stroke', workingOn: true },
         { foreign: 'la electricidad se va', english: 'the electricity goes out', workingOn: true },
         { foreign: 'aire acondicionado', english: 'air conditioning', workingOn: true },
         { foreign: 'acondicionador de aire', english: 'air conditioner', workingOn: true },
-        { foreign: 'hierro', english: 'iron', workingOn: true },
+        { foreign: 'hierro', english: 'iron (the element)', workingOn: true },
         { foreign: 'Lamento escuchar eso.', english: 'I’m sorry to hear that.', workingOn: true },
         { foreign: 'una hamaca', english: 'a hammock', workingOn: true },
         { foreign: 'patio', english: 'backyard', workingOn: true },
-        { foreign: 'chanclas / chancletas', english: 'flip flops', workingOn: true },
-        { foreign: 'un delantal', english: 'an apron', workingOn: true },
+        { foreign: 'chanclas / chancletas', english: 'flip flops', hard: true, workingOn: true },
+        { foreign: 'un delantal (accent on TAL)', english: 'an apron', workingOn: true },
         { foreign: 'salchichas', english: 'sausages', workingOn: true },
         {
           foreign: 'Hay comida en la fiesta.',
@@ -2220,16 +2221,17 @@ export const allPhrases = {
         {
           foreign: 'La patineta tiene ruedas cuadradas.',
           english: 'The scooter has squares wheels.',
+          hard: true,
           workingOn: true,
         },
-        { foreign: 'la parilla', english: 'the barbecue / grill', workingOn: true },
-        { foreign: 'muñeco de nieve', english: 'snowman', workingOn: true },
-        { foreign: 'un pitillo', english: 'a straw', workingOn: true },
+        { foreign: 'la parilla', english: 'the barbecue / grill', hard: true, workingOn: true },
+        { foreign: 'muñeco de nieve', english: 'snowman', hard: true, workingOn: true },
+        { foreign: 'un pitillo', english: 'a straw', hard: true, workingOn: true },
         { foreign: 'perro caliente', english: 'hot dog', workingOn: true },
         {
           foreign:
             'Tengo mucha hambre. Me comería una pizza entera. (Sometimes use ‘se’ to emphasize an action)',
-          english: 'I’m very hungry. I could eat a whole pizza.',
+          english: 'I’m very hungry. I would eat a whole pizza.',
           workingOn: true,
         },
         { foreign: 'pesadilla', english: 'nightmare', workingOn: true },
@@ -2771,13 +2773,11 @@ export const allPhrases = {
         {
           foreign: 'Mi hermana está en la habitación noventa y tres.',
           english: 'My sister is in room ninety-three.',
-          workingOn: true,
         },
         { foreign: 'cien', english: 'one hundred' },
         {
           foreign: 'Yo estoy en la habitación cien y mi hermana en la noventa y ocho.',
           english: 'I’m in room one hundred and my sister in ninety-eight.',
-          workingOn: true,
         },
       ],
       lesson9: [
