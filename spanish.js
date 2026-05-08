@@ -704,7 +704,7 @@ export const allPhrases = {
         },
         {
           foreign: 'Señora, le importa decirme su nombre?',
-          english: 'Madam, would you mind telling me your name?',
+          english: 'Madam, would you mind telling me your name?', workingOn: true,
           hard: true,
         },
         {
@@ -1278,7 +1278,7 @@ export const allPhrases = {
           foreign: 'Este lápiz cuesta un ojo de la cara.',
           english: 'This pencil costs an arm and a leg.',
         },
-        { foreign: '... no está de más.', english: 'It wouldn’t hurt to ...' },
+        { foreign: '... no está de más.', english: 'It wouldn’t hurt to ...', workingOn: true, hard: true },
         {
           foreign: 'Siempre digo que poner una alarma no está de más.',
           english: 'I always say that it can’t hurt to set an alarm.',
@@ -1378,7 +1378,7 @@ export const allPhrases = {
         { foreign: 'ser blanco / blanca', english: 'to be white (person)' },
         { foreign: 'ser moreno / morena', english: 'to be black or brown-skinned (person)' },
         { foreign: 'ser rubio / rubia', english: 'to be blond / blonde' },
-        { foreign: 'ser pelirrojo / pelirroja', english: 'to be a redhead' },
+        { foreign: 'ser pelirrojo / pelirroja', english: 'to be a redhead', hard: true, workingOn: true },
         { foreign: 'ser joven', english: 'to be young' },
         { foreign: 'ser mayor', english: 'to be old' },
         { foreign: 'ser gordo / gorda', english: 'to be fat' },
@@ -1452,7 +1452,7 @@ export const allPhrases = {
         },
         { foreign: 'estadounidense/es', english: 'American (singular and plural)' },
         { foreign: 'hay', english: 'there is/there are' },
-        { foreign: 'Estoy retirado/a / jubilado/a.', english: 'I’m retired.', hard: true },
+        { foreign: 'Estoy retirado/a / jubilado/a.', english: 'I’m retired.', workingOn: true, hard: true },
       ],
       lesson2: [
         { foreign: 'ayer', english: 'yesterday' },
@@ -1601,7 +1601,7 @@ export const allPhrases = {
         },
         {
           foreign: 'Esto es lo que él quería para su casa.',
-          english: 'This is what he wanted for his house.',
+          english: 'This is what he wanted for his house.', hard: true, workingOn: true,
         },
       ],
       lesson10: [
@@ -1842,7 +1842,7 @@ export const allPhrases = {
         { foreign: 'dar asco', english: 'to disgust' },
         { foreign: 'Me da asco.', english: 'It disgusts me.' },
         { foreign: 'aparato', english: 'device' },
-        { foreign: 'el ejército', english: 'the army', hard: true },
+        { foreign: 'el ejército', english: 'the army', workingOn: true, hard: true },
         { foreign: 'sin', english: 'without' },
         { foreign: 'matar', english: 'to kill' },
         { foreign: 'vigilancia masiva', english: 'mass surveillance', hard: true },
@@ -1988,7 +1988,7 @@ export const allPhrases = {
         { foreign: 'alegre', english: 'cheerful' },
       ],
       lesson2: [
-        { foreign: 'de hecho', english: 'in fact' },
+        { foreign: 'de hecho', english: 'in fact', workingOn: true, hard: true },
         { foreign: 'termómetro', english: 'thermometer' },
         { foreign: 'adolescente', english: 'teenager' },
         { foreign: 'fluido / a', english: 'fluent' },
@@ -2124,7 +2124,7 @@ export const allPhrases = {
         { foreign: 'me han dicho', english: 'I’ve been told' },
         { foreign: 'párrafo', english: 'paragraph' },
         { foreign: 'el país luso', english: 'Portugal nickname' },
-        { foreign: 'destacar', english: 'to stand out', workingOn: true },
+        { foreign: 'destacar', english: 'to stand out', hard: true, workingOn: true },
         { foreign: 'ciudad costera', english: 'coastal city' },
         { foreign: 'urbe', english: 'large city' },
         {
@@ -2152,7 +2152,7 @@ export const allPhrases = {
         { foreign: 'envidiable', english: 'enviable' },
         {
           foreign: 'pequeños y encantadores negocios',
-          english: 'small and charming shops',
+          english: 'small and charming shops', hard: true,
           workingOn: true,
         },
       ],
@@ -2194,7 +2194,7 @@ export const allPhrases = {
           english: 'Be careful with that pitcher; it’s made of glass. (informal)',
           workingOn: true,
         },
-        { foreign: 'tener un golpe de calor', english: 'to have heat stroke', workingOn: true },
+        { foreign: 'tener un golpe de calor', english: 'to have heat stroke', hard: true, workingOn: true },
         { foreign: 'la electricidad se va', english: 'the electricity goes out', workingOn: true },
         { foreign: 'aire acondicionado', english: 'air conditioning', workingOn: true },
         { foreign: 'acondicionador de aire', english: 'air conditioner', workingOn: true },
@@ -2231,7 +2231,7 @@ export const allPhrases = {
         {
           foreign:
             'Tengo mucha hambre. Me comería una pizza entera. (Sometimes use ‘se’ to emphasize an action)',
-          english: 'I’m very hungry. I would eat a whole pizza.',
+          english: 'I’m very hungry. I would eat a whole pizza.', hard: true,
           workingOn: true,
         },
         { foreign: 'pesadilla', english: 'nightmare', workingOn: true },
