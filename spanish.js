@@ -704,7 +704,8 @@ export const allPhrases = {
         },
         {
           foreign: 'Señora, le importa decirme su nombre?',
-          english: 'Madam, would you mind telling me your name?', workingOn: true,
+          english: 'Madam, would you mind telling me your name?',
+          workingOn: true,
           hard: true,
         },
         {
@@ -1278,7 +1279,12 @@ export const allPhrases = {
           foreign: 'Este lápiz cuesta un ojo de la cara.',
           english: 'This pencil costs an arm and a leg.',
         },
-        { foreign: '... no está de más.', english: 'It wouldn’t hurt to ...', workingOn: true, hard: true },
+        {
+          foreign: '... no está de más.',
+          english: 'It wouldn’t hurt to ...',
+          workingOn: true,
+          hard: true,
+        },
         {
           foreign: 'Siempre digo que poner una alarma no está de más.',
           english: 'I always say that it can’t hurt to set an alarm.',
@@ -1378,7 +1384,12 @@ export const allPhrases = {
         { foreign: 'ser blanco / blanca', english: 'to be white (person)' },
         { foreign: 'ser moreno / morena', english: 'to be black or brown-skinned (person)' },
         { foreign: 'ser rubio / rubia', english: 'to be blond / blonde' },
-        { foreign: 'ser pelirrojo / pelirroja', english: 'to be a redhead', hard: true, workingOn: true },
+        {
+          foreign: 'ser pelirrojo / pelirroja',
+          english: 'to be a redhead',
+          hard: true,
+          workingOn: true,
+        },
         { foreign: 'ser joven', english: 'to be young' },
         { foreign: 'ser mayor', english: 'to be old' },
         { foreign: 'ser gordo / gorda', english: 'to be fat' },
@@ -1452,7 +1463,12 @@ export const allPhrases = {
         },
         { foreign: 'estadounidense/es', english: 'American (singular and plural)' },
         { foreign: 'hay', english: 'there is/there are' },
-        { foreign: 'Estoy retirado/a / jubilado/a.', english: 'I’m retired.', workingOn: true, hard: true },
+        {
+          foreign: 'Estoy retirado/a / jubilado/a.',
+          english: 'I’m retired.',
+          workingOn: true,
+          hard: true,
+        },
       ],
       lesson2: [
         { foreign: 'ayer', english: 'yesterday' },
@@ -1601,7 +1617,9 @@ export const allPhrases = {
         },
         {
           foreign: 'Esto es lo que él quería para su casa.',
-          english: 'This is what he wanted for his house.', hard: true, workingOn: true,
+          english: 'This is what he wanted for his house.',
+          hard: true,
+          workingOn: true,
         },
       ],
       lesson10: [
@@ -2152,7 +2170,8 @@ export const allPhrases = {
         { foreign: 'envidiable', english: 'enviable' },
         {
           foreign: 'pequeños y encantadores negocios',
-          english: 'small and charming shops', hard: true,
+          english: 'small and charming shops',
+          hard: true,
           workingOn: true,
         },
       ],
@@ -2194,7 +2213,12 @@ export const allPhrases = {
           english: 'Be careful with that pitcher; it’s made of glass. (informal)',
           workingOn: true,
         },
-        { foreign: 'tener un golpe de calor', english: 'to have heat stroke', hard: true, workingOn: true },
+        {
+          foreign: 'tener un golpe de calor',
+          english: 'to have heat stroke',
+          hard: true,
+          workingOn: true,
+        },
         { foreign: 'la electricidad se va', english: 'the electricity goes out', workingOn: true },
         { foreign: 'aire acondicionado', english: 'air conditioning', workingOn: true },
         { foreign: 'acondicionador de aire', english: 'air conditioner', workingOn: true },
@@ -2231,7 +2255,8 @@ export const allPhrases = {
         {
           foreign:
             'Tengo mucha hambre. Me comería una pizza entera. (Sometimes use ‘se’ to emphasize an action)',
-          english: 'I’m very hungry. I would eat a whole pizza.', hard: true,
+          english: 'I’m very hungry. I would eat a whole pizza.',
+          hard: true,
           workingOn: true,
         },
         { foreign: 'pesadilla', english: 'nightmare', workingOn: true },
@@ -2823,6 +2848,48 @@ export const allPhrases = {
         },
         { foreign: 'odontólogo', english: 'dentist', workingOn: true },
         { foreign: 'los dos / las dos', english: 'both (does not start with a)', workingOn: true },
+      ],
+      lesson12: [
+        { foreign: 'Estoy perdido.', english: 'I’m lost. (from a male)', workingOn: true },
+        {
+          foreign: 'Buenas tardes. ¿Usted está perdida?',
+          english: 'Good afternoon. Are you lost? (formal, to a female)',
+          workingOn: true,
+        },
+        { foreign: 'saber', english: 'to know', workingOn: true },
+        { foreign: 'sabe', english: 'you know (formal)', workingOn: true },
+        { foreign: 'cine', english: 'movie theater', workingOn: true },
+        {
+          foreign: 'Estoy perdida. ¿Sabe dónde está el cine?',
+          english: 'I’m lost. Do you know where the movie theater is? (formal) (from a female)',
+          workingOn: true,
+        },
+        { foreign: 'centro', english: 'center', workingOn: true },
+        { foreign: 'comercial', english: 'commercial', workingOn: true },
+        { foreign: 'el centro comercial', english: 'the mall', workingOn: true },
+        { foreign: 'panadería', english: 'bakery', workingOn: true },
+        { foreign: 'carnicería', english: 'butcher', workingOn: true },
+        {
+          foreign: '¿Sabe dónde está el centro comercial?',
+          english: 'Do you know where the mall is? (formal)',
+          workingOn: true,
+        },
+        { foreign: 'sé', english: 'I know', workingOn: true },
+        { foreign: 'No sé dónde está.', english: 'I don’t know where it is.', workingOn: true },
+        { foreign: 'a', english: 'to / at', workingOn: true },
+        { foreign: 'querer', english: 'to want', workingOn: true },
+        { foreign: 'quiero', english: '(I) want', workingOn: true },
+        {
+          foreign: 'Quiero llegar al centro comercial y no sé dónde está.',
+          english: 'I want to get to the mall, and I don’t know where it is.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Estoy perdida y quiero llegar al cine. ¿Sabe dónde está?',
+          english:
+            'I’m lost, and I want to get to the movie theater. Do you know where it is? (formal) (from a female)',
+          workingOn: true,
+        },
       ],
     },
   },
