@@ -704,7 +704,7 @@ export const allPhrases = {
         },
         {
           foreign: 'Señora, le importa decirme su nombre?',
-          english: 'Madam, would you mind telling me your name?',
+          english: 'Madam, would you mind telling me your name? (formal)',
           workingOn: true,
           hard: true,
         },
@@ -2259,8 +2259,8 @@ export const allPhrases = {
           hard: true,
           workingOn: true,
         },
-        { foreign: 'pesadilla', english: 'nightmare', workingOn: true },
-        { foreign: 'Está flotando.', english: 'It’s floating.', workingOn: true },
+        { foreign: 'pesadilla', english: 'nightmare', hard: true, workingOn: true },
+        { foreign: 'Está flotando.', english: 'It’s floating.' },
         {
           foreign: 'A veces hago trampa y tomo café.',
           english: 'Sometimes I cheat and have coffee.',
@@ -2809,7 +2809,6 @@ export const allPhrases = {
         {
           foreign: 'La tarjeta azul es para la piscina.',
           english: 'The blue card is for the swimming pool.',
-          workingOn: true,
         },
         { foreign: 'tarjeta', english: 'card', workingOn: true },
         { foreign: 'piscina', english: 'pool' },
@@ -2833,7 +2832,7 @@ export const allPhrases = {
       ],
       lesson10: [
         { foreign: 'banana', english: 'banana' },
-        { foreign: 'fruta', english: 'fruit', workingOn: true },
+        { foreign: 'fruta', english: 'fruit' },
       ],
       lesson11: [
         {
@@ -2865,10 +2864,10 @@ export const allPhrases = {
           workingOn: true,
         },
         { foreign: 'centro', english: 'center', workingOn: true },
-        { foreign: 'comercial', english: 'commercial', workingOn: true },
+        { foreign: 'comercial', english: 'commercial' },
         { foreign: 'el centro comercial', english: 'the mall', workingOn: true },
         { foreign: 'panadería', english: 'bakery', workingOn: true },
-        { foreign: 'carnicería', english: 'butcher', workingOn: true },
+        { foreign: 'carnicería', english: 'butcher shop', workingOn: true },
         {
           foreign: '¿Sabe dónde está el centro comercial?',
           english: 'Do you know where the mall is? (formal)',
@@ -2876,9 +2875,9 @@ export const allPhrases = {
         },
         { foreign: 'sé', english: 'I know', workingOn: true },
         { foreign: 'No sé dónde está.', english: 'I don’t know where it is.', workingOn: true },
-        { foreign: 'a', english: 'to / at', workingOn: true },
+        { foreign: 'a', english: 'to / at' },
         { foreign: 'querer', english: 'to want', workingOn: true },
-        { foreign: 'quiero', english: '(I) want', workingOn: true },
+        { foreign: 'quiero', english: '(I) want' },
         {
           foreign: 'Quiero llegar al centro comercial y no sé dónde está.',
           english: 'I want to get to the mall, and I don’t know where it is.',
