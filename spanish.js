@@ -492,6 +492,7 @@ export const allPhrases = {
         {
           foreign: 'El gatito está durmiendo sobre la cama.',
           english: 'The kitten is sleeping on the bed.',
+          workingOn: true,
         },
         { foreign: 'El niño está diciendo la verdad.', english: 'The boy is telling the truth.' },
         { foreign: 'La chica está leyendo.', english: 'The girl is reading.' },
@@ -563,7 +564,7 @@ export const allPhrases = {
         { foreign: 'La niña tiene un gato.', english: 'The girl has a cat.' },
         { foreign: 'El profesor tiene una casa.', english: 'The professor has a house.' },
         { foreign: 'Yo tengo un computador.', english: 'I have a computer.' },
-        { foreign: 'Tengo sed.', english: 'I am thirsty.', hard: true },
+        { foreign: 'Tengo sed.', english: 'I am thirsty.', hard: true, workingOn: true },
         { foreign: 'Tengo mucha hambre.', english: 'I am very hungry.' },
         { foreign: 'Tengo sueño.', english: 'I am sleepy.' },
         { foreign: 'Tengo frío.', english: 'I am cold.' },
@@ -1087,7 +1088,7 @@ export const allPhrases = {
           english: 'Flamingos are pink birds.',
           hard: true,
         },
-        { foreign: 'Las uvas son moradas.', english: 'The grapes are purple.' },
+        { foreign: 'Las uvas son moradas.', english: 'The grapes are purple.', workingOn: true },
         { foreign: 'La lavanda es morada.', english: 'Lavender is purple.', hard: true },
         { foreign: 'Las delfines son grises.', english: 'The (girl) dolphins are gray.' },
         {
@@ -1294,6 +1295,7 @@ export const allPhrases = {
         {
           foreign: '... no está de más.',
           english: 'It wouldn’t hurt to ...',
+          showEnglish: 'random',
           workingOn: true,
           hard: true,
         },
@@ -1909,7 +1911,12 @@ export const allPhrases = {
         { foreign: 'tronco / torso', english: 'torso' },
         { foreign: 'agarrar', english: 'to grab', hard: true },
         { foreign: 'guantes', english: 'gloves' },
-        { foreign: 'los calcetines / las medias', english: 'the socks', hard: true },
+        {
+          foreign: 'los calcetines / las medias',
+          english: 'the socks',
+          workingOn: true,
+          hard: true,
+        },
         {
           foreign: 'Estás caminando muy raro.',
           english: 'You are walking very weirdly. (informal)',
@@ -1937,7 +1944,7 @@ export const allPhrases = {
         { foreign: 'Ella tiene las piernas largas.', english: 'She has long legs.' },
       ],
       lesson6: [
-        { foreign: 'Está malo.', english: 'He is sick.' },
+        { foreign: 'Está malo.', english: 'He is sick.', workingOn: true },
         { foreign: 'Es malo.', english: 'He is bad.' },
         { foreign: 'Está sano.', english: 'He is healthy.' },
         { foreign: 'pañuelo', english: 'handkerchief', hard: true },
@@ -2018,7 +2025,13 @@ export const allPhrases = {
         { foreign: 'alegre', english: 'cheerful' },
       ],
       lesson2: [
-        { foreign: 'de hecho', english: 'in fact', workingOn: true, hard: true },
+        {
+          foreign: 'de hecho',
+          english: 'in fact',
+          showEnglish: 'random',
+          workingOn: true,
+          hard: true,
+        },
         { foreign: 'termómetro', english: 'thermometer' },
         { foreign: 'adolescente', english: 'teenager' },
         { foreign: 'fluido / a', english: 'fluent' },
@@ -2213,7 +2226,7 @@ export const allPhrases = {
         },
         {
           foreign: 'Cuando hace calor, uso un ventilador.',
-          english: 'When it’s hot a I use a fan.',
+          english: 'When it’s hot I use a fan.',
           workingOn: true,
         },
         { foreign: 'raro', english: 'weird', workingOn: true },
@@ -2236,7 +2249,7 @@ export const allPhrases = {
         { foreign: 'acondicionador de aire', english: 'air conditioner', workingOn: true },
         { foreign: 'hierro', english: 'iron (the element)', workingOn: true },
         { foreign: 'Lamento escuchar eso.', english: 'I’m sorry to hear that.', workingOn: true },
-        { foreign: 'una hamaca', english: 'a hammock', workingOn: true },
+        { foreign: 'una hamaca (accent on MA)', english: 'a hammock', workingOn: true },
         { foreign: 'patio', english: 'backyard', workingOn: true },
         { foreign: 'chanclas / chancletas', english: 'flip flops', hard: true, workingOn: true },
         { foreign: 'un delantal (accent on TAL)', english: 'an apron', workingOn: true },
@@ -2276,6 +2289,7 @@ export const allPhrases = {
         {
           foreign: 'A veces hago trampa y tomo café.',
           english: 'Sometimes I cheat and have coffee.',
+          hard: true,
           workingOn: true,
         },
       ],
@@ -2467,7 +2481,7 @@ export const allPhrases = {
         },
         { foreign: 'vivir', english: 'to live' },
         { foreign: 'vivo', english: 'I live' },
-        { foreign: 'en', english: 'in' },
+        { foreign: 'en', english: 'in / on' },
         { foreign: 'Vivo en México.', english: 'I live in Mexico.' },
         { foreign: 'pero', english: 'but' },
         {
@@ -2878,8 +2892,8 @@ export const allPhrases = {
         { foreign: 'centro', english: 'center', workingOn: true },
         { foreign: 'comercial', english: 'commercial' },
         { foreign: 'el centro comercial', english: 'the mall', workingOn: true },
-        { foreign: 'panadería', english: 'bakery', workingOn: true },
-        { foreign: 'carnicería', english: 'butcher shop', workingOn: true },
+        { foreign: 'panadería', english: 'bakery', hard: true, workingOn: true },
+        { foreign: 'carnicería', english: 'butcher shop', hard: true, workingOn: true },
         {
           foreign: '¿Sabe dónde está el centro comercial?',
           english: 'Do you know where the mall is? (formal)',
@@ -2924,7 +2938,6 @@ export const allPhrases = {
           workingOn: true,
         },
         { foreign: 'el mapa', english: 'the map', workingOn: true },
-        { foreign: 'en', english: 'on', workingOn: true },
         { foreign: 'en el mapa', english: 'on the map', workingOn: true },
         {
           foreign: '¿Dónde está el restaurante en el mapa?',
@@ -2941,6 +2954,7 @@ export const allPhrases = {
         {
           foreign: '¿Dónde hay una cafetería acogedora?',
           english: 'Where is there a cozy cafe?',
+          hard: true,
           workingOn: true,
         },
         { foreign: 'moderno', english: 'modern', workingOn: true },
