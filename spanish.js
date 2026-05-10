@@ -100,7 +100,7 @@ export const allPhrases = {
         // Present tense indicative
         {
           foreign:
-            'estar, present tense indicative:' +
+            'estar, presente de indicativo:' +
             '| (yo) estoy' +
             '| (tú) estás' +
             '| (él, ella, usted) está' +
@@ -112,7 +112,7 @@ export const allPhrases = {
         },
         {
           foreign:
-            'ser, present tense indicative:' +
+            'ser, presente de indicativo:' +
             '| (yo) soy' +
             '| (tú) eres' +
             '| (él, ella, usted) es' +
@@ -124,7 +124,7 @@ export const allPhrases = {
         },
         {
           foreign:
-            'tener, present tense indicative:' +
+            'tener, presente de indicativo:' +
             '| (yo) tengo' +
             '| (tú) tienes' +
             '| (él, ella, usted) tiene' +
@@ -147,7 +147,7 @@ export const allPhrases = {
         },
         {
           foreign:
-            'caminar, present tense indicative:' +
+            'caminar, presente de indicativo:' +
             '| (yo) camino' +
             '| (tú) caminas' +
             '| (él, ella, usted) camina' +
@@ -158,7 +158,7 @@ export const allPhrases = {
         },
         {
           foreign:
-            'comer, present tense indicative:' +
+            'comer, presente de indicativo:' +
             '| (yo) como' +
             '| (tú) comes' +
             '| (él, ella, usted) come' +
@@ -169,7 +169,7 @@ export const allPhrases = {
         },
         {
           foreign:
-            'partir, present tense indicative:' +
+            'partir, presente de indicativo:' +
             '| (yo) parto' +
             '| (tú) partes' +
             '| (él, ella, usted) parte' +
@@ -180,7 +180,7 @@ export const allPhrases = {
         },
         {
           foreign:
-            'decir, present tense indicative:' +
+            'decir, presente de indicativo:' +
             '| (yo) digo' +
             '| (tú) dices' +
             '| (él, ella, usted) dice' +
@@ -191,7 +191,7 @@ export const allPhrases = {
         },
         {
           foreign:
-            'ver, present tense indicative:' +
+            'ver, presente de indicativo:' +
             '| (yo) veo' +
             '| (tú) ves' +
             '| (él, ella, usted) ve' +
@@ -202,7 +202,7 @@ export const allPhrases = {
         },
         {
           foreign:
-            'conocer, present tense indicative:' +
+            'conocer, presente de indicativo:' +
             '| (yo) conozco' +
             '| (tú) conoces' +
             '| (él, ella, usted) conoce' +
@@ -213,7 +213,7 @@ export const allPhrases = {
         },
         {
           foreign:
-            'acabar de (ahcahBAR de), present tense indicative:' +
+            'acabar de (ahcahBAR de), presente de indicativo:' +
             '| (yo) acabo de...' +
             '| (tú) acabas de...' +
             '| (él, ella, usted) acaba de...' +
@@ -224,7 +224,7 @@ export const allPhrases = {
         },
         {
           foreign:
-            'empezar, present tense indicative:' +
+            'empezar, presente de indicativo:' +
             '| (yo) empiezo' +
             '| (tú) empiezas' +
             '| (él, ella, usted) empieza' +
@@ -235,7 +235,7 @@ export const allPhrases = {
         },
         {
           foreign:
-            'hacer, present tense indicative:' +
+            'hacer, presente de indicativo:' +
             '| (yo) hago' +
             '| (tú) haces' +
             '| (él, ella, usted) hace' +
@@ -243,6 +243,18 @@ export const allPhrases = {
             '| (vosotros / vosotras) hacéis' +
             '| (ellos / ellas / ustedes) hacen',
           english: 'to do / make, present tense indicative',
+          workingOn: true,
+        },
+        {
+          foreign:
+            'venir, presente de indicativo:' +
+            '| (yo) vengo' +
+            '| (tú) vienes' +
+            '| (él, ella, usted) viene' +
+            '| (nosotros / nosotras) venimos' +
+            '| (vosotros / vosotras) venís' +
+            '| (ellos / ellas / ustedes) vienen',
+          english: 'to come, present tense indicative',
           workingOn: true,
         },
       ],
