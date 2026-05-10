@@ -2874,7 +2874,13 @@ export const allPhrases = {
         { foreign: 'odontólogo', english: 'dentist', workingOn: true },
         { foreign: 'los dos / las dos', english: 'both (does not start with a)', workingOn: true },
       ],
-      lesson12: [
+    },
+  },
+  unit2: {
+    name: 'Connections',
+    chapter1: {
+      name: 'Places and Directions',
+      lesson1: [
         { foreign: 'Estoy perdido.', english: 'I’m lost. (from a male)', workingOn: true },
         {
           foreign: 'Buenas tardes. ¿Usted está perdida?',
@@ -2916,7 +2922,7 @@ export const allPhrases = {
           workingOn: true,
         },
       ],
-      lesson13: [
+      lesson2: [
         { foreign: '¿Dónde está el baño?', english: 'Where is the bathroom?', workingOn: true },
         { foreign: 'baño', english: 'bathroom', workingOn: true },
         { foreign: 'el restaurante', english: 'the restaurant', workingOn: true },
@@ -2930,7 +2936,7 @@ export const allPhrases = {
         },
         { foreign: '¿Dónde están las llaves?', english: 'Where are the keys?', workingOn: true },
       ],
-      lesson14: [
+      lesson3: [
         { foreign: 'el boleto', english: 'the ticket', workingOn: true },
         {
           foreign: '¿Dónde están los boletos?',
