@@ -216,6 +216,7 @@ async function rebuildPhrasesAfterReload() {
 
   const phrasesByForeign = new Map(phrases.map((p) => [p.foreign, p]));
   wrongPhrases = wrongPhrases.map((wp) => phrasesByForeign.get(wp.foreign)).filter(Boolean);
+  shownPhrases = new Set([...shownPhrases].filter((foreign) => phrasesByForeign.has(foreign)));
   if (lastPhrase) {
     lastPhrase = phrasesByForeign.get(lastPhrase.foreign) ?? null;
   }
@@ -227,10 +228,10 @@ async function reloadAllPhrases() {
     allPhrases = newPhrases;
     addShowEnglish();
     updateKnownFileMtime();
-    console.log(chalk.cyan('  Reloaded phrase file.'));
     if (currentUnit) {
       await rebuildPhrasesAfterReload();
     }
+    console.log(chalk.cyan('  Reloaded phrase file.'));
   } catch (err) {
     console.log(chalk.red(`Failed to reload phrase file: ${err.message}`));
     updateKnownFileMtime();
