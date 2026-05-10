@@ -1229,7 +1229,7 @@ export const allPhrases = {
       ],
       lesson3: [
         { foreign: 'abrigo', english: 'coat', hard: true },
-        { foreign: 'un pijama (j sounds like y)', english: 'a pair of pajamas' },
+        { foreign: 'un pijama (j sounds like y)', english: 'a pair of pajamas', workingOn: true },
         { foreign: 'chaleco', english: 'vest' },
         { foreign: 'mochila', english: 'backpack', hard: true },
         { foreign: 'las bragas', english: 'the panties' },
