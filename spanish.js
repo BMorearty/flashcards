@@ -2975,6 +2975,42 @@ export const allPhrases = {
           workingOn: true,
         },
       ],
+      lesson4: [
+        { foreign: 'Está justo ahí.', english: 'It is right there.', workingOn: true },
+        { foreign: 'justo', english: 'right / just', workingOn: true },
+        { foreign: 'Está ahí.', english: 'It is there.' },
+        { foreign: 'cerca', english: 'close / near' },
+        {
+          foreign: 'El hotel está muy cerca.',
+          english: 'The hotel is very close.',
+          workingOn: true,
+        },
+        { foreign: 'lejos', english: 'far', workingOn: true },
+        {
+          foreign: 'La parada de autobús está muy lejos.',
+          english: 'The bus stop is very far.',
+          workingOn: true,
+        },
+        { foreign: 'Está aquí.', english: 'It’s here.' },
+        { foreign: 'Está lejos de aquí.', english: 'It’s far from here.', workingOn: true },
+        {
+          foreign: 'La parada de autobús está un poco lejos de aquí.',
+          english: 'The bus stop is a little bit far from here.',
+          workingOn: true,
+        },
+        { foreign: 'kilómetro', english: 'kilometer', workingOn: true },
+        { foreign: 'seis kilómetros', english: 'six kilometers', workingOn: true },
+        {
+          foreign: 'Está a seis kilómetros de aquí.',
+          english: 'It’s six kilometers from here.',
+          workingOn: true,
+        },
+        {
+          foreign: '¡Seis kilómetros es lejos!',
+          english: 'Six kilometers is far!',
+          workingOn: true,
+        },
+      ],
     },
   },
 };
