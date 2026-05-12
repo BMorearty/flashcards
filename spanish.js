@@ -43,7 +43,7 @@ export const allPhrases = {
         { foreign: 'el cepillo', english: 'the brush', hard: true },
         { foreign: 'el semáforo', english: 'the traffic light', hard: true },
         { foreign: 'el zinc', english: 'the zinc' },
-        { foreign: 'el cine', english: 'the cinema' },
+        { foreign: 'el cine', english: 'the movie theater' },
         { foreign: 'la silla', english: 'the chair', hard: true },
         { foreign: 'el zorro', english: 'the fox' },
       ],
@@ -254,7 +254,6 @@ export const allPhrases = {
             '| (vosotros / vosotras) venís' +
             '| (ellos / ellas / ustedes) vienen',
           english: 'to come, present tense indicative',
-          workingOn: true,
         },
       ],
       lesson2: [
@@ -491,7 +490,6 @@ export const allPhrases = {
         {
           foreign: 'El gatito está durmiendo sobre la cama.',
           english: 'The kitten is sleeping on the bed.',
-          workingOn: true,
         },
         { foreign: 'El niño está diciendo la verdad.', english: 'The boy is telling the truth.' },
         { foreign: 'La chica está leyendo.', english: 'The girl is reading.' },
@@ -1899,12 +1897,7 @@ export const allPhrases = {
         { foreign: 'tronco / torso', english: 'torso' },
         { foreign: 'agarrar', english: 'to grab', hard: true },
         { foreign: 'guantes', english: 'gloves' },
-        {
-          foreign: 'los calcetines / las medias',
-          english: 'the socks',
-          workingOn: true,
-          hard: true,
-        },
+        { foreign: 'los calcetines / las medias', english: 'the socks', hard: true },
         {
           foreign: 'Estás caminando muy raro.',
           english: 'You are walking very weirdly. (informal)',
@@ -1932,7 +1925,7 @@ export const allPhrases = {
         { foreign: 'Ella tiene las piernas largas.', english: 'She has long legs.' },
       ],
       lesson6: [
-        { foreign: 'Está malo.', english: 'He is sick.', workingOn: true },
+        { foreign: 'Está malo.', english: 'He is sick.' },
         { foreign: 'Es malo.', english: 'He is bad.' },
         { foreign: 'Está sano.', english: 'He is healthy.' },
         { foreign: 'pañuelo', english: 'handkerchief', hard: true },
@@ -2181,18 +2174,14 @@ export const allPhrases = {
         { foreign: '¡Qué rico / sabroso!', english: 'How delicious!' },
         { foreign: 'Tienes razón.', english: 'You’re right. (informal)' },
         { foreign: 'azucar agregada', english: 'added sugar' },
-        {
-          foreign: 'otro / otra (don’t say “un otro” or “una otra”)',
-          english: 'another',
-          workingOn: true,
-        },
+        { foreign: 'otro / otra (don’t say “un otro” or “una otra”)', english: 'another' },
         {
           foreign: 'Está casi listo.',
           english: 'It’s almost done. (I was talking about my coffee.)',
         },
       ],
       lesson3: [
-        { foreign: 'caja', english: 'box', workingOn: true },
+        { foreign: 'caja', english: 'box' },
         { foreign: 'llegar', english: 'to arrive' },
         {
           foreign: 'Yo mejor sigo estudiando.',
@@ -2200,11 +2189,7 @@ export const allPhrases = {
           hard: true,
           workingOn: true,
         },
-        {
-          foreign: 'Cuando hace calor, uso un ventilador.',
-          english: 'When it’s hot I use a fan.',
-          workingOn: true,
-        },
+        { foreign: 'Cuando hace calor, uso un ventilador.', english: 'When it’s hot I use a fan.' },
         { foreign: 'raro', english: 'weird' },
         { foreign: 'hace calor', english: 'it’s hot (weather)' },
         { foreign: 'entrenador', english: 'trainer / coach' },
@@ -2212,23 +2197,22 @@ export const allPhrases = {
         {
           foreign: 'Ten cuidado con esa jarra; es de vidrio.',
           english: 'Be careful with that pitcher; it’s made of glass. (informal)',
-          workingOn: true,
         },
-        {
-          foreign: 'tener un golpe de calor',
-          english: 'to have heat stroke',
-          hard: true,
-          workingOn: true,
-        },
+        { foreign: 'tener un golpe de calor', english: 'to have heat stroke', hard: true },
         { foreign: 'la electricidad se va', english: 'the electricity goes out' },
         { foreign: 'aire acondicionado', english: 'air conditioning', workingOn: true },
-        { foreign: 'acondicionador de aire', english: 'air conditioner', workingOn: true },
-        { foreign: 'hierro', english: 'iron (the element)', workingOn: true },
+        { foreign: 'acondicionador de aire', english: 'air conditioner' },
+        { foreign: 'hierro', english: 'iron (the element)' },
         { foreign: 'Lamento escuchar eso.', english: 'I’m sorry to hear that.', workingOn: true },
         { foreign: 'una hamaca (accent on MA)', english: 'a hammock' },
         { foreign: 'patio', english: 'backyard' },
-        { foreign: 'chanclas / chancletas', english: 'flip flops', hard: true, workingOn: true },
-        { foreign: 'un delantal (accent on TAL)', english: 'an apron', workingOn: true },
+        { foreign: 'chanclas / chancletas', english: 'flip flops', hard: true },
+        {
+          foreign: 'un delantal (accent on TAL)',
+          english: 'an apron',
+          hard: true,
+          workingOn: true,
+        },
         { foreign: 'salchichas', english: 'sausages' },
         { foreign: 'Hay comida en la fiesta.', english: 'There is food at the party.' },
         { foreign: 'con ropa', english: 'with clothes on' },
@@ -2244,9 +2228,9 @@ export const allPhrases = {
           hard: true,
           workingOn: true,
         },
-        { foreign: 'la parilla', english: 'the barbecue / grill', hard: true, workingOn: true },
+        { foreign: 'la parilla', english: 'the barbecue / grill', hard: true },
         { foreign: 'muñeco de nieve', english: 'snowman', hard: true },
-        { foreign: 'un pitillo', english: 'a straw', hard: true, workingOn: true },
+        { foreign: 'un pitillo', english: 'a straw', hard: true },
         { foreign: 'perro caliente', english: 'hot dog' },
         {
           foreign:
@@ -2265,7 +2249,7 @@ export const allPhrases = {
         },
       ],
       lesson4: [
-        { foreign: 'lesionarse', english: 'to get injured', workingOn: true },
+        { foreign: 'lesionarse', english: 'to get injured' },
         {
           foreign: 'Me lesioné las rodillas.',
           english: 'I injured my knees.',
@@ -2275,6 +2259,7 @@ export const allPhrases = {
         {
           foreign: 'Mis rodillas se lesionaron.',
           english: 'My knees got injured.',
+          hard: true,
           workingOn: true,
         },
         {
@@ -2875,17 +2860,15 @@ export const allPhrases = {
         },
         { foreign: 'saber', english: 'to know' },
         { foreign: 'sabe', english: 'you know (formal)' },
-        { foreign: 'el cine', english: 'the movie theater' },
         {
           foreign: 'Estoy perdida. ¿Sabe dónde está el cine?',
           english: 'I’m lost. Do you know where the movie theater is? (formal) (from a female)',
-          workingOn: true,
         },
         { foreign: 'centro', english: 'center' },
         { foreign: 'comercial', english: 'commercial' },
         { foreign: 'el centro comercial', english: 'the mall' },
         { foreign: 'panadería', english: 'bakery', hard: true, workingOn: true },
-        { foreign: 'carnicería', english: 'butcher shop', hard: true, workingOn: true },
+        { foreign: 'carnicería', english: 'butcher shop', hard: true },
         {
           foreign: '¿Sabe dónde está el centro comercial?',
           english: 'Do you know where the mall is? (formal)',
@@ -2898,13 +2881,11 @@ export const allPhrases = {
         {
           foreign: 'Quiero llegar al centro comercial y no sé dónde está.',
           english: 'I want to get to the mall, and I don’t know where it is.',
-          workingOn: true,
         },
         {
           foreign: 'Estoy perdida y quiero llegar al cine.| ¿Sabe dónde está?',
           english:
             'I’m lost, and I want to get to the movie theater.| Do you know where it is? (formal) (from a female)',
-          workingOn: true,
         },
       ],
       lesson2: [
@@ -2930,11 +2911,7 @@ export const allPhrases = {
           english: 'Where is the restaurant on the map?',
         },
         { foreign: 'cafetería', english: 'cafe' },
-        {
-          foreign: '¿Dónde hay una cafetería?',
-          english: 'Where is there a cafe?',
-          workingOn: true,
-        },
+        { foreign: '¿Dónde hay una cafetería?', english: 'Where is there a cafe?' },
         { foreign: 'acogedor / a', english: 'cozy', workingOn: true },
         {
           foreign: '¿Dónde hay una cafetería acogedora?',
@@ -2950,7 +2927,6 @@ export const allPhrases = {
         {
           foreign: 'El restaurante es moderno pero no acogedor.',
           english: 'The restaurant is modern but not cozy.',
-          workingOn: true,
         },
       ],
       lesson4: [
@@ -2959,12 +2935,8 @@ export const allPhrases = {
         { foreign: 'Está ahí.', english: 'It is there.' },
         { foreign: 'cerca', english: 'close / near' },
         { foreign: 'El hotel está muy cerca.', english: 'The hotel is very close.' },
-        { foreign: 'lejos', english: 'far', workingOn: true },
-        {
-          foreign: 'La parada de autobús está muy lejos.',
-          english: 'The bus stop is very far.',
-          workingOn: true,
-        },
+        { foreign: 'lejos', english: 'far' },
+        { foreign: 'La parada de autobús está muy lejos.', english: 'The bus stop is very far.' },
         { foreign: 'Está aquí.', english: 'It’s here.' },
         { foreign: 'Está lejos de aquí.', english: 'It’s far from here.', workingOn: true },
         {
@@ -2978,11 +2950,7 @@ export const allPhrases = {
           english: 'It’s six kilometers from here.',
           workingOn: true,
         },
-        {
-          foreign: '¡Seis kilómetros es lejos!',
-          english: 'Six kilometers is far!',
-          workingOn: true,
-        },
+        { foreign: '¡Seis kilómetros es lejos!', english: 'Six kilometers is far!' },
       ],
     },
   },
