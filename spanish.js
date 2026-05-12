@@ -2959,7 +2959,7 @@ export const allPhrases = {
       lesson5: [
         { foreign: 'justo a tiempo', english: 'right on time', workingOn: true },
         { foreign: 'en frente de', english: 'in front of', workingOn: true },
-        { foreign: 'el teatro', english: 'the theater', workingOn: true },
+        { foreign: 'el teatro', english: 'the theater' },
         {
           foreign: 'El hotel está en frente del teatro.',
           english: 'The hotel is in front of the theater.',
