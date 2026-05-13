@@ -2973,6 +2973,30 @@ export const allPhrases = {
           workingOn: true,
         },
       ],
+      lesson6: [
+        { foreign: 'al lado de', english: 'beside / next to', workingOn: true },
+        {
+          foreign: 'El cine está al lado de la iglesia.',
+          english: 'The movie theater is beside the church.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Hay un restaurante moderno al lado del cine.',
+          english: 'There is a modern restaurant beside the movie theater.',
+          workingOn: true,
+        },
+        { foreign: 'detrás de', english: 'behind', workingOn: true },
+        {
+          foreign: 'El hotel está detrás de la iglesia.',
+          english: 'The hotel is behind the church.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Hay un hotel acogedor detrás de la iglesia,| a siete kilómetros de aquí.',
+          english: 'There’s a cozy hotel behind the church,| seven kilometers from here.',
+          workingOn: true,
+        },
+      ],
     },
   },
 };
