@@ -293,6 +293,17 @@ export const allPhrases = {
           english:
             'to be (PLACE: position, location, action, condition, emotion), preterite tense:| I was, you were, etc.',
         },
+        {
+          foreign:
+            'decir, tiempo pretérito:' +
+            '| (yo) dije' +
+            '| (tú) dijiste' +
+            '| (él, ella, usted) dijo' +
+            '| (nosotros / nosotras) dijimos' +
+            '| (vosotros / vosotras) dijisteis' +
+            '| (ellos / ellas / ustedes) dijeron',
+          english: 'to say, preterite tense: I said, you said, etc.',
+        },
       ],
     },
     chapter4: {
