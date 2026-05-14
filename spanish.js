@@ -2996,15 +2996,15 @@ export const allPhrases = {
           english: 'There is a modern restaurant beside the movie theater.',
           workingOn: true,
         },
-        { foreign: 'detrás de', english: 'behind', workingOn: true },
+        { foreign: 'detrás de', english: 'behind', hard: true, workingOn: true },
         {
           foreign: 'El hotel está detrás de la iglesia.',
-          english: 'The hotel is behind the church.',
+          english: 'The hotel is behind the church.', hard: true,
           workingOn: true,
         },
         {
           foreign: 'Hay un hotel acogedor detrás de la iglesia,| a siete kilómetros de aquí.',
-          english: 'There’s a cozy hotel behind the church,| seven kilometers from here.',
+          english: 'There’s a cozy hotel behind the church,| seven kilometers from here.', hard: true,
           workingOn: true,
         },
       ],
