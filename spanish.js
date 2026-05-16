@@ -2225,7 +2225,6 @@ export const allPhrases = {
           foreign: 'La patineta tiene ruedas cuadradas.',
           english: 'The scooter has squares wheels.',
           hard: true,
-          workingOn: true,
         },
         { foreign: 'la parilla', english: 'the barbecue / grill', hard: true },
         { foreign: 'muñeco de nieve', english: 'snowman', hard: true },
