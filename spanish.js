@@ -21,7 +21,7 @@ export const allPhrases = {
         { foreign: 'el yate', english: 'the yacht' },
       ],
       lesson2: [
-        { foreign: 'la bañera', english: 'the bathtub', hard: true },
+        { foreign: 'la bañera', english: 'the bathtub', workingOn: true, hard: true },
         { foreign: 'el vestido', english: 'the dress', hard: true },
         { foreign: 'el virus', english: 'the virus' },
         { foreign: 'la botella', english: 'the bottle' },
@@ -472,11 +472,11 @@ export const allPhrases = {
           hard: true,
         },
         { foreign: 'Hoy está nevando mucho.', english: 'Today it is snowing a lot.', hard: true },
-        { foreign: 'Hoy está lloviendo mucho.', english: 'Today it is raining a lot.', hard: true },
+        { foreign: 'Hoy está lloviendo mucho.', english: 'Today it is raining a lot.', workingOn: true, hard: true },
         { foreign: 'Él está cocinando.', english: 'He is cooking.' },
         { foreign: 'Estoy hablando.', english: 'I am speaking.' },
         { foreign: 'Estoy pensando.', english: 'I am thinking.' },
-        { foreign: 'Estoy almorzando.', english: 'I am having lunch.', hard: true },
+        { foreign: 'Estoy almorzando.', english: 'I am having lunch.', workingOn: true, hard: true },
         { foreign: 'Estoy cenando.', english: 'I am having dinner.', hard: true },
         { foreign: 'Estoy bañando a mi perro.', english: 'I am bathing my dog.' },
         { foreign: 'Estoy bañandome.', english: 'I am taking a bath.' },
@@ -1302,7 +1302,6 @@ export const allPhrases = {
           foreign: '... no está de más.',
           english: 'It wouldn’t hurt to ...',
           showEnglish: 'random',
-          workingOn: true,
           hard: true,
         },
         {
@@ -1383,7 +1382,7 @@ export const allPhrases = {
         { foreign: 'Con gusto.', english: 'You’re welcome. (With pleasure.)' },
         { foreign: '¡Chao!', english: 'Bye!' },
         { foreign: '¡Cuídate!', english: 'Take care! (informal)', hard: true },
-        { foreign: '¡Cuídense!', english: 'Take care! (to a group)', hard: true },
+        { foreign: '¡Cuídense!', english: 'Take care! (to a group)', workingOn: true, hard: true },
         {
           foreign: 'Nos vemos más tarde.',
           english: 'See you later.',
@@ -2244,7 +2243,6 @@ export const allPhrases = {
           foreign: 'A veces hago trampa y tomo café.',
           english: 'Sometimes I cheat and have coffee.',
           hard: true,
-          workingOn: true,
         },
       ],
       lesson4: [
@@ -2866,7 +2864,7 @@ export const allPhrases = {
         { foreign: 'centro', english: 'center' },
         { foreign: 'comercial', english: 'commercial' },
         { foreign: 'el centro comercial', english: 'the mall' },
-        { foreign: 'panadería', english: 'bakery', workingOn: true, hard: true },
+        { foreign: 'panadería', english: 'bakery', hard: true },
         { foreign: 'carnicería', english: 'butcher shop', hard: true },
         {
           foreign: '¿Sabe dónde está el centro comercial?',
@@ -2940,7 +2938,7 @@ export const allPhrases = {
         { foreign: 'lejos', english: 'far' },
         { foreign: 'La parada de autobús está muy lejos.', english: 'The bus stop is very far.' },
         { foreign: 'Está aquí.', english: 'It’s here.' },
-        { foreign: 'Está lejos de aquí.', english: 'It’s far from here.', workingOn: true },
+        { foreign: 'Está lejos de aquí.', english: 'It’s far from here.' },
         {
           foreign: 'La parada de autobús está un poco lejos de aquí.',
           english: 'The bus stop is a little bit far from here.',
@@ -2950,7 +2948,6 @@ export const allPhrases = {
         {
           foreign: 'Está a seis kilómetros de aquí.',
           english: 'It’s six kilometers from here.',
-          workingOn: true,
         },
         { foreign: '¡Seis kilómetros es lejos!', english: 'Six kilometers is far!' },
       ],
@@ -2961,19 +2958,17 @@ export const allPhrases = {
         {
           foreign: 'El hotel está en frente del teatro.',
           english: 'The hotel is in front of the theater.',
-          workingOn: true,
         },
         { foreign: 'derecha', english: 'right (direction)', workingOn: true },
-        { foreign: 'a la derecha', english: 'to the right', workingOn: true },
+        { foreign: 'a la derecha', english: 'to the right' },
         { foreign: 'iglesia', english: 'church' },
         { foreign: 'A la derecha de la iglesia.', english: 'To the right of the church.' },
         {
           foreign: 'El hotel está en frente del teatro,| a la derecha de la iglesia.',
           english: 'The hotel is in front of the theater,| to the right of the church.',
-          workingOn: true,
         },
         { foreign: 'izquierda', english: 'left (direction)', workingOn: true },
-        { foreign: 'a la izquierda', english: 'to the left', workingOn: true },
+        { foreign: 'a la izquierda', english: 'to the left' },
         {
           foreign: 'El cine está a la izquierda de la iglesia.',
           english: 'The movie theater is to the left of the church.',
@@ -2981,7 +2976,6 @@ export const allPhrases = {
         {
           foreign: 'El cine está a la izquierda de la iglesia,| a dos kilómetros de aquí.',
           english: 'The movie theater is to the left of the church,| two kilometers from here.',
-          workingOn: true,
         },
       ],
       lesson6: [
@@ -3008,10 +3002,23 @@ export const allPhrases = {
           workingOn: true,
         },
       ],
+      lesson7: [
+        { foreign: 'Vaya derecho y luego a la izquierda.', english: 'Go straight and then to the left. (formal)', workingOn: true },
+        { foreign: 'Vaya. (imperative)', english: 'Go. (formal imperative)', workingOn: true },
+        { foreign: 'derecho', english: 'straight', workingOn: true },
+        { foreign: 'Luego vaya a la izquierda.', english: 'Then, go to the left. (formal)', workingOn: true },
+        { foreign: 'hacia (accent on AH)', english: 'towards', workingOn: true },
+        { foreign: 'Vaya hacia la derecha. (Accent on AH)', english: 'Go to the right (literally towards the right). (formal)', workingOn: true },
+        { foreign: 'Vaya hacia la derecha| y luego hacia la izquierda. (Accent on AH)', english: 'Go to the right| and then to the left. (Literally “towards.” Formal.)', workingOn: true },
+        { foreign: 'más despacio', english: 'slower', workingOn: true },
+        { foreign: 'Más despacio por favor.', english: 'Slower, please.' },
+        { foreign: 'Hablo un poco de español. Más despacio, por favor.', english: 'I speak a little bit of Spanish. Slower, please.' },
+        { foreign: '¡Muchas gracias!', english: 'Thank you very much!' },
+      ],
     },
   },
 };
 
 /*
-        { foreign: '', english: '' },
+        { foreign: '', english: '', workingOn: true },
 */
