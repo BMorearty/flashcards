@@ -3003,7 +3003,7 @@ export const allPhrases = {
       ],
       lesson7: [
         { foreign: 'Vaya derecho y luego a la izquierda.', english: 'Go straight and then to the left. (formal)', workingOn: true },
-        { foreign: 'Vaya. (imperative)', english: 'Go. (formal imperative)', workingOn: true },
+        { foreign: 'Vaya.', english: 'Go. (formal imperative)', workingOn: true },
         { foreign: 'derecho', english: 'straight', workingOn: true },
         { foreign: 'Luego vaya a la izquierda.', english: 'Then, go to the left. (formal)', workingOn: true },
         { foreign: 'hacia (accent on AH)', english: 'towards', workingOn: true },
@@ -3014,6 +3014,23 @@ export const allPhrases = {
         { foreign: 'Hablo un poco de español. Más despacio, por favor.', english: 'I speak a little bit of Spanish. Slower, please.' },
         { foreign: '¡Muchas gracias!', english: 'Thank you very much!' },
       ],
+      lesson8: [
+        { foreign: '¿Cómo puedo encontrar la embajada?', english: 'How can I find the embassy?', workingOn: true },
+        { foreign: 'poder', english: 'to ne able', workingOn: true },
+        { foreign: 'puedo', english: '(I) can / (I) am able to' },
+        { foreign: 'encontrar', english: 'to find', workingOn: true },
+        { foreign: 'puedo encontrar', english: 'I can find', workingOn: true },
+        { foreign: '¿Cómo puedo encontrar…?', english: 'How can I find…?', workingOn: true },
+        { foreign: 'embajada', english: 'embassy', workingOn: true },
+        { foreign: 'doblar', english: 'to turn', workingOn: true },
+        { foreign: 'Doble.', english: 'Turn. (imperative, formal)', workingOn: true },
+        { foreign: 'Doble a la izquierda.', english: 'Turn left. (formal)', workingOn: true },
+        { foreign: 'Doble a la derecha y luego vaya derecho.', english: 'Turn right and then go straight. (formal)', workingOn: true },
+        { foreign: 'Dobla.', english: 'Turn. (imperative, informal)', workingOn: true },
+        { foreign: 'Doble a la izquierda en la calle San Martín.', english: 'Turn left on San Martin Street. (informal)', workingOn: true },
+        { foreign: 'esquina', english: 'corner', workingOn: true },
+        { foreign: 'Está en la esquina.', english: 'It’s on the corner.', workingOn: true },
+      ]
     },
   },
 };
