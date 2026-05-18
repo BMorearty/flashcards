@@ -1225,7 +1225,7 @@ export const allPhrases = {
         },
         { foreign: 'El bolso es beige.', english: 'The bag is beige.' },
         { foreign: 'el bolso', english: 'the purse / handbag' },
-        { foreign: 'la bolsa', english: 'the bag / sack', hard: true },
+        { foreign: 'la bolsa', english: 'the bag / sack (including luggage bag)', hard: true },
         {
           foreign: 'El cinturón y el bolso no combinan.',
           english: 'The belt and the bag don’t match.',
