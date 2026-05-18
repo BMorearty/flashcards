@@ -21,7 +21,7 @@ export const allPhrases = {
         { foreign: 'el yate', english: 'the yacht' },
       ],
       lesson2: [
-        { foreign: 'la bañera', english: 'the bathtub', workingOn: true, hard: true },
+        { foreign: 'la bañera', english: 'the bathtub', hard: true },
         { foreign: 'el vestido', english: 'the dress', hard: true },
         { foreign: 'el virus', english: 'the virus' },
         { foreign: 'la botella', english: 'the bottle' },
@@ -1392,7 +1392,7 @@ export const allPhrases = {
         { foreign: 'Con gusto.', english: 'You’re welcome. (With pleasure.)' },
         { foreign: '¡Chao!', english: 'Bye!' },
         { foreign: '¡Cuídate!', english: 'Take care! (informal)', hard: true },
-        { foreign: '¡Cuídense!', english: 'Take care! (to a group)', workingOn: true, hard: true },
+        { foreign: '¡Cuídense!', english: 'Take care! (to a group)', hard: true },
         {
           foreign: 'Nos vemos más tarde.',
           english: 'See you later.',
@@ -3065,7 +3065,7 @@ export const allPhrases = {
         { foreign: 'Dobla.', english: 'Turn. (imperative, informal)', workingOn: true },
         {
           foreign: 'Doble a la izquierda en la calle San Martín.',
-          english: 'Turn left on San Martin Street. (informal)',
+          english: 'Turn left on San Martin Street. (formal)',
           workingOn: true,
         },
         { foreign: 'esquina', english: 'corner', workingOn: true },
@@ -3077,12 +3077,12 @@ export const allPhrases = {
           english: 'Let’s go to a traditional restaurant!',
           workingOn: true,
         },
-        { foreign: '¡Vamos!', english: 'Let’s go!', workingOn: true },
+        { foreign: '¡Vamos!', english: 'Let’s go!' },
         { foreign: 'tradicional', english: 'traditional' },
         { foreign: 'comer', english: 'to eat', workingOn: true },
         { foreign: 'Quiero comer.', english: 'I want to eat.' },
-        { foreign: 'diferente', english: 'different', workingOn: true },
-        { foreign: 'internacional', english: 'international', workingOn: true },
+        { foreign: 'diferente', english: 'different' },
+        { foreign: 'internacional', english: 'international' },
         { foreign: 'restaurante internacional', english: 'international restaurant' },
         {
           foreign: 'Quiero comer algo diferente.| ¡Vamos a un restaurante internacional!',
