@@ -2249,7 +2249,6 @@ export const allPhrases = {
           foreign: 'Me lesioné las rodillas.',
           english: 'I injured my knees.',
           hard: true,
-          workingOn: true,
         },
         {
           foreign: 'Mis rodillas se lesionaron.',
@@ -3031,16 +3030,16 @@ export const allPhrases = {
       lesson10: [
         { foreign: '¡Vamos a un restaurante tradicional!', english: 'Let’s go to a traditional restaurant!', workingOn: true },
         { foreign: '¡Vamos!', english: 'Let’s go!', workingOn: true },
-        { foreign: 'tradicional', english: 'traditional', workingOn: true },
+        { foreign: 'tradicional', english: 'traditional' },
         { foreign: 'comer', english: 'to eat', workingOn: true },
-        { foreign: 'Quiero comer.', english: 'I want to eat.', workingOn: true },
+        { foreign: 'Quiero comer.', english: 'I want to eat.' },
         { foreign: 'diferente', english: 'different', workingOn: true },
         { foreign: 'internacional', english: 'international', workingOn: true },
-        { foreign: 'restaurante internacional', english: 'international restaurant', workingOn: true },
+        { foreign: 'restaurante internacional', english: 'international restaurant' },
         { foreign: 'Quiero comer algo diferente.| ¡Vamos a un restaurante internacional!', english: 'I want to eat something different.| Let’s go to an international restaurant!', workingOn: true },
         { foreign: 'la acción', english: 'the action', workingOn: true },
         { foreign: 'película de acción', english: 'action movie', workingOn: true },
-        { foreign: 'Quiero ver una buena película de acción. ¡Vamos al cine!', english: 'I want to see a good action movie.| Let’s go to the movie theater!', workingOn: true },
+        { foreign: 'Quiero ver una buena película de acción.| ¡Vamos al cine!', english: 'I want to see a good action movie.| Let’s go to the movie theater!', workingOn: true },
       ]
     },
   },
