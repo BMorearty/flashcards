@@ -2274,6 +2274,43 @@ export const allPhrases = {
         },
         { foreign: 'cirugía de reemplazo de rodilla', english: 'knee replacement surgery' },
       ],
+      lesson5: [
+        { foreign: 'un bocadillo / un tentempié', english: 'a snack', workingOn: true },
+        { foreign: 'estar equivocado', english: 'to be wrong', workingOn: true },
+        { foreign: 'mostrarte', english: 'to show you (informal)', workingOn: true },
+        { foreign: 'se ve rico / rica', english: 'it looks delicious', workingOn: true },
+        {
+          foreign: 'arepa',
+          english: 'common corn cake breakfast item in Venezuela and Columbia',
+          workingOn: true,
+        },
+        { foreign: 'arepas de harina de trigo', english: 'wheat flour arepas', workingOn: true },
+        { foreign: 'una proteína', english: 'a protein', workingOn: true },
+        {
+          foreign: 'bajo / debajo de (neither changes with gender)',
+          english: 'under / underneath / beneath',
+          workingOn: true,
+        },
+        {
+          foreign: 'El gato está bajo la mesa. / debajo de la mesa.',
+          english: 'The cat is under the table.',
+          workingOn: true,
+        },
+        { foreign: 'abajo', english: 'below / down below', workingOn: true },
+        { foreign: 'El gato está ahí abajo.', english: 'The cat is down there.', workingOn: true },
+        {
+          foreign: 'Soy tu vecino; vivo abajo.',
+          english: 'I’m your neighbor; I live downstairs. (informal)',
+          workingOn: true,
+        },
+        {
+          foreign:
+            'No me siento cansado para nada. / para nada cansado.| (para nada goes before or after adj)',
+          english: 'I don’t feel tired at all.',
+          workingOn: true,
+        },
+        { foreign: 'prestamos atencion', english: 'we pay attention', workingOn: true },
+      ],
     },
   },
   unit1: {
