@@ -472,12 +472,7 @@ export const allPhrases = {
           hard: true,
         },
         { foreign: 'Hoy está nevando mucho.', english: 'Today it is snowing a lot.', hard: true },
-        {
-          foreign: 'Hoy está lloviendo mucho.',
-          english: 'Today it is raining a lot.',
-          workingOn: true,
-          hard: true,
-        },
+        { foreign: 'Hoy está lloviendo mucho.', english: 'Today it is raining a lot.', hard: true },
         { foreign: 'Él está cocinando.', english: 'He is cooking.' },
         { foreign: 'Estoy hablando.', english: 'I am speaking.' },
         { foreign: 'Estoy pensando.', english: 'I am thinking.' },
@@ -1468,6 +1463,161 @@ export const allPhrases = {
         { foreign: '¿Cuál es su raza?', english: 'Whis is his race?' },
       ],
     },
+    chapter5: {
+      name: 'Emociones y sensaciones: sentirse y estar',
+      lesson1: [
+        {
+          foreign:
+            '(yo) me' +
+            '| (tú) te' +
+            '| (él, ella, usted) se' +
+            '| (nosotros / nosotras) nos' +
+            '| (vosotros / vosotras) os' +
+            '| (ellos / ellas / ustedes) se',
+          english: 'reflexive pronouns',
+          workingOn: true,
+        },
+        { foreign: 'me siento / estoy asustado', english: 'I’m scared (male)', workingOn: true },
+        {
+          foreign: 'me siento / estoy decepcionado',
+          english: 'I’m upset / disappointed (male)',
+          workingOn: true,
+        },
+        { foreign: 'me siento / estoy emocionado', english: 'I’m excited (male)', workingOn: true },
+        { foreign: 'me siento / estoy enamorado', english: 'I’m in love (male)', workingOn: true },
+        {
+          foreign: 'me siento / estoy enfadado',
+          english: 'I’m angry / annoyed (male)',
+          workingOn: true,
+        },
+        { foreign: 'me siento / estoy enfermo', english: 'I feel sick (male)', workingOn: true },
+        {
+          foreign: 'me siento / estoy sorprendido',
+          english: 'I’m surprised (male)',
+          workingOn: true,
+        },
+        { foreign: 'me siento / estoy triste', english: 'I’m sad', workingOn: true },
+      ],
+      lesson2: [
+        // Estar o sentirse + (modifier) + emotión
+        {
+          foreign: 'nada (when describing how much you feel an emotion)',
+          english: 'No + estar or sentirse + “at all” + emotion',
+          workingOn: true,
+        },
+        {
+          foreign: 'para nada',
+          english: 'No + estar or sentirse + “at all” + emotion / emotion + “at all”',
+          workingOn: true,
+        },
+        {
+          foreign: 'ni un poco',
+          english: 'No + estar or sentirse + “not even a little” + emotion',
+          workingOn: true,
+        },
+        {
+          foreign: 'un poco (when describing how much you feel an emotion)',
+          english: 'estar or sentirse + “a little” + emotion',
+          workingOn: true,
+        },
+        {
+          foreign: 'bastante (when describing an emotion)',
+          english: 'estar or sentirse + “quite” + emotion',
+          workingOn: true,
+        },
+        {
+          foreign: 'muy + emoción',
+          english: 'estar or sentirse + “very” + emotion',
+          workingOn: true,
+        },
+      ],
+      lesson3: [
+        {
+          foreign: 'No me siento nada cansado.',
+          english: 'I don’t feel tired at all. (male)',
+          workingOn: true,
+        },
+        {
+          foreign: 'No me siento ni un poco cansado.',
+          english: 'I don’t feel even a little bit tired. (male)',
+          workingOn: true,
+        },
+        {
+          foreign: 'No me siento para nada cansado.',
+          english: 'I don’t feel tired at all. (for nothin’) (male)',
+          workingOn: true,
+        },
+        {
+          foreign: 'Me siento bastante aburrido.',
+          english: 'I feel quite bored. (male)',
+          workingOn: true,
+        },
+        {
+          foreign: 'Me siento muy asustado porque veo una araña.',
+          english: 'I feel very scared because I see a spider. (male)',
+          workingOn: true,
+        },
+        {
+          foreign: 'Me siento un poco enamorado.',
+          english: 'I feel a little in love. (male)',
+          workingOn: true,
+        },
+        {
+          foreign: 'Bruno se siente triste porque nadie quiere jugar con él.',
+          english: 'Bruno feels sad because no one wants to play with him.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Ellos se sienten decepcionados porque no están jugando fútbol hoy.',
+          english: 'They feel disappointed because they are not playing soccer today.',
+          hard: true,
+          workingOn: true,
+        },
+        {
+          foreign: 'El aire acondicionado está encendido y siente frío.',
+          english: 'The air conditioning is on and she feels cold.',
+          workingOn: true,
+        },
+      ],
+    },
+    chapter6: {
+      name: 'Emociones y sensaciones: sentir y tener',
+      lesson1: [
+        // sentirse o tener + (modifier) + sensación
+        { foreign: 'nada de', english: 'No + sentir o tener + “any” + sensation', workingOn: true },
+        {
+          foreign: 'un poco de',
+          english: 'Sentir o tener + “a little” + sensation',
+          workingOn: true,
+        },
+        {
+          foreign: 'bastante (when describing a sensation)',
+          english: 'Sentir o tener + “quite” + sensation',
+          workingOn: true,
+        },
+        { foreign: 'mucho/mucha', english: 'Sentir o tener + “very” + sensation', workingOn: true },
+      ],
+      lesson2: [
+        {
+          foreign: 'Tengo un poco de sueño, estoy cansada.',
+          english: 'I’m a little sleepy; I’m tired. (feminine)',
+          workingOn: true,
+        },
+        {
+          foreign: 'No siento nada de hambre, acabo de comer.',
+          english: 'I don’t feel hungry at all; I just ate.',
+          workingOn: true,
+        },
+        { foreign: 'No tengo nada de sed.', english: 'I’m not thirsty at all.', workingOn: true },
+        {
+          foreign: 'Siento un poco de hambre, porque tengo solo una manzana.',
+          english: 'I feel a little hungry, because I only have one apple.',
+          workingOn: true,
+        },
+        { foreign: 'Siento mucho sueño.', english: 'I feel very sleepy.', workingOn: true },
+        { foreign: 'Siento bastante frío.', english: 'I feel quite cold.', workingOn: true },
+      ],
+    },
   },
   random: {
     chapter1: {
@@ -1781,7 +1931,11 @@ export const allPhrases = {
         { foreign: 'No me gusta levantarme temprano.', english: 'I don’t like getting up early.' },
         { foreign: 'el chiste', english: 'the joke' },
         { foreign: 'Que maravilloso.', english: 'How wonderful.' },
-        { foreign: 'Dame una pista.', english: 'Give me a hint. (informal)' },
+        {
+          foreign: 'Dame una pista.',
+          english: 'Give me a hint / clue. (informal)',
+          workingOn: true,
+        },
         { foreign: 'El animal tiene cuatro patas.', english: 'The animal has four legs.' },
         { foreign: 'Los humanos tenemos dos piernas.', english: 'Humans have two legs.' },
         { foreign: 'Yo bebo en el bar.', english: 'I drink at the bar.' },
@@ -2197,11 +2351,7 @@ export const allPhrases = {
       lesson3: [
         { foreign: 'caja', english: 'box' },
         { foreign: 'llegar', english: 'to arrive' },
-        {
-          foreign: 'Yo mejor sigo estudiando.',
-          english: 'I’d better keep studying.',
-          hard: true,
-        },
+        { foreign: 'Yo mejor sigo estudiando.', english: 'I’d better keep studying.', hard: true },
         { foreign: 'Cuando hace calor, uso un ventilador.', english: 'When it’s hot I use a fan.' },
         { foreign: 'raro', english: 'weird' },
         { foreign: 'hace calor', english: 'it’s hot (weather)' },
@@ -2255,11 +2405,7 @@ export const allPhrases = {
       ],
       lesson4: [
         { foreign: 'lesionarse', english: 'to get injured' },
-        {
-          foreign: 'Me lesioné las rodillas.',
-          english: 'I injured my knees.',
-          hard: true,
-        },
+        { foreign: 'Me lesioné las rodillas.', english: 'I injured my knees.', hard: true },
         {
           foreign: 'Mis rodillas se lesionaron.',
           english: 'My knees got injured.',
@@ -2272,20 +2418,41 @@ export const allPhrases = {
           hard: true,
           workingOn: true,
         },
-        { foreign: 'cirugía de reemplazo de rodilla', english: 'knee replacement surgery' },
+        {
+          foreign: 'cirugía de reemplazo de rodilla',
+          english: 'knee replacement surgery',
+          workingOn: true,
+        },
       ],
       lesson5: [
-        { foreign: 'un bocadillo / un tentempié', english: 'a snack', workingOn: true },
-        { foreign: 'estar equivocado', english: 'to be wrong', workingOn: true },
-        { foreign: 'mostrarte', english: 'to show you (informal)', workingOn: true },
+        { foreign: 'un aperativo', english: 'an appetizer', workingOn: true },
+        {
+          foreign: 'un bocadillo',
+          english: 'a sub/sandwich eaten as a heavy snack or light meal',
+          hard: true,
+          workingOn: true,
+        },
+        {
+          foreign: 'un tentempié',
+          english: 'a light snack between meals',
+          hard: true,
+          workingOn: true,
+        },
+        { foreign: 'estar equivocado', english: 'to be wrong', hard: true, workingOn: true },
+        { foreign: 'mostrarte', english: 'to show you (informal)', hard: true, workingOn: true },
         { foreign: 'se ve rico / rica', english: 'it looks delicious', workingOn: true },
         {
           foreign: 'arepa',
           english: 'common corn cake breakfast item in Venezuela and Columbia',
           workingOn: true,
         },
-        { foreign: 'arepas de harina de trigo', english: 'wheat flour arepas', workingOn: true },
-        { foreign: 'una proteína', english: 'a protein', workingOn: true },
+        {
+          foreign: 'arepas de harina de trigo',
+          english: 'wheat flour arepas',
+          hard: true,
+          workingOn: true,
+        },
+        { foreign: 'una proteína', english: 'a protein' },
         {
           foreign: 'bajo / debajo de (neither changes with gender)',
           english: 'under / underneath / beneath',
@@ -2294,22 +2461,55 @@ export const allPhrases = {
         {
           foreign: 'El gato está bajo la mesa. / debajo de la mesa.',
           english: 'The cat is under the table.',
+          hard: true,
           workingOn: true,
         },
-        { foreign: 'abajo', english: 'below / down below', workingOn: true },
-        { foreign: 'El gato está ahí abajo.', english: 'The cat is down there.', workingOn: true },
+        { foreign: 'abajo', english: 'below / down below', hard: true, workingOn: true },
+        {
+          foreign: 'El gato está ahí abajo.',
+          english: 'The cat is down there.',
+          hard: true,
+          workingOn: true,
+        },
         {
           foreign: 'Soy tu vecino; vivo abajo.',
           english: 'I’m your neighbor; I live downstairs. (informal)',
           workingOn: true,
         },
         {
-          foreign:
-            'No me siento cansado para nada. / para nada cansado.| (para nada goes before or after adj)',
-          english: 'I don’t feel tired at all.',
+          foreign: 'No me siento cansado para nada. / para nada cansado.',
+          english: 'I don’t feel tired at all. (male)',
           workingOn: true,
         },
-        { foreign: 'prestamos atencion', english: 'we pay attention', workingOn: true },
+        { foreign: 'prestamos atencion', english: 'we pay attention', hard: true, workingOn: true },
+        {
+          foreign: 'Estoy orgulloso de ella.',
+          english: 'I’m proud of her. (from a male)',
+          workingOn: true,
+        },
+      ],
+      lesson6: [
+        {
+          foreign: 'Vamos a disfrutar mucho.',
+          english: 'We’re going to enjoy ourselves a lot.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Nosotros estamos viendo la televisión.',
+          english: 'We are watching television.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Sin embargo, sé que todo estará bien.',
+          english: 'However, I know that everything will be fine.',
+          workingOn: true,
+        },
+        {
+          foreign: 'El mar y la arena curan todas las penas.',
+          english: 'The sea and the sand heal all sorrows.',
+          hard: true,
+          workingOn: true,
+        },
       ],
     },
   },
@@ -2971,10 +3171,7 @@ export const allPhrases = {
       ],
       lesson4: [
         { foreign: 'Está justo ahí.', english: 'It is right there.', workingOn: true },
-        {
-          foreign: 'justo',
-          english: 'right / just (as in right here or right on time)',
-        },
+        { foreign: 'justo', english: 'right / just (as in right here or right on time)' },
         { foreign: 'Está ahí.', english: 'It is there.' },
         { foreign: 'cerca', english: 'close / near' },
         { foreign: 'El hotel está muy cerca.', english: 'The hotel is very close.' },
@@ -2988,10 +3185,7 @@ export const allPhrases = {
         },
         { foreign: 'kilómetro', english: 'kilometer' },
         { foreign: 'seis kilómetros', english: 'six kilometers' },
-        {
-          foreign: 'Está a seis kilómetros de aquí.',
-          english: 'It’s six kilometers from here.',
-        },
+        { foreign: 'Está a seis kilómetros de aquí.', english: 'It’s six kilometers from here.' },
         { foreign: '¡Seis kilómetros es lejos!', english: 'Six kilometers is far!' },
       ],
       lesson5: [
@@ -3026,12 +3220,10 @@ export const allPhrases = {
         {
           foreign: 'El cine está al lado de la iglesia.',
           english: 'The movie theater is beside the church.',
-          workingOn: true,
         },
         {
           foreign: 'Hay un restaurante moderno al lado del cine.',
           english: 'There is a modern restaurant beside the movie theater.',
-          workingOn: true,
         },
         { foreign: 'detrás de', english: 'behind', hard: true, workingOn: true },
         {
@@ -3054,7 +3246,7 @@ export const allPhrases = {
           workingOn: true,
         },
         { foreign: 'Vaya.', english: 'Go. (formal imperative)' },
-        { foreign: 'derecho', english: 'straight', workingOn: true },
+        { foreign: 'derecho', english: 'straight (direction)' },
         {
           foreign: 'Luego vaya a la izquierda.',
           english: 'Then, go to the left. (formal)',
@@ -3063,7 +3255,7 @@ export const allPhrases = {
         { foreign: 'hacia (accent on AH)', english: 'towards', workingOn: true },
         {
           foreign: 'Vaya hacia la derecha. (Accent on AH)',
-          english: 'Go to the right (literally towards the right). (formal)',
+          english: 'Go to the right (literally towards the right). (formal imperative)',
           workingOn: true,
         },
         {
@@ -3092,8 +3284,8 @@ export const allPhrases = {
         { foreign: '¿Cómo puedo encontrar…?', english: 'How can I find…?', workingOn: true },
         { foreign: 'embajada', english: 'embassy', workingOn: true },
         { foreign: 'doblar', english: 'to turn', workingOn: true },
-        { foreign: 'Doble.', english: 'Turn. (imperative, formal)', workingOn: true },
-        { foreign: 'Doble a la izquierda.', english: 'Turn left. (formal)', workingOn: true },
+        { foreign: 'Doble.', english: 'Turn. (imperative, formal)' },
+        { foreign: 'Doble a la izquierda.', english: 'Turn left. (formal)' },
         {
           foreign: 'Doble a la derecha y luego vaya derecho.',
           english: 'Turn right and then go straight. (formal)',
@@ -3112,11 +3304,10 @@ export const allPhrases = {
         {
           foreign: '¡Vamos a un restaurante tradicional!',
           english: 'Let’s go to a traditional restaurant!',
-          workingOn: true,
         },
         { foreign: '¡Vamos!', english: 'Let’s go!' },
         { foreign: 'tradicional', english: 'traditional' },
-        { foreign: 'comer', english: 'to eat', workingOn: true },
+        { foreign: 'comer', english: 'to eat' },
         { foreign: 'Quiero comer.', english: 'I want to eat.' },
         { foreign: 'diferente', english: 'different' },
         { foreign: 'internacional', english: 'international' },
