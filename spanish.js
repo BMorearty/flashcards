@@ -628,7 +628,7 @@ export const allPhrases = {
         },
         {
           foreign: 'A ti te encanta dormir hasta tarde.',
-          english: 'You love to sleep in late. (informal)',
+          english: 'You love to sleep in late. (informal)', workingOn: true, hard: true,
         },
         {
           foreign: 'A ella le interesa aprender español.',
@@ -988,7 +988,7 @@ export const allPhrases = {
         { foreign: 'político / política', english: 'politician' },
         { foreign: 'profesor / profesora', english: 'professor' },
         { foreign: 'programador / programadora', english: 'computer programmer' },
-        { foreign: 'sacerdote', english: 'priest', hard: true },
+        { foreign: 'sacerdote', english: 'priest', workingOn: true, hard: true },
         { foreign: 'secretario / secretaria', english: 'secretary' },
         { foreign: 'un / una soldado', english: 'a soldier' },
         { foreign: 'trabajador / trabajadora', english: 'worker / laborer' },
@@ -1100,7 +1100,7 @@ export const allPhrases = {
         { foreign: 'Las delfines son grises.', english: 'The (girl) dolphins are gray.' },
         {
           foreign: 'Cuando llueve el cielo está gris.',
-          english: 'When it rains, the sky is gray.',
+          english: 'When it rains, the sky is gray.', hard: true, workingOn: true,
         },
         { foreign: 'morado', english: 'purple' },
         { foreign: 'rosado', english: 'rosy' },
@@ -1127,11 +1127,11 @@ export const allPhrases = {
       ],
       lesson2: [
         { foreign: 'el ombligo', english: 'the navel / belly button' },
-        { foreign: 'el muslo', english: 'the thigh' },
+        { foreign: 'el muslo', english: 'the thigh', workingOn: true, hard: true },
         { foreign: 'la rodilla', english: 'the knee' },
         { foreign: 'el tobillo', english: 'the ankle', hard: true },
         { foreign: 'los dedos de los pies / del pie', english: 'the toes' },
-        { foreign: 'los dedos', english: 'the fingers' },
+        { foreign: 'los dedos', english: 'the fingers', workingOn: true, hard: true },
         { foreign: 'el pie', english: 'the foot' },
         { foreign: 'el cabello / el pelo', english: 'the hair' },
         { foreign: 'el hombro', english: 'the shoulder' },
@@ -1297,7 +1297,7 @@ export const allPhrases = {
       lesson1: [
         {
           foreign: 'Este lápiz cuesta un ojo de la cara.',
-          english: 'This pencil costs an arm and a leg.',
+          english: 'This pencil costs an arm and a leg.', workingOn: true,
         },
         {
           foreign: '... no está de más.',
@@ -1942,7 +1942,7 @@ export const allPhrases = {
         { foreign: 'incluso cuando', english: 'even when' },
         { foreign: 'la cara', english: 'the face' },
         { foreign: 'expresiones idiomáticas', english: 'idioms' },
-        { foreign: 'un dicho', english: 'a saying' },
+        { foreign: 'un dicho', english: 'a saying', workingOn: true, hard: true },
         { foreign: 'la carpeta', english: 'the folder' },
         { foreign: 'signos de exclamación', english: 'exclamation marks' },
         { foreign: 'signo de exclamación abierto', english: 'opening exclamation mark' },
@@ -2023,7 +2023,7 @@ export const allPhrases = {
       ],
       lesson2: [
         { foreign: 'listo', english: 'ready' },
-        { foreign: 'dar asco', english: 'to disgust' },
+        { foreign: 'dar asco', english: 'to disgust', workingOn: true, hard: true },
         { foreign: 'Me da asco.', english: 'It disgusts me.' },
         { foreign: 'aparato', english: 'device' },
         { foreign: 'el ejército', english: 'the army', hard: true },
@@ -2106,7 +2106,7 @@ export const allPhrases = {
           english: 'Are you going on vacation to Alaska after all? (informal)',
           hard: true,
         },
-        { foreign: 'He cambiado de idea.', english: 'I’ve changed my mind.' },
+        { foreign: 'He cambiado de idea.', english: 'I’ve changed my mind.', hard: true, workingOn: true },
         { foreign: 'comprarse', english: 'to buy for oneself' },
         { foreign: 'prestarte', english: 'to lend to you (informal)', hard: true },
         { foreign: 'Ya no hace falta.', english: 'It’s no longer necessary.' },
@@ -2376,7 +2376,7 @@ export const allPhrases = {
         { foreign: 'tonto / a', english: 'silly' },
         {
           foreign: 'Nunca he visto un mono en una fiesta.',
-          english: 'I have never seen a monkey at a party.',
+          english: 'I have never seen a monkey at a party.', workingOn: true,
         },
         {
           foreign: 'La patineta tiene ruedas cuadradas.',
