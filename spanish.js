@@ -628,7 +628,9 @@ export const allPhrases = {
         },
         {
           foreign: 'A ti te encanta dormir hasta tarde.',
-          english: 'You love to sleep in late. (informal)', workingOn: true, hard: true,
+          english: 'You love to sleep in late. (informal)',
+          workingOn: true,
+          hard: true,
         },
         {
           foreign: 'A ella le interesa aprender español.',
@@ -1100,7 +1102,9 @@ export const allPhrases = {
         { foreign: 'Las delfines son grises.', english: 'The (girl) dolphins are gray.' },
         {
           foreign: 'Cuando llueve el cielo está gris.',
-          english: 'When it rains, the sky is gray.', hard: true, workingOn: true,
+          english: 'When it rains, the sky is gray.',
+          hard: true,
+          workingOn: true,
         },
         { foreign: 'morado', english: 'purple' },
         { foreign: 'rosado', english: 'rosy' },
@@ -1297,7 +1301,8 @@ export const allPhrases = {
       lesson1: [
         {
           foreign: 'Este lápiz cuesta un ojo de la cara.',
-          english: 'This pencil costs an arm and a leg.', workingOn: true,
+          english: 'This pencil costs an arm and a leg.',
+          workingOn: true,
         },
         {
           foreign: '... no está de más.',
@@ -2106,7 +2111,12 @@ export const allPhrases = {
           english: 'Are you going on vacation to Alaska after all? (informal)',
           hard: true,
         },
-        { foreign: 'He cambiado de idea.', english: 'I’ve changed my mind.', hard: true, workingOn: true },
+        {
+          foreign: 'He cambiado de idea.',
+          english: 'I’ve changed my mind.',
+          hard: true,
+          workingOn: true,
+        },
         { foreign: 'comprarse', english: 'to buy for oneself' },
         { foreign: 'prestarte', english: 'to lend to you (informal)', hard: true },
         { foreign: 'Ya no hace falta.', english: 'It’s no longer necessary.' },
@@ -2376,7 +2386,8 @@ export const allPhrases = {
         { foreign: 'tonto / a', english: 'silly' },
         {
           foreign: 'Nunca he visto un mono en una fiesta.',
-          english: 'I have never seen a monkey at a party.', workingOn: true,
+          english: 'I have never seen a monkey at a party.',
+          workingOn: true,
         },
         {
           foreign: 'La patineta tiene ruedas cuadradas.',
@@ -2461,7 +2472,7 @@ export const allPhrases = {
         },
         {
           foreign: 'Soy tu vecino; vivo abajo.',
-          english: 'I’m your neighbor; I live downstairs. (informal)',
+          english: 'I’m your neighbor; I live downstairs. (informal, from a male)',
           workingOn: true,
         },
         {
@@ -2530,6 +2541,7 @@ export const allPhrases = {
         {
           foreign: 'sentadas en/sobre una manta',
           english: 'sitting on a blanket (plural feminine)',
+          hard: true,
           workingOn: true,
         },
         { foreign: 'cesta de picnic', english: 'picnic basket', workingOn: true },
@@ -2542,6 +2554,7 @@ export const allPhrases = {
         {
           foreign: 'Está tratando de encontrar a sus amigos.',
           english: 'He is trying to find his friends.',
+          hard: true,
           workingOn: true,
         },
         { foreign: 'la gallinita ciega', english: 'blind man’s bluff', workingOn: true },
