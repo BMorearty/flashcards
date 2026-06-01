@@ -989,7 +989,7 @@ export const allPhrases = {
         { foreign: 'político / política', english: 'politician' },
         { foreign: 'profesor / profesora', english: 'professor' },
         { foreign: 'programador / programadora', english: 'computer programmer' },
-        { foreign: 'sacerdote', english: 'priest', workingOn: true, hard: true },
+        { foreign: 'sacerdote', english: 'priest', hard: true },
         { foreign: 'secretario / secretaria', english: 'secretary' },
         { foreign: 'un / una soldado', english: 'a soldier' },
         { foreign: 'trabajador / trabajadora', english: 'worker / laborer' },
@@ -1130,11 +1130,11 @@ export const allPhrases = {
       ],
       lesson2: [
         { foreign: 'el ombligo', english: 'the navel / belly button' },
-        { foreign: 'el muslo', english: 'the thigh', workingOn: true, hard: true },
+        { foreign: 'el muslo', english: 'the thigh', hard: true },
         { foreign: 'la rodilla', english: 'the knee' },
         { foreign: 'el tobillo', english: 'the ankle', hard: true },
         { foreign: 'los dedos de los pies / del pie', english: 'the toes' },
-        { foreign: 'los dedos', english: 'the fingers', workingOn: true, hard: true },
+        { foreign: 'los dedos', english: 'the fingers', hard: true },
         { foreign: 'el pie', english: 'the foot' },
         { foreign: 'el cabello / el pelo', english: 'the hair' },
         { foreign: 'el hombro', english: 'the shoulder' },
@@ -1301,7 +1301,6 @@ export const allPhrases = {
         {
           foreign: 'Este lápiz cuesta un ojo de la cara.',
           english: 'This pencil costs an arm and a leg.',
-          workingOn: true,
         },
         {
           foreign: '... no está de más.',
@@ -1476,25 +1475,21 @@ export const allPhrases = {
             '| (ellos / ellas / ustedes) se',
           english: 'reflexive pronouns',
         },
-        { foreign: 'me siento / estoy asustado', english: 'I’m scared (male)', workingOn: true },
+        { foreign: 'me siento / estoy asustado', english: 'I’m scared (male)' },
         {
           foreign: 'me siento / estoy decepcionado',
           english: 'I’m upset / disappointed (male)',
           workingOn: true,
         },
-        { foreign: 'me siento / estoy emocionado', english: 'I’m excited (male)', workingOn: true },
+        { foreign: 'me siento / estoy emocionado', english: 'I’m excited (male)' },
         { foreign: 'me siento / estoy enamorado', english: 'I’m in love (male)', workingOn: true },
         {
           foreign: 'me siento / estoy enfadado',
           english: 'I’m angry / annoyed (male)',
           workingOn: true,
         },
-        { foreign: 'me siento / estoy enfermo', english: 'I feel sick (male)', workingOn: true },
-        {
-          foreign: 'me siento / estoy sorprendido',
-          english: 'I’m surprised (male)',
-          workingOn: true,
-        },
+        { foreign: 'me siento / estoy enfermo', english: 'I feel sick (male)' },
+        { foreign: 'me siento / estoy sorprendido', english: 'I’m surprised (male)' },
         { foreign: 'me siento / estoy triste', english: 'I’m sad' },
       ],
       lesson2: [
@@ -1518,7 +1513,6 @@ export const allPhrases = {
         {
           foreign: 'bastante (when describing an emotion)',
           english: 'estar or sentirse + “quite” + emotion',
-          workingOn: true,
         },
         { foreign: 'muy + emoción', english: 'estar or sentirse + “very” + emotion' },
       ],
@@ -1527,20 +1521,12 @@ export const allPhrases = {
           foreign: 'No me siento ni un poco cansado.',
           english: 'I don’t feel even a little bit tired. (male)',
         },
-        {
-          foreign: 'Me siento bastante aburrido.',
-          english: 'I feel quite bored. (male)',
-          workingOn: true,
-        },
+        { foreign: 'Me siento bastante aburrido.', english: 'I feel quite bored. (male)' },
         {
           foreign: 'Me siento muy asustado porque veo una araña.',
           english: 'I feel very scared because I see a spider. (male)',
         },
-        {
-          foreign: 'Me siento un poco enamorado.',
-          english: 'I feel a little in love. (male)',
-          workingOn: true,
-        },
+        { foreign: 'Me siento un poco enamorado.', english: 'I feel a little in love. (male)' },
         {
           foreign: 'Bruno se siente triste porque nadie quiere jugar con él.',
           english: 'Bruno feels sad because no one wants to play with him.',
@@ -1549,7 +1535,6 @@ export const allPhrases = {
           foreign: 'Ellos se sienten decepcionados porque no están jugando fútbol hoy.',
           english: 'They feel disappointed because they are not playing soccer today. (males)',
           hard: true,
-          workingOn: true,
         },
         {
           foreign: 'El aire acondicionado está encendido y siente frío.',
@@ -1574,13 +1559,13 @@ export const allPhrases = {
       name: 'Emociones y sensaciones: sentir y tener',
       lesson1: [
         // sentirse o tener + (modifier) + sensación
-        { foreign: 'nada de', english: 'No + sentir o tener + “any” + sensation', workingOn: true },
+        { foreign: 'nada de', english: 'No + sentir o tener + “any” + sensation' },
         { foreign: 'un poco de', english: 'Sentir o tener + “a little” + sensation' },
         {
           foreign: 'bastante (when describing a sensation)',
           english: 'Sentir o tener + “quite” + sensation',
         },
-        { foreign: 'mucho/mucha', english: 'Sentir o tener + “very” + sensation', workingOn: true },
+        { foreign: 'mucho/mucha', english: 'Sentir o tener + “very” + sensation' },
       ],
       lesson2: [
         {
@@ -1598,7 +1583,6 @@ export const allPhrases = {
         {
           foreign: 'Siento un poco de hambre, porque tengo solo una manzana.',
           english: 'I feel a little hungry, because I only have one apple.',
-          workingOn: true,
         },
         {
           foreign: 'Siento mucho sueño.',
@@ -1697,7 +1681,7 @@ export const allPhrases = {
       ],
       lesson6: [
         { foreign: 'éxito', english: 'success' },
-        { foreign: 'hace un rato', english: 'a while ago' },
+        { foreign: 'hace un rato', english: 'a while ago', workingOn: true },
         { foreign: 'hace un mes', english: 'a month ago' },
         { foreign: 'hace un minuto', english: 'a minute ago' },
         { foreign: 'todo está bien', english: 'everything is fine' },
@@ -1998,7 +1982,7 @@ export const allPhrases = {
           foreign: 'Acabo de mudarme, así que todavía hay un poco de desorden.',
           english: 'I just moved in, so there’s still a bit of a mess.',
         },
-        { foreign: 'así que', english: 'so (cause and effect)', hard: true },
+        { foreign: 'así que', english: 'and so (cause and effect)', hard: true, workingOn: true },
         {
           foreign: 'Acá, a mi lado, está este adorable perro.',
           english: 'Here, next to me, is this adorable dog. (España)',
@@ -2371,7 +2355,6 @@ export const allPhrases = {
         {
           foreign: 'Nunca he visto un mono en una fiesta.',
           english: 'I have never seen a monkey at a party.',
-          workingOn: true,
         },
         {
           foreign: 'La patineta tiene ruedas cuadradas.',
@@ -2418,14 +2401,9 @@ export const allPhrases = {
           english: 'a sub/sandwich eaten as a heavy snack or light meal',
           hard: true,
         },
-        {
-          foreign: 'un tentempié',
-          english: 'a light snack between meals',
-          hard: true,
-          workingOn: true,
-        },
+        { foreign: 'un tentempié', english: 'a light snack between meals', hard: true },
         { foreign: 'estar equivocado', english: 'to be wrong', hard: true },
-        { foreign: 'mostrarte', english: 'to show you (informal)', hard: true, workingOn: true },
+        { foreign: 'mostrarte', english: 'to show you (informal)', hard: true },
         { foreign: 'se ve rico / rica', english: 'it looks delicious' },
         { foreign: 'arepa', english: 'common corn cake breakfast item in Venezuela and Columbia' },
         {
@@ -2438,36 +2416,24 @@ export const allPhrases = {
         {
           foreign: 'bajo / debajo de (neither changes with gender)',
           english: 'under / underneath / beneath',
-          workingOn: true,
         },
         {
           foreign: 'El gato está bajo la mesa. / debajo de la mesa.',
           english: 'The cat is under the table.',
           hard: true,
         },
-        { foreign: 'abajo', english: 'below / down below', hard: true, workingOn: true },
-        {
-          foreign: 'El gato está ahí abajo.',
-          english: 'The cat is down there.',
-          hard: true,
-          workingOn: true,
-        },
+        { foreign: 'abajo', english: 'below / down below', hard: true },
+        { foreign: 'El gato está ahí abajo.', english: 'The cat is down there.', hard: true },
         {
           foreign: 'Soy tu vecino; vivo abajo.',
           english: 'I’m your neighbor; I live downstairs. (informal, from a male)',
-          workingOn: true,
         },
         {
           foreign: 'No me siento cansado para nada. / para nada cansado. / nada cansado.',
           english: 'I don’t feel tired at all. (male)',
-          workingOn: true,
         },
-        { foreign: 'prestamos atencion', english: 'we pay attention', hard: true, workingOn: true },
-        {
-          foreign: 'Estoy orgulloso de ella.',
-          english: 'I’m proud of her. (from a male)',
-          workingOn: true,
-        },
+        { foreign: 'prestamos atencion', english: 'we pay attention', hard: true },
+        { foreign: 'Estoy orgulloso de ella.', english: 'I’m proud of her. (from a male)' },
       ],
       lesson6: [
         { foreign: 'Vamos a disfrutar mucho.', english: 'We’re going to enjoy ourselves a lot.' },
@@ -2479,7 +2445,6 @@ export const allPhrases = {
         {
           foreign: 'Sin embargo, sé que todo estará bien.',
           english: 'However, I know that everything will be fine.',
-          workingOn: true,
         },
         {
           foreign: 'El mar y la arena curan todas las penas.',
@@ -2528,11 +2493,11 @@ export const allPhrases = {
           workingOn: true,
         },
         { foreign: 'la gallinita ciega', english: 'blind man’s bluff', workingOn: true },
-        { foreign: '¡Eres tu!', english: 'You’re it! (in a game)', workingOn: true },
+        { foreign: '¡Eres tu!', english: 'You’re it! (in a game)' },
         { foreign: 'hacer cosquillas a alguien', english: 'to tickle someone', workingOn: true },
         { foreign: 'bambalina', english: 'banner or streamer (e.g. for a party)' },
         { foreign: 'el cumpleaños', english: 'the birthday', workingOn: true },
-        { foreign: 'la mascota', english: 'the pet', workingOn: true },
+        { foreign: 'la mascota', english: 'the pet' },
         { foreign: 'el insecto', english: 'the insect' },
         {
           foreign: 'los truenos y los relámpagos',
@@ -2549,6 +2514,87 @@ export const allPhrases = {
         },
         { foreign: 'descansar', english: 'to rest', hard: true, workingOn: true },
         { foreign: 'relajarse', english: 'to relax', workingOn: true },
+      ],
+      lesson9: [
+        { foreign: 'pimienta', english: 'pepper', workingOn: true },
+        { foreign: 'pimienta negra', english: 'black pepper', workingOn: true },
+        { foreign: 'unas pocas / cuantas manzanas', english: 'a few apples', workingOn: true },
+        { foreign: 'unos pocos niños', english: 'a few kids', workingOn: true },
+        { foreign: 'ultimamente', english: 'lately', workingOn: true },
+        {
+          foreign: 'hacer una broma',
+          english: 'to play a joke / prank',
+          hard: true,
+          workingOn: true,
+        },
+        {
+          foreign: 'aceite de oliva (accent on LI)',
+          english: 'olive oil',
+          hard: true,
+          workingOn: true,
+        },
+        { foreign: 'unas repisas', english: 'some shelves', hard: true, workingOn: true },
+        { foreign: 'lámpara', english: 'lamp', workingOn: true },
+        { foreign: 'un horno', english: 'an oven', workingOn: true },
+        { foreign: 'un horno tostador', english: 'a toaster oven', workingOn: true },
+        { foreign: 'unos papeles', english: 'some papers', workingOn: true },
+        {
+          foreign: 'un trozo de papel (accent on EL)',
+          english: 'a piece of paper',
+          workingOn: true,
+        },
+        { foreign: 'un imán', english: 'a magnet', workingOn: true },
+        { foreign: 'desordenado', english: 'messy', workingOn: true },
+        { foreign: 'el pelo de los animales', english: 'fur', workingOn: true },
+        { foreign: 'confuso/a', english: 'confusing', workingOn: true },
+        { foreign: 'estoy confundido/a', english: 'I’m confused', workingOn: true },
+        {
+          foreign: 'a tu orden / a tus órdenes en México',
+          english: 'at your service / you’re welcome (polite)',
+          workingOn: true,
+        },
+        {
+          foreign: 'Sé tocar la guitarra.',
+          english: 'I know how to play the guitar.',
+          workingOn: true,
+        },
+        { foreign: 'sumar y restar', english: 'adding and subtracting', workingOn: true },
+        { foreign: 'viajar por el mundo', english: 'to travel the world', workingOn: true },
+        { foreign: 'nadar', english: 'to swim', workingOn: true },
+        {
+          foreign: 'un coche',
+          english: 'a car (in Spain, Mexico City, and Argentina)',
+          workingOn: true,
+        },
+        { foreign: 'el final de la película', english: 'the end of the movie', workingOn: true },
+        {
+          foreign:
+            'Mientras estás de visita en esa ciudad| puedes ir de un lugar a otro| sin problema.',
+          english:
+            'While visiting that city,| you can go from one place to another| without any problems. (informal)',
+          workingOn: true,
+        },
+        { foreign: 'sin parar', english: 'non-stop', workingOn: true },
+      ],
+      lesson10: [
+        {
+          foreign: 'Yo hice la mayor parte de la tarea',
+          english: 'I did most of the homework',
+          hard: true,
+          workingOn: true,
+        },
+        {
+          foreign: 'La leche ha caducado y sabe muy mal. (saber = to know but also to taste)',
+          english: 'The milk has gone bad and tastes very bad.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Este pescado sabe muy salado.',
+          english: 'This fish tastes really salty.',
+          workingOn: true,
+        },
+        { foreign: 'La lima sabe ácida.', english: 'The lime tastes sour.', workingOn: true },
+        { foreign: 'daltónico', english: 'red/green color-blind', hard: true, workingOn: true },
       ],
     },
   },
@@ -3264,7 +3310,7 @@ export const allPhrases = {
           foreign: 'Hay un restaurante moderno al lado del cine.',
           english: 'There is a modern restaurant beside the movie theater.',
         },
-        { foreign: 'detrás de', english: 'behind', hard: true, workingOn: true },
+        { foreign: 'detrás de', english: 'behind', hard: true },
         {
           foreign: 'El hotel está detrás de la iglesia.',
           english: 'The hotel is behind the church.',
@@ -3322,7 +3368,7 @@ export const allPhrases = {
           english: 'Turn left on San Martin Street. (formal)',
         },
         { foreign: 'esquina', english: 'corner' },
-        { foreign: 'Está en la esquina.', english: 'It’s on the corner.', workingOn: true },
+        { foreign: 'Está en la esquina.', english: 'It’s on the corner.' },
       ],
       lesson10: [
         {
