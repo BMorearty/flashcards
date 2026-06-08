@@ -255,6 +255,18 @@ export const allPhrases = {
             '| (ellos / ellas / ustedes) vienen',
           english: 'to come, present tense indicative',
         },
+        {
+          foreign:
+            'morder, presente de indicativo:' +
+            '| (yo) muerdo' +
+            '| (tú) muerdes' +
+            '| (él, ella, usted) muerde' +
+            '| (nosotros / nosotras) mordemos' +
+            '| (vosotros / vosotras) mordéis' +
+            '| (ellos / ellas / ustedes) muerden',
+          english: 'to bite, present tense indicative',
+          workingOn: true,
+        },
       ],
       lesson2: [
         // Preterite tense
@@ -1581,6 +1593,48 @@ export const allPhrases = {
         { foreign: 'Siento bastante frío.', english: 'I feel quite cold.' },
       ],
     },
+    chapter7: {
+      name: 'encontrarse vs. reunirse',
+      lesson1: [
+        {
+          foreign: 'encontrarse',
+          english: 'to meet without planning / to find oneself',
+          workingOn: true,
+        },
+        { foreign: 'reunirse', english: 'to meet (on purpose)', workingOn: true },
+        {
+          foreign: 'Él se encuentra en una situación difícil.',
+          english: 'He finds himself in a difficult situation.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Ella se encuentra / se reúne con sus amigas en el centro comercial.',
+          english: 'She meets with her friends downtown. (feminine)',
+          workingOn: true,
+        },
+        {
+          foreign: 'Ellos se encuentran / se reúnen en la cafetería.',
+          english: 'They are meeting in the cafeteria. (masculine)',
+          workingOn: true,
+        },
+        {
+          foreign: 'Nosotros nos reunimos en el salón de conferencias con los fabricantes.',
+          english: 'We met with the manufacturers in the conference room.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Estaba caminando por la playa y me encontré con un amigo.',
+          english: 'I was walking along the beach and ran into a friend. (masculine)',
+          workingOn: true,
+        },
+        {
+          foreign: 'Tenía una mala vida familiar, me encontré a mí mismo escapando muchas veces.',
+          english: 'I had a bad homelife; I found myself running away often.',
+          workingOn: true,
+        },
+        { foreign: 'reunión', english: 'meeting', workingOn: true },
+      ],
+    },
   },
   random: {
     chapter1: {
@@ -2523,6 +2577,65 @@ export const allPhrases = {
         { foreign: 'Este pescado sabe muy salado.', english: 'This fish tastes really salty.' },
         { foreign: 'La lima sabe ácida.', english: 'The lime tastes sour.' },
         { foreign: 'daltónico', english: 'red/green color-blind', hard: true },
+      ],
+    },
+    chapter5: {
+      name: 'Random vocab, June 2026',
+      lesson1: [
+        {
+          foreign: 'Está un poco cálido. / Hace un poco de calor.',
+          english: 'It’s a bit warm. (weather)',
+          workingOn: true,
+        },
+        {
+          foreign: 'antes del final de la lección',
+          english: 'before the end of the lesson',
+          workingOn: true,
+        },
+        {
+          foreign: 'Empezó a aprender un par de semanas después que yo.',
+          english: 'He started learning a couple of weeks after I did.',
+          workingOn: true,
+        },
+        {
+          foreign: 'en una sartén sobre la estufa',
+          english: 'in a frying pan on the stove',
+          workingOn: true,
+        },
+        { foreign: 'escaleras', english: 'stairs', workingOn: true },
+      ],
+      lesson2: [
+        { foreign: '¡Qué diferencia!', english: 'What a difference!', workingOn: true },
+        {
+          foreign: '¡Qué suavecito es esté gato!',
+          english: 'This cat is so soft!',
+          workingOn: true,
+        },
+        { foreign: 'imprevisible', english: 'unpredictable', workingOn: true },
+        {
+          foreign: 'No cuando muerden y rasguñan.',
+          english: 'Not when they bite and scratch.',
+          workingOn: true,
+        },
+        { foreign: 'morder', english: 'to bite', workingOn: true },
+        { foreign: 'rasguñar', english: 'to scratch', workingOn: true },
+        { foreign: 'suficiente', english: 'enough', workingOn: true },
+        { foreign: 'un patrón', english: 'a pattern', workingOn: true },
+        { foreign: 'bautismo', english: 'baptism', workingOn: true },
+        { foreign: 'un emparedado / sándwich', english: 'a sandwich', workingOn: true },
+        { foreign: 'un durazno', english: 'a peach', workingOn: true },
+        { foreign: 'una nectarina', english: 'a nectarine', workingOn: true },
+        { foreign: 'los muebles', english: 'the furniture', workingOn: true },
+        {
+          foreign: 'Nosotros rasguñamos nuestros bolsillos.',
+          english: 'We scraped together the money from our pockets.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Javier, ¿conoces tú el sitio web Ebay?',
+          english: 'Javier, do you know the website eBay?',
+          workingOn: true,
+        },
       ],
     },
   },
