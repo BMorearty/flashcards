@@ -832,6 +832,89 @@ export const allPhrases = {
         },
       ],
     },
+    chapter11: {
+      name: 'Verbos reflexivos',
+      lesson1: [
+        {
+          foreign: 'encontrarse',
+          english: 'to meet without planning / to find oneself',
+          workingOn: true,
+        },
+        { foreign: 'reunirse', english: 'to meet (on purpose)', workingOn: true },
+        {
+          foreign: 'Él se encuentra en una situación difícil.',
+          english: 'He finds himself in a difficult situation.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Ella se encuentra / se reúne| con sus amigas en el centro comercial.',
+          english: 'She meets| with her friends downtown. (feminine)',
+          workingOn: true,
+        },
+        {
+          foreign: 'Ellos se encuentran / se reúnen en la cafetería.',
+          english: 'They are meeting in the cafeteria. (masculine)',
+          workingOn: true,
+        },
+        {
+          foreign: 'Nosotros nos reunimos| en el salón de conferencias con los fabricantes.',
+          english: 'We met| with the manufacturers in the conference room.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Estaba caminando por la playa| y me encontré con un amigo.',
+          english: 'I was walking along the beach| and ran into a friend. (masculine)',
+          workingOn: true,
+        },
+        {
+          foreign: 'Tenía una mala vida familiar,| me encontré a mí mismo escapando muchas veces.',
+          english: 'I had a bad homelife;| I found myself running away often.',
+          hard: true,
+          workingOn: true,
+        },
+        { foreign: 'una reunión', english: 'a meeting', workingOn: true },
+      ],
+      lesson2: [
+        {
+          foreign: 'Él se despierta a las seis de la mañana.',
+          english: 'He wakes up at six in the morning.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Ella se levanta a las siete de la mañana.',
+          english: 'She gets up at seven in the morning.',
+          workingOn: true,
+        },
+        {
+          foreign: 'El niño se cepilla los dientes al levantarse.',
+          english: 'The boy brushes his teeth when he gets up.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Ella se ducha por las mañanas.',
+          english: 'She showers in the morning.',
+          workingOn: true,
+        },
+      ],
+      lesson2: [
+        { foreign: 'despertarse', english: 'to wake up', workingOn: true },
+        { foreign: 'levantarse', english: 'to get up', workingOn: true },
+        { foreign: 'cepillarse', english: 'to brush', workingOn: true },
+        { foreign: 'ducharse', english: 'to take a shower', workingOn: true },
+        { foreign: 'bañarse', english: 'to bathe', workingOn: true },
+        { foreign: 'lavarse', english: 'to wash', workingOn: true },
+        { foreign: 'secarse', english: 'to dry', workingOn: true },
+        {
+          foreign: 'vestirse',
+          english: 'to get dressed (TODO: add vestirse conjugation)',
+          workingOn: true,
+        },
+        { foreign: 'peinarse', english: 'to comb', workingOn: true },
+        { foreign: 'afeitarse', english: 'to shave', workingOn: true },
+        { foreign: 'maquillarse', english: 'to make up', workingOn: true },
+        { foreign: 'acostarse', english: 'to go to bed', workingOn: true },
+      ],
+    },
   },
   vocabulary: {
     chapter1: {
@@ -1589,49 +1672,6 @@ export const allPhrases = {
           workingOn: true,
         },
         { foreign: 'Siento bastante frío.', english: 'I feel quite cold.' },
-      ],
-    },
-    chapter7: {
-      name: 'encontrarse vs. reunirse',
-      lesson1: [
-        {
-          foreign: 'encontrarse',
-          english: 'to meet without planning / to find oneself',
-          workingOn: true,
-        },
-        { foreign: 'reunirse', english: 'to meet (on purpose)', workingOn: true },
-        {
-          foreign: 'Él se encuentra en una situación difícil.',
-          english: 'He finds himself in a difficult situation.',
-          workingOn: true,
-        },
-        {
-          foreign: 'Ella se encuentra / se reúne| con sus amigas en el centro comercial.',
-          english: 'She meets| with her friends downtown. (feminine)',
-          workingOn: true,
-        },
-        {
-          foreign: 'Ellos se encuentran / se reúnen en la cafetería.',
-          english: 'They are meeting in the cafeteria. (masculine)',
-          workingOn: true,
-        },
-        {
-          foreign: 'Nosotros nos reunimos| en el salón de conferencias con los fabricantes.',
-          english: 'We met| with the manufacturers in the conference room.',
-          workingOn: true,
-        },
-        {
-          foreign: 'Estaba caminando por la playa| y me encontré con un amigo.',
-          english: 'I was walking along the beach| and ran into a friend. (masculine)',
-          workingOn: true,
-        },
-        {
-          foreign: 'Tenía una mala vida familiar,| me encontré a mí mismo escapando muchas veces.',
-          english: 'I had a bad homelife;| I found myself running away often.',
-          hard: true,
-          workingOn: true,
-        },
-        { foreign: 'una reunión', english: 'a meeting', workingOn: true },
       ],
     },
   },
@@ -2680,6 +2720,19 @@ export const allPhrases = {
           english: 'I’m hungry for knowledge.',
           workingOn: true,
         },
+      ],
+      lesson4: [
+        {
+          foreign: 'desayuna cereales con leche',
+          english: 'has cereal with milk for breakfast',
+          workingOn: true,
+        },
+        {
+          foreign: 'Va al trabajo a las siete y cuarenta y cinco minutos.',
+          english: 'He goes to work at 7:45.',
+          workingOn: true,
+        },
+        { foreign: 'Él regresa a casa.', english: 'He returns home.', workingOn: true },
       ],
     },
   },
