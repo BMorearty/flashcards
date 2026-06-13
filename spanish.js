@@ -847,8 +847,8 @@ export const allPhrases = {
           workingOn: true,
         },
         {
-          foreign: 'Ella se encuentra / se reúne| con sus amigas en el centro comercial.',
-          english: 'She meets| with her friends downtown. (feminine)',
+          foreign: 'Ella se reúne / se encuentra| con sus amigas en el centro comercial.',
+          english: 'She meets| with her friends at the mall. (feminine, intentional or not)',
           workingOn: true,
         },
         {
@@ -859,6 +859,7 @@ export const allPhrases = {
         {
           foreign: 'Nosotros nos reunimos| en el salón de conferencias con los fabricantes.',
           english: 'We met| with the manufacturers in the conference room.',
+          hard: true,
           workingOn: true,
         },
         {
@@ -888,6 +889,7 @@ export const allPhrases = {
         {
           foreign: 'El niño se cepilla los dientes al levantarse.',
           english: 'The boy brushes his teeth when he gets up.',
+          hard: true,
           workingOn: true,
         },
         {
@@ -896,22 +898,22 @@ export const allPhrases = {
           workingOn: true,
         },
       ],
-      lesson2: [
-        { foreign: 'despertarse', english: 'to wake up', workingOn: true },
+      lesson3: [
+        { foreign: 'despertarse', english: 'to wake up', hard: true, workingOn: true },
         { foreign: 'levantarse', english: 'to get up', workingOn: true },
-        { foreign: 'cepillarse', english: 'to brush', workingOn: true },
-        { foreign: 'ducharse', english: 'to take a shower', workingOn: true },
-        { foreign: 'bañarse', english: 'to bathe', workingOn: true },
-        { foreign: 'lavarse', english: 'to wash', workingOn: true },
-        { foreign: 'secarse', english: 'to dry', workingOn: true },
         {
-          foreign: 'vestirse',
-          english: 'to get dressed (TODO: add vestirse conjugation)',
+          foreign: 'cepillarse el pelo / los dientes',
+          english: 'to brush one’s hair / teeth',
           workingOn: true,
         },
-        { foreign: 'peinarse', english: 'to comb', workingOn: true },
-        { foreign: 'afeitarse', english: 'to shave', workingOn: true },
-        { foreign: 'maquillarse', english: 'to make up', workingOn: true },
+        { foreign: 'ducharse', english: 'to take a shower', workingOn: true },
+        { foreign: 'bañarse', english: 'to bathe', workingOn: true },
+        { foreign: 'lavarse', english: 'to wash yourself', workingOn: true },
+        { foreign: 'secarse', english: 'to dry off', workingOn: true },
+        { foreign: 'vestirse', english: 'to get dressed (TODO: add conjugation)', workingOn: true },
+        { foreign: 'peinarse', english: 'to comb one’s hair', workingOn: true },
+        { foreign: 'afeitarse', english: 'to shave', hard: true, workingOn: true },
+        { foreign: 'maquillarse', english: 'to put on make up', workingOn: true },
         { foreign: 'acostarse', english: 'to go to bed', workingOn: true },
       ],
     },
@@ -2571,7 +2573,7 @@ export const allPhrases = {
         { foreign: 'ultimamente', english: 'lately', workingOn: true },
         { foreign: 'hacer una broma', english: 'to play a joke / prank', hard: true },
         { foreign: 'aceite de oliva (accent on LI)', english: 'olive oil', hard: true },
-        { foreign: 'unas repisas', english: 'some shelves', hard: true, workingOn: true },
+        { foreign: 'unas repisas', english: 'some shelves', hard: true },
         { foreign: 'lámpara', english: 'lamp' },
         { foreign: 'un horno', english: 'an oven' },
         { foreign: 'un horno tostador', english: 'a toaster oven' },
@@ -2604,8 +2606,8 @@ export const allPhrases = {
       ],
       lesson10: [
         {
-          foreign: 'Yo hice la mayor parte de la tarea',
-          english: 'I did most of the homework',
+          foreign: 'Yo hice la mayor parte de la tarea.',
+          english: 'I did most of the homework.',
           hard: true,
           workingOn: true,
         },
@@ -2640,6 +2642,7 @@ export const allPhrases = {
         {
           foreign: 'en una sartén sobre la estufa',
           english: 'in a frying pan on the stove',
+          hard: true,
           workingOn: true,
         },
         { foreign: 'escaleras', english: 'stairs', workingOn: true },
@@ -2666,8 +2669,8 @@ export const allPhrases = {
         { foreign: 'bautismo', english: 'baptism', workingOn: true },
         { foreign: 'un emparedado / sándwich', english: 'a sandwich', workingOn: true },
         { foreign: 'un durazno', english: 'a peach', hard: true, workingOn: true },
-        { foreign: 'una nectarina', english: 'a nectarine', workingOn: true },
-        { foreign: 'los muebles', english: 'the furniture', workingOn: true },
+        { foreign: 'una nectarina', english: 'a nectarine' },
+        { foreign: 'los muebles', english: 'the furniture' },
         {
           foreign: 'Nosotros rasguñamos nuestros bolsillos.',
           english: 'We scraped together the money from our pockets.',
@@ -2681,8 +2684,8 @@ export const allPhrases = {
         },
       ],
       lesson3: [
-        { foreign: 'apenas', english: 'just barely', workingOn: true },
-        { foreign: 'capucha', english: 'hood', hard: true, workingOn: true },
+        { foreign: 'apenas', english: 'just barely', hard: true, workingOn: true },
+        { foreign: 'capucha', english: 'hood (e.g. of a hoodie)', hard: true, workingOn: true },
         { foreign: 'grados Fahrenheit', english: 'degrees Fahrenheit', workingOn: true },
         {
           foreign: 'pestañeo / pestañazo',
@@ -2702,8 +2705,8 @@ export const allPhrases = {
         { foreign: 'un casco', english: 'a helmet', workingOn: true },
         { foreign: 'un dibujo', english: 'a drawing', workingOn: true },
         { foreign: 'dibujar', english: 'to draw', workingOn: true },
-        { foreign: 'una flor', english: 'a flower', workingOn: true },
-        { foreign: 'tiras cómicas', english: 'comic strips', workingOn: true },
+        { foreign: 'una flor', english: 'a flower' },
+        { foreign: 'tiras cómicas', english: 'comic strips', hard: true, workingOn: true },
         { foreign: 'dibujos animados', english: 'animated cartoons', workingOn: true },
         { foreign: 'Es divertido.', english: 'It’s fun.', workingOn: true },
         { foreign: 'adivinar', english: 'to guess', workingOn: true },
