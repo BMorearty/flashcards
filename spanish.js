@@ -267,6 +267,18 @@ export const allPhrases = {
           english: 'to bite, present tense indicative',
           workingOn: true,
         },
+        {
+          foreign:
+            'vestirse, presente de indicativo:' +
+            '| (yo) me visto' +
+            '| (tú) te vistes' +
+            '| (él, ella, usted) se viste' +
+            '| (nosotros / nosotras) nos vestimos' +
+            '| (vosotros / vosotras) os vestís' +
+            '| (ellos / ellas / ustedes) se visten',
+          english: 'to get dressed, present tense indicative',
+          workingOn: true,
+        },
       ],
       lesson2: [
         // Preterite tense
@@ -616,7 +628,7 @@ export const allPhrases = {
       ],
     },
     chapter9: {
-      name: 'Verbos afectivos (verbs that require an indirect object pronouns)',
+      name: 'Verbos afectivos (verbs that require an indirect object pronouns) (a type of verbos pronominales)',
       lesson1: [
         {
           foreign: 'Él me cae bien.',
@@ -833,7 +845,7 @@ export const allPhrases = {
       ],
     },
     chapter11: {
-      name: 'Verbos reflexivos',
+      name: 'Verbos reflexivos (a type of verbos pronominales)',
       lesson1: [
         {
           foreign: 'encontrarse',
@@ -879,6 +891,7 @@ export const allPhrases = {
         {
           foreign: 'Él se despierta a las seis de la mañana.',
           english: 'He wakes up at six in the morning.',
+          hard: true,
           workingOn: true,
         },
         {
@@ -910,11 +923,39 @@ export const allPhrases = {
         { foreign: 'bañarse', english: 'to bathe', workingOn: true },
         { foreign: 'lavarse', english: 'to wash yourself', workingOn: true },
         { foreign: 'secarse', english: 'to dry off', workingOn: true },
-        { foreign: 'vestirse', english: 'to get dressed (TODO: add conjugation)', workingOn: true },
+        { foreign: 'vestirse', english: 'to get dressed', workingOn: true },
         { foreign: 'peinarse', english: 'to comb one’s hair', workingOn: true },
         { foreign: 'afeitarse', english: 'to shave', hard: true, workingOn: true },
         { foreign: 'maquillarse', english: 'to put on make up', workingOn: true },
         { foreign: 'acostarse', english: 'to go to bed', workingOn: true },
+      ],
+    },
+    chapter12: {
+      name: 'Verbos recíprocos (a type of verbos pronominales)',
+      lesson1: [
+        { foreign: 'ayudar', english: 'to help', workingOn: true },
+        { foreign: 'Él ayuda a su hijo.', english: 'He helps his son.', workingOn: true },
+        { foreign: 'ayudarse', english: 'to help each other', workingOn: true },
+        { foreign: 'Ellos se ayudan.', english: 'They help each other.', workingOn: true },
+      ],
+    },
+    chapter13: {
+      name: 'Verbos pronominales con cambio de significado (a type of verbos pronominales)',
+      lesson1: [
+        { foreign: 'quedar', english: 'to agree', workingOn: true },
+        { foreign: 'quedarse', english: 'to stay', workingOn: true },
+      ],
+    },
+    chapter14: {
+      name: 'Verbos estrictamente pronominales o puros (a type of verbos pronominales)',
+      lesson1: [
+        { foreign: 'arrepentirse', english: 'to regret', hard: true, workingOn: true },
+        {
+          foreign: 'No me arrepiento| de comer muchas| manzanas de caramelo en Disneylandia.',
+          english: 'I don’t regret| eating a lot of| candy apples at Disneyland.',
+          workingOn: true,
+        },
+        { foreign: 'quejarse', english: 'to complain', hard: true, workingOn: true },
       ],
     },
   },
@@ -1366,6 +1407,50 @@ export const allPhrases = {
         { foreign: 'la ventana panorámica', english: 'the panoramic window' },
         { foreign: 'el escritorio', english: 'the desk' },
         { foreign: 'el portalápiz', english: 'the pencil holder', hard: true },
+      ],
+    },
+    chapter13: {
+      name: 'Dawn and dusk',
+      lesson1: [
+        { foreign: 'amanece', english: 'dawn breaks', workingOn: true },
+        { foreign: '(el) amanecer', english: 'dawn / the sunrise', workingOn: true },
+        { foreign: '(el) anochecer', english: 'dusk', workingOn: true },
+        { foreign: 'amanecer (verbo incompleto)', english: 'to dawn', workingOn: true },
+        { foreign: 'anochecer', english: 'to become nighttime / get dark', workingOn: true },
+        {
+          foreign: '¿Cómo amaneces? / ¿Cómo amaneciste?',
+          english: 'How are you this morning? / How did you wake up? (informal)',
+          workingOn: true,
+        },
+        {
+          foreign: 'Amanezco bien. / Amanecí bien.',
+          english: 'I’m beginning / began the day well.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Cada día anochece más temprano.',
+          english: 'It’s getting dark earlier every day.',
+          workingOn: true,
+        },
+        {
+          foreign: 'El sol se oculta a las siete.',
+          english: 'The sun sets at seven.',
+          workingOn: true,
+        },
+      ],
+      lesson2: [
+        {
+          foreign:
+            'amanecer, presente de indicativo:' +
+            '| (yo) amanezco' +
+            '| (tú) amaneces' +
+            '| (él, ella, usted) amanece' +
+            '| (nosotros / nosotras) amanecemos' +
+            '| (vosotros / vosotras) amanecéis' +
+            '| (ellos / ellas / ustedes) amanecen',
+          english: 'to sunrise, present tense indicative',
+          workingOn: true,
+        },
       ],
     },
   },
@@ -2338,13 +2423,7 @@ export const allPhrases = {
           foreign: 'Yo me estoy alistando para mi cita.',
           english: 'I am getting ready for my date.',
         },
-        {
-          foreign: 'por cierto',
-          english: 'by the way',
-          showEnglish: 'random',
-          hard: true,
-          workingOn: true,
-        },
+        { foreign: 'por cierto', english: 'by the way', showEnglish: 'random', hard: true },
         { foreign: 'hablando del tiempo', english: 'speaking of the time' },
         {
           foreign: 'No puedo creer que ya casi es hora.',
@@ -2570,7 +2649,7 @@ export const allPhrases = {
         { foreign: 'pimienta negra', english: 'black pepper' },
         { foreign: 'unas pocas / cuantas manzanas', english: 'a few apples' },
         { foreign: 'unos pocos niños', english: 'a few kids' },
-        { foreign: 'ultimamente', english: 'lately', workingOn: true },
+        { foreign: 'ultimamente', english: 'lately' },
         { foreign: 'hacer una broma', english: 'to play a joke / prank', hard: true },
         { foreign: 'aceite de oliva (accent on LI)', english: 'olive oil', hard: true },
         { foreign: 'unas repisas', english: 'some shelves', hard: true },
@@ -2609,7 +2688,6 @@ export const allPhrases = {
           foreign: 'Yo hice la mayor parte de la tarea.',
           english: 'I did most of the homework.',
           hard: true,
-          workingOn: true,
         },
         {
           foreign: 'La leche ha caducado y sabe muy mal. (saber = to know but also to taste)',
@@ -2632,7 +2710,6 @@ export const allPhrases = {
           foreign: 'antes del final de la lección',
           english: 'before the end of the lesson',
           hard: true,
-          workingOn: true,
         },
         {
           foreign: 'Empezó a aprender| un par de semanas después que yo.',
@@ -2666,7 +2743,7 @@ export const allPhrases = {
         { foreign: 'rasguñar', english: 'to scratch', workingOn: true },
         { foreign: 'suficiente', english: 'enough', workingOn: true },
         { foreign: 'un patrón', english: 'a pattern', workingOn: true },
-        { foreign: 'bautismo', english: 'baptism', workingOn: true },
+        { foreign: 'bautismo', english: 'baptism' },
         { foreign: 'un emparedado / sándwich', english: 'a sandwich', workingOn: true },
         { foreign: 'un durazno', english: 'a peach', hard: true, workingOn: true },
         { foreign: 'una nectarina', english: 'a nectarine' },
@@ -2736,6 +2813,17 @@ export const allPhrases = {
           workingOn: true,
         },
         { foreign: 'Él regresa a casa.', english: 'He returns home.', workingOn: true },
+      ],
+      lesson5: [
+        { foreign: 'dado que', english: 'given that', workingOn: true },
+        { foreign: 'rompecabezas', english: 'puzzle', workingOn: true },
+        { foreign: 'Me peino.', english: 'I comb my hair.', workingOn: true },
+        { foreign: 'Hago ejercicio.', english: 'I exercise.', workingOn: true },
+        {
+          foreign: 'una semana desde mañana / una semana a partir de mañana',
+          english: 'a week from tomorrow',
+          workingOn: true,
+        },
       ],
     },
   },
