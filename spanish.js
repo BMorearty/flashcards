@@ -1825,7 +1825,7 @@ export const allPhrases = {
           english: 'that (one or thing) (demonstrative pronoun) (all forms)',
         },
         { foreign: 'mismo / misma', english: 'same', hard: true },
-        { foreign: 'ahorita', english: 'right now' },
+        { foreign: 'ahora mismo / ahorita', english: 'right now', workingOn: true },
       ],
       lesson5: [
         { foreign: 'afuera', english: 'outside', hard: true },
@@ -2759,6 +2759,34 @@ export const allPhrases = {
           english: 'Javier, do you know the website eBay? (informal)',
           workingOn: true,
         },
+        {
+          foreign: 'Ella conoce a su artista favorita| y puede pedirle un autógrafo.',
+          english: 'She meets her favorite artist| and can ask for an autograph.',
+          workingOn: true,
+        },
+        {
+          foreign:
+            'La atleta es sobresaliente,| puede hacer saltos muy largos| y tiene mucha disciplina.',
+          english:
+            'The athlete is outstanding;| she can perform very long jumps| and possesses great discipline.',
+          workingOn: true,
+        },
+        { foreign: 'conducir', english: 'to drive', workingOn: true },
+        {
+          foreign:
+            'Ese paciente padece del Mal de Alzheimer.| Ya no conoce a su esposa.| A veces no sabe poner la televisión.',
+          english:
+            "That patient suffers from Alzheimer’s disease.| He no longer recognizes his wife.| Sometimes he doesn't know how to turn on the television.",
+          workingOn: true,
+        },
+        { foreign: 'molino', english: 'windmill', workingOn: true },
+        { foreign: 'ninguno/a', english: 'none', workingOn: true },
+        { foreign: 'Pregúnteselo.', english: 'Ask him/her about it. (informal)', workingOn: true },
+        {
+          foreign: 'Ese chico está mirándote. ¿Lo conoces?',
+          english: 'That boy is looking at you. Do you know him? (informal)',
+          workingOn: true,
+        },
       ],
       lesson3: [
         { foreign: 'apenas', english: 'just barely', hard: true, workingOn: true },
@@ -2822,6 +2850,28 @@ export const allPhrases = {
         {
           foreign: 'una semana desde mañana / una semana a partir de mañana',
           english: 'a week from tomorrow',
+          workingOn: true,
+        },
+        { foreign: 'a la una y treinta / media', english: 'at one thirty', workingOn: true },
+        { foreign: 'Se acuesta.', english: 'He goes to bed.', workingOn: true },
+        { foreign: 'jornada laboral', english: 'workday', workingOn: true },
+        {
+          foreign: 'Alimento a mi gatita.',
+          english: 'I feed my kitten. (feminine)',
+          workingOn: true,
+        },
+        { foreign: 'por sí mismo/misma', english: 'on his/her own', workingOn: true },
+        { foreign: 'el uniforme', english: 'the uniform', workingOn: true },
+        { foreign: 'el proyecto', english: 'the project', workingOn: true },
+        {
+          foreign: 'Le ayudo a los niños a alistarse para ir a clase.',
+          english: 'I help the children get ready for class.',
+          workingOn: true,
+        },
+        { foreign: 'irse', english: 'to depart / leave a location', workingOn: true },
+        {
+          foreign: 'Luego ellos se van a la escuela y yo me voy al trabajo.',
+          english: 'Then they leave for school and I leave to work. (masculine)',
           workingOn: true,
         },
       ],
