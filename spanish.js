@@ -265,7 +265,6 @@ export const allPhrases = {
             '| (vosotros / vosotras) mordéis' +
             '| (ellos / ellas / ustedes) muerden',
           english: 'to bite, present tense indicative',
-          workingOn: true,
         },
         {
           foreign:
@@ -847,16 +846,11 @@ export const allPhrases = {
     chapter11: {
       name: 'Verbos reflexivos (a type of verbos pronominales)',
       lesson1: [
-        {
-          foreign: 'encontrarse',
-          english: 'to meet without planning / to find oneself',
-          workingOn: true,
-        },
+        { foreign: 'encontrarse', english: 'to meet without planning / to find oneself' },
         { foreign: 'reunirse', english: 'to meet (on purpose)', workingOn: true },
         {
           foreign: 'Él se encuentra en una situación difícil.',
           english: 'He finds himself in a difficult situation.',
-          workingOn: true,
         },
         {
           foreign: 'Ella se reúne / se encuentra| con sus amigas en el centro comercial.',
@@ -877,7 +871,6 @@ export const allPhrases = {
         {
           foreign: 'Estaba caminando por la playa| y me encontré con un amigo.',
           english: 'I was walking along the beach| and ran into a friend. (masculine)',
-          workingOn: true,
         },
         {
           foreign: 'Tenía una mala vida familiar,| me encontré a mí mismo escapando muchas veces.',
@@ -885,7 +878,7 @@ export const allPhrases = {
           hard: true,
           workingOn: true,
         },
-        { foreign: 'una reunión', english: 'a meeting', workingOn: true },
+        { foreign: 'una reunión', english: 'a meeting' },
       ],
       lesson2: [
         {
@@ -913,20 +906,20 @@ export const allPhrases = {
       ],
       lesson3: [
         { foreign: 'despertarse', english: 'to wake up', hard: true, workingOn: true },
-        { foreign: 'levantarse', english: 'to get up', workingOn: true },
+        { foreign: 'levantarse', english: 'to get up' },
         {
           foreign: 'cepillarse el pelo / los dientes',
           english: 'to brush one’s hair / teeth',
           workingOn: true,
         },
         { foreign: 'ducharse', english: 'to take a shower', workingOn: true },
-        { foreign: 'bañarse', english: 'to bathe', workingOn: true },
-        { foreign: 'lavarse', english: 'to wash yourself', workingOn: true },
+        { foreign: 'bañarse', english: 'to bathe' },
+        { foreign: 'lavarse', english: 'to wash yourself' },
         { foreign: 'secarse', english: 'to dry off', workingOn: true },
         { foreign: 'vestirse', english: 'to get dressed', workingOn: true },
-        { foreign: 'peinarse', english: 'to comb one’s hair', workingOn: true },
+        { foreign: 'peinarse', english: 'to comb one’s hair' },
         { foreign: 'afeitarse', english: 'to shave', hard: true, workingOn: true },
-        { foreign: 'maquillarse', english: 'to put on make up', workingOn: true },
+        { foreign: 'maquillarse', english: 'to put on make up' },
         { foreign: 'acostarse', english: 'to go to bed', workingOn: true },
       ],
     },
@@ -942,8 +935,8 @@ export const allPhrases = {
     chapter13: {
       name: 'Verbos pronominales con cambio de significado (a type of verbos pronominales)',
       lesson1: [
-        { foreign: 'quedar', english: 'to agree', workingOn: true },
-        { foreign: 'quedarse', english: 'to stay', workingOn: true },
+        { foreign: 'quedar', english: 'to agree', hard: true, workingOn: true },
+        { foreign: 'quedarse', english: 'to stay', hard: true, workingOn: true },
       ],
     },
     chapter14: {
@@ -953,6 +946,7 @@ export const allPhrases = {
         {
           foreign: 'No me arrepiento| de comer muchas| manzanas de caramelo en Disneylandia.',
           english: 'I don’t regret| eating a lot of| candy apples at Disneyland.',
+          hard: true,
           workingOn: true,
         },
         { foreign: 'quejarse', english: 'to complain', hard: true, workingOn: true },
@@ -1420,6 +1414,7 @@ export const allPhrases = {
         {
           foreign: '¿Cómo amaneces? / ¿Cómo amaneciste?',
           english: 'How are you this morning? / How did you wake up? (informal)',
+          hard: true,
           workingOn: true,
         },
         {
@@ -1435,6 +1430,7 @@ export const allPhrases = {
         {
           foreign: 'El sol se oculta a las siete.',
           english: 'The sun sets at seven.',
+          hard: true,
           workingOn: true,
         },
       ],
@@ -1745,19 +1741,13 @@ export const allPhrases = {
         {
           foreign: 'No siento nada de hambre, acabo de comer.',
           english: 'I don’t feel hungry at all; I just ate.',
-          workingOn: true,
         },
         { foreign: 'No tengo nada de sed.', english: 'I’m not thirsty at all.' },
         {
           foreign: 'Siento un poco de hambre,| porque tengo solo una manzana.',
           english: 'I feel a little hungry,| because I only have one apple.',
         },
-        {
-          foreign: 'Siento mucho sueño.',
-          english: 'I feel very sleepy.',
-          hard: true,
-          workingOn: true,
-        },
+        { foreign: 'Siento mucho sueño.', english: 'I feel very sleepy.', hard: true },
         { foreign: 'Siento bastante frío.', english: 'I feel quite cold.' },
       ],
     },
@@ -2641,7 +2631,7 @@ export const allPhrases = {
         { foreign: 'el trueno', english: 'the thunder' },
         { foreign: 'un rayo', english: 'a lightning bolt' },
         { foreign: 'los relámpagos / los rayos', english: 'the lightning', hard: true },
-        { foreign: 'descansar', english: 'to rest', hard: true, workingOn: true },
+        { foreign: 'descansar', english: 'to rest', hard: true },
         { foreign: 'relajarse', english: 'to relax' },
       ],
       lesson9: [
@@ -2661,8 +2651,8 @@ export const allPhrases = {
         { foreign: 'un imán', english: 'a magnet' },
         { foreign: 'desordenado', english: 'messy' },
         { foreign: 'el pelo de los animales', english: 'fur' },
-        { foreign: 'confuso/a', english: 'confusing', workingOn: true },
-        { foreign: 'estoy confundido/a', english: 'I’m confused', workingOn: true },
+        { foreign: 'confuso/a', english: 'confusing' },
+        { foreign: 'estoy confundido/a', english: 'I’m confused' },
         {
           foreign: 'a tu orden / a tus órdenes (en México)',
           english: 'at your service / you’re welcome (polite)',
@@ -2704,7 +2694,6 @@ export const allPhrases = {
         {
           foreign: 'Está un poco cálido. / Hace un poco de calor.',
           english: 'It’s a bit warm. (weather)',
-          workingOn: true,
         },
         {
           foreign: 'antes del final de la lección',
@@ -2722,30 +2711,29 @@ export const allPhrases = {
           hard: true,
           workingOn: true,
         },
-        { foreign: 'escaleras', english: 'stairs', workingOn: true },
+        { foreign: 'escaleras', english: 'stairs' },
       ],
       lesson2: [
-        { foreign: '¡Qué diferencia!', english: 'What a difference!', workingOn: true },
+        { foreign: '¡Qué diferencia!', english: 'What a difference!' },
+        { foreign: '¡Qué suavecito es esté gato!', english: 'This cat is so soft!', hard: true },
         {
-          foreign: '¡Qué suavecito es esté gato!',
-          english: 'This cat is so soft!',
-          hard: true,
+          foreign: 'imprevisible',
+          english: 'unpredictable',
           workingOn: true,
+          showEnglish: 'random',
         },
-        { foreign: 'imprevisible', english: 'unpredictable', workingOn: true },
         {
           foreign: 'No cuando muerden y rasguñan.',
           english: 'Not when they bite and scratch.',
           hard: true,
-          workingOn: true,
         },
-        { foreign: 'morder', english: 'to bite', workingOn: true },
-        { foreign: 'rasguñar', english: 'to scratch', workingOn: true },
+        { foreign: 'morder', english: 'to bite' },
+        { foreign: 'rasguñar', english: 'to scratch' },
         { foreign: 'suficiente', english: 'enough', workingOn: true },
-        { foreign: 'un patrón', english: 'a pattern', workingOn: true },
+        { foreign: 'un patrón', english: 'a pattern' },
         { foreign: 'bautismo', english: 'baptism' },
         { foreign: 'un emparedado / sándwich', english: 'a sandwich', workingOn: true },
-        { foreign: 'un durazno', english: 'a peach', hard: true, workingOn: true },
+        { foreign: 'un durazno', english: 'a peach', hard: true },
         { foreign: 'una nectarina', english: 'a nectarine' },
         { foreign: 'los muebles', english: 'the furniture' },
         {
@@ -2757,11 +2745,10 @@ export const allPhrases = {
         {
           foreign: 'Javier, ¿conoces tú el sitio web Ebay?',
           english: 'Javier, do you know the website eBay? (informal)',
-          workingOn: true,
         },
         {
           foreign: 'Ella conoce a su artista favorita| y puede pedirle un autógrafo.',
-          english: 'She meets her favorite artist| and can ask for an autograph.',
+          english: 'She meets her favorite artist| and can ask for an autograph. (feminine)',
           workingOn: true,
         },
         {
@@ -2769,6 +2756,7 @@ export const allPhrases = {
             'La atleta es sobresaliente,| puede hacer saltos muy largos| y tiene mucha disciplina.',
           english:
             'The athlete is outstanding;| she can perform very long jumps| and possesses great discipline.',
+          hard: true,
           workingOn: true,
         },
         { foreign: 'conducir', english: 'to drive', workingOn: true },
@@ -2781,7 +2769,12 @@ export const allPhrases = {
         },
         { foreign: 'molino', english: 'windmill', workingOn: true },
         { foreign: 'ninguno/a', english: 'none', workingOn: true },
-        { foreign: 'Pregúnteselo.', english: 'Ask him/her about it. (informal)', workingOn: true },
+        {
+          foreign: 'Pregúnteselo.',
+          english: 'Ask him/her about it. (informal)',
+          hard: true,
+          workingOn: true,
+        },
         {
           foreign: 'Ese chico está mirándote. ¿Lo conoces?',
           english: 'That boy is looking at you. Do you know him? (informal)',
@@ -2789,26 +2782,26 @@ export const allPhrases = {
         },
       ],
       lesson3: [
-        { foreign: 'apenas', english: 'just barely', hard: true, workingOn: true },
-        { foreign: 'capucha', english: 'hood (e.g. of a hoodie)', hard: true, workingOn: true },
-        { foreign: 'grados Fahrenheit', english: 'degrees Fahrenheit', workingOn: true },
         {
-          foreign: 'pestañeo / pestañazo',
-          english: 'blinking power or brownout',
+          foreign: 'apenas',
+          english: 'just barely',
           hard: true,
           workingOn: true,
+          showEnglish: 'random',
         },
-        { foreign: 'No tiene sentido.', english: 'It doesn’t make sense.', workingOn: true },
-        { foreign: 'los detalles', english: 'the details', workingOn: true },
-        { foreign: 'el peine', english: 'the comb', workingOn: true },
+        { foreign: 'capucha', english: 'hood (e.g. of a hoodie)', hard: true, workingOn: true },
+        { foreign: 'grados Fahrenheit', english: 'degrees Fahrenheit' },
+        { foreign: 'pestañeo / pestañazo', english: 'blinking power or brownout', hard: true },
+        { foreign: 'No tiene sentido.', english: 'It doesn’t make sense.' },
+        { foreign: 'los detalles', english: 'the details' },
+        { foreign: 'el peine', english: 'the comb' },
         {
           foreign: 'No conozco esta isla,| y tampoco sé / y no sé tampoco en qué país está.',
           english: 'I don’t know this island,| and I don’t know which country it’s in, either.',
-          workingOn: true,
         },
-        { foreign: 'montando en bicicleta', english: 'riding a bicycle', workingOn: true },
-        { foreign: 'un casco', english: 'a helmet', workingOn: true },
-        { foreign: 'un dibujo', english: 'a drawing', workingOn: true },
+        { foreign: 'montando en bicicleta', english: 'riding a bicycle' },
+        { foreign: 'un casco', english: 'a helmet' },
+        { foreign: 'un dibujo', english: 'a drawing' },
         { foreign: 'dibujar', english: 'to draw', workingOn: true },
         { foreign: 'una flor', english: 'a flower' },
         { foreign: 'tiras cómicas', english: 'comic strips', hard: true, workingOn: true },
@@ -2816,7 +2809,7 @@ export const allPhrases = {
         { foreign: 'Es divertido.', english: 'It’s fun.', workingOn: true },
         { foreign: 'adivinar', english: 'to guess', workingOn: true },
         { foreign: 'cebolla', english: 'onion', hard: true, workingOn: true },
-        { foreign: 'ajo', english: 'garlic', workingOn: true },
+        { foreign: 'ajo', english: 'garlic' },
         { foreign: 'cortar', english: 'to cut', workingOn: true },
         {
           foreign: 'mejor de lo que yo creía posible',
@@ -2843,29 +2836,31 @@ export const allPhrases = {
         { foreign: 'Él regresa a casa.', english: 'He returns home.', workingOn: true },
       ],
       lesson5: [
-        { foreign: 'dado que', english: 'given that', workingOn: true },
+        { foreign: 'dado que', english: 'given that', workingOn: true, showEnglish: 'random' },
         { foreign: 'rompecabezas', english: 'puzzle', workingOn: true },
         { foreign: 'Me peino.', english: 'I comb my hair.', workingOn: true },
         { foreign: 'Hago ejercicio.', english: 'I exercise.', workingOn: true },
         {
           foreign: 'una semana desde mañana / una semana a partir de mañana',
           english: 'a week from tomorrow',
+          hard: true,
           workingOn: true,
         },
         { foreign: 'a la una y treinta / media', english: 'at one thirty', workingOn: true },
         { foreign: 'Se acuesta.', english: 'He goes to bed.', workingOn: true },
-        { foreign: 'jornada laboral', english: 'workday', workingOn: true },
+        { foreign: 'jornada laboral', english: 'workday', hard: true, workingOn: true },
         {
           foreign: 'Alimento a mi gatita.',
           english: 'I feed my kitten. (feminine)',
           workingOn: true,
         },
-        { foreign: 'por sí mismo/misma', english: 'on his/her own', workingOn: true },
+        { foreign: 'por sí mismo/misma', english: 'on his/her own', hard: true, workingOn: true },
         { foreign: 'el uniforme', english: 'the uniform', workingOn: true },
         { foreign: 'el proyecto', english: 'the project', workingOn: true },
         {
           foreign: 'Le ayudo a los niños a alistarse para ir a clase.',
-          english: 'I help the children get ready for class.',
+          english: 'I help the children get ready to go to class.',
+          hard: true,
           workingOn: true,
         },
         { foreign: 'irse', english: 'to depart / leave a location', workingOn: true },
