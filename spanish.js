@@ -846,7 +846,7 @@ export const allPhrases = {
       name: 'Verbos reflexivos (a type of verbos pronominales)',
       lesson1: [
         { foreign: 'encontrarse', english: 'to meet without planning / to find oneself' },
-        { foreign: 'reunirse', english: 'to meet (on purpose)', workingOn: true },
+        { foreign: 'reunirse', english: 'to meet (on purpose)' },
         {
           foreign: 'Él se encuentra en una situación difícil.',
           english: 'He finds himself in a difficult situation.',
@@ -872,7 +872,6 @@ export const allPhrases = {
           foreign: 'Tenía una mala vida familiar,| me encontré a mí mismo escapando muchas veces.',
           english: 'I had a bad homelife;| I found myself running away often.',
           hard: true,
-          workingOn: true,
         },
         { foreign: 'una reunión', english: 'a meeting' },
       ],
@@ -886,7 +885,6 @@ export const allPhrases = {
         {
           foreign: 'Ella se levanta a las siete de la mañana.',
           english: 'She gets up at seven in the morning.',
-          workingOn: true,
         },
         {
           foreign: 'El niño se cepilla los dientes al levantarse.',
@@ -894,11 +892,7 @@ export const allPhrases = {
           hard: true,
           workingOn: true,
         },
-        {
-          foreign: 'Ella se ducha por las mañanas.',
-          english: 'She showers in the morning.',
-          workingOn: true,
-        },
+        { foreign: 'Ella se ducha por las mañanas.', english: 'She showers in the morning.' },
       ],
       lesson3: [
         { foreign: 'despertarse', english: 'to wake up', hard: true, workingOn: true },
@@ -919,9 +913,9 @@ export const allPhrases = {
       name: 'Verbos recíprocos (a type of verbos pronominales)',
       lesson1: [
         { foreign: 'ayudar', english: 'to help' },
-        { foreign: 'Él ayuda a su hijo.', english: 'He helps his son.', workingOn: true },
+        { foreign: 'Él ayuda a su hijo.', english: 'He helps his son.' },
         { foreign: 'ayudarse', english: 'to help each other' },
-        { foreign: 'Ellos se ayudan.', english: 'They help each other.', workingOn: true },
+        { foreign: 'Ellos se ayudan.', english: 'They help each other.' },
       ],
     },
     chapter13: {
@@ -939,12 +933,11 @@ export const allPhrases = {
     chapter14: {
       name: 'Verbos estrictamente pronominales o puros (a type of verbos pronominales)',
       lesson1: [
-        { foreign: 'arrepentirse', english: 'to regret', hard: true, workingOn: true },
+        { foreign: 'arrepentirse', english: 'to regret', hard: true },
         {
           foreign: 'No me arrepiento| de comer muchas| manzanas de caramelo en Disneylandia.',
           english: 'I don’t regret| eating a lot of| candy apples at Disneyland.',
           hard: true,
-          workingOn: true,
         },
         {
           foreign: 'quejarse',
@@ -986,7 +979,7 @@ export const allPhrases = {
         { foreign: 'los relámpagos / los rayos', english: 'the lightning', hard: true },
         { foreign: 'Está lloviznando.', english: 'It’s sprinkling / drizzling.', workingOn: true },
         { foreign: 'la llovizna', english: '(noun) drizzle', hard: true, workingOn: true },
-        { foreign: 'tronar', english: 'to thunder', workingOn: true },
+        { foreign: 'tronar', english: 'to thunder' },
         { foreign: 'Está tronando.', english: 'It’s thundering.', workingOn: true },
         { foreign: 'relampaguear', english: 'to flash lightning', workingOn: true },
         { foreign: 'el viento', english: 'the wind', hard: true, workingOn: true },
@@ -1425,9 +1418,9 @@ export const allPhrases = {
       lesson1: [
         { foreign: 'amanece', english: 'dawn breaks' },
         { foreign: '(el) amanecer', english: 'dawn / the sunrise' },
-        { foreign: '(el) anochecer', english: 'dusk', workingOn: true },
-        { foreign: 'amanecer (verbo incompleto)', english: 'to dawn', workingOn: true },
-        { foreign: 'anochecer', english: 'to become nighttime / get dark', workingOn: true },
+        { foreign: '(el) anochecer', english: 'dusk' },
+        { foreign: 'amanecer (verbo incompleto)', english: 'to dawn' },
+        { foreign: 'anochecer', english: 'to become nighttime / get dark' },
         {
           foreign: '¿Cómo amaneces? / ¿Cómo amaneciste?',
           english: 'How are you this morning? / How did you wake up? (informal)',
@@ -1442,12 +1435,7 @@ export const allPhrases = {
           english: 'It’s getting dark earlier every day.',
           workingOn: true,
         },
-        {
-          foreign: 'El sol se oculta a las siete.',
-          english: 'The sun sets at seven.',
-          hard: true,
-          workingOn: true,
-        },
+        { foreign: 'El sol se oculta a las siete.', english: 'The sun sets at seven.', hard: true },
       ],
       lesson2: [
         {
@@ -1829,7 +1817,7 @@ export const allPhrases = {
           english: 'that (one or thing) (demonstrative pronoun) (all forms)',
         },
         { foreign: 'mismo / misma', english: 'same', hard: true },
-        { foreign: 'ahora mismo / ahorita', english: 'right now', workingOn: true },
+        { foreign: 'ahora mismo / ahorita', english: 'right now' },
       ],
       lesson5: [
         { foreign: 'afuera', english: 'outside', hard: true },
@@ -2755,7 +2743,6 @@ export const allPhrases = {
         {
           foreign: 'Ella conoce a su artista favorita| y puede pedirle un autógrafo.',
           english: 'She meets her favorite artist| and can ask for an autograph. (feminine)',
-          workingOn: true,
         },
         {
           foreign:
@@ -2763,7 +2750,6 @@ export const allPhrases = {
           english:
             'The athlete is outstanding;| she can perform very long jumps| and possesses great discipline.',
           hard: true,
-          workingOn: true,
         },
         { foreign: 'conducir', english: 'to drive' },
         {
@@ -2774,17 +2760,11 @@ export const allPhrases = {
           workingOn: true,
         },
         { foreign: 'molino', english: 'windmill', workingOn: true },
-        { foreign: 'ninguno/a', english: 'none', workingOn: true },
-        {
-          foreign: 'Pregúnteselo.',
-          english: 'Ask him/her about it. (informal)',
-          hard: true,
-          workingOn: true,
-        },
+        { foreign: 'ninguno/a', english: 'none' },
+        { foreign: 'Pregúnteselo.', english: 'Ask him/her about it. (informal)', hard: true },
         {
           foreign: 'Ese chico está mirándote. ¿Lo conoces?',
           english: 'That boy is looking at you. Do you know him? (informal)',
-          workingOn: true,
         },
       ],
       lesson3: [
@@ -2826,7 +2806,7 @@ export const allPhrases = {
           foreign: 'Va al trabajo a las siete y cuarenta y cinco minutos.',
           english: 'He goes to work at 7:45.',
         },
-        { foreign: 'Él regresa a casa.', english: 'He returns home.', workingOn: true },
+        { foreign: 'Él regresa a casa.', english: 'He returns home.' },
       ],
       lesson5: [
         {
@@ -2836,7 +2816,7 @@ export const allPhrases = {
           workingOn: true,
           showEnglish: 'random',
         },
-        { foreign: 'rompecabezas', english: 'puzzle', workingOn: true },
+        { foreign: 'rompecabezas', english: 'puzzle' },
         { foreign: 'Me peino.', english: 'I comb my hair.' },
         { foreign: 'Hago ejercicio.', english: 'I exercise.' },
         {
@@ -2845,7 +2825,7 @@ export const allPhrases = {
           hard: true,
         },
         { foreign: 'a la una y treinta / media', english: 'at one thirty', workingOn: true },
-        { foreign: 'Se acuesta.', english: 'He goes to bed.', workingOn: true },
+        { foreign: 'Se acuesta.', english: 'He goes to bed.' },
         {
           foreign: 'Me dirijo al supermercado y compro algunos vegetales.',
           english: 'I head to the supermarket and buy some vegetables.',
@@ -2853,11 +2833,7 @@ export const allPhrases = {
         },
 
         { foreign: 'jornada laboral', english: 'workday', hard: true, workingOn: true },
-        {
-          foreign: 'Alimento a mi gatita.',
-          english: 'I feed my kitten. (feminine)',
-          workingOn: true,
-        },
+        { foreign: 'Alimento a mi gatita.', english: 'I feed my kitten. (feminine)' },
         { foreign: 'por sí mismo/misma', english: 'on his/her own', hard: true, workingOn: true },
         { foreign: 'el uniforme', english: 'the uniform' },
         { foreign: 'el proyecto', english: 'the project' },
@@ -2865,7 +2841,6 @@ export const allPhrases = {
           foreign: 'Le ayudo a los niños a alistarse para ir a clase.',
           english: 'I help the children get ready to go to class.',
           hard: true,
-          workingOn: true,
         },
         { foreign: 'irse', english: 'to depart / leave a location', workingOn: true },
         {
@@ -2890,7 +2865,7 @@ export const allPhrases = {
           english: 'He studies at his desk.',
           workingOn: true,
         },
-        { foreign: 'la lectura', english: 'reading (noun)', workingOn: true },
+        { foreign: 'la lectura', english: 'reading (noun)' },
         {
           foreign: 'Me dirijo al supermercado.',
           english: 'I am heading to the supermarket.',
