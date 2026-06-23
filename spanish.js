@@ -880,7 +880,6 @@ export const allPhrases = {
           foreign: 'Él se despierta a las seis de la mañana.',
           english: 'He wakes up at six in the morning.',
           hard: true,
-          workingOn: true,
         },
         {
           foreign: 'Ella se levanta a las siete de la mañana.',
@@ -981,7 +980,7 @@ export const allPhrases = {
         { foreign: 'la llovizna', english: '(noun) drizzle', hard: true, workingOn: true },
         { foreign: 'tronar', english: 'to thunder' },
         { foreign: 'Está tronando.', english: 'It’s thundering.', workingOn: true },
-        { foreign: 'relampaguear', english: 'to flash lightning', workingOn: true },
+        { foreign: 'relampaguear', english: 'to flash lightning' },
         { foreign: 'el viento', english: 'the wind', hard: true, workingOn: true },
         { foreign: 'ventear', english: 'to be windy', workingOn: true },
         { foreign: 'ventea', english: 'the wind is blowing', workingOn: true },
@@ -2866,11 +2865,6 @@ export const allPhrases = {
           workingOn: true,
         },
         { foreign: 'la lectura', english: 'reading (noun)' },
-        {
-          foreign: 'Me dirijo al supermercado.',
-          english: 'I am heading to the supermarket.',
-          workingOn: true,
-        },
         { foreign: 'Te ves bien.', english: 'You look good. (informal)', workingOn: true },
         {
           foreign: 'Te ves genial cuando bailas.',
@@ -2892,7 +2886,7 @@ export const allPhrases = {
       lesson7: [
         {
           foreign: 'Las rosas le están saliendo.',
-          english: 'The roses are coming in (starting to bloom).',
+          english: 'The roses are coming in (starting to bloom from the plant).',
           workingOn: true,
         },
         {
@@ -2909,7 +2903,7 @@ export const allPhrases = {
         { foreign: 'brócoli', english: 'broccoli', workingOn: true },
         {
           foreign: 'Me levanto a las seis en punto.',
-          english: 'I get up at six o’clock sharp.',
+          english: 'I get up at six o’clock.',
           workingOn: true,
         },
         {
@@ -2923,7 +2917,12 @@ export const allPhrases = {
           english: 'There were so many options, I didn’t know which one to pick.',
           workingOn: true,
         },
-        { foreign: 'Saludo a mis compañeros.', english: 'I greet my colleagues.', workingOn: true },
+        {
+          foreign: 'Saludo a mis compañeros.',
+          english: 'I greet my colleagues.',
+          hard: true,
+          workingOn: true,
+        },
         {
           foreign: 'un restaurante que a ambas nos encanta',
           english: 'a restaurant that we both love (feminine)',
