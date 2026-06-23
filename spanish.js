@@ -1450,6 +1450,21 @@ export const allPhrases = {
         },
       ],
     },
+    chapter14: {
+      name: 'Adverbios de frecuencia',
+      lesson1: [
+        { foreign: 'una vez', english: 'once', workingOn: true },
+        { foreign: 'dos veces', english: 'twice', workingOn: true },
+        { foreign: 'siempre', english: 'always', workingOn: true },
+        { foreign: 'casi siempre', english: 'almost always', workingOn: true },
+        { foreign: 'usualmente', english: 'usually', workingOn: true },
+        { foreign: 'frecuentemente', english: 'often', workingOn: true },
+        { foreign: 'algunas veces', english: 'sometimes', workingOn: true },
+        { foreign: 'raras veces', english: 'seldom', workingOn: true },
+        { foreign: 'casi nunca', english: 'hardly ever', workingOn: true },
+        { foreign: 'nunca', english: 'never', hard: true, workingOn: true },
+      ],
+    },
   },
   conversational: {
     chapter1: {
@@ -2269,7 +2284,6 @@ export const allPhrases = {
         { foreign: 'muletas', english: 'crutches', hard: true },
       ],
       lesson9: [
-        { foreign: 'nunca', english: 'never', hard: true },
         { foreign: 'nadie', english: 'nobody / no one', hard: true },
         { foreign: 'nada', english: 'nothing' },
         { foreign: 'en ningún lugar / en ninguna parte', english: 'nowhere', hard: true },
@@ -2930,6 +2944,26 @@ export const allPhrases = {
         },
         { foreign: 'suena el teléfono', english: 'the phone rings', workingOn: true },
         { foreign: 'el teléfono está sonando', english: 'the phone is ringing', workingOn: true },
+      ],
+      lesson8: [
+        { foreign: 'Yo voy a...', english: 'I’m rooting for...', workingOn: true },
+        { foreign: 'Conduzco hasta mi trabajo.', english: 'I drive to work.', workingOn: true },
+        { foreign: 'dormirse', english: 'to fall asleep', workingOn: true },
+        {
+          foreign: 'Llevo a mis hijos a la escuela.',
+          english: 'I take my kids to school.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Vuelvo (volverse) locos a mis hijos.',
+          english: 'I drive my children crazy.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Me vuelvo loco con el fútbol.',
+          english: 'I’m crazy about soccer.',
+          workingOn: true,
+        },
       ],
     },
   },
