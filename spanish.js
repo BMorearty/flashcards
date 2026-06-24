@@ -922,7 +922,7 @@ export const allPhrases = {
       lesson1: [
         {
           foreign: 'quedar',
-          english: 'to agree (TODO: ask Ysabel because this word seems to have many meanings)',
+          english: 'to agree (this word seems to have many meanings)',
           hard: true,
           workingOn: true,
         },
@@ -976,10 +976,10 @@ export const allPhrases = {
         { foreign: 'el trueno', english: 'the thunder' },
         { foreign: 'un rayo', english: 'a lightning bolt' },
         { foreign: 'los relámpagos / los rayos', english: 'the lightning', hard: true },
-        { foreign: 'Está lloviznando.', english: 'It’s sprinkling / drizzling.', workingOn: true },
+        { foreign: 'Está lloviznando.', english: 'It’s sprinkling / drizzling.' },
         { foreign: 'la llovizna', english: '(noun) drizzle', hard: true, workingOn: true },
         { foreign: 'tronar', english: 'to thunder' },
-        { foreign: 'Está tronando.', english: 'It’s thundering.', workingOn: true },
+        { foreign: 'Está tronando.', english: 'It’s thundering.' },
         { foreign: 'relampaguear', english: 'to flash lightning' },
         { foreign: 'el viento', english: 'the wind', hard: true, workingOn: true },
         { foreign: 'ventear', english: 'to be windy', workingOn: true },
@@ -1432,7 +1432,6 @@ export const allPhrases = {
         {
           foreign: 'Cada día anochece más temprano.',
           english: 'It’s getting dark earlier every day.',
-          workingOn: true,
         },
         { foreign: 'El sol se oculta a las siete.', english: 'The sun sets at seven.', hard: true },
       ],
@@ -1458,9 +1457,9 @@ export const allPhrases = {
         { foreign: 'siempre', english: 'always', workingOn: true },
         { foreign: 'casi siempre', english: 'almost always', workingOn: true },
         { foreign: 'usualmente', english: 'usually', workingOn: true },
-        { foreign: 'frecuentemente', english: 'often', workingOn: true },
+        { foreign: 'frecuentemente', english: 'often', hard: true, workingOn: true },
         { foreign: 'algunas veces', english: 'sometimes', workingOn: true },
-        { foreign: 'raras veces', english: 'seldom', workingOn: true },
+        { foreign: 'raras veces', english: 'seldom', hard: true, workingOn: true },
         { foreign: 'casi nunca', english: 'hardly ever', workingOn: true },
         { foreign: 'nunca', english: 'never', hard: true, workingOn: true },
       ],
@@ -2837,7 +2836,7 @@ export const allPhrases = {
           english: 'a week from tomorrow',
           hard: true,
         },
-        { foreign: 'a la una y treinta / media', english: 'at one thirty', workingOn: true },
+        { foreign: 'a la una y treinta / media', english: 'at one thirty' },
         { foreign: 'Se acuesta.', english: 'He goes to bed.' },
         {
           foreign: 'Me dirijo al supermercado y compro algunos vegetales.',
@@ -2855,29 +2854,21 @@ export const allPhrases = {
           english: 'I help the children get ready to go to class.',
           hard: true,
         },
-        { foreign: 'irse', english: 'to depart / leave a location', workingOn: true },
+        { foreign: 'irse', english: 'to depart / leave a location' },
         {
           foreign: 'Luego ellos se van a la escuela y yo me voy al trabajo.',
           english: 'Then they leave for school and I leave to work. (masculine)',
         },
         { foreign: 'limpiar', english: 'to clean', workingOn: true },
-        { foreign: 'lavar los platos', english: 'to wash the dishes', workingOn: true },
+        { foreign: 'lavar los platos', english: 'to wash the dishes' },
       ],
       lesson6: [
-        { foreign: 'sobrino/a', english: 'nephew / niece', workingOn: true },
+        { foreign: 'sobrino/a', english: 'nephew / niece' },
         { foreign: 'Él no es tan bebé.', english: 'He’s not a newborn.', workingOn: true },
-        {
-          foreign: 'descomprimir',
-          english: 'to decompress (e.g. a file or a tank of gas)',
-          workingOn: true,
-        },
+        { foreign: 'descomprimir', english: 'to decompress (e.g. a file or a tank of gas)' },
         { foreign: 'descomprimirse', english: 'to decompress (relax)', workingOn: true },
         { foreign: 'camión', english: 'truck', workingOn: true },
-        {
-          foreign: 'Estudia en su escritorio.',
-          english: 'He studies at his desk.',
-          workingOn: true,
-        },
+        { foreign: 'Estudia en su escritorio.', english: 'He studies at his desk.' },
         { foreign: 'la lectura', english: 'reading (noun)' },
         { foreign: 'Te ves bien.', english: 'You look good. (informal)', workingOn: true },
         {
@@ -2885,11 +2876,7 @@ export const allPhrases = {
           english: 'You look cool when you dance. (informal)',
           workingOn: true,
         },
-        {
-          foreign: 'Termino de trabajar a las 5 p.m.',
-          english: 'I finish work at 5 p.m.',
-          workingOn: true,
-        },
+        { foreign: 'Termino de trabajar a las 5 p.m.', english: 'I finish work at 5 p.m.' },
         {
           foreign:
             'Los dientes le están saliendo,| entonces a él le duelen los dientes| y llora un poco.',
@@ -2914,7 +2901,7 @@ export const allPhrases = {
         { foreign: 'rezar', english: 'to pray', workingOn: true },
         { foreign: 'ya no más', english: 'not anymore (emphatic)', workingOn: true },
         { foreign: 'entresemana', english: 'on weekdays', workingOn: true },
-        { foreign: 'brócoli', english: 'broccoli', workingOn: true },
+        { foreign: 'brócoli', english: 'broccoli' },
         {
           foreign: 'Me levanto a las seis en punto.',
           english: 'I get up at six o’clock.',
@@ -2947,7 +2934,7 @@ export const allPhrases = {
       ],
       lesson8: [
         { foreign: 'Yo voy a...', english: 'I’m rooting for...', workingOn: true },
-        { foreign: 'Conduzco hasta mi trabajo.', english: 'I drive to work.', workingOn: true },
+        { foreign: 'Conduzco hasta mi trabajo.', english: 'I drive to my work.', workingOn: true },
         { foreign: 'dormirse', english: 'to fall asleep', workingOn: true },
         {
           foreign: 'Llevo a mis hijos a la escuela.',
@@ -2955,13 +2942,18 @@ export const allPhrases = {
           workingOn: true,
         },
         {
-          foreign: 'Vuelvo (volverse) locos a mis hijos.',
+          foreign: 'Vuelvo locos a mis hijos. (volverse)',
           english: 'I drive my children crazy.',
           workingOn: true,
         },
         {
           foreign: 'Me vuelvo loco con el fútbol.',
           english: 'I’m crazy about soccer.',
+          workingOn: true,
+        },
+        {
+          foreign: 'El fútbol me vuelve loco.',
+          english: 'Soccer drives me crazy.',
           workingOn: true,
         },
       ],
