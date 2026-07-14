@@ -946,6 +946,126 @@ export const allPhrases = {
         },
       ],
     },
+    chapter15: {
+      name: 'Los pronombres de objeto directo',
+      lesson1: [
+        // Verbos intransitivos
+        { foreign: 'nacer', english: 'to be born', workingOn: true },
+        { foreign: 'desaparecer', english: 'to disappear', workingOn: true },
+        { foreign: 'suspirar', english: 'to sigh', workingOn: true },
+        { foreign: 'sonreír', english: 'to smile', workingOn: true },
+        { foreign: 'toser', english: 'to cough', workingOn: true },
+      ],
+      lesson2: [
+        // Verbos transitivos
+        { foreign: 'amar', english: 'to love', workingOn: true },
+        { foreign: 'evitar', english: 'to avoid', workingOn: true },
+        { foreign: 'traer', english: 'to bring', hard: true, workingOn: true },
+        { foreign: 'ganar', english: 'to gain / win', workingOn: true },
+        { foreign: 'regalar', english: 'to give a present', workingOn: true },
+      ],
+      lesson3: [
+        {
+          foreign: 'Llamé a mi hermana.| La llamé.',
+          english: 'I called my sister. | I called her.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Los ratones comen queso.| Los ratones lo comen.',
+          english: 'Mice eat cheese.| Mice eat it.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Compré este chocolate para ti.| Te lo compré en el supermercado.',
+          english: 'I bought this chocolate for you.| I bought it for you at the supermarket.',
+          workingOn: true,
+        },
+        {
+          foreign: 'La niña se pone un vestido azul.| La niña se lo pone sola.',
+          english: 'The girl puts on a blue dress.| The girl puts it on by herself.',
+          workingOn: true,
+        },
+        {
+          foreign:
+            'Los niños se secan las manos con la toalla verde.| Ellos se las secan con la toalla verde.',
+          english:
+            'The children dry their hands with the green towel.| They dry them with the green towel.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Él toma una taza de café con leche en la mañana.| La toma sin azúcar.',
+          english: 'He has a cup of coffee with milk in the morning.| He takes it without sugar.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Hay unos ciervos en el jardín,| ya los vi.',
+          english: 'There are some deer in the garden;| I’ve already seen them.',
+          hard: true,
+          workingOn: true,
+        },
+        {
+          foreign: 'Escucho tus pasos en la cocina.| Te estoy escuchando.',
+          english: 'I hear your footsteps in the kitchen.| I can hear you. (informal)',
+          workingOn: true,
+        },
+        {
+          foreign: 'La camisa blanca está en el clóset.| Búscala bien.',
+          english: 'The white shirt is in the closet. | Look for it carefully.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Escucha lo que te digo. Escúchame.',
+          english: 'Listen to what I’m telling you. Listen to me. (informal)',
+          workingOn: true,
+        },
+        {
+          foreign: 'Corta la grama, está muy larga.| Córtala hoy.',
+          english: 'Mow the grass; it’s very long. | Mow it today. (informal)',
+          workingOn: true,
+        },
+        {
+          foreign: 'Es tarde, termina tu tarea. Termínala.',
+          english: 'It’s late; finish your homework. Finish it. (informal)',
+          workingOn: true,
+        },
+        {
+          foreign: 'Para nosotros las matemáticas son difíciles.| ¿Podrías ayudarnos?',
+          english: 'For us (masculine) mathematics is difficult.| Could you help us?',
+          workingOn: true,
+        },
+        {
+          foreign: 'Las rosas ya florecieron.| Puedes verlas a través de la ventana.',
+          english: 'The roses have already bloomed.| You can see them through the window.',
+          hard: true,
+          workingOn: true,
+        },
+        {
+          foreign: 'Ya llegó el correo de nuestro cliente.| Voy a leerlo.',
+          english: 'Our client’s email has already arrived.| I’m going to read it.',
+          workingOn: true,
+        },
+        {
+          foreign: 'Me encontré con un viejo amigo.| Me quedé mirándolo.',
+          english: 'I ran into an old friend.| I stared at him.',
+          workingOn: true,
+        },
+        {
+          foreign: 'A la fiesta vinieron muchos amigos.| Estaba esperándolos.',
+          english: 'Many friends came to the party.| I was waiting for them. (masculine)',
+          workingOn: true,
+        },
+        {
+          foreign: 'Aquí está tu café. Estaba comprándolo.',
+          english: 'Here is your coffee. I was buying it.',
+          workingOn: true,
+        },
+        {
+          foreign: 'El auto está sucio, él está lavándolo.',
+          english: 'The car is dirty; he is washing it.',
+          workingOn: true,
+        },
+      ],
+    },
   },
   vocabulary: {
     chapter1: {
@@ -2891,7 +3011,6 @@ export const allPhrases = {
         {
           foreign: 'Las hojas les están saliendo.',
           english: 'The leaves are starting to come in (to the trees).',
-          workingOn: true,
         },
         {
           foreign: 'nuestras propias cabezas',
@@ -2937,9 +3056,9 @@ export const allPhrases = {
         { foreign: 'el teléfono está sonando', english: 'the phone is ringing' },
       ],
       lesson8: [
-        { foreign: 'Yo voy a...', english: 'I’m rooting for...', workingOn: true },
+        { foreign: 'Yo voy a...', english: 'I’m rooting for...' },
         { foreign: 'Conduzco hasta mi trabajo.', english: 'I drive to my work.', workingOn: true },
-        { foreign: 'dormirse', english: 'to fall asleep', workingOn: true },
+        { foreign: 'dormirse', english: 'to fall asleep' },
         {
           foreign: 'Llevo a mis hijos a la escuela.',
           english: 'I take my kids to school.',
@@ -2963,7 +3082,7 @@ export const allPhrases = {
       ],
       lesson9: [
         {
-          foreign: 'Cuanto tiempo sin ver te.',
+          foreign: 'Cuanto tiempo sin verte.',
           english: 'It’s been so long since I’ve seen you.',
           hard: true,
           workingOn: true,
@@ -3023,6 +3142,62 @@ export const allPhrases = {
         { foreign: 'diversos estudios', english: 'various studies', workingOn: true },
         { foreign: 'ahorrar energía', english: 'to save energy', workingOn: true },
         { foreign: 'cómodo/a', english: 'comfortable', workingOn: true },
+      ],
+    },
+    chapter6: {
+      name: 'Random vocab, July 2026',
+      lesson1: [
+        { foreign: 'piedra, papel o tijeras', english: 'rock, paper, scissors', workingOn: true },
+        { foreign: 'exigente', english: 'demanding', workingOn: true },
+        { foreign: 'duda', english: 'doubt (n.)', workingOn: true },
+        { foreign: 'deseo', english: 'wish (n.)', workingOn: true },
+        { foreign: '¡Fijate! (fijarse)', english: 'Pay attention! (informal)', workingOn: true },
+        { foreign: 'un nativo', english: 'a native speaker', workingOn: true },
+        { foreign: 'están empatados', english: 'they’re tied', hard: true, workingOn: true },
+        { foreign: 'un meme', english: 'a meme', workingOn: true },
+        { foreign: 'fuerte', english: 'strong', workingOn: true },
+        {
+          foreign: '¿Qué tal si salimos a cenar?',
+          english: 'How about we go out to dinner?',
+          workingOn: true,
+        },
+        { foreign: 'agua hirviente', english: 'scalding water', workingOn: true },
+        { foreign: 'hervir', english: 'to boil', workingOn: true },
+        { foreign: 'hirviendo el agua', english: 'boiling the water', workingOn: true },
+        {
+          foreign: 'Mi esposa se hace las uñas.',
+          english: 'My wife does her nails.',
+          workingOn: true,
+        },
+        {
+          foreign: 'No quiere dañarse las uñas.',
+          english: 'She doesn’t want to damage her nails.',
+          workingOn: true,
+        },
+        { foreign: 'Es de mala educación.', english: 'It’s bad manners.', workingOn: true },
+        {
+          foreign: 'No quiero tener mala educación.',
+          english: 'I don’t want to be rude.',
+          workingOn: true,
+        },
+        { foreign: 'rudo / brusco / maleducado', english: 'rude', workingOn: true },
+        { foreign: 'el partido (fútbol)', english: 'the match (soccer)', workingOn: true },
+        {
+          foreign: 'No son tan buenos como...',
+          english: 'They are not as good as...',
+          workingOn: true,
+        },
+        { foreign: 'polémica', english: 'controversy', workingOn: true },
+        { foreign: 'No es justo.', english: 'It’s not fair.', workingOn: true },
+        {
+          foreign: 'No sé cómo arreglarlo.',
+          english: 'I don’t know how to fix it.',
+          workingOn: true,
+        },
+        { foreign: 'debido a...', english: 'because of...', workingOn: true },
+        { foreign: 'Ja va a terminar.', english: 'It’s about to finish.', workingOn: true },
+        { foreign: 'Es mi culpa. / Es culpa mía.', english: 'It’s my fault.', workingOn: true },
+        { foreign: 'está bien', english: 'ok', workingOn: true },
       ],
     },
   },
